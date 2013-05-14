@@ -8,14 +8,14 @@
     <!ENTITY knowrob "http://ias.cs.tum.edu/kb/knowrob.owl#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-    <!ENTITY unihb_lab_map "http://ias.cs.tum.edu/kb/room.owl#" >
+    <!ENTITY iai_maps "http://ias.cs.tum.edu/kb/room.owl#" >
     <!ENTITY protege "http://protege.stanford.edu/plugins/owl/protege#" >
 ]>
 
-<rdf:RDF xmlns="http://ias.cs.tum.edu/kb/unihb_lab_addons.owl#"
-    xml:base="http://ias.cs.tum.edu/kb/unihb_lab_addons.owl"
+<rdf:RDF xmlns="http://ias.cs.tum.edu/kb/iai_maps_addons.owl#"
+    xml:base="http://ias.cs.tum.edu/kb/iai_maps_addons.owl"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-    xmlns:map="http://ias.cs.tum.edu/kb/unihb_lab_addons.owl#"
+    xmlns:map="http://ias.cs.tum.edu/kb/iai_maps_addons.owl#"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
