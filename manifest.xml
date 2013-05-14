@@ -11,6 +11,7 @@
 
   <depend package="comp_spatial" />
   <depend package="comp_orgprinciples" />
+  <depend package="knowrob_cad_models"/>
   <depend package="gazebo_msgs"/>
   <depend package="gazebo"/>
 
