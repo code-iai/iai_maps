@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<robot name="cnc">
+  
+  <include filename="$(find unihb_lab)/defs/util_defs.xml"/>  
+  
+  <macro name="cnc" params="name parent xyz rpy">
+    
+    <link name="${parent}_${name}_cnc_link">    
+      <visual>
+        <geometry>
+          <mesh filename="package://unihb_lab/Media/models/meshes/cnc.dae" scale="0.02 0.02 0.02" />
+        </geometry>		
+        <origin rpy="0 0 0" xyz="0 0 0" />	
+      </visual>
+
+      <collision>
+        <geometry>
+          <mesh filename="package://unihb_lab/Media/models/meshes/cnc.dae" scale="0.02 0.02 0.02" />
+        </geometry>
+        <origin rpy="0 0 0" xyz="0 0 0" />
+      </collision>
+      
+      <sphere_inertia radius="2" mass="1000"/>
+
+    </link>
+    
+    <joint name="${parent}_${name}_cnc_joint" type="fixed">
+      <origin xyz="${xyz}" rpy="${rpy}"/>
+      <parent link="${parent}_link"/>
+      <child link="${parent}_${name}_cnc_link"/>
+    </joint>
+    
+  </macro>
+  
+</robot>

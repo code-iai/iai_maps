@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<robot xmlns:sensor="http://playerstage.sourceforge.net/gazebo/xmlschema/#sensor"
+       xmlns:controller="http://playerstage.sourceforge.net/gazebo/xmlschema/#controller"
+       xmlns:interface="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface">
+
+  <property name="M_PI" value="3.1415926535897931"/>
+
+  <!-- Little helper macro to define the inertia matrix needed for links. -->
+
+  <macro name="cuboid_inertia_def" params="width height length mass">
+    <inertia ixx="${mass * (height * height + length * length) / 12)}"
+             iyy="${mass * (width * width + length * length) / 12)}"
+             izz="${mass * (width * width + height * height) / 12)}"
+             ixy="0" iyz="0" ixz="0"/>
+  </macro>
+
+  <!-- Length is along the y-axis. -->
+
+  <macro name="cylinder_inertia_def" params="radius length mass">
+    <inertia ixx="${mass * (3 * radius * radius + length * length) / 12)}"
+             iyy="${mass * radius * radius / 2)}"
+             izz="${mass * (3 * radius * radius + length * length) / 12)}"
+             ixy="0" iyz="0" ixz="0"/>
+  </macro>
+
+  <macro name="sphere_inertia" params="radius mass">
+    <inertial>
+      <mass value="${mass}"/>
+      <inertia ixx="${(2*mass*radius*radius)/5}"
+               iyy="${(2*mass*radius*radius)/5}"
+               izz="${(2*mass*radius*radius)/5}"
+               ixy="0" iyz="0" ixz="0" />
+      </inertial>
+  </macro>
+
+  <macro name="cuboid_inertia" params="width height length mass">
+    <inertial>
+      <mass value="${mass}"/>
+      <cuboid_inertia_def width="${width}" height="${height}" length="${length}" mass="${mass}"/>
+    </inertial>
+  </macro>
+
+  <macro name="cylinder_inertia" params="radius length mass">
+    <inertial>
+      <mass value="${mass}"/>
+      <cylinder_inertia_def radius="${radius}" length="${length}" mass="${mass}"/>
+    </inertial>
+  </macro>
+
+</robot>

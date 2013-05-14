@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<robot name="wine_cooler">
+  
+  <macro name="wine_cooler" params="name parent xyz rpy">
+    
+    <link name="${parent}_${name}_wine_cooler_link">    
+      <visual>
+        <geometry>
+          <mesh filename="package://unihb_lab/Media/models/meshes/wine_cooler.dae" scale="0.03 0.03 0.03" />
+        </geometry>		
+        <origin rpy="0 0 0" xyz="0 0 0" />	
+      </visual>
+
+      <collision>
+        <geometry>
+          <mesh filename="package://unihb_lab/Media/models/meshes/wine_cooler.dae" scale="0.03 0.03 0.03" />
+        </geometry>
+        <origin rpy="0 0 0" xyz="0 0 0" />
+      </collision>
+
+      <inertial>
+	<mass value="1000"/>
+	<cuboid_inertia_def width="1.1" height="1.8" length="1" mass="1000"/>
+	<origin rpy="0 0 0" xyz="0.48 0.3 0.9" />
+      </inertial>
+    </link>
+    
+    <joint name="${parent}_${name}_wine_cooler_joint" type="fixed">
+      <origin xyz="${xyz}" rpy="${rpy}"/>
+      <parent link="${parent}_link"/>
+      <child link="${parent}_${name}_wine_cooler_link"/>
+    </joint>
+    
+  </macro>
+  
+</robot>

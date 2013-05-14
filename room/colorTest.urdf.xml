@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<robot name="room">
+
+
+
+ <wall name="boden_kitchen" xyz="-2.65 -3.7 1.0005" sxyz="5.3 6.8 0.5" material="Ias/LightBrown2"/>
+ <wall name="boden_shop" xyz="1.95 -4 1.0005" sxyz="3.9 6 0.5" material="Ias/LightBrown"/>
+ <!--wall name="boden_mech" xyz="1.95 2 1.0005" sxyz="3.9 6 0.5" material="Ground/Red"/>
+ <wall name="boden_bio" xyz="-2.65 2.35 1.0005" sxyz="5.3 5.3 0.5" material="Ground/Green"/-->
+ 
+
+ <link name="room_link">
+   <sphere_inertia radius="0.001" mass="1"/>
+ </link>
+ 
+
+ <!-- macro for walls -->
+ <macro name="wall" params="name xyz sxyz material">
+   
+   <joint name="${name}_joint" type="fixed">
+     <origin rpy="0 0 0" xyz="${xyz}"/>
+     <parent link="room_link"/>
+     <child link="${name}_link"/>
+   </joint>
+   
+   <link name="${name}_link">
+     <visual>
+       <origin xyz="0 0 0" rpy="0 0 0"/>
+       <geometry>
+         <box size="${sxyz}"/>
+       </geometry>
+     </visual>      
+     <collision>
+       <origin xyz="0 0 0" rpy="0 0 0"/>
+       <geometry>
+         <box size="${sxyz}"/>
+       </geometry> 
+     </collision>
+     <inertial>
+       <mass value="1000" />
+       <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+     </inertial>
+   </link>    
+   <gazebo reference="${name}_link">
+     <static>true</static>
+     <material>${material}</material>
+   </gazebo>
+ </macro>
+ 
+</robot>

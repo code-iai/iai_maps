@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<robot name="kitchen">
+  
+  <include filename="$(find unihb_lab)/defs/ias_kitchen/materials.xml"/>
+  <include filename="$(find unihb_lab)/defs/ias_kitchen/furniture_defs.xml"/>
+  <include filename="$(find unihb_lab)/defs/ias_kitchen/island_block.xml"/>
+  <include filename="$(find unihb_lab)/defs/ias_kitchen/oven_block.xml"/>
+  <include filename="$(find unihb_lab)/defs/ias_kitchen/fridge_block.xml"/>
+  <include filename="$(find unihb_lab)/defs/ias_kitchen/sink_block.xml"/>
+  <include filename="$(find unihb_lab)/defs/ias_kitchen/shopping_block.xml"/>
+  <include filename="$(find unihb_lab)/defs/ias_kitchen/table.xml"/>
+  <include filename="$(find unihb_lab)/defs/ias_kitchen/small_table.xml"/>
+  <include filename="$(find unihb_lab)/defs/ias_kitchen/cuboid.xml"/>
+  
+  <!-- This is the top level joint /tf frame. -->
+  <link name="kitchen_link">
+    <!--<sphere_inertia radius="0.001" mass="1"/>-->
+  </link>
+  
+  <!-- Shelves on top of kitchen counter -->
+  <!--<counter parent="kitchen"
+  name="shelf_bottom"
+  pos_x="-5.22" pos_y="-5.65" pos_z="0.85"
+  roll="0" pitch="0" yaw="0"
+  size_x="0.25" size_y="0.38" size_z="0.025"
+  />
+  <counter parent="kitchen"
+  name="shelf_center"
+  pos_x="-5.22" pos_y="-5.65" pos_z="1.15"
+  roll="0" pitch="0" yaw="0"
+  size_x="0.21" size_y="0.38" size_z="0.025"
+  />
+  <counter parent="kitchen"
+  name="shelf_top"
+  pos_x="-5.22" pos_y="-5.65" pos_z="1.48"
+  roll="0" pitch="0" yaw="0"
+  size_x="0.25" size_y="0.38" size_z="0.025"
+  />-->
+
+  <!-- Finally, the 5 main blocks of the kitchen -->
+  <island_block block_pos="-2.1 -4.94 0.01" block_rpy="-0.01 0 3.141"/>
+  
+  <oven_block block_pos="-5.27 -6.85 0" block_rpy="0 0 0"/>
+  
+  <sink_block block_pos="-5.29 -5.65 0" block_rpy="0 0 0"/>
+  
+  <fridge_block block_pos="-5.29 -3.59 0" block_rpy="0 0 0"/>
+  
+  
+  
+  
+  <!--<table name="eating_table" parent="kitchen" block_pos="-1.7 -2.1 0" block_rpy="0 0 1.57" material="KitchenWhite"/>-->
+    
+<!--    <chair name="eating_1" parent="kitchen" xyz="-1.35 -1.2 0" rpy="0 0 1.57"/>
+    <chair name="eating_2" parent="kitchen" xyz="-1.35 -1.8 0" rpy="0 0 1.57"/>
+    <chair name="eating_3" parent="kitchen" xyz="-2.65 -0.75 0" rpy="0 0 -1.57"/>
+    <chair name="eating_4" parent="kitchen" xyz="-2.65 -1.35 0" rpy="0 0 -1.57"/>-->
+  
+
+</robot>

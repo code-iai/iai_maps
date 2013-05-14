@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<robot xmlns:sensor="http://playerstage.sourceforge.net/gazebo/xmlschema/#sensor"
+       xmlns:interface="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface"
+       xmlns:controller="http://playerstage.sourceforge.net/gazebo/xmlschema/#controller">
+
+  <!--               -->
+  <!-- Shopping Area -->
+  <!--               -->
+
+  <macro name="shopping_block" params="name parent block_pos block_rpy">
+
+    <rack_side parent="${name}_shopping_block"
+      name="${name}_side_rack"
+      pos_x="0" pos_y="0" pos_z="0"
+      roll="0" pitch="0" yaw="0"
+      size_x="0.090" size_y="1.270" size_z="1.600"
+    />
+    <rack parent="${name}_shopping_block"
+      name="${name}_rack_skirting"
+      pos_x="0.090" pos_y="0" pos_z="0"
+      roll="0" pitch="0" yaw="0"
+      size_x="${0.685 - 0.090}" size_y="1.270" size_z="0.150"
+    />
+    <rack parent="${name}_shopping_block"
+      name="${name}_rack_bottom"
+      pos_x="0.090" pos_y="0.010" pos_z="0.610"
+      roll="0" pitch="0" yaw="0"
+      size_x="${0.550 - 0.090}" size_y="1.250" size_z="0.030"
+    />
+    <rack parent="${name}_shopping_block"
+      name="${name}_rack_middle"
+      pos_x="0.090" pos_y="0.010" pos_z="1.090"
+      roll="0" pitch="0" yaw="0"
+      size_x="${0.550 - 0.090}" size_y="1.250" size_z="0.030"
+    />
+    <rack parent="${name}_shopping_block"
+      name="${name}_rack_top"
+      pos_x="0.090" pos_y="0.010" pos_z="1.570"
+      roll="0" pitch="0" yaw="0"
+      size_x="${0.550 - 0.090}" size_y="1.250" size_z="0.030"
+    />
+
+    <!--<skirting parent="shopping_block"-->
+    <!--name="shopping_block_skirt"-->
+    <!--pos_x="0" pos_y="0" pos_z="0"-->
+    <!--roll="0" pitch="0" yaw="0"-->
+    <!--size_x="0.685" size_y="1.270" size_z="0.145"-->
+    <!--/>-->
+
+    <joint name="${name}_shopping_block_joint" type="fixed">
+      <origin xyz="${block_pos}" rpy="${block_rpy}"/>
+      <parent link="${parent}_link"/>
+      <child link="${name}_shopping_block_link"/>
+    </joint>
+
+    <link name="${name}_shopping_block_link">
+
+      <sphere_inertia radius="0" mass="0"/>
+    
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <box size=".1 .1 .1" />
+        </geometry>
+      </visual>
+    </link>
+    
+  </macro>
+
+</robot>

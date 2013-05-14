@@ -1,0 +1,14 @@
+<package>
+  <description brief="iai_maps">
+
+     iai_maps
+
+  </description>
+  <author>Jan Winkler</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/iai_maps</url>
+
+</package>
+
+

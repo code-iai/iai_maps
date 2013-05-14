@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<robot>
+
+  <material name="KitchenWhite">
+    <color rgba="0.75 0.75 0.7 1.0"/>
+  </material>
+
+  <material name="KitchenDarkGray">
+    <color rgba="0.3 0.3 0.3 1.0"/>
+  </material>
+
+  <material name="KitchenLightGray">
+    <color rgba="0.7 0.7 0.7 1.0"/>
+  </material>
+
+  <material name="KitchenWallWhite">
+    <color rgba="1.0 1.0 1.0 1.0"/>
+  </material>
+
+  <material name="KitchenSink">
+    <texture filename="package://ias_kitchen_defs/textures/sink.png"/>
+  </material>
+
+  <material name="KitchenStove">
+    <texture filename="package://ias_kitchen_defs/textures/stove.png"/>
+  </material>
+
+</robot>

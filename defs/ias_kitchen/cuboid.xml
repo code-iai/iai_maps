@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<robot xmlns:sensor="http://playerstage.sourceforge.net/gazebo/xmlschema/#sensor"
+       xmlns:interface="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface"
+       xmlns:controller="http://playerstage.sourceforge.net/gazebo/xmlschema/#controller">
+
+  <!--        -->
+  <!-- Cuboid -->
+  <!--        -->
+
+  <macro name="cuboid" params="block_pos block_rpy">
+
+    <counter parent="cuboid"
+      name="cuboid_top"
+      pos_x="0" pos_y="0" pos_z="0"
+      roll="0" pitch="0" yaw="0"
+      size_x="0.430" size_y="0.800" size_z="0.555"
+    />
+
+    <!-- TODO A more accurate description -->
+
+    <joint name="cuboid_joint" type="fixed">
+      <origin xyz="${block_pos}" rpy="${block_rpy}"/>
+      <parent link="kitchen_link"/>
+      <child link="cuboid_link"/>
+    </joint>
+
+    <link name="cuboid_link">
+      
+      <sphere_inertia radius="0" mass="0"/>
+      
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <box size=".1 .1 .1" />
+        </geometry>
+      </visual>
+    </link>
+
+  </macro>
+
+</robot>

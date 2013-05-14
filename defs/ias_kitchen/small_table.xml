@@ -1,0 +1,157 @@
+<?xml version="1.0"?>
+<robot xmlns:sensor="http://playerstage.sourceforge.net/gazebo/xmlschema/#sensor"
+xmlns:interface="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface"
+  xmlns:controller="http://playerstage.sourceforge.net/gazebo/xmlschema/#controller">
+  
+  
+    <include filename="$(find unihb_lab)/defs/ias_kitchen/furniture_defs.xml"/>
+    <include filename="$(find unihb_lab)/defs/util_defs.xml"/>
+    
+    <!--       -->
+    <!-- Table -->
+    <!--       -->
+    
+    <macro name="small_table" params="name parent block_pos block_rpy material">
+      
+      <color_counter parent="${name}_table"
+      name="${name}_table_top"
+      pos_x="0" pos_y="0" pos_z="0.705"
+      roll="0" pitch="0" yaw="0"
+      size_x="0.800" size_y="1.00" size_z="0.025"
+      material="${material}"
+        />
+        
+          <joint name="${name}_first_leg_joint" type="fixed">
+            <origin xyz="${0 + 0.025} ${0 + 0.025} 0.350" rpy="0 0 0 "/>
+            <parent link="${name}_table_link"/>
+            <child link="${name}_first_leg_link"/>
+          </joint>
+          
+          <link name="${name}_first_leg_link">
+            
+            <cylinder_inertia radius="0.025" length="0.7" mass="1.0"/>
+            
+            <visual>
+              <origin xyz="0 0 0" rpy="0 0 0" />
+              <geometry>
+                <cylinder length="0.700" radius="0.025"/>
+              </geometry>
+            </visual>
+            <collision>
+              <origin xyz="0 0 0" rpy="0 0 0" />
+              <geometry>
+                <cylinder length="0.700" radius="0.025"/>
+              </geometry>
+            </collision>
+          </link>
+          
+          <gazebo reference="${name}_first_leg_link">
+            <material value="Ias/KitchenLightGray" />
+          </gazebo>
+          
+          <joint name="${name}_second_leg_joint" type="fixed">
+            <origin xyz="${0.800 - 0.025} ${0 + 0.025} 0.350" rpy="0 0 0"/>
+            <parent link="${name}_table_link"/>
+            <child link="${name}_second_leg_link"/>
+          </joint>
+          
+          <link name="${name}_second_leg_link">
+            
+            <cylinder_inertia radius="0.025" length="0.7" mass="1.0"/>
+            
+            <visual>
+              <origin xyz="0 0 0" rpy="0 0 0" />
+              <geometry>
+                <cylinder length="0.700" radius="0.025"/>
+              </geometry>
+            </visual>
+            <collision>
+              <origin xyz="0 0 0" rpy="0 0 0" />
+              <geometry>
+                <cylinder length="0.700" radius="0.025"/>
+              </geometry>
+            </collision>
+          </link>
+          
+          <gazebo reference="${name}_second_leg_link">
+            <material value="Ias/KitchenLightGray" />
+          </gazebo>
+          
+          <joint name="${name}_third_leg_joint" type="fixed">
+            <origin xyz="${0 + 0.025} ${1.00 - 0.025} 0.350" rpy="0 0 0"/>
+            <parent link="${name}_table_link"/>
+            <child link="${name}_third_leg_link"/>
+          </joint>
+          
+          <link name="${name}_third_leg_link">
+            
+            <cylinder_inertia radius="0.025" length="0.7" mass="1.0"/>
+            
+            <visual>
+              <origin xyz="0 0 0" rpy="0 0 0" />
+              <geometry>
+                <cylinder length="0.700" radius="0.025"/>
+              </geometry>
+            </visual>
+            <collision>
+              <origin xyz="0 0 0" rpy="0 0 0" />
+              <geometry>
+                <cylinder length="0.700" radius="0.025"/>
+              </geometry>
+            </collision>
+          </link>
+          
+          <gazebo reference="${name}_third_leg_link">
+            <material value="Ias/KitchenLightGray" />
+          </gazebo>
+          
+          <joint name="${name}_fourth_leg_joint" type="fixed">
+            <origin xyz="${0.800 - 0.025} ${1.00 - 0.025} 0.350" rpy="0 0 0"/>
+            <parent link="${name}_table_link"/>
+            <child link="${name}_fourth_leg_link"/>
+          </joint>
+          
+          <link name="${name}_fourth_leg_link">
+            
+            <cylinder_inertia radius="0.025" length="0.7" mass="1.0"/>
+            
+            <visual>
+              <origin xyz="0 0 0" rpy="0 0 0" />
+              <geometry>
+                <cylinder length="0.700" radius="0.025"/>
+              </geometry>
+            </visual>
+            <collision>
+              <origin xyz="0 0 0" rpy="0 0 0" />
+              <geometry>
+                <cylinder length="0.700" radius="0.025"/>
+              </geometry>
+            </collision>
+          </link>
+          
+          <gazebo reference="${name}_fourth_leg_link">
+            <material value="Ias/KitchenLightGray" />
+          </gazebo>
+          
+          <joint name="${name}_table_joint" type="fixed">
+            <origin xyz="${block_pos}" rpy="${block_rpy}"/>
+            <parent link="${parent}_link"/>
+            <child link="${name}_table_link"/>
+          </joint>
+          
+          <link name="${name}_table_link">
+            
+            <sphere_inertia radius="0" mass="0"/>
+            
+            <visual>
+              <origin xyz="0 0 0" rpy="0 0 0" />
+              <geometry>
+                <box size=".1 .1 .1" />
+              </geometry>
+            </visual>
+          </link>
+          
+        </macro>
+        
+      </robot>
+      

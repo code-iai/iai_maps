@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<robot xmlns:sensor="http://playerstage.sourceforge.net/gazebo/xmlschema/#sensor"
+       xmlns:controller="http://playerstage.sourceforge.net/gazebo/xmlschema/#controller"
+       xmlns:interface="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface">
+
+  <!--             -->
+  <!-- Fridge Area -->
+  <!--             -->
+
+  <macro name="fridge_block" params="block_pos block_rpy">
+
+    <counter parent="fridge_block"
+      name="counter_top_fridge"
+      pos_x="0" pos_y="0" pos_z="1.48"
+      roll="0" pitch="0" yaw="0"
+      size_x="0.58" size_y="0.6" size_z="0.03"
+    />
+    <counter_side parent="fridge_block"
+      name="counter_side_fridge_left"
+      pos_x="0" pos_y="0" pos_z="0.15"
+      roll="0" pitch="0" yaw="0"
+      size_x="0.58" size_y="0.02" size_z="1.33"
+    />
+    <counter_side parent="fridge_block"
+      name="counter_side_fridge_right"
+      pos_x="0" pos_y="0.58" pos_z="0.15"
+      roll="0" pitch="0" yaw="0"
+      size_x="0.58" size_y="0.02" size_z="1.33"
+    />
+
+    <color_counter parent="fridge_block"
+      name="counter_bottom_fridge"
+      pos_x="0" pos_y="0" pos_z="0.5"
+      roll="0" pitch="0" yaw="0"
+      size_x="0.575" size_y="0.6" size_z="0.03"
+      material="KitchenWhite"
+    />
+
+    <color_counter parent="fridge_block"
+      name="counter_middle_fridge"
+      pos_x="0" pos_y="0" pos_z="0.83"
+      roll="0" pitch="0" yaw="0"
+      size_x="0.425" size_y="0.6" size_z="0.03"
+      material="KitchenWhite"
+    />
+
+    <drawer parent="fridge_block"
+      name="drawer_fridge_bottom"
+      pos_x="0.0" pos_y="0.0175" pos_z="0.15"
+      roll="0" pitch="0" yaw="0"
+      size_x="0.58" size_y="0.565" size_z="0.365"
+    />
+    <fridge parent="fridge_block"
+      name="fridge"
+      pos_x="0.0" pos_y="0" pos_z="0.51"
+      roll="0" pitch="0" yaw="0"
+      size_x="0.58" size_y="0.6" size_z="0.97"
+    />
+    <skirting parent="fridge_block"
+      name="skirting_fridge"
+      pos_x="0" pos_y="0" pos_z="0"
+      roll="0" pitch="0" yaw="0"
+      size_x="0.51" size_y="0.6" size_z="0.15"
+    />
+  
+    <joint name="fridge_block_joint" type="fixed">
+      <origin xyz="${block_pos}" rpy="${block_rpy}"/>
+      <parent link="kitchen_link"/>
+      <child link="fridge_block_link"/>
+    </joint>
+  
+    <link name="fridge_block_link">
+
+      <sphere_inertia radius="0" mass="0"/>
+
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <box size=".1 .1 .1" />
+        </geometry>
+      </visual>
+    </link>
+    
+  </macro>
+
+</robot>

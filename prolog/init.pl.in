@@ -1,0 +1,41 @@
+%% Copyright (C) 2013 by Moritz Tenorth, Jan Winkler
+%%
+%% This program is free software; you can redistribute it and/or modify
+%% it under the terms of the GNU General Public License as published by
+%% the Free Software Foundation; either version 3 of the License, or
+%% (at your option) any later version.
+%%
+%% This program is distributed in the hope that it will be useful,
+%% but WITHOUT ANY WARRANTY; without even the implied warranty of
+%% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+%% GNU General Public License for more details.
+%%
+%% You should have received a copy of the GNU General Public License
+%% along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+:- register_ros_package(unihb_lab).
+
+:- register_ros_package(comp_spatial).
+:- use_module(library('comp_spatial')).
+
+:- register_ros_package(semweb).
+:- use_module(library('semweb/rdfs_computable')).
+:- use_module(library('semweb/rdf_db')).
+:- use_module(library('semweb/rdfs')).
+:- use_module(library('thea/owl_parser')).
+:- use_module(library('semweb/owl')).
+:- use_module(library('semweb/rdf_edit')).
+:- use_module(library('semweb/actionmodel')).
+
+:- register_ros_package(comp_orgprinciples).
+:- use_module(library('comp_orgprinciples')).
+
+:- owl_parser:owl_parse('@LOCAL_PACKAGE_PATH@/owl/room.owl', false, false, true).
+:- owl_parser:owl_parse('@LOCAL_PACKAGE_PATH@/owl/unihb_lab_addons.owl', false, false, true).
+
+:- rdf_db:rdf_register_ns(knowrob, 'http://ias.cs.tum.edu/kb/knowrob.owl#', [keep(true)]).
+:- rdf_db:rdf_register_ns(unihb_lab_map, 'http://ias.cs.tum.edu/kb/room.owl#', [keep(true)]).
+
+:- use_module(library(unihb_lab)).
+:- consult('unihb_lab_addons').
+:- consult('semantic_map_utils').

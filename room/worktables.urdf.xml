@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<robot name="worktables">
+  
+  <include filename="$(find unihb_lab)/defs/util_defs.xml"/> 
+  <include filename="$(find unihb_lab)/defs/ias_kitchen/table.xml"/>
+<!--  <include filename="$(find unihb_lab)/Media/models/chair.urdf.xml"/>-->
+
+  <link name="worktables_link">
+    <sphere_inertia radius="0.001" mass="1"/>
+  </link>
+  
+  <table name="work_table_1" parent="worktables" block_pos="-4.05 -0.15 0" block_rpy="0 0 0" material="LightBrown2"/>
+  <table name="work_table_2" parent="worktables" block_pos="-2.44 -0.15 0" block_rpy="0 0 0" material="LightBrown2"/>
+  <table name="work_table_3" parent="worktables" block_pos="-0.83 -0.15 0" block_rpy="0 0 0" material="LightBrown2"/>
+  <table name="work_table_4" parent="worktables" block_pos="0.77 -1.71 0" block_rpy="0 0 1.57" material="LightBrown2"/>
+
+  <!--
+  <chair name="work_chair_1_1" parent="worktables" xyz="-2.75 0.7 0" rpy="0 0 3.1415"/>
+  <chair name="work_chair_1_2" parent="worktables" xyz="-3.35 0.7 0" rpy="0 0 3.1415"/>
+  <chair name="work_chair_2_1" parent="worktables" xyz="-1.14 0.7 0" rpy="0 0 3.1415"/>
+  <chair name="work_chair_2_2" parent="worktables" xyz="-1.74 0.7 0" rpy="0 0 3.1415"/>
+  <chair name="work_chair_3_1" parent="worktables" xyz="0.47 0.7 0" rpy="0 0 3.1415"/>
+  <chair name="work_chair_3_2" parent="worktables" xyz="-0.13 0.7 0" rpy="0 0 3.1415"/>
+  <chair name="work_chair_4_1" parent="worktables" xyz="0.93 -1.35 0" rpy="0 0 1.57"/>
+  <chair name="work_chair_4_2" parent="worktables" xyz="0.93 -0.7 0" rpy="0 0 1.57"/>
+  
+  -->
+  
+</robot>

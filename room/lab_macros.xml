@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<robot>
+
+  <!-- macro for walls -->
+  <macro name="wall" params="name parent xyz sxyz material">
+    
+    <joint name="${name}_joint" type="fixed">
+      <origin rpy="0 0 0" xyz="${xyz}"/>
+      <parent link="${parent}_link"/>
+      <child link="${name}_link"/>
+    </joint>
+    
+    <link name="${name}_link">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="${sxyz}"/>
+        </geometry>
+      </visual>      
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="${sxyz}"/>
+        </geometry> 
+      </collision>
+      <inertial>
+        <mass value="1000" />
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+      </inertial>
+    </link>    
+    <gazebo reference="${name}_link">
+      <static>true</static>
+      <material>${material}</material>
+    </gazebo>
+  </macro>
+  
+  
+  <!-- macro for pillars -->
+  <macro name="pillar" params="name parent xyz radius length">
+    
+    <joint name="${name}_joint" type="fixed">
+      <origin rpy="0 0 0" xyz="${xyz}"/>
+      <parent link="${parent}_link"/>
+      <child link="${name}_link"/>
+    </joint>
+    
+    <link name="${name}_link">  
+      <visual>
+        <geometry>
+          <cylinder length="${length}" radius="${radius}"/>
+        </geometry>
+        <origin rpy="0 0 0" xyz="0 0 0"/>
+      </visual>
+      <collision>
+        <geometry>
+          <cylinder length="${length}" radius="${radius}"/>
+        </geometry>
+        <origin rpy="0 0 0" xyz="0 0 0"/>
+      </collision>
+      <inertial>
+        <mass value="1000" />
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+      </inertial>
+    </link>
+    <gazebo reference="${name}_link">
+      <static>true</static>
+    </gazebo>
+  </macro>
+  
+</robot>

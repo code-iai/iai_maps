@@ -1,0 +1,218 @@
+<?xml version="1.0"?>
+<robot name="room">
+  
+  <include filename="$(find unihb_lab)/defs/util_defs.xml"/>
+  <include filename="$(find unihb_lab)/Media/models/cash_register.urdf.xml"/>
+  <include filename="$(find unihb_lab)/Media/models/chair.urdf.xml"/>
+  <include filename="$(find unihb_lab)/Media/models/cnc.urdf.xml"/>
+  <include filename="$(find unihb_lab)/Media/models/test_glasses.urdf.xml"/>
+  <include filename="$(find unihb_lab)/Media/models/glasses.urdf.xml"/>
+  <include filename="$(find unihb_lab)/Media/models/wine_cooler.urdf.xml"/>
+  
+  
+  <!-- west wall -->
+  
+  <wall name="w_wall_right" xyz="2.785 4.99 1.25" sxyz="0.54 0.1 2.5" material="Gazebo/White"/>
+  <wall name="w_wall_right_window" xyz="1.415 4.99 0.2925" sxyz="2.2 0.1 0.585" material="Gazebo/White"/>
+  <wall name="w_window_right" xyz="1.415 4.99 1.5425" sxyz="2.2 0.1 1.915" material="Gazebo/BlueTransparent"/>
+  <wall name="w_wall_center" xyz="0.025 4.99 1.25" sxyz="0.58 0.1 2.5" material="Gazebo/White"/>
+  <wall name="w_wall_center_window" xyz="-1.365 4.99 0.2925" sxyz="2.2 0.1 0.585" material="Gazebo/White"/>
+  <wall name="w_window_center" xyz="-1.365 4.99 1.5425" sxyz="2.2 0.1 1.915" material="Gazebo/BlueTransparent"/>
+  <wall name="w_wall_left" xyz="-3.07025 4.99 1.25" sxyz="1.215 0.1 2.5" material="Custom/acat"/>
+  <wall name="w_wall_left_window" xyz="-4.263 4.99 0.075" sxyz="1.175 0.1 0.15" material="Gazebo/White"/>
+  <wall name="w_window_left" xyz="-4.263 4.99 1.325" sxyz="1.175 0.1 2.35" material="Gazebo/BlueTransparent"/>
+  
+  
+  <!-- east wall -->
+  
+  <wall name="e_wall_right" xyz="-5.2605 -7.08 1.25" sxyz="0.21 0.1 2.5" material="Gazebo/White"/>
+  <wall name="e_wall_right_window" xyz="-4.0705 -7.08 0.2925" sxyz="2.17 0.1 0.585" material="Gazebo/White"/>
+  <wall name="e_window_right" xyz="-4.0705 -7.08 1.5425" sxyz="2.17 0.1 1.915" material="Gazebo/BlueTransparent"/>
+  <wall name="e_wall_center_right" xyz="-2.6955 -7.08 1.25" sxyz="0.58 0.1 2.5" material="Custom/robohow"/>
+  <wall name="e_wall_center_window" xyz="-1.3205 -7.08 0.2925" sxyz="2.17 0.1 0.585" material="Gazebo/White"/>
+  <wall name="e_window_center" xyz="-1.3205 -7.08 1.5425" sxyz="2.17 0.1 1.915" material="Gazebo/BlueTransparent"/>
+  <wall name="e_wall_center_left" xyz="0.0545 -7.08 1.25" sxyz="0.58 0.1 2.5" material="Custom/roboearth2"/>
+  <wall name="e_wall_left_window" xyz="1.4395 -7.08 0.2925" sxyz="2.19 0.1 0.585" material="Gazebo/White"/>
+  <wall name="e_window_left" xyz="1.4395 -7.08 1.5425" sxyz="2.19 0.1 1.915" material="Gazebo/BlueTransparent"/>  
+  <wall name="e_wall_left" xyz="2.8 -7.08 1.25" sxyz="0.531 0.1 2.5" material="Gazebo/White"/>
+  
+  
+  <!-- north wall (left room) -->
+  
+  <wall name="n_l_wall_right" xyz="3.90 -0.055 1.25" sxyz="0.1 0.94 2.5" material="Custom/logos"/>
+  <wall name="n_l_wall_center_window" xyz="3.90 1.705 0.075" sxyz="0.1 2.58 0.15" material="Gazebo/White"/>
+  <wall name="n_l_window_center" xyz="3.90 1.705 1.325" sxyz="0.1 2.58 2.35" material="Gazebo/BlueTransparent"/>
+  <wall name="n_l_wall_left" xyz="3.90 3.57 1.25" sxyz="0.1 1.15 2.5" material="Custom/saphari"/>
+  
+  
+  
+  <!-- north wall (right room) -->
+  
+  <wall name="n_r_wall_right" xyz="3.90 -3.985 1.25" sxyz="0.1 4.5 2.5" material="Custom/unihb_tum"/>
+  <wall name="n_r_wall_center_window" xyz="3.90 -1.13 0.075" sxyz="0.1 1.21 0.15" material="Gazebo/White"/>
+  <wall name="n_r_window_center" xyz="3.90 -1.13 1.325" sxyz="0.1 1.21 2.35" material="Gazebo/BlueTransparent"/>
+
+  
+  
+  <!-- south wall (left room) -->
+  
+  <wall name="s_l_wall_right" xyz="-4.9005 4.13 1.25" sxyz="0.1 1.82 2.5" material="Gazebo/White"/>
+  <wall name="s_l_wall_v_right" xyz="-5.1655 3.27 1.25" sxyz="0.43 0.1 2.5" material="Gazebo/White"/>
+  <wall name="s_l_wall_door_right" xyz="-5.3305 3.08 1.25" sxyz="0.1 0.28 2.5" material="Gazebo/White"/>
+  <wall name="s_l_wall_door_left" xyz="-5.3305 1.74 1.25" sxyz="0.1 0.28 2.5" material="Gazebo/White"/>
+  <wall name="s_l_wall_v_left" xyz="-4.8655 1.55 1.25" sxyz="1.0 0.1 2.5" material="Gazebo/White"/>
+  
+  <wall name="s_l_wall_left" xyz="-4.3155 0.545 1.25" sxyz="0.1 2.11 2.5" material="Gazebo/White"/>
+
+  <!-- south wall (right room) -->
+  <wall name="wall_door_left" xyz="-4.3155 -1.9 1.25" sxyz="0.1 0.42 2.5" material="Gazebo/White"/>
+  <wall name="wall_v" xyz="-4.8655 -2.06 1.25" sxyz="1.0 0.1 2.5" material="Gazebo/White"/>
+  <wall name="wall_left" xyz="-5.3155 -4.57 1.25" sxyz="0.1 4.92 2.5" material="Gazebo/White"/>
+  
+  
+  <!-- pillars -->
+  
+  <pillar name="small_pillar" xyz="0 -0.3 1.25" r="0.15" />
+  <pillar name="large_pillar_1" xyz="3.85 -7.03 1.25" r="0.795" />
+  <pillar name="large_pillar_2" xyz="3.85 4.94 1.25" r="0.795" />
+  
+  
+  <!-- partition walls -->
+  
+  <wall name="partition_wall_work1" xyz="-2.1 -0.3 0.5" sxyz="4.4 0.1 1" material="Gazebo/White"/>
+  <wall name="partition_wall_work2" xyz="0 -1 0.5" sxyz="0.1 1.5 1" material="Gazebo/White"/>
+  
+  <wall name="partition_wall_shop" xyz="-0.25 -5 0.5" sxyz="0.1 4 1" material="Gazebo/White"/>
+ 
+  
+  <!-- ground -->
+  
+  <wall name="boden_kitchen" xyz="-2.65 -3.7 0.0005" sxyz="5.3 6.8 00.001" material="Ground/Blue"/>
+  <wall name="boden_shop" xyz="1.95 -4 0.0005" sxyz="3.9 6 00.001" material="Ground/Yellow"/>
+  <wall name="boden_mech" xyz="1.95 2 0.0005" sxyz="3.9 6 00.001" material="Ground/Red"/>
+  <wall name="boden_bio" xyz="-2.65 2.35 0.0005" sxyz="5.3 5.3 00.001" material="Ground/Green"/>
+  
+  
+  
+  <link name="room_link">
+    <sphere_inertia radius="0.001" mass="1"/>
+  </link>
+  
+  <!-- macro for walls -->
+  <macro name="wall" params="name xyz sxyz material">
+    
+    <joint name="${name}_joint" type="fixed">
+      <origin rpy="0 0 0" xyz="${xyz}"/>
+      <parent link="room_link"/>
+      <child link="${name}_link"/>
+    </joint>
+    
+    <link name="${name}_link">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="${sxyz}"/>
+        </geometry>
+      </visual>      
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="${sxyz}"/>
+        </geometry> 
+      </collision>
+      <inertial>
+        <mass value="1000" />
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+      </inertial>
+    </link>    
+    <gazebo reference="${name}_link">
+      <static>true</static>
+      <material>${material}</material>
+    </gazebo>
+  </macro>
+  
+  
+  <!-- macro for pillars -->
+  <macro name="pillar" params="name xyz r">
+    
+    <joint name="${name}_joint" type="fixed">
+      <origin rpy="0 0 0" xyz="${xyz}"/>
+      <parent link="room_link"/>
+      <child link="${name}_link"/>
+    </joint>
+    
+    <link name="${name}_link">  
+      <visual>
+        <geometry>
+          <cylinder length="2.5" radius="${r}"/>
+        </geometry>
+        <origin rpy="0 0 0" xyz="0 0 0"/>
+      </visual>
+      <collision>
+        <geometry>
+          <cylinder length="2.5" radius="${r}"/>
+        </geometry>
+        <origin rpy="0 0 0" xyz="0 0 0"/>
+      </collision>
+      <inertial>
+        <mass value="1000" />
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+      </inertial>
+    </link>
+    <gazebo reference="${name}_link">
+      <static>true</static>
+    </gazebo>
+  </macro>
+  
+  <gazebo>
+    <static>true</static>
+  </gazebo>
+      
+      
+      
+      
+      
+  
+  
+  
+  <!--         -->
+  <!-- Kitchen -->
+  <!--         -->
+  
+  
+  <include filename="$(find unihb_lab)/defs/ias_kitchen/furniture_defs.xml"/>
+  <include filename="$(find unihb_lab)/defs/ias_kitchen/island_block.xml"/>
+  <include filename="$(find unihb_lab)/defs/ias_kitchen/oven_block.xml"/>
+  <include filename="$(find unihb_lab)/defs/ias_kitchen/fridge_block.xml"/>
+  <include filename="$(find unihb_lab)/defs/ias_kitchen/sink_block.xml"/>
+  <include filename="$(find unihb_lab)/defs/ias_kitchen/shopping_block.xml"/>
+  <include filename="$(find unihb_lab)/defs/ias_kitchen/table.xml"/>
+  <include filename="$(find unihb_lab)/defs/ias_kitchen/small_table.xml"/>
+  <include filename="$(find unihb_lab)/defs/ias_kitchen/cuboid.xml"/>
+  
+  
+
+              
+  
+  
+  <!--            -->
+  <!-- Worktables -->
+  <!--            -->
+  
+  <!--             -->
+  <!-- cnc bereich -->
+  <!--             -->
+
+  <!--            -->
+  <!-- bio lab    -->
+  <!--            -->
+  
+<!--  <table name="bio1" parent="room" block_pos="-1.48 4.2 0" block_rpy="0 0 0" material="KitchenWhite"/>
+  <table name="bio2" parent="room" block_pos="-3.1 4.2 0" block_rpy="0 0 0" material="KitchenWhite"/>
+  <table name="bio3" parent="room" block_pos="-4.72 4.2 0" block_rpy="0 0 0" material="KitchenWhite"/>-->
+  
+<!--  <test_glasses name="glasses1" parent="room" xyz="-2.1 4.5 0.73" rpy="0 0 1.57"/>-->
+  <glasses name="glasses2" parent="room" xyz="-1.1 4.3 0.73" rpy="0 0 0"/>
+  
+</robot>
+   

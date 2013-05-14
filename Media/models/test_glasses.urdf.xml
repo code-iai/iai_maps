@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<robot name="test_glasses">
+  
+  <macro name="test_glasses" params="name parent xyz rpy">
+    
+    <link name="${parent}_${name}_test_glasses_link">    
+      <visual>
+        <geometry>
+          <mesh filename="package://unihb_lab/Media/models/meshes/test_glasses.dae" scale="0.015 0.015 0.015" />
+        </geometry>		
+        <origin rpy="0 0 0" xyz="0 0 0" />	
+      </visual>
+
+      <collision>
+        <geometry>
+          <mesh filename="package://unihb_lab/Media/models/meshes/test_glasses.dae" scale="0.015 0.015 0.015" />
+        </geometry>
+        <origin rpy="0 0 0" xyz="0 0 0" />
+      </collision>
+      
+      <inertial>
+        <mass value="100" />
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+      </inertial>
+    </link>
+    
+    <joint name="${parent}_${name}_test_glasses_joint" type="fixed">
+      <origin xyz="${xyz}" rpy="${rpy}"/>
+      <parent link="${parent}_link"/>
+      <child link="${parent}_${name}_test_glasses_link"/>
+    </joint>
+    
+  </macro>
+  
+</robot>

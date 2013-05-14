@@ -1,0 +1,601 @@
+<?xml version="1.0"?>
+<robot xmlns:sensor="http://playerstage.sourceforge.net/gazebo/xmlschema/#sensor"
+       xmlns:controller="http://playerstage.sourceforge.net/gazebo/xmlschema/#controller"
+       xmlns:interface="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface">
+  
+  <include filename="$(find unihb_lab)/defs/util_defs.xml"/>
+<!--  <include filename="$(find unihb_lab)/defs/ias_kitchen/materials.xml"/>-->
+
+  <property name="handle_thickness" value="0.015"/>
+  <property name="handle_offset" value="0.045"/>
+  <property name="handle_distance" value="0.055"/>
+
+  <!--              -->
+  <!-- Handle Macro -->
+  <!--              -->
+
+  <macro name="handle" params="parent name pos_x pos_y pos_z roll pitch yaw size_x size_y size_z">
+
+    <joint name="${parent}_${name}_joint" type="fixed">
+      <origin rpy="${roll} ${pitch} ${yaw}" xyz="${pos_x+size_x/2} ${pos_y+size_y/2} ${pos_z+size_z/2}"/>
+      <parent link="${parent}_link"/>
+      <child link="${name}_link"/>
+    </joint>
+
+    <link name="${name}_link">
+      
+      <cuboid_inertia width="${size_x - 0.005}" length="${size_y - 0.005}" height="${size_z - 0.005}" mass="0.1"/>
+
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="${size_x - 0.005} ${size_y - 0.005} ${size_z - 0.005}"/>
+        </geometry>
+	<material name="KitchenDarkGray"/>
+      </visual>
+
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="${size_x} ${size_y} ${size_z}"/>
+        </geometry>
+      </collision>
+    </link>
+    
+    <gazebo reference="${name}_link">
+      <material value="Ias/KitchenDarkGray" />
+    </gazebo>
+    
+
+  </macro>
+
+  <!--              -->
+  <!-- Drawer Macro -->
+  <!--              -->
+
+  <macro name="drawer" params="parent name pos_x pos_y pos_z roll pitch yaw size_x size_y size_z">
+    
+    <joint name="${parent}_${name}_fixed_joint" type="fixed">
+      <origin rpy="${roll} ${pitch} ${yaw}" xyz="${pos_x+size_x-0.01} ${pos_y+size_y/2} ${pos_z+size_z/2}"/>
+      <parent link="${parent}_link"/>
+      <child link="${name}_fixed_link"/>
+    </joint>
+
+    <link name="${name}_fixed_link">
+      <sphere_inertia radius="0.001" mass="1"/>
+    </link>
+
+    <joint name="${parent}_${name}_joint" type="prismatic">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <parent link="${name}_fixed_link"/>
+      <child link="${name}_link"/>
+      <axis xyz="0.999 0 0.044"/><!-- the axis needs to be slightly tilted so that the drawers would stay closed in Gazebo-->
+      <limit lower="0" upper="0.48" effort="300" velocity="10"/>
+    </joint>
+
+    <gazebo reference="${parent}_${name}_joint">
+      <erp>0.8</erp>
+      <cfm>0.0000001</cfm>
+      <stopKp>1000000.0</stopKp>
+      <stopKd>1.0</stopKd>
+    </gazebo>
+
+    <link name="${name}_link">
+
+      <cuboid_inertia width="0.02" length="${size_y}" height="${size_z}" mass="1.0"/>
+
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.02 ${size_y - 0.005} ${size_z - 0.005}"/>
+        </geometry>
+	<material name="KitchenLightGray"/>
+      </visual>
+
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.02 ${size_y} ${size_z}"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <gazebo reference="${name}_link">
+      <material value="Ias/KitchenLightGray" />
+    </gazebo>
+    
+    <joint name="${name}_left_fixed_joint" type="fixed">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <parent link="${name}_link"/>
+      <child link="${name}_left_link"/>
+    </joint>
+
+    <link name="${name}_left_link">
+      
+      <cuboid_inertia width="${size_x - 0.04}" length="0.02" height="${size_z - 0.05}" mass="1.0" />
+
+      <visual>
+        <origin xyz="${-size_x/2 + 0.02} ${-size_y/2 + 0.02 + 0.04} 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="${size_x - 0.04} 0.02 ${size_z - 0.05}"/>
+        </geometry>
+	<material name="KitchenDarkGray"/>
+      </visual>
+      <collision>
+        <origin xyz="${-size_x/2 + 0.02} ${-size_y/2 + 0.02 + 0.04} 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="${size_x - 0.04} 0.02 ${size_z - 0.05}"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <gazebo reference="${name}_left_link">
+      <material value="Ias/KitchenLightGray" />
+    </gazebo>
+    
+    <joint name="${name}_right_fixed_joint" type="fixed">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <parent link="${name}_link"/>
+      <child link="${name}_right_link"/>
+    </joint>
+
+    <link name="${name}_right_link">
+      
+      <cuboid_inertia width="${size_x - 0.04}" length="0.02" height="${size_z - 0.05}" mass="1.0" />
+      
+      <visual>
+        <origin xyz="${-size_x/2 + 0.02} ${size_y/2 - 0.02 - 0.04} 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="${size_x - 0.04} 0.02 ${size_z - 0.05}"/>
+        </geometry>
+	<material name="KitchenDarkGray"/>
+      </visual>
+      <collision>
+        <origin xyz="${-size_x/2 + 0.02} ${size_y/2 - 0.02 - 0.04} 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="${size_x - 0.04} 0.02 ${size_z - 0.05}"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <gazebo reference="${name}_right_link">
+      <material value="Ias/KitchenLightGray" />
+    </gazebo>
+    
+    <joint name="${name}_back_fixed_joint" type="fixed">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <parent link="${name}_link"/>
+      <child link="${name}_back_link"/>
+    </joint>
+    
+    <link name="${name}_back_link">
+      
+      <cuboid_inertia width="0.02" length="${size_y - 0.04 - 0.04 - 0.02}" height="${size_z - 0.05}" mass="1.0" />
+
+      <visual>
+        <origin xyz="${-size_x + 0.04} 0 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.02 ${size_y - 0.04 - 0.04 - 0.02} ${size_z - 0.05}"/>
+        </geometry>
+	<material name="KitchenDarkGray"/>
+      </visual>
+
+      <collision>
+        <origin xyz="${-size_x + 0.04} 0 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.02 ${size_y - 0.04 - 0.04 - 0.02} ${size_z - 0.05}"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <gazebo reference="${name}_back_link">
+      <material value="Ias/KitchenLightGray" />
+    </gazebo>
+    
+    <joint name="${name}_bottom_fixed_joint" type="fixed">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <parent link="${name}_link"/>
+      <child link="${name}_bottom_link"/>
+    </joint>
+    
+    <link name="${name}_bottom_link">
+
+      <cuboid_inertia width="${size_x - 0.04}" length="${size_y - 0.04 - 0.04 - 0.02}" height="0.02" mass="1.0" />
+
+      <visual>
+        <origin xyz="${-size_x/2+0.02} 0 ${-size_z/2 + 0.035}" rpy="0 0 0"/>
+        <geometry>
+          <box size="${size_x - 0.04} ${size_y - 0.04 - 0.04 - 0.02} 0.02"/>
+        </geometry>
+	<material name="KitchenDarkGray"/>
+      </visual>
+
+      <collision>
+        <origin xyz="${-size_x/2+0.02} 0 ${-size_z/2 + 0.035}" rpy="0 0 0"/>
+        <geometry>
+          <box size="${size_x - 0.04} ${size_y - 0.04 - 0.04 - 0.02} 0.02"/>
+        </geometry>
+      </collision>
+    </link>
+    
+    <gazebo reference="${name}_bottom_link">
+      <material value="Ias/KitchenLightGray" />
+    </gazebo>
+    
+    <handle
+      name="handle_${name}"
+      parent="${name}"
+      roll="0" pitch="0" yaw="0"
+      pos_x="${handle_distance}"
+      pos_y="${handle_offset - size_y/2}"
+      pos_z="${size_z/2 - handle_offset - handle_thickness}"
+      size_x="${handle_thickness}"
+      size_y="${size_y - 2*handle_offset}"
+      size_z="${handle_thickness}" />
+  </macro>
+
+  <!--                       -->
+  <!-- Drawer Vertical Macro -->
+  <!--                       -->
+
+  <macro name="drawer_vert" params="parent name pos_x pos_y pos_z roll pitch yaw size_x size_y size_z">
+
+    <joint name="${parent}_${name}_fixed_joint" type="fixed">
+      <origin rpy="${roll} ${pitch} ${yaw}" xyz="${pos_x+size_x/2} ${pos_y+size_y/2} ${pos_z+size_z/2}"/>
+      <parent link="${parent}_link"/>
+      <child link="${name}_fixed_link"/>
+    </joint>
+
+    <link name="${name}_fixed_link">
+  
+      <sphere_inertia radius="0.001" mass="0.1"/>
+    
+    </link>
+
+    <joint name="${parent}_${name}_joint" type="prismatic">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <parent link="${name}_fixed_link"/>
+      <child link="${name}_link"/>
+      <axis xyz="0.999 0 0.044"/> <!-- the axis needs to be slightly tilted so that the drawers would stay closed in Gazebo-->
+      <limit lower="0" upper="0.48" effort="300" velocity="10"/>
+    </joint>
+
+    <link name="${name}_link">
+
+      <cuboid_inertia width="${size_x - 0.005}" length="${size_y - 0.005}" height="${size_z - 0.005}" mass="1.0"/>
+
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="${size_x - 0.005} ${size_y - 0.005} ${size_z - 0.005}"/>
+        </geometry>
+	<material name="KitchenLightGray"/>
+      </visual>
+
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="${size_x} ${size_y} ${size_z}"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <gazebo reference="${name}_link">
+      <material value="Ias/KitchenLightGray" />
+    </gazebo>
+    
+    <handle
+      name="handle_${name}"
+      parent="${name}"
+      roll="0" pitch="0" yaw="0"
+      pos_x="${handle_distance + size_x/2}"
+      pos_y="${-handle_thickness/2}"
+      pos_z="${-size_z/2 + handle_offset}"
+      size_x="${handle_thickness}"
+      size_y="${handle_thickness}"
+      size_z="${size_z - 2*handle_offset}"
+    />
+
+  </macro>
+
+  <!--              -->
+  <!-- Fridge Macro -->
+  <!--              -->
+
+  <macro name="fridge" params="parent name pos_x pos_y pos_z roll pitch yaw size_x size_y size_z">
+
+    <joint name="${parent}_${name}_fixed_joint" type="fixed">
+      <origin rpy="${roll} ${pitch} ${yaw}" xyz="${pos_x+size_x} ${pos_y+size_y} ${pos_z+size_z/2}"/>
+      <parent link="${parent}_link"/>
+      <child link="${name}_fixed_link"/>
+    </joint>
+
+    <link name="${name}_fixed_link">
+
+      <sphere_inertia radius="0.001" mass="0.1"/>
+    
+    </link>
+
+    <joint name="${parent}_${name}_joint" type="revolute">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <parent link="${name}_fixed_link"/>
+      <child link="${name}_link"/>
+      <axis xyz="0 0 1"/>
+      <limit lower="0" upper="1.3" effort="300" velocity="10"/>
+    </joint>
+
+    <link name="${name}_link">
+
+      <cuboid_inertia width="${0.01 - 0.005}" length="${size_y - 0.005}" height="${size_z - 0.005}" mass="1.0"/>
+
+      <visual>
+        <origin xyz="${-0.005} ${-size_y*0.5} 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="${0.01 - 0.005} ${size_y - 0.005} ${size_z - 0.005}"/>
+        </geometry>
+	<material name="KitchenLightGray"/>
+      </visual>
+
+      <collision>
+        <origin xyz="${-0.005} ${-size_y*0.5} 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="${0.01} ${size_y} ${size_z}"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <gazebo reference="${name}_link">
+      <material value="Ias/KitchenLightGray" />
+    </gazebo>
+    
+    <handle
+      name="handle_${name}"
+      parent="${name}"
+      roll="0" pitch="0" yaw="0"
+      pos_x="${handle_distance}"
+      pos_y="${-size_y + handle_offset/2}"
+      pos_z="${-size_z/2 + handle_offset}"
+      size_x="${handle_thickness}"
+      size_y="${handle_thickness}"
+      size_z="${size_z - 2*handle_offset}"
+    />
+
+  </macro>
+
+  <!--               -->
+  <!-- Counter Macro -->
+  <!--               -->
+
+  <macro name="counter" params="parent name pos_x pos_y pos_z roll pitch yaw size_x size_y size_z">
+
+    <joint name="${parent}_${name}_joint" type="fixed">
+      <origin rpy="${roll} ${pitch} ${yaw}" xyz="${pos_x+size_x/2} ${pos_y+size_y/2} ${pos_z+size_z/2}"/>
+      <parent link="${parent}_link"/>
+      <child link="${name}_link"/>
+    </joint>
+
+    <link name="${name}_link">
+
+      <cuboid_inertia width="${size_x}" length="${size_y}" height="${size_z}" mass="2.0"/>
+
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="${size_x} ${size_y} ${size_z}"/>
+        </geometry>
+	<material name="KitchenDarkGray"/>
+      </visual>
+
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="${size_x} ${size_y} ${size_z}"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <gazebo reference="${name}_link">
+      <kp>100000</kp>
+      <kd>1000000</kd>
+      <mu1>50000</mu1>
+      <mu2>50000</mu2>
+      <material value="Ias/KitchenDarkGray" />
+    </gazebo>
+  
+  </macro>
+  
+  <!--                     -->
+  <!-- Color Counter Macro -->
+  <!--                     -->
+
+  <macro name="color_counter" params="parent name pos_x pos_y pos_z roll pitch yaw size_x size_y size_z material">
+
+    <joint name="${parent}_${name}_joint" type="fixed">
+      <origin rpy="${roll} ${pitch} ${yaw}" xyz="${pos_x+size_x/2} ${pos_y+size_y/2} ${pos_z+size_z/2}"/>
+      <parent link="${parent}_link"/>
+      <child link="${name}_link"/>
+    </joint>
+
+    <link name="${name}_link">
+
+      <cuboid_inertia width="${size_x}" length="${size_y}" height="${size_z}" mass="2.0"/>
+
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="${size_x} ${size_y} ${size_z}"/>
+        </geometry>
+	<material name="${material}"/>
+      </visual>
+
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="${size_x} ${size_y} ${size_z}"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <gazebo reference="${name}_link">
+      <kp>100000</kp>
+      <kd>1000000</kd>
+      <mu1>50000</mu1>
+      <mu2>50000</mu2>
+      <material value="Ias/${material}" />
+    </gazebo>
+  
+  </macro>
+
+  <!--                    -->
+  <!-- Counter Side Macro -->
+  <!--                    -->
+
+  <macro name="counter_side" params="parent name pos_x pos_y pos_z roll pitch yaw size_x size_y size_z">
+
+    <joint name="${parent}_${name}_joint" type="fixed">
+      <origin rpy="${roll} ${pitch} ${yaw}" xyz="${pos_x+size_x/2} ${pos_y+size_y/2} ${pos_z+size_z/2}"/>
+      <parent link="${parent}_link"/>
+      <child link="${name}_link"/>
+    </joint>
+
+    <link name="${name}_link">
+      
+      <cuboid_inertia width="${size_x}" length="${size_y}" height="${size_z}" mass="2.0"/>
+      
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="${size_x} ${size_y} ${size_z}"/>
+        </geometry>
+	<material name="KitchenDarkGray"/>
+      </visual>
+
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="${size_x} ${size_y} ${size_z}"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <gazebo reference="${name}_link">
+      <material value="Ias/KitchenDarkGray" />
+    </gazebo>
+  
+  </macro>
+
+  <!--             -->
+  <!-- Rack Macro -->
+  <!--             -->
+
+  <macro name="rack" params="parent name pos_x pos_y pos_z roll pitch yaw size_x size_y size_z">
+
+    <joint name="${parent}_${name}_joint" type="fixed">
+      <origin rpy="${roll} ${pitch} ${yaw}" xyz="${pos_x+size_x/2} ${pos_y+size_y/2} ${pos_z+size_z/2}"/>
+      <parent link="${parent}_link"/>
+      <child link="${name}_link"/>
+    </joint>
+
+    <link name="${name}_link">
+
+      <cuboid_inertia width="${size_x}" length="${size_y}" height="${size_z}" mass="${size_x*size_y*size_z}"/>
+  
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="${size_x} ${size_y} ${size_z}"/>
+        </geometry>
+	<material name="KitchenDarkGray"/>
+      </visual>
+
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="${size_x} ${size_y} ${size_z}"/>
+        </geometry>
+      </collision>
+    </link>
+    
+    <gazebo reference="${name}_link">
+      <material value="Ias/KitchenLightGray" />
+    </gazebo>
+
+  </macro>
+
+  <!--                 -->
+  <!-- Rack Side Macro -->
+  <!--                 -->
+
+  <macro name="rack_side" params="parent name pos_x pos_y pos_z roll pitch yaw size_x size_y size_z">
+
+    <joint name="${parent}_${name}_joint" type="fixed">
+      <origin rpy="${roll} ${pitch} ${yaw}" xyz="${pos_x+size_x/2} ${pos_y+size_y/2} ${pos_z+size_z/2}"/>
+      <parent link="${parent}_link"/>
+      <child link="${name}_link"/>
+    </joint>
+
+    <link name="${name}_link">
+
+      <cuboid_inertia width="${size_x}" length="${size_y}" height="${size_z}" mass="${size_x*size_y*size_z}"/>
+      
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="${size_x} ${size_y} ${size_z}"/>
+        </geometry>
+	<material name="KitchenDarkGray"/>
+      </visual>
+
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="${size_x} ${size_y} ${size_z}"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <gazebo reference="${name}_link">
+      <material value="Ias/KitchenDarkGray" />
+    </gazebo>
+  
+  </macro>
+
+  <!--                -->
+  <!-- Skirting Macro -->
+  <!--                -->
+
+  <macro name="skirting" params="parent name pos_x pos_y pos_z roll pitch yaw size_x size_y size_z">
+
+    <joint name="${parent}_${name}_joint" type="fixed">
+      <origin rpy="${roll} ${pitch} ${yaw}" xyz="${pos_x+size_x/2} ${pos_y+size_y/2} ${pos_z+size_z/2}"/>
+      <parent link="${parent}_link"/>
+      <child link="${name}_link"/>
+    </joint>
+
+    <link name="${name}_link">
+
+      <cuboid_inertia width="${size_x}" length="${size_y}" height="${size_z}" mass="10"/>
+      
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="${size_x} ${size_y} ${size_z}"/>
+        </geometry>
+	<material name="KitchenDarkGray"/>
+      </visual>
+
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="${size_x} ${size_y} ${size_z}"/>
+        </geometry>
+      </collision>
+    </link>
+    
+    <gazebo reference="${name}_link">
+      <material value="Ias/KitchenDarkGray" />
+    </gazebo>
+
+  </macro>
+
+</robot>

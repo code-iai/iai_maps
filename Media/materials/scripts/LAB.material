@@ -1,0 +1,454 @@
+material kimp.material
+{
+  receive_shadows on
+  
+  technique
+  {
+    pass 
+    {    
+      ambient 0.9 0.0 0.0 1.000000
+      diffuse 0.9 0.0 0.0 1.000000
+      specular 0.5 0.0 0.0 1.000000 
+      emissive 0.000000 0.000000 0.000000 1.000000
+      lighting on
+      shading phong
+    }    
+  }
+}
+
+
+material Ias/KitchenWallWhite
+{
+  receive_shadows on
+
+  technique
+  {
+    pass 
+    {    
+      ambient 0.9 0.9 0.9 1.000000
+      diffuse 0.9 0.9 0.9 1.000000
+      specular 0.1 0.1 0.1 1.000000 
+      emissive 0.000000 0.000000 0.000000 1.000000
+      lighting on
+      shading phong
+    }    
+  }
+}
+
+material Ias/White
+{
+  receive_shadows on
+
+  technique
+  {
+    pass 
+    {    
+      ambient 0.9 0.9 0.9 1.000000
+      diffuse 0.9 0.9 0.9 1.000000
+      specular 0.1 0.1 0.1 1.000000 
+      emissive 0.000000 0.000000 0.000000 1.000000
+      lighting on
+      shading phong
+    }    
+  }
+}
+
+material Ias/LightBrown
+{
+  receive_shadows on
+
+  technique
+  {
+    pass 
+    {    
+      ambient 0.788 0.647 0.501 1.000000
+      diffuse 0.788 0.647 0.501 1.000000
+      specular 0.1 0.1 0.1 1.000000 
+      emissive 0.000000 0.000000 0.000000 1.000000
+      lighting on
+      shading phong
+    }    
+  }
+}
+
+material Ias/LightBrown2
+{
+  receive_shadows on
+
+  technique
+  {
+    pass 
+    {    
+      ambient 0.50 0.40 0.301 1.000000
+      diffuse 0.50 0.40 0.301 1.000000
+      specular 0.1 0.1 0.1 1.000000 
+      emissive 0.000000 0.000000 0.000000 1.000000
+      lighting on
+      shading phong
+    }    
+  }
+}
+
+material Ias/KitchenWhite
+{
+  receive_shadows on
+
+  technique
+  {
+    pass 
+    {    
+      ambient 0.75 0.75 0.75 1.000000
+      diffuse 0.75 0.75 0.75 1.000000
+      specular 0.1 0.1 0.1 1.000000 
+      emissive 0.000000 0.000000 0.000000 1.000000
+      lighting on
+      shading phong
+    }    
+  }
+}
+
+material Ias/KitchenDarkGray
+{
+  receive_shadows on
+
+  technique
+  {
+    pass 
+    {    
+      ambient 0.5 0.5 0.5 1.000000
+      diffuse 0.3 0.3 0.3 1.000000
+      specular 0.003 0.003 0.003 1.000000 
+      emissive 0.000000 0.000000 0.000000 1.000000
+      lighting on
+      shading phong
+    }    
+  }
+}
+
+material Ias/KitchenBlack
+{
+  receive_shadows on
+
+  technique
+  {
+    pass 
+    {    
+      ambient 0.1 0.1 0.1 1.000000
+      diffuse 0.1 0.1 0.1 1.000000
+      specular 0.003 0.003 0.003 1.000000 
+      emissive 0.000000 0.000000 0.000000 1.000000
+      lighting on
+      shading phong
+    }    
+  }
+}
+
+material Ias/DarkGray
+{
+  receive_shadows on
+
+  technique
+  {
+    pass 
+    {    
+      ambient 0.3 0.3 0.3 1.000000
+      diffuse 0.3 0.3 0.3 1.000000
+      specular 0.003 0.003 0.003 1.000000 
+      emissive 0.000000 0.000000 0.000000 1.000000
+      lighting on
+      shading phong
+    }    
+  }
+}
+
+material Ias/KitchenLightGray
+{
+  receive_shadows on
+
+  technique
+  {
+    pass 
+    {    
+      ambient 0.6 0.6 0.6 1.000000
+      diffuse 0.5 0.5 0.5 1.000000
+      specular 0.07 0.07 0.07 1.000000 
+      emissive 0.000000 0.000000 0.000000 1.000000
+      lighting on
+      shading phong
+    }    
+  }
+}
+
+material Ias/KitchenSink
+{
+  receive_shadows on
+  
+  technique
+  {
+    pass
+    {
+      ambient 0.5 0.5 0.5 1.000000
+      
+      texture_unit
+      {
+        texture sink.png
+      }
+    }
+  }
+}
+
+material Ias/KitchenStove
+{
+  receive_shadows on
+  
+  technique
+  {
+    pass
+    {
+      ambient 0.5 0.5 0.5 1.000000
+      
+      texture_unit
+      {
+        texture stove.png
+      }
+    }
+  }
+}
+
+
+material Ground/Blue
+{
+  receive_shadows on
+  
+  technique
+  {
+    pass 
+    {    
+      ambient 0.5 0.5 0.7 1.000000
+      diffuse 0.3 0.3 0.3 1.000000
+      specular 0.003 0.003 0.003 1.000000 
+      emissive 0.000000 0.000000 0.000000 1.000000
+      lighting on
+      shading phong
+    } 
+  }
+}
+
+material Ground/Yellow
+{
+  receive_shadows on
+  
+  technique
+  {
+    pass 
+    {    
+      ambient 0.7 0.7 0.5 1.000000
+      diffuse 0.3 0.3 0.3 1.000000
+      specular 0.003 0.003 0.003 1.000000 
+      emissive 0.000000 0.000000 0.000000 1.000000
+      lighting on
+      shading phong
+    } 
+  }
+}
+
+material Ground/Red
+{
+  receive_shadows on
+  
+  technique
+  {
+    pass 
+    {    
+      ambient 0.7 0.5 0.5 1.000000
+      diffuse 0.3 0.3 0.3 1.000000
+      specular 0.003 0.003 0.003 1.000000 
+      emissive 0.000000 0.000000 0.000000 1.000000
+      lighting on
+      shading phong
+    } 
+  }
+}
+
+material Ground/Green
+{
+  receive_shadows on
+  
+  technique
+  {
+    pass 
+    {    
+      ambient 0.5 0.7 0.5 1.000000
+      diffuse 0.3 0.3 0.3 1.000000
+      specular 0.003 0.003 0.003 1.000000 
+      emissive 0.000000 0.000000 0.000000 1.000000
+      lighting on
+      shading phong
+    } 
+  }
+}
+
+
+
+
+material Custom/unihb_tum
+{
+  receive_shadows on
+  
+  technique
+  {
+    pass
+    {
+      ambient 1.5 1.5 1.5 1.5
+      
+      texture_unit
+      {
+        texture wallpaper_ai_unihb.png
+      }
+    }
+  }
+}
+
+material Custom/roboearth1
+{
+  receive_shadows on
+  
+  technique
+  {
+    pass
+    {
+      ambient 1.5 1.5 1.5 1.5
+      
+      texture_unit
+      {
+        texture auf_saeule_bei_shop.png
+      }
+    }
+  }
+}
+
+material Custom/roboearth2
+{
+  receive_shadows on
+  
+  technique
+  {
+    pass
+    {
+      ambient 1.5 1.5 1.5 1.5
+      
+      texture_unit
+      {
+        texture hinter_shopschraenken_an_saeule.png
+      }
+    }
+  }
+}
+
+material Custom/robohow
+{
+  receive_shadows on
+  
+  technique
+  {
+    pass
+    {
+      ambient 1.5 1.5 1.5 1.5
+      
+      texture_unit
+      {
+        texture ganz_rechts_neben_kuecheninsel.png
+      }
+    }
+  }
+}
+
+material Custom/sherpa
+{
+  receive_shadows on
+  
+  technique
+  {
+    pass
+    {
+      ambient 1.5 1.5 1.5 1.5
+      
+      texture_unit
+      {
+        texture mittig_neben_roboterplakat.png
+      }
+    }
+  }
+}
+
+material Custom/saphari
+{
+  receive_shadows on
+  
+  technique
+  {
+    pass
+    {
+      ambient 1.5 1.5 1.5 1.5
+      
+      texture_unit
+      {
+        texture ganz_links_neben_roboterplakat.png
+      }
+    }
+  }
+}
+
+material Custom/acat
+{
+  receive_shadows on
+  
+  technique
+  {
+    pass
+    {
+      ambient 1.5 1.5 1.5 1.5
+      
+      texture_unit
+      {
+        texture ganz_links_vorn_bei_biolab.png
+      }
+    }
+  }
+}
+
+material Custom/logos
+{
+  receive_shadows on
+  
+  technique
+  {
+    pass
+    {
+      ambient 1.5 1.5 1.5 1.5
+      
+      texture_unit
+      {
+        texture wallpaper_project_logos.png
+      }
+    }
+  }
+}
+
+material Custom/cooking_plate
+{
+  receive_shadows on
+  
+  technique
+  {
+    pass
+    {
+      ambient 0.5 0.5 0.5 1.000000
+      
+      texture_unit
+      {
+        texture cooking_plate.jpg
+      }
+    }
+  }
+}

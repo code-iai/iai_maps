@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<robot xmlns:sensor="http://playerstage.sourceforge.net/gazebo/xmlschema/#sensor"
+       xmlns:controller="http://playerstage.sourceforge.net/gazebo/xmlschema/#controller"
+       xmlns:interface="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface">
+
+  <macro name="sink_block" params="block_pos block_rpy">
+
+    <!--           -->
+    <!-- Sink Area -->
+    <!--           -->
+
+    <joint name="sink_block_sink_joint" type="fixed">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <parent link="sink_block_link"/>
+      <child link="sink_link"/>
+    </joint>
+
+    <link name="sink_link">
+
+      <cuboid_inertia width="0.5" length="0.86" height="0.005" mass="1.0"/>
+
+      <visual>
+        <origin xyz=".295 1.485 .8525" rpy="0 0 0"/>
+        <geometry>
+          <box size=".50 .86 0.005"/>
+        </geometry>
+	<material name="KitchenSink"/>
+      </visual>
+
+      <collision>
+        <origin xyz=".295 1.485 .8525" rpy="0 0 0"/>
+        <geometry>
+          <box size=".50 .86 0.005"/>
+        </geometry>
+      </collision>
+    </link>
+    
+    <gazebo reference="sink_link">
+      <material value="Ias/KitchenSink" />
+    </gazebo>
+
+    <counter_side parent="sink_block"
+      name="counter_side_sink_left"
+      pos_x="0" pos_y="0" pos_z="0"
+      roll="0" pitch="0" yaw="0"
+      size_x="0.58" size_y="0.03" size_z="0.82"
+    />
+    <counter_side parent="sink_block"
+      name="counter_side_sink_right"
+      pos_x="0" pos_y="2.03" pos_z="0"
+      roll="0" pitch="0" yaw="0"
+      size_x="0.58" size_y="0.03" size_z="0.82"
+    />
+    <counter parent="sink_block"
+      name="counter_top_sink"
+      pos_x="0" pos_y="0" pos_z="0.82"
+      roll="0" pitch="0" yaw="0"
+      size_x="0.58" size_y="2.06" size_z="0.03"
+    />
+    <color_counter parent="sink_block"
+      name="white_counter_top_sink"
+      pos_x="0" pos_y="0" pos_z="0.85"
+      roll="0" pitch="0" yaw="0"
+      size_x="0.58" size_y="2.06" size_z="0.002"
+      material="KitchenWhite"
+    />
+    <drawer parent="sink_block"
+      name="drawer_sink_col1_bottom"
+      pos_x="0" pos_y="0.03" pos_z="0.1"
+      roll="0" pitch="0" yaw="0"
+      size_x="0.58" size_y="0.8" size_z="0.29"
+    />
+    <drawer parent="sink_block"
+      name="drawer_sink_col1_center"
+      pos_x="0" pos_y="0.03" pos_z="0.39"
+      roll="0" pitch="0" yaw="0"
+      size_x="0.58" size_y="0.8" size_z="0.29"
+    />
+    <drawer parent="sink_block"
+      name="drawer_sink_col1_top"
+      pos_x="0" pos_y="0.03" pos_z="0.68"
+      roll="0" pitch="0" yaw="0"
+      size_x="0.58" size_y="0.8" size_z="0.14"
+    />
+    <drawer parent="sink_block"
+      name="drawer_sink_col2"
+      pos_x="0" pos_y="0.83" pos_z="0.1"
+      roll="0" pitch="0" yaw="0"
+      size_x="0.58" size_y="0.6" size_z="0.72"
+    />
+    <drawer parent="sink_block"
+      name="drawer_sink_col3_bottom"
+      pos_x="0" pos_y="1.43" pos_z="0.1"
+      roll="0" pitch="0" yaw="0"
+      size_x="0.58" size_y="0.6" size_z="0.58"
+    />
+    <drawer parent="sink_block"
+      name="drawer_sink_col3_top"
+      pos_x="0" pos_y="1.43" pos_z="0.68"
+      roll="0" pitch="0" yaw="0"
+      size_x="0.58" size_y="0.6" size_z="0.14"
+    />
+    <skirting parent="sink_block"
+      name="skirting_sink"
+      pos_x="0" pos_y="0.03" pos_z="0"
+      roll="0" pitch="0" yaw="0"
+      size_x="0.51" size_y="2.0" size_z="0.10"
+    />
+
+    <joint name="sink_block_joint" type="fixed">
+       <origin xyz="${block_pos}" rpy="${block_rpy}"/>
+       <parent link="kitchen_link"/>
+       <child link="sink_block_link"/>
+    </joint>
+  
+    <link name="sink_block_link">
+      
+      <sphere_inertia radius="0" mass="0"/>
+      
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <box size=".1 .1 .1" />
+        </geometry>
+      </visual>
+    </link>
+  
+  </macro>
+
+</robot>
