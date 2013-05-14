@@ -9,6 +9,15 @@
   <review status="unreviewed" notes=""/>
   <url>http://ros.org/wiki/iai_maps</url>
 
+  <depend package="comp_spatial" />
+  <depend package="comp_orgprinciples" />
+  <depend package="gazebo_msgs"/>
+  <depend package="gazebo"/>
+
+  <export>
+    <gazebo gazebo_media_path="${prefix}"/>
+  </export>
+
 </package>
 
 
