@@ -11,13 +11,15 @@
 
   <depend package="comp_spatial" />
   <depend package="comp_orgprinciples" />
-  <depend package="knowrob_cad_models"/>
-  <depend package="knowrob_cad_parser"/>
-  <depend package="gazebo_msgs"/>
-  <depend package="gazebo"/>
+  <depend package="knowrob_cad_models" />
+  <depend package="knowrob_cad_parser" />
+  <depend package="gazebo_msgs" />
+  <depend package="gazebo" />
+  <depend package="robot_state_chain_publisher" />
+  <depend package="json_prolog" />
 
   <export>
-    <gazebo gazebo_media_path="${prefix}"/>
+    <gazebo gazebo_media_path="${prefix}" />
   </export>
 
 </package>
