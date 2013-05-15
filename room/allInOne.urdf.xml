@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <robot name="room">
   
-  <include filename="$(find unihb_lab)/defs/util_defs.xml"/>
-  <include filename="$(find unihb_lab)/Media/models/cash_register.urdf.xml"/>
-  <include filename="$(find unihb_lab)/Media/models/chair.urdf.xml"/>
-  <include filename="$(find unihb_lab)/Media/models/cnc.urdf.xml"/>
-  <include filename="$(find unihb_lab)/Media/models/test_glasses.urdf.xml"/>
-  <include filename="$(find unihb_lab)/Media/models/glasses.urdf.xml"/>
-  <include filename="$(find unihb_lab)/Media/models/wine_cooler.urdf.xml"/>
+  <include filename="$(find iai_maps)/defs/util_defs.xml"/>
+  <include filename="$(find iai_maps)/Media/models/cash_register.urdf.xml"/>
+  <include filename="$(find iai_maps)/Media/models/chair.urdf.xml"/>
+  <include filename="$(find iai_maps)/Media/models/cnc.urdf.xml"/>
+  <include filename="$(find iai_maps)/Media/models/test_glasses.urdf.xml"/>
+  <include filename="$(find iai_maps)/Media/models/glasses.urdf.xml"/>
+  <include filename="$(find iai_maps)/Media/models/wine_cooler.urdf.xml"/>
   
   
   <!-- west wall -->
@@ -180,15 +180,15 @@
   <!--         -->
   
   
-  <include filename="$(find unihb_lab)/defs/ias_kitchen/furniture_defs.xml"/>
-  <include filename="$(find unihb_lab)/defs/ias_kitchen/island_block.xml"/>
-  <include filename="$(find unihb_lab)/defs/ias_kitchen/oven_block.xml"/>
-  <include filename="$(find unihb_lab)/defs/ias_kitchen/fridge_block.xml"/>
-  <include filename="$(find unihb_lab)/defs/ias_kitchen/sink_block.xml"/>
-  <include filename="$(find unihb_lab)/defs/ias_kitchen/shopping_block.xml"/>
-  <include filename="$(find unihb_lab)/defs/ias_kitchen/table.xml"/>
-  <include filename="$(find unihb_lab)/defs/ias_kitchen/small_table.xml"/>
-  <include filename="$(find unihb_lab)/defs/ias_kitchen/cuboid.xml"/>
+  <include filename="$(find iai_maps)/defs/ias_kitchen/furniture_defs.xml"/>
+  <include filename="$(find iai_maps)/defs/ias_kitchen/island_block.xml"/>
+  <include filename="$(find iai_maps)/defs/ias_kitchen/oven_block.xml"/>
+  <include filename="$(find iai_maps)/defs/ias_kitchen/fridge_block.xml"/>
+  <include filename="$(find iai_maps)/defs/ias_kitchen/sink_block.xml"/>
+  <include filename="$(find iai_maps)/defs/ias_kitchen/shopping_block.xml"/>
+  <include filename="$(find iai_maps)/defs/ias_kitchen/table.xml"/>
+  <include filename="$(find iai_maps)/defs/ias_kitchen/small_table.xml"/>
+  <include filename="$(find iai_maps)/defs/ias_kitchen/cuboid.xml"/>
   
   
   <!-- This is the top level joint /tf frame. -->

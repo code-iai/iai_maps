@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <robot name="shopping_area">
    
-  <include filename="$(find unihb_lab)/defs/util_defs.xml"/>  
-  <include filename="$(find unihb_lab)/Media/models/cash_register.urdf.xml"/>
-  <include filename="$(find unihb_lab)/Media/models/wine_cooler.urdf.xml"/>
-  <include filename="$(find unihb_lab)/defs/ias_kitchen/shopping_block.xml"/>
-  <include filename="$(find unihb_lab)/defs/ias_kitchen/table.xml"/>
-  <include filename="$(find unihb_lab)/defs/ias_kitchen/small_table.xml"/>
+  <include filename="$(find iai_maps)/defs/util_defs.xml"/>  
+  <include filename="$(find iai_maps)/Media/models/cash_register.urdf.xml"/>
+  <include filename="$(find iai_maps)/Media/models/wine_cooler.urdf.xml"/>
+  <include filename="$(find iai_maps)/defs/ias_kitchen/shopping_block.xml"/>
+  <include filename="$(find iai_maps)/defs/ias_kitchen/table.xml"/>
+  <include filename="$(find iai_maps)/defs/ias_kitchen/small_table.xml"/>
   
   
   <link name="shopping_area_link">

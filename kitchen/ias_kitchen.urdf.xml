@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
 <robot name="ias_kitchen">
 
- <include filename="$(find unihb_lab)/defs/util_defs.xml"/>
- <include filename="$(find unihb_lab)/defs/ias_kitchen/materials.xml"/>
- <include filename="$(find unihb_lab)/defs/ias_kitchen/furniture_defs.xml"/>
- <include filename="$(find unihb_lab)/defs/ias_kitchen/island_block.xml"/>
- <include filename="$(find unihb_lab)/defs/ias_kitchen/oven_block.xml"/>
- <include filename="$(find unihb_lab)/defs/ias_kitchen/fridge_block.xml"/>
- <include filename="$(find unihb_lab)/defs/ias_kitchen/sink_block.xml"/>
- <include filename="$(find unihb_lab)/defs/ias_kitchen/shopping_block.xml"/>
- <include filename="$(find unihb_lab)/defs/ias_kitchen/table.xml"/>
- <include filename="$(find unihb_lab)/defs/ias_kitchen/cuboid.xml"/>
+ <include filename="$(find iai_maps)/defs/util_defs.xml"/>
+ <include filename="$(find iai_maps)/defs/ias_kitchen/materials.xml"/>
+ <include filename="$(find iai_maps)/defs/ias_kitchen/furniture_defs.xml"/>
+ <include filename="$(find iai_maps)/defs/ias_kitchen/island_block.xml"/>
+ <include filename="$(find iai_maps)/defs/ias_kitchen/oven_block.xml"/>
+ <include filename="$(find iai_maps)/defs/ias_kitchen/fridge_block.xml"/>
+ <include filename="$(find iai_maps)/defs/ias_kitchen/sink_block.xml"/>
+ <include filename="$(find iai_maps)/defs/ias_kitchen/shopping_block.xml"/>
+ <include filename="$(find iai_maps)/defs/ias_kitchen/table.xml"/>
+ <include filename="$(find iai_maps)/defs/ias_kitchen/cuboid.xml"/>
 
   <!-- This is the top level joint /tf frame. 
        Something (like the provided launch file) should publish a transform to /map. -->
