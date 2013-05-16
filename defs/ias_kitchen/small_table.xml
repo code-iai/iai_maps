@@ -4,8 +4,8 @@ xmlns:interface="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface"
   xmlns:controller="http://playerstage.sourceforge.net/gazebo/xmlschema/#controller">
   
   
-    <include filename="$(find unihb_lab)/defs/ias_kitchen/furniture_defs.xml"/>
-    <include filename="$(find unihb_lab)/defs/util_defs.xml"/>
+    <include filename="$(find iai_maps)/defs/ias_kitchen/furniture_defs.xml"/>
+    <include filename="$(find iai_maps)/defs/util_defs.xml"/>
     
     <!--       -->
     <!-- Table -->

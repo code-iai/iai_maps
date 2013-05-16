@@ -3,8 +3,8 @@
        xmlns:controller="http://playerstage.sourceforge.net/gazebo/xmlschema/#controller"
        xmlns:interface="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface">
   
-  <include filename="$(find unihb_lab)/defs/util_defs.xml"/>
-<!--  <include filename="$(find unihb_lab)/defs/ias_kitchen/materials.xml"/>-->
+  <include filename="$(find iai_maps)/defs/util_defs.xml"/>
+<!--  <include filename="$(find iai_maps)/defs/ias_kitchen/materials.xml"/>-->
 
   <property name="handle_thickness" value="0.015"/>
   <property name="handle_offset" value="0.045"/>

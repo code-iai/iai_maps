@@ -1,21 +1,21 @@
 <?xml version="1.0"?>
 <robot name="cnc">
   
-  <include filename="$(find unihb_lab)/defs/util_defs.xml"/>  
+  <include filename="$(find iai_maps)/defs/util_defs.xml"/>  
   
   <macro name="cnc" params="name parent xyz rpy">
     
     <link name="${parent}_${name}_cnc_link">    
       <visual>
         <geometry>
-          <mesh filename="package://unihb_lab/Media/models/meshes/cnc.dae" scale="0.02 0.02 0.02" />
+          <mesh filename="package://iai_maps/Media/models/meshes/cnc.dae" scale="0.02 0.02 0.02" />
         </geometry>		
         <origin rpy="0 0 0" xyz="0 0 0" />	
       </visual>
 
       <collision>
         <geometry>
-          <mesh filename="package://unihb_lab/Media/models/meshes/cnc.dae" scale="0.02 0.02 0.02" />
+          <mesh filename="package://iai_maps/Media/models/meshes/cnc.dae" scale="0.02 0.02 0.02" />
         </geometry>
         <origin rpy="0 0 0" xyz="0 0 0" />
       </collision>

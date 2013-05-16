@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <robot name="worktables">
   
-  <include filename="$(find unihb_lab)/defs/util_defs.xml"/> 
-  <include filename="$(find unihb_lab)/defs/ias_kitchen/table.xml"/>
-<!--  <include filename="$(find unihb_lab)/Media/models/chair.urdf.xml"/>-->
+  <include filename="$(find iai_maps)/defs/util_defs.xml"/> 
+  <include filename="$(find iai_maps)/defs/ias_kitchen/table.xml"/>
+<!--  <include filename="$(find iai_maps)/Media/models/chair.urdf.xml"/>-->
 
   <link name="worktables_link">
     <sphere_inertia radius="0.001" mass="1"/>

@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <robot name="bio_area">
   
-  <include filename="$(find unihb_lab)/defs/util_defs.xml"/>  
-  <include filename="$(find unihb_lab)/Media/models/test_glasses.urdf"/>
-  <include filename="$(find unihb_lab)/Media/models/glasses.urdf"/>
-  <include filename="$(find unihb_lab)/defs/ias_kitchen/table.xml"/>
+  <include filename="$(find iai_maps)/defs/util_defs.xml"/>  
+  <include filename="$(find iai_maps)/Media/models/test_glasses.urdf"/>
+  <include filename="$(find iai_maps)/Media/models/glasses.urdf"/>
+  <include filename="$(find iai_maps)/defs/ias_kitchen/table.xml"/>
 
   
   <link name="bio_area_link">

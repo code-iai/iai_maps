@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <robot name="room">
   
-  <include filename="$(find unihb_lab)/defs/util_defs.xml"/>  
-  <include filename="$(find unihb_lab)/room/lab_macros.xml"/>
-  <include filename="$(find unihb_lab)/Media/models/glasses.urdf.xml"/>
+  <include filename="$(find iai_maps)/defs/util_defs.xml"/>  
+  <include filename="$(find iai_maps)/room/lab_macros.xml"/>
+  <include filename="$(find iai_maps)/Media/models/glasses.urdf.xml"/>
 
   
 <!--  <glasses name="glasses2" parent="room" xyz="-1.1 4.3 0.73" rpy="0 0 0"/>-->
