@@ -41,4 +41,3 @@
 
 :- use_module(library(iai_maps)).
 :- consult('iai_maps_addons').
-:- consult('semantic_map_utils').
