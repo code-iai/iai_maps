@@ -313,9 +313,9 @@
 
 
 
-    <!-- http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap0 -->
+    <!-- http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j -->
 
-    <owl:NamedIndividual rdf:about="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap0">
+    <owl:NamedIndividual rdf:about="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j">
         <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#SemanticEnvironmentMap"/>
     </owl:NamedIndividual>
 
@@ -358,7 +358,7 @@
         <knowrob:heightOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.14</knowrob:heightOfObject>
         <knowrob:depthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.8</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap0"/>
+        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
         <knowrob:prismaticallyConnectedTo rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_sinkblock_upper_handle"/>
         <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_sinkblock_upper_handle"/>
         <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_sinkblock_upper_slider"/>
@@ -460,7 +460,7 @@
         <knowrob:heightOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.29</knowrob:heightOfObject>
         <knowrob:depthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.8</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap0"/>
+        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
         <knowrob:prismaticallyConnectedTo rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_sinkblock_middle_handle"/>
         <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_sinkblock_middle_handle"/>
         <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_sinkblock_middle_slider"/>
@@ -560,7 +560,7 @@
         <knowrob:heightOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.29</knowrob:heightOfObject>
         <knowrob:depthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.8</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap0"/>
+        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
         <knowrob:prismaticallyConnectedTo rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_sinkblock_lower_handle"/>
         <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_sinkblock_lower_handle"/>
         <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_sinkblock_lower_slider"/>
@@ -660,7 +660,7 @@
         <knowrob:heightOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.72</knowrob:heightOfObject>
         <knowrob:depthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.59</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap0"/>
+        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
         <knowrob:hingedTo rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_sinkblock_dishwasher_door"/>
         <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_sinkblock_dishwasher_door"/>
         <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_sinkblock_dishwasher_hinge"/>
@@ -819,7 +819,7 @@
         <knowrob:heightOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.57</knowrob:heightOfObject>
         <knowrob:depthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.59</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap0"/>
+        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
         <knowrob:prismaticallyConnectedTo rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_sinkblock_trash_handle"/>
         <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_sinkblock_trash_handle"/>
         <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_sinkblock_trash_slider"/>
@@ -919,7 +919,7 @@
         <knowrob:heightOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.97</knowrob:heightOfObject>
         <knowrob:depthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.59</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap0"/>
+        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
         <knowrob:hingedTo rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_fridge_upper_door"/>
         <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_fridge_upper_door"/>
         <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_fridge_upper_hinge"/>
@@ -1078,7 +1078,7 @@
         <knowrob:heightOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.36</knowrob:heightOfObject>
         <knowrob:depthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.59</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap0"/>
+        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
         <knowrob:prismaticallyConnectedTo rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_fridge_lower_handle"/>
         <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_fridge_lower_handle"/>
         <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_fridge_lower_slider"/>
@@ -1178,7 +1178,7 @@
         <knowrob:heightOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.32</knowrob:heightOfObject>
         <knowrob:depthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.29</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap0"/>
+        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
         <knowrob:prismaticallyConnectedTo rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_oven_right_handle"/>
         <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_oven_right_handle"/>
         <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_oven_right_slider"/>
@@ -1278,7 +1278,7 @@
         <knowrob:heightOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.48</knowrob:heightOfObject>
         <knowrob:depthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.59</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap0"/>
+        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
         <knowrob:hingedTo rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_oven_upper_door"/>
         <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_oven_upper_door"/>
         <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_oven_upper_hinge"/>
@@ -1438,7 +1438,7 @@
         <knowrob:heightOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.14</knowrob:heightOfObject>
         <knowrob:depthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.59</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap0"/>
+        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
         <knowrob:prismaticallyConnectedTo rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_oven_middle_handle"/>
         <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_oven_middle_handle"/>
         <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_oven_middle_slider"/>
@@ -1538,7 +1538,7 @@
         <knowrob:heightOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.58</knowrob:heightOfObject>
         <knowrob:depthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.59</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap0"/>
+        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
         <knowrob:prismaticallyConnectedTo rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_oven_lower_handle"/>
         <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_oven_lower_handle"/>
         <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_oven_lower_slider"/>
@@ -1638,7 +1638,7 @@
         <knowrob:heightOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.32</knowrob:heightOfObject>
         <knowrob:depthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.29</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap0"/>
+        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
         <knowrob:prismaticallyConnectedTo rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_oven_left_handle"/>
         <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_oven_left_handle"/>
         <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_oven_left_slider"/>
@@ -1738,7 +1738,7 @@
         <knowrob:heightOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.29</knowrob:heightOfObject>
         <knowrob:depthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.6</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap0"/>
+        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
         <knowrob:prismaticallyConnectedTo rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_island_left_upper_handle"/>
         <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_island_left_upper_handle"/>
         <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_island_left_upper_slider"/>
@@ -1840,7 +1840,7 @@
         <knowrob:heightOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.29</knowrob:heightOfObject>
         <knowrob:depthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.6</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap0"/>
+        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
         <knowrob:prismaticallyConnectedTo rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_island_left_lower_handle"/>
         <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_island_left_lower_handle"/>
         <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_island_left_lower_slider"/>
@@ -1941,7 +1941,7 @@
         <knowrob:heightOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.29</knowrob:heightOfObject>
         <knowrob:depthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.99</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap0"/>
+        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
         <knowrob:prismaticallyConnectedTo rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_island_middle_upper_handle"/>
         <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_island_middle_upper_handle"/>
         <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_island_middle_upper_slider"/>
@@ -2043,7 +2043,7 @@
         <knowrob:heightOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.29</knowrob:heightOfObject>
         <knowrob:depthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.99</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap0"/>
+        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
         <knowrob:prismaticallyConnectedTo rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_island_middle_lower_handle"/>
         <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_island_middle_lower_handle"/>
         <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_island_middle_lower_slider"/>
@@ -2144,7 +2144,7 @@
         <knowrob:heightOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.29</knowrob:heightOfObject>
         <knowrob:depthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.60</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap0"/>
+        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
         <knowrob:prismaticallyConnectedTo rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_island_right_upper_handle"/>
         <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_island_right_upper_handle"/>
         <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_island_right_upper_slider"/>
@@ -2246,7 +2246,7 @@
         <knowrob:heightOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.29</knowrob:heightOfObject>
         <knowrob:depthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.60</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap0"/>
+        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
         <knowrob:prismaticallyConnectedTo rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_island_right_lower_handle"/>
         <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_island_right_lower_handle"/>
         <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_island_right_lower_slider"/>
@@ -2349,7 +2349,7 @@
         <knowrob:heightOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.9</knowrob:heightOfObject>
         <knowrob:depthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.64</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.75</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap0"/>
+        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
         <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_popcorn_table_left"/>
         <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_popcorn_table_right"/>
     </owl:NamedIndividual>
@@ -2390,7 +2390,7 @@
         <knowrob:heightOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.17</knowrob:heightOfObject>
         <knowrob:depthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.54</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.435</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap0"/>
+        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
         <knowrob:prismaticallyConnectedTo rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_popcorn_table_left_handle"/>
         <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_popcorn_table_left_handle"/>
         <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_popcorn_table_left_slider"/>
@@ -2491,7 +2491,7 @@
         <knowrob:heightOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.17</knowrob:heightOfObject>
         <knowrob:depthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.54</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.435</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap0"/>
+        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
         <knowrob:prismaticallyConnectedTo rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_popcorn_table_right_handle"/>
         <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_popcorn_table_right_handle"/>
         <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_popcorn_table_right_slider"/>
@@ -2600,7 +2600,7 @@
         <knowrob:heightOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</knowrob:heightOfObject>
         <knowrob:depthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.01</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.96</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap0"/>
+        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
     </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#SemanticMapPerception_kitchen_wall_north">
@@ -2640,7 +2640,7 @@
         <knowrob:heightOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</knowrob:heightOfObject>
         <knowrob:depthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.01</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">6.66</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap0"/>
+        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
     </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#SemanticMapPerception_kitchen_wall_west">
@@ -2680,7 +2680,7 @@
         <knowrob:heightOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.74</knowrob:heightOfObject>
         <knowrob:depthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.01</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.05</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap0"/>
+        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
     </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#SemanticMapPerception_kitchen_wall_south">
@@ -2720,7 +2720,7 @@
         <knowrob:heightOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</knowrob:heightOfObject>
         <knowrob:depthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.01</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap0"/>
+        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
     </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#SemanticMapPerception_kitchen_wall_east_1">
@@ -2759,7 +2759,7 @@
         <knowrob:heightOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.74</knowrob:heightOfObject>
         <knowrob:depthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.01</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.81</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap0"/>
+        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
     </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#SemanticMapPerception_kitchen_wall_east_2">
@@ -2797,7 +2797,7 @@
         <knowrob:depthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.58</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.6</knowrob:widthOfObject>
         <knowrob:heightOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.51</knowrob:heightOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap0"/>
+        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
         <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#kitchen_sink_block"/>
         <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_fridge_upper"/>
         <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_fridge_lower"/>
@@ -2812,7 +2812,7 @@
         <knowrob:depthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.8</knowrob:depthOfObject>
         <knowrob:heightOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.85</knowrob:heightOfObject>
         <knowrob:widthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.45</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap0"/>
+        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
         <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_island_left_upper"/>
         <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_island_left_lower"/>
         <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_island_middle_upper"/>
@@ -2829,7 +2829,7 @@
         <knowrob:depthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.8</knowrob:depthOfObject>
         <knowrob:heightOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.05</knowrob:heightOfObject>
         <knowrob:widthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.45</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap0"/>
+        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
     </owl:NamedIndividual>
 
 
@@ -2840,7 +2840,7 @@
         <knowrob:depthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.58</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.2</knowrob:widthOfObject>
         <knowrob:heightOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.51</knowrob:heightOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap0"/>
+        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
         <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_oven_right"/>
         <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_oven_upper"/>
         <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_oven_middle"/>
@@ -2857,7 +2857,7 @@
         <knowrob:depthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.58</knowrob:depthOfObject>
         <knowrob:heightOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.85</knowrob:heightOfObject>
         <knowrob:widthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.06</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap0"/>
+        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
         <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_sinkblock_upper"/>
         <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_sinkblock_middle"/>
         <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_sinkblock_lower"/>
@@ -2874,7 +2874,7 @@
         <knowrob:depthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.58</knowrob:depthOfObject>
         <knowrob:heightOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.05</knowrob:heightOfObject>
         <knowrob:widthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.06</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap0"/>
+        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
     </owl:NamedIndividual>
 
 
