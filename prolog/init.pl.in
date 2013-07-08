@@ -27,6 +27,9 @@
 :- use_module(library('semweb/rdf_edit')).
 :- use_module(library('semweb/actionmodel')).
 
+:- register_ros_package(ias_semantic_map).
+:- use_module(library('ias_semantic_map')).
+
 :- register_ros_package(knowrob_cad_models).
 :- register_ros_package(knowrob_cad_parser).
 
