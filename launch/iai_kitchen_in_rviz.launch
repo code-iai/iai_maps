@@ -1,0 +1,6 @@
+<launch>
+
+  <include file="$(find iai_maps)/launch/kitchen_with_state_publisher.launch" />
+
+  <node pkg="rviz" type="rviz" name="ias_kitchen_rviz" args="-d $(find iai_maps)/rviz_configs/iai_kitchen_only.rviz"/>
+</launch>
