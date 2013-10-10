@@ -18,11 +18,11 @@
   </material>
 
   <material name="KitchenSink">
-    <texture filename="package://ias_kitchen_defs/textures/sink.png"/>
+    <texture filename="package://iai_maps/Media/materials/textures/sink.png"/>
   </material>
 
   <material name="KitchenStove">
-    <texture filename="package://ias_kitchen_defs/textures/stove.png"/>
+    <texture filename="package://iai_maps/Media/materials/textures/stove.png"/>
   </material>
 
 </robot>
