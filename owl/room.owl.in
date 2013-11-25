@@ -410,6 +410,7 @@
         <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#SemanticMapPerception"/>
         <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#RotationMatrix3D_drawer_sinkblock_upper"/>
+        <knowrob:objectActedOn rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_sinkblock_upper_slider"/>
     </owl:NamedIndividual>
 
 
@@ -512,6 +513,7 @@
         <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#SemanticMapPerception"/>
         <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#RotationMatrix3D_drawer_sinkblock_middle"/>
+        <knowrob:objectActedOn rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_sinkblock_middle_slider"/>
     </owl:NamedIndividual>
 
 
@@ -612,6 +614,7 @@
         <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#SemanticMapPerception"/>
         <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#RotationMatrix3D_drawer_sinkblock_lower"/>
+        <knowrob:objectActedOn rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_sinkblock_lower_slider"/>
     </owl:NamedIndividual>
 
 
@@ -871,6 +874,7 @@
         <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#SemanticMapPerception"/>
         <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#RotationMatrix3D_drawer_sinkblock_trash"/>
+        <knowrob:objectActedOn rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_sinkblock_trash_slider"/>
     </owl:NamedIndividual>
 
 
@@ -1130,6 +1134,7 @@
         <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#SemanticMapPerception"/>
         <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#RotationMatrix3D_drawer_fridge_lower"/>
+        <knowrob:objectActedOn rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_fridge_lower_slider"/>
     </owl:NamedIndividual>
 
 
@@ -1230,6 +1235,7 @@
         <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#SemanticMapPerception"/>
         <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#RotationMatrix3D_drawer_oven_right"/>
+        <knowrob:objectActedOn rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_oven_right_slider"/>
     </owl:NamedIndividual>
 
 
@@ -1490,6 +1496,7 @@
         <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#SemanticMapPerception"/>
         <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#RotationMatrix3D_drawer_oven_middle"/>
+        <knowrob:objectActedOn rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_oven_middle_slider"/>
     </owl:NamedIndividual>
 
 
@@ -1590,6 +1597,7 @@
         <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#SemanticMapPerception"/>
         <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#RotationMatrix3D_drawer_oven_lower"/>
+        <knowrob:objectActedOn rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_oven_lower_slider"/>
     </owl:NamedIndividual>
 
 
@@ -1690,6 +1698,7 @@
         <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#SemanticMapPerception"/>
         <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#RotationMatrix3D_drawer_oven_left"/>
+        <knowrob:objectActedOn rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_oven_left_slider"/>
     </owl:NamedIndividual>
 
 
@@ -1790,6 +1799,7 @@
         <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#SemanticMapPerception"/>
         <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#RotationMatrix3D_drawer_island_left_upper"/>
+        <knowrob:objectActedOn rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_island_left_upper_slider"/>
     </owl:NamedIndividual>
 
 
@@ -1892,6 +1902,7 @@
         <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#SemanticMapPerception"/>
         <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#RotationMatrix3D_drawer_island_left_lower"/>
+        <knowrob:objectActedOn rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_island_left_lower_slider"/>
     </owl:NamedIndividual>
 
 
@@ -1993,6 +2004,7 @@
         <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#SemanticMapPerception"/>
         <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#RotationMatrix3D_drawer_island_middle_upper"/>
+        <knowrob:objectActedOn rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_island_middle_upper_slider"/>
     </owl:NamedIndividual>
 
 
@@ -2095,6 +2107,7 @@
         <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#SemanticMapPerception"/>
         <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#RotationMatrix3D_drawer_island_middle_lower"/>
+        <knowrob:objectActedOn rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_island_middle_lower_slider"/>
     </owl:NamedIndividual>
 
 
@@ -2196,6 +2209,7 @@
         <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#SemanticMapPerception"/>
         <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#RotationMatrix3D_drawer_island_right_upper"/>
+        <knowrob:objectActedOn rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_island_right_upper_slider"/>
     </owl:NamedIndividual>
 
 
@@ -2298,6 +2312,7 @@
         <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#SemanticMapPerception"/>
         <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#RotationMatrix3D_drawer_island_right_lower"/>
+        <knowrob:objectActedOn rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_island_right_lower_slider"/>
     </owl:NamedIndividual>
 
 
@@ -2443,6 +2458,7 @@
         <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#SemanticMapPerception"/>
         <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#RotationMatrix3D_drawer_popcorn_table_left"/>
+        <knowrob:objectActedOn rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_popcorn_table_left_slider"/>
     </owl:NamedIndividual>
 
 
@@ -2550,6 +2566,7 @@
         <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#SemanticMapPerception"/>
         <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#RotationMatrix3D_drawer_popcorn_table_right"/>
+        <knowrob:objectActedOn rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_popcorn_table_right_slider"/>
     </owl:NamedIndividual>
 
 
