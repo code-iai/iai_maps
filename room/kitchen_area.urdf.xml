@@ -38,7 +38,7 @@
   />-->
 
   <!-- Finally, the 5 main blocks of the kitchen -->
-  <island_block block_pos="-2.1 -4.94 0.01" block_rpy="-0.01 0 3.141"/>
+  <island_block block_pos="-2.1 -4.94 0" block_rpy="0 0 3.141"/>
   
   <oven_block block_pos="-5.27 -6.85 0" block_rpy="0 0 0"/>
   
