@@ -3,7 +3,6 @@
   <param name="room_description" 
     command="$(find xacro)/xacro.py '$(find iai_maps)/room/room.urdf.xml'"
   />  
-  <node name="room_description" pkg="gazebo" type="spawn_model" args="-urdf -param room_description -x 2 -y 3 -z 0.0 -R 0 -P 0.0 -Y 0 -model room_description" respawn="false" output="screen"/>
 
   <node pkg="tf" type="static_transform_publisher" name="room_link_broadcaster" 
     args="-3.45 -3.90 0 -3.141 0 0 /map /iai_lab/room_link 200">

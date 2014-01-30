@@ -3,8 +3,7 @@
   <param name="kitchen_description" 
     command="$(find xacro)/xacro.py '$(find iai_maps)/room/kitchen_area.urdf.xml'"
   />  
-  <node name="kitchen_description" pkg="gazebo" type="spawn_model" args="-urdf -param kitchen_description -x 2 -y 3 -z 0.0 -R 0 -P 0.0 -Y 0 -model kitchen_description" respawn="false" output="screen"/>
-
+  
   <node pkg="tf" type="static_transform_publisher" name="kitchen_link_broadcaster" 
     args="-3.45 -4.35 0 -3.141 0 0 /map /iai_kitchen/kitchen_link 200">
   </node>

@@ -13,16 +13,10 @@
   <depend package="comp_orgprinciples" />
   <depend package="knowrob_cad_models" />
   <depend package="knowrob_cad_parser" />
-  <depend package="gazebo_msgs" />
-  <depend package="gazebo" />
   <depend package="robot_state_chain_publisher" />
   <depend package="json_prolog" />
   <depend package="ias_semantic_map" />
   
-  <export>
-    <gazebo gazebo_media_path="${prefix}" />
-  </export>
-
 </package>
 
 
