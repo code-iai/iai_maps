@@ -2356,257 +2356,6 @@
 
 
 <!--         -->
-<!--  TABLE  -->
-<!--         -->
-
-    <owl:NamedIndividual rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#popcorn_table">
-        <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#Cupboard"/>
-        <knowrob:heightOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.9</knowrob:heightOfObject>
-        <knowrob:depthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.64</knowrob:depthOfObject>
-        <knowrob:widthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.75</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
-        <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_popcorn_table_left"/>
-        <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_popcorn_table_right"/>
-    </owl:NamedIndividual>
-
-    <owl:NamedIndividual rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#SemanticMapPerception_popcorn_table">
-        <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
-        <knowrob:eventOccursAt rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#RotationMatrix3D_popcorn_table"/>
-        <knowrob:objectActedOn rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#popcorn_table"/>
-    </owl:NamedIndividual>
-
-    <owl:NamedIndividual rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#RotationMatrix3D_popcorn_table">
-        <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#RotationMatrix3D"/>
-        <knowrob:m31 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m31>
-        <knowrob:m30 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m30>
-        <knowrob:m32 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m32>
-        <knowrob:m02 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m02>
-        <knowrob:m20 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m20>
-        <knowrob:m01 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-0.88</knowrob:m01>
-        <knowrob:m10 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.88</knowrob:m10>
-        <knowrob:m21 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m21>
-        <knowrob:m12 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m12>
-        <knowrob:m23 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.45</knowrob:m23>
-        <knowrob:m13 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-1.15</knowrob:m13>
-        <knowrob:m11 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.48</knowrob:m11>
-        <knowrob:m00 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.48</knowrob:m00>
-        <knowrob:m22 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</knowrob:m22>
-        <knowrob:m33 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</knowrob:m33>
-        <knowrob:m03 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-2.6</knowrob:m03>
-    </owl:NamedIndividual>
-
-
-
-<!-- DRAWER_POPCORN_TABLE_LEFT -->
-
-    <owl:NamedIndividual rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_popcorn_table_left">
-        <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#Drawer"/>
-        <knowrob:heightOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.17</knowrob:heightOfObject>
-        <knowrob:depthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.54</knowrob:depthOfObject>
-        <knowrob:widthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.435</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
-        <knowrob:prismaticallyConnectedTo rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_popcorn_table_left_handle"/>
-        <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_popcorn_table_left_handle"/>
-        <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_popcorn_table_left_slider"/>
-    </owl:NamedIndividual>
-
-    <owl:NamedIndividual rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#SemanticMapPerception_drawer_popcorn_table_left">
-        <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
-        <knowrob:eventOccursAt rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#RotationMatrix3D_drawer_popcorn_table_left"/>
-        <knowrob:objectActedOn rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_popcorn_table_left"/>
-    </owl:NamedIndividual>
-
-    <owl:NamedIndividual rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#RotationMatrix3D_drawer_popcorn_table_left">
-        <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#RotationMatrix3D"/>
-        <knowrob:m31 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m31>
-        <knowrob:m30 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m30>
-        <knowrob:m32 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m32>
-        <knowrob:m02 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m02>
-        <knowrob:m20 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m20>
-        <knowrob:m01 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-0.88</knowrob:m01>
-        <knowrob:m10 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.88</knowrob:m10>
-        <knowrob:m21 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m21>
-        <knowrob:m12 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m12>
-        <knowrob:m23 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.663</knowrob:m23>
-        <knowrob:m13 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-0.6225</knowrob:m13>
-        <knowrob:m11 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.48</knowrob:m11>
-        <knowrob:m00 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.48</knowrob:m00>
-        <knowrob:m22 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</knowrob:m22>
-        <knowrob:m33 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</knowrob:m33>
-        <knowrob:m03 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-2.89</knowrob:m03>
-    </owl:NamedIndividual>
-
-
-    <!-- DRAWER_POPCORN_TABLE_LEFT_SLIDER -->
-
-    <owl:NamedIndividual rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_popcorn_table_left_slider">
-        <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#PrismaticJoint"/>
-        <knowrob:heightOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:heightOfObject>
-        <knowrob:depthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:depthOfObject>
-        <knowrob:maxJointValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.48</knowrob:maxJointValue>
-        <knowrob:widthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:widthOfObject>
-        <knowrob:minJointValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:minJointValue>
-        <knowrob:connectedTo-Rigidly rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_popcorn_table_left_handle"/>
-        <knowrob:connectedTo-Rigidly rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_popcorn_table_left"/>
-        <knowrob:direction rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#VectorTable"/>
-    </owl:NamedIndividual>
-
-
-    <owl:NamedIndividual rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#SemanticMapPerception_drawer_popcorn_table_left_slider">
-        <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
-        <knowrob:eventOccursAt rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#RotationMatrix3D_drawer_popcorn_table_left"/>
-        <knowrob:objectActedOn rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_popcorn_table_left_slider"/>
-    </owl:NamedIndividual>
-
-
-    <!-- DRAWER_POPCORN_TABLE_LEFT_HANDLE -->
-
-    <owl:NamedIndividual rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_popcorn_table_left_handle">
-        <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#Handle"/>
-        <knowrob:heightOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.01</knowrob:heightOfObject>
-        <knowrob:depthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.03</knowrob:depthOfObject>
-        <knowrob:widthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.13</knowrob:widthOfObject>
-    </owl:NamedIndividual>
-
-    <owl:NamedIndividual rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#SemanticMapPerception_popcorn_table_left_handle">
-        <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
-        <knowrob:eventOccursAt rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#RotationMatrix3D_popcorn_table_left_handle"/>
-        <knowrob:objectActedOn rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_popcorn_table_left_handle"/>
-    </owl:NamedIndividual>
-
-    <owl:NamedIndividual rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#RotationMatrix3D_popcorn_table_left_handle">
-        <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#RotationMatrix3D"/>
-        <knowrob:m31 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m31>
-        <knowrob:m30 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m30>
-        <knowrob:m32 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m32>
-        <knowrob:m02 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m02>
-        <knowrob:m20 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m20>
-        <knowrob:m01 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-0.88</knowrob:m01>
-        <knowrob:m10 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.88</knowrob:m10>
-        <knowrob:m21 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m21>
-        <knowrob:m12 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m12>
-        <knowrob:m23 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.663</knowrob:m23>
-        <knowrob:m13 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-0.6225</knowrob:m13>
-        <knowrob:m11 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.48</knowrob:m11>
-        <knowrob:m00 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.48</knowrob:m00>
-        <knowrob:m22 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</knowrob:m22>
-        <knowrob:m33 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</knowrob:m33>
-        <knowrob:m03 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-3.175</knowrob:m03>
-    </owl:NamedIndividual>
-
-
-
-<!-- DRAWER_POPCORN_TABLE_RIGHT -->
-
-    <owl:NamedIndividual rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_popcorn_table_right">
-        <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#Drawer"/>
-        <knowrob:heightOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.17</knowrob:heightOfObject>
-        <knowrob:depthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.54</knowrob:depthOfObject>
-        <knowrob:widthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.435</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
-        <knowrob:prismaticallyConnectedTo rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_popcorn_table_right_handle"/>
-        <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_popcorn_table_right_handle"/>
-        <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_popcorn_table_right_slider"/>
-    </owl:NamedIndividual>
-
-    <owl:NamedIndividual rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#SemanticMapPerception_drawer_popcorn_table_right">
-        <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
-        <knowrob:eventOccursAt rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#RotationMatrix3D_drawer_popcorn_table_right"/>
-        <knowrob:objectActedOn rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_popcorn_table_right"/>
-    </owl:NamedIndividual>
-
-    <owl:NamedIndividual rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#RotationMatrix3D_drawer_popcorn_table_right">
-        <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#RotationMatrix3D"/>
-        <knowrob:m31 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m31>
-        <knowrob:m30 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m30>
-        <knowrob:m32 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m32>
-        <knowrob:m02 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m02>
-        <knowrob:m20 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m20>
-        <knowrob:m01 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-0.88</knowrob:m01>
-        <knowrob:m10 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.88</knowrob:m10>
-        <knowrob:m21 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m21>
-        <knowrob:m12 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m12>
-        <knowrob:m23 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.663</knowrob:m23>
-        <knowrob:m13 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-1.6775</knowrob:m13>
-        <knowrob:m11 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.48</knowrob:m11>
-        <knowrob:m00 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.48</knowrob:m00>
-        <knowrob:m22 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</knowrob:m22>
-        <knowrob:m33 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</knowrob:m33>
-        <knowrob:m03 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-2.89</knowrob:m03>
-    </owl:NamedIndividual>
-
-
-    <!-- DRAWER_POPCORN_TABLE_RIGHT_SLIDER -->
-
-    <owl:NamedIndividual rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_popcorn_table_right_slider">
-        <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#PrismaticJoint"/>
-        <knowrob:heightOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:heightOfObject>
-        <knowrob:depthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:depthOfObject>
-        <knowrob:maxJointValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.48</knowrob:maxJointValue>
-        <knowrob:widthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:widthOfObject>
-        <knowrob:minJointValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:minJointValue>
-        <knowrob:connectedTo-Rigidly rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_popcorn_table_right_handle"/>
-        <knowrob:connectedTo-Rigidly rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_popcorn_table_right"/>
-        <knowrob:direction rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#VectorTable"/>
-    </owl:NamedIndividual>
-
-    <owl:NamedIndividual rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#VectorTable">
-      <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#Vector"/>
-      <knowrob:vectorX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.48313</knowrob:vectorX>
-      <knowrob:vectorY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-0.875549</knowrob:vectorY>
-      <knowrob:vectorZ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:vectorZ>
-    </owl:NamedIndividual>
-
-    <owl:NamedIndividual rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#SemanticMapPerception_drawer_popcorn_table_right_slider">
-        <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
-        <knowrob:eventOccursAt rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#RotationMatrix3D_drawer_popcorn_table_right"/>
-        <knowrob:objectActedOn rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_popcorn_table_right_slider"/>
-    </owl:NamedIndividual>
-
-
-    <!-- DRAWER_POPCORN_TABLE_RIGHT_HANDLE -->
-
-    <owl:NamedIndividual rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_popcorn_table_right_handle">
-        <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#Handle"/>
-        <knowrob:heightOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.01</knowrob:heightOfObject>
-        <knowrob:depthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.03</knowrob:depthOfObject>
-        <knowrob:widthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.13</knowrob:widthOfObject>
-    </owl:NamedIndividual>
-
-    <owl:NamedIndividual rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#SemanticMapPerception_popcorn_table_right_handle">
-        <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
-        <knowrob:eventOccursAt rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#RotationMatrix3D_popcorn_table_right_handle"/>
-        <knowrob:objectActedOn rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_popcorn_table_right_handle"/>
-    </owl:NamedIndividual>
-
-    <owl:NamedIndividual rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#RotationMatrix3D_popcorn_table_right_handle">
-        <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#RotationMatrix3D"/>
-        <knowrob:m31 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m31>
-        <knowrob:m30 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m30>
-        <knowrob:m32 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m32>
-        <knowrob:m02 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m02>
-        <knowrob:m20 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m20>
-        <knowrob:m01 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-0.88</knowrob:m01>
-        <knowrob:m10 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.88</knowrob:m10>
-        <knowrob:m21 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m21>
-        <knowrob:m12 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m12>
-        <knowrob:m23 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.663</knowrob:m23>
-        <knowrob:m13 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-1.6775</knowrob:m13>
-        <knowrob:m11 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.48</knowrob:m11>
-        <knowrob:m00 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.48</knowrob:m00>
-        <knowrob:m22 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</knowrob:m22>
-        <knowrob:m33 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</knowrob:m33>
-        <knowrob:m03 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-3.175</knowrob:m03>
-    </owl:NamedIndividual>
-
-<!--         -->
 <!--  WALLS  -->
 <!--         -->
 
@@ -2836,6 +2585,44 @@
         <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_island_middle_lower"/>
         <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_island_right_upper"/>
         <knowrob:properPhysicalParts rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#drawer_island_right_lower"/>
+    </owl:NamedIndividual>
+
+
+    <!-- http://ias.cs.tum.edu/kb/knowrob.owl#pancake_table -->
+
+    <owl:NamedIndividual rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#pancake_table">
+        <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#Cupboard"/>
+        <knowrob:depthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.8</knowrob:depthOfObject>
+        <knowrob:heightOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.72</knowrob:heightOfObject>
+        <knowrob:widthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.8</knowrob:widthOfObject>
+        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#RotationMatrix3D9pancake_table">
+        <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#RotationMatrix3D"/>
+        <knowrob:m00 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-1.0</knowrob:m00>
+        <knowrob:m11 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-1.0</knowrob:m11>
+        <knowrob:m03 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-1.05289</knowrob:m03>
+        <knowrob:m01 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m01>
+        <knowrob:m32 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m32>
+        <knowrob:m10 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m10>
+        <knowrob:m21 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m21>
+        <knowrob:m30 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m30>
+        <knowrob:m12 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m12>
+        <knowrob:m20 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m20>
+        <knowrob:m02 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m02>
+        <knowrob:m31 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m31>
+        <knowrob:m23 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.36</knowrob:m23>
+        <knowrob:m33 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</knowrob:m33>
+        <knowrob:m22 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</knowrob:m22>
+        <knowrob:m13 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-0.05</knowrob:m13>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#SemanticMapPerception10asd">
+        <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#SemanticMapPerception"/>
+        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:eventOccursAt rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#RotationMatrix3D9pancake_table"/>
+        <knowrob:objectActedOn rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#pancake_table"/>
     </owl:NamedIndividual>
 
 
