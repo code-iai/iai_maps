@@ -223,7 +223,7 @@
   
   <sink_block block_pos="-5.01 -5.65 0" block_rpy="0 0 0"/>
   
-  <fridge_block block_pos="-5.125 -3.59 0" block_rpy="0 0 0"/>-->
+  <fridge_block block_pos="-5.125 -3.59 0" block_rpy="0 0 0"/>
   
   
   
@@ -274,7 +274,7 @@
   <chair name="work3_1" parent="room" xyz="0.47 0.7 0" rpy="0 0 3.1415"/>
   <chair name="work3_2" parent="room" xyz="-0.13 0.7 0" rpy="0 0 3.1415"/>
   <chair name="work4_1" parent="room" xyz="0.93 -1.35 0" rpy="0 0 1.57"/>
-  <chair name="work4_2" parent="room" xyz="0.93 -0.7 0" rpy="0 0 1.57"/>-->
+  <chair name="work4_2" parent="room" xyz="0.93 -0.7 0" rpy="0 0 1.57"/>
   
   <!--             -->
   <!-- cnc bereich -->
