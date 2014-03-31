@@ -2598,7 +2598,7 @@
         <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
     </owl:NamedIndividual>
 
-    <owl:NamedIndividual rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#RotationMatrix3D9pancake_table">
+    <owl:NamedIndividual rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#RotationMatrix3D_pancake_table">
         <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#RotationMatrix3D"/>
         <knowrob:m00 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-1.0</knowrob:m00>
         <knowrob:m11 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-1.0</knowrob:m11>
@@ -2621,7 +2621,7 @@
     <owl:NamedIndividual rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#SemanticMapPerception10asd">
         <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#SemanticMapPerception"/>
         <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
-        <knowrob:eventOccursAt rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#RotationMatrix3D9pancake_table"/>
+        <knowrob:eventOccursAt rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#RotationMatrix3D_pancake_table"/>
         <knowrob:objectActedOn rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#pancake_table"/>
     </owl:NamedIndividual>
 

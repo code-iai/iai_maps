@@ -46,7 +46,7 @@
   
   <fridge_block block_pos="-5.29 -3.59 0" block_rpy="0 0 0"/>
   
-  <table name="pancake_table" parent="kitchen" block_pos="-2.1 -4.94 0.0" block_rpy="0 0 1.57" material="KitchenWhite" />
+  <table name="pancake_table" parent="kitchen" block_pos="-2.1 -4.77 0.0" block_rpy="0 0 1.57" material="KitchenWhite" />
   
   
   <!--<table name="eating_table" parent="kitchen" block_pos="-1.7 -2.1 0" block_rpy="0 0 1.57" material="KitchenWhite"/>-->
