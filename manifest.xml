@@ -15,7 +15,7 @@
   <depend package="knowrob_cad_parser" />
   <depend package="robot_state_chain_publisher" />
   <depend package="json_prolog" />
-  <depend package="ias_semantic_map" />
+<!--   <depend package="ias_semantic_map" /> -->
   
 </package>
 
