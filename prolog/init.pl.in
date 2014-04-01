@@ -29,6 +29,7 @@
 
 % :- register_ros_package(ias_semantic_map).
 % :- use_module(library('ias_semantic_map')).
+:- use_module(library('semantic_map_utils')).
 
 :- register_ros_package(knowrob_cad_models).
 :- register_ros_package(knowrob_cad_parser).
@@ -44,3 +45,4 @@
 
 :- use_module(library(iai_maps)).
 :- consult('iai_maps_addons').
+
