@@ -1,3 +1,5 @@
 <launch>
-  <node name="map_server" pkg="map_server" type="map_server" args="$(find iai_maps)/maps/map.yaml" />
+  <!--node name="map_server" pkg="map_server" type="map_server" args="$(find iai_maps)/maps/map.yaml" /-->
+  <node name="map_server" pkg="map_server" type="map_server" args="$(find iai_maps)/maps/map3.yaml" />
+  <include file="$(find iai_maps)/launch/stp_pancake_table.launch" />
 </launch>
