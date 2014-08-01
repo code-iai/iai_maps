@@ -1,5 +1,5 @@
 <package>
-  <name>iai_semantic_maps</name>
+  <name>iai_kitchen_defs</name>
   <version>1.0.0</version>
   <description>URDF description of the kitchen laboratory of the IAI in Bremen</description>
 
