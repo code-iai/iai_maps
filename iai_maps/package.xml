@@ -1,0 +1,14 @@
+<package>
+  <name>iai_maps</name>
+  <version>1.0.0</version>
+  <description>Maps of the kitchen laboratory of the IAI in Bremen</description>
+
+  <maintainer email="winkler@cs.uni-bremen.de">Jan Winkler</maintainer>
+
+  <license>LGPL</license>
+
+  <author>Jan Winkler</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+</package>

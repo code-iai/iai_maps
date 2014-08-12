@@ -1,0 +1,17 @@
+<package>
+  <name>iai_kitchen_defs</name>
+  <version>1.0.0</version>
+  <description>URDF description of the kitchen laboratory of the IAI in Bremen</description>
+
+  <maintainer email="winkler@cs.uni-bremen.de">Jan Winkler</maintainer>
+
+  <license>LGPL</license>
+
+  <author>Jan Winkler</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>xacro</build_depend>
+  <run_depend>xacro</run_depend>
+
+</package>

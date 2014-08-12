@@ -1,0 +1,21 @@
+<package>
+  <name>iai_semantic_maps</name>
+  <version>1.0.0</version>
+  <description>Semantic maps of laboratories of the IAI in Bremen</description>
+  
+  <maintainer email="tenorth@cs.uni-bremen.de">Moritz Tenorth</maintainer>
+
+  <license>LGPL</license>
+
+  <url type="website">http://www.ros.org/wiki/knowrob_map_data</url>
+  <url type="bugtracker">https://github.com/knowrob/knowrob/issues</url>
+
+  <author>Jan Winkler</author>
+  <author>Moritz Tenorth</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>comp_spatial</build_depend>
+  <run_depend>comp_spatial</run_depend>
+
+</package>

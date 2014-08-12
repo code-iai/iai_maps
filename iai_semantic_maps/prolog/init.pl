@@ -1,5 +1,4 @@
-%%
-%% Copyright (C) 2009 by Lars Kunze, Lorenz Moesenlechner, Moritz Tenorth
+%% Copyright (C) 2013 by Moritz Tenorth, Jan Winkler
 %%
 %% This program is free software; you can redistribute it and/or modify
 %% it under the terms of the GNU General Public License as published by
@@ -13,17 +12,11 @@
 %%
 %% You should have received a copy of the GNU General Public License
 %% along with this program.  If not, see <http://www.gnu.org/licenses/>.
-%%
 
-:- use_module(library('semweb/rdfs_computable')).
-:- use_module(library('semweb/rdf_db')).
-:- use_module(library('semweb/rdfs')).
-:- use_module(library('thea/owl_parser')).
-:- use_module(library('semweb/owl')).
-:- use_module(library('semweb/rdf_edit')).
-:- use_module(library('semweb/actionmodel')).
 
-:- owl_parser:owl_parse('@LOCAL_PACKAGE_PATH@/owl/room.owl', false, false, true).
+:- register_ros_package(knowrob_map_tools).
+:- register_ros_package(knowrob_map_data).
+:- register_ros_package(iai_maps).
 
-:- rdf_db:rdf_register_ns(knowrob, 'http://ias.cs.tum.edu/kb/knowrob.owl#', [keep(true)]).
 :- rdf_db:rdf_register_ns(iai_maps, 'http://ias.cs.tum.edu/kb/room.owl#', [keep(true)]).
+

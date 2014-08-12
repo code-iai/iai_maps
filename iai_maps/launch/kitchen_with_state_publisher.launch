@@ -1,7 +1,7 @@
 <launch>
 
   <param name="kitchen_description" 
-    command="$(find xacro)/xacro.py '$(find iai_maps)/room/kitchen_area.urdf.xml'"
+    command="$(find xacro)/xacro.py '$(find iai_kitchen_defs)/room/kitchen_area.urdf.xml'"
   />  
   
   <node pkg="tf" type="static_transform_publisher" name="kitchen_link_broadcaster" 
