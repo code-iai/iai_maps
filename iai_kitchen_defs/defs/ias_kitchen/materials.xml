@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
-<robot>
+<robot
+       xmlns:xacro="http://www.ros.org/wiki/xacro">
 
   <material name="KitchenWhite">
     <color rgba="0.75 0.75 0.7 1.0"/>
@@ -18,11 +19,11 @@
   </material>
 
   <material name="KitchenSink">
-    <texture filename="package://iai_maps/Media/materials/textures/sink.png"/>
+    <texture filename="package://iai_kitchen_defs/Media/materials/textures/sink.png"/>
   </material>
 
   <material name="KitchenStove">
-    <texture filename="package://iai_maps/Media/materials/textures/stove.png"/>
+    <texture filename="package://iai_kitchen_defs/Media/materials/textures/stove.png"/>
   </material>
 
 </robot>

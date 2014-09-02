@@ -1,9 +1,10 @@
 <?xml version="1.0"?>
 <robot xmlns:sensor="http://playerstage.sourceforge.net/gazebo/xmlschema/#sensor"
        xmlns:controller="http://playerstage.sourceforge.net/gazebo/xmlschema/#controller"
-       xmlns:interface="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface">
+       xmlns:interface="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface"
+       xmlns:xacro="http://www.ros.org/wiki/xacro">
   
-  <include filename="$(find iai_maps)/defs/util_defs.xml"/>
+  <xacro:include filename="$(find iai_kitchen_defs)/defs/util_defs.xml"/>
 <!--  <include filename="$(find iai_maps)/defs/ias_kitchen/materials.xml"/>-->
 
   <property name="handle_thickness" value="0.015"/>
