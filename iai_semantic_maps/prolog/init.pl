@@ -18,5 +18,5 @@
 :- register_ros_package(knowrob_map_data).
 :- register_ros_package(iai_maps).
 
-:- rdf_db:rdf_register_ns(iai_maps, 'http://ias.cs.tum.edu/kb/room.owl#', [keep(true)]).
+:- rdf_db:rdf_register_ns(iai_maps, 'http://knowrob.org/kb/room.owl#', [keep(true)]).
 

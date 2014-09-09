@@ -2,21 +2,21 @@
 <!DOCTYPE rdf:RDF [
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
-    <!ENTITY knowrob "http://ias.cs.tum.edu/kb/knowrob.owl#" >
+    <!ENTITY knowrob "http://knowrob.org/kb/knowrob.owl#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-    <!ENTITY iai_maps "http://ias.cs.tum.edu/kb/room.owl#" >
+    <!ENTITY iai_maps "http://knowrob.org/kb/room.owl#" >
 ]>
 
-<rdf:RDF xmlns="http://ias.cs.tum.edu/kb/iai_maps_addons.owl#"
-    xml:base="http://ias.cs.tum.edu/kb/iai_maps_addons.owl"
+<rdf:RDF xmlns="http://knowrob.org/kb/iai_maps_addons.owl#"
+    xml:base="http://knowrob.org/kb/iai_maps_addons.owl"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-    xmlns:map="http://ias.cs.tum.edu/kb/iai_maps_addons.owl#"
+    xmlns:map="http://knowrob.org/kb/iai_maps_addons.owl#"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:knowrob="http://ias.cs.tum.edu/kb/knowrob.owl#">
-  <owl:Ontology rdf:about="http://ias.cs.tum.edu/kb/room.owl#">
+    xmlns:knowrob="http://knowrob.org/kb/knowrob.owl#">
+  <owl:Ontology rdf:about="http://knowrob.org/kb/room.owl#">
     <owl:imports rdf:resource="package://knowrob_common/owl/knowrob.owl"/>
   </owl:Ontology>
 
@@ -210,12 +210,12 @@
         <knowrob:heightOfObject rdf:datatype="&xsd;double">0.1</knowrob:heightOfObject>
         <knowrob:depthOfObject rdf:datatype="&xsd;double">0.1</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="&xsd;double">0.1</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap0"/>
+        <knowrob:describedInMap rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#SemanticEnvironmentMap0"/>
     </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_spatula_2VM8LmKUgp">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_spatula_2VM8LmKUgp"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;spatula_2VM8LmKUgp"/>
     </owl:NamedIndividual>
@@ -248,13 +248,13 @@
         <knowrob:heightOfObject rdf:datatype="&xsd;double">0.1</knowrob:heightOfObject>
         <knowrob:depthOfObject rdf:datatype="&xsd;double">0.1</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="&xsd;double">0.1</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap0"/>
+        <knowrob:describedInMap rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#SemanticEnvironmentMap0"/>
     </owl:NamedIndividual>
 
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_spatula_j21J4f51v9">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_spatula_j21J4f51v9"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;spatula_j21J4f51v9"/>
     </owl:NamedIndividual>
@@ -287,12 +287,12 @@
         <knowrob:heightOfObject rdf:datatype="&xsd;double">0.1</knowrob:heightOfObject>
         <knowrob:depthOfObject rdf:datatype="&xsd;double">0.1</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="&xsd;double">0.1</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap0"/>
+        <knowrob:describedInMap rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#SemanticEnvironmentMap0"/>
     </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_cup_G75K5C28Ry">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_cup_G75K5C28Ry"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;cup_G75K5C28Ry"/>
     </owl:NamedIndividual>
@@ -326,7 +326,7 @@
         <knowrob:depthOfObject rdf:datatype="&xsd;double">0.1</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="&xsd;double">0.1</knowrob:widthOfObject>
         <knowrob:heightOfObject rdf:datatype="&xsd;double">0.1</knowrob:heightOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap0"/>
+        <knowrob:describedInMap rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#SemanticEnvironmentMap0"/>
     </owl:NamedIndividual>
 
 
@@ -334,7 +334,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception4milk_Ot55666J2W">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D3milk_Ot55666J2W"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;milk_Ot55666J2W"/>
     </owl:NamedIndividual>
@@ -371,12 +371,12 @@
         <knowrob:heightOfObject rdf:datatype="&xsd;double">0.12</knowrob:heightOfObject>
         <knowrob:depthOfObject rdf:datatype="&xsd;double">0.03</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="&xsd;double">0.06</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap0"/>
+        <knowrob:describedInMap rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#SemanticEnvironmentMap0"/>
     </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_mondamin_9s8aasf675f">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_mondamin_9s8aasf675f"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;mondamin_9s8aasf675f"/>
     </owl:NamedIndividual>

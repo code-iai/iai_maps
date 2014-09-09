@@ -2,20 +2,20 @@
 <!DOCTYPE rdf:RDF [
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
-    <!ENTITY knowrob "http://ias.cs.tum.edu/kb/knowrob.owl#" >
+    <!ENTITY knowrob "http://knowrob.org/kb/knowrob.owl#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
 ]>
 
-<rdf:RDF xmlns="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#"
-    xml:base="http://ias.cs.tum.edu/kb/ias_semantic_map.owl"
+<rdf:RDF xmlns="http://knowrob.org/kb/ias_semantic_map.owl#"
+    xml:base="http://knowrob.org/kb/ias_semantic_map.owl"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-    xmlns:map="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#"
+    xmlns:map="http://knowrob.org/kb/ias_semantic_map.owl#"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:knowrob="http://ias.cs.tum.edu/kb/knowrob.owl#">
-  <owl:Ontology rdf:about="http://ias.cs.tum.edu/kb/room.owl#">
+    xmlns:knowrob="http://knowrob.org/kb/knowrob.owl#">
+  <owl:Ontology rdf:about="http://knowrob.org/kb/room.owl#">
     <owl:imports rdf:resource="package://knowrob_common/owl/knowrob.owl"/>
   </owl:Ontology>
 
@@ -308,16 +308,16 @@
 
 
 
-    <!-- http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j -->
+    <!-- http://knowrob.org/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j -->
 
-    <owl:NamedIndividual rdf:about="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j">
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j">
         <rdf:type rdf:resource="&knowrob;SemanticEnvironmentMap"/>
     </owl:NamedIndividual>
 
 
-    <!-- http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619 -->
+    <!-- http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619 -->
 
-    <owl:NamedIndividual rdf:about="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619">
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619">
         <rdf:type rdf:resource="&knowrob;TimePoint"/>
     </owl:NamedIndividual>
 
@@ -353,7 +353,7 @@
         <knowrob:heightOfObject rdf:datatype="&xsd;double">0.14</knowrob:heightOfObject>
         <knowrob:depthOfObject rdf:datatype="&xsd;double">0.5</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="&xsd;double">0.8</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
+        <knowrob:describedInMap rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
         <knowrob:prismaticallyConnectedTo rdf:resource="&knowrob;drawer_sinkblock_upper_handle"/>
         <knowrob:properPhysicalParts rdf:resource="&knowrob;drawer_sinkblock_upper_handle"/>
         <knowrob:properPhysicalParts rdf:resource="&knowrob;drawer_sinkblock_upper_slider"/>
@@ -361,7 +361,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_drawer_sinkblock_upper">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_drawer_sinkblock_upper"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;drawer_sinkblock_upper"/>
     </owl:NamedIndividual>
@@ -403,7 +403,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_drawer_sinkblock_upper_slider">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_drawer_sinkblock_upper"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;drawer_sinkblock_upper_slider"/>
     </owl:NamedIndividual>
@@ -420,7 +420,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_sinkblock_upper_handle">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_sinkblock_upper_handle"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;drawer_sinkblock_upper_handle"/>
     </owl:NamedIndividual>
@@ -456,7 +456,7 @@
         <knowrob:heightOfObject rdf:datatype="&xsd;double">0.29</knowrob:heightOfObject>
         <knowrob:depthOfObject rdf:datatype="&xsd;double">0.5</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="&xsd;double">0.8</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
+        <knowrob:describedInMap rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
         <knowrob:prismaticallyConnectedTo rdf:resource="&knowrob;drawer_sinkblock_middle_handle"/>
         <knowrob:properPhysicalParts rdf:resource="&knowrob;drawer_sinkblock_middle_handle"/>
         <knowrob:properPhysicalParts rdf:resource="&knowrob;drawer_sinkblock_middle_slider"/>
@@ -464,7 +464,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_drawer_sinkblock_middle">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_drawer_sinkblock_middle"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;drawer_sinkblock_middle"/>
     </owl:NamedIndividual>
@@ -506,7 +506,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_drawer_sinkblock_middle_slider">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_drawer_sinkblock_middle"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;drawer_sinkblock_middle_slider"/>
     </owl:NamedIndividual>
@@ -523,7 +523,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_sinkblock_middle_handle">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_sinkblock_middle_handle"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;drawer_sinkblock_middle_handle"/>
     </owl:NamedIndividual>
@@ -557,7 +557,7 @@
         <knowrob:heightOfObject rdf:datatype="&xsd;double">0.29</knowrob:heightOfObject>
         <knowrob:depthOfObject rdf:datatype="&xsd;double">0.5</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="&xsd;double">0.8</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
+        <knowrob:describedInMap rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
         <knowrob:prismaticallyConnectedTo rdf:resource="&knowrob;drawer_sinkblock_lower_handle"/>
         <knowrob:properPhysicalParts rdf:resource="&knowrob;drawer_sinkblock_lower_handle"/>
         <knowrob:properPhysicalParts rdf:resource="&knowrob;drawer_sinkblock_lower_slider"/>
@@ -565,7 +565,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_drawer_sinkblock_lower">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_drawer_sinkblock_lower"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;drawer_sinkblock_lower"/>
     </owl:NamedIndividual>
@@ -607,7 +607,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_drawer_sinkblock_lower_slider">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_drawer_sinkblock_lower"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;drawer_sinkblock_lower_slider"/>
     </owl:NamedIndividual>
@@ -624,7 +624,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_sinkblock_lower_handle">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_sinkblock_lower_handle"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;drawer_sinkblock_lower_handle"/>
     </owl:NamedIndividual>
@@ -658,7 +658,7 @@
         <knowrob:heightOfObject rdf:datatype="&xsd;double">0.72</knowrob:heightOfObject>
         <knowrob:depthOfObject rdf:datatype="&xsd;double">0.5</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="&xsd;double">0.59</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
+        <knowrob:describedInMap rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
         <knowrob:hingedTo rdf:resource="&knowrob;drawer_sinkblock_dishwasher_door"/>
         <knowrob:properPhysicalParts rdf:resource="&knowrob;drawer_sinkblock_dishwasher_door"/>
         <knowrob:properPhysicalParts rdf:resource="&knowrob;drawer_sinkblock_dishwasher_hinge"/>
@@ -666,7 +666,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_drawer_sinkblock_dishwasher">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_drawer_sinkblock_dishwasher"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;drawer_sinkblock_dishwasher"/>
     </owl:NamedIndividual>
@@ -708,7 +708,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_drawer_sinkblock_dishwasher_hinge">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;drawer_sinkblock_dishwasher_hinge"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_drawer_sinkblock_dishwasher_hinge"/>
     </owl:NamedIndividual>
@@ -746,7 +746,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_drawer_sinkblock_dishwasher_door">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;drawer_sinkblock_dishwasher_door"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_drawer_sinkblock_dishwasher_door"/>
     </owl:NamedIndividual>
@@ -783,7 +783,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_sinkblock_dishwasher_handle">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_sinkblock_dishwasher_handle"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;drawer_sinkblock_dishwasher_handle"/>
     </owl:NamedIndividual>
@@ -817,7 +817,7 @@
         <knowrob:heightOfObject rdf:datatype="&xsd;double">0.57</knowrob:heightOfObject>
         <knowrob:depthOfObject rdf:datatype="&xsd;double">0.5</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="&xsd;double">0.59</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
+        <knowrob:describedInMap rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
         <knowrob:prismaticallyConnectedTo rdf:resource="&knowrob;drawer_sinkblock_trash_handle"/>
         <knowrob:properPhysicalParts rdf:resource="&knowrob;drawer_sinkblock_trash_handle"/>
         <knowrob:properPhysicalParts rdf:resource="&knowrob;drawer_sinkblock_trash_slider"/>
@@ -825,7 +825,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_drawer_sinkblock_trash">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_drawer_sinkblock_trash"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;drawer_sinkblock_trash"/>
     </owl:NamedIndividual>
@@ -867,7 +867,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_drawer_sinkblock_trash_slider">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_drawer_sinkblock_trash"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;drawer_sinkblock_trash_slider"/>
     </owl:NamedIndividual>
@@ -884,7 +884,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_sinkblock_trash_handle">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_sinkblock_trash_handle"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;drawer_sinkblock_trash_handle"/>
     </owl:NamedIndividual>
@@ -918,7 +918,7 @@
         <knowrob:heightOfObject rdf:datatype="&xsd;double">0.97</knowrob:heightOfObject>
         <knowrob:depthOfObject rdf:datatype="&xsd;double">0.5</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="&xsd;double">0.59</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
+        <knowrob:describedInMap rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
         <knowrob:hingedTo rdf:resource="&knowrob;drawer_fridge_upper_door"/>
         <knowrob:properPhysicalParts rdf:resource="&knowrob;drawer_fridge_upper_door"/>
         <knowrob:properPhysicalParts rdf:resource="&knowrob;drawer_fridge_upper_hinge"/>
@@ -926,7 +926,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_drawer_fridge_upper">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_drawer_fridge_upper"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;drawer_fridge_upper"/>
     </owl:NamedIndividual>
@@ -968,7 +968,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_drawer_fridge_upper_hinge">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;drawer_fridge_upper_hinge"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_drawer_fridge_upper_hinge"/>
     </owl:NamedIndividual>
@@ -1006,7 +1006,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_drawer_fridge_upper_door">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;drawer_fridge_upper_door"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_drawer_fridge_upper_door"/>
     </owl:NamedIndividual>
@@ -1043,7 +1043,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_fridge_upper_handle">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_fridge_upper_handle"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;drawer_fridge_upper_handle"/>
     </owl:NamedIndividual>
@@ -1077,7 +1077,7 @@
         <knowrob:heightOfObject rdf:datatype="&xsd;double">0.36</knowrob:heightOfObject>
         <knowrob:depthOfObject rdf:datatype="&xsd;double">0.5</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="&xsd;double">0.59</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
+        <knowrob:describedInMap rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
         <knowrob:prismaticallyConnectedTo rdf:resource="&knowrob;drawer_fridge_lower_handle"/>
         <knowrob:properPhysicalParts rdf:resource="&knowrob;drawer_fridge_lower_handle"/>
         <knowrob:properPhysicalParts rdf:resource="&knowrob;drawer_fridge_lower_slider"/>
@@ -1085,7 +1085,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_drawer_fridge_lower">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_drawer_fridge_lower"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;drawer_fridge_lower"/>
     </owl:NamedIndividual>
@@ -1127,7 +1127,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_drawer_fridge_lower_slider">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_drawer_fridge_lower"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;drawer_fridge_lower_slider"/>
     </owl:NamedIndividual>
@@ -1144,7 +1144,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_fridge_lower_handle">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_fridge_lower_handle"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;drawer_fridge_lower_handle"/>
     </owl:NamedIndividual>
@@ -1178,7 +1178,7 @@
         <knowrob:heightOfObject rdf:datatype="&xsd;double">1.32</knowrob:heightOfObject>
         <knowrob:depthOfObject rdf:datatype="&xsd;double">0.5</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="&xsd;double">0.29</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
+        <knowrob:describedInMap rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
         <knowrob:prismaticallyConnectedTo rdf:resource="&knowrob;drawer_oven_right_handle"/>
         <knowrob:properPhysicalParts rdf:resource="&knowrob;drawer_oven_right_handle"/>
         <knowrob:properPhysicalParts rdf:resource="&knowrob;drawer_oven_right_slider"/>
@@ -1186,7 +1186,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_drawer_oven_right">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_drawer_oven_right"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;drawer_oven_right"/>
     </owl:NamedIndividual>
@@ -1228,7 +1228,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_drawer_oven_right_slider">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_drawer_oven_right"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;drawer_oven_right_slider"/>
     </owl:NamedIndividual>
@@ -1245,7 +1245,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_oven_right_handle">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_oven_right_handle"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;drawer_oven_right_handle"/>
     </owl:NamedIndividual>
@@ -1279,7 +1279,7 @@
         <knowrob:heightOfObject rdf:datatype="&xsd;double">0.48</knowrob:heightOfObject>
         <knowrob:depthOfObject rdf:datatype="&xsd;double">0.5</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="&xsd;double">0.59</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
+        <knowrob:describedInMap rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
         <knowrob:hingedTo rdf:resource="&knowrob;drawer_oven_upper_door"/>
         <knowrob:properPhysicalParts rdf:resource="&knowrob;drawer_oven_upper_door"/>
         <knowrob:properPhysicalParts rdf:resource="&knowrob;drawer_oven_upper_hinge"/>
@@ -1287,7 +1287,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_drawer_oven_upper">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_drawer_oven_upper"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;drawer_oven_upper"/>
     </owl:NamedIndividual>
@@ -1329,7 +1329,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_drawer_oven_upper_hinge">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;drawer_oven_upper_hinge"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_drawer_oven_upper_hinge"/>
     </owl:NamedIndividual>
@@ -1367,7 +1367,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_drawer_oven_upper_door">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;drawer_oven_upper_door"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_drawer_oven_upper_door"/>
     </owl:NamedIndividual>
@@ -1404,7 +1404,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_oven_upper_handle">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_oven_upper_handle"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;drawer_oven_upper_handle"/>
     </owl:NamedIndividual>
@@ -1439,7 +1439,7 @@
         <knowrob:heightOfObject rdf:datatype="&xsd;double">0.14</knowrob:heightOfObject>
         <knowrob:depthOfObject rdf:datatype="&xsd;double">0.5</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="&xsd;double">0.59</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
+        <knowrob:describedInMap rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
         <knowrob:prismaticallyConnectedTo rdf:resource="&knowrob;drawer_oven_middle_handle"/>
         <knowrob:properPhysicalParts rdf:resource="&knowrob;drawer_oven_middle_handle"/>
         <knowrob:properPhysicalParts rdf:resource="&knowrob;drawer_oven_middle_slider"/>
@@ -1447,7 +1447,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_drawer_oven_middle">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_drawer_oven_middle"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;drawer_oven_middle"/>
     </owl:NamedIndividual>
@@ -1489,7 +1489,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_drawer_oven_middle_slider">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_drawer_oven_middle"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;drawer_oven_middle_slider"/>
     </owl:NamedIndividual>
@@ -1506,7 +1506,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_oven_middle_handle">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_oven_middle_handle"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;drawer_oven_middle_handle"/>
     </owl:NamedIndividual>
@@ -1540,7 +1540,7 @@
         <knowrob:heightOfObject rdf:datatype="&xsd;double">0.58</knowrob:heightOfObject>
         <knowrob:depthOfObject rdf:datatype="&xsd;double">0.5</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="&xsd;double">0.59</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
+        <knowrob:describedInMap rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
         <knowrob:prismaticallyConnectedTo rdf:resource="&knowrob;drawer_oven_lower_handle"/>
         <knowrob:properPhysicalParts rdf:resource="&knowrob;drawer_oven_lower_handle"/>
         <knowrob:properPhysicalParts rdf:resource="&knowrob;drawer_oven_lower_slider"/>
@@ -1548,7 +1548,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_drawer_oven_lower">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_drawer_oven_lower"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;drawer_oven_lower"/>
     </owl:NamedIndividual>
@@ -1590,7 +1590,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_drawer_oven_lower_slider">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_drawer_oven_lower"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;drawer_oven_lower_slider"/>
     </owl:NamedIndividual>
@@ -1607,7 +1607,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_oven_lower_handle">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_oven_lower_handle"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;drawer_oven_lower_handle"/>
     </owl:NamedIndividual>
@@ -1641,7 +1641,7 @@
         <knowrob:heightOfObject rdf:datatype="&xsd;double">1.32</knowrob:heightOfObject>
         <knowrob:depthOfObject rdf:datatype="&xsd;double">0.5</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="&xsd;double">0.29</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
+        <knowrob:describedInMap rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
         <knowrob:prismaticallyConnectedTo rdf:resource="&knowrob;drawer_oven_left_handle"/>
         <knowrob:properPhysicalParts rdf:resource="&knowrob;drawer_oven_left_handle"/>
         <knowrob:properPhysicalParts rdf:resource="&knowrob;drawer_oven_left_slider"/>
@@ -1649,7 +1649,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_drawer_oven_left">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_drawer_oven_left"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;drawer_oven_left"/>
     </owl:NamedIndividual>
@@ -1691,7 +1691,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_drawer_oven_left_slider">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_drawer_oven_left"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;drawer_oven_left_slider"/>
     </owl:NamedIndividual>
@@ -1708,7 +1708,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_oven_left_handle">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_oven_left_handle"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;drawer_oven_left_handle"/>
     </owl:NamedIndividual>
@@ -1742,7 +1742,7 @@
         <knowrob:heightOfObject rdf:datatype="&xsd;double">0.29</knowrob:heightOfObject>
         <knowrob:depthOfObject rdf:datatype="&xsd;double">0.5</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="&xsd;double">0.6</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
+        <knowrob:describedInMap rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
         <knowrob:prismaticallyConnectedTo rdf:resource="&knowrob;drawer_island_left_upper_handle"/>
         <knowrob:properPhysicalParts rdf:resource="&knowrob;drawer_island_left_upper_handle"/>
         <knowrob:properPhysicalParts rdf:resource="&knowrob;drawer_island_left_upper_slider"/>
@@ -1750,7 +1750,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_drawer_island_left_upper">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_drawer_island_left_upper"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;drawer_island_left_upper"/>
     </owl:NamedIndividual>
@@ -1792,7 +1792,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_drawer_island_left_upper_slider">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_drawer_island_left_upper"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;drawer_island_left_upper_slider"/>
     </owl:NamedIndividual>
@@ -1809,7 +1809,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_island_left_upper_handle">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_island_left_upper_handle"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;drawer_island_left_upper_handle"/>
     </owl:NamedIndividual>
@@ -1845,7 +1845,7 @@
         <knowrob:heightOfObject rdf:datatype="&xsd;double">0.29</knowrob:heightOfObject>
         <knowrob:depthOfObject rdf:datatype="&xsd;double">0.5</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="&xsd;double">0.6</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
+        <knowrob:describedInMap rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
         <knowrob:prismaticallyConnectedTo rdf:resource="&knowrob;drawer_island_left_lower_handle"/>
         <knowrob:properPhysicalParts rdf:resource="&knowrob;drawer_island_left_lower_handle"/>
         <knowrob:properPhysicalParts rdf:resource="&knowrob;drawer_island_left_lower_slider"/>
@@ -1853,7 +1853,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_drawer_island_left_lower">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_drawer_island_left_lower"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;drawer_island_left_lower"/>
     </owl:NamedIndividual>
@@ -1895,7 +1895,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_drawer_island_left_lower_slider">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_drawer_island_left_lower"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;drawer_island_left_lower_slider"/>
     </owl:NamedIndividual>
@@ -1912,7 +1912,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_island_left_lower_handle">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_island_left_lower_handle"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;drawer_island_left_lower_handle"/>
     </owl:NamedIndividual>
@@ -1947,7 +1947,7 @@
         <knowrob:heightOfObject rdf:datatype="&xsd;double">0.29</knowrob:heightOfObject>
         <knowrob:depthOfObject rdf:datatype="&xsd;double">0.5</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="&xsd;double">0.99</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
+        <knowrob:describedInMap rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
         <knowrob:prismaticallyConnectedTo rdf:resource="&knowrob;drawer_island_middle_upper_handle"/>
         <knowrob:properPhysicalParts rdf:resource="&knowrob;drawer_island_middle_upper_handle"/>
         <knowrob:properPhysicalParts rdf:resource="&knowrob;drawer_island_middle_upper_slider"/>
@@ -1955,7 +1955,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_drawer_island_middle_upper">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_drawer_island_middle_upper"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;drawer_island_middle_upper"/>
     </owl:NamedIndividual>
@@ -1997,7 +1997,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_drawer_island_middle_upper_slider">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_drawer_island_middle_upper"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;drawer_island_middle_upper_slider"/>
     </owl:NamedIndividual>
@@ -2014,7 +2014,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_island_middle_upper_handle">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_island_middle_upper_handle"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;drawer_island_middle_upper_handle"/>
     </owl:NamedIndividual>
@@ -2050,7 +2050,7 @@
         <knowrob:heightOfObject rdf:datatype="&xsd;double">0.29</knowrob:heightOfObject>
         <knowrob:depthOfObject rdf:datatype="&xsd;double">0.5</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="&xsd;double">0.99</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
+        <knowrob:describedInMap rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
         <knowrob:prismaticallyConnectedTo rdf:resource="&knowrob;drawer_island_middle_lower_handle"/>
         <knowrob:properPhysicalParts rdf:resource="&knowrob;drawer_island_middle_lower_handle"/>
         <knowrob:properPhysicalParts rdf:resource="&knowrob;drawer_island_middle_lower_slider"/>
@@ -2058,7 +2058,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_drawer_island_middle_lower">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_drawer_island_middle_lower"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;drawer_island_middle_lower"/>
     </owl:NamedIndividual>
@@ -2100,7 +2100,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_drawer_island_middle_lower_slider">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_drawer_island_middle_lower"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;drawer_island_middle_lower_slider"/>
     </owl:NamedIndividual>
@@ -2117,7 +2117,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_island_middle_lower_handle">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_island_middle_lower_handle"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;drawer_island_middle_lower_handle"/>
     </owl:NamedIndividual>
@@ -2152,7 +2152,7 @@
         <knowrob:heightOfObject rdf:datatype="&xsd;double">0.29</knowrob:heightOfObject>
         <knowrob:depthOfObject rdf:datatype="&xsd;double">0.5</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="&xsd;double">0.60</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
+        <knowrob:describedInMap rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
         <knowrob:prismaticallyConnectedTo rdf:resource="&knowrob;drawer_island_right_upper_handle"/>
         <knowrob:properPhysicalParts rdf:resource="&knowrob;drawer_island_right_upper_handle"/>
         <knowrob:properPhysicalParts rdf:resource="&knowrob;drawer_island_right_upper_slider"/>
@@ -2160,7 +2160,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_drawer_island_right_upper">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_drawer_island_right_upper"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;drawer_island_right_upper"/>
     </owl:NamedIndividual>
@@ -2202,7 +2202,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_drawer_island_right_upper_slider">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_drawer_island_right_upper"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;drawer_island_right_upper_slider"/>
     </owl:NamedIndividual>
@@ -2219,7 +2219,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_island_right_upper_handle">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_island_right_upper_handle"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;drawer_island_right_upper_handle"/>
     </owl:NamedIndividual>
@@ -2255,7 +2255,7 @@
         <knowrob:heightOfObject rdf:datatype="&xsd;double">0.29</knowrob:heightOfObject>
         <knowrob:depthOfObject rdf:datatype="&xsd;double">0.5</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="&xsd;double">0.60</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
+        <knowrob:describedInMap rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
         <knowrob:prismaticallyConnectedTo rdf:resource="&knowrob;drawer_island_right_lower_handle"/>
         <knowrob:properPhysicalParts rdf:resource="&knowrob;drawer_island_right_lower_handle"/>
         <knowrob:properPhysicalParts rdf:resource="&knowrob;drawer_island_right_lower_slider"/>
@@ -2263,7 +2263,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_drawer_island_right_lower">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_drawer_island_right_lower"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;drawer_island_right_lower"/>
     </owl:NamedIndividual>
@@ -2305,7 +2305,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_drawer_island_right_lower_slider">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_drawer_island_right_lower"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;drawer_island_right_lower_slider"/>
     </owl:NamedIndividual>
@@ -2322,7 +2322,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_island_right_lower_handle">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_island_right_lower_handle"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;drawer_island_right_lower_handle"/>
     </owl:NamedIndividual>
@@ -2361,12 +2361,12 @@
         <knowrob:heightOfObject rdf:datatype="&xsd;double">2.0</knowrob:heightOfObject>
         <knowrob:depthOfObject rdf:datatype="&xsd;double">0.01</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="&xsd;double">4.96</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
+        <knowrob:describedInMap rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
     </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_kitchen_wall_north">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_kitchen_wall_north"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;kitchen_wall_north"/>
     </owl:NamedIndividual>
@@ -2401,12 +2401,12 @@
         <knowrob:heightOfObject rdf:datatype="&xsd;double">2.0</knowrob:heightOfObject>
         <knowrob:depthOfObject rdf:datatype="&xsd;double">0.01</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="&xsd;double">6.66</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
+        <knowrob:describedInMap rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
     </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_kitchen_wall_west">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_kitchen_wall_west"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;kitchen_wall_west"/>
     </owl:NamedIndividual>
@@ -2441,12 +2441,12 @@
         <knowrob:heightOfObject rdf:datatype="&xsd;double">0.74</knowrob:heightOfObject>
         <knowrob:depthOfObject rdf:datatype="&xsd;double">0.01</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="&xsd;double">4.05</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
+        <knowrob:describedInMap rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
     </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_kitchen_wall_south">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_kitchen_wall_south"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;kitchen_wall_south"/>
     </owl:NamedIndividual>
@@ -2481,12 +2481,12 @@
         <knowrob:heightOfObject rdf:datatype="&xsd;double">2.0</knowrob:heightOfObject>
         <knowrob:depthOfObject rdf:datatype="&xsd;double">0.01</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="&xsd;double">1.0</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
+        <knowrob:describedInMap rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
     </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_kitchen_wall_east_1">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_kitchen_wall_east_1"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;kitchen_wall_east_1"/>
     </owl:NamedIndividual>
@@ -2520,12 +2520,12 @@
         <knowrob:heightOfObject rdf:datatype="&xsd;double">0.74</knowrob:heightOfObject>
         <knowrob:depthOfObject rdf:datatype="&xsd;double">0.01</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="&xsd;double">4.81</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
+        <knowrob:describedInMap rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
     </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_kitchen_wall_east_2">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_kitchen_wall_east_2"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;kitchen_wall_east_2"/>
     </owl:NamedIndividual>
@@ -2558,7 +2558,7 @@
         <knowrob:depthOfObject rdf:datatype="&xsd;double">0.58</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="&xsd;double">0.6</knowrob:widthOfObject>
         <knowrob:heightOfObject rdf:datatype="&xsd;double">1.51</knowrob:heightOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
+        <knowrob:describedInMap rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
         <knowrob:properPhysicalParts rdf:resource="&knowrob;kitchen_sink_block"/>
         <knowrob:properPhysicalParts rdf:resource="&knowrob;drawer_fridge_upper"/>
         <knowrob:properPhysicalParts rdf:resource="&knowrob;drawer_fridge_lower"/>
@@ -2573,7 +2573,7 @@
         <knowrob:depthOfObject rdf:datatype="&xsd;double">0.8</knowrob:depthOfObject>
         <knowrob:heightOfObject rdf:datatype="&xsd;double">0.85</knowrob:heightOfObject>
         <knowrob:widthOfObject rdf:datatype="&xsd;double">2.45</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
+        <knowrob:describedInMap rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
         <knowrob:properPhysicalParts rdf:resource="&knowrob;drawer_island_left_upper"/>
         <knowrob:properPhysicalParts rdf:resource="&knowrob;drawer_island_left_lower"/>
         <knowrob:properPhysicalParts rdf:resource="&knowrob;drawer_island_middle_upper"/>
@@ -2590,7 +2590,7 @@
         <knowrob:depthOfObject rdf:datatype="&xsd;double">0.8</knowrob:depthOfObject>
         <knowrob:heightOfObject rdf:datatype="&xsd;double">0.72</knowrob:heightOfObject>
         <knowrob:widthOfObject rdf:datatype="&xsd;double">1.6</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
+        <knowrob:describedInMap rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
     </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="&knowrob;RotationMatrix3D_pancake_table">
@@ -2615,7 +2615,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception10asd">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D_pancake_table"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;pancake_table"/>
     </owl:NamedIndividual>
@@ -2628,7 +2628,7 @@
         <knowrob:depthOfObject rdf:datatype="&xsd;double">0.8</knowrob:depthOfObject>
         <knowrob:heightOfObject rdf:datatype="&xsd;double">0.05</knowrob:heightOfObject>
         <knowrob:widthOfObject rdf:datatype="&xsd;double">2.45</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
+        <knowrob:describedInMap rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
     </owl:NamedIndividual>
 
 
@@ -2639,7 +2639,7 @@
         <knowrob:depthOfObject rdf:datatype="&xsd;double">0.58</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="&xsd;double">1.2</knowrob:widthOfObject>
         <knowrob:heightOfObject rdf:datatype="&xsd;double">1.51</knowrob:heightOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
+        <knowrob:describedInMap rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
         <knowrob:properPhysicalParts rdf:resource="&knowrob;drawer_oven_right"/>
         <knowrob:properPhysicalParts rdf:resource="&knowrob;drawer_oven_upper"/>
         <knowrob:properPhysicalParts rdf:resource="&knowrob;drawer_oven_middle"/>
@@ -2656,7 +2656,7 @@
         <knowrob:depthOfObject rdf:datatype="&xsd;double">0.58</knowrob:depthOfObject>
         <knowrob:heightOfObject rdf:datatype="&xsd;double">0.85</knowrob:heightOfObject>
         <knowrob:widthOfObject rdf:datatype="&xsd;double">2.06</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
+        <knowrob:describedInMap rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
         <knowrob:properPhysicalParts rdf:resource="&knowrob;drawer_sinkblock_upper"/>
         <knowrob:properPhysicalParts rdf:resource="&knowrob;drawer_sinkblock_middle"/>
         <knowrob:properPhysicalParts rdf:resource="&knowrob;drawer_sinkblock_lower"/>
@@ -2673,7 +2673,7 @@
         <knowrob:depthOfObject rdf:datatype="&xsd;double">0.58</knowrob:depthOfObject>
         <knowrob:heightOfObject rdf:datatype="&xsd;double">0.05</knowrob:heightOfObject>
         <knowrob:widthOfObject rdf:datatype="&xsd;double">2.06</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
+        <knowrob:describedInMap rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
     </owl:NamedIndividual>
 
 
@@ -2823,7 +2823,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception10">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D9kitchen_island"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;kitchen_island"/>
     </owl:NamedIndividual>
@@ -2833,7 +2833,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception10kitchen_island_counter_top">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D9kitchen_island_counter_top"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;kitchen_island_counter_top"/>
     </owl:NamedIndividual>
@@ -2844,7 +2844,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception12">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D11kitchen_sink_block"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;kitchen_sink_block"/>
     </owl:NamedIndividual>
@@ -2855,7 +2855,7 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception12kitchen_sink_block_counter_top">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D11kitchen_sink_block_counter_top"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;kitchen_sink_block_counter_top"/>
     </owl:NamedIndividual>
@@ -2866,7 +2866,7 @@
 
 <!--    <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception2">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D1kitchen_oven_block"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;kitchen_oven_block"/>
     </owl:NamedIndividual>-->
@@ -2877,7 +2877,7 @@
 
 <!--    <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception4">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:startTime rdf:resource="http://ias.cs.tum.edu/kb/ias_semantic_map.owl#timepoint_1361536619"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_1361536619"/>
         <knowrob:eventOccursAt rdf:resource="&knowrob;RotationMatrix3D3kitchen_fridge_block"/>
         <knowrob:objectActedOn rdf:resource="&knowrob;kitchen_fridge_block"/>
     </owl:NamedIndividual> -->
