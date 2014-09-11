@@ -2357,7 +2357,7 @@
 
 
      <owl:NamedIndividual rdf:about="&knowrob;kitchen_wall_north">
-        <rdf:type rdf:resource="&knowrob;Cupboard"/>
+        <rdf:type rdf:resource="&knowrob;Wall"/>
         <knowrob:heightOfObject rdf:datatype="&xsd;double">2.0</knowrob:heightOfObject>
         <knowrob:depthOfObject rdf:datatype="&xsd;double">0.01</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="&xsd;double">4.96</knowrob:widthOfObject>
@@ -2397,7 +2397,7 @@
 
 
     <owl:NamedIndividual rdf:about="&knowrob;kitchen_wall_west">
-        <rdf:type rdf:resource="&knowrob;Cupboard"/>
+        <rdf:type rdf:resource="&knowrob;Wall"/>
         <knowrob:heightOfObject rdf:datatype="&xsd;double">2.0</knowrob:heightOfObject>
         <knowrob:depthOfObject rdf:datatype="&xsd;double">0.01</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="&xsd;double">6.66</knowrob:widthOfObject>
@@ -2437,7 +2437,7 @@
 
 
      <owl:NamedIndividual rdf:about="&knowrob;kitchen_wall_south">
-        <rdf:type rdf:resource="&knowrob;Cupboard"/>
+        <rdf:type rdf:resource="&knowrob;Wall"/>
         <knowrob:heightOfObject rdf:datatype="&xsd;double">0.74</knowrob:heightOfObject>
         <knowrob:depthOfObject rdf:datatype="&xsd;double">0.01</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="&xsd;double">4.05</knowrob:widthOfObject>
@@ -2477,7 +2477,7 @@
 
 
     <owl:NamedIndividual rdf:about="&knowrob;kitchen_wall_east_1">
-        <rdf:type rdf:resource="&knowrob;Cupboard"/>
+        <rdf:type rdf:resource="&knowrob;Wall"/>
         <knowrob:heightOfObject rdf:datatype="&xsd;double">2.0</knowrob:heightOfObject>
         <knowrob:depthOfObject rdf:datatype="&xsd;double">0.01</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="&xsd;double">1.0</knowrob:widthOfObject>
@@ -2516,7 +2516,7 @@
 
 
     <owl:NamedIndividual rdf:about="&knowrob;kitchen_wall_east_2">
-        <rdf:type rdf:resource="&knowrob;Cupboard"/>
+        <rdf:type rdf:resource="&knowrob;Wall"/>
         <knowrob:heightOfObject rdf:datatype="&xsd;double">0.74</knowrob:heightOfObject>
         <knowrob:depthOfObject rdf:datatype="&xsd;double">0.01</knowrob:depthOfObject>
         <knowrob:widthOfObject rdf:datatype="&xsd;double">4.81</knowrob:widthOfObject>
