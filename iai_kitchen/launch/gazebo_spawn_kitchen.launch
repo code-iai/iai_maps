@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+<launch>
+  <arg name="model" default="$(find iai_kitchen)/urdf/IAI_kitchen.urdf.xacro"/>
+  <param name="robot_description" command="$(find xacro)/xacro.py '$(arg model)'" />
+                            
+
+  <arg
+    name="gui"
+    default="True" />
+  <param
+    name="use_gui"
+    value="$(arg gui)" />
+  <!--
+  <node
+    name="joint_state_publisher"
+    pkg="joint_state_publisher"
+    type="joint_state_publisher" >
+  </node>
+  -->
+  <node name="spawn_kitchen" pkg="gazebo_ros" type="spawn_model" args="
+    -param robot_description 
+    -urdf
+    -model IAI_kitchen
+  "/>
+  
+  <node
+    name="robot_state_publisher"
+    pkg="robot_state_publisher"
+    type="state_publisher" >
+    <param name="tf_prefix" value="iai_lab"/>
+  </node>
+</launch>

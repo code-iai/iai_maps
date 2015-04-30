@@ -1,0 +1,198 @@
+<?xml version="1.0"?>
+
+<robot name="iai_drawers" xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <xacro:property name="pi" value="3.1415926535897931" />
+
+  
+  
+  <macro name="iai_drawer_60_14" params="name parent *origin">   
+    <iai_drawer_14 name="${name}" parent="${parent}" width="60">
+      <xacro:insert_block name="origin" />
+    </iai_drawer_14>
+  </macro>
+  
+  <macro name="iai_drawer_80_14" params="name parent *origin">   
+    <iai_drawer_14 name="${name}" parent="${parent}" width="80">
+      <xacro:insert_block name="origin" />
+    </iai_drawer_14>
+  </macro>
+  
+  <macro name="iai_drawer_60_29" params="name parent *origin">   
+    <iai_drawer_29 name="${name}" parent="${parent}" width="60">
+      <xacro:insert_block name="origin" />
+    </iai_drawer_29>
+  </macro>
+  
+  <macro name="iai_drawer_80_29" params="name parent *origin">   
+    <iai_drawer_29 name="${name}" parent="${parent}" width="80">
+      <xacro:insert_block name="origin" />
+    </iai_drawer_29>
+  </macro>
+  
+  
+  <macro name="iai_drawer_100_29" params="name parent *origin">   
+    <iai_drawer_29 name="${name}" parent="${parent}" width="100">
+      <xacro:insert_block name="origin" />
+    </iai_drawer_29>
+  </macro>
+  
+  
+  <macro name="iai_drawer_60_58" params="name parent *origin">   
+    <iai_drawer_58 name="${name}" parent="${parent}" width="60">
+      <xacro:insert_block name="origin" />
+    </iai_drawer_58>
+  </macro>
+  
+  <macro name="iai_drawer_58" params="name parent width *origin">   
+      
+    <iai_generic_drawer name="${name}" parent="${parent}" width="${width}" height="58">
+      <xacro:insert_block name="origin" />
+      <origin xyz="0.3325 0 0.2375" rpy="0 0 0" />
+    </iai_generic_drawer>
+  </macro>
+  
+  
+  <macro name="iai_vdrawer" params="name parent *origin">  
+    <link name="${name}_main">      
+      <sphere_inertia radius="0" mass="0"/>
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/drawers/VDrawer.dae"/>
+        </geometry>
+      </visual>
+    </link>
+
+    <link name="${name}_handle">      
+      <sphere_inertia radius="0" mass="0"/>
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/handles/VHandle130.dae"/>
+        </geometry>
+      </visual>
+    </link>
+
+    <joint name="${name}_main_joint" type="prismatic">
+      <xacro:insert_block name="origin" />
+      <parent link="${parent}"/>
+      <child link="${name}_main"/>
+      <axis xyz="1. 0. 0.0"/>
+      <limit lower="0" upper="0.48" effort="300" velocity="10"/>
+    </joint>
+    
+    
+    <joint name="${name}_handle_joint" type="fixed">
+        <origin xyz="0.3525 0 0" rpy="0 0 0" />
+      <parent link="${name}_main"/>
+      <child link="${name}_handle"/>
+      <axis xyz="0 0 1"/>
+      <limit lower="0" upper="${0.5*pi}" effort="300" velocity="10"/>
+    </joint>      
+  </macro>
+  
+  <macro name="iai_drawer_29" params="name parent width *origin">   
+      
+    <iai_generic_drawer name="${name}" parent="${parent}" width="${width}" height="29">
+      <xacro:insert_block name="origin" />
+      <origin xyz="0.3325 0 0.11" rpy="0 0 0" />
+    </iai_generic_drawer>
+  </macro>
+  
+  <macro name="iai_drawer_14" params="name parent width *origin">   
+      
+    <iai_generic_drawer name="${name}" parent="${parent}" width="${width}" height="14">
+      <xacro:insert_block name="origin" />
+      <origin xyz="0.3325 0 0.0175" rpy="0 0 0" />
+    </iai_generic_drawer>
+  </macro>
+  
+  
+  
+  <macro name="iai_generic_drawer" params="name parent width height *origin *handle_origin">   
+    <link name="${name}_main">      
+      <sphere_inertia radius="0" mass="0"/>
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/drawers/Drawer_${width}_${height}.dae"/>
+        </geometry>
+      </visual>
+    </link>
+
+    <link name="${name}_handle">      
+      <sphere_inertia radius="0" mass="0"/>
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/handles/Handle${width}.dae"/>
+        </geometry>
+      </visual>
+    </link>
+
+    <joint name="${name}_main_joint" type="prismatic">
+      <xacro:insert_block name="origin" />
+      <parent link="${parent}"/>
+      <child link="${name}_main"/>
+      <axis xyz="1. 0. 0.0"/>
+      <limit lower="0" upper="0.48" effort="300" velocity="10"/>
+    </joint>
+    
+    
+    <joint name="${name}_handle_joint" type="fixed">
+      <xacro:insert_block name="handle_origin"/>
+      <parent link="${name}_main"/>
+      <child link="${name}_handle"/>
+      <axis xyz="0 0 1"/>
+      <limit lower="0" upper="${0.5*pi}" effort="300" velocity="10"/>
+    </joint>      
+  </macro>
+  
+  
+  <macro name="iai_generic_panel" params="name parent width *origin">   
+    <link name="${name}">      
+      <sphere_inertia radius="0" mass="0"/>
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/drawers/Panel_${width}.dae"/>
+        </geometry>
+      </visual>
+    </link>
+    
+    <joint name="${name}_joint" type="fixed">
+      <xacro:insert_block name="origin"/>
+      <parent link="${parent}"/>
+      <child link="${name}"/>
+    </joint>      
+  </macro>
+
+  
+  <!--- FIXME THIS should NOT be here -->
+  <!--
+  <link name="map">
+    
+    <sphere_inertia radius="0" mass="0"/>
+  </link>
+  <iai_drawer_60_14 name="drawer_1" parent="map">
+    <origin rpy="0 0 0" xyz="0 0 1"/>
+  </iai_drawer_60_14>
+  
+  <iai_drawer_80_14 name="drawer_2" parent="map">
+    <origin rpy="0 0 0" xyz="0 0 2"/>
+  </iai_drawer_80_14>
+  
+  <iai_drawer_60_29 name="drawer_3" parent="map">
+    <origin rpy="0 0 0" xyz="0 0 3"/>
+  </iai_drawer_60_29>
+  
+  <iai_drawer_80_29 name="drawer_4" parent="map">
+    <origin rpy="0 0 0" xyz="0 0 4"/>
+  </iai_drawer_80_29>
+  
+  <iai_drawer_100_29 name="drawer_5" parent="map">
+    <origin rpy="0 0 0" xyz="0 0 5"/>
+  </iai_drawer_100_29>
+  -->
+</robot>

@@ -1,0 +1,416 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY knowrob "http://knowrob.org/kb/knowrob.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://knowrob.org/kb/iai-kitchen.owl#"
+     xml:base="http://knowrob.org/kb/iai-kitchen.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:knowrob="http://knowrob.org/kb/knowrob.owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://knowrob.org/kb/iai-kitchen.owl">
+        <owl:imports rdf:resource="http://knowrob.org/kb/knowrob.owl"/>
+    </owl:Ontology>
+    
+
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#Transformation"/>
+    <owl:DatatypeProperty rdf:about="http://knowrob.org/kb/knowrob.owl#quaternion"/>
+    <owl:DatatypeProperty rdf:about="http://knowrob.org/kb/knowrob.owl#translation"/>
+
+    <!-- GENERAL DEFS -->
+    <owl:ObjectProperty rdf:about="http://knowrob.org/kb/knowrob.owl#describedInMap"/>
+    <owl:DatatypeProperty rdf:about="http://knowrob.org/kb/knowrob.owl#depthOfObject"/>
+    <owl:DatatypeProperty rdf:about="http://knowrob.org/kb/knowrob.owl#heightOfObject"/>
+    <owl:DatatypeProperty rdf:about="http://knowrob.org/kb/knowrob.owl#widthOfObject"/>
+    <owl:DatatypeProperty rdf:about="http://knowrob.org/kb/knowrob.owl#vectorX"/>
+    <owl:DatatypeProperty rdf:about="http://knowrob.org/kb/knowrob.owl#vectorY"/>
+    <owl:DatatypeProperty rdf:about="http://knowrob.org/kb/knowrob.owl#vectorZ"/>
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#SemanticEnvironmentMap"/>
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#SemanticMapPerception"/>
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#TimePoint"/>
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#Vector"/>
+    <owl:DatatypeProperty rdf:about="&knowrob;pathToCadModel"/>
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <!-- Generic -->
+    
+    <!-- DRAWERS -->
+    <owl:Class rdf:about="&knowrob;IAIDrawer">
+        <rdfs:subClassOf rdf:resource="&knowrob;Drawer"/>
+    </owl:Class>
+
+    
+    <owl:Class rdf:about="&knowrob;IAIDrawer_60_14">
+
+	<rdfs:subClassOf rdf:resource="&knowrob;IAIDrawer"/> 
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
+                <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/drawers/Drawer_60_14.dae</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>  
+  </owl:Class>
+
+    
+    <owl:Class rdf:about="&knowrob;IAIDrawer_60_29">
+	<rdfs:subClassOf rdf:resource="&knowrob;IAIDrawer"/> 
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
+                <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/drawers/Drawer_60_29.dae</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>   
+  </owl:Class>
+
+    
+    <owl:Class rdf:about="&knowrob;IAIDrawer_60_58">
+	<rdfs:subClassOf rdf:resource="&knowrob;IAIDrawer"/> 
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
+                <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/drawers/Drawer_60_58.dae</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>   
+  </owl:Class>
+
+    
+    <owl:Class rdf:about="&knowrob;IAIDrawer_Vert">
+	<rdfs:subClassOf rdf:resource="&knowrob;IAIDrawer"/> 
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
+                <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/drawers/VDrawer.dae</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>   
+  </owl:Class>
+
+    
+    <owl:Class rdf:about="&knowrob;IAIDrawer_80_14">
+	<rdfs:subClassOf rdf:resource="&knowrob;IAIDrawer"/> 
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
+                <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/drawers/Drawer_80_14.dae</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>   
+  </owl:Class>
+
+    
+    <owl:Class rdf:about="&knowrob;IAIDrawer_80_29">
+	<rdfs:subClassOf rdf:resource="&knowrob;IAIDrawer"/> 
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
+                <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/drawers/Drawer_80_29.dae</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>   
+  </owl:Class>
+
+    
+    <owl:Class rdf:about="&knowrob;IAIDrawer_100_29">
+	<rdfs:subClassOf rdf:resource="&knowrob;IAIDrawer"/> 
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
+                <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/drawers/Drawer_100_29.dae</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>   
+  </owl:Class>
+  
+    <owl:Class rdf:about="&knowrob;IAIThrashDrawer">
+	<rdfs:subClassOf rdf:resource="&knowrob;IAIDrawer"/> 
+	<rdfs:subClassOf rdf:resource="&knowrob;ThrashContainer"/> 
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
+                <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/drawers/Drawer_60_58.dae</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>   
+  </owl:Class>
+    
+  
+  
+    <!-- PANELS -->
+    <owl:Class rdf:about="&knowrob;IAIPanel">
+        <rdfs:subClassOf rdf:resource="&knowrob;Drawer"/>
+    </owl:Class>
+    
+    
+    <owl:Class rdf:about="&knowrob;IAIPanel60">
+	<rdfs:subClassOf rdf:resource="&knowrob;IAIPanel"/> 
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
+                <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/drawers/Panel_60.dae</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>   
+    </owl:Class>
+    
+    
+    <owl:Class rdf:about="&knowrob;IAIPanel100">
+	<rdfs:subClassOf rdf:resource="&knowrob;IAIPanel"/> 
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
+                <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/drawers/Panel_100.dae</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>   
+  </owl:Class>
+  
+  
+    
+    <!-- HANDLES -->
+  
+    <owl:Class rdf:about="&knowrob;IAIHandle">
+        <rdfs:subClassOf rdf:resource="&knowrob;Handle"/>
+    </owl:Class>
+    
+    <owl:Class rdf:about="&knowrob;IAIHandle60">
+        <rdfs:subClassOf rdf:resource="&knowrob;IAIHandle"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
+                <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/handles/Handle60.dae</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>   
+    </owl:Class>
+    
+    <owl:Class rdf:about="&knowrob;IAIHandleVert">
+      
+        <rdfs:subClassOf rdf:resource="&knowrob;IAIHandle"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
+                <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/handles/VHandle130.dae</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>   
+    </owl:Class>
+    
+    <owl:Class rdf:about="&knowrob;IAIHandle80">
+        <rdfs:subClassOf rdf:resource="&knowrob;IAIHandle"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
+                <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/handles/Handle80.dae</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>   
+    </owl:Class>
+    
+    <owl:Class rdf:about="&knowrob;IAIHandle100">
+        <rdfs:subClassOf rdf:resource="&knowrob;IAIHandle"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
+                <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/handles/Handle100.dae</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>   
+    </owl:Class>
+  <!--
+        <rdf:type rdf:resource="&srdl2-comp;UrdfLink"/>
+	I am not shure if all objects should be urdf links(they can move...)
+  -->
+    <owl:Class rdf:about="&knowrob;IAIKitchen">
+        <rdfs:subClassOf rdf:resource="&knowrob;Kitchen"/>
+	<!-- TODO add a ground plane -->
+    </owl:Class>
+    
+    <!-- SINK -->
+    
+    <owl:Class rdf:about="&knowrob;IAISinkArea">
+        <rdfs:subClassOf rdf:resource="&knowrob;Cupboard"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
+                <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/racks/SinkArea.dae</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>   
+    </owl:Class>
+    
+    
+    <owl:Class rdf:about="&knowrob;IAISink">
+        <rdfs:subClassOf rdf:resource="&knowrob;SpatialThing-Localized"/>
+	<!-- TODO add sink to knowrob ontology -->
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
+                <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/misc/Sink.dae</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>   
+    </owl:Class>
+    
+    
+    
+    <owl:Class rdf:about="&knowrob;IAIDishWasher">
+        <rdfs:subClassOf rdf:resource="&knowrob;Dishwasher"/>
+	<!-- TODO add sink to knowrob ontology -->
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
+                <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/misc/DishWasher.dae</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>   
+    </owl:Class>
+    
+    
+    
+    <owl:Class rdf:about="&knowrob;IAIDishWasherDoor">
+        <rdfs:subClassOf rdf:resource="&knowrob;ContainerLid"/>
+	<!-- TODO add sink to knowrob ontology -->
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
+                <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/misc/DishWasherDoor.dae</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>   
+    </owl:Class>
+    <!-- OvenArea -->
+    
+    
+    <owl:Class rdf:about="&knowrob;IAIOvenArea">
+        <rdfs:subClassOf rdf:resource="&knowrob;Cupboard"/>
+	<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
+                <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/racks/OvenArea.dae</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+    
+    <owl:Class rdf:about="&knowrob;IAIOven">
+        <rdfs:subClassOf rdf:resource="&knowrob;Oven"/>
+        <rdfs:subClassOf rdf:resource="&knowrob;ElectricalDevice"/>
+	<!-- TODO add sink to knowrob ontology -->
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
+                <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/oven/OvenMain.dae</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>   
+    </owl:Class>
+    
+    
+    <owl:Class rdf:about="&knowrob;IAIOvenDoor">
+        <rdfs:subClassOf rdf:resource="&knowrob;ContainerLid"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
+                <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/oven/OvenDoor.dae</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>   
+    </owl:Class>
+    
+    
+    
+    <owl:Class rdf:about="&knowrob;IAIOvenPanel">
+        <rdfs:subClassOf rdf:resource="&knowrob;IAIPanel"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
+                <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/oven/OvenPanel.dae</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>   
+    </owl:Class>
+    
+    
+    
+    <owl:Class rdf:about="&knowrob;IAIKnob">
+      <!-- FIXME THERE MUST BE SOMTHING -->
+        <rdfs:subClassOf rdf:resource="&knowrob;SpatialThing-Localized"/>
+	<!-- TODO add sink to knowrob ontology -->
+       
+    </owl:Class>
+    
+    <owl:Class rdf:about="&knowrob;IAIOvenKnob">
+        <rdfs:subClassOf rdf:resource="&knowrob;IAIKnob"/>
+	<!-- TODO add sink to knowrob ontology -->
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
+                <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/oven/Knob.dae</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>   
+    </owl:Class>
+    
+    <!-- Kitchen Area -->
+    <owl:Class rdf:about="&knowrob;IAIKitchenIsland">
+        <rdfs:subClassOf rdf:resource="&knowrob;Cupboard"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
+                <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/racks/IslandArea.dae</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>  
+    </owl:Class>
+    
+    <owl:Class rdf:about="&knowrob;IAIKitchenIslandStove">
+        <rdfs:subClassOf rdf:resource="&knowrob;HeatingElement"/>
+        <rdfs:subClassOf rdf:resource="&knowrob;ElectricalDevice"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
+                <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/misc/Stove.dae</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>  
+    </owl:Class>
+    <!-- TODO -->
+    <owl:Class rdf:about="&knowrob;IAIFrigeArea">
+        <rdfs:subClassOf rdf:resource="&knowrob;Cupboard"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
+                <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/racks/FridgeArea.dae</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>  
+    </owl:Class>
+    <owl:Class rdf:about="&knowrob;IAIFrige">
+        <rdfs:subClassOf rdf:resource="&knowrob;Refrigerator"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
+                <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/misc/Fridge.dae</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>  
+    </owl:Class>
+    
+    
+    <owl:Class rdf:about="&knowrob;IAIFrigeDoor">
+        <rdfs:subClassOf rdf:resource="&knowrob;ContainerLid"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
+                <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/misc/FridgeDoor.dae</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>   
+    </owl:Class>
+    <owl:Class rdf:about="&knowrob;IAIFrigeDoorHandle">
+        <rdfs:subClassOf rdf:resource="&knowrob;IAIHandle"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
+                <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/handles/VHandle90.dae</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf> 
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+

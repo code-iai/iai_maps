@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+
+<launch>
+  <!--
+  <arg name="model" default="$(find iai_kitchen)/urdf/IAI_oven.urdf.xacro"/>
+  -->
+  <arg name="model" default="$(find iai_kitchen)/urdf/IAI_kitchen.urdf.xacro"/>
+  <param name="oven_description" command="$(find xacro)/xacro.py '$(arg model)'" />
+  <param name="robot_description" command="$(find xacro)/xacro.py '$(arg model)'" />
+                            
+<!--
+  <node pkg="tf" type="static_transform_publisher" name="room_link_broadcaster" 
+    args="-3.465 -4.35 0 -3.141592654 0 0 /map /room_link 200">
+  </node>
+  -->
+  <node pkg="tf" type="static_transform_publisher" name="room_link_broadcaster" 
+    args="0.0 0.0 0. 0.0 0. 0. /map /iai_kitchen/room_link 200">
+  </node>
+  <arg
+    name="gui"
+    default="True" />
+  <param
+    name="use_gui"
+    value="$(arg gui)" />
+  <node
+    name="joint_state_publisher"
+    pkg="joint_state_publisher"
+    type="joint_state_publisher" >
+  </node>
+  <node
+    name="robot_state_publisher"
+    pkg="robot_state_publisher"
+    type="state_publisher" >
+
+    <param name="tf_prefix" value="iai_kitchen"/>
+  </node>
+  <!--
+  <node
+    name="tf2_web_republisher"
+    pkg="tf2_web_republisher"
+    type="tf2_web_republisher" >
+  </node>
+  
+  -->
+<!--
+  <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch" />
+
+
+    <param name="knowrob_html_package" type="string" value="boxy_vis" />
+    <param name="knowrob_welcome_file" type="string" value="boxy.html" />
+
+  <param name="initial_package" type="string" value="knowrob_vis" />
+  <param name="initial_goal" type="string" value="visualisation_server,visualisation_canvas" />
+  <node name="json_prolog" pkg="json_prolog" type="json_prolog_node" cwd="node" output="screen" />
+-->
+
+</launch>

@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+
+<robot name="iai_oven" xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <xacro:property name="pi" value="3.1415926535897931" />
+
+  <macro name="iai_oven" params="name parent *origin">
+    <!-- LINKS -->
+    
+    <link name="${name}_main">
+      
+      <sphere_inertia radius="0" mass="0"/>
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/oven/OvenMain.dae"/>
+        </geometry>
+      </visual>
+    </link>
+    
+    <link name="${name}_door">
+      
+      <sphere_inertia radius="0" mass="0"/>
+      <visual>
+        <origin xyz="0 0 0" rpy="${0.5*pi} 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/oven/OvenDoor.dae"/>
+        </geometry>
+      </visual>
+    </link>
+    
+    <link name="${name}_door_handle">
+      
+      <sphere_inertia radius="0" mass="0"/>
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/handles/Handle60.dae"/>
+        </geometry>
+      </visual>
+    </link>
+    
+    
+    <link name="${name}_panel">
+      
+      <sphere_inertia radius="0" mass="0"/>
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/oven/OvenPanel.dae"/>
+        </geometry>
+      </visual>
+    </link>
+      
+    
+    <!-- JOINTS -->
+    
+    <joint name="${name}_main_joint" type="fixed">
+      <xacro:insert_block name="origin" />
+      <parent link="${parent}"/>
+      <child link="${name}_main"/>
+    </joint>
+    
+    <joint name="${name}_door_joint" type="revolute">
+      <origin xyz="0.2737 0. -0.2614" rpy="${-0.5*pi} 0 0" />
+      <parent link="${name}_main"/>
+      <child link="${name}_door"/>
+      <axis xyz="0 0 1"/>
+      <limit lower="0" upper="${0.5*pi}" effort="300" velocity="10"/>
+    </joint>
+    
+    <joint name="${name}_door_handle_joint" type="fixed">
+      <origin xyz="0.05876 -0.39803 0." rpy="${-0.5*pi} 0 0" />
+      <parent link="${name}_door"/>
+      <child link="${name}_door_handle"/>
+      <axis xyz="0 0 1"/>
+      <limit lower="0" upper="${0.5*pi}" effort="300" velocity="10"/>
+    </joint>
+    
+    <joint name="${name}_panel_joint" type="fixed">
+      <origin xyz="0.27 0 0.2449" rpy="0 0 0" />
+      <parent link="${name}_main"/>
+      <child link="${name}_panel"/>
+    </joint>
+    
+    
+    <!--KNOBS -->
+    
+    <iai_oven_knob name="${name}_knob_stove_1" parent="${name}_panel" xyz="0 -0.21 0"/>
+    <iai_oven_knob name="${name}_knob_stove_2" parent="${name}_panel" xyz="0 -0.14 0"/>
+    <iai_oven_knob name="${name}_knob_stove_3" parent="${name}_panel" xyz="0 -0.07 0"/>
+    <iai_oven_knob name="${name}_knob_stove_4" parent="${name}_panel" xyz="0 -0.0 0"/>
+    <iai_oven_knob name="${name}_knob_oven" parent="${name}_panel" xyz="0 0.16 0"/>
+    
+  </macro>
+
+  
+  
+  <macro name="iai_oven_knob" params="name parent xyz">
+    <link name="${name}">
+      
+      <sphere_inertia radius="0" mass="0"/>
+      <visual>
+        <origin xyz="0 0 0" rpy="0 ${0.5 * pi} 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/oven/Knob.dae"/>
+        </geometry>
+      </visual>
+    </link>
+    
+    <joint name="${name}_joint" type="revolute">
+      <origin xyz="${xyz}" rpy="0 ${-0.5 * pi} 0" />
+      <parent link="${parent}"/>
+      <child link="${name}"/>
+      <axis xyz="0 0 1"/>
+      <limit lower="0" upper="${pi}" effort="300" velocity="10"/>
+    </joint>
+    
+  </macro>
+  
+
+  <!--- FIXME THIS should NOT be here -->
+<!--
+  <link name="oven_footprint">
+    
+    <sphere_inertia radius="0" mass="0"/>
+  </link>
+  <iai_oven name="iai_oven" parent="oven_footprint"/>
+  -->
+</robot>

@@ -1,0 +1,306 @@
+<?xml version="1.0"?>
+
+<robot name="iai_kitchen_sink_area" xmlns:xacro="http://ros.org/wiki/xacro">
+<!--
+  <xacro:include filename="$(find iai_kitchen)/urdf/drawers.xacro" />
+-->
+
+  <xacro:property name="pi" value="3.1415926535897931" />
+
+
+
+    <link name="sink_area_footprint">
+      
+      <sphere_inertia radius="0" mass="0"/>
+      <!-- ???vizualize footprint??? -->
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <box size=".1 .1 .1" />
+        </geometry>
+      </visual>
+    </link>
+    
+    <link name="sink_area_main">
+      
+      <sphere_inertia radius="0" mass="0"/>
+      <!-- ???vizualize footprint??? -->
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/SinkArea.dae"/>
+        </geometry>
+      </visual>
+    </link>
+    
+    
+    <joint name="sink_area_joint" type="fixed">
+      <origin xyz="0 0 0.41" rpy="0 0 0" />
+      <parent link="sink_area_footprint"/>
+      <child link="sink_area_main"/>
+    </joint>
+    
+    
+    
+    
+    <!-- LEFT BLOCK -->
+    <link name="sink_area_drawer_left_bottom">
+      
+      <sphere_inertia radius="0" mass="0"/>
+      <!-- ???vizualize footprint??? -->
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/SinkAreaMedDrawer.dae"/>
+        </geometry>
+      </visual>
+    </link>
+    
+    
+    <joint name="sink_area_drawer_left_bottom_joint" type="prismatic">
+      <origin xyz="0.01 -0.6 -0.18" rpy="0 0 0" />
+      <parent link="sink_area_main"/>
+      <child link="sink_area_drawer_left_bottom"/>
+      <axis xyz="1 0 0"/>
+      <limit lower="0" upper="0.48" effort="300" velocity="10"/>
+    </joint>
+    
+    
+    <link name="sink_area_drawer_left_bottom_handle">
+      
+      <sphere_inertia radius="0" mass="0"/>
+      <!-- ???vizualize footprint??? -->
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/SinkAreaBigHandle.dae"/>
+        </geometry>
+      </visual>
+    </link>
+    
+    
+    <joint name="sink_area_drawer_left_bottom_handle_joint" type="fixed">
+      <origin xyz="0.3325 0 0.0925" rpy="0 0 0" />
+      <parent link="sink_area_drawer_left_bottom"/>
+      <child link="sink_area_drawer_left_bottom_handle"/>
+    </joint>
+    
+    
+    
+    
+    <link name="sink_area_drawer_left_center">
+      
+      <sphere_inertia radius="0" mass="0"/>
+      <!-- ???vizualize footprint??? -->
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/SinkAreaMedDrawer.dae"/>
+        </geometry>
+      </visual>
+    </link>
+    
+    
+    <joint name="sink_area_drawer_left_center_joint" type="prismatic">
+      <origin xyz="0.01 -0.6 0.11" rpy="0 0 0" />
+      <parent link="sink_area_main"/>
+      <child link="sink_area_drawer_left_center"/>
+      <axis xyz="1 0 0"/>
+      <limit lower="0" upper="0.48" effort="300" velocity="10"/>
+    </joint>
+    
+    
+    <link name="sink_area_drawer_left_center_handle">
+      
+      <sphere_inertia radius="0" mass="0"/>
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/SinkAreaBigHandle.dae"/>
+        </geometry>
+      </visual>
+    </link>
+    
+    
+    <joint name="sink_area_drawer_left_center_handle_joint" type="fixed">
+      <origin xyz="0.3325 0 0.0925" rpy="0 0 0" />
+      <parent link="sink_area_drawer_left_center"/>
+      <child link="sink_area_drawer_left_center_handle"/>
+    </joint>
+    
+    
+    <link name="sink_area_drawer_left_top">
+      
+      <sphere_inertia radius="0" mass="0"/>
+      <!-- ???vizualize footprint??? -->
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/SinkAreaSmallDrawer.dae"/>
+        </geometry>
+      </visual>
+    </link>
+    
+    <joint name="sink_area_drawer_left_top_joint" type="prismatic">
+      <origin xyz="0.01 -0.6 0.325" rpy="0 0 0" />
+      <parent link="sink_area_main"/>
+      <child link="sink_area_drawer_left_top"/>
+      <axis xyz="1 0 0"/>
+      <limit lower="0" upper="0.48" effort="300" velocity="10"/>
+    </joint>
+    
+    
+    <link name="sink_area_drawer_left_top_handle">
+      
+      <sphere_inertia radius="0" mass="0"/>
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/SinkAreaBigHandle.dae"/>
+        </geometry>
+      </visual>
+    </link>
+    
+    
+    <joint name="sink_area_drawer_left_bottom_top_joint" type="fixed">
+      <origin xyz="0.3325 0 0.0175" rpy="0 0 0" />
+      <parent link="sink_area_drawer_left_top"/>
+      <child link="sink_area_drawer_left_top_handle"/>
+    </joint>
+    
+    <!-- DISHWASHER BLOCK -->
+    
+    
+    
+    
+    <link name="sink_area_inner_dishwasher">
+      
+      <sphere_inertia radius="0" mass="0"/>
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/SinkAreaInnerDishWasher.dae"/>
+        </geometry>
+      </visual>
+    </link>
+    
+    <joint name="sink_area_dishwasher_joint" type="fixed">
+      <origin xyz="0.01 0.1 0.035" rpy="0 0 0" />
+      <parent link="sink_area_main"/>
+      <child link="sink_area_inner_dishwasher"/>
+    </joint>
+    
+    <link name="sink_area_dishwasher_door">
+      
+      <sphere_inertia radius="0" mass="0"/>
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/SinkAreaDishWasherDoor.dae"/>
+        </geometry>
+      </visual>
+    </link>
+    
+    <joint name="sink_area_dishwasher_door_joint" type="revolute">
+      <origin xyz="0.27 0 -0.325" rpy="0 0 0" />
+      <parent link="sink_area_inner_dishwasher"/>
+      <child link="sink_area_dishwasher_door"/>
+      <axis xyz="0 1 0"/>
+      <limit lower="0" upper="${0.5*pi}" effort="300" velocity="10"/>
+    </joint>
+    
+    <link name="sink_area_dishwasher_handle">
+      
+      <sphere_inertia radius="0" mass="0"/>
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/SinkAreaSmallHandle.dae"/>
+        </geometry>
+      </visual>
+    </link>
+    
+    
+    <joint name="sink_area_dishwasher_handle_joint" type="fixed">
+      <origin xyz="0.0625 0 0.6325" rpy="0 0 0" />
+      <parent link="sink_area_dishwasher_door"/>
+      <child link="sink_area_dishwasher_handle"/>
+    </joint>
+    
+    
+    <!-- TRASH AREA -->
+    
+    
+    <link name="sink_area_panel">
+      
+      <sphere_inertia radius="0" mass="0"/>
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/SinkAreaPanel.dae"/>
+        </geometry>
+      </visual>
+    </link>
+    
+    
+    <joint name="sink_area_pane_joint" type="fixed">
+      <origin xyz="0.28 0.7 0.325" rpy="0 0 0" />
+      <parent link="sink_area_main"/>
+      <child link="sink_area_panel"/>
+    </joint>
+    
+    <link name="sink_area_trash">
+      
+      <sphere_inertia radius="0" mass="0"/>
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/SinkAreaTrash.dae"/>
+        </geometry>
+      </visual>
+    </link>
+    
+    <joint name="sink_area_trash_joint" type="prismatic">
+      <origin xyz="0.01 0.7 -0.0325" rpy="0 0 0" />
+      <parent link="sink_area_main"/>
+      <child link="sink_area_trash"/>
+      <axis xyz="1 0 0"/>
+      <limit lower="0" upper="0.48" effort="300" velocity="10"/>
+    </joint>   
+    
+    
+    <link name="sink_area_trash_handle">      
+      <sphere_inertia radius="0" mass="0"/>
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/SinkAreaSmallHandle.dae"/>
+        </geometry>
+      </visual>
+    </link>
+    
+    <joint name="sink_area_trash_handle_joint" type="fixed">
+      <origin xyz="0.3325 0.0 0.2375" rpy="0 0 0" />
+      <parent link="sink_area_trash"/>
+      <child link="sink_area_trash_handle"/>
+    </joint>
+    
+    
+    <link name="sink_area_sink">      
+      <sphere_inertia radius="0" mass="0"/>
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/SinkAreaSink.dae"/>
+        </geometry>
+      </visual>
+    </link>
+    
+    <joint name="sink_area_sink_joint" type="fixed">
+      <origin xyz="0.005 0.47 0.4414" rpy="0 0 0" />
+      <parent link="sink_area_main"/>
+      <child link="sink_area_sink"/>
+    </joint>
+    
+    
+</robot>

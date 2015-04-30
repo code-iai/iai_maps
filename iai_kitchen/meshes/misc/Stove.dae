@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Benjamin Brieber</author>
+      <authoring_tool>Blender 2.73.0 commit date:2015-01-20, commit time:18:16, hash:bbf09d9</authoring_tool>
+    </contributor>
+    <created>2015-03-19T09:09:03</created>
+    <modified>2015-03-19T09:09:03</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="stove_DIFF_png" name="stove_DIFF_png">
+      <init_from>stove_DIFF.png</init_from>
+    </image>
+  </library_images>
+  <library_effects>
+    <effect id="Material-effect">
+      <profile_COMMON>
+        <newparam sid="stove_DIFF_png-surface">
+          <surface type="2D">
+            <init_from>stove_DIFF_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="stove_DIFF_png-sampler">
+          <sampler2D>
+            <source>stove_DIFF_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.5 0.5 0.5 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="stove_DIFF_png-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.6883408 0.6883408 0.6883408 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">98</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="Material-material" name="Material">
+      <instance_effect url="#Material-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="stove-mesh" name="stove">
+      <mesh>
+        <source id="stove-mesh-positions">
+          <float_array id="stove-mesh-positions-array" count="24">-0.25 -0.285 -0.002499997 -0.25 0.285 -0.002499997 0.25 0.285 -0.002499997 0.25 -0.285 -0.002499997 -0.25 -0.285 0.002499997 -0.25 0.285 0.002499997 0.25 0.285 0.002499997 0.25 -0.285 0.002499997</float_array>
+          <technique_common>
+            <accessor source="#stove-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="stove-mesh-normals">
+          <float_array id="stove-mesh-normals-array" count="36">-1 0 0 0 1 0 1 0 0 0 -1 0 0 0 -1 0 0 1 -1 0 0 0 1 0 1 0 0 0 -1 0 0 0 -1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#stove-mesh-normals-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="stove-mesh-map">
+          <float_array id="stove-mesh-map-array" count="72">0.9619188 0.02214699 0.9619188 0.02214699 0.9619188 0.02214699 0.9888302 0.9794521 0.9888302 0.9794521 0.9661058 0.9819129 0.9619188 0.02214699 0.9619188 0.02214699 0.9619188 0.02214699 0.9685665 0.02793014 0.9685665 0.02793014 0.9949821 0.003322303 0.9661058 0.9819129 0.9888302 0.9794521 0.9949821 0.003322303 0.06633478 0.003157198 0.932369 0.003157198 0.932369 0.9962518 0.9619188 0.02214699 0.9619188 0.02214699 0.9619188 0.02214699 0.9734882 0.9609963 0.9888302 0.9794521 0.9661058 0.9819129 0.9619188 0.02214699 0.9619188 0.02214699 0.9619188 0.02214699 0.9949821 0.003322303 0.9685665 0.02793014 0.9949821 0.003322303 0.9685665 0.02793014 0.9661058 0.9819129 0.9949821 0.003322303 0.06633478 0.9962518 0.06633478 0.003157198 0.932369 0.9962518</float_array>
+          <technique_common>
+            <accessor source="#stove-mesh-map-array" count="36" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="stove-mesh-vertices">
+          <input semantic="POSITION" source="#stove-mesh-positions"/>
+        </vertices>
+        <polylist material="Material-material" count="12">
+          <input semantic="VERTEX" source="#stove-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#stove-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#stove-mesh-map" offset="2" set="0"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>5 0 0 1 0 1 0 0 2 6 1 3 2 1 4 1 1 5 7 2 6 3 2 7 2 2 8 4 3 9 0 3 10 3 3 11 1 4 12 2 4 13 3 4 14 6 5 15 5 5 16 4 5 17 4 6 18 5 6 19 0 6 20 5 7 21 6 7 22 1 7 23 6 8 24 7 8 25 2 8 26 7 9 27 4 9 28 3 9 29 0 10 30 1 10 31 3 10 32 7 11 33 6 11 34 4 11 35</p>
+        </polylist>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers/>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="stove" name="stove" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#stove-mesh">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Material-material" target="#Material-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>
