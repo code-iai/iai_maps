@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+
+<robot name="iai_kitchen_island" xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <xacro:property name="pi" value="3.1415926535897931" />
+
+  <!--- FIXME THIS should NOT be here -->
+  <xacro:include filename="$(find iai_kitchen)/urdf/IAI_drawers.urdf.xacro"/>
+  
+  
+  <macro name="iai_kitchen_island" params="parent name *origin">
+  
+    
+    
+  <link name="${name}_footprint">    
+    <sphere_inertia radius="0" mass="0"/>
+  </link>
+  <link name="${name}">    
+    <sphere_inertia radius="0" mass="0"/>
+    <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/racks/IslandArea.dae"/>
+        </geometry>
+      </visual>
+  </link>  
+  
+  <joint name="${name}_footprint_joint" type="fixed">
+      <xacro:insert_block name="origin" />
+    <child link="${name}_footprint"/>
+    <parent link="${parent}"/>
+  </joint>
+  
+  <joint name="${name}_joint" type="fixed">
+    <origin xyz="0.2975 1.1292 0.421" rpy="0 0 0" />
+    <parent link="${name}_footprint"/>
+    <child link="${name}"/>
+  </joint>
+  
+  
+  <link name="${name}_stove">    
+    <sphere_inertia radius="0" mass="0"/>
+    <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/misc/Stove.dae"/>
+        </geometry>
+      </visual>
+  </link>
+  
+  
+  <joint name="${name}_stove_joint" type="fixed">
+    <origin xyz="0.025 0.7658 0.4315" rpy="0 0 0" />
+    <parent link="${name}"/>
+    <child link="${name}_stove"/>
+  </joint>
+  
+  <iai_generic_panel name="${name}_left_panel" parent="${name}" width="60">
+    <origin rpy="0 0 0" xyz="0.2725 -0.8 0.329 "/>
+  </iai_generic_panel>
+  <iai_drawer_60_29 name="${name}_left_upper_drawer" parent="${name}">
+    <origin rpy="0 0 0" xyz="0.0025 -0.8 0.114 "/>
+  </iai_drawer_60_29>
+  <iai_drawer_60_29 name="${name}_left_lower_drawer" parent="${name}">
+    <origin rpy="0 0 0" xyz="0.0025 -0.8 -0.176 "/>
+  </iai_drawer_60_29>
+  
+  
+  <iai_generic_panel name="${name}_middle_panel" parent="${name}" width="100">
+    <origin rpy="0 0 0" xyz="0.2725 0 0.329 "/>
+  </iai_generic_panel>
+  <iai_drawer_100_29 name="${name}_middle_upper_drawer" parent="${name}">
+    <origin rpy="0 0 0" xyz="0.0025 0 0.114 "/>
+  </iai_drawer_100_29>
+  <iai_drawer_100_29 name="${name}_middle_lower_drawer" parent="${name}">
+    <origin rpy="0 0 0" xyz="0.0025 0 -0.176 "/>
+  </iai_drawer_100_29>
+  
+  
+  <iai_generic_panel name="${name}_right_panel" parent="${name}" width="60">
+    <origin rpy="0 0 0" xyz="0.2725 0.8 0.329 "/>
+  </iai_generic_panel>
+  <iai_drawer_60_29 name="${name}_right_upper_drawer" parent="${name}">
+    <origin rpy="0 0 0" xyz="0.0025 0.8 0.114 "/>
+  </iai_drawer_60_29>
+  <iai_drawer_60_29 name="${name}_right_lower_drawer" parent="${name}">
+    <origin rpy="0 0 0" xyz="0.0025 0.8 -0.176 "/>
+  </iai_drawer_60_29>  
+  </macro>   
+</robot>

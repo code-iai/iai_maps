@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+
+<robot name="iai_fridge_area" xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <xacro:property name="pi" value="3.1415926535897931" />
+  
+  <xacro:include filename="$(find iai_kitchen)/urdf/IAI_drawers.urdf.xacro"/>
+  <xacro:include filename="$(find iai_kitchen)/urdf/IAI_fridge.urdf.xacro"/>
+  
+  <macro name="iai_fridge_area" params="parent name *origin">
+    <link name="${name}_footprint">    
+      <sphere_inertia radius="0" mass="0"/>
+    </link>
+    
+    <link name="${name}">    
+      <sphere_inertia radius="0" mass="0"/>
+      <visual>
+	  <origin xyz="0 0 0" rpy="0 0 0" />
+	  <geometry>
+	    <mesh filename="package://iai_kitchen/meshes/racks/FridgeArea.dae"/>
+	  </geometry>
+	</visual>
+    </link>
+      
+    <joint name="${name}_footprint_joint" type="fixed">
+	<xacro:insert_block name="origin" />
+      <child link="${name}_footprint"/>
+      <parent link="${parent}"/>
+    </joint>
+      
+    <joint name="${name}_main_joint" type="fixed">
+      <origin xyz="0.29 .3 0.74" rpy="0 0 0" />
+      <parent link="${name}_footprint"/>
+      <child link="${name}"/>
+    </joint>   
+  <iai_drawer_60_29 name="${name}_lower_drawer" parent="${name}">
+    <origin rpy="0 0 0" xyz="0.0 -0.0 -0.4175 "/>
+  </iai_drawer_60_29>
+  
+  <iai_fridge name="iai_fridge" parent="${name}">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+  </iai_fridge>
+  </macro> 
+  
+</robot>

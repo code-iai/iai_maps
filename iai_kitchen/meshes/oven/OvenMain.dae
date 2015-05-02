@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Benjamin Brieber</author>
+      <authoring_tool>Blender 2.73.0 commit date:2015-01-20, commit time:18:16, hash:bbf09d9</authoring_tool>
+    </contributor>
+    <created>2015-03-18T09:54:57</created>
+    <modified>2015-03-18T09:54:57</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_images/>
+  <library_effects>
+    <effect id="KitchenLightGray-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.5 0.5 0.5 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.4 0.4 0.4 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.035 0.035 0.035 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="OvenBlack-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.5 0.5 0.5 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.02485063 0.02485063 0.02485063 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.4537959 0.4537959 0.4537959 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">137</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="KitchenLightGray-material" name="KitchenLightGray">
+      <instance_effect url="#KitchenLightGray-effect"/>
+    </material>
+    <material id="OvenBlack-material" name="OvenBlack">
+      <instance_effect url="#OvenBlack-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="oven-mesh" name="oven">
+      <mesh>
+        <source id="oven-mesh-positions">
+          <float_array id="oven-mesh-positions-array" count="48">-0.2798702 -0.2506679 -0.2982622 -0.2798702 0.2506679 -0.2982622 0.269744 0.2506679 -0.2982622 0.269744 -0.2506679 -0.2982622 -0.2798702 -0.2506679 0.3005883 -0.2798702 0.2506679 0.3005883 0.269744 0.2506679 0.3005883 0.269744 -0.2506679 0.3005883 0.269744 0.2318317 -0.2757623 0.269744 -0.2318317 -0.2757623 0.269744 0.2318317 0.1854863 0.269744 -0.2318317 0.1854863 -0.2594831 0.2318317 -0.2757623 -0.2594831 -0.2318317 -0.2757623 -0.2594831 0.2318317 0.1854863 -0.2594831 -0.2318317 0.1854863</float_array>
+          <technique_common>
+            <accessor source="#oven-mesh-positions-array" count="16" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="oven-mesh-normals">
+          <float_array id="oven-mesh-normals-array" count="84">-1 0 0 0 1 0 1 0 0 0 -1 0 0 0 -1 0 0 1 0 0 1 1 0 0 1 0 0 1 0 0 1 0 0 0 1 0 0 0 -1 0 -1 0 -1 0 0 0 1 0 1 0 0 0 -1 0 0 0 -1 0 0 1 0 0 1 1 0 0 1 0 0 1 0 0 1 0 0 0 1 0 0 0 -1 0 -1 0</float_array>
+          <technique_common>
+            <accessor source="#oven-mesh-normals-array" count="28" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="oven-mesh-vertices">
+          <input semantic="POSITION" source="#oven-mesh-positions"/>
+        </vertices>
+        <polylist material="OvenBlack-material" count="28">
+          <input semantic="VERTEX" source="#oven-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#oven-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>5 0 1 0 0 0 6 1 2 1 1 1 2 2 8 2 9 2 4 3 0 3 3 3 1 4 2 4 3 4 6 5 5 5 4 5 8 6 12 6 13 6 3 7 9 7 11 7 7 8 11 8 10 8 2 9 6 9 10 9 15 10 13 10 12 10 9 11 13 11 15 11 11 12 15 12 14 12 10 13 14 13 12 13 4 14 5 14 0 14 5 15 6 15 1 15 3 16 2 16 9 16 7 17 4 17 3 17 0 18 1 18 3 18 7 19 6 19 4 19 9 20 8 20 13 20 7 21 3 21 11 21 6 22 7 22 10 22 8 23 2 23 10 23 14 24 15 24 12 24 11 25 9 25 15 25 10 26 11 26 14 26 8 27 10 27 12 27</p>
+        </polylist>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers/>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="oven" name="oven" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#oven-mesh">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="KitchenLightGray-material" target="#KitchenLightGray-material"/>
+              <instance_material symbol="OvenBlack-material" target="#OvenBlack-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>

@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+
+<robot name="iai_oven_area" xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <xacro:property name="pi" value="3.1415926535897931" />
+  
+  <!--- FIXME THIS should NOT be here -->
+  <xacro:include filename="$(find iai_kitchen)/urdf/IAI_drawers.urdf.xacro"/>
+  <xacro:include filename="$(find iai_kitchen)/urdf/IAI_oven.urdf.xacro"/>
+  
+  <macro name="iai_oven_area" params="parent name *origin">
+  <link name="${name}_area_footprint">    
+    <sphere_inertia radius="0" mass="0"/>
+  </link>
+  
+  <link name="${name}_area">    
+    <sphere_inertia radius="0" mass="0"/>
+    <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/racks/OvenArea.dae"/>
+        </geometry>
+      </visual>
+  </link>
+  
+  <joint name="${name}_footprint_joint" type="fixed">
+      <xacro:insert_block name="origin" />
+    <child link="${name}_area_footprint"/>
+    <parent link="${parent}"/>
+  </joint>
+  
+  <joint name="${name}_main_joint" type="fixed">
+    <origin xyz="0.29 0.6 0.755" rpy="0 0 0" />
+    <parent link="${name}_area_footprint"/>
+    <child link="${name}_area"/>
+  </joint>
+  
+  <iai_oven name="${name}_oven" parent="${name}_area">
+    <origin rpy="0 0 0" xyz="0.0 0.0 0.415"/>
+  </iai_oven>
+  
+  <iai_drawer_60_14 name="${name}_area_middle_upper_drawer" parent="${name}_area">
+    <origin rpy="0 0 0" xyz="0.0 -0. 0.045 "/>
+  </iai_drawer_60_14>
+  
+  
+  <iai_drawer_60_58 name="${name}_area_middle_lower_drawer" parent="${name}_area">
+    <origin rpy="0 0 0" xyz="0.0 -0. -0.315 "/>
+  </iai_drawer_60_58>
+  
+  
+  <iai_vdrawer name="${name}_area_left_drawer" parent="${name}_area">
+    <origin rpy="0 0 0" xyz="0.0 -0.45 0.06 "/>
+  </iai_vdrawer>
+  
+  <iai_vdrawer name="${name}_area_right_drawer" parent="${name}_area">
+    <origin rpy="0 0 0" xyz="0.0 0.45 0.06 "/>
+  </iai_vdrawer>
+  
+  
+  </macro> 
+  
+</robot>

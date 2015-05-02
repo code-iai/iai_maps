@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Benjamin Brieber</author>
+      <authoring_tool>Blender 2.73.0 commit date:2015-01-20, commit time:18:16, hash:bbf09d9</authoring_tool>
+    </contributor>
+    <created>2015-03-19T09:40:35</created>
+    <modified>2015-03-19T09:40:35</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_images/>
+  <library_effects>
+    <effect id="KitchenDark-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.5 0.5 0.5 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.01758339 0.01758339 0.01758339 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.06985846 0.06985846 0.06985846 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">3</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="KitchenFronts-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.5 0.5 0.5 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.2746773 0.2874408 0.2704979 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.6793722 0.6793722 0.6793722 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">3</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="KitchenDark-material" name="KitchenDark">
+      <instance_effect url="#KitchenDark-effect"/>
+    </material>
+    <material id="KitchenFronts-material" name="KitchenFronts">
+      <instance_effect url="#KitchenFronts-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="sink_area-mesh" name="sink_area">
+      <mesh>
+        <source id="sink_area-mesh-positions">
+          <float_array id="sink_area-mesh-positions-array" count="216">-0.29 -1.03 0.41 -0.29 1.03 0.41 0.29 1.03 0.41 0.29 -1.03 0.41 -0.29 -1.03 0.4399999 -0.29 1.03 0.4399999 0.29 1.03 0.4399999 0.29 -1.03 0.4399999 -0.29 0.8769921 0.4399999 -0.29 0.8769921 0.41 0.29 0.8769921 0.4399999 0.29 0.8769921 0.41 -0.29 0.06397682 0.41 0.29 0.06397682 0.4399999 -0.29 0.06397688 0.4399999 0.29 0.06397688 0.41 0.2431984 1.03 0.4399999 0.2431984 1.03 0.41 0.2431984 -1.03 0.4399999 0.2431984 -1.03 0.41 0.2431984 0.876992 0.4399999 0.2431984 0.876992 0.41 0.2431984 0.06397688 0.41 0.2431984 0.06397688 0.4399999 -0.2338663 1.03 0.41 -0.2338663 -1.03 0.4399999 -0.2338663 0.876992 0.4399999 -0.2338663 0.06397688 0.4399999 -0.2338663 1.03 0.4399999 -0.2338663 -1.03 0.41 -0.2338663 0.876992 0.41 -0.2338663 0.06397688 0.41 -0.255 -1 -0.41 -0.255 1 -0.41 0.255 1 -0.41 0.255 -1 -0.41 -0.255 -1 -0.31 -0.255 1 -0.31 0.255 1 -0.31 0.255 -1 -0.31 -0.29 1 -0.41 -0.29 1.03 -0.41 0.29 1.03 -0.41 0.29 1 -0.41 -0.29 1 0.41 -0.29 1.03 0.41 0.29 1.03 0.41 0.29 1 0.41 -0.29 -1.03 -0.41 -0.29 -1 -0.41 0.29 -1 -0.41 0.29 -1.03 -0.41 -0.29 -1.03 0.41 -0.29 -1 0.41 0.29 -1 0.41 0.29 -1.03 0.41 -0.29 -0.2149999 -0.32 -0.29 -0.1849998 -0.32 0.27 -0.1849998 -0.32 0.27 -0.2149999 -0.32 -0.29 -0.2149999 0.41 -0.29 -0.1849998 0.41 0.27 -0.1849998 0.41 0.27 -0.2149999 0.41 -0.29 0.3850001 -0.32 -0.29 0.4150002 -0.32 0.27 0.4150002 -0.32 0.27 0.3850001 -0.32 -0.29 0.3850001 0.41 -0.29 0.4150002 0.41 0.27 0.4150002 0.41 0.27 0.3850001 0.41</float_array>
+          <technique_common>
+            <accessor source="#sink_area-mesh-positions-array" count="72" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="sink_area-mesh-normals">
+          <float_array id="sink_area-mesh-normals-array" count="372">-1 -1.94776e-7 0 -2.54712e-6 1 0 1 0 0 4.24734e-6 -1 0 0 0 -1 0 0 1 0 0 1 0 0 -1 1 -1.94776e-7 0 -1 0 0 -1 0 0 0 0 -1 0 0 1 1 0 0 0 0 1 0 0 -1 0 0 1 0 0 1 0 0 -1 -5.09424e-6 -1 0 0 1 0 2.12367e-6 1 0 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 -1 0 -1 0 0 0 1 0 1 0 0 0 -1 0 -1 0 0 0 1 0 1 0 0 0 -1 0 0 0 -1 0 0 1 -1 0 0 0 1 0 1 0 0 0 -1 0 0 0 -1 0 0 1 -1 0 0 0 1 0 1 0 0 0 -1 0 0 0 -1 0 0 1 -1 0 0 0 1 0 1 0 0 0 -1 0 0 0 -1 0 0 1 -1 0 0 0 1 0 1 0 0 0 -1 0 0 0 -1 0 0 1 -1 -1.94776e-7 0 -2.54712e-6 1 0 1 0 0 4.24734e-6 -1 0 0 0 -1 0 0 1 0 0 1 0 0 -1 1 -1.94776e-7 0 -1 0 0 -1 0 0 0 0 -1 0 0 1 1 0 0 0 0 1 0 0 -1 0 0 1 0 0 1 0 0 -1 -5.09424e-6 -1 0 0 1 0 2.12367e-6 1 0 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 -1 0 -1 0 0 0 1 0 1 0 0 0 -1 0 -1 0 0 0 1 0 1 0 0 0 -1 0 0 0 -1 0 0 1 -1 0 0 0 1 0 1 0 0 0 -1 0 0 0 -1 0 0 1 -1 0 0 0 1 0 1 0 0 0 -1 0 0 0 -1 0 0 1 -1 0 0 0 1 0 1 0 0 0 -1 0 0 0 -1 0 0 1 -1 0 0 0 1 0 1 0 0 0 -1 0 0 0 -1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#sink_area-mesh-normals-array" count="124" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="sink_area-mesh-vertices">
+          <input semantic="POSITION" source="#sink_area-mesh-positions"/>
+        </vertices>
+        <polylist material="KitchenDark-material" count="108">
+          <input semantic="VERTEX" source="#sink_area-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#sink_area-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>5 0 1 0 9 0 6 1 2 1 17 1 13 2 7 2 3 2 4 3 0 3 29 3 17 4 2 4 11 4 21 7 11 7 15 7 10 8 11 8 2 8 14 9 8 9 9 9 4 10 14 10 12 10 19 11 22 11 15 11 10 13 13 13 15 13 31 15 22 15 19 15 24 18 17 18 21 18 18 19 19 19 3 19 16 20 17 20 24 20 28 21 24 21 1 21 9 22 1 22 24 22 9 23 30 23 31 23 12 24 31 24 29 24 25 27 29 27 19 27 23 28 20 28 21 28 27 29 23 29 22 29 30 30 26 30 27 30 21 31 20 31 26 31 37 32 33 32 32 32 38 33 34 33 33 33 39 34 35 34 34 34 36 35 32 35 35 35 33 36 34 36 35 36 38 37 37 37 36 37 45 38 41 38 40 38 46 39 42 39 41 39 47 40 43 40 42 40 44 41 40 41 43 41 41 42 42 42 43 42 46 43 45 43 44 43 53 44 49 44 48 44 54 45 50 45 49 45 55 46 51 46 50 46 52 47 48 47 51 47 49 48 50 48 51 48 54 49 53 49 52 49 61 50 57 50 56 50 62 51 58 51 57 51 63 52 59 52 58 52 60 53 56 53 59 53 57 54 58 54 59 54 62 55 61 55 60 55 69 56 65 56 64 56 70 57 66 57 65 57 71 58 67 58 66 58 68 59 64 59 67 59 65 60 66 60 67 60 70 61 69 61 68 61 8 62 5 62 9 62 16 63 6 63 17 63 15 64 13 64 3 64 25 65 4 65 29 65 21 66 17 66 11 66 22 69 21 69 15 69 6 70 10 70 2 70 12 71 14 71 9 71 0 72 4 72 12 72 3 73 19 73 15 73 11 75 10 75 15 75 29 77 31 77 19 77 30 80 24 80 21 80 7 81 18 81 3 81 28 82 16 82 24 82 5 83 28 83 1 83 30 84 9 84 24 84 12 85 9 85 31 85 0 86 12 86 29 86 18 89 25 89 19 89 22 90 23 90 21 90 31 91 27 91 22 91 31 92 30 92 27 92 30 93 21 93 26 93 36 94 37 94 32 94 37 95 38 95 33 95 38 96 39 96 34 96 39 97 36 97 35 97 32 98 33 98 35 98 39 99 38 99 36 99 44 100 45 100 40 100 45 101 46 101 41 101 46 102 47 102 42 102 47 103 44 103 43 103 40 104 41 104 43 104 47 105 46 105 44 105 52 106 53 106 48 106 53 107 54 107 49 107 54 108 55 108 50 108 55 109 52 109 51 109 48 110 49 110 51 110 55 111 54 111 52 111 60 112 61 112 56 112 61 113 62 113 57 113 62 114 63 114 58 114 63 115 60 115 59 115 56 116 57 116 59 116 63 117 62 117 60 117 68 118 69 118 64 118 69 119 70 119 65 119 70 120 71 120 66 120 71 121 68 121 67 121 64 122 65 122 67 122 71 123 70 123 68 123</p>
+        </polylist>
+        <polylist material="KitchenFronts-material" count="16">
+          <input semantic="VERTEX" source="#sink_area-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#sink_area-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>28 5 5 5 8 5 26 6 8 6 14 6 25 12 27 12 14 12 13 14 23 14 18 14 10 16 20 16 23 16 10 17 6 17 16 17 23 25 27 25 25 25 16 26 28 26 26 26 26 67 28 67 8 67 27 68 26 68 14 68 4 74 25 74 14 74 7 76 13 76 18 76 13 78 10 78 23 78 20 79 10 79 16 79 18 87 23 87 25 87 20 88 16 88 26 88</p>
+        </polylist>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers/>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="sink_area" name="sink_area" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#sink_area-mesh">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="KitchenDark-material" target="#KitchenDark-material"/>
+              <instance_material symbol="KitchenFronts-material" target="#KitchenFronts-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>

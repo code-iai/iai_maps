@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+
+<robot name="iai_oven_area" xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <xacro:property name="pi" value="3.1415926535897931" />
+  <link name="room_link">    
+  </link>
+  <!--- FIXME THIS should NOT be here -->
+  <xacro:include filename="$(find iai_kitchen)/urdf/IAI_oven_area.urdf.xacro"/>
+  <xacro:include filename="$(find iai_kitchen)/urdf/IAI_kitchen_island.urdf.xacro"/>
+  <xacro:include filename="$(find iai_kitchen)/urdf/IAI_sink_area.urdf.xacro"/>
+  <xacro:include filename="$(find iai_kitchen)/urdf/IAI_fridge_area.urdf.xacro"/>
+  
+  <iai_sink_area name="sink_area" parent="room_link">
+    <origin xyz="1.825 1.3 0" rpy="0 0 ${pi}" />    
+  </iai_sink_area>
+  
+  <iai_oven_area name="oven_area" parent="room_link">
+    <origin xyz="1.805 2.5 0" rpy="0 0 ${pi}" />    
+  </iai_oven_area>
+  
+  
+  <iai_kitchen_island name="kitchen_island" parent="room_link">
+    <origin xyz="-1.365 0.59 0" rpy="0 0 0" />    
+  </iai_kitchen_island>
+  
+  <iai_fridge_area name="fridge_area" parent="room_link">
+    <origin xyz="1.825 -0.76 0" rpy="0 0 ${pi}" />    
+  </iai_fridge_area>
+  <!--
+  <iai_sink_area name="sink_area" parent="room_link">
+    <origin xyz="-5.29 -5.65 0" rpy="0 0 0" />    
+  </iai_sink_area>
+  
+  <iai_oven_area name="oven_area" parent="room_link">
+    <origin xyz="-5.27 -6.85 0" rpy="0 0 0" />    
+  </iai_oven_area>
+  
+  
+  <iai_kitchen_island name="kitchen_island" parent="room_link">
+    <origin xyz="-2.1 -4.94 0" rpy="0 0 ${pi}" />    
+  </iai_kitchen_island>
+  
+  <iai_fridge_area name="fridge_area" parent="room_link">
+    <origin xyz="-5.29 -3.59 0" rpy="0 0 0" />    
+  </iai_fridge_area>
+  -->
+</robot>

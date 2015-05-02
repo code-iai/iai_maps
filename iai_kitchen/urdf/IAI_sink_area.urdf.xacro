@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+
+<robot name="iai_sink_area" xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <xacro:property name="pi" value="3.1415926535897931" />
+  
+  <!--- FIXME THIS should NOT be here -->
+  <xacro:include filename="$(find iai_kitchen)/urdf/IAI_drawers.urdf.xacro"/>
+  <xacro:include filename="$(find iai_kitchen)/urdf/IAI_dish_washer.urdf.xacro"/>
+  
+  <macro name="iai_sink_area" params="parent name *origin">
+  <link name="${name}_footprint">    
+    <sphere_inertia radius="0" mass="0"/>
+  </link>
+  
+  <link name="${name}">    
+    <sphere_inertia radius="0" mass="0"/>
+    <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/racks/SinkArea.dae"/>
+        </geometry>
+      </visual>
+  </link>
+  
+  <joint name="${name}_footprint_joint" type="fixed">
+      <xacro:insert_block name="origin" />
+    <child link="${name}_footprint"/>
+    <parent link="${parent}"/>
+  </joint>
+  
+  <joint name="${name}_main_joint" type="fixed">
+    <origin xyz="0.29 1.03 0.41" rpy="0 0 0" />
+    <parent link="${name}_footprint"/>
+    <child link="${name}"/>
+  </joint>
+  
+  <link name="${name}_sink">    
+    <sphere_inertia radius="0" mass="0"/>
+    <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/misc/Sink.dae"/>
+        </geometry>
+      </visual>
+  </link>
+  
+  <joint name="${name}_sink_joint" type="fixed">
+    <origin xyz="0.005 0.47 0.4414" rpy="0 0 0" />
+    <parent link="${name}"/>
+    <child link="${name}_sink"/>
+  </joint>
+  
+  <iai_generic_panel name="${name}_right_panel" parent="${name}" width="60">
+    <origin rpy="0 0 0" xyz="0.28 0.7 0.325 "/>
+  </iai_generic_panel>
+  <iai_drawer_60_58 name="${name}_trash_drawer" parent="${name}">
+    <origin rpy="0 0 0" xyz="0.01 0.7 -0.035 "/>
+  </iai_drawer_60_58>
+  <iai_drawer_80_14 name="${name}_left_upper_drawer" parent="${name}">
+    <origin rpy="0 0 0" xyz="0.01 -0.6 0.325 "/>
+  </iai_drawer_80_14>
+  <iai_drawer_80_29 name="${name}_left_middle_drawer" parent="${name}">
+    <origin rpy="0 0 0" xyz="0.01 -0.6 0.11 "/>
+  </iai_drawer_80_29>
+  <iai_drawer_80_29 name="${name}_left_bottom_drawer" parent="${name}">
+    <origin rpy="0 0 0" xyz="0.01 -0.6 -0.18 "/>
+  </iai_drawer_80_29>
+  <iai_dish_washer name="${name}_dish_washer" parent="${name}">
+    <origin rpy="0 0 0" xyz="0.01 0.1 0.035 "/>
+  </iai_dish_washer>
+  </macro> 
+  
+</robot>
