@@ -68,6 +68,7 @@
         <rdf:type rdf:resource="&knowrob;IAIKitchen"/>
         <srdl2-comp:urdfName>room_link</srdl2-comp:urdfName>
 	<knowrob:describedInMap rdf:resource="&iai-map;IAIKitchenMap_PM580j"/>
+	<knowrob:hasVisual rdf:datatype="&xsd;boolean">false</knowrob:hasVisual>
         <srdl2-comp:succeedingJoint rdf:resource="&iai-map;iai_kitchen_sink_area_footprint_joint"/>
         <srdl2-comp:succeedingJoint rdf:resource="&iai-map;iai_kitchen_oven_area_footprint_joint"/>
         <srdl2-comp:succeedingJoint rdf:resource="&iai-map;iai_kitchen_kitchen_island_footprint_joint"/>
@@ -81,6 +82,7 @@
         <rdf:type rdf:resource="&srdl2-comp;UrdfLink"/>
         <srdl2-comp:urdfName>sink_area_footprint</srdl2-comp:urdfName>
 	<knowrob:describedInMap rdf:resource="&iai-map;IAIKitchenMap_PM580j"/>
+	<knowrob:hasVisual rdf:datatype="&xsd;boolean">false</knowrob:hasVisual>
         <srdl2-comp:sphere_inertia_mass rdf:datatype="&qudt-unit;Kilogram">0</srdl2-comp:sphere_inertia_mass>
         <srdl2-comp:sphere_inertia_radius rdf:datatype="&qudt-unit;Kilogram">0</srdl2-comp:sphere_inertia_radius>
         <srdl2-comp:succeedingJoint rdf:resource="&iai-map;iai_kitchen_sink_area_main_joint"/>
@@ -405,6 +407,7 @@
     <owl:NamedIndividual rdf:about="&iai-map;iai_kitchen_oven_area_area_footprint">
         <rdf:type rdf:resource="&srdl2-comp;UrdfLink"/>
         <srdl2-comp:urdfName>oven_area_area_footprint</srdl2-comp:urdfName>
+	<knowrob:hasVisual rdf:datatype="&xsd;boolean">false</knowrob:hasVisual>
 	<knowrob:describedInMap rdf:resource="&iai-map;IAIKitchenMap_PM580j"/>
         <srdl2-comp:sphere_inertia_mass rdf:datatype="&qudt-unit;Kilogram">0</srdl2-comp:sphere_inertia_mass>
         <srdl2-comp:sphere_inertia_radius rdf:datatype="&qudt-unit;Kilogram">0</srdl2-comp:sphere_inertia_radius>
@@ -662,6 +665,7 @@
 
     <owl:NamedIndividual rdf:about="&iai-map;iai_kitchen_kitchen_island_footprint">
         <rdf:type rdf:resource="&srdl2-comp;UrdfLink"/>
+	<knowrob:hasVisual rdf:datatype="&xsd;boolean">false</knowrob:hasVisual>
 	<knowrob:describedInMap rdf:resource="&iai-map;IAIKitchenMap_PM580j"/>
         <srdl2-comp:urdfName>kitchen_island_footprint</srdl2-comp:urdfName>
         <srdl2-comp:sphere_inertia_mass rdf:datatype="&qudt-unit;Kilogram">0</srdl2-comp:sphere_inertia_mass>
@@ -897,6 +901,7 @@
 
     <owl:NamedIndividual rdf:about="&iai-map;iai_kitchen_frige_area_footprint">
         <rdf:type rdf:resource="&srdl2-comp;UrdfLink"/>
+	<knowrob:hasVisual rdf:datatype="&xsd;boolean">false</knowrob:hasVisual>
 	<knowrob:describedInMap rdf:resource="&iai-map;IAIKitchenMap_PM580j"/>
         <srdl2-comp:urdfName>frige_area_footprint</srdl2-comp:urdfName>
         <srdl2-comp:sphere_inertia_mass rdf:datatype="&qudt-unit;Kilogram">0</srdl2-comp:sphere_inertia_mass>
