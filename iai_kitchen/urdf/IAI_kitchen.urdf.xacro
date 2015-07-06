@@ -3,8 +3,32 @@
 <robot name="iai_oven_area" xmlns:xacro="http://ros.org/wiki/xacro">
 
   <xacro:property name="pi" value="3.1415926535897931" />
+  <xacro:property name="simulated" value="true" />
+  
+  <macro name="sphere_inertia" params="radius mass">
+        <inertial>
+          <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+          <mass value="1"/>
+          <inertia 
+              ixx="1" ixy="0.0" ixz="0.0" 
+              iyy="1" iyz="0.0" 
+              izz="1"/>
+        </inertial>
+    
+  </macro>
+  
   <link name="room_link">    
+    
+      <sphere_inertia radius="0" mass="0"/>
   </link>
+  <xacro:if value="${simulated}">
+    <link name="world"/> 
+    <joint name="world_room_joint" type="fixed">
+        <origin xyz="0 0 0 " rpy="0 0 0" />
+        <parent link="world"/>
+        <child link="room_link"/>
+      </joint>   
+  </xacro:if>
   <!--- FIXME THIS should NOT be here -->
   <xacro:include filename="$(find iai_kitchen)/urdf/IAI_oven_area.urdf.xacro"/>
   <xacro:include filename="$(find iai_kitchen)/urdf/IAI_kitchen_island.urdf.xacro"/>
