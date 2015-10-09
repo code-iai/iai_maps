@@ -1,4 +1,4 @@
-image: map.pgm
+image: map_hallway.pgm
 resolution: 0.050000
 origin: [-29.800000, -41.000000, 0.000000]
 negate: 0
