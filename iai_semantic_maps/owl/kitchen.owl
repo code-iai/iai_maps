@@ -1000,6 +1000,23 @@
     </owl:NamedIndividual>
 
 
+    <!-- &iai-map;Transformation_Hd63PbAW -->
+
+    <owl:NamedIndividual rdf:about="&iai-map;Transformation_Hd63PbAW">
+        <rdf:type rdf:resource="&knowrob;Transformation"/>
+        <knowrob:quaternion rdf:datatype="&xsd;string">-0.00000 0.00000 0.00000 1.00000</knowrob:quaternion>
+        <knowrob:translation rdf:datatype="&xsd;string">1.1925 0.87 0.7525</knowrob:translation>
+
+    </owl:NamedIndividual>
+
+
+<owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_Hd63PbAW">
+        <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
+        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_Hd63PbAW"/>
+        <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
+        <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_sink_area_left_upper_drawer_handle"/>
+    </owl:NamedIndividual>
+
 
     <!-- &iai-map;Transformation_bLdopb6S -->
 
