@@ -36,13 +36,29 @@
         </geometry>
       </visual>
     </link>
-    
-    <joint name="${name}_main_joint" type="fixed">
+    <!--
+    <xacro:if value="simulated"/>
+    -->
+    <joint name="${name}_main_joint" type="revolute">
+      <limit lower="0" upper="0" effort="300" velocity="10"/>
+      
       <xacro:insert_block name="origin" />
       <parent link="${parent}"/>
       <child link="${name}_main"/>
     </joint>
     
+    <xacro:if value="${simulated}">
+    <joint name="${name}_door_joint" type="revolute">
+      <origin xyz="0.27 0. -0.325" rpy="${-0.5*pi} 0 0" />
+      <parent link="${name}_main"/>
+      <child link="${name}_door"/>
+      <axis xyz="0 0 1"/>
+      <!-- FIXME make closed position stable instead of forbidding opening... -->
+      <limit lower="0" upper="0" effort="300" velocity="10"/>
+    </joint>
+    
+    </xacro:if>
+    <xacro:unless value="${simulated}">
     <joint name="${name}_door_joint" type="revolute">
       <origin xyz="0.27 0. -0.325" rpy="${-0.5*pi} 0 0" />
       <parent link="${name}_main"/>
@@ -50,6 +66,8 @@
       <axis xyz="0 0 1"/>
       <limit lower="0" upper="${0.5*pi}" effort="300" velocity="10"/>
     </joint>
+    
+    </xacro:unless>
     <joint name="${name}_door_handle_joint" type="fixed">
       <origin xyz="0.0625 -0.6325 0." rpy="${-0.5*pi} 0 0" />
       <parent link="${name}_door"/>

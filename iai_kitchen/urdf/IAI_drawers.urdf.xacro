@@ -79,7 +79,7 @@
       <parent link="${parent}"/>
       <child link="${name}_main"/>
       <axis xyz="1. 0. 0.0"/>
-      <limit lower="0" upper="0.48" effort="300" velocity="10"/>
+      <limit lower="0" upper="0.48" effort="0.0300" velocity="10"/>
     </joint>
     
     
