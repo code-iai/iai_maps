@@ -14,8 +14,4 @@
   <author>Moritz Tenorth</author>
 
   <buildtool_depend>catkin</buildtool_depend>
-
-  <build_depend>comp_spatial</build_depend>
-  <run_depend>comp_spatial</run_depend>
-
 </package>
