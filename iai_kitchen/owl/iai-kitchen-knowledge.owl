@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
 
 
 <!DOCTYPE rdf:RDF [
@@ -17,8 +17,9 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:knowrob="http://knowrob.org/kb/knowrob.owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-    <owl:Ontology rdf:about="http://knowrob.org/kb/iai-kitchen.owl">
-        <owl:imports rdf:resource="http://knowrob.org/kb/knowrob.owl"/>
+  
+    <owl:Ontology rdf:about="http://knowrob.org/kb/IAI-kitchen-knowledge.owl">
+        <owl:imports rdf:resource="package://knowrob_common/owl/knowrob.owl"/>
     </owl:Ontology>
     
 
