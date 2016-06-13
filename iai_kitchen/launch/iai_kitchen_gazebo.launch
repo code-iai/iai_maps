@@ -11,6 +11,11 @@
     <arg name="headless" value="false"/>
     <arg name="debug" value="false"/>
   </include>
+  <node
+    name="joint_state_publisher"
+    pkg="joint_state_publisher"
+    type="joint_state_publisher" >
+  </node>
 
   <include file="$(find iai_kitchen)/launch/gazebo_spawn_kitchen.launch"/>
 </launch>

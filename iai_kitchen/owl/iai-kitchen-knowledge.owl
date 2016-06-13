@@ -65,6 +65,12 @@
                 <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/drawers/Drawer_60_14.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>  
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;boundingBoxSize"/>
+                <owl:hasValue rdf:datatype="&xsd;string">0.5600001215934753 0.5950000882148743 0.13500000536441803</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>  
   </owl:Class>
 
     
@@ -76,6 +82,12 @@
                 <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/drawers/Drawer_60_29.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>   
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;boundingBoxSize"/>
+                <owl:hasValue rdf:datatype="&xsd;string">0.5600001215934753 0.595000147819519 0.2849999964237213</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>  
   </owl:Class>
 
     
@@ -87,6 +99,12 @@
                 <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/drawers/Drawer_60_58.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>   
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;boundingBoxSize"/>
+                <owl:hasValue rdf:datatype="&xsd;string">0.5600000023841858 0.5950000286102295 0.5750000476837158</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>  
   </owl:Class>
 
     
@@ -98,6 +116,12 @@
                 <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/drawers/VDrawer.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>   
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;boundingBoxSize"/>
+                <owl:hasValue rdf:datatype="&xsd;string">0.574999988079071 0.29499998688697815 1.3250000476837158</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>  
   </owl:Class>
 
     
@@ -109,6 +133,12 @@
                 <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/drawers/Drawer_80_14.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>   
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;boundingBoxSize"/>
+                <owl:hasValue rdf:datatype="&xsd;string">0.5600001215934753 0.7949999570846558 0.13500000536441803</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>  
   </owl:Class>
 
     
@@ -120,6 +150,12 @@
                 <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/drawers/Drawer_80_29.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>   
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;boundingBoxSize"/>
+                <owl:hasValue rdf:datatype="&xsd;string">0.5600000619888306 0.7950000166893005 0.2850000262260437</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>  
   </owl:Class>
 
     
@@ -131,6 +167,12 @@
                 <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/drawers/Drawer_100_29.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>   
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;boundingBoxSize"/>
+                <owl:hasValue rdf:datatype="&xsd;string">0.5600001215934753 0.9950000047683716 0.2849999964237213</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>  
   </owl:Class>
   
     <owl:Class rdf:about="&knowrob;IAIThrashDrawer">
@@ -142,6 +184,12 @@
                 <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/drawers/Drawer_60_58.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>   
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;boundingBoxSize"/>
+                <owl:hasValue rdf:datatype="&xsd;string">0.5600000023841858 0.5950000286102295 0.5750000476837158</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>  
   </owl:Class>
     
   
@@ -160,6 +208,12 @@
                 <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/drawers/Panel_60.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>   
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;boundingBoxSize"/>
+                <owl:hasValue rdf:datatype="&xsd;string">0.05999999865889549 0.5950000286102295 0.13500000536441803</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>  
     </owl:Class>
     
     
@@ -171,6 +225,12 @@
                 <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/drawers/Panel_100.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>   
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;boundingBoxSize"/>
+                <owl:hasValue rdf:datatype="&xsd;string">0.05999999865889549 0.9950000047683716 0.13500000536441803</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>  
   </owl:Class>
   
   
@@ -188,7 +248,13 @@
                 <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
                 <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/handles/Handle60.dae</owl:hasValue>
             </owl:Restriction>
-        </rdfs:subClassOf>   
+        </rdfs:subClassOf>  
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;boundingBoxSize"/>
+                <owl:hasValue rdf:datatype="&xsd;string">0.10622437298297882 0.5049999952316284 0.01500004529953003</owl:hasValue>
+            </owl:Restriction> 
+        </rdfs:subClassOf>  
     </owl:Class>
     
     <owl:Class rdf:about="&knowrob;IAIHandleVert">
@@ -200,6 +266,12 @@
                 <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/handles/VHandle130.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>   
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;boundingBoxSize"/>
+                <owl:hasValue rdf:datatype="&xsd;string">0.10622437298297882 0.015000104904174805 1.2350000143051147</owl:hasValue>
+            </owl:Restriction> 
+        </rdfs:subClassOf>  
     </owl:Class>
     
     <owl:Class rdf:about="&knowrob;IAIHandle80">
@@ -210,6 +282,12 @@
                 <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/handles/Handle80.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>   
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;boundingBoxSize"/>
+                <owl:hasValue rdf:datatype="&xsd;string">0.10622436553239822 0.7049999833106995 0.015000015497207642</owl:hasValue>
+            </owl:Restriction> 
+        </rdfs:subClassOf>  
     </owl:Class>
     
     <owl:Class rdf:about="&knowrob;IAIHandle100">
@@ -220,6 +298,12 @@
                 <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/handles/Handle100.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>   
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;boundingBoxSize"/>
+                <owl:hasValue rdf:datatype="&xsd;string">0.1062244102358818 0.9100418090820312 0.015000035054981709</owl:hasValue>
+            </owl:Restriction> 
+        </rdfs:subClassOf>  
     </owl:Class>
   <!--
         <rdf:type rdf:resource="&srdl2-comp;UrdfLink"/>
@@ -240,6 +324,12 @@
                 <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/racks/SinkArea.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>   
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;boundingBoxSize"/>
+                <owl:hasValue rdf:datatype="&xsd;string">0.5800000429153442 2.060000419616699 0.8799999356269836</owl:hasValue>
+            </owl:Restriction> 
+        </rdfs:subClassOf>  
     </owl:Class>
     
     
@@ -252,6 +342,12 @@
                 <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/misc/Sink.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>   
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;boundingBoxSize"/>
+                <owl:hasValue rdf:datatype="&xsd;string">0.5 0.8600000143051147 0.3649999797344208</owl:hasValue>
+            </owl:Restriction> 
+        </rdfs:subClassOf>  
     </owl:Class>
     
     
@@ -265,6 +361,12 @@
                 <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/misc/DishWasher.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>   
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;boundingBoxSize"/>
+                <owl:hasValue rdf:datatype="&xsd;string">0.5600001215934753 0.5 0.6700000166893005</owl:hasValue>
+            </owl:Restriction> 
+        </rdfs:subClassOf>  
     </owl:Class>
     
     
@@ -278,6 +380,12 @@
                 <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/misc/DishWasherDoor.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>   
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;boundingBoxSize"/>
+                <owl:hasValue rdf:datatype="&xsd;string">0.02000017836689949 0.5950000286102295 1.3649998903274536</owl:hasValue>
+            </owl:Restriction> 
+        </rdfs:subClassOf>  
     </owl:Class>
     <!-- OvenArea -->
     
@@ -290,6 +398,12 @@
                 <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/racks/OvenArea.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;boundingBoxSize"/>
+                <owl:hasValue rdf:datatype="&xsd;string">0.5799999833106995 1.2000000476837158 1.5099999904632568</owl:hasValue>
+            </owl:Restriction> 
+        </rdfs:subClassOf>  
     </owl:Class>
     
     
@@ -303,6 +417,12 @@
                 <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/oven/OvenMain.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>   
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;boundingBoxSize"/>
+                <owl:hasValue rdf:datatype="&xsd;string">0.5597404837608337 0.5013357400894165 0.6011766791343689</owl:hasValue>
+            </owl:Restriction> 
+        </rdfs:subClassOf>  
     </owl:Class>
     
     
@@ -314,6 +434,12 @@
                 <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/oven/OvenDoor.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>   
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;boundingBoxSize"/>
+                <owl:hasValue rdf:datatype="&xsd;string">0.02748239040374756 0.5950000882148743 0.8977498412132263</owl:hasValue>
+            </owl:Restriction> 
+        </rdfs:subClassOf>  
     </owl:Class>
     
     
@@ -326,6 +452,12 @@
                 <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/oven/OvenPanel.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>   
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;boundingBoxSize"/>
+                <owl:hasValue rdf:datatype="&xsd;string">0.02000001072883606 0.5950000882148743 0.12514778971672058</owl:hasValue>
+            </owl:Restriction> 
+        </rdfs:subClassOf>  
     </owl:Class>
     
     
@@ -346,6 +478,12 @@
                 <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/oven/Knob.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>   
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;boundingBoxSize"/>
+                <owl:hasValue rdf:datatype="&xsd;string">0.045790545642375946 0.03841124475002289 0.03841124475002289</owl:hasValue>
+            </owl:Restriction> 
+        </rdfs:subClassOf>  
     </owl:Class>
     
     <!-- Kitchen Area -->
@@ -356,7 +494,13 @@
                 <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
                 <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/racks/IslandArea.dae</owl:hasValue>
             </owl:Restriction>
-        </rdfs:subClassOf>  
+        </rdfs:subClassOf> 
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;boundingBoxSize"/>
+                <owl:hasValue rdf:datatype="&xsd;string">0.9849997162818909 2.458333730697632 0.8620001673698425</owl:hasValue>
+            </owl:Restriction> 
+        </rdfs:subClassOf>   
     </owl:Class>
     
     <owl:Class rdf:about="&knowrob;IAIKitchenIslandStove">
@@ -368,6 +512,12 @@
                 <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/misc/Stove.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>  
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;boundingBoxSize"/>
+                <owl:hasValue rdf:datatype="&xsd;string">0.5 0.5699999928474426 0.004999999888241291</owl:hasValue>
+            </owl:Restriction> 
+        </rdfs:subClassOf>   
     </owl:Class>
     <!-- TODO -->
     <owl:Class rdf:about="&knowrob;IAIFrigeArea">
@@ -378,6 +528,12 @@
                 <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/racks/FridgeArea.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>  
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;boundingBoxSize"/>
+                <owl:hasValue rdf:datatype="&xsd;string">0.5799999833106995 0.6000000238418579 1.5199998617172241</owl:hasValue>
+            </owl:Restriction> 
+        </rdfs:subClassOf>   
     </owl:Class>
     <owl:Class rdf:about="&knowrob;IAIFrige">
         <rdfs:subClassOf rdf:resource="&knowrob;Refrigerator"/>
@@ -387,6 +543,12 @@
                 <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/misc/Fridge.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>  
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;boundingBoxSize"/>
+                <owl:hasValue rdf:datatype="&xsd;string">0.5512440204620361 0.5590660572052002 1.456691026687622</owl:hasValue>
+            </owl:Restriction> 
+        </rdfs:subClassOf>   
     </owl:Class>
     
     
@@ -398,6 +560,12 @@
                 <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/misc/FridgeDoor.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>   
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;boundingBoxSize"/>
+                <owl:hasValue rdf:datatype="&xsd;string"> 0.014999999664723873 1.1950000524520874 0.9649999737739563</owl:hasValue>
+            </owl:Restriction> 
+        </rdfs:subClassOf>  
     </owl:Class>
     <owl:Class rdf:about="&knowrob;IAIFrigeDoorHandle">
         <rdfs:subClassOf rdf:resource="&knowrob;IAIHandle"/>
@@ -407,6 +575,12 @@
                 <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/handles/VHandle90.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf> 
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;boundingBoxSize"/>
+                <owl:hasValue rdf:datatype="&xsd;string"> 0.10622437298297882 0.015000104904174805 0.875</owl:hasValue>
+            </owl:Restriction> 
+        </rdfs:subClassOf>  
     </owl:Class>
 </rdf:RDF>
 
