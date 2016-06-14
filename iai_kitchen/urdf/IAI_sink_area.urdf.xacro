@@ -21,6 +21,12 @@
           <mesh filename="package://iai_kitchen/meshes/racks/SinkArea.dae"/>
         </geometry>
       </visual>
+    <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/collision/kitchen_sink.stl"/>
+        </geometry>
+      </collision>
   </link>
   
   <joint name="${name}_footprint_joint" type="fixed">

@@ -922,7 +922,7 @@
         <srdl2-comp:mesh_filename rdf:datatype="&xsd;string">package://iai_kitchen/meshes/racks/FrigeArea.dae</srdl2-comp:mesh_filename>
 	-->
 	 <srdl2-comp:succeedingJoint rdf:resource="&iai-map;iai_kitchen_frige_area_lower_drawer_main_joint"/>
-        <srdl2-comp:succeedingJoint rdf:resource="&iai-map;iai_kitchen_iai_frige_main_joint"/>
+        <srdl2-comp:succeedingJoint rdf:resource="&iai-map;iai_kitchen_frige_main_joint"/>
         <knowrob:describedInMap rdf:resource="&iai-map;IAIKitchenMap_PM580j"/>
     </owl:NamedIndividual>
 
@@ -952,38 +952,38 @@
     </owl:NamedIndividual>
 
 
-    <!-- &iai-map;iai_kitchen_iai_frige_main -->
+    <!-- &iai-map;iai_kitchen_frige_main -->
 
-    <owl:NamedIndividual rdf:about="&iai-map;iai_kitchen_iai_frige_main">
+    <owl:NamedIndividual rdf:about="&iai-map;iai_kitchen_frige_main">
         <rdf:type rdf:resource="&knowrob;IAIFrige"/> 
         <rdf:type rdf:resource="&srdl2-comp;UrdfLink"/>
-	<srdl2-comp:subComponent rdf:resource="&iai-map;iai_kitchen_iai_frige_door"/>
-	<srdl2-comp:subComponent rdf:resource="&iai-map;iai_kitchen_iai_frige_door_handle"/>
+	<srdl2-comp:subComponent rdf:resource="&iai-map;iai_kitchen_frige_door"/>
+	<srdl2-comp:subComponent rdf:resource="&iai-map;iai_kitchen_frige_door_handle"/>
         <srdl2-comp:urdfName>iai_frige_main</srdl2-comp:urdfName>
         <srdl2-comp:sphere_inertia_mass rdf:datatype="&qudt-unit;Kilogram">0</srdl2-comp:sphere_inertia_mass>
         <srdl2-comp:sphere_inertia_radius rdf:datatype="&qudt-unit;Kilogram">0</srdl2-comp:sphere_inertia_radius>
         
-        <srdl2-comp:succeedingJoint rdf:resource="&iai-map;iai_kitchen_iai_frige_door_joint"/>
+        <srdl2-comp:succeedingJoint rdf:resource="&iai-map;iai_kitchen_frige_door_joint"/>
 	<knowrob:describedInMap rdf:resource="&iai-map;IAIKitchenMap_PM580j"/>
     </owl:NamedIndividual>
 
 
-    <!-- &iai-map;iai_kitchen_iai_frige_door -->
+    <!-- &iai-map;iai_kitchen_frige_door -->
 
-    <owl:NamedIndividual rdf:about="&iai-map;iai_kitchen_iai_frige_door">
+    <owl:NamedIndividual rdf:about="&iai-map;iai_kitchen_frige_door">
         <rdf:type rdf:resource="&knowrob;IAIFrigeDoor"/> 
         <rdf:type rdf:resource="&srdl2-comp;UrdfLink"/>
         <srdl2-comp:urdfName>iai_frige_door</srdl2-comp:urdfName>
         <srdl2-comp:sphere_inertia_mass rdf:datatype="&qudt-unit;Kilogram">0</srdl2-comp:sphere_inertia_mass>
         <srdl2-comp:sphere_inertia_radius rdf:datatype="&qudt-unit;Kilogram">0</srdl2-comp:sphere_inertia_radius>
         <knowrob:describedInMap rdf:resource="&iai-map;IAIKitchenMap_PM580j"/>
-        <srdl2-comp:succeedingJoint rdf:resource="&iai-map;iai_kitchen_iai_frige_door_handle_joint"/>
+        <srdl2-comp:succeedingJoint rdf:resource="&iai-map;iai_kitchen_frige_door_handle_joint"/>
     </owl:NamedIndividual>
 
 
-    <!-- &iai-map;iai_kitchen_iai_frige_door_handle -->
+    <!-- &iai-map;iai_kitchen_frige_door_handle -->
 
-    <owl:NamedIndividual rdf:about="&iai-map;iai_kitchen_iai_frige_door_handle">
+    <owl:NamedIndividual rdf:about="&iai-map;iai_kitchen_frige_door_handle">
         <rdf:type rdf:resource="&knowrob;IAIFrigeDoorHandle"/> 
         <rdf:type rdf:resource="&srdl2-comp;UrdfLink"/>
         <srdl2-comp:urdfName>iai_frige_door_handle</srdl2-comp:urdfName>
@@ -1931,7 +1931,7 @@
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
         <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K49"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
-        <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_iai_frige_main"/>
+        <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_frige_main"/>
     </owl:NamedIndividual>
 
 
@@ -1950,7 +1950,7 @@
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
         <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K50"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
-        <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_iai_frige_door"/>
+        <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_frige_door"/>
     </owl:NamedIndividual>
 
 
@@ -1969,7 +1969,7 @@
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
         <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K51"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
-        <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_iai_frige_door_handle"/>
+        <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_frige_door_handle"/>
     </owl:NamedIndividual>
 
 
