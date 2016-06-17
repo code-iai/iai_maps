@@ -1,3 +1,0 @@
-<launch>
-  <node name="stp_pancake_table" pkg="tf" type="static_transform_publisher" args="-1.05289 -0.45 0.72 0 0 0 map pancake_table 100" />
-</launch>
