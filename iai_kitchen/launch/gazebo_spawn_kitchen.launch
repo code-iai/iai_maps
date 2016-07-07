@@ -23,6 +23,7 @@
     -urdf
     -model IAI_kitchen
   "/>
+  
   <!--
   <node
     name="kitchen_state_publisher"
