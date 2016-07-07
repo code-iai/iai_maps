@@ -20,6 +20,9 @@
   
     <owl:Ontology rdf:about="http://knowrob.org/kb/IAI-kitchen-knowledge.owl">
         <owl:imports rdf:resource="package://knowrob_common/owl/knowrob.owl"/>
+        <!--
+        <owl:imports rdf:resource="package://iai_kitchen/owl/map-knowledge.owl"/>
+        -->
     </owl:Ontology>
     
 
@@ -59,7 +62,7 @@
     
     <owl:Class rdf:about="&knowrob;IAIDrawer_60_14">
 
-	<rdfs:subClassOf rdf:resource="&knowrob;IAIDrawer"/> 
+        <rdfs:subClassOf rdf:resource="&knowrob;IAIDrawer"/> 
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
@@ -76,7 +79,7 @@
 
     
     <owl:Class rdf:about="&knowrob;IAIDrawer_60_29">
-	<rdfs:subClassOf rdf:resource="&knowrob;IAIDrawer"/> 
+        <rdfs:subClassOf rdf:resource="&knowrob;IAIDrawer"/> 
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
@@ -93,7 +96,7 @@
 
     
     <owl:Class rdf:about="&knowrob;IAIDrawer_60_58">
-	<rdfs:subClassOf rdf:resource="&knowrob;IAIDrawer"/> 
+        <rdfs:subClassOf rdf:resource="&knowrob;IAIDrawer"/> 
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
@@ -110,7 +113,7 @@
 
     
     <owl:Class rdf:about="&knowrob;IAIDrawer_Vert">
-	<rdfs:subClassOf rdf:resource="&knowrob;IAIDrawer"/> 
+        <rdfs:subClassOf rdf:resource="&knowrob;IAIDrawer"/> 
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
@@ -127,7 +130,7 @@
 
     
     <owl:Class rdf:about="&knowrob;IAIDrawer_80_14">
-	<rdfs:subClassOf rdf:resource="&knowrob;IAIDrawer"/> 
+        <rdfs:subClassOf rdf:resource="&knowrob;IAIDrawer"/> 
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
@@ -144,7 +147,7 @@
 
     
     <owl:Class rdf:about="&knowrob;IAIDrawer_80_29">
-	<rdfs:subClassOf rdf:resource="&knowrob;IAIDrawer"/> 
+        <rdfs:subClassOf rdf:resource="&knowrob;IAIDrawer"/> 
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
@@ -161,7 +164,7 @@
 
     
     <owl:Class rdf:about="&knowrob;IAIDrawer_100_29">
-	<rdfs:subClassOf rdf:resource="&knowrob;IAIDrawer"/> 
+        <rdfs:subClassOf rdf:resource="&knowrob;IAIDrawer"/> 
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
@@ -177,8 +180,8 @@
   </owl:Class>
   
     <owl:Class rdf:about="&knowrob;IAIThrashDrawer">
-	<rdfs:subClassOf rdf:resource="&knowrob;IAIDrawer"/> 
-	<rdfs:subClassOf rdf:resource="&knowrob;ThrashContainer"/> 
+        <rdfs:subClassOf rdf:resource="&knowrob;IAIDrawer"/> 
+        <rdfs:subClassOf rdf:resource="&knowrob;ThrashContainer"/> 
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
@@ -202,7 +205,7 @@
     
     
     <owl:Class rdf:about="&knowrob;IAIPanel60">
-	<rdfs:subClassOf rdf:resource="&knowrob;IAIPanel"/> 
+        <rdfs:subClassOf rdf:resource="&knowrob;IAIPanel"/> 
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
@@ -219,7 +222,7 @@
     
     
     <owl:Class rdf:about="&knowrob;IAIPanel100">
-	<rdfs:subClassOf rdf:resource="&knowrob;IAIPanel"/> 
+        <rdfs:subClassOf rdf:resource="&knowrob;IAIPanel"/> 
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
@@ -308,11 +311,11 @@
     </owl:Class>
   <!--
         <rdf:type rdf:resource="&srdl2-comp;UrdfLink"/>
-	I am not shure if all objects should be urdf links(they can move...)
+        I am not shure if all objects should be urdf links(they can move...)
   -->
     <owl:Class rdf:about="&knowrob;IAIKitchen">
         <rdfs:subClassOf rdf:resource="&knowrob;Kitchen"/>
-	<!-- TODO add a ground plane -->
+        <!-- TODO add a ground plane -->
     </owl:Class>
     
     <!-- SINK -->
@@ -336,7 +339,7 @@
     
     <owl:Class rdf:about="&knowrob;IAISink">
         <rdfs:subClassOf rdf:resource="&knowrob;SpatialThing-Localized"/>
-	<!-- TODO add sink to knowrob ontology -->
+        <!-- TODO add sink to knowrob ontology -->
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
@@ -355,7 +358,7 @@
     
     <owl:Class rdf:about="&knowrob;IAIDishWasher">
         <rdfs:subClassOf rdf:resource="&knowrob;Dishwasher"/>
-	<!-- TODO add sink to knowrob ontology -->
+        <!-- TODO add sink to knowrob ontology -->
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
@@ -374,7 +377,7 @@
     
     <owl:Class rdf:about="&knowrob;IAIDishWasherDoor">
         <rdfs:subClassOf rdf:resource="&knowrob;ContainerLid"/>
-	<!-- TODO add sink to knowrob ontology -->
+        <!-- TODO add sink to knowrob ontology -->
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
@@ -393,7 +396,7 @@
     
     <owl:Class rdf:about="&knowrob;IAIOvenArea">
         <rdfs:subClassOf rdf:resource="&knowrob;Cupboard"/>
-	<rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
                 <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/racks/OvenArea.dae</owl:hasValue>
@@ -411,7 +414,7 @@
     <owl:Class rdf:about="&knowrob;IAIOven">
         <rdfs:subClassOf rdf:resource="&knowrob;Oven"/>
         <rdfs:subClassOf rdf:resource="&knowrob;ElectricalDevice"/>
-	<!-- TODO add sink to knowrob ontology -->
+        <!-- TODO add sink to knowrob ontology -->
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
@@ -466,13 +469,13 @@
     <owl:Class rdf:about="&knowrob;IAIKnob">
       <!-- FIXME THERE MUST BE SOMTHING -->
         <rdfs:subClassOf rdf:resource="&knowrob;SpatialThing-Localized"/>
-	<!-- TODO add sink to knowrob ontology -->
+        <!-- TODO add sink to knowrob ontology -->
        
     </owl:Class>
     
     <owl:Class rdf:about="&knowrob;IAIOvenKnob">
         <rdfs:subClassOf rdf:resource="&knowrob;IAIKnob"/>
-	<!-- TODO add sink to knowrob ontology -->
+        <!-- TODO add sink to knowrob ontology -->
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
@@ -521,7 +524,7 @@
         </rdfs:subClassOf>   
     </owl:Class>
     <!-- TODO -->
-    <owl:Class rdf:about="&knowrob;IAIFrigeArea">
+    <owl:Class rdf:about="&knowrob;IAIFridgeArea">
         <rdfs:subClassOf rdf:resource="&knowrob;Cupboard"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -536,7 +539,7 @@
             </owl:Restriction> 
         </rdfs:subClassOf>   
     </owl:Class>
-    <owl:Class rdf:about="&knowrob;IAIFrige">
+    <owl:Class rdf:about="&knowrob;IAIFridge">
         <rdfs:subClassOf rdf:resource="&knowrob;Refrigerator"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -553,7 +556,7 @@
     </owl:Class>
     
     
-    <owl:Class rdf:about="&knowrob;IAIFrigeDoor">
+    <owl:Class rdf:about="&knowrob;IAIFridgeDoor">
         <rdfs:subClassOf rdf:resource="&knowrob;ContainerLid"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -568,7 +571,7 @@
             </owl:Restriction> 
         </rdfs:subClassOf>  
     </owl:Class>
-    <owl:Class rdf:about="&knowrob;IAIFrigeDoorHandle">
+    <owl:Class rdf:about="&knowrob;IAIFridgeDoorHandle">
         <rdfs:subClassOf rdf:resource="&knowrob;IAIHandle"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -584,6 +587,10 @@
         </rdfs:subClassOf>  
     </owl:Class>
 </rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
 
 
 
