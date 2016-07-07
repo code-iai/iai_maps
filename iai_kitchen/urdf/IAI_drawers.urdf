@@ -31,7 +31,10 @@
     <parent link="map"/>
     <child link="drawer_1_main"/>
     <axis xyz="1. 0. 0.0"/>
+    <!--
     <limit effort="300" lower="0" upper="0.48" velocity="10"/>
+    -->
+    <limit effort="300" lower="0" upper="0" velocity="10"/>
   </joint>
   <joint name="drawer_1_handle_joint" type="fixed">
     <xacro:property name="handle_origin">
@@ -65,7 +68,10 @@
     <parent link="map"/>
     <child link="drawer_2_main"/>
     <axis xyz="1. 0. 0.0"/>
+    <!--
     <limit effort="300" lower="0" upper="0.48" velocity="10"/>
+    -->
+    <limit effort="300" lower="0" upper="0" velocity="10"/>
   </joint>
   <joint name="drawer_2_handle_joint" type="fixed">
     <xacro:property name="handle_origin">
@@ -99,7 +105,10 @@
     <parent link="map"/>
     <child link="drawer_3_main"/>
     <axis xyz="1. 0. 0.0"/>
+    <!--
     <limit effort="300" lower="0" upper="0.48" velocity="10"/>
+    -->
+    <limit effort="300" lower="0" upper="0" velocity="10"/>
   </joint>
   <joint name="drawer_3_handle_joint" type="fixed">
     <handle_origin rpy="0 0 0" xyz="0.3325 0 0.11"/>
@@ -131,7 +140,10 @@
     <parent link="map"/>
     <child link="drawer_4_main"/>
     <axis xyz="1. 0. 0.0"/>
+    <!--
     <limit effort="300" lower="0" upper="0.48" velocity="10"/>
+    -->
+    <limit effort="300" lower="0" upper="0" velocity="10"/>
   </joint>
   <joint name="drawer_4_handle_joint" type="fixed">
     <handle_origin rpy="0 0 0" xyz="0.3325 0 0.11"/>
@@ -163,7 +175,10 @@
     <parent link="map"/>
     <child link="drawer_5_main"/>
     <axis xyz="1. 0. 0.0"/>
+    <!--
     <limit effort="300" lower="0" upper="0.48" velocity="10"/>
+    -->
+    <limit effort="300" lower="0" upper="0" velocity="10"/>
   </joint>
   <joint name="drawer_5_handle_joint" type="fixed">
     <handle_origin rpy="0 0 0" xyz="0.3325 0 0.11"/>

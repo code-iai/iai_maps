@@ -28,7 +28,12 @@
         <parent link="world"/>
         <child link="room_link"/>
       </joint>   
+      
   </xacro:if>
+  
+  <gazebo>
+      <static>true</static>
+  </gazebo>
   <!--- FIXME THIS should NOT be here -->
   <xacro:include filename="$(find iai_kitchen)/urdf/IAI_oven_area.urdf.xacro"/>
   <xacro:include filename="$(find iai_kitchen)/urdf/IAI_kitchen_island.urdf.xacro"/>

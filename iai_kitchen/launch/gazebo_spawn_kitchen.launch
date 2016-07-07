@@ -2,12 +2,12 @@
 
 <launch>
   <arg name="model" default="$(find iai_kitchen)/urdf/IAI_kitchen.urdf.xacro"/>
-  <param name="robot_description" command="$(find xacro)/xacro.py '$(arg model)'" />
+  <param name="kitchen_description" command="$(find xacro)/xacro.py '$(arg model)'" />
                             
 
   <arg
     name="gui"
-    default="True" />
+    default="false" />
   <param
     name="use_gui"
     value="$(arg gui)" />
@@ -19,15 +19,18 @@
   </node>
   -->
   <node name="spawn_kitchen" pkg="gazebo_ros" type="spawn_model" args="
-    -param robot_description 
+    -param kitchen_description 
     -urdf
     -model IAI_kitchen
   "/>
-  
+  <!--
   <node
-    name="robot_state_publisher"
+    name="kitchen_state_publisher"
     pkg="robot_state_publisher"
     type="state_publisher" >
     <param name="tf_prefix" value="iai_lab"/>
+    <remap from="robot_description" to="kitchen_description"/>
+    <param name="publish_frequency" value="3"/>
   </node>
+  -->
 </launch>
