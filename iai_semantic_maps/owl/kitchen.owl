@@ -72,7 +72,7 @@
         <srdl2-comp:succeedingJoint rdf:resource="&iai-map;iai_kitchen_sink_area_footprint_joint"/>
         <srdl2-comp:succeedingJoint rdf:resource="&iai-map;iai_kitchen_oven_area_footprint_joint"/>
         <srdl2-comp:succeedingJoint rdf:resource="&iai-map;iai_kitchen_kitchen_island_footprint_joint"/>
-        <srdl2-comp:succeedingJoint rdf:resource="&iai-map;iai_kitchen_frige_area_footprint_joint"/>
+        <srdl2-comp:succeedingJoint rdf:resource="&iai-map;iai_kitchen_fridge_area_footprint_joint"/>
     </owl:NamedIndividual>
 
 
@@ -401,6 +401,16 @@
         <srdl2-comp:sphere_inertia_radius rdf:datatype="&qudt-unit;Kilogram">0</srdl2-comp:sphere_inertia_radius>
     </owl:NamedIndividual>
 
+    
+    <owl:NamedIndividual rdf:about="&knowrob;iai_kitchen_sink_area_counter_top">
+        <rdf:type rdf:resource="&knowrob;CounterTop"/>
+        <knowrob:depthOfObject rdf:datatype="&xsd;double">0.575</knowrob:depthOfObject>
+        <knowrob:heightOfObject rdf:datatype="&xsd;double">0.02</knowrob:heightOfObject>
+        <knowrob:widthOfObject rdf:datatype="&xsd;double">2.05</knowrob:widthOfObject>
+        <knowrob:describedInMap rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#IAIKitchenMap_PM580j"/>
+        <knowrob:mainColorOfObject rdf:datatype="&xsd;string">0.8 0.8 0.8 1.0</knowrob:mainColorOfObject>
+        <knowrob:hasVisual rdf:datatype="&xsd;boolean">false</knowrob:hasVisual>
+    </owl:NamedIndividual>
 
     <!-- &iai-map;iai_kitchen_oven_area_area_footprint -->
 
@@ -896,97 +906,107 @@
         <srdl2-comp:sphere_inertia_radius rdf:datatype="&qudt-unit;Kilogram">0</srdl2-comp:sphere_inertia_radius>
     </owl:NamedIndividual>
 
+    
+    <owl:NamedIndividual rdf:about="&knowrob;kitchen_island_counter_top">
+        <rdf:type rdf:resource="&knowrob;CounterTop"/>
+        <knowrob:depthOfObject rdf:datatype="&xsd;double">0.8</knowrob:depthOfObject>
+        <knowrob:heightOfObject rdf:datatype="&xsd;double">0.02</knowrob:heightOfObject>
+        <knowrob:widthOfObject rdf:datatype="&xsd;double">2.45</knowrob:widthOfObject>
+        <knowrob:describedInMap rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#SemanticEnvironmentMap_PM580j"/>
+        <knowrob:mainColorOfObject rdf:datatype="&xsd;string">0.8 0.8 0.8 1.0</knowrob:mainColorOfObject>
+        <knowrob:hasVisual rdf:datatype="&xsd;boolean">false</knowrob:hasVisual>
+    </owl:NamedIndividual>
 
-    <!-- &iai-map;iai_kitchen_frige_area_footprint -->
+    <!-- &iai-map;iai_kitchen_fridge_area_footprint -->
 
-    <owl:NamedIndividual rdf:about="&iai-map;iai_kitchen_frige_area_footprint">
+    <owl:NamedIndividual rdf:about="&iai-map;iai_kitchen_fridge_area_footprint">
         <rdf:type rdf:resource="&srdl2-comp;UrdfLink"/>
 	<knowrob:hasVisual rdf:datatype="&xsd;boolean">false</knowrob:hasVisual>
 	<knowrob:describedInMap rdf:resource="&iai-map;IAIKitchenMap_PM580j"/>
-        <srdl2-comp:urdfName>frige_area_footprint</srdl2-comp:urdfName>
+        <srdl2-comp:urdfName>fridge_area_footprint</srdl2-comp:urdfName>
         <srdl2-comp:sphere_inertia_mass rdf:datatype="&qudt-unit;Kilogram">0</srdl2-comp:sphere_inertia_mass>
         <srdl2-comp:sphere_inertia_radius rdf:datatype="&qudt-unit;Kilogram">0</srdl2-comp:sphere_inertia_radius>
-        <srdl2-comp:succeedingJoint rdf:resource="&iai-map;iai_kitchen_frige_area_main_joint"/>
+        <srdl2-comp:succeedingJoint rdf:resource="&iai-map;iai_kitchen_fridge_area_main_joint"/>
     </owl:NamedIndividual>
 
 
-    <!-- &iai-map;iai_kitchen_frige_area -->
+    <!-- &iai-map;iai_kitchen_fridge_area -->
 
-    <owl:NamedIndividual rdf:about="&iai-map;iai_kitchen_frige_area">
-        <rdf:type rdf:resource="&knowrob;IAIFrigeArea"/> 
+    <owl:NamedIndividual rdf:about="&iai-map;iai_kitchen_fridge_area">
+        <rdf:type rdf:resource="&knowrob;IAIFridgeArea"/> 
         <rdf:type rdf:resource="&srdl2-comp;UrdfLink"/>
-        <srdl2-comp:urdfName>frige_area</srdl2-comp:urdfName>
+        <srdl2-comp:urdfName>fridge_area</srdl2-comp:urdfName>
         <srdl2-comp:sphere_inertia_mass rdf:datatype="&qudt-unit;Kilogram">0</srdl2-comp:sphere_inertia_mass>
         <srdl2-comp:sphere_inertia_radius rdf:datatype="&qudt-unit;Kilogram">0</srdl2-comp:sphere_inertia_radius>
 	<!--
-        <srdl2-comp:mesh_filename rdf:datatype="&xsd;string">package://iai_kitchen/meshes/racks/FrigeArea.dae</srdl2-comp:mesh_filename>
+        <srdl2-comp:mesh_filename rdf:datatype="&xsd;string">package://iai_kitchen/meshes/racks/FridgeArea.dae</srdl2-comp:mesh_filename>
 	-->
-	 <srdl2-comp:succeedingJoint rdf:resource="&iai-map;iai_kitchen_frige_area_lower_drawer_main_joint"/>
-        <srdl2-comp:succeedingJoint rdf:resource="&iai-map;iai_kitchen_frige_main_joint"/>
+	 <srdl2-comp:succeedingJoint rdf:resource="&iai-map;iai_kitchen_fridge_area_lower_drawer_main_joint"/>
+        <srdl2-comp:succeedingJoint rdf:resource="&iai-map;iai_kitchen_fridge_main_joint"/>
         <knowrob:describedInMap rdf:resource="&iai-map;IAIKitchenMap_PM580j"/>
     </owl:NamedIndividual>
 
 
-    <!-- &iai-map;iai_kitchen_frige_area_lower_drawer_main -->
+    <!-- &iai-map;iai_kitchen_fridge_area_lower_drawer_main -->
 
-    <owl:NamedIndividual rdf:about="&iai-map;iai_kitchen_frige_area_lower_drawer_main">
+    <owl:NamedIndividual rdf:about="&iai-map;iai_kitchen_fridge_area_lower_drawer_main">
         <rdf:type rdf:resource="&knowrob;IAIDrawer_60_29"/> 
         <rdf:type rdf:resource="&srdl2-comp;UrdfLink"/>
-        <srdl2-comp:urdfName>frige_area_lower_drawer_main</srdl2-comp:urdfName>
+        <srdl2-comp:urdfName>fridge_area_lower_drawer_main</srdl2-comp:urdfName>
 	<knowrob:describedInMap rdf:resource="&iai-map;IAIKitchenMap_PM580j"/>
         <srdl2-comp:sphere_inertia_mass rdf:datatype="&qudt-unit;Kilogram">0</srdl2-comp:sphere_inertia_mass>
         <srdl2-comp:sphere_inertia_radius rdf:datatype="&qudt-unit;Kilogram">0</srdl2-comp:sphere_inertia_radius>
-        <srdl2-comp:succeedingJoint rdf:resource="&iai-map;iai_kitchen_frige_area_lower_drawer_handle_joint"/>
+        <srdl2-comp:succeedingJoint rdf:resource="&iai-map;iai_kitchen_fridge_area_lower_drawer_handle_joint"/>
     </owl:NamedIndividual>
 
 
-    <!-- &iai-map;iai_kitchen_frige_area_lower_drawer_handle -->
+    <!-- &iai-map;iai_kitchen_fridge_area_lower_drawer_handle -->
 
-    <owl:NamedIndividual rdf:about="&iai-map;iai_kitchen_frige_area_lower_drawer_handle">
+    <owl:NamedIndividual rdf:about="&iai-map;iai_kitchen_fridge_area_lower_drawer_handle">
         <rdf:type rdf:resource="&knowrob;IAIHandle60"/> 
         <rdf:type rdf:resource="&srdl2-comp;UrdfLink"/>
-        <srdl2-comp:urdfName>frige_area_lower_drawer_handle</srdl2-comp:urdfName>
+        <srdl2-comp:urdfName>fridge_area_lower_drawer_handle</srdl2-comp:urdfName>
         <srdl2-comp:sphere_inertia_mass rdf:datatype="&qudt-unit;Kilogram">0</srdl2-comp:sphere_inertia_mass>
         <srdl2-comp:sphere_inertia_radius rdf:datatype="&qudt-unit;Kilogram">0</srdl2-comp:sphere_inertia_radius>
         <knowrob:describedInMap rdf:resource="&iai-map;IAIKitchenMap_PM580j"/>
     </owl:NamedIndividual>
 
 
-    <!-- &iai-map;iai_kitchen_frige_main -->
+    <!-- &iai-map;iai_kitchen_fridge_main -->
 
-    <owl:NamedIndividual rdf:about="&iai-map;iai_kitchen_frige_main">
-        <rdf:type rdf:resource="&knowrob;IAIFrige"/> 
+    <owl:NamedIndividual rdf:about="&iai-map;iai_kitchen_fridge_main">
+        <rdf:type rdf:resource="&knowrob;IAIFridge"/> 
         <rdf:type rdf:resource="&srdl2-comp;UrdfLink"/>
-	<srdl2-comp:subComponent rdf:resource="&iai-map;iai_kitchen_frige_door"/>
-	<srdl2-comp:subComponent rdf:resource="&iai-map;iai_kitchen_frige_door_handle"/>
-        <srdl2-comp:urdfName>iai_frige_main</srdl2-comp:urdfName>
+	<srdl2-comp:subComponent rdf:resource="&iai-map;iai_kitchen_fridge_door"/>
+	<srdl2-comp:subComponent rdf:resource="&iai-map;iai_kitchen_fridge_door_handle"/>
+        <srdl2-comp:urdfName>iai_fridge_main</srdl2-comp:urdfName>
         <srdl2-comp:sphere_inertia_mass rdf:datatype="&qudt-unit;Kilogram">0</srdl2-comp:sphere_inertia_mass>
         <srdl2-comp:sphere_inertia_radius rdf:datatype="&qudt-unit;Kilogram">0</srdl2-comp:sphere_inertia_radius>
         
-        <srdl2-comp:succeedingJoint rdf:resource="&iai-map;iai_kitchen_frige_door_joint"/>
+        <srdl2-comp:succeedingJoint rdf:resource="&iai-map;iai_kitchen_fridge_door_joint"/>
 	<knowrob:describedInMap rdf:resource="&iai-map;IAIKitchenMap_PM580j"/>
     </owl:NamedIndividual>
 
 
-    <!-- &iai-map;iai_kitchen_frige_door -->
+    <!-- &iai-map;iai_kitchen_fridge_door -->
 
-    <owl:NamedIndividual rdf:about="&iai-map;iai_kitchen_frige_door">
-        <rdf:type rdf:resource="&knowrob;IAIFrigeDoor"/> 
+    <owl:NamedIndividual rdf:about="&iai-map;iai_kitchen_fridge_door">
+        <rdf:type rdf:resource="&knowrob;IAIFridgeDoor"/> 
         <rdf:type rdf:resource="&srdl2-comp;UrdfLink"/>
-        <srdl2-comp:urdfName>iai_frige_door</srdl2-comp:urdfName>
+        <srdl2-comp:urdfName>iai_fridge_door</srdl2-comp:urdfName>
         <srdl2-comp:sphere_inertia_mass rdf:datatype="&qudt-unit;Kilogram">0</srdl2-comp:sphere_inertia_mass>
         <srdl2-comp:sphere_inertia_radius rdf:datatype="&qudt-unit;Kilogram">0</srdl2-comp:sphere_inertia_radius>
         <knowrob:describedInMap rdf:resource="&iai-map;IAIKitchenMap_PM580j"/>
-        <srdl2-comp:succeedingJoint rdf:resource="&iai-map;iai_kitchen_frige_door_handle_joint"/>
+        <srdl2-comp:succeedingJoint rdf:resource="&iai-map;iai_kitchen_fridge_door_handle_joint"/>
     </owl:NamedIndividual>
 
 
-    <!-- &iai-map;iai_kitchen_frige_door_handle -->
+    <!-- &iai-map;iai_kitchen_fridge_door_handle -->
 
-    <owl:NamedIndividual rdf:about="&iai-map;iai_kitchen_frige_door_handle">
-        <rdf:type rdf:resource="&knowrob;IAIFrigeDoorHandle"/> 
+    <owl:NamedIndividual rdf:about="&iai-map;iai_kitchen_fridge_door_handle">
+        <rdf:type rdf:resource="&knowrob;IAIFridgeDoorHandle"/> 
         <rdf:type rdf:resource="&srdl2-comp;UrdfLink"/>
-        <srdl2-comp:urdfName>iai_frige_door_handle</srdl2-comp:urdfName>
+        <srdl2-comp:urdfName>iai_fridge_door_handle</srdl2-comp:urdfName>
         <srdl2-comp:sphere_inertia_mass rdf:datatype="&qudt-unit;Kilogram">0</srdl2-comp:sphere_inertia_mass>
         <srdl2-comp:sphere_inertia_radius rdf:datatype="&qudt-unit;Kilogram">0</srdl2-comp:sphere_inertia_radius>
         <knowrob:describedInMap rdf:resource="&iai-map;IAIKitchenMap_PM580j"/>
@@ -1855,7 +1875,7 @@
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
         <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K45"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
-        <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_frige_area_footprint"/>
+        <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_fridge_area_footprint"/>
     </owl:NamedIndividual>
 
 
@@ -1874,7 +1894,7 @@
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
         <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K46"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
-        <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_frige_area"/>
+        <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_fridge_area"/>
     </owl:NamedIndividual>
 
 
@@ -1893,7 +1913,7 @@
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
         <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K47"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
-        <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_frige_area_lower_drawer_main"/>
+        <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_fridge_area_lower_drawer_main"/>
     </owl:NamedIndividual>
 
 
@@ -1912,7 +1932,7 @@
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
         <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K48"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
-        <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_frige_area_lower_drawer_handle"/>
+        <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_fridge_area_lower_drawer_handle"/>
     </owl:NamedIndividual>
 
 
@@ -1931,7 +1951,7 @@
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
         <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K49"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
-        <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_frige_main"/>
+        <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_fridge_main"/>
     </owl:NamedIndividual>
 
 
@@ -1950,7 +1970,7 @@
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
         <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K50"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
-        <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_frige_door"/>
+        <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_fridge_door"/>
     </owl:NamedIndividual>
 
 
@@ -1969,7 +1989,7 @@
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
         <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K51"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
-        <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_frige_door_handle"/>
+        <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_fridge_door_handle"/>
     </owl:NamedIndividual>
 
 
@@ -1984,5 +2004,41 @@
     </owl:NamedIndividual>
 
 
+    <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_Sink_CT">
+        <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
+        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_Sink_CT"/>
+        <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
+        <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_sink_area_counter_top"/>
+    </owl:NamedIndividual>
 
+
+
+    <!-- &iai-map;Transformation_bLdopb6S -->
+
+    <owl:NamedIndividual rdf:about="&iai-map;Transformation_Sink_CT">
+        <rdf:type rdf:resource="&knowrob;Transformation"/>
+        <knowrob:quaternion rdf:datatype="&xsd;string">-0.00000 0.00000 1.00000 0.00000</knowrob:quaternion>
+        <knowrob:translation rdf:datatype="&xsd;string">1.535 0.270 0.840</knowrob:translation>
+
+    </owl:NamedIndividual>
+
+
+    
+    <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_Island_CT">
+        <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
+        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_Island_CT"/>
+        <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
+        <knowrob:objectActedOn rdf:resource="&iai-map;kitchen_island_counter_top"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- &iai-map;Transformation_bLdopb6S -->
+
+    <owl:NamedIndividual rdf:about="&iai-map;Transformation_Island_CT">
+        <rdf:type rdf:resource="&knowrob;Transformation"/>
+        <knowrob:quaternion rdf:datatype="&xsd;string">1.00000 0.00000 0.00000 0.00000</knowrob:quaternion>
+        <knowrob:translation rdf:datatype="&xsd;string">-0.975 1.719 0.841</knowrob:translation>
+
+    </owl:NamedIndividual>
 </rdf:RDF>
