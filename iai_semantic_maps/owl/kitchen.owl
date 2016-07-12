@@ -402,12 +402,12 @@
     </owl:NamedIndividual>
 
     
-    <owl:NamedIndividual rdf:about="&knowrob;iai_kitchen_sink_area_counter_top">
+    <owl:NamedIndividual rdf:about="&iai-map;iai_kitchen_sink_area_counter_top">
         <rdf:type rdf:resource="&knowrob;CounterTop"/>
         <knowrob:depthOfObject rdf:datatype="&xsd;double">0.575</knowrob:depthOfObject>
         <knowrob:heightOfObject rdf:datatype="&xsd;double">0.02</knowrob:heightOfObject>
         <knowrob:widthOfObject rdf:datatype="&xsd;double">2.05</knowrob:widthOfObject>
-        <knowrob:describedInMap rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#IAIKitchenMap_PM580j"/>
+        <knowrob:describedInMap rdf:resource="&iai-map;IAIKitchenMap_PM580j"/>
         <knowrob:mainColorOfObject rdf:datatype="&xsd;string">0.8 0.8 0.8 1.0</knowrob:mainColorOfObject>
         <knowrob:hasVisual rdf:datatype="&xsd;boolean">false</knowrob:hasVisual>
     </owl:NamedIndividual>
@@ -907,7 +907,7 @@
     </owl:NamedIndividual>
 
     
-    <owl:NamedIndividual rdf:about="&knowrob;kitchen_island_counter_top">
+    <owl:NamedIndividual rdf:about="&iai-map;iai_kitchen_kitchen_island_counter_top">
         <rdf:type rdf:resource="&knowrob;CounterTop"/>
         <knowrob:depthOfObject rdf:datatype="&xsd;double">0.8</knowrob:depthOfObject>
         <knowrob:heightOfObject rdf:datatype="&xsd;double">0.02</knowrob:heightOfObject>
