@@ -2028,7 +2028,7 @@
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
         <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_Island_CT"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
-        <knowrob:objectActedOn rdf:resource="&iai-map;kitchen_island_counter_top"/>
+        <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_kitchen_island_counter_top"/>
     </owl:NamedIndividual>
 
 
