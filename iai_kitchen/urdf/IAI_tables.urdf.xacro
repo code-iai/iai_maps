@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+
+<robot name="iai_table" xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <macro name="iai_table_1" params="name parent *origin">
+    <!-- LINKS -->
+    
+    <link name="${name}_main">
+      
+      <sphere_inertia radius="0" mass="0"/>
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/misc/big_table_1.dae"/>
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/misc/big_table_1.stl"/>
+        </geometry>
+      </collision>
+    </link>
+      
+    
+    <!-- JOINTS -->
+    
+    <joint name="${name}_main_joint" type="fixed">
+      <xacro:insert_block name="origin" />
+      <parent link="${parent}"/>
+      <child link="${name}_main"/>
+    </joint>
+  </macro>
+</robot>
