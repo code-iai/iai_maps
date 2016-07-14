@@ -11,27 +11,31 @@
   <param
     name="use_gui"
     value="$(arg gui)" />
-  <!--
+  
+  <node pkg="tf" type="static_transform_publisher" name="room_link_broadcaster" 
+    args="0.0 0.0 0. 0.0 0. 0. /map /iai_kitchen/world 200">
+  </node>
   <node
-    name="joint_state_publisher"
+    name="kitchen_joint_state_publisher"
     pkg="joint_state_publisher"
     type="joint_state_publisher" >
+    <remap from="robot_description" to="kitchen_description"/>
+    <remap from="joint_states" to="kitchen_joint_states"/>
   </node>
-  -->
+  
   <node name="spawn_kitchen" pkg="gazebo_ros" type="spawn_model" args="
     -param kitchen_description 
     -urdf
     -model IAI_kitchen
   "/>
   
-  <!--
   <node
     name="kitchen_state_publisher"
     pkg="robot_state_publisher"
     type="state_publisher" >
-    <param name="tf_prefix" value="iai_lab"/>
+    <param name="tf_prefix" value="iai_kitchen"/>
     <remap from="robot_description" to="kitchen_description"/>
+    <remap from="joint_states" to="kitchen_joint_states"/>
     <param name="publish_frequency" value="3"/>
   </node>
-  -->
 </launch>

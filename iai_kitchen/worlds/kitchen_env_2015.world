@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 
-<sdf version='1.5'>
+<sdf version='1.4'>
   <world name='default'>
     <light name='sun' type='directional'>
       <cast_shadows>1</cast_shadows>
@@ -214,10 +214,10 @@
         <collision name='Wall_4_Collision'>
           <geometry>
             <box>
-              <size>4.25 0.15 1</size>
+              <size>4.25 0.15 0.7</size>
             </box>
           </geometry>
-          <pose>0 0 0.5 0 -0 0</pose>
+          <pose>0 0 0.35 0 -0 0</pose>
           <max_contacts>10</max_contacts>
           <surface>
             <contact>
@@ -230,10 +230,10 @@
           </surface>
         </collision>
         <visual name='Wall_4_Visual'>
-          <pose>0 0 .5 0 -0 0</pose>
+          <pose>0 0 0.35 0 -0 0</pose>
           <geometry>
             <box>
-              <size>4.25 0.15 1</size>
+              <size>4.25 0.15 0.7</size>
             </box>
           </geometry>
           <material>
@@ -253,10 +253,10 @@
         <collision name='Wall_5_Collision'>
           <geometry>
             <box>
-              <size>3.27328 0.15 1</size>
+              <size>3.27328 0.15 0.7</size>
             </box>
           </geometry>
-          <pose>0 0 0.5 0 -0 0</pose>
+          <pose>0 0 0.35 0 -0 0</pose>
           <max_contacts>10</max_contacts>
           <surface>
             <contact>
@@ -269,10 +269,10 @@
           </surface>
         </collision>
         <visual name='Wall_5_Visual'>
-          <pose>0 0 0.5 0 -0 0</pose>
+          <pose>0 0 0.35 0 -0 0</pose>
           <geometry>
             <box>
-              <size>3.27328 0.15 1</size>
+              <size>3.27328 0.15 0.7</size>
             </box>
           </geometry>
           <material>
@@ -292,10 +292,10 @@
         <collision name='Wall_6_Collision'>
           <geometry>
             <box>
-              <size>1 0.15 1</size>
+              <size>1 0.15 0.7</size>
             </box>
           </geometry>
-          <pose>0 0 0.5 0 -0 0</pose>
+          <pose>0 0 0.35 0 -0 0</pose>
           <max_contacts>10</max_contacts>
           <surface>
             <contact>
@@ -308,10 +308,10 @@
           </surface>
         </collision>
         <visual name='Wall_6_Visual'>
-          <pose>0 0 0.5 0 -0 0</pose>
+          <pose>0 0 0.35 0 -0 0</pose>
           <geometry>
             <box>
-              <size>1 0.15 1</size>
+              <size>1 0.15 0.7</size>
             </box>
           </geometry>
           <material>

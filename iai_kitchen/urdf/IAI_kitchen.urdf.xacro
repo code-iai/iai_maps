@@ -39,6 +39,7 @@
   <xacro:include filename="$(find iai_kitchen)/urdf/IAI_kitchen_island.urdf.xacro"/>
   <xacro:include filename="$(find iai_kitchen)/urdf/IAI_sink_area.urdf.xacro"/>
   <xacro:include filename="$(find iai_kitchen)/urdf/IAI_fridge_area.urdf.xacro"/>
+  <xacro:include filename="$(find iai_kitchen)/urdf/IAI_tables.urdf.xacro"/>
   
   <iai_sink_area name="sink_area" parent="room_link">
     <origin xyz="1.825 1.3 0" rpy="0 0 ${pi}" />    
@@ -56,6 +57,11 @@
   <iai_fridge_area name="fridge_area" parent="room_link">
     <origin xyz="1.825 -0.76 0" rpy="0 0 ${pi}" />    
   </iai_fridge_area>
+  
+  
+  <iai_table_1 name="table_area" parent="room_link">
+    <origin xyz="-1.4 -1.3 0" rpy="0 0 ${pi}" />    
+  </iai_table_1>
   <!--
   <iai_sink_area name="sink_area" parent="room_link">
     <origin xyz="-5.29 -5.65 0" rpy="0 0 0" />    
