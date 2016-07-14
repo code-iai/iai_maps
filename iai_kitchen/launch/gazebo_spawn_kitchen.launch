@@ -20,7 +20,7 @@
     pkg="joint_state_publisher"
     type="joint_state_publisher" >
     <remap from="robot_description" to="kitchen_description"/>
-    <remap from="joint_state" to="kitchen_joint_state"/>
+    <remap from="joint_states" to="kitchen_joint_states"/>
   </node>
   
   <node name="spawn_kitchen" pkg="gazebo_ros" type="spawn_model" args="
@@ -35,7 +35,7 @@
     type="state_publisher" >
     <param name="tf_prefix" value="iai_kitchen"/>
     <remap from="robot_description" to="kitchen_description"/>
-    <remap from="joint_state" to="kitchen_joint_state"/>
+    <remap from="joint_states" to="kitchen_joint_states"/>
     <param name="publish_frequency" value="3"/>
   </node>
 </launch>
