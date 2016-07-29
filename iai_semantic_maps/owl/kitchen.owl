@@ -917,6 +917,16 @@
         <knowrob:hasVisual rdf:datatype="&xsd;boolean">false</knowrob:hasVisual>
     </owl:NamedIndividual>
 
+    <owl:NamedIndividual rdf:about="&iai-map;iai_kitchen_meal_table_counter_top">
+        <rdf:type rdf:resource="&knowrob;CounterTop"/>
+        <knowrob:depthOfObject rdf:datatype="&xsd;double">2.45</knowrob:depthOfObject>
+        <knowrob:heightOfObject rdf:datatype="&xsd;double">0.02</knowrob:heightOfObject>
+        <knowrob:widthOfObject rdf:datatype="&xsd;double">0.8</knowrob:widthOfObject>
+        <knowrob:describedInMap rdf:resource="&iai-map;IAIKitchenMap_PM580j"/>
+        <knowrob:mainColorOfObject rdf:datatype="&xsd;string">0.8 0.8 0.8 1.0</knowrob:mainColorOfObject>
+        <knowrob:hasVisual rdf:datatype="&xsd;boolean">false</knowrob:hasVisual>
+    </owl:NamedIndividual>
+
     <!-- &iai-map;iai_kitchen_fridge_area_footprint -->
 
     <owl:NamedIndividual rdf:about="&iai-map;iai_kitchen_fridge_area_footprint">
@@ -2030,6 +2040,13 @@
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_kitchen_island_counter_top"/>
     </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_Island_MealTable">
+        <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
+        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_Island_MealTable"/>
+        <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
+        <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_meal_table_counter_top"/>
+    </owl:NamedIndividual>
 
 
 
@@ -2039,6 +2056,14 @@
         <rdf:type rdf:resource="&knowrob;Transformation"/>
         <knowrob:quaternion rdf:datatype="&xsd;string">1.00000 0.00000 0.00000 0.00000</knowrob:quaternion>
         <knowrob:translation rdf:datatype="&xsd;string">-0.975 1.719 0.841</knowrob:translation>
+
+    </owl:NamedIndividual>
+
+
+    <owl:NamedIndividual rdf:about="&iai-map;Transformation_Island_MealTable">
+        <rdf:type rdf:resource="&knowrob;Transformation"/>
+        <knowrob:quaternion rdf:datatype="&xsd;string">1.00000 0.00000 0.00000 0.00000</knowrob:quaternion>
+        <knowrob:translation rdf:datatype="&xsd;string">-1.8 -1.3 0.841</knowrob:translation>
 
     </owl:NamedIndividual>
 </rdf:RDF>
