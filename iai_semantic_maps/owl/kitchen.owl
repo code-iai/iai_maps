@@ -921,7 +921,7 @@
         <rdf:type rdf:resource="&knowrob;CounterTop"/>
         <knowrob:depthOfObject rdf:datatype="&xsd;double">2.45</knowrob:depthOfObject>
         <knowrob:heightOfObject rdf:datatype="&xsd;double">0.02</knowrob:heightOfObject>
-        <knowrob:widthOfObject rdf:datatype="&xsd;double">0.8</knowrob:widthOfObject>
+        <knowrob:widthOfObject rdf:datatype="&xsd;double">0.72</knowrob:widthOfObject>
         <knowrob:describedInMap rdf:resource="&iai-map;IAIKitchenMap_PM580j"/>
         <knowrob:mainColorOfObject rdf:datatype="&xsd;string">0.8 0.8 0.8 1.0</knowrob:mainColorOfObject>
         <knowrob:hasVisual rdf:datatype="&xsd;boolean">false</knowrob:hasVisual>
