@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <!-- statically publish on /tf the urdf of iai kitchen -->
+  <!-- todo(lisca): insert the tf_prefix "iai_kitchen" in
+                    the right way and the right place -->
+
+  <arg name="model" default="$(find iai_kitchen)/urdf/IAI_kitchen.urdf.xacro"/>
+  <param name="kitchen_description" command="$(find xacro)/xacro.py '$(arg model)'" />
+
+  <node pkg="tf"
+        type="static_transform_publisher"
+        name="room_link_broadcaster" 
+        args="0.0 0.0 0. 0.0 0. 0. map world 200">
+  </node>
+
+  <node name="kitchen_joint_state_publisher"
+        pkg="joint_state_publisher"
+        type="joint_state_publisher" >
+    <remap from="robot_description" to="kitchen_description"/>
+    <remap from="joint_states" to="kitchen_joint_states"/>
+  </node>
+  
+  <node name="kitchen_state_publisher"
+        pkg="robot_state_publisher"
+        type="state_publisher" >
+    <remap from="robot_description" to="kitchen_description"/>
+    <remap from="joint_states" to="kitchen_joint_states"/>
+    <!-- param name="tf_prefix" value="iai_kitchen"/-->
+    <param name="publish_frequency" value="3"/>
+  </node>
+
+</launch>
