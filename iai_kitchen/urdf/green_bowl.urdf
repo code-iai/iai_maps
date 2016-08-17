@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<robot name="green_bowl">
+  <link name="green_bowl_frame">
+    <visual>
+      <geometry>
+        <mesh filename="package://iai_kitchen/meshes/racks/BoxyToolholder/green_bowl.dae"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>

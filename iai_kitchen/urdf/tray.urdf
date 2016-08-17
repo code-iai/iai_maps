@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<robot name="tray">
+  <link name="tray_frame">
+    <visual>
+      <geometry>
+        <mesh filename="package://iai_kitchen/meshes/racks/BoxyToolholder/tray.dae"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>
