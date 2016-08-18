@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<robot name="yellow_bowl">
+  <link name="yellow_bowl_frame">
+    <visual>
+      <geometry>
+        <mesh filename="package://iai_kitchen/meshes/racks/BoxyToolholder/yellow_bowl.dae"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>
