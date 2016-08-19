@@ -3,6 +3,7 @@
 <robot name="red_bowl">
   <link name="red_bowl_frame">
     <visual>
+      <origin xyz="0.0 0.0 0.1" rpy="0.0 0.0 0.0"/>
       <geometry>
         <mesh filename="package://iai_kitchen/meshes/racks/BoxyToolholder/red_bowl.dae"/>
       </geometry>
