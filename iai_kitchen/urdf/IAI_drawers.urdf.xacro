@@ -78,11 +78,11 @@
       <xacro:insert_block name="origin" />
       <parent link="${parent}"/>
       <child link="${name}_main"/>
-      <axis xyz="1. 0. 0.0"/>
-      <!--
-        <limit effort="300" lower="0" upper="0.48" velocity="10"/>
-        -->
+      <axis xyz="1. 0. 0.0"/>  
+        <limit effort="300" lower="0" upper="0.48" velocity="10"/>  
+<!--
         <limit effort="300" lower="0" upper="0" velocity="10"/>
+  -->
     </joint>
     
     
@@ -138,10 +138,11 @@
       <xacro:insert_block name="origin" />
       <parent link="${parent}"/>
       <child link="${name}_main"/>
-      <axis xyz="1. 0. 0.0"/><!--
-    <limit effort="300" lower="0" upper="0.48" velocity="10"/>
-    -->
+      <axis xyz="1. 0. 0.0"/>
+    <limit effort="300" lower="0" upper="0.48" velocity="10"/>   
+<!--
     <limit effort="300" lower="0" upper="0" velocity="10"/>
+-->
     </joint>
     
     

@@ -15,13 +15,13 @@
     <link name="${name}">    
       <sphere_inertia radius="0" mass="0"/>
       <visual>
-	  <origin xyz="0 0 0" rpy="0 0 0" />
+	  <origin xyz="0 0 0.01" rpy="0 0 0" />
 	  <geometry>
 	    <mesh filename="package://iai_kitchen/meshes/racks/FridgeArea.dae"/>
 	  </geometry>
 	</visual>
     <collision>
-        <origin xyz="0 0 0" rpy="0 0 0" />
+        <origin xyz="0 0 0.01" rpy="0 0 0" />
         <geometry>
           <mesh filename="package://iai_kitchen/meshes/collision/kitchen_fridge.stl"/>
         </geometry>
