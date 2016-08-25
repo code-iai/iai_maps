@@ -12,7 +12,7 @@
     name="use_gui"
     value="$(arg gui)" />
   
-  <node pkg="tf" type="static_transform_publisher" name="room_link_broadcaster" 
+  <node pkg="tf" type="static_transform_publisher" name="room_link_broadcaster_gazebo"
     args="0.0 0.0 0. 0.0 0. 0. /map /iai_kitchen/world 200">
   </node>
   <node
@@ -30,7 +30,7 @@
   "/>
   
   <node
-    name="kitchen_state_publisher"
+    name="kitchen_state_publisher_gazebo"
     pkg="robot_state_publisher"
     type="state_publisher" >
     <param name="tf_prefix" value="iai_kitchen"/>
