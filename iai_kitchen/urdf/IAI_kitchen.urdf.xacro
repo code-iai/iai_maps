@@ -61,7 +61,7 @@
   
   
   <iai_table_1 name="table_area" parent="room_link">
-    <origin xyz="-1.4 -1.3 0" rpy="0 0 ${pi}" />    
+    <origin xyz="-1.4 -1.15 0" rpy="0 0 ${pi}" />
   </iai_table_1>
   
   
