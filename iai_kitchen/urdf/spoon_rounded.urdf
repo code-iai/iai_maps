@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 
-<robot name="spoon_adapted">
-  <link name="spoon_adapted_frame">
+<robot name="spoon_rounded">
+  <link name="spoon_rounded_frame">
     <visual>
       <geometry>
         <mesh filename="package://iai_kitchen/meshes/racks/BoxyToolholder/Holder_Spoon.stl"/>
