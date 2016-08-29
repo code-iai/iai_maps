@@ -2063,7 +2063,7 @@
     <owl:NamedIndividual rdf:about="&iai-map;Transformation_Island_MealTable_CT">
         <rdf:type rdf:resource="&knowrob;Transformation"/>
         <knowrob:quaternion rdf:datatype="&xsd;string">1.00000 0.00000 0.00000 0.00000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">-1.475 -1.28 0.0</knowrob:translation>
+        <knowrob:translation rdf:datatype="&xsd;string">-1.475 -1.28 0.75</knowrob:translation>
 
     </owl:NamedIndividual>
 </rdf:RDF>
