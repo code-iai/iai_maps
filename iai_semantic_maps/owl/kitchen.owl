@@ -923,7 +923,7 @@
         <knowrob:heightOfObject rdf:datatype="&xsd;double">0.02</knowrob:heightOfObject>
         <knowrob:widthOfObject rdf:datatype="&xsd;double">0.90</knowrob:widthOfObject>
         <knowrob:describedInMap rdf:resource="&iai-map;IAIKitchenMap_PM580j"/>
-        <knowrob:mainColorOfObject rdf:datatype="&xsd;string">0.8 0.8 0.8 1.0</knowrob:mainColorOfObject>
+        <knowrob:mainColorOfObject rdf:datatype="&xsd;string">0.4 0.4 0.4 1.0</knowrob:mainColorOfObject>
         <knowrob:pathToCadModel rdf:datatype="&xsd;string">package://iai_kitchen/meshes/misc/big_table_1.dae</knowrob:pathToCadModel>
     </owl:NamedIndividual>
 
