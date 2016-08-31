@@ -924,7 +924,7 @@
         <knowrob:widthOfObject rdf:datatype="&xsd;double">0.90</knowrob:widthOfObject>
         <knowrob:describedInMap rdf:resource="&iai-map;IAIKitchenMap_PM580j"/>
         <knowrob:mainColorOfObject rdf:datatype="&xsd;string">0.4 0.4 0.4 1.0</knowrob:mainColorOfObject>
-        <knowrob:pathToCadModel rdf:datatype="&xsd;string">package://iai_kitchen/meshes/misc/big_table_1.dae</knowrob:pathToCadModel>
+        <knowrob:pathToCadModel rdf:datatype="&xsd;string">package://iai_kitchen/meshes/misc/big_table_1_translated.dae</knowrob:pathToCadModel>
     </owl:NamedIndividual>
 
     <!-- &iai-map;iai_kitchen_fridge_area_footprint -->
