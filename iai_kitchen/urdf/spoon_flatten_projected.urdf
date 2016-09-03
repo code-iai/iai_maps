@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<robot name="spoon_flatten_projected">
+  <link name="spoon_flatten_frame_projected">
+    <visual>
+      <geometry>
+        <mesh filename="package://iai_kitchen/meshes/racks/BoxyToolholder/holder_spoon_flat.stl"/>
+      </geometry>
+      <material name="blue">
+         <color rgba="0.0 0.0 1.0 1.0"/>
+      </material>
+    </visual>
+  </link>
+</robot>
