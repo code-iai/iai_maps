@@ -85,11 +85,12 @@
         <parent link="${name}_main"/>
         <child link="${name}_door"/>
         <axis xyz="0 0 1"/>
-        <!--
-        <limit lower="0" upper="${0.5*pi}" effort="300" velocity="10"/>
-        -->
-        <limit lower="0" upper="0" effort="0.03" velocity="10"/>
         
+        <limit lower="0" upper="${0.5*pi}" effort="300" velocity="10"/>
+        
+<!--
+        <limit lower="0" upper="0" effort="0.03" velocity="10"/>
+   -->     
       </joint>
       
     </xacro:unless>

@@ -32,7 +32,7 @@
   </xacro:if>
   
   <gazebo>
-      <static>true</static>
+      <static>false</static>
   </gazebo>
   <!--- FIXME THIS should NOT be here -->
   <xacro:include filename="$(find iai_kitchen)/urdf/IAI_oven_area.urdf.xacro"/>
