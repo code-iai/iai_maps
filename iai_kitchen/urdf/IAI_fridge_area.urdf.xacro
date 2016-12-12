@@ -23,7 +23,8 @@
     <collision>
         <origin xyz="0 0 0.01" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://iai_kitchen/meshes/collision/kitchen_fridge.stl"/>
+	    <mesh filename="package://iai_kitchen/meshes/racks/FridgeArea.dae"/>
+          <!--mesh filename="package://iai_kitchen/meshes/collision/kitchen_fridge.stl"/-->
         </geometry>
       </collision>
     </link>
