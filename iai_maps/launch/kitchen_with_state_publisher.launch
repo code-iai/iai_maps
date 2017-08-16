@@ -4,7 +4,7 @@
   <param name="kitchen_description" command="$(find xacro)/xacro.py '$(arg model)'" />
   
   <node pkg="tf" type="static_transform_publisher" name="kitchen_link_broadcaster" 
-    args="-3.45 -4.35 0 -3.141 0 0 /map /iai_kitchen/kitchen_link 200">
+    args="0 0 0 0 0 0 /map /iai_kitchen/world 200">
   </node>
 
   <node pkg="robot_state_publisher" type="robot_state_publisher"
