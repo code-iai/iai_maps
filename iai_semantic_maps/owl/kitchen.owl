@@ -1028,9 +1028,9 @@
     <owl:NamedIndividual rdf:about="&iai-map;iai_kitchen_fridge_door_handle">
         <rdf:type rdf:resource="&knowrob;IAIFridgeDoorHandle"/> 
         <rdf:type rdf:resource="&srdl2-comp;UrdfLink"/>
-        <knowrob:widthOfObject rdf:datatype="&xsd;double">0.01</knowrob:heightOfObject>
+        <knowrob:widthOfObject rdf:datatype="&xsd;double">0.01</knowrob:widthOfObject>
         <knowrob:depthOfObject rdf:datatype="&xsd;double">0.07</knowrob:depthOfObject>
-        <knowrob:heightOfObject rdf:datatype="&xsd;double">0.85</knowrob:widthOfObject>
+        <knowrob:heightOfObject rdf:datatype="&xsd;double">0.85</knowrob:heightOfObject>
         <srdl2-comp:urdfName>iai_fridge_door_handle</srdl2-comp:urdfName>
         <srdl2-comp:sphere_inertia_mass rdf:datatype="&qudt-unit;Kilogram">0</srdl2-comp:sphere_inertia_mass>
         <srdl2-comp:sphere_inertia_radius rdf:datatype="&qudt-unit;Kilogram">0</srdl2-comp:sphere_inertia_radius>
