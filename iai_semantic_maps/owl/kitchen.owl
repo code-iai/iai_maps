@@ -1005,6 +1005,9 @@
         <rdf:type rdf:resource="&srdl2-comp;UrdfLink"/>
         <knowrob:doorHingedTo rdf:resource="&iai-map;iai_kitchen_fridge_main"/>
         <knowrob:doorHingedWith rdf:resource="&iai-map;iai_kitchen_fridge_door_hinged_joint"/>
+        <knowrob:heightOfObject rdf:datatype="&xsd;double">0.72</knowrob:heightOfObject>
+        <knowrob:depthOfObject rdf:datatype="&xsd;double">0.05</knowrob:depthOfObject>
+        <knowrob:widthOfObject rdf:datatype="&xsd;double">0.59</knowrob:widthOfObject>
         <srdl2-comp:urdfName>iai_fridge_door</srdl2-comp:urdfName>
         <srdl2-comp:sphere_inertia_mass rdf:datatype="&qudt-unit;Kilogram">0</srdl2-comp:sphere_inertia_mass>
         <srdl2-comp:sphere_inertia_radius rdf:datatype="&qudt-unit;Kilogram">0</srdl2-comp:sphere_inertia_radius>
