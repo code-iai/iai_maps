@@ -1016,7 +1016,7 @@
 
     <owl:NamedIndividual rdf:about="&iai-map;iai_kitchen_fridge_door_hinged_joint">
         <rdf:type rdf:resource="&knowrob;HingedJoint"/>
-        <knowrob:openningDirection>CCW</knowrob:openningDirection>
+        <knowrob:openingDirection>CCW</knowrob:openingDirection>
     </owl:NamedIndividual> 
 
 
