@@ -8,7 +8,7 @@
     args="-3.45 -3.90 0 -3.141 0 0 /map /iai_lab/room_link 200">
   </node>
 
-  <node pkg="robot_state_chain_publisher" type="state_chain_publisher"
+  <node pkg="robot_state_publisher" type="robot_state_publisher"
     name="room_state_publisher" output="screen">
     <param name="tf_prefix" value="/iai_lab"/>
     <param name="publish_frequency" value="2"/>
