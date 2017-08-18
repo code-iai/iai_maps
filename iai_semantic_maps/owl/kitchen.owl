@@ -1003,7 +1003,7 @@
     <owl:NamedIndividual rdf:about="&iai-map;iai_kitchen_fridge_door">
         <rdf:type rdf:resource="&knowrob;IAIFridgeDoor"/> 
         <rdf:type rdf:resource="&srdl2-comp;UrdfLink"/>
-        <knowrob:doorHingedTo rdf:resource="&iai-map;iai_kitchen_fridge_door"/>
+        <knowrob:doorHingedTo rdf:resource="&iai-map;iai_kitchen_fridge_main"/>
         <knowrob:doorHingedWith rdf:resource="&iai-map;iai_kitchen_fridge_door_hinged_joint"/>
         <srdl2-comp:urdfName>iai_fridge_door</srdl2-comp:urdfName>
         <srdl2-comp:sphere_inertia_mass rdf:datatype="&qudt-unit;Kilogram">0</srdl2-comp:sphere_inertia_mass>
