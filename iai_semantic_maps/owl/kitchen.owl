@@ -1029,6 +1029,7 @@
         <knowrob:connectedTo-Rigidly rdf:resource="&iai-map;iai_kitchen_fridge_door"/>
         <knowrob:connectedTo-Rigidly rdf:resource="&iai-map;iai_kitchen_fridge_main"/>
         <knowrob:hasVisual rdf:datatype="&xsd;boolean">false</knowrob:hasVisual>
+        <knowrob:describedInMap rdf:resource="&iai-map;IAIKitchenMap_PM580j"/>
     </owl:NamedIndividual> 
 
     <owl:NamedIndividual rdf:about="&iai-map;SemanticMapPerception_fridge_door_hinged_joint">
