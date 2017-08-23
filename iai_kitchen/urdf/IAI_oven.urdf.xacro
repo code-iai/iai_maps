@@ -16,6 +16,12 @@
           <mesh filename="package://iai_kitchen/meshes/oven/OvenMain.dae"/>
         </geometry>
       </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/oven/OvenMain.dae"/>
+        </geometry>
+      </collision>
     </link>
     
     <link name="${name}_door">
@@ -27,6 +33,12 @@
           <mesh filename="package://iai_kitchen/meshes/oven/OvenDoor.dae"/>
         </geometry>
       </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="${0.5*pi} 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/oven/OvenDoor.dae"/>
+        </geometry>
+      </collision>
     </link>
     
     <link name="${name}_door_handle">
@@ -38,6 +50,12 @@
           <mesh filename="package://iai_kitchen/meshes/handles/Handle60.dae"/>
         </geometry>
       </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/handles/Handle60.dae"/>
+        </geometry>
+      </collision>
     </link>
     
     
@@ -50,6 +68,12 @@
           <mesh filename="package://iai_kitchen/meshes/oven/OvenPanel.dae"/>
         </geometry>
       </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/oven/OvenPanel.dae"/>
+        </geometry>
+      </collision>
     </link>
       
     
@@ -131,6 +155,12 @@
           <mesh filename="package://iai_kitchen/meshes/oven/Knob.dae"/>
         </geometry>
       </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 ${0.5 * pi} 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/oven/Knob.dae"/>
+        </geometry>
+      </collision>
     </link>
     
     <joint name="${name}_joint" type="revolute">

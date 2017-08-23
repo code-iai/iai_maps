@@ -63,11 +63,17 @@
   <link name="${name}_sink">    
     <sphere_inertia radius="0" mass="0"/>
     <visual>
-        <origin xyz="0 0 0" rpy="0 0 0" />
-        <geometry>
-          <mesh filename="package://iai_kitchen/meshes/misc/Sink.dae"/>
-        </geometry>
-      </visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://iai_kitchen/meshes/misc/Sink.dae"/>
+      </geometry>
+    </visual>
+    <!--collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://iai_kitchen/meshes/misc/Sink.dae"/>
+      </geometry>
+    </collision-->
   </link>
   
   <joint name="${name}_sink_joint" type="fixed">
@@ -76,9 +82,9 @@
     <child link="${name}_sink"/>
   </joint>
   
-  <iai_generic_panel name="${name}_right_panel" parent="${name}" width="60">
+  <!--iai_generic_panel name="${name}_right_panel" parent="${name}" width="60">
     <origin rpy="0 0 0" xyz="0.28 0.7 0.325 "/>
-  </iai_generic_panel>
+  </iai_generic_panel-->
   <iai_drawer_60_58 name="${name}_trash_drawer" parent="${name}">
     <origin rpy="0 0 0" xyz="0.01 0.7 -0.035 "/>
   </iai_drawer_60_58>
@@ -91,9 +97,9 @@
   <iai_drawer_80_29 name="${name}_left_bottom_drawer" parent="${name}">
     <origin rpy="0 0 0" xyz="0.01 -0.6 -0.18 "/>
   </iai_drawer_80_29>
-  <iai_dish_washer name="${name}_dish_washer" parent="${name}">
+  <!--iai_dish_washer name="${name}_dish_washer" parent="${name}">
     <origin rpy="0 0 0" xyz="0.01 0.1 0.035 "/>
-  </iai_dish_washer>
+  </iai_dish_washer-->
   </macro> 
   
 </robot>
