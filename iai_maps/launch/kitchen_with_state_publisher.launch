@@ -2,7 +2,7 @@
 
   <arg name="model" default="$(find iai_kitchen)/urdf/IAI_kitchen.urdf.xacro"/>
   <param name="kitchen_description" command="$(find xacro)/xacro.py '$(arg model)'" />
-  
+
   <node pkg="joint_state_publisher" type="joint_state_publisher"
         name="joint_state_publisher" output="screen">
     <remap from="robot_description" to="kitchen_description"/>
@@ -13,8 +13,8 @@
     </rosparam>
   </node>
 
-  <node pkg="tf" type="static_transform_publisher" name="kitchen_link_broadcaster" 
-    args="0 0 0 0 0 0 /map /iai_kitchen/world 200">
+  <node pkg="tf" type="static_transform_publisher" name="kitchen_link_broadcaster"
+    args="0 0 0 0 0 0 /map /iai_kitchen/world 25">
   </node>
 
   <node pkg="robot_state_publisher" type="robot_state_publisher"
