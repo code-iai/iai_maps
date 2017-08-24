@@ -62,6 +62,12 @@
           <mesh filename="package://iai_kitchen/meshes/drawers/VDrawer.dae"/>
         </geometry>
       </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/drawers/VDrawer.dae"/>
+        </geometry>
+      </collision>
     </link>
 
     <link name="${name}_handle">      
@@ -72,6 +78,12 @@
           <mesh filename="package://iai_kitchen/meshes/handles/VHandle130.dae"/>
         </geometry>
       </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/handles/VHandle130.dae"/>
+        </geometry>
+      </collision>
     </link>
 
     <joint name="${name}_main_joint" type="prismatic">
@@ -122,6 +134,12 @@
           <mesh filename="package://iai_kitchen/meshes/drawers/Drawer_${width}_${height}.dae"/>
         </geometry>
       </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/drawers/Drawer_${width}_${height}.dae"/>
+        </geometry>
+      </collision>
     </link>
 
     <link name="${name}_handle">      
@@ -132,6 +150,12 @@
           <mesh filename="package://iai_kitchen/meshes/handles/Handle${width}.dae"/>
         </geometry>
       </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/handles/Handle${width}.dae"/>
+        </geometry>
+      </collision>
     </link>
 
     <joint name="${name}_main_joint" type="prismatic">
@@ -165,6 +189,12 @@
           <mesh filename="package://iai_kitchen/meshes/drawers/Panel_${width}.dae"/>
         </geometry>
       </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/drawers/Panel_${width}.dae"/>
+        </geometry>
+      </collision>
     </link>
     
     <joint name="${name}_joint" type="fixed">

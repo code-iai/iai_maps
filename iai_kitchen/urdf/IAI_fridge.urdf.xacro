@@ -15,6 +15,12 @@
           <mesh filename="package://iai_kitchen/meshes/misc/Fridge.dae"/>
         </geometry>
       </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/misc/Fridge.dae"/>
+        </geometry>
+      </collision>
     </link>
     
     <link name="${name}_door">
@@ -26,6 +32,12 @@
           <mesh filename="package://iai_kitchen/meshes/misc/FridgeDoor.dae"/>
         </geometry>
       </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/misc/FridgeDoor.dae"/>
+        </geometry>
+      </collision>
     </link>
     
     <link name="${name}_door_handle">
@@ -37,6 +49,12 @@
           <mesh filename="package://iai_kitchen/meshes/handles/VHandle90.dae"/>
         </geometry>
       </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/handles/VHandle90.dae"/>
+        </geometry>
+      </collision>
     </link>
     
     <joint name="${name}_main_joint" type="fixed">
