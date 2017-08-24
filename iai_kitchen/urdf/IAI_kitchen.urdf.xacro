@@ -68,7 +68,10 @@
   <iai_kitchen_wall_robohow parent="room_link">
     <origin xyz="-1 0.562175 0" rpy="0.0 0.0 0.0" />    
   </iai_kitchen_wall_robohow>
-  <!--
+ 
+
+
+  <!-- Included above already
   <iai_sink_area name="sink_area" parent="room_link">
     <origin xyz="-5.29 -5.65 0" rpy="0 0 0" />    
   </iai_sink_area>
@@ -86,4 +89,5 @@
     <origin xyz="-5.29 -3.59 0" rpy="0 0 0" />    
   </iai_fridge_area>
   -->
+ 
 </robot>

@@ -94,7 +94,13 @@
           <mesh filename="package://iai_kitchen/meshes/SinkAreaBigHandle.dae"/>
         </geometry>
       </visual>
-      
+      <!--pumpernickel-->
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/SinkAreaBigHandle.dae"/>
+        </geometry>
+      </collision>
     </link>
     
     
@@ -144,7 +150,13 @@
           <mesh filename="package://iai_kitchen/meshes/SinkAreaBigHandle.dae"/>
         </geometry>
       </visual>
-     
+      <!--pumpernickel-->
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/SinkAreaBigHandle.dae"/>
+        </geometry>
+      </collision>
     </link>
     
     
@@ -191,7 +203,13 @@
           <mesh filename="package://iai_kitchen/meshes/SinkAreaBigHandle.dae"/>
         </geometry>
       </visual>
-      
+      <!--pumpernickel-->
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/SinkAreaBigHandle.dae"/>
+        </geometry>
+      </collision>
     </link>
     
     
@@ -263,7 +281,13 @@
           <mesh filename="package://iai_kitchen/meshes/SinkAreaSmallHandle.dae"/>
         </geometry>
       </visual>
-      
+      <!--pumpernickel-->
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/SinkAreaSmallHandle.dae"/>
+        </geometry>
+      </collision>
     </link>
     
     
@@ -335,7 +359,13 @@
           <mesh filename="package://iai_kitchen/meshes/SinkAreaSmallHandle.dae"/>
         </geometry>
       </visual>
-     
+      <!--pumpernickel-->
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/SinkAreaSmallHandle.dae"/>
+        </geometry>
+      </collision>
     </link>
     
     <joint name="sink_area_trash_handle_joint" type="fixed">

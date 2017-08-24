@@ -2,79 +2,46 @@
 <COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
   <asset>
     <contributor>
-      <author>Benjamin Brieber</author>
-      <authoring_tool>Blender 2.73.0 commit date:2015-01-20, commit time:18:16, hash:bbf09d9</authoring_tool>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.78.0 commit date:2017-02-24, commit time:14:33, hash:e92f2352830</authoring_tool>
     </contributor>
-    <created>2015-03-18T16:16:35</created>
-    <modified>2015-03-18T16:16:35</modified>
+    <created>2017-08-24T14:36:56</created>
+    <modified>2017-08-24T14:36:56</modified>
     <unit name="meter" meter="1"/>
     <up_axis>Z_UP</up_axis>
   </asset>
   <library_images/>
-  <library_effects>
-    <effect id="KitchenFronts-effect">
-      <profile_COMMON>
-        <technique sid="common">
-          <phong>
-            <emission>
-              <color sid="emission">0 0 0 1</color>
-            </emission>
-            <ambient>
-              <color sid="ambient">0.5 0.5 0.5 1</color>
-            </ambient>
-            <diffuse>
-              <color sid="diffuse">0.2746773 0.2874408 0.2704979 1</color>
-            </diffuse>
-            <specular>
-              <color sid="specular">0.6793722 0.6793722 0.6793722 1</color>
-            </specular>
-            <shininess>
-              <float sid="shininess">3</float>
-            </shininess>
-            <index_of_refraction>
-              <float sid="index_of_refraction">1</float>
-            </index_of_refraction>
-          </phong>
-        </technique>
-      </profile_COMMON>
-    </effect>
-  </library_effects>
-  <library_materials>
-    <material id="KitchenFronts-material" name="KitchenFronts">
-      <instance_effect url="#KitchenFronts-effect"/>
-    </material>
-  </library_materials>
   <library_geometries>
-    <geometry id="Cube_021-mesh" name="Cube.021">
+    <geometry id="Panel_60-mesh" name="Panel 60">
       <mesh>
-        <source id="Cube_021-mesh-positions">
-          <float_array id="Cube_021-mesh-positions-array" count="24">-1 -1 -1 -1 1 -1 1 1 -1 1 -1 -1 -1 -1 1 -1 1 1 1 1 1 1 -1 1</float_array>
+        <source id="Panel_60-mesh-positions">
+          <float_array id="Panel_60-mesh-positions-array" count="24">-0.00999999 0.2975 0.06749999 -0.00999999 0.2975 -0.06749999 -0.00999999 -0.2975 -0.06749999 0.00999999 0.2975 0.06749999 0.00999999 0.2975 -0.06749999 0.00999999 -0.2975 0.06749999 0.00999999 -0.2975 -0.06749999 -0.00999999 -0.2975 0.06749999</float_array>
           <technique_common>
-            <accessor source="#Cube_021-mesh-positions-array" count="8" stride="3">
+            <accessor source="#Panel_60-mesh-positions-array" count="8" stride="3">
               <param name="X" type="float"/>
               <param name="Y" type="float"/>
               <param name="Z" type="float"/>
             </accessor>
           </technique_common>
         </source>
-        <source id="Cube_021-mesh-normals">
-          <float_array id="Cube_021-mesh-normals-array" count="36">-1 0 0 0 1 0 1 0 0 0 -1 0 0 0 -1 0 0 1 -1 0 0 0 1 0 1 0 0 0 -1 0 0 0 -1 0 0 1</float_array>
+        <source id="Panel_60-mesh-normals">
+          <float_array id="Panel_60-mesh-normals-array" count="18">-1 0 0 0 1 0 1 0 0 0 -1 0 0 0 -1 0 0 1</float_array>
           <technique_common>
-            <accessor source="#Cube_021-mesh-normals-array" count="12" stride="3">
+            <accessor source="#Panel_60-mesh-normals-array" count="6" stride="3">
               <param name="X" type="float"/>
               <param name="Y" type="float"/>
               <param name="Z" type="float"/>
             </accessor>
           </technique_common>
         </source>
-        <vertices id="Cube_021-mesh-vertices">
-          <input semantic="POSITION" source="#Cube_021-mesh-positions"/>
+        <vertices id="Panel_60-mesh-vertices">
+          <input semantic="POSITION" source="#Panel_60-mesh-positions"/>
         </vertices>
-        <polylist material="KitchenFronts-material" count="12">
-          <input semantic="VERTEX" source="#Cube_021-mesh-vertices" offset="0"/>
-          <input semantic="NORMAL" source="#Cube_021-mesh-normals" offset="1"/>
+        <polylist count="12">
+          <input semantic="VERTEX" source="#Panel_60-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Panel_60-mesh-normals" offset="1"/>
           <vcount>3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
-          <p>5 0 1 0 0 0 6 1 2 1 1 1 7 2 3 2 2 2 4 3 0 3 3 3 1 4 2 4 3 4 6 5 5 5 4 5 4 6 5 6 0 6 5 7 6 7 1 7 6 8 7 8 2 8 7 9 4 9 3 9 0 10 1 10 3 10 7 11 6 11 4 11</p>
+          <p>0 0 1 0 2 0 3 1 4 1 1 1 5 2 6 2 4 2 7 3 2 3 6 3 1 4 4 4 6 4 3 5 0 5 7 5 7 0 0 0 2 0 0 1 3 1 1 1 3 2 5 2 4 2 5 3 7 3 6 3 2 4 1 4 6 4 5 5 3 5 7 5</p>
         </polylist>
       </mesh>
     </geometry>
@@ -82,15 +49,9 @@
   <library_controllers/>
   <library_visual_scenes>
     <visual_scene id="Scene" name="Scene">
-      <node id="Panel_60_2" name="Panel_60_2" type="NODE">
-        <matrix sid="transform">0.01 0 0 0 0 0.2975 0 0 0 0 0.0675 0 0 0 0 1</matrix>
-        <instance_geometry url="#Cube_021-mesh">
-          <bind_material>
-            <technique_common>
-              <instance_material symbol="KitchenFronts-material" target="#KitchenFronts-material"/>
-            </technique_common>
-          </bind_material>
-        </instance_geometry>
+      <node id="Panel_60" name="Panel_60" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#Panel_60-mesh" name="Panel_60"/>
       </node>
     </visual_scene>
   </library_visual_scenes>

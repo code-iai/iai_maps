@@ -55,13 +55,13 @@
   </iai_drawer_60_58>
   
   
-  <!--iai_vdrawer name="${name}_area_left_drawer" parent="${name}_area">
+  <iai_vdrawer name="${name}_area_left_drawer" parent="${name}_area">
     <origin rpy="0 0 0" xyz="0.0 -0.45 0.06 "/>
   </iai_vdrawer>
   
   <iai_vdrawer name="${name}_area_right_drawer" parent="${name}_area">
     <origin rpy="0 0 0" xyz="0.0 0.45 0.06 "/>
-  </iai_vdrawer-->
+  </iai_vdrawer>
   
   
   </macro> 

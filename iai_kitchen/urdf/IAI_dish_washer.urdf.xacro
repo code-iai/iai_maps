@@ -38,8 +38,8 @@
         </geometry>
       </collision>
     </link>
+
     <link name="${name}_door_handle">
-      
       <sphere_inertia radius="0" mass="0"/>
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
@@ -47,7 +47,13 @@
           <mesh filename="package://iai_kitchen/meshes/handles/Handle60.dae"/>
         </geometry>
       </visual>
-      
+      <!--pumpernickel-->
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/handles/Handle60.dae"/>
+        </geometry>
+      </collision>
     </link>
     <!--
     <xacro:if value="simulated"/>

@@ -150,7 +150,13 @@
           <mesh filename="package://iai_kitchen/meshes/handles/Handle${width}.dae"/>
         </geometry>
       </visual>
-      
+      <!--pumpernickel-->
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/handles/Handle${width}.dae"/>
+        </geometry>
+      </collision>
     </link>
 
     <joint name="${name}_main_joint" type="prismatic">

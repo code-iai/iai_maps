@@ -21,12 +21,12 @@
           <mesh filename="package://iai_kitchen/meshes/racks/IslandArea.dae"/>
         </geometry>
       </visual>  
-      <!--collision>
-          <origin xyz="0 0 0" rpy="0 0 0" />
-          <geometry>
-            <mesh filename="package://iai_kitchen/meshes/collision/kitchen_island.stl"/>
-          </geometry>
-        </collision-->
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/collision/kitchen_island.stl"/>
+        </geometry>
+      </collision>
     </link>  
     
     <joint name="${name}_footprint_joint" type="fixed">
@@ -81,9 +81,9 @@
       <child link="${name}_stove"/>
     </joint>
     
-    <!--iai_generic_panel name="${name}_left_panel" parent="${name}" width="60">
+    <iai_generic_panel name="${name}_left_panel" parent="${name}" width="60">
       <origin rpy="0 0 0" xyz="0.2725 -0.8 0.329 "/>
-    </iai_generic_panel-->
+    </iai_generic_panel>
     <iai_drawer_60_29 name="${name}_left_upper_drawer" parent="${name}">
       <origin rpy="0 0 0" xyz="0.0025 -0.8 0.114 "/>
     </iai_drawer_60_29>
@@ -92,9 +92,9 @@
     </iai_drawer_60_29>
     
     
-    <!--iai_generic_panel name="${name}_middle_panel" parent="${name}" width="100">
+    <iai_generic_panel name="${name}_middle_panel" parent="${name}" width="100">
       <origin rpy="0 0 0" xyz="0.2725 0 0.329 "/>
-    </iai_generic_panel-->
+    </iai_generic_panel>
     <iai_drawer_100_29 name="${name}_middle_upper_drawer" parent="${name}">
       <origin rpy="0 0 0" xyz="0.0025 0 0.114 "/>
     </iai_drawer_100_29>
@@ -103,9 +103,9 @@
     </iai_drawer_100_29>
     
     
-    <!--iai_generic_panel name="${name}_right_panel" parent="${name}" width="60">
+    <iai_generic_panel name="${name}_right_panel" parent="${name}" width="60">
       <origin rpy="0 0 0" xyz="0.2725 0.8 0.329 "/>
-    </iai_generic_panel-->
+    </iai_generic_panel>
     <iai_drawer_60_29 name="${name}_right_upper_drawer" parent="${name}">
       <origin rpy="0 0 0" xyz="0.0025 0.8 0.114 "/>
     </iai_drawer_60_29>
