@@ -1042,7 +1042,7 @@
     <owl:NamedIndividual rdf:about="&iai-map;Transformation_fridge_door_hinged_joint">
         <rdf:type rdf:resource="&knowrob;Transformation"/>
         <knowrob:quaternion rdf:datatype="&xsd;string">-0.00000 0.00000 0.00000 1.00000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">1.3 -1.35000 0.99</knowrob:translation>
+        <knowrob:translation rdf:datatype="&xsd;string">1.265 -1.35000 0.99</knowrob:translation>
     </owl:NamedIndividual>
 
 
