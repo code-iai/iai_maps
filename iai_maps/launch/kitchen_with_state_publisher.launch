@@ -4,13 +4,11 @@
   <param name="kitchen_description" command="$(find xacro)/xacro.py '$(arg model)'" />
 
   <node pkg="joint_state_publisher" type="joint_state_publisher"
-        name="joint_state_publisher" output="screen">
+        name="kitchen_joint_state_publisher" output="screen">
     <remap from="robot_description" to="kitchen_description"/>
     <param name="rate" value="25"/>
     <param name="use_gui" value="False"/>
-    <rosparam param="source_list">
-      - kitchen/joint_states
-    </rosparam>
+    <remap from="/joint_states" to="/kitchen/joint_states" />
   </node>
 
   <node pkg="tf" type="static_transform_publisher" name="kitchen_link_broadcaster"
@@ -22,6 +20,7 @@
     <param name="tf_prefix" value="/iai_kitchen"/>
     <param name="publish_frequency" value="2"/>
     <remap from="robot_description" to="kitchen_description" />
+    <remap from="/joint_states" to="/kitchen/joint_states" />
   </node>
 
 </launch>
