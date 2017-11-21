@@ -22,5 +22,25 @@
         <owl:imports rdf:resource="package://knowrob_common/owl/knowrob.owl"/>
         <owl:imports rdf:resource="package://knowrob_household/owl/kitchen.owl"/>
     </owl:Ontology>
-    
+
+
+    <owl:Class rdf:about="http://knowrob.org/kb/iai-kitchen.owl#EdekaRedBowl">
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/knowrob.owl#Bowl"/>
+    </owl:Class>   
+
+	<owl:Class rdf:about="http://knowrob.org/kb/iai-kitchen.owl#SpoonBluePlastic">
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/knowrob.owl#Spoon"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://knowrob.org/kb/iai-kitchen.owl#KoellnMuesliKnusperHonigNuss">
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/knowrob.owl#BreakfastCereal"/>
+    </owl:Class>	
+
+    <owl:Class rdf:about="http://knowrob.org/kb/iai-kitchen.owl#WeideMilchSmall">
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/knowrob.owl#Milk"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://knowrob.org/kb/iai-kitchen.owl#CupEcoOrange">
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/knowrob.owl#Cup"/>
+    </owl:Class> 
 </rdf:RDF>
