@@ -31,6 +31,12 @@
           <mesh filename="package://iai_kitchen/meshes/SinkArea.dae"/>
         </geometry>
       </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/SinkArea.dae"/>
+        </geometry>
+      </collision>
     </link>
     
     
@@ -54,6 +60,12 @@
           <mesh filename="package://iai_kitchen/meshes/SinkAreaMedDrawer.dae"/>
         </geometry>
       </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/SinkAreaMedDrawer.dae"/>
+        </geometry>
+      </collision>
     </link>
     
     
@@ -76,6 +88,12 @@
           <mesh filename="package://iai_kitchen/meshes/SinkAreaBigHandle.dae"/>
         </geometry>
       </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/SinkAreaBigHandle.dae"/>
+        </geometry>
+      </collision>
     </link>
     
     
@@ -98,6 +116,12 @@
           <mesh filename="package://iai_kitchen/meshes/SinkAreaMedDrawer.dae"/>
         </geometry>
       </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/SinkAreaMedDrawer.dae"/>
+        </geometry>
+      </collision>
     </link>
     
     
@@ -119,6 +143,12 @@
           <mesh filename="package://iai_kitchen/meshes/SinkAreaBigHandle.dae"/>
         </geometry>
       </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/SinkAreaBigHandle.dae"/>
+        </geometry>
+      </collision>
     </link>
     
     
@@ -139,6 +169,12 @@
           <mesh filename="package://iai_kitchen/meshes/SinkAreaSmallDrawer.dae"/>
         </geometry>
       </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/SinkAreaSmallDrawer.dae"/>
+        </geometry>
+      </collision>
     </link>
     
     <joint name="sink_area_drawer_left_top_joint" type="prismatic">
@@ -159,6 +195,12 @@
           <mesh filename="package://iai_kitchen/meshes/SinkAreaBigHandle.dae"/>
         </geometry>
       </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/SinkAreaBigHandle.dae"/>
+        </geometry>
+      </collision>
     </link>
     
     
@@ -182,6 +224,12 @@
           <mesh filename="package://iai_kitchen/meshes/SinkAreaInnerDishWasher.dae"/>
         </geometry>
       </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/SinkAreaInnerDishWasher.dae"/>
+        </geometry>
+      </collision>
     </link>
     
     <joint name="sink_area_dishwasher_joint" type="fixed">
@@ -199,6 +247,12 @@
           <mesh filename="package://iai_kitchen/meshes/SinkAreaDishWasherDoor.dae"/>
         </geometry>
       </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/SinkAreaDishWasherDoor.dae"/>
+        </geometry>
+      </collision>
     </link>
     
     <joint name="sink_area_dishwasher_door_joint" type="revolute">
@@ -218,6 +272,12 @@
           <mesh filename="package://iai_kitchen/meshes/SinkAreaSmallHandle.dae"/>
         </geometry>
       </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/SinkAreaSmallHandle.dae"/>
+        </geometry>
+      </collision>
     </link>
     
     
@@ -240,6 +300,12 @@
           <mesh filename="package://iai_kitchen/meshes/SinkAreaPanel.dae"/>
         </geometry>
       </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/SinkAreaPanel.dae"/>
+        </geometry>
+      </collision>
     </link>
     
     
@@ -258,6 +324,12 @@
           <mesh filename="package://iai_kitchen/meshes/SinkAreaTrash.dae"/>
         </geometry>
       </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/SinkAreaTrash.dae"/>
+        </geometry>
+      </collision>
     </link>
     
     <joint name="sink_area_trash_joint" type="prismatic">
@@ -277,6 +349,12 @@
           <mesh filename="package://iai_kitchen/meshes/SinkAreaSmallHandle.dae"/>
         </geometry>
       </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/SinkAreaSmallHandle.dae"/>
+        </geometry>
+      </collision>
     </link>
     
     <joint name="sink_area_trash_handle_joint" type="fixed">
@@ -294,6 +372,12 @@
           <mesh filename="package://iai_kitchen/meshes/SinkAreaSink.dae"/>
         </geometry>
       </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/SinkAreaSink.dae"/>
+        </geometry>
+      </collision>
     </link>
     
     <joint name="sink_area_sink_joint" type="fixed">
