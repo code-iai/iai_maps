@@ -1,5 +1,5 @@
 <launch>
-  <node name="map_server" pkg="map_server" type="map_server" args="$(find iai_shelfs)/maps/test3.yaml" />
+  <node name="map_server" pkg="map_server" type="map_server" args="$(find iai_shelfs)/maps/shelf_map.yaml" />
   <include file="$(find iai_shelfs)/launch/upload_shelfs.launch"/>
   <node pkg="tf"
         type="static_transform_publisher"
