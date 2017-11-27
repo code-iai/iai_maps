@@ -15,13 +15,15 @@
   </joint>
   <link name="shelf1">
     <visual>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="0 0 0" xyz="0.07 0 0"/>
       <geometry>
-        <mesh filename="package://iai_shelfs/meshes/shelf2/Shelf_2_no_texture_center_left_bottom_corner.dae"/>
+        <mesh filename="package://iai_shelfs/meshes/Shelf_1.dae"/>
       </geometry>
-      <material name="Cyan">
-        <color rgba=".8 .8 .8 1.0"/>
-     </material>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
     </visual>
   </link>
 
@@ -34,11 +36,13 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://iai_shelfs/meshes/shelf2/Shelf_2_no_texture_center_left_bottom_corner.dae"/>
+        <mesh filename="package://iai_shelfs/meshes/Shelf_2_no_texture_center_left_bottom_corner.dae"/>
       </geometry>
-      <material name="Cyan">
-        <color rgba=".8 .8 .8 1.0"/>
-     </material>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
     </visual>
   </link>
 
@@ -52,7 +56,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://iai_shelfs/meshes/shelf2/Shelf_2_no_texture_center_left_bottom_corner.dae"/>
+        <mesh filename="package://iai_shelfs/meshes/Shelf_3.dae"/>
       </geometry>
       <material name="Cyan">
         <color rgba=".8 .8 .8 1.0"/>
@@ -70,7 +74,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://iai_shelfs/meshes/shelf2/Shelf_2_no_texture_center_left_bottom_corner.dae"/>
+        <mesh filename="package://iai_shelfs/meshes/Shelf_4.dae"/>
       </geometry>
       <material name="Cyan">
         <color rgba=".8 .8 .8 1.0"/>
