@@ -1,3 +1,15 @@
 <launch>
   <node name="map_server" pkg="map_server" type="map_server" args="$(find iai_shelfs)/maps/test3.yaml" />
+  <include file="$(find iai_shelfs)/launch/upload_shelfs.launch"/>
+  <node pkg="tf"
+        type="static_transform_publisher"
+        name="map_to_room" 
+        args="0.0 0.0 0.0 -1.59 0.0 0.0 map room_link 10">
+  </node>
+  <node name="shelf_state_publisher"
+        pkg="robot_state_publisher"
+        type="state_publisher" >
+    <remap from="robot_description" to="shelf_description"/>
+    <param name="publish_frequency" value="3"/>
+  </node>
 </launch>

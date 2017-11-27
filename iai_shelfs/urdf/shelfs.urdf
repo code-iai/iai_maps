@@ -1,0 +1,80 @@
+<?xml version="1.0" ?>
+<robot name="iai_shelfs">
+<!--   <joint name="map_to_room" type="fixed">
+    <parent link="map"/>
+    <child link="room_link"/>
+  </joint> -->
+
+  <link name="room_link">    
+  </link>
+
+  <joint name="shelf1_joint" type="fixed">
+    <origin xyz="-1.5 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    <parent link="room_link"/>
+    <child link="shelf1"/>
+  </joint>
+  <link name="shelf1">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://iai_shelfs/meshes/shelf2/Shelf_2_no_texture_center_left_bottom_corner.dae"/>
+      </geometry>
+      <material name="Cyan">
+        <color rgba=".8 .8 .8 1.0"/>
+     </material>
+    </visual>
+  </link>
+
+  <joint name="shelf2_joint" type="fixed">
+    <origin xyz="0.0 1.0 0.0" rpy="0.0 0.0 0.0"/>
+    <parent link="shelf1"/>
+    <child link="shelf2"/>
+  </joint>
+  <link name="shelf2">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://iai_shelfs/meshes/shelf2/Shelf_2_no_texture_center_left_bottom_corner.dae"/>
+      </geometry>
+      <material name="Cyan">
+        <color rgba=".8 .8 .8 1.0"/>
+     </material>
+    </visual>
+  </link>
+
+
+  <joint name="shelf3_joint" type="fixed">
+    <origin xyz="0.0 1.0 0.0" rpy="0.0 0.0 0.0"/>
+    <parent link="shelf2"/>
+    <child link="shelf3"/>
+  </joint>
+  <link name="shelf3">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://iai_shelfs/meshes/shelf2/Shelf_2_no_texture_center_left_bottom_corner.dae"/>
+      </geometry>
+      <material name="Cyan">
+        <color rgba=".8 .8 .8 1.0"/>
+     </material>
+    </visual>
+  </link>
+
+
+  <joint name="shelf4_joint" type="fixed">
+    <origin xyz="0.0 1.0 0.0" rpy="0.0 0.0 0.0"/>
+    <parent link="shelf3"/>
+    <child link="shelf4"/>
+  </joint>
+  <link name="shelf4">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://iai_shelfs/meshes/shelf2/Shelf_2_no_texture_center_left_bottom_corner.dae"/>
+      </geometry>
+      <material name="Cyan">
+        <color rgba=".8 .8 .8 1.0"/>
+     </material>
+    </visual>
+  </link>  
+</robot>
