@@ -9,7 +9,7 @@
   </link>
 
   <joint name="shelf1_joint" type="fixed">
-    <origin xyz="-1.5 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    <origin xyz="-0.515 0.0 0.0" rpy="0.0 0.0 3.14159265359"/>
     <parent link="room_link"/>
     <child link="shelf1"/>
   </joint>
