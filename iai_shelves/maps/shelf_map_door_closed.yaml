@@ -1,4 +1,4 @@
-image: new_map_door_closed.pgm
+image: shelf_map_door_closed.pgm
 resolution: 0.010000
 origin: [-10.280000, -21.630000, 0.000000]
 negate: 0

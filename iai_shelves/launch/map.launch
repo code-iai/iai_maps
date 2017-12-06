@@ -1,10 +1,10 @@
 <launch>
   <node name="map_server" pkg="map_server" type="map_server" args="$(find iai_shelves)/maps/shelf_map_door_opened.yaml" />
-  <include file="$(find iai_shelves)/launch/upload_shelfs.launch"/>
+  <include file="$(find iai_shelves)/launch/upload_shelves.launch"/>
   <node pkg="tf"
         type="static_transform_publisher"
         name="map_to_room" 
-        args="0.0 0.0 0.0 -1.59 0.0 0.0 map room_link 10">
+        args="0.0 0.0 0.0 -1.57079632679 0.0 0.0 map room_link 10">
   </node>
   <node name="shelf_state_publisher"
         pkg="robot_state_publisher"
