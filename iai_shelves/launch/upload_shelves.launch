@@ -1,0 +1,7 @@
+<launch>
+  <arg name="urdf-name" default="shelves.urdf"/>
+  <arg name="urdf-path" default="$(find iai_shelves)/urdf/$(arg urdf-name)"/>
+  <arg name="param-name" default="shelf_description"/>
+
+  <param name="$(arg param-name)" textfile="$(arg urdf-path)" />
+</launch>
