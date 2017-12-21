@@ -77,7 +77,7 @@
   </link>
   
   <joint name="${name}_sink_joint" type="fixed">
-    <origin xyz="0.005 0.47 0.4414" rpy="0 0 0" />
+    <origin xyz="0.005 0.57 0.4114" rpy="0 0 0" />
     <parent link="${name}"/>
     <child link="${name}_sink"/>
   </joint>
