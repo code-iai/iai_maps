@@ -172,7 +172,7 @@
         <rdf:type rdf:resource="&knowrob;Transformation"/>
         <knowrob:relativeTo rdf:resource="&iai-map;Transformation_7HUx90mA"/>
         <knowrob:quaternion rdf:datatype="&xsd;string">0.000000 0.000000 0.000000 1.000000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">1.5300000000003102 -0.20000000000006102 0.7613999999999999</knowrob:translation>
+        <knowrob:translation rdf:datatype="&xsd;string">1.5300000000003102 -0.20000000000006102 0.8513999999999999</knowrob:translation>
     </owl:NamedIndividual>
 
     
@@ -2029,7 +2029,7 @@
     <owl:NamedIndividual rdf:about="&iai-map;Transformation_IAI_K50">
         <rdf:type rdf:resource="&knowrob;Transformation"/>
         <knowrob:quaternion rdf:datatype="&xsd;string">-0.00000 0.00000 0.00000 1.00000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">1.24500 -1.06000 0.98500</knowrob:translation>
+        <knowrob:translation rdf:datatype="&xsd;string">1.24500 -1.36000 0.98500</knowrob:translation>
 
     </owl:NamedIndividual>
 
