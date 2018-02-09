@@ -140,7 +140,7 @@
 
     <owl:NamedIndividual rdf:about="&iai-map;Transformation_7HUx90mA">
         <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:relativeTo rdf:resource="&iai-map;Transformation_t7n0Elaz"/>
+        <!-- <knowrob:relativeTo rdf:resource="&iai-map;iai_kitchen_sink_area_footprint"/> -->
         <knowrob:quaternion rdf:datatype="&xsd;string">0.000000 0.000000 1.000000 0.000000</knowrob:quaternion>
         <knowrob:translation rdf:datatype="&xsd;string">1.535000000000213 0.26999999999994007 0.41</knowrob:translation>
     </owl:NamedIndividual>
@@ -170,7 +170,7 @@
 
     <owl:NamedIndividual rdf:about="&iai-map;Transformation_3FBGS0Sy">
         <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:relativeTo rdf:resource="&iai-map;Transformation_7HUx90mA"/>
+        <!-- <knowrob:relativeTo rdf:resource="&iai-map;iai_kitchen_sink_area"/> -->
         <knowrob:quaternion rdf:datatype="&xsd;string">0.000000 0.000000 1.000000 0.000000</knowrob:quaternion>
         <knowrob:translation rdf:datatype="&xsd;string">1.5300000000003102 -0.20000000000006102 0.7613999999999999</knowrob:translation>
     </owl:NamedIndividual>
@@ -202,7 +202,7 @@
 
     <owl:NamedIndividual rdf:about="&iai-map;Transformation_eFyUr9HL">
         <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:relativeTo rdf:resource="&iai-map;Transformation_7HUx90mA"/>
+        <!-- <knowrob:relativeTo rdf:resource="&iai-map;iai_kitchen_sink_area_sink"/> -->
         <knowrob:quaternion rdf:datatype="&xsd;string">0.000000 0.000000 1.000000 0.000000</knowrob:quaternion>
         <knowrob:translation rdf:datatype="&xsd;string">1.2550000000003576 -0.43000000000011784 0.7349999999999999</knowrob:translation>
     </owl:NamedIndividual>
@@ -233,7 +233,7 @@
 
     <owl:NamedIndividual rdf:about="&iai-map;Transformation_aDf4b7YJ">
         <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:relativeTo rdf:resource="&iai-map;Transformation_7HUx90mA"/>
+        <!-- <knowrob:relativeTo rdf:resource="&iai-map;iai_kitchen_sink_area"/> -->
         <knowrob:quaternion rdf:datatype="&xsd;string">0.000000 0.000000 1.000000 0.000000</knowrob:quaternion>
         <knowrob:translation rdf:datatype="&xsd;string">1.525 -0.43 0.375</knowrob:translation>
     </owl:NamedIndividual>
@@ -264,7 +264,7 @@
 
     <owl:NamedIndividual rdf:about="&iai-map;Transformation_4Oz27cMq">
         <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:relativeTo rdf:resource="&iai-map;Transformation_aDf4b7YJ"/>
+        <!-- <knowrob:relativeTo rdf:resource="&iai-map;iai_kitchen_sink_area_trash_drawer_main"/> -->
         <knowrob:quaternion rdf:datatype="&xsd;string">0.000000 0.000000 1.000000 0.000000</knowrob:quaternion>
         <knowrob:translation rdf:datatype="&xsd;string">1.1925 -0.43 0.6125</knowrob:translation>
     </owl:NamedIndividual>
@@ -296,7 +296,7 @@
 
     <owl:NamedIndividual rdf:about="&iai-map;Transformation_fOufFdPS">
         <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:relativeTo rdf:resource="&iai-map;Transformation_7HUx90mA"/>
+        <!-- <knowrob:relativeTo rdf:resource="&iai-map;iai_kitchen_sink_area"/> -->
         <knowrob:quaternion rdf:datatype="&xsd;string">0.000000 0.000000 1.000000 0.000000</knowrob:quaternion>
         <knowrob:translation rdf:datatype="&xsd;string">1.525 0.87 0.735</knowrob:translation>
     </owl:NamedIndividual>
