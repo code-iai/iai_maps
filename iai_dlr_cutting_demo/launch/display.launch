@@ -1,0 +1,11 @@
+<launch>
+  <param name="map_description" textfile="$(find iai_dlr_cutting_demo)/urdf/map.urdf" />
+
+  <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher" >
+    <remap from="robot_description" to="map_description" />
+  </node>
+
+  <node pkg="rviz" type="rviz" name="rviz" required="true"
+        args="-d $(find iai_dlr_cutting_demo)/config/display.rviz" />
+
+</launch>
