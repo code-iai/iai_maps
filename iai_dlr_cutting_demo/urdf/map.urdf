@@ -45,4 +45,22 @@
     </visual>
   </link>
 
+  <joint name="cucumber_location_joint" type="fixed">
+    <parent link="cutting_board"/>
+    <child link="cucumber"/>
+    <origin xyz="0.2 0.25 0.03" rpy="0 0 -1"/>
+  </joint>
+
+  <link name="cucumber">
+    <visual>
+      <material name="dark_green">
+       <color rgba="0.09 0.34 0.09 1"/>
+      </material>
+      <geometry>
+        <mesh filename="package://iai_dlr_cutting_demo/meshes/food-drinks/cucumber/cucumber_decimated.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+
+
 </robot>

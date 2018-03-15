@@ -5,7 +5,7 @@ A set of maps describing the cutting setups in Oberpfaffenhofen and Bremen.
 
 ## Installation
 ```shell
-$ rosrun iai_cad_downloader download-cad-models.py kitchen/hand-tools kitchen/furniture/justins_table_at_dlr kitchen/tableware
+$ rosrun iai_cad_downloader download-cad-models.py kitchen/hand-tools kitchen/furniture/justins_table_at_dlr kitchen/tableware kitchen/food-drinks
 ```
 
 ## Display
