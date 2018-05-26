@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<robot name="tool_holder">
+  <link name="tool_holder_frame">
+    <visual>
+      <origin xyz="0.0 0.0 0.15" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <mesh filename="package://iai_kitchen/meshes/racks/BoxyToolholder/Rack_assy.stl"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>
