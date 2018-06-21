@@ -5,3 +5,4 @@ Media/models/*.urdf
 prolog/*.pl
 owl/*.owl
 *.swp
+iai_dlr_cutting_demo/meshes

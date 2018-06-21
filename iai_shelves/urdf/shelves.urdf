@@ -1,21 +1,36 @@
 <?xml version="1.0" ?>
 <robot name="iai_shelves">
-<!--   <joint name="map_to_room" type="fixed">
-    <parent link="map"/>
-    <child link="room_link"/>
-  </joint> -->
 
   <link name="room_link">    
   </link>
 
-  <joint name="shelf1_joint" type="fixed">
+  <joint name="shelf0_joint" type="fixed">
     <origin xyz="-0.515 0.0 0.0" rpy="0.0 0.0 3.14159265359"/>
     <parent link="room_link"/>
+    <child link="shelf0"/>
+  </joint>
+  <link name="shelf0">
+    <visual>
+      <origin rpy="0 0 0" xyz="0.07 0 0"/>
+      <geometry>
+        <mesh filename="package://iai_shelves/meshes/Shelf_0.dae"/>
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+  </link>
+
+  <joint name="shelf1_joint" type="fixed">
+    <origin xyz="0.0 1.0 0.0" rpy="0.0 0.0 0.0"/>
+    <parent link="shelf0"/>
     <child link="shelf1"/>
   </joint>
   <link name="shelf1">
     <visual>
-      <origin rpy="0 0 0" xyz="0.07 0 0"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="package://iai_shelves/meshes/Shelf_1.dae"/>
       </geometry>
@@ -36,16 +51,13 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://iai_shelves/meshes/Shelf_2_no_texture_center_left_bottom_corner.dae"/>
+        <mesh filename="package://iai_shelves/meshes/Shelf_2.dae"/>
       </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
-      </material>
+      <material name="Cyan">
+        <color rgba=".8 .8 .8 1.0"/>
+     </material>
     </visual>
   </link>
-
 
   <joint name="shelf3_joint" type="fixed">
     <origin xyz="0.0 1.0 0.0" rpy="0.0 0.0 0.0"/>
@@ -57,24 +69,6 @@
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="package://iai_shelves/meshes/Shelf_3.dae"/>
-      </geometry>
-      <material name="Cyan">
-        <color rgba=".8 .8 .8 1.0"/>
-     </material>
-    </visual>
-  </link>
-
-
-  <joint name="shelf4_joint" type="fixed">
-    <origin xyz="0.0 1.0 0.0" rpy="0.0 0.0 0.0"/>
-    <parent link="shelf3"/>
-    <child link="shelf4"/>
-  </joint>
-  <link name="shelf4">
-    <visual>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-      <geometry>
-        <mesh filename="package://iai_shelves/meshes/Shelf_4.dae"/>
       </geometry>
       <material name="Cyan">
         <color rgba=".8 .8 .8 1.0"/>

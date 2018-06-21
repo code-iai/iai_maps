@@ -1,0 +1,161 @@
+<?xml version="1.0"?>
+
+<robot name="iai_kitchen_wall_robohow" xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <macro name="iai_kitchen_wall_robohow" params="parent *origin">
+    <!-- LINKS -->
+    
+    <link name="kitchen_wall_1">
+      <sphere_inertia radius="0" mass="0"/>
+      <visual>
+        <origin xyz="0 0 1.25" rpy="0 0 0" />
+        <geometry>
+            <box size="1.1376 0.15 2.5" />
+        </geometry>
+     </visual>
+      <collision>
+        <origin xyz="0 0 1.25" rpy="0 0 0" />
+        <geometry>
+            <box size="1.1376 0.15 2.5" />
+        </geometry>
+      </collision>
+    </link>
+      
+    <link name="kitchen_wall_2">
+      <sphere_inertia radius="0" mass="0"/>
+      <visual>
+        <origin xyz="0 0 1.25" rpy="0 0 0" />
+        <geometry>
+            <box size="5.182 0.15 2.5" />
+        </geometry>
+     </visual>
+      <collision>
+        <origin xyz="0 0 1.25" rpy="0 0 0" />
+        <geometry>
+            <box size="5.182 0.15 2.5" />
+        </geometry>
+      </collision>
+    </link>
+      
+    <link name="kitchen_wall_3">
+      <sphere_inertia radius="0" mass="0"/>
+      <visual>
+        <origin xyz="0 0 1.25" rpy="0 0 0" />
+        <geometry>
+            <box size="5.901 0.15 2.5" />
+        </geometry>
+     </visual>
+      <collision>
+        <origin xyz="0 0 1.25" rpy="0 0 0" />
+        <geometry>
+            <box size="5.901 0.15 2.5" />
+        </geometry>
+      </collision>
+    </link>
+      
+    <link name="kitchen_wall_4">
+      <sphere_inertia radius="0" mass="0"/>
+      <visual>
+        <origin xyz="0 0 0.35" rpy="0 0 0" />
+        <geometry>
+            <box size="4.25 0.15 0.7" />
+        </geometry>
+     </visual>
+      <collision>
+        <origin xyz="0 0 0.35" rpy="0 0 0" />
+        <geometry>
+            <box size="4.25 0.15 0.7" />
+        </geometry>
+      </collision>
+    </link>
+      
+    <link name="kitchen_wall_5">
+      <sphere_inertia radius="0" mass="0"/>
+      <visual>
+        <origin xyz="0 0 0.35" rpy="0 0 0" />
+        <geometry>
+            <box size="3.27328 0.15 0.7" />
+        </geometry>
+     </visual>
+      <collision>
+        <origin xyz="0 0 0.35" rpy="0 0 0" />
+        <geometry>
+            <box size="3.27328 0.15 0.7" />
+        </geometry>
+      </collision>
+    </link>
+    
+    
+    
+    <link name="kitchen_wall_6">
+      <sphere_inertia radius="0" mass="0"/>
+      <visual>
+        <origin xyz="0 0 0.35" rpy="0 0 0" />
+        <geometry>
+            <box size="1 0.15 0.7" />
+        </geometry>
+     </visual>
+      <collision>
+        <origin xyz="0 0 0.35" rpy="0 0 0" />
+        <geometry>
+            <box size="1 0.15 0.7" />
+        </geometry>
+      </collision>
+    </link>
+    
+    <!-- JOINTS -->
+    
+    <link name="kitchen_walls"/>
+        
+    <joint name="walls_main_joint" type="fixed">
+        <xacro:insert_block name="origin" />
+      <parent link="${parent}"/>
+      <child link="kitchen_walls"/>
+    </joint>
+    
+    <joint name="wall_1_joint" type="fixed">
+        <origin xyz="2.38151 -2.516 0" rpy="0 -0 3.14159" />
+      <parent link="kitchen_walls"/>
+      <child link="kitchen_wall_1"/>
+    </joint>
+    <!--
+    <joint name="wall_1_joint" type="fixed">
+        <origin xyz="1 0.562175 0" rpy="0 0 0" />
+      <parent link="kitchen_walls"/>
+      <child link="kitchen_wall_1"/>
+    </joint>
+    -->
+    <joint name="wall_2_joint" type="fixed">
+        <origin xyz="2.87551 0 0" rpy="0 -0 1.5708" />
+      <parent link="kitchen_walls"/>
+      <child link="kitchen_wall_2"/>
+    </joint>
+    
+    <joint name="wall_3_joint" type="fixed">
+        <origin xyz="0 2.516 0" rpy="0 -0 3.14159" />
+      <parent link="kitchen_walls"/>
+      <child link="kitchen_wall_3"/>
+    </joint>
+    
+    <joint name="wall_4_joint" type="fixed">
+        <origin xyz="-2.87549 0.466 0" rpy="0 0 -1.5708" />
+      <parent link="kitchen_walls"/>
+      <child link="kitchen_wall_4"/>
+    </joint>
+    
+    <joint name="wall_5_joint" type="fixed">
+        <origin xyz="-1.31385 -1.58376 0" rpy="0 -0 0.000157" />
+      <parent link="kitchen_walls"/>
+      <child link="kitchen_wall_5"/>
+    </joint>
+    
+    <joint name="wall_6_joint" type="fixed">
+      <origin xyz="0.247785 -2.00851 0" rpy="0 0 -1.5708" />
+      <parent link="kitchen_walls"/>
+      <child link="kitchen_wall_6"/>
+    </joint>
+    <gazebo reference="kitchen_wall_6">
+        <material>Gazebo/DarkGrey</material>
+    </gazebo>
+  </macro>
+</robot>
