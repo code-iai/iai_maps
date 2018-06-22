@@ -1,0 +1,6 @@
+<launch>
+  <include file="$(find iai_maps)/launch/kitchen_with_state_publisher.launch" />
+  <param name="kitchen_description_obj" command="$(find xacro)/xacro.py '$(arg model)'" />
+  <include file="$(find iai_maps)/launch/room.launch" />
+  <include file="$(find iai_maps)/launch/map.launch" />
+</launch>
