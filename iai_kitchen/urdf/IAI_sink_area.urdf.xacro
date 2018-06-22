@@ -83,22 +83,22 @@
   </joint>
   
   <iai_generic_panel name="${name}_right_panel" parent="${name}" width="60">
-    <origin rpy="0 0 0" xyz="0.28 0.7 0.325 "/>
+    <origin rpy="0 0 0" xyz="0.28 0.7 0.355 "/>
   </iai_generic_panel>
   <iai_drawer_60_58 name="${name}_trash_drawer" parent="${name}">
-    <origin rpy="0 0 0" xyz="0.01 0.7 -0.035 "/>
+    <origin rpy="0 0 0" xyz="0.01 0.7 -0.015 "/>
   </iai_drawer_60_58>
   <iai_drawer_80_14 name="${name}_left_upper_drawer" parent="${name}">
-    <origin rpy="0 0 0" xyz="0.01 -0.6 0.325 "/>
+    <origin rpy="0 0 0" xyz="0.01 -0.6 0.345 "/>
   </iai_drawer_80_14>
   <iai_drawer_80_29 name="${name}_left_middle_drawer" parent="${name}">
-    <origin rpy="0 0 0" xyz="0.01 -0.6 0.11 "/>
+    <origin rpy="0 0 0" xyz="0.01 -0.6 0.12 "/>
   </iai_drawer_80_29>
   <iai_drawer_80_29 name="${name}_left_bottom_drawer" parent="${name}">
     <origin rpy="0 0 0" xyz="0.01 -0.6 -0.18 "/>
   </iai_drawer_80_29>
   <iai_dish_washer name="${name}_dish_washer" parent="${name}">
-    <origin rpy="0 0 0" xyz="0.01 0.1 0.035 "/>
+    <origin rpy="0 0 0" xyz="0.01 0.1 0.044 "/>
   </iai_dish_washer>
   </macro> 
   

@@ -16,7 +16,7 @@
   </node>
 
   <node name="kitchen_joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" >
-    <param name="use_gui" value="True" />    
+    <param name="use_gui" value="False" />    
     <remap from="robot_description" to="kitchen_description"/>
     <remap from="joint_states" to="kitchen_joint_states"/>
   </node>
