@@ -15,16 +15,13 @@
         args="0.0 0.0 0. 0.0 0. 0. map world 25">
   </node>
 
-  <node name="kitchen_joint_state_publisher"
-        pkg="joint_state_publisher"
-        type="joint_state_publisher" >
+  <node name="kitchen_joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" >
+    <param name="use_gui" value="True" />    
     <remap from="robot_description" to="kitchen_description"/>
     <remap from="joint_states" to="kitchen_joint_states"/>
   </node>
   
-  <node name="kitchen_state_publisher"
-        pkg="robot_state_publisher"
-        type="state_publisher" >
+  <node name="kitchen_state_publisher" pkg="robot_state_publisher" type="state_publisher" >
     <remap from="robot_description" to="kitchen_description"/>
     <remap from="joint_states" to="kitchen_joint_states"/>
     <!-- param name="tf_prefix" value="iai_kitchen"/-->
