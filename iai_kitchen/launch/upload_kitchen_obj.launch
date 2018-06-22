@@ -11,8 +11,8 @@
 
   <node pkg="tf"
         type="static_transform_publisher"
-        name="room_link_broadcaster" 
-        args="0.0 0.0 0. 0.0 0. 0. map world 25">
+        name="iai_kitchen_room_link_broadcaster" 
+        args="0.0 0.0 0. 0.0 0. 0. map iai_kitchen/world 25">
   </node>
 
   <node name="kitchen_joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" >
@@ -24,7 +24,7 @@
   <node name="kitchen_state_publisher" pkg="robot_state_publisher" type="state_publisher" >
     <remap from="robot_description" to="kitchen_description"/>
     <remap from="joint_states" to="kitchen_joint_states"/>
-    <!-- param name="tf_prefix" value="iai_kitchen"/-->
+    <param name="tf_prefix" value="iai_kitchen"/>
     <param name="publish_frequency" value="3"/>
   </node>
 
