@@ -43,20 +43,20 @@
   <xacro:include filename="$(find iai_kitchen)/urdf_obj/IAI_kitchen_walls.urdf.xacro"/>
   
   <iai_sink_area name="sink_area" parent="room_link">
-    <origin xyz="1.845 1.35 0" rpy="0 0 ${pi}" />    
+    <origin xyz="1.825 1.32 0" rpy="0 0 ${pi}" />    
   </iai_sink_area>
   
   <iai_oven_area name="oven_area" parent="room_link">
-    <origin xyz="1.825 2.55 0" rpy="0 0 ${pi}" />    
+    <origin xyz="1.805 2.52 0" rpy="0 0 ${pi}" />    
   </iai_oven_area>
   
   
   <iai_kitchen_island name="kitchen_island" parent="room_link">
-    <origin xyz="-1.355 0.58 0" rpy="0 0 0" />    
+    <origin xyz="-1.365 0.59 0" rpy="0 0 0" />    
   </iai_kitchen_island>
   
   <iai_fridge_area name="fridge_area" parent="room_link">
-    <origin xyz="1.845 -0.72 0" rpy="0 0 ${pi}" />    
+    <origin xyz="1.825 -0.74 0" rpy="0 0 ${pi}" />    
   </iai_fridge_area>
   
   
