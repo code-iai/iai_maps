@@ -172,7 +172,7 @@
         <rdf:type rdf:resource="&knowrob;Transformation"/>
         <!-- <knowrob:relativeTo rdf:resource="&iai-map;iai_kitchen_sink_area"/> -->
         <knowrob:quaternion rdf:datatype="&xsd;string">0.000000 0.000000 1.000000 0.000000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">1.5300000000003102 -0.20000000000006102 0.8513999999999999</knowrob:translation>
+        <knowrob:translation rdf:datatype="&xsd;string">1.5300000000003102 -0.30000000000006102 0.8513999999999999</knowrob:translation>
     </owl:NamedIndividual>
 
     
@@ -2104,7 +2104,7 @@
 
     </owl:NamedIndividual>
 
-    <!-- Ceiling Light with some bulbs -->
+<!--
 
     <owl:NamedIndividual rdf:about="&knowrob;CeilingLight_ovmsdobgzw">
         <rdf:type rdf:resource="&knowrob;CeilingLight"/>
@@ -2124,7 +2124,6 @@
         <knowrob:mainColorOfObject rdf:datatype="&xsd;string">1.0 0.9450980392156862 0.8784313725490196 0.6</knowrob:mainColorOfObject>
         <knowrob:lightConeAngle rdf:datatype="&xsd;double">3.14159</knowrob:lightConeAngle>
         <knowrob:lightSpotExponent rdf:datatype="&xsd;double">1.2</knowrob:lightSpotExponent>
-        <!-- <knowrob:lightTarget rdf:resource="&knowrob;drawer_fridge_upper"/> -->
         <knowrob:lightType rdf:resource="&knowrob;LightTypeSpot"/>
     </owl:NamedIndividual>
     
@@ -2208,4 +2207,5 @@
         <knowrob:translation rdf:datatype="&xsd;string">-2.5 2.8 2.5</knowrob:translation>
         <knowrob:quaternion rdf:datatype="&xsd;string">0.0 0.0 0.0 1.0</knowrob:quaternion>
     </owl:NamedIndividual>
+-->
 </rdf:RDF>
