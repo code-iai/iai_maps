@@ -50,21 +50,6 @@
     </owl:Class>
     
 
-
-    <!-- http://knowrob.org/kb/iai-kitchen.owl#BluePlasticSpoon -->
-
-    <owl:Class rdf:about="&kitchen;BluePlasticSpoon">
-        <rdfs:subClassOf rdf:resource="&knowrob;Spoon"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
-                <owl:hasValue rdf:datatype="&xsd;string">package://kitchen/hand-tools/spoon.dae</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
     <!-- http://knowrob.org/kb/iai-kitchen.owl#EdekaRedBowl -->
 
     <owl:Class rdf:about="&kitchen;EdekaRedBowl">
@@ -93,14 +78,14 @@
     
 
 
-    <!-- http://knowrob.org/kb/iai-kitchen.owl#SpoonBluePlastic -->
+    <!-- http://knowrob.org/kb/iai-kitchen.owl#BluePlasticSpoon -->
 
-    <owl:Class rdf:about="&kitchen;SpoonBluePlastic">
+    <owl:Class rdf:about="&kitchen;BluePlasticSpoon">
         <rdfs:subClassOf rdf:resource="&knowrob;Spoon"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
-                <owl:hasValue rdf:datatype="&xsd;string">package://kitchen/iai_kitchen_objects/spoon_blue_plastic/spoon_blue_plastic.dae</owl:hasValue>
+                <owl:hasValue rdf:datatype="&xsd;string">package://kitchen/iai_kitchen_objects/BluePlasticSpoon/BluePlasticSpoon.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
