@@ -131,19 +131,6 @@
         <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/knowrob.owl#Coffee-Beverage"/>
     </owl:Class>
     
-    <!-- http://knowrob.org/kb/iai-kitchen.owl#BluePlasticSpoon -->
-
-    <owl:Class rdf:about="&kitchen;BluePlasticSpoon">
-        <rdfs:subClassOf rdf:resource="&knowrob;Spoon"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
-                <owl:hasValue rdf:datatype="&xsd;string">package://kitchen/hand-tools/spoon.dae</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
     <!-- http://knowrob.org/kb/iai-kitchen.owl#CupEcoOrange -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/iai-kitchen.owl#CupEcoOrange">
@@ -170,7 +157,6 @@
         </rdfs:subClassOf>
     </owl:Class>
     
-
 
     <!-- http://knowrob.org/kb/iai-kitchen.owl#ElBrygCoffee -->
 
