@@ -24,7 +24,7 @@
     <collision>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://iai_kitchen/meshes/collision/kitchen_sink.stl"/>
+          <mesh filename="package://iai_kitchen/meshes/racks/SinkArea.obj"/>
         </geometry>
       </collision>
   </link>
@@ -42,22 +42,7 @@
   </joint>
   
   
-  
-  <link name="${name}_surface">    
-    <sphere_inertia radius="0" mass="0"/>
-    <collision>
-      <origin xyz="0 0 0" rpy="0 0 0" />
-      <geometry>
-        <box size="0.575 2.05 0.02"/>
-      </geometry>
-    </collision>
-  </link>
-  
-  <joint name="${name}_surface_joint" type="fixed">
-    <origin xyz="0.0 0. 0.43" rpy="0 0 0" />
-    <parent link="${name}"/>
-    <child link="${name}_surface"/>
-  </joint>
+
   
   
   <link name="${name}_sink">    
