@@ -1,7 +1,7 @@
 # Blender MTL File: 'None'
 # Material Count: 3
 
-newmtl Shape.130
+newmtl Shape.1000
 Ns 400.000000
 Ka 0.400000 0.400000 0.400000
 Kd 0.328000 0.536000 0.272000
@@ -11,7 +11,7 @@ Ni 1.000000
 d 0.500000
 illum 2
 
-newmtl Shape.131
+newmtl Shape.1001
 Ns 400.000000
 Ka 0.400000 0.400000 0.400000
 Kd 0.000000 0.552000 0.192000
@@ -21,7 +21,7 @@ Ni 1.000000
 d 0.500000
 illum 2
 
-newmtl Shape.132
+newmtl Shape.1002
 Ns 400.000000
 Ka 0.400000 0.400000 0.400000
 Kd 0.624000 0.464000 0.496000
