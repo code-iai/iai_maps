@@ -9,13 +9,13 @@
       
       <sphere_inertia radius="0" mass="0"/>
       <visual>
-        <origin xyz="0 0 0" rpy="0 0 0" />
+        <origin xyz="0 0 0.3619" rpy="0 0 0" />
         <geometry>
           <mesh filename="package://iai_kitchen/meshes/misc/big_table_1.obj"/>
         </geometry>
       </visual>
       <collision>
-        <origin xyz="0 0 0" rpy="0 0 0" />
+        <origin xyz="0 0 0.3619" rpy="0 0 0" />
         <geometry>
           <mesh filename="package://iai_kitchen/meshes/misc/big_table_1.stl"/>
         </geometry>
