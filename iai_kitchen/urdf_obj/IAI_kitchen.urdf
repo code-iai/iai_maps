@@ -807,7 +807,7 @@
     <parent link="room_link"/>
   </joint>
   <joint name="fridge_area_main_joint" type="fixed">
-    <origin rpy="0 0 0" xyz="0.29 .3 0.74"/>
+    <origin rpy="0 0 0" xyz="0.29 0.3 0.74"/>
     <parent link="fridge_area_footprint"/>
     <child link="fridge_area"/>
   </joint>
