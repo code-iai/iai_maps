@@ -26,13 +26,13 @@
     <link name="${name}_main_middle_level">
 
       <visual>
-        <origin xyz="-0.01 0 -0.17" rpy="0 0 0" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
           <box size="0.29 0.50 0.01"/>
         </geometry>
       </visual>
       <collision>
-        <origin xyz="-0.01 0 -0.17" rpy="0 0 0" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
           <box size="0.29 0.50 0.01"/>
         </geometry>
@@ -82,7 +82,7 @@
     <joint name="${name}_main_middle_level_joint" type="fixed">
       <parent link="${name}_main"/>
       <child link="${name}_main_middle_level"/>
-      <origin xyz="0 0 0.30" rpy="0 0 0" />
+      <origin xyz="-0.01 0 0.13" rpy="0 0 0" />
     </joint>
 
     <joint name="${name}_door_joint" type="revolute">
