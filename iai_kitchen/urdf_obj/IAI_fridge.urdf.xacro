@@ -54,7 +54,20 @@
           <mesh filename="package://iai_kitchen/meshes/misc/FridgeDoor.obj"/>
         </geometry>
       </collision>
-    </link>
+  </link>
+
+    <link name="${name}_door_shelves">
+        <visual>
+            <geometry>
+                <box size="0.1 0.5 0.8"/>
+            </geometry>
+        </visual>
+        <collision>
+            <geometry>
+                <box size="0.1 0.5 0.8"/>
+            </geometry>
+        </collision>
+  </link>
     
     <link name="${name}_door_handle">
       
@@ -72,7 +85,7 @@
         </geometry>
       </collision>
     </link>
-    
+
     <joint name="${name}_main_joint" type="fixed">
       <xacro:insert_block name="origin" />
       <parent link="${parent}"/>
@@ -94,6 +107,12 @@
 <!--
       <limit lower="0" upper="0" effort="300" velocity="10"/>
 -->
+    </joint>
+
+    <joint name="${name}_door_shelves_joint" type="fixed">
+        <origin xyz="-0.06 -0.29 0"/>
+        <parent link="${name}_door"/>
+        <child link="${name}_door_shelves"/>
     </joint>
     
     <joint name="${name}_door_handle_joint" type="fixed">
