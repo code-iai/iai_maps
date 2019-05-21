@@ -53,7 +53,430 @@
   </macro>
   
   
-  <macro name="iai_vdrawer" params="name parent *origin">  
+  <macro name="iai_vdrawer" params="name parent *origin">
+
+      <joint name="${name}_joint" type="prismatic">
+          <xacro:insert_block name="origin"/>
+          <parent link="${parent}"/>
+          <child link="${name}_main"/>
+    <axis xyz="0.999 0 0.044"/>
+    <!--  the axis needs to be slightly tilted so that the drawers would stay closed in Gazebo-->
+    <limit effort="300" lower="0" upper="0.48" velocity="10"/>
+
+</joint>
+
+
+<link name="${name}_main">
+    <inertial>
+      <mass value="0.1"/>
+      <inertia ixx="4e-08" ixy="0" ixz="0" iyy="4e-08" iyz="0" izz="4e-08"/>
+    </inertial>
+</link>
+
+<joint name="${name}_front_joint" type="fixed">
+    <origin rpy="0 0. 0" xyz="0.25 0 0"/>
+    <parent link="${name}_main"/>
+    <child link="${name}_front_link"/>
+    <!--
+    <axis xyz="0.999 0 0.044"/>
+     the axis needs to be slightly tilted so that the drawers would stay closed in Gazebo
+    <limit effort="300" lower="0" upper="0.48" velocity="10"/>
+    -->
+</joint>
+
+<link name="${name}_front_link">
+      <inertial>
+        <mass value="1.0"/>
+        <inertia ixx="0.153554166667" ixy="0" ixz="0" iyy="0.0348041666667" iyz="0" izz="0.173854166667"/>
+      </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <box size="0.025 0.295 1.325"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <box size="0.025 0.3 1.33"/>
+      </geometry>
+    </collision>
+</link>
+
+<!-- Board 0 -->
+
+<link name="${name}_board0_link">
+    <inertial>
+        <mass value="1.0"/>
+        <inertia ixx="0.153554166667" ixy="0" ixz="0" iyy="0.0348041666667" iyz="0" izz="0.173854166667"/>
+      </inertial>
+
+    <visual>
+        <origin rpy="0 0 0" xyz="0 0 0"/>
+        <geometry>
+            <box size="0.49 0.27 0.025"/>
+        </geometry>
+    </visual>
+    <collision>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+        <geometry>
+            <box size="0.49 0.27 0.025"/>
+        </geometry>
+    </collision>
+</link>
+    
+<joint name="${name}_board0_joint" type="fixed">
+    <origin xyz="0 0 -0.655"/>
+    <parent link="${name}_main"/>
+    <child link="${name}_board0_link"/>
+    <!--
+    <axis xyz="0.999 0 0.044"/>
+     the axis needs to be slightly tilted so that the drawers would stay closed in Gazebo
+    <limit effort="300" lower="0" upper="0.48" velocity="10"/>
+    -->
+
+</joint>
+
+<link name="${name}_board0_barrier_right_link">
+    <inertial>
+        <mass value="1.0"/>
+        <inertia ixx="0.153554166667" ixy="0" ixz="0" iyy="0.0348041666667" iyz="0" izz="0.173854166667"/>
+    </inertial>
+
+    <visual>
+        <origin rpy="0 0 0" xyz="0 0 0"/>
+        <geometry>
+            <box size="0.49 0.02 0.05"/>
+        </geometry>
+    </visual>
+    <collision>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+        <geometry>
+            <box size="0.49 0.02 0.05"/>
+        </geometry>
+    </collision>
+</link>
+
+<joint name="${name}_board0_barrier_right_joint" type="fixed">
+    <origin xyz="0 -0.135 -0.62"/>
+    <parent link="${name}_main"/>
+    <child link="${name}_board0_barrier_right_link"/>
+</joint>
+
+<link name="${name}_board0_barrier_left_link">
+    <inertial>
+        <mass value="1.0"/>
+        <inertia ixx="0.153554166667" ixy="0" ixz="0" iyy="0.0348041666667" iyz="0" izz="0.173854166667"/>
+    </inertial>
+
+    <visual>
+        <origin rpy="0 0 0" xyz="0 0 0"/>
+        <geometry>
+            <box size="0.49 0.02 0.05"/>
+        </geometry>
+    </visual>
+    <collision>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+        <geometry>
+            <box size="0.49 0.02 0.05"/>
+        </geometry>
+    </collision>
+</link>
+
+<joint name="${name}_board0_barrier_left_joint" type="fixed">
+    <origin xyz="0 0.135 -0.62"/>
+    <parent link="${name}_main"/>
+    <child link="${name}_board0_barrier_left_link"/>
+</joint>
+
+<!-- Board 1 -->
+
+<link name="${name}_board1_link">
+    <inertial>
+        <mass value="1.0"/>
+        <inertia ixx="0.153554166667" ixy="0" ixz="0" iyy="0.0348041666667" iyz="0" izz="0.173854166667"/>
+      </inertial>
+
+    <visual>
+        <origin rpy="0 0 0" xyz="0 0 0"/>
+        <geometry>
+            <box size="0.49 0.27 0.025"/>
+        </geometry>
+    </visual>
+    <collision>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+        <geometry>
+            <box size="0.49 0.27 0.025"/>
+        </geometry>
+    </collision>
+</link>
+
+<joint name="${name}_board1_joint" type="fixed">
+    <origin xyz="0 0 -0.33"/>
+    <parent link="${name}_main"/>
+    <child link="${name}_board1_link"/>
+</joint>
+
+<link name="${name}_board1_barrier_right_link">
+    <inertial>
+        <mass value="1.0"/>
+        <inertia ixx="0.153554166667" ixy="0" ixz="0" iyy="0.0348041666667" iyz="0" izz="0.173854166667"/>
+    </inertial>
+
+    <visual>
+        <origin rpy="0 0 0" xyz="0 0 0"/>
+        <geometry>
+            <box size="0.49 0.02 0.05"/>
+        </geometry>
+    </visual>
+    <collision>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+        <geometry>
+            <box size="0.49 0.02 0.05"/>
+        </geometry>
+    </collision>
+</link>
+
+<joint name="${name}_board1_barrier_right_joint" type="fixed">
+    <origin xyz="0 -0.135 -0.295"/>
+    <parent link="${name}_main"/>
+    <child link="${name}_board1_barrier_right_link"/>
+</joint>
+
+<link name="${name}_board1_barrier_left_link">
+    <inertial>
+        <mass value="1.0"/>
+        <inertia ixx="0.153554166667" ixy="0" ixz="0" iyy="0.0348041666667" iyz="0" izz="0.173854166667"/>
+    </inertial>
+
+    <visual>
+        <origin rpy="0 0 0" xyz="0 0 0"/>
+        <geometry>
+            <box size="0.49 0.02 0.05"/>
+        </geometry>
+    </visual>
+    <collision>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+        <geometry>
+            <box size="0.49 0.02 0.05"/>
+        </geometry>
+    </collision>
+</link>
+
+<joint name="${name}_board1_barrier_left_joint" type="fixed">
+    <origin xyz="0 0.135 -0.295"/>
+    <parent link="${name}_main"/>
+    <child link="${name}_board1_barrier_left_link"/>
+</joint>
+
+
+
+<!-- Board 2 -->
+
+<link name="${name}_board2_link">
+    <inertial>
+        <mass value="1.0"/>
+        <inertia ixx="0.153554166667" ixy="0" ixz="0" iyy="0.0348041666667" iyz="0" izz="0.173854166667"/>
+      </inertial>
+
+    <visual>
+        <origin rpy="0 0 0" xyz="0 0 0"/>
+        <geometry>
+            <box size="0.49 0.27 0.025"/>
+        </geometry>
+    </visual>
+    <collision>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+        <geometry>
+            <box size="0.49 0.27 0.025"/>
+        </geometry>
+    </collision>
+</link>
+
+<joint name="${name}_board2_joint" type="fixed">
+    <origin xyz="0 0 0"/>
+    <parent link="${name}_main"/>
+    <child link="${name}_board2_link"/>
+</joint>
+
+<link name="${name}_board2_barrier_right_link">
+    <inertial>
+        <mass value="1.0"/>
+        <inertia ixx="0.153554166667" ixy="0" ixz="0" iyy="0.0348041666667" iyz="0" izz="0.173854166667"/>
+    </inertial>
+
+    <visual>
+        <origin rpy="0 0 0" xyz="0 0 0"/>
+        <geometry>
+            <box size="0.49 0.02 0.05"/>
+        </geometry>
+    </visual>
+    <collision>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+        <geometry>
+            <box size="0.49 0.02 0.05"/>
+        </geometry>
+    </collision>
+</link>
+
+<joint name="${name}_board2_barrier_right_joint" type="fixed">
+    <origin xyz="0 -0.135 0.035"/>
+    <parent link="${name}_main"/>
+    <child link="${name}_board2_barrier_right_link"/>
+</joint>
+
+<link name="${name}_board2_barrier_left_link">
+    <inertial>
+        <mass value="1.0"/>
+        <inertia ixx="0.153554166667" ixy="0" ixz="0" iyy="0.0348041666667" iyz="0" izz="0.173854166667"/>
+    </inertial>
+
+    <visual>
+        <origin rpy="0 0 0" xyz="0 0 0"/>
+        <geometry>
+            <box size="0.49 0.02 0.05"/>
+        </geometry>
+    </visual>
+    <collision>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+        <geometry>
+            <box size="0.49 0.02 0.05"/>
+        </geometry>
+    </collision>
+</link>
+
+<joint name="${name}_board2_barrier_left_joint" type="fixed">
+    <origin xyz="0 0.135 0.035"/>
+    <parent link="${name}_main"/>
+    <child link="${name}_board2_barrier_left_link"/>
+</joint>
+
+
+<!-- Board 3 -->
+
+<link name="${name}_board3_link">
+    <inertial>
+        <mass value="1.0"/>
+        <inertia ixx="0.153554166667" ixy="0" ixz="0" iyy="0.0348041666667" iyz="0" izz="0.173854166667"/>
+      </inertial>
+
+    <visual>
+        <origin rpy="0 0 0" xyz="0 0 0"/>
+        <geometry>
+            <box size="0.49 0.27 0.025"/>
+        </geometry>
+    </visual>
+    <collision>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+        <geometry>
+            <box size="0.49 0.27 0.025"/>
+        </geometry>
+    </collision>
+</link>
+
+<joint name="${name}_board3_joint" type="fixed">
+    <origin xyz="0 0 0.33"/>
+    <parent link="${name}_main"/>
+    <child link="${name}_board3_link"/>
+</joint>
+
+
+<link name="${name}_board3_barrier_right_link">
+    <inertial>
+        <mass value="1.0"/>
+        <inertia ixx="0.153554166667" ixy="0" ixz="0" iyy="0.0348041666667" iyz="0" izz="0.173854166667"/>
+    </inertial>
+
+    <visual>
+        <origin rpy="0 0 0" xyz="0 0 0"/>
+        <geometry>
+            <box size="0.49 0.02 0.05"/>
+        </geometry>
+    </visual>
+    <collision>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+        <geometry>
+            <box size="0.49 0.02 0.05"/>
+        </geometry>
+    </collision>
+</link>
+
+<joint name="${name}_board3_barrier_right_joint" type="fixed">
+    <origin xyz="0 -0.135 0.365"/>
+    <parent link="${name}_main"/>
+    <child link="${name}_board3_barrier_right_link"/>
+</joint>
+
+<link name="${name}_board3_barrier_left_link">
+    <inertial>
+        <mass value="1.0"/>
+        <inertia ixx="0.153554166667" ixy="0" ixz="0" iyy="0.0348041666667" iyz="0" izz="0.173854166667"/>
+    </inertial>
+
+    <visual>
+        <origin rpy="0 0 0" xyz="0 0 0"/>
+        <geometry>
+            <box size="0.49 0.02 0.05"/>
+        </geometry>
+    </visual>
+    <collision>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+        <geometry>
+            <box size="0.49 0.02 0.05"/>
+        </geometry>
+    </collision>
+</link>
+
+<joint name="${name}_board3_barrier_left_joint" type="fixed">
+    <origin xyz="0 0.135 0.365"/>
+    <parent link="${name}_main"/>
+    <child link="${name}_board3_barrier_left_link"/>
+</joint>
+
+
+
+<!--
+  <gazebo reference="drawer_oven_right_link">
+    <material value="Ias/KitchenLightGray"/>
+</gazebo>
+-->
+<!-- Joint handle to drawer -->
+  <joint name="${name}_handle_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0.05 0.0 0.0"/>
+    <parent link="${name}_front_link" />
+    <child link="${name}_handle" />
+</joint>
+
+<link name="${name}_handle">
+      <inertial>
+        <mass value="0.1"/>
+        <inertia ixx="0.0127110416667" ixy="0" ixz="0" iyy="1.66666666667e-06" iyz="0" izz="0.0127110416667"/>
+      </inertial>
+
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <box size="0.01 0.01 1.235"/>
+      </geometry>
+      <material name="KitchenDarkGray"/>
+  </visual>
+
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <box size="0.015 0.015 1.24"/>
+      </geometry>
+  </collision>
+  </link>
+  <!--
+  <gazebo reference="handle_drawer_oven_right_link">
+    <material value="Ias/KitchenDarkGray"/>
+</gazebo>
+-->
+
+
+      <!-- The macro part
+       This is the vertical drawer 
     <link name="${name}_main">      
       <sphere_inertia radius="0" mass="0"/>
       <visual>
@@ -92,9 +515,9 @@
       <child link="${name}_main"/>
       <axis xyz="1. 0. 0.0"/>  
         <limit effort="300" lower="0" upper="0.48" velocity="10"/>  
-<!--
+
         <limit effort="300" lower="0" upper="0" velocity="10"/>
-  -->
+
     </joint>
     
     
@@ -106,7 +529,11 @@
       <limit lower="0" upper="${0.5*pi}" effort="300" velocity="10"/>
     </joint>      
   </macro>
-  
+
+  -->
+  </macro>
+
+
   <macro name="iai_drawer_29" params="name parent width *origin">   
       
     <iai_generic_drawer name="${name}" parent="${parent}" width="${width}" height="29">
