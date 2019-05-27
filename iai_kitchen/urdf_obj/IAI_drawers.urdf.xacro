@@ -58,7 +58,7 @@
   <xacro:property name="board_z" value="0.016"/>
   <xacro:property name="barrier_z" value="0.082"/>
   <macro name="iai_vdrawer_board" params="name parent joint_origin_z">
-    <link name="${parent}_${name}_link">
+    <link name="${parent}_board_${name}_link">
       <sphere_inertia radius="0" mass="0"/>
       <visual>
         <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -74,13 +74,13 @@
       </collision>
     </link>
 
-    <joint name="${parent}_${name}_joint" type="fixed">
+    <joint name="${parent}_board_${name}_joint" type="fixed">
       <origin xyz="0 0 ${joint_origin_z}"/>
       <parent link="${parent}_main"/>
-      <child link="${parent}_${name}_link"/>
+      <child link="${parent}_board_${name}_link"/>
     </joint>
 
-    <link name="${parent}_${name}_barrier_right_link">
+    <link name="${parent}_barrier_${name}_right_link">
       <sphere_inertia radius="0" mass="0"/>
       <visual>
         <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -96,13 +96,13 @@
       </collision>
     </link>
 
-    <joint name="${parent}_${name}_barrier_right_joint" type="fixed">
+    <joint name="${parent}_barrier_${name}_right_joint" type="fixed">
       <origin xyz="0 ${-board_y / 2 + board_z / 2} ${joint_origin_z + barrier_z/2 - board_z/2}"/>
       <parent link="${parent}_main"/>
-      <child link="${parent}_${name}_barrier_right_link"/>
+      <child link="${parent}_barrier_${name}_right_link"/>
     </joint>
 
-    <link name="${parent}_${name}_barrier_left_link">
+    <link name="${parent}_barrier_${name}_left_link">
       <sphere_inertia radius="0" mass="0"/>
       <visual>
         <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -118,13 +118,13 @@
       </collision>
     </link>
 
-    <joint name="${parent}_${name}_barrier_left_joint" type="fixed">
+    <joint name="${parent}_barrier_${name}_left_joint" type="fixed">
       <origin xyz="0 ${board_y / 2 - board_z / 2} ${joint_origin_z + barrier_z/2 - board_z/2}"/>
       <parent link="${parent}_main"/>
-      <child link="${parent}_${name}_barrier_left_link"/>
+      <child link="${parent}_barrier_${name}_left_link"/>
     </joint>
 
-    <link name="${parent}_${name}_barrier_back_link">
+    <link name="${parent}_barrier_${name}_back_link">
       <sphere_inertia radius="0" mass="0"/>
       <visual>
         <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -140,10 +140,10 @@
       </collision>
     </link>
 
-    <joint name="${parent}_${name}_barrier_back_joint" type="fixed">
+    <joint name="${parent}_barrier_${name}_back_joint" type="fixed">
       <origin xyz="${-board_x / 2 + board_z / 2} 0 ${joint_origin_z + barrier_z/2 - board_z/2}"/>
       <parent link="${parent}_main"/>
-      <child link="${parent}_${name}_barrier_back_link"/>
+      <child link="${parent}_barrier_${name}_back_link"/>
     </joint>
   </macro>
 
@@ -207,10 +207,10 @@
       </collision>
     </link>
 
-    <iai_vdrawer_board name="board0" parent="${name}" joint_origin_z="-0.655"/>
-    <iai_vdrawer_board name="board1" parent="${name}" joint_origin_z="-0.33"/>
-    <iai_vdrawer_board name="board2" parent="${name}" joint_origin_z="0"/>
-    <iai_vdrawer_board name="board3" parent="${name}" joint_origin_z="0.33"/>
+    <iai_vdrawer_board name="0" parent="${name}" joint_origin_z="-0.655"/>
+    <iai_vdrawer_board name="1" parent="${name}" joint_origin_z="-0.33"/>
+    <iai_vdrawer_board name="2" parent="${name}" joint_origin_z="0"/>
+    <iai_vdrawer_board name="3" parent="${name}" joint_origin_z="0.33"/>
   </macro>
 
 
