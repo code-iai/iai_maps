@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+
+<robot name="iai_oven_area" xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <xacro:property name="pi" value="3.1415926535897931" />
+  <xacro:property name="simulated" value="true" />
+  
+  <macro name="sphere_inertia" params="radius mass">
+        <inertial>
+          <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+          <mass value="1"/>
+          <inertia 
+              ixx="1" ixy="0.0" ixz="0.0" 
+              iyy="1" iyz="0.0" 
+              izz="1"/>
+        </inertial>
+    
+  </macro>
+  
+  <link name="room_link">    
+    
+      <sphere_inertia radius="0" mass="0"/>
+  </link>
+  <xacro:if value="${simulated}">
+    <link name="world"/> 
+    <joint name="world_room_joint" type="fixed">
+        <origin xyz="0.0 0.0 0 " rpy="0 0 0" />
+        <parent link="world"/>
+        <child link="room_link"/>
+      </joint>   
+      
+  </xacro:if>
+  
+  <gazebo>
+      <static>false</static>
+  </gazebo>
+  <!--- FIXME THIS should NOT be here -->
+  <xacro:include filename="$(find iai_kitchen)/urdf_obj/IAI_oven_area.urdf.xacro"/>
+  <xacro:include filename="$(find iai_kitchen)/urdf_obj/IAI_kitchen_island.urdf.xacro"/>
+  <xacro:include filename="$(find iai_kitchen)/urdf_obj/IAI_sink_area.urdf.xacro"/>
+  <xacro:include filename="$(find iai_kitchen)/urdf_obj/IAI_fridge_area.urdf.xacro"/>
+  <xacro:include filename="$(find iai_kitchen)/urdf_obj/IAI_tables.urdf.xacro"/>
+  <xacro:include filename="$(find iai_kitchen)/urdf_obj/IAI_kitchen_walls.urdf.xacro"/>
+  
+  <iai_sink_area name="sink_area" parent="room_link">
+    <origin xyz="1.825 1.32 0" rpy="0 0 ${pi}" />    
+  </iai_sink_area>
+  
+  <iai_oven_area name="oven_area" parent="room_link">
+    <origin xyz="1.805 -0.74 0" rpy="0 0 ${pi}" />    
+  </iai_oven_area>
+
+  <iai_kitchen_island name="kitchen_island" parent="room_link">
+    <origin xyz="-1.565 0.59 0" rpy="0 0 -0.5" />    
+  </iai_kitchen_island>
+  
+  <iai_fridge_area name="fridge_area" parent="room_link">
+    <origin xyz="1.825 1.93 0" rpy="0 0 ${pi}" />    
+  </iai_fridge_area>
+  
+  
+  <iai_table_1 name="table_area" parent="room_link">
+    <origin xyz="-1.4 -1.05 0" rpy="0 0 ${pi}" />
+  </iai_table_1>
+  
+  
+  <iai_kitchen_wall_robohow parent="room_link">
+    <origin xyz="-1 0.462175 0" rpy="0.0 0.0 0.0" />    
+  </iai_kitchen_wall_robohow>
+ 
+
+
+  <!-- Included above already
+  <iai_sink_area name="sink_area" parent="room_link">
+    <origin xyz="-5.29 -5.65 0" rpy="0 0 0" />    
+  </iai_sink_area>
+  
+  <iai_oven_area name="oven_area" parent="room_link">
+    <origin xyz="-5.27 -6.85 0" rpy="0 0 0" />    
+  </iai_oven_area>
+  
+  
+  <iai_kitchen_island name="kitchen_island" parent="room_link">
+    <origin xyz="-2.1 -4.94 0" rpy="0 0 ${pi}" />    
+  </iai_kitchen_island>
+  
+  <iai_fridge_area name="fridge_area" parent="room_link">
+    <origin xyz="-5.29 -3.59 0" rpy="0 0 0" />    
+  </iai_fridge_area>
+  -->
+ 
+</robot>
