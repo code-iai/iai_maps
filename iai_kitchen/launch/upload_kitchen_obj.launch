@@ -12,7 +12,7 @@
   <node pkg="tf"
         type="static_transform_publisher"
         name="iai_kitchen_room_link_broadcaster" 
-        args="0.0 0.0 0. 0.0 0. 0. map iai_kitchen/world 25">
+        args="0.0 0.03 0. 0.0 0. 0. map iai_kitchen/world 25">
   </node>
 
   <node pkg="joint_state_publisher" type="joint_state_publisher"
