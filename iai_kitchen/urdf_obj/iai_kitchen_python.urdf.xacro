@@ -24,7 +24,7 @@
   <xacro:if value="${simulated}">
     <link name="world"/> 
     <joint name="world_room_joint" type="fixed">
-        <origin xyz="0.0 0.0 0 " rpy="0 0 0" />
+        <origin xyz="0.0 0.03 0 " rpy="0 0 0" />
         <parent link="world"/>
         <child link="room_link"/>
       </joint>   
