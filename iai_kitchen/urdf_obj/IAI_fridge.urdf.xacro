@@ -59,12 +59,12 @@
     <link name="${name}_door_shelves">
         <visual>
             <geometry>
-                <box size="0.1 0.5 0.8"/>
+                <box size="0.16 0.5 0.8"/>
             </geometry>
         </visual>
         <collision>
             <geometry>
-                <box size="0.1 0.5 0.8"/>
+                <box size="0.16 0.5 0.8"/>
             </geometry>
         </collision>
   </link>
@@ -110,13 +110,13 @@
     </joint>
 
     <joint name="${name}_door_shelves_joint" type="fixed">
-        <origin xyz="-0.06 -0.29 0"/>
+        <origin xyz="-0.09 -0.29 0"/>
         <parent link="${name}_door"/>
         <child link="${name}_door_shelves"/>
     </joint>
     
     <joint name="${name}_door_handle_joint" type="fixed">
-      <origin xyz="0.06 -0.57 0." rpy="0 0 0" />
+      <origin xyz="0.09 -0.57 0." rpy="0 0 0" />
       <parent link="${name}_door"/>
       <child link="${name}_door_handle"/>
     </joint>
