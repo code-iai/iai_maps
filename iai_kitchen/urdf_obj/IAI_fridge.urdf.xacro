@@ -68,6 +68,19 @@
             </geometry>
         </collision>
   </link>
+
+  <link name="${name}_ceiling">
+        <visual>
+            <geometry>
+                <box size="0.48 0.5 0.05"/>
+            </geometry>
+        </visual>
+        <collision>
+            <geometry>
+                <box size="0.48 0.5 0.05"/>
+            </geometry>
+        </collision>
+  </link>
     
     <link name="${name}_door_handle">
       
@@ -114,6 +127,13 @@
         <parent link="${name}_door"/>
         <child link="${name}_door_shelves"/>
     </joint>
+
+    <joint name="${name}_ceiling_joint" type="fixed">
+        <origin xyz="0.0 0.0 0.64"/>
+        <parent link="${name}_main"/>
+        <child link="${name}_ceiling"/>
+    </joint>
+
     
     <joint name="${name}_door_handle_joint" type="fixed">
       <origin xyz="0.09 -0.57 0." rpy="0 0 0" />
