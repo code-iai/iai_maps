@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<robot name="dm_shelves" xmlns:xacro="http://ros.org/wiki/xacro">
+
+    <macro name="shelve_1_level" params="name parent *origin">
+        <link name="shelve_1_${name}_link">
+            <visual>
+                <geometry>
+                    <box size="0.988 0.65 0.043"/>
+                </geometry>
+            </visual>
+            <collision>
+                <geometry>
+                    <box size="0.988 0.65 0.043"/>
+                </geometry>
+            </collision>
+        </link>
+
+        <joint type="fixed" name="${name}_joint">
+            <xacro:insert_block name="origin"/>
+            <parent link="${parent}"/>
+            <child link="shelve_1_${name}_link"/>
+        </joint>
+    </macro>
+
+    <link name="room_link"/>
+
+    <link name="shelve_1_footprint"/>
+    
+    <joint type="fixed" name="romm_shleve1_joint">
+        <origin xyz="1 1 0.08515"/>
+        <parent link="room_link"/>
+        <child link="shelve_1_footprint"/>
+    </joint>
+
+    <link name="shelve_1_base">
+        <visual>
+            <geometry>
+                <box size="1.04 0.85 0.173"/>
+            </geometry>
+        </visual>
+        <collision>
+           <geometry>
+                <box size="1.04 0.85 0.173"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint type="fixed" name="foot_base_joint">
+        <iorigin xyz="0 0 0"/>
+        <parent link="shelve_1_footprint"/>
+        <child link="shelve_1_base"/>
+    </joint>
+
+    <link name="shelve_1_back">
+        <visual>
+            <geometry>
+                <box size="1.04 0.12 2"/>
+            </geometry>
+        </visual>
+        <collision>
+           <geometry>
+                <box size="1.04 0.12 2"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint type="fixed" name="foot_back_joint">
+        <origin xyz="0 0.365 1"/>
+        <parent link="shelve_1_footprint"/>
+        <child link="shelve_1_back"/>
+    </joint>
+
+    <link name="shelve_1_level_0_link">
+        <visual>
+            <geometry>
+                <box size="1 0.78 0.043"/>
+            </geometry>
+        </visual>
+        <collision>
+           <geometry>
+                <box size="1 0.78 0.043"/>
+            </geometry>
+        </collision>
+    </link>
+    
+    <joint type="fixed" name="shelve_1_level_0_joint">
+        <origin xyz="0 -0.06 0.10665"/>
+        <parent link="shelve_1_footprint"/>
+        <child link="shelve_1_level_0_link"/>
+    </joint>
+
+
+
+    <shelve_1_level name="level_1" parent="shelve_1_footprint">
+        <origin xyz="0 0 0.50965" />
+    </shelve_1_level>
+
+    <shelve_1_level name="level_2" parent="shelve_1_footprint">
+        <origin xyz="0 0 0.84465" />
+    </shelve_1_level>
+    
+    <shelve_1_level name="level_3" parent="shelve_1_footprint">
+        <origin xyz="0 0 1.22265" />
+    </shelve_1_level>
+
+    <shelve_1_level name="level_4" parent="shelve_1_footprint">
+        <origin xyz="0 0 1.53565" />
+    </shelve_1_level>
+
+    <shelve_1_level name="level_5" parent="shelve_1_footprint">
+        <origin xyz="0 0 1.86865" />
+    </shelve_1_level>
+
+
+</robot>
