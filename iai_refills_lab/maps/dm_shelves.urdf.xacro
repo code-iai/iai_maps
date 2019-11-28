@@ -1,7 +1,76 @@
 <?xml version="1.0"?>
 <robot name="dm_shelves" xmlns:xacro="http://ros.org/wiki/xacro">
+    
+    <macro name="divider_link" params="parent name *origin">
 
-    <macro name="shelve_1_level" params="name parent *origin">
+        <link name="shelve_1_${name}_link">
+            <visual>
+                <geometry>
+                    <box size="0.004 0.65 0.05"/>
+                </geometry>
+            </visual>
+            <collision>
+                <geometry>
+                    <box size="0.004 0.65 0.05"/>
+                </geometry>
+            </collision>
+        </link>
+
+        
+        <joint type="fixed" name="shelve_1_${name}_joint">
+            <xacro:insert_block name="origin"/>
+            <parent link="${parent}"/>
+            <child link="shelve_1_${name}_link"/>
+        </joint>
+    </macro>
+
+    <macro name="shelve_divider" params="parent name dist1 dist2 dist3 dist4 dist5 dist6 dist7 dist8 dist9">
+        <divider_link parent="${parent}" name="${name}_divider_1">
+            <origin xyz="-0.495 0 0.024"/>
+        </divider_link>
+
+        <divider_link parent="${parent}" name="${name}_divider_2">
+            <origin xyz="${-0.495 + dist1} 0 0.024"/>
+        </divider_link>
+
+        <divider_link parent="${parent}" name="${name}_divider_3">
+            <origin xyz="${-0.495 + dist1 + dist2} 0 0.024"/>
+        </divider_link>
+        
+        <divider_link parent="${parent}" name="${name}_divider_4">
+            <origin xyz="${-0.495 + dist1 + dist2 + dist3} 0 0.024"/>
+        </divider_link>
+
+        <divider_link parent="${parent}" name="${name}_divider_5">
+            <origin xyz="${-0.495 + dist1 + dist2 + dist3 + dist4} 0 0.024"/>
+        </divider_link>
+
+        <divider_link parent="${parent}" name="${name}_divider_6">
+            <origin xyz="${-0.495 + dist1 + dist2 + dist3 + dist4 + dist5} 0 0.024"/>
+        </divider_link>
+
+        <divider_link parent="${parent}" name="${name}_divider_7">
+            <origin xyz="${-0.495 + dist1 + dist2 + dist3 + dist4 + dist5 + dist6} 0 0.024"/>
+        </divider_link>
+
+        <divider_link parent="${parent}" name="${name}_divider_8">
+            <origin xyz="${-0.495 + dist1 + dist2 + dist3 + dist4 + dist5 + dist6 + dist7} 0 0.024"/>
+        </divider_link>
+
+        <divider_link parent="${parent}" name="${name}_divider_9">
+            <origin xyz="${-0.495 + dist1 + dist2 + dist3 + dist4 + dist5 + dist6 + dist7 + dist8} 0 0.024"/>
+        </divider_link>
+
+        <divider_link parent="${parent}" name="${name}_divider_10">
+            <origin xyz="${-0.495 + dist1 + dist2 + dist3 + dist4 + dist5 + dist6 + dist7 + dist8 + dist9} 0 0.024"/>
+        </divider_link>
+
+
+ 
+    </macro>
+
+
+    <macro name="shelve_1_level" params="name parent *origin dist1 dist2 dist3 dist4 dist5 dist6 dist7 dist8 dist9">
         <link name="shelve_1_${name}_link">
             <visual>
                 <geometry>
@@ -15,12 +84,57 @@
             </collision>
         </link>
 
-        <joint type="fixed" name="${name}_joint">
+        <link name="shelve_1_${name}_left_support_link">
+            <visual>
+                <geometry>
+                    <box size="0.004 0.65 0.12"/>
+                </geometry>
+            </visual>
+            <collision>
+                <geometry>
+                    <box size="0.004 0.65 0.12"/>
+                </geometry>
+            </collision>
+        </link>
+
+        
+        <link name="shelve_1_${name}_right_support_link">
+            <visual>
+                <geometry>
+                    <box size="0.004 0.65 0.12"/>
+                </geometry>
+            </visual>
+            <collision>
+                <geometry>
+                    <box size="0.004 0.65 0.12"/>
+                </geometry>
+            </collision>
+        </link>
+
+
+        <joint type="fixed" name="shelve_1_${name}_joint">
             <xacro:insert_block name="origin"/>
             <parent link="${parent}"/>
             <child link="shelve_1_${name}_link"/>
         </joint>
+
+        <joint type="fixed" name="shelve_1_${name}_right_support_joint">
+            <origin xyz="0.494 0 -0.06"/>
+            <parent link="shelve_1_${name}_link"/>
+            <child link="shelve_1_${name}_right_support_link"/>
+        </joint>
+
+        <joint type="fixed" name="shelve_1_${name}_left_support_joint">
+            <origin xyz="-0.494 0 -0.06"/>
+            <parent link="shelve_1_${name}_link"/>
+            <child link="shelve_1_${name}_left_support_link"/>
+        </joint>
+
+
+        <shelve_divider parent="shelve_1_${name}_link" name="${name}" dist1="${dist1}" dist2="${dist2}" dist3="${dist3}" dist4="${dist4}" dist5="${dist5}" dist6="${dist6}" dist7="${dist7}" dist8="${dist8}" dist9="${dist9}" />
+ 
     </macro>
+
 
     <link name="room_link"/>
 
@@ -91,23 +205,23 @@
 
 
 
-    <shelve_1_level name="level_1" parent="shelve_1_footprint">
+    <shelve_1_level name="level_1" parent="shelve_1_footprint" dist1="0.15" dist2="0.133" dist3="0.082" dist4="0.167" dist5="0.095" dist6="0.148" dist7="0.095" dist8="0.125" dist9="0" >
         <origin xyz="0 0 0.50965" />
     </shelve_1_level>
 
-    <shelve_1_level name="level_2" parent="shelve_1_footprint">
+    <shelve_1_level name="level_2" parent="shelve_1_footprint" dist1="0.177" dist2="0.208" dist3="0.147" dist4="0.20" dist5="0.124" dist6="0.14" dist7="0" dist8="0" dist9="0" >
         <origin xyz="0 0 0.84465" />
     </shelve_1_level>
     
-    <shelve_1_level name="level_3" parent="shelve_1_footprint">
+    <shelve_1_level name="level_3" parent="shelve_1_footprint" dist1="0" dist2="0" dist3="0" dist4="0" dist5="0" dist6="0" dist7="0" dist8="0" dist9="0" >
         <origin xyz="0 0 1.22265" />
     </shelve_1_level>
 
-    <shelve_1_level name="level_4" parent="shelve_1_footprint">
+    <shelve_1_level name="level_4" parent="shelve_1_footprint" dist1="0" dist2="0" dist3="0" dist4="0" dist5="0" dist6="0" dist7="0" dist8="0" dist9="0" >
         <origin xyz="0 0 1.53565" />
     </shelve_1_level>
 
-    <shelve_1_level name="level_5" parent="shelve_1_footprint">
+    <shelve_1_level name="level_5" parent="shelve_1_footprint" dist1="0" dist2="0" dist3="0" dist4="0" dist5="0" dist6="0" dist7="0" dist8="0" dist9="0" >
         <origin xyz="0 0 1.86865" />
     </shelve_1_level>
 
