@@ -120,12 +120,12 @@
     <link name="${name}_bottom">
       <visual>
         <geometry>
-          <box size="0.5 0.5 0.02"/>
+          <box size="0.464 0.5 0.02"/>
         </geometry>
       </visual>
       <collision>
         <geometry>
-          <box size="0.5 0.5 0.02"/>
+          <box size="0.464 0.5 0.02"/>
         </geometry>
       </collision>
     </link>
@@ -133,12 +133,12 @@
     <link name="${name}_left_side">
       <visual>
         <geometry>
-          <box size="0.5 0.02 0.1"/>
+          <box size="0.464 0.02 0.17"/>
         </geometry>
       </visual>
       <collision>
         <geometry>
-          <box size="0.5 0.02 0.1"/>
+          <box size="0.464 0.02 0.17"/>
         </geometry>
       </collision>
     </link>
@@ -146,12 +146,12 @@
     <link name="${name}_right_side">
       <visual>
         <geometry>
-          <box size="0.5 0.02 0.1"/>
+          <box size="0.464 0.02 0.17"/>
         </geometry>
       </visual>
       <collision>
         <geometry>
-          <box size="0.5 0.02 0.1"/>
+          <box size="0.464 0.02 0.17"/>
         </geometry>
       </collision>
     </link>
@@ -159,12 +159,12 @@
     <link name="${name}_back_side">
       <visual>
         <geometry>
-          <box size="0.02 0.5 0.1"/>
+          <box size="0.02 0.5 0.17"/>
         </geometry>
       </visual>
       <collision>
         <geometry>
-          <box size="0.02 0.5 0.1"/>
+          <box size="0.02 0.5 0.17"/>
         </geometry>
       </collision>
     </link>
@@ -172,40 +172,104 @@
     <link name="${name}_front_side">
       <visual>
         <geometry>
-          <box size="0.02 0.5 0.1"/>
+          <box size="0.02 0.5 0.17"/>
         </geometry>
       </visual>
       <collision>
         <geometry>
-          <box size="0.02 0.5 0.1"/>
+          <box size="0.02 0.5 0.17"/>
         </geometry>
       </collision>
     </link>
 
     <joint name="${name}_bottom_left" type="fixed">
-      <origin xyz="0 -0.24 0.06"/>
+      <origin xyz="0 -0.24 0.075"/>
       <child link="${name}_left_side" />
       <parent link="${name}_bottom"/>
     </joint>
 
     <joint name="${name}_bottom_right" type="fixed">
-      <origin xyz="0 0.24 0.06"/>
+      <origin xyz="0 0.24 0.075"/>
       <child link="${name}_right_side" />
       <parent link="${name}_bottom"/>
     </joint>
 
     <joint name="${name}_bottom_back" type="fixed">
-      <origin xyz="-0.24 0 0.06"/>
+      <origin xyz="-0.24 0 0.075"/>
       <child link="${name}_back_side" />
       <parent link="${name}_bottom"/>
     </joint>
 
     <joint name="${name}_front_back" type="fixed">
-      <origin xyz="0.24 0 0.06"/>
+      <origin xyz="0.24 0 0.075"/>
       <child link="${name}_front_side" />
       <parent link="${name}_bottom"/>
     </joint>
 
+    <tray_handle name="${name}_handle" parent="${name}_front_side">
+      <origin xyz="0.0305 0 0"/>
+    </tray_handle>
+
+  </macro>
+
+  <macro name="tray_handle" params="name parent *origin">
+
+    <joint name="${name}_joint" type="fixed">
+      <xacro:insert_block name="origin"/>
+      <child link="${name}_front_side" />
+      <parent link="${parent}"/>
+    </joint>
+
+    <link name="${name}_left_side">
+      <visual>
+        <geometry>
+          <box size="0.03 0.01 0.01"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <box size="0.03 0.01 0.01"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${name}_right_side">
+      <visual>
+        <geometry>
+          <box size="0.03 0.01 0.01"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <box size="0.03 0.01 0.01"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${name}_front_side">
+      <visual>
+        <geometry>
+          <box size="0.01 0.4 0.01"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <box size="0.01 0.4 0.01"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <joint name="${name}_front_left_joint" type="fixed">
+      <origin xyz="-0.01 -0.2 0"/>
+      <child link="${name}_left_side" />
+      <parent link="${name}_front_side"/>
+    </joint>
+
+    <joint name="${name}_front_right_joint" type="fixed">
+      <origin xyz="-0.01 0.2 0"/>
+      <child link="${name}_right_side" />
+      <parent link="${name}_front_side"/>
+    </joint>
 
 
   </macro>
