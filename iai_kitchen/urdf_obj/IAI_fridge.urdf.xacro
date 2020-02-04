@@ -202,23 +202,23 @@
     </joint>
 
 
-    <fridge_door_shelve name="${name}_door_shelf1" parent="${name}_door_block" height="0.1">
+    <fridge_door_shelf name="${name}_door_shelf1" parent="${name}_door_block" height="0.1">
       <origin xyz="-0.07 0 -0.3525 "/>
-    </fridge_door_shelve>
+    </fridge_door_shelf>
 
-    <fridge_door_shelve name="${name}_door_shelf2" parent="${name}_door_block" height="0.065">
+    <fridge_door_shelf name="${name}_door_shelf2" parent="${name}_door_block" height="0.065">
       <origin xyz="-0.07 0 0.0425"/>
-    </fridge_door_shelve>
+    </fridge_door_shelf>
 
-    <fridge_door_shelve name="${name}_door_shelf3" parent="${name}_door_block" height="0.065">
+    <fridge_door_shelf name="${name}_door_shelf3" parent="${name}_door_block" height="0.065">
       <origin xyz="-0.07 0 0.2625 "/>
-    </fridge_door_shelve>
+    </fridge_door_shelf>
 
 
 
   </macro>
 
-  <macro name="fridge_door_shelve" params="name parent height *origin">
+  <macro name="fridge_door_shelf" params="name parent height *origin">
 
     <joint name="${name}_to_door" type="fixed">
       <xacro:insert_block name="origin"/>
