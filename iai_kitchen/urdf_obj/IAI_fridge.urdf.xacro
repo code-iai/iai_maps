@@ -23,6 +23,22 @@
       </collision>
     </link>
 
+    <link name="${name}_main_middle_level">
+
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <box size="0.29 0.50 0.01"/>
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <box size="0.29 0.50 0.01"/>
+        </geometry>
+      </collision>
+    </link>
+
     <link name="${name}_door">
 
       <sphere_inertia radius="0" mass="0"/>
@@ -38,7 +54,20 @@
           <mesh filename="package://iai_kitchen/meshes/misc/FridgeDoor.obj"/>
         </geometry>
       </collision>
-    </link>
+  </link>
+
+  <link name="${name}_ceiling">
+        <visual>
+            <geometry>
+                <box size="0.48 0.5 0.05"/>
+            </geometry>
+        </visual>
+        <collision>
+            <geometry>
+                <box size="0.48 0.5 0.05"/>
+            </geometry>
+        </collision>
+  </link>
 
     <link name="${name}_door_handle">
 
@@ -63,6 +92,12 @@
       <child link="${name}_main"/>
     </joint>
 
+    <joint name="${name}_main_middle_level_joint" type="fixed">
+      <parent link="${name}_main"/>
+      <child link="${name}_main_middle_level"/>
+      <origin xyz="-0.01 0 0.27" rpy="0 0 0" />
+    </joint>
+
     <joint name="${name}_door_joint" type="revolute">
       <origin xyz="0.29 0.3 0.245" rpy="0 0 0" />
       <parent link="${name}_main"/>
@@ -74,8 +109,17 @@
 -->
     </joint>
 
+
+
+    <joint name="${name}_ceiling_joint" type="fixed">
+        <origin xyz="0.0 0.0 0.64"/>
+        <parent link="${name}_main"/>
+        <child link="${name}_ceiling"/>
+    </joint>
+
+
     <joint name="${name}_door_handle_joint" type="fixed">
-      <origin xyz="0.06 -0.57 0." rpy="0 0 0" />
+      <origin xyz="0.09 -0.57 0." rpy="0 0 0" />
       <parent link="${name}_door"/>
       <child link="${name}_door_handle"/>
     </joint>

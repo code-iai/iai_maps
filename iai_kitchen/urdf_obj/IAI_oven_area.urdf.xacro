@@ -56,11 +56,11 @@
   
   
   <iai_vdrawer name="${name}_area_left_drawer" parent="${name}_area">
-    <origin rpy="0 0 0" xyz="0.0 -0.45 0.06 "/>
+    <origin rpy="0 0 0" xyz="0.28 -0.45 0.07 "/>
   </iai_vdrawer>
   
   <iai_vdrawer name="${name}_area_right_drawer" parent="${name}_area">
-    <origin rpy="0 0 0" xyz="0.0 0.45 0.06 "/>
+    <origin rpy="0 0 0" xyz="0.28 0.45 0.07"/>
   </iai_vdrawer>
   
   

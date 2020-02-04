@@ -74,13 +74,13 @@
       <visual>
         <origin xyz="0 0 0.35" rpy="0 0 0" />
         <geometry>
-            <box size="3.27328 0.15 0.7" />
+            <box size="2.27328 0.15 0.7" />
         </geometry>
      </visual>
       <collision>
         <origin xyz="0 0 0.35" rpy="0 0 0" />
         <geometry>
-            <box size="3.27328 0.15 0.7" />
+            <box size="2.27328 0.15 0.7" />
         </geometry>
       </collision>
     </link>
@@ -99,6 +99,22 @@
         <origin xyz="0 0 0.35" rpy="0 0 0" />
         <geometry>
             <box size="1 0.15 0.7" />
+        </geometry>
+      </collision>
+    </link>   
+
+    <link name="kitchen_wall_7">
+      <sphere_inertia radius="0" mass="0"/>
+      <visual>
+        <origin xyz="0 0 0.375" rpy="0 0 0" />
+        <geometry>
+            <box size="1.6 0.15 0.75" />
+        </geometry>
+     </visual>
+      <collision>
+        <origin xyz="0 0 0.375" rpy="0 0 0" />
+        <geometry>
+            <box size="1.6 0.15 0.75" />
         </geometry>
       </collision>
     </link>
@@ -144,16 +160,23 @@
     </joint>
     
     <joint name="wall_5_joint" type="fixed">
-        <origin xyz="-1.31385 -1.58376 0" rpy="0 -0 0.000157" />
+        <origin xyz="-1.81385 -1.70376 0" rpy="0 -0 0.000157" />
       <parent link="kitchen_walls"/>
       <child link="kitchen_wall_5"/>
     </joint>
     
     <joint name="wall_6_joint" type="fixed">
-      <origin xyz="0.247785 -2.00851 0" rpy="0 0 -1.5708" />
+      <origin xyz="-0.65 -2.12851 0" rpy="0 0 -1.5708" />
       <parent link="kitchen_walls"/>
       <child link="kitchen_wall_6"/>
     </joint>
+
+    <joint name="wall_7_joint" type="fixed">
+      <origin xyz="1.01271 -2.556 0" rpy="0 -0 3.14159" />
+      <parent link="kitchen_walls"/>
+      <child link="kitchen_wall_7"/>
+    </joint>
+
     <gazebo reference="kitchen_wall_6">
         <material>Gazebo/DarkGrey</material>
     </gazebo>
