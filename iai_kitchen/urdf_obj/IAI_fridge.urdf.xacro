@@ -96,12 +96,12 @@
     <link name="${name}_door_block_right_bar" >
       <visual>
         <geometry>
-          <box size="0.045 0.015 0.8"/>
+          <box size="0.045 0.015 0.73"/>
         </geometry>
       </visual>
       <collision>
         <geometry>
-          <box size="0.045 0.015 0.8"/>
+          <box size="0.045 0.015 0.73"/>
         </geometry>
       </collision>
     </link>
@@ -109,12 +109,12 @@
     <link name="${name}_door_block_left_bar" >
       <visual>
         <geometry>
-          <box size="0.045 0.015 0.8"/>
+          <box size="0.045 0.015 0.73"/>
         </geometry>
       </visual>
       <collision>
         <geometry>
-          <box size="0.045 0.015 0.8"/>
+          <box size="0.045 0.015 0.73"/>
         </geometry>
       </collision>
     </link>
@@ -122,52 +122,52 @@
     <link name="${name}_door_block_top_bar" >
       <visual>
         <geometry>
-          <box size="0.025 0.365 0.01"/>
+          <box size="0.025 0.46 0.01"/>
         </geometry>
       </visual>
       <collision>
         <geometry>
-          <box size="0.025 0.0365 0.01"/>
+          <box size="0.025 0.46 0.01"/>
         </geometry>
       </collision>
     </link>
 
 
     <joint name="${name}_door_block_joint" type="fixed">
-      <origin xyz="-0.025 -0.27 0" />
+      <origin xyz="-0.025 -0.27 -0.05" />
       <parent link="${name}_door"/>
       <child link="${name}_door_block"/>
     </joint>
 
     <joint name="${name}_door_block_right_bar_joint" type="fixed">
-      <origin xyz="-0.0425 -0.175 0" />
+      <origin xyz="-0.0425 -0.2225 0.01" />
       <parent link="${name}_door_block"/>
       <child link="${name}_door_block_right_bar"/>
     </joint>
 
     <joint name="${name}_door_block_left_bar_joint" type="fixed">
-      <origin xyz="-0.0425 0.175 0" />
+      <origin xyz="-0.0425 0.2225 0.01" />
       <parent link="${name}_door_block"/>
       <child link="${name}_door_block_left_bar"/>
     </joint>
 
     <joint name="${name}_door_block_top_bar_joint" type="fixed">
-      <origin xyz="-0.03 0 0.4" />
+      <origin xyz="-0.03 0 0.37" />
       <parent link="${name}_door_block"/>
       <child link="${name}_door_block_top_bar"/>
     </joint>
 
 
     <fridge_door_shelve name="${name}_door_shelf1" parent="${name}_door_block" height="0.1">
-      <origin xyz="-0.07 0 -0.40 "/>
+      <origin xyz="-0.07 0 -0.3525 "/>
     </fridge_door_shelve>
 
     <fridge_door_shelve name="${name}_door_shelf2" parent="${name}_door_block" height="0.065">
-      <origin xyz="-0.07 0 -0.01"/>
+      <origin xyz="-0.07 0 0.0425"/>
     </fridge_door_shelve>
 
     <fridge_door_shelve name="${name}_door_shelf3" parent="${name}_door_block" height="0.065">
-      <origin xyz="-0.07 0 0.21 "/>
+      <origin xyz="-0.07 0 0.2625 "/>
     </fridge_door_shelve>
 
 
@@ -198,12 +198,12 @@
     <link name="${name}_left_side" >
       <visual>
         <geometry>
-          <box size="0.105 0.01 ${height}"/>
+          <box size="0.105 0.06 ${height}"/>
         </geometry>
       </visual>
       <collision>
         <geometry>
-          <box size="0.105 0.01 ${height}"/>
+          <box size="0.105 0.06 ${height}"/>
         </geometry>
       </collision>
     </link>
@@ -211,12 +211,12 @@
     <link name="${name}_right_side" >
       <visual>
         <geometry>
-          <box size="0.105 0.01 ${height}"/>
+          <box size="0.105 0.06 ${height}"/>
         </geometry>
       </visual>
       <collision>
         <geometry>
-          <box size="0.105 0.01 ${height}"/>
+          <box size="0.105 0.06 ${height}"/>
         </geometry>
       </collision>
     </link>
@@ -235,13 +235,13 @@
     </link>
 
     <joint name="${name}_left_to_bottom" type="fixed">
-      <origin xyz="-0.0025 -0.18 ${ height/2 - 0.005}"/>
+      <origin xyz="-0.0025 -0.2 ${ height/2 - 0.005}"/>
       <parent link="${name}_bottom"/>
       <child link="${name}_left_side"/>
     </joint>
 
     <joint name="${name}_right_to_bottom" type="fixed">
-      <origin xyz="-0.0025 0.18 ${ height/2 - 0.005}"/>
+      <origin xyz="-0.0025 0.2 ${ height/2 - 0.005}"/>
       <parent link="${name}_bottom"/>
       <child link="${name}_right_side"/>
     </joint>
