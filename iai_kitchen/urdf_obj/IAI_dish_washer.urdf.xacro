@@ -6,7 +6,7 @@
 
   <macro name="iai_dish_washer" params="name parent *origin">
      <link name="${name}_main">
-      
+
       <sphere_inertia radius="0" mass="0"/>
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
@@ -21,9 +21,9 @@
         </geometry>
       </collision>
     </link>
-    
+
     <link name="${name}_door">
-      
+
       <sphere_inertia radius="0" mass="0"/>
       <visual>
         <origin xyz="0 0 0" rpy="${0.5*pi} 0 0" />
@@ -59,24 +59,28 @@
     -->
     <joint name="${name}_main_joint" type="revolute">
       <limit lower="0" upper="0" effort="300" velocity="10"/>
-      
+
       <xacro:insert_block name="origin" />
       <parent link="${parent}"/>
       <child link="${name}_main"/>
     </joint>
-    
+
+    <!--
     <xacro:if value="${simulated}">
     <joint name="${name}_door_joint" type="revolute">
       <origin xyz="0.27 0. -0.325" rpy="${-0.5*pi} 0 0" />
       <parent link="${name}_main"/>
       <child link="${name}_door"/>
       <axis xyz="0 0 1"/>
-      <!-- FIXME make closed position stable instead of forbidding opening... -->
+       FIXME make closed position stable instead of forbidding opening...
       <limit lower="0" upper="0" effort="300" velocity="10"/>
     </joint>
-    
+
     </xacro:if>
+    -->
+    <!--
     <xacro:unless value="${simulated}">
+    -->
     <joint name="${name}_door_joint" type="revolute">
       <origin xyz="0.27 0. -0.325" rpy="${-0.5*pi} 0 0" />
       <parent link="${name}_main"/>
@@ -87,13 +91,187 @@
       -->
       <limit lower="0" upper="${0.5*pi}" effort="300" velocity="10"/>
     </joint>
-    
+    <!--
     </xacro:unless>
+  -->
     <joint name="${name}_door_handle_joint" type="fixed">
       <origin xyz="0.0625 -0.6325 0." rpy="${-0.5*pi} 0 0" />
       <parent link="${name}_door"/>
       <child link="${name}_door_handle"/>
     </joint>
+
+    <dishwasher_tray name="${name}_tray" parent="${name}_main">
+      <origin xyz="0 0 0.15"/>
+    </dishwasher_tray>
+
+  </macro>
+
+  <macro name="dishwasher_tray" params="name parent *origin">
+
+    <joint name="${name}_main" type="prismatic">
+      <xacro:insert_block name="origin"/>
+      <parent link="${parent}"/>
+      <child link="${name}_bottom"/>
+      <axis xyz="1 0 0"/>
+      <limit lower="0" upper="0.4" effort="300" velocity="10"/>
+    </joint>
+
+
+    <link name="${name}_bottom">
+      <visual>
+        <geometry>
+          <box size="0.464 0.5 0.02"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <box size="0.464 0.5 0.02"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${name}_left_side">
+      <visual>
+        <geometry>
+          <box size="0.464 0.02 0.17"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <box size="0.464 0.02 0.17"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${name}_right_side">
+      <visual>
+        <geometry>
+          <box size="0.464 0.02 0.17"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <box size="0.464 0.02 0.17"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${name}_back_side">
+      <visual>
+        <geometry>
+          <box size="0.02 0.5 0.17"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <box size="0.02 0.5 0.17"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${name}_front_side">
+      <visual>
+        <geometry>
+          <box size="0.02 0.5 0.17"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <box size="0.02 0.5 0.17"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <joint name="${name}_bottom_left" type="fixed">
+      <origin xyz="0 -0.24 0.075"/>
+      <child link="${name}_left_side" />
+      <parent link="${name}_bottom"/>
+    </joint>
+
+    <joint name="${name}_bottom_right" type="fixed">
+      <origin xyz="0 0.24 0.075"/>
+      <child link="${name}_right_side" />
+      <parent link="${name}_bottom"/>
+    </joint>
+
+    <joint name="${name}_bottom_back" type="fixed">
+      <origin xyz="-0.24 0 0.075"/>
+      <child link="${name}_back_side" />
+      <parent link="${name}_bottom"/>
+    </joint>
+
+    <joint name="${name}_front_back" type="fixed">
+      <origin xyz="0.24 0 0.075"/>
+      <child link="${name}_front_side" />
+      <parent link="${name}_bottom"/>
+    </joint>
+
+    <tray_handle name="${name}_handle" parent="${name}_front_side">
+      <origin xyz="0.0305 0 0"/>
+    </tray_handle>
+
+  </macro>
+
+  <macro name="tray_handle" params="name parent *origin">
+
+    <joint name="${name}_joint" type="fixed">
+      <xacro:insert_block name="origin"/>
+      <child link="${name}_front_side" />
+      <parent link="${parent}"/>
+    </joint>
+
+    <link name="${name}_left_side">
+      <visual>
+        <geometry>
+          <box size="0.03 0.01 0.01"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <box size="0.03 0.01 0.01"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${name}_right_side">
+      <visual>
+        <geometry>
+          <box size="0.03 0.01 0.01"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <box size="0.03 0.01 0.01"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${name}_front_side">
+      <visual>
+        <geometry>
+          <box size="0.01 0.4 0.01"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <box size="0.01 0.4 0.01"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <joint name="${name}_front_left_joint" type="fixed">
+      <origin xyz="-0.01 -0.2 0"/>
+      <child link="${name}_left_side" />
+      <parent link="${name}_front_side"/>
+    </joint>
+
+    <joint name="${name}_front_right_joint" type="fixed">
+      <origin xyz="-0.01 0.2 0"/>
+      <child link="${name}_right_side" />
+      <parent link="${name}_front_side"/>
+    </joint>
+
+
   </macro>
 
 </robot>

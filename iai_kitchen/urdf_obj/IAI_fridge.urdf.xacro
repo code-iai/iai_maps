@@ -5,9 +5,9 @@
   <xacro:property name="pi" value="3.1415926535897931" />
 
   <macro name="iai_fridge" params="name parent *origin">
-    
+
      <link name="${name}_main">
-      
+
       <sphere_inertia radius="0" mass="0"/>
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
@@ -22,7 +22,7 @@
         </geometry>
       </collision>
     </link>
-    
+
     <link name="${name}_main_middle_level">
 
       <visual>
@@ -40,7 +40,7 @@
     </link>
 
     <link name="${name}_door">
-      
+
       <sphere_inertia radius="0" mass="0"/>
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
@@ -56,19 +56,6 @@
       </collision>
   </link>
 
-    <link name="${name}_door_shelves">
-        <visual>
-            <geometry>
-                <box size="0.16 0.5 0.8"/>
-            </geometry>
-        </visual>
-        <collision>
-            <geometry>
-                <box size="0.16 0.5 0.8"/>
-            </geometry>
-        </collision>
-  </link>
-
   <link name="${name}_ceiling">
         <visual>
             <geometry>
@@ -81,9 +68,9 @@
             </geometry>
         </collision>
   </link>
-    
+
     <link name="${name}_door_handle">
-      
+
       <sphere_inertia radius="0" mass="0"/>
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
@@ -104,7 +91,7 @@
       <parent link="${parent}"/>
       <child link="${name}_main"/>
     </joint>
-    
+
     <joint name="${name}_main_middle_level_joint" type="fixed">
       <parent link="${name}_main"/>
       <child link="${name}_main_middle_level"/>
@@ -115,18 +102,14 @@
       <origin xyz="0.29 0.3 0.245" rpy="0 0 0" />
       <parent link="${name}_main"/>
       <child link="${name}_door"/>
-      <axis xyz="0 0 1"/>     
-      <limit lower="0" upper="${0.5*pi}" effort="300" velocity="10"/>    
+      <axis xyz="0 0 1"/>
+      <limit lower="0" upper="${0.5*pi}" effort="300" velocity="10"/>
 <!--
       <limit lower="0" upper="0" effort="300" velocity="10"/>
 -->
     </joint>
 
-    <joint name="${name}_door_shelves_joint" type="fixed">
-        <origin xyz="-0.09 -0.29 0"/>
-        <parent link="${name}_door"/>
-        <child link="${name}_door_shelves"/>
-    </joint>
+
 
     <joint name="${name}_ceiling_joint" type="fixed">
         <origin xyz="0.0 0.0 0.64"/>
@@ -134,12 +117,186 @@
         <child link="${name}_ceiling"/>
     </joint>
 
-    
+
     <joint name="${name}_door_handle_joint" type="fixed">
       <origin xyz="0.09 -0.57 0." rpy="0 0 0" />
       <parent link="${name}_door"/>
       <child link="${name}_door_handle"/>
     </joint>
+
+    <link name="${name}_door_block" >
+      <visual>
+        <geometry>
+          <box size="0.04 0.523 0.825"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <box size="0.04 0.523 0.825"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${name}_door_block_right_bar" >
+      <visual>
+        <geometry>
+          <box size="0.045 0.015 0.73"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <box size="0.045 0.015 0.73"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${name}_door_block_left_bar" >
+      <visual>
+        <geometry>
+          <box size="0.045 0.015 0.73"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <box size="0.045 0.015 0.73"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${name}_door_block_top_bar" >
+      <visual>
+        <geometry>
+          <box size="0.025 0.46 0.01"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <box size="0.025 0.46 0.01"/>
+        </geometry>
+      </collision>
+    </link>
+
+
+    <joint name="${name}_door_block_joint" type="fixed">
+      <origin xyz="-0.025 -0.27 -0.05" />
+      <parent link="${name}_door"/>
+      <child link="${name}_door_block"/>
+    </joint>
+
+    <joint name="${name}_door_block_right_bar_joint" type="fixed">
+      <origin xyz="-0.0425 -0.2225 0.01" />
+      <parent link="${name}_door_block"/>
+      <child link="${name}_door_block_right_bar"/>
+    </joint>
+
+    <joint name="${name}_door_block_left_bar_joint" type="fixed">
+      <origin xyz="-0.0425 0.2225 0.01" />
+      <parent link="${name}_door_block"/>
+      <child link="${name}_door_block_left_bar"/>
+    </joint>
+
+    <joint name="${name}_door_block_top_bar_joint" type="fixed">
+      <origin xyz="-0.03 0 0.37" />
+      <parent link="${name}_door_block"/>
+      <child link="${name}_door_block_top_bar"/>
+    </joint>
+
+
+    <fridge_door_shelf name="${name}_door_shelf1" parent="${name}_door_block" height="0.1">
+      <origin xyz="-0.07 0 -0.3525 "/>
+    </fridge_door_shelf>
+
+    <fridge_door_shelf name="${name}_door_shelf2" parent="${name}_door_block" height="0.065">
+      <origin xyz="-0.07 0 0.0425"/>
+    </fridge_door_shelf>
+
+    <fridge_door_shelf name="${name}_door_shelf3" parent="${name}_door_block" height="0.065">
+      <origin xyz="-0.07 0 0.2625 "/>
+    </fridge_door_shelf>
+
+
+
+  </macro>
+
+  <macro name="fridge_door_shelf" params="name parent height *origin">
+
+    <joint name="${name}_to_door" type="fixed">
+      <xacro:insert_block name="origin"/>
+      <child link="${name}_bottom"/>
+      <parent link="${parent}"/>
+    </joint>
+
+    <link name="${name}_bottom" >
+      <visual>
+        <geometry>
+          <box size="0.1 0.35 0.01"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <box size="0.1 0.35 0.01"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${name}_left_side" >
+      <visual>
+        <geometry>
+          <box size="0.105 0.06 ${height}"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <box size="0.105 0.06 ${height}"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${name}_right_side" >
+      <visual>
+        <geometry>
+          <box size="0.105 0.06 ${height}"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <box size="0.105 0.06 ${height}"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${name}_front_side" >
+      <visual>
+        <geometry>
+          <box size="0.01 0.35 ${height}"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <box size="0.01 0.35 ${height}"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <joint name="${name}_left_to_bottom" type="fixed">
+      <origin xyz="-0.0025 -0.2 ${ height/2 - 0.005}"/>
+      <parent link="${name}_bottom"/>
+      <child link="${name}_left_side"/>
+    </joint>
+
+    <joint name="${name}_right_to_bottom" type="fixed">
+      <origin xyz="-0.0025 0.2 ${ height/2 - 0.005}"/>
+      <parent link="${name}_bottom"/>
+      <child link="${name}_right_side"/>
+    </joint>
+
+    <joint name="${name}_front_to_bottom" type="fixed">
+      <origin xyz="-0.05 0 ${ height/2 - 0.005}"/>
+      <parent link="${name}_bottom"/>
+      <child link="${name}_front_side"/>
+    </joint>
+
+
   </macro>
 
 </robot>
