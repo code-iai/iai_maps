@@ -153,6 +153,34 @@
       </collision>
     </link>
 
+    <link name="${name}_right_grid">
+      <visual>
+        <geometry>
+          <box size="0.5 0.5 0.015"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <box size="0.5 0.5 0.015"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${name}_left_grid">
+      <visual>
+        <geometry>
+          <box size="0.5 0.5 0.015"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <box size="0.5 0.5 0.015"/>
+        </geometry>
+      </collision>
+    </link>
+
+
+
 
 
     <joint name="${name}_front_left_leg_joint" type="fixed">
@@ -219,6 +247,18 @@
       <origin xyz="0.31 0 0.35"/>
       <parent link="${name}_footprint"/>
       <child link="${name}_right_wall"/>
+    </joint>
+
+    <joint name="${name}_right_grid_joint" type="fixed">
+      <origin xyz="-0.55 0 0.18"/>
+      <parent link="${name}_footprint"/>
+      <child link="${name}_right_grid"/>
+    </joint>
+
+    <joint name="${name}_left_grid_joint" type="fixed">
+      <origin xyz="0.55 0 0.18"/>
+      <parent link="${name}_footprint"/>
+      <child link="${name}_left_grid"/>
     </joint>
 
     <iai_popcorn_table_drawer name="iai_popcorn_table_drawer_left" parent="${name}_footprint">
