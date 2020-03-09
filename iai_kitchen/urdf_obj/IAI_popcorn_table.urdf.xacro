@@ -287,24 +287,23 @@
 
   <macro name="iai_popcorn_table_drawer" params="name parent *origin">
 
-
   <joint name="${name}_table_joint" type="prismatic">
         <parent link="${parent}"/>
-        <child link="${name}_base"/>
+        <child link="${name}_main"/>
         <limit effort="1000.0" lower="0" upper="0.4" velocity="0.5"/>
         <axis xyz="1 0 0 "/>
         <xacro:insert_block name="origin"/>
   </joint>
 
-  <link name="${name}_base" />
-
-  <link name="${name}_bottom">
+  <link name="${name}_main">
     <visual>
+      <origin rpy="0 0 ${1.5 *pi}"/>
       <geometry>
         <box size="0.42 0.52 0.01"/>
       </geometry>
     </visual>
     <collision>
+      <origin rpy="0 0 ${1.5 *pi}"/>
       <geometry>
         <box size="0.42 0.52 0.01"/>
       </geometry>
@@ -363,38 +362,32 @@
     </collision>
   </link>
 
-  <joint name="${name}_bottom_side_joint" type="fixed">
-    <origin xyz="0 0 0" rpy="0 0 ${1.5*pi}"/>
-    <parent link="${name}_base"/>
-    <child link="${name}_bottom"/>
-  </joint>
-
   <joint name="${name}_right_side_joint" type="fixed">
-    <origin xyz="0.205 0 0.065"/>
-    <parent link="${name}_bottom"/>
+    <origin xyz="0 0.205 0.065" rpy="0 0 ${0.5 * pi}"/>
+    <parent link="${name}_main"/>
     <child link="${name}_right_side"/>
   </joint>
 
   <joint name="${name}_left_side_joint" type="fixed">
-    <origin xyz="-0.205 0 0.065"/>
-    <parent link="${name}_bottom"/>
+    <origin xyz="0 -0.205 0.065" rpy="0 0 ${0.5 * pi}"/>
+    <parent link="${name}_main"/>
     <child link="${name}_left_side"/>
   </joint>
 
   <joint name="${name}_back_side_joint" type="fixed">
-    <origin xyz="0 -0.255 0.065"/>
-    <parent link="${name}_bottom"/>
+    <origin xyz=" -0.255 0 0.065" rpy="0 0 ${0.5 * pi}"/>
+    <parent link="${name}_main"/>
     <child link="${name}_back_side"/>
   </joint>
 
   <joint name="${name}_front_side_joint" type="fixed">
-    <origin xyz="0 0.255 0.075"/>
-    <parent link="${name}_bottom"/>
+    <origin xyz=" 0.255 0 0.075" rpy="0 0 ${1.5 * pi}"/>
+    <parent link="${name}_main"/>
     <child link="${name}_front_side"/>
   </joint>
 
   <iai_popcorn_table_drawer_handle name="${name}_handle" parent="${name}_front_side">
-    <origin xyz="0 0.03 0"/>
+    <origin xyz="0 0.03 0" rpy="0 0 ${0.5 * pi}"/>
   </iai_popcorn_table_drawer_handle>
 
   </macro>
@@ -403,11 +396,13 @@
 
   <link name="${name}_left_part">
     <visual>
+      <origin rpy="0 0  ${1.5 * pi}"/>
       <geometry>
         <box size="0.01 0.03 0.01"/>
       </geometry>
     </visual>
     <collision>
+      <origin rpy="0 0  ${1.5 * pi}"/>
       <geometry>
         <box size="0.01 0.03 0.01"/>
       </geometry>
@@ -416,11 +411,13 @@
 
   <link name="${name}_right_part">
     <visual>
+      <origin rpy="0 0  ${1.5 * pi}"/>
       <geometry>
         <box size="0.01 0.03 0.01"/>
       </geometry>
     </visual>
     <collision>
+      <origin rpy="0 0  ${1.5 * pi}"/>
       <geometry>
         <box size="0.01 0.03 0.01"/>
       </geometry>
@@ -429,11 +426,13 @@
 
   <link name="${name}_middle_part">
     <visual>
+      <origin rpy="0 0  ${1.5 * pi}"/>
       <geometry>
         <box size="0.3 0.01 0.01"/>
       </geometry>
     </visual>
     <collision>
+      <origin rpy="0 0  ${1.5 * pi}"/>
       <geometry>
         <box size="0.3 0.01 0.01"/>
       </geometry>
@@ -441,13 +440,13 @@
   </link>
 
   <joint name="${name}_left_middle_joint" type="fixed">
-    <origin xyz="-0.15 -0.01 0"/>
+    <origin xyz="-0.01 -0.15  0"/>
     <parent link="${name}_middle_part"/>
     <child link="${name}_left_part"/>
   </joint>
 
   <joint name="${name}_right_middle_joint" type="fixed">
-    <origin xyz="0.15 -0.01 0"/>
+    <origin xyz="-0.01 0.15  0"/>
     <parent link="${name}_middle_part"/>
     <child link="${name}_right_part"/>
   </joint>
