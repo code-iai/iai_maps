@@ -1,3 +1,5 @@
+<?xml version="1.0"?>
+
 <robot name="iai_popcorn_table" xmlns:xacro="http://ros.org/wiki/xacro">
 
   <macro name="iai_popcorn_table" params="name parent *origin">
@@ -262,11 +264,11 @@
     </joint>
 
     <iai_popcorn_table_drawer name="iai_popcorn_table_drawer_left" parent="${name}_footprint">
-      <origin xyz="0.555 0 0.53"/>
+      <origin xyz="0.555 0 0.53" rpy="0 0 ${0.5 * pi}"/>
     </iai_popcorn_table_drawer>
 
     <iai_popcorn_table_drawer name="iai_popcorn_table_drawer_right" parent="${name}_footprint">
-      <origin xyz="-0.555 0 0.53"/>
+      <origin xyz="-0.555 0 0.53" rpy="0 0 ${0.5 * pi}"/>
     </iai_popcorn_table_drawer>
 
     <iai_popcorn_stove_knob name="iai_popcorn_stove_knob_1" parent="${name}_stove">
@@ -288,12 +290,13 @@
 
   <joint name="${name}_table_joint" type="prismatic">
         <parent link="${parent}"/>
-        <child link="${name}_bottom"/>
+        <child link="${name}_base"/>
         <limit effort="1000.0" lower="0" upper="0.4" velocity="0.5"/>
-        <axis xyz="0 1 0 "/>
+        <axis xyz="1 0 0 "/>
         <xacro:insert_block name="origin"/>
   </joint>
 
+  <link name="${name}_base" />
 
   <link name="${name}_bottom">
     <visual>
@@ -359,6 +362,12 @@
       </geometry>
     </collision>
   </link>
+
+  <joint name="${name}_bottom_side_joint" type="fixed">
+    <origin xyz="0 0 0" rpy="0 0 ${1.5*pi}"/>
+    <parent link="${name}_base"/>
+    <child link="${name}_bottom"/>
+  </joint>
 
   <joint name="${name}_right_side_joint" type="fixed">
     <origin xyz="0.205 0 0.065"/>
