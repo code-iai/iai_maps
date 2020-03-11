@@ -297,15 +297,13 @@
 
   <link name="${name}_main">
     <visual>
-      <origin rpy="0 0 ${1.5 *pi}"/>
       <geometry>
-        <box size="0.42 0.52 0.01"/>
+        <box size="0.52 0.42 0.01"/>
       </geometry>
     </visual>
     <collision>
-      <origin rpy="0 0 ${1.5 *pi}"/>
       <geometry>
-        <box size="0.42 0.52 0.01"/>
+        <box size="0.52 0.42 0.01"/>
       </geometry>
     </collision>
   </link>
@@ -313,12 +311,12 @@
   <link name="${name}_right_side">
     <visual>
       <geometry>
-        <box size="0.01 0.52 0.13"/>
+        <box size="0.52 0.01  0.13"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <box size="0.01 0.52 0.13"/>
+        <box size="0.52 0.01 0.13"/>
       </geometry>
     </collision>
   </link>
@@ -326,12 +324,12 @@
   <link name="${name}_left_side">
     <visual>
       <geometry>
-        <box size="0.01 0.52 0.13"/>
+        <box size="0.52 0.01 0.13"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <box size="0.01 0.52 0.13"/>
+        <box size=" 0.52 0.01 0.13"/>
       </geometry>
     </collision>
   </link>
@@ -339,12 +337,12 @@
   <link name="${name}_back_side">
     <visual>
       <geometry>
-        <box size="0.42 0.01 0.13"/>
+        <box size="0.01 0.42  0.13"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <box size="0.42 0.01 0.13"/>
+        <box size="0.01 0.42 0.13"/>
       </geometry>
     </collision>
   </link>
@@ -352,42 +350,42 @@
   <link name="${name}_front_side">
     <visual>
       <geometry>
-        <box size="0.46 0.01 0.13"/>
+        <box size="0.01 0.46  0.13"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <box size="0.46 0.01 0.15"/>
+        <box size="0.01 0.46 0.15"/>
       </geometry>
     </collision>
   </link>
 
   <joint name="${name}_right_side_joint" type="fixed">
-    <origin xyz="0 0.205 0.065" rpy="0 0 ${0.5 * pi}"/>
+    <origin xyz="0 0.205 0.065"/>
     <parent link="${name}_main"/>
     <child link="${name}_right_side"/>
   </joint>
 
   <joint name="${name}_left_side_joint" type="fixed">
-    <origin xyz="0 -0.205 0.065" rpy="0 0 ${0.5 * pi}"/>
+    <origin xyz="0 -0.205 0.065" />
     <parent link="${name}_main"/>
     <child link="${name}_left_side"/>
   </joint>
 
   <joint name="${name}_back_side_joint" type="fixed">
-    <origin xyz=" -0.255 0 0.065" rpy="0 0 ${0.5 * pi}"/>
+    <origin xyz=" -0.255 0 0.065" />
     <parent link="${name}_main"/>
     <child link="${name}_back_side"/>
   </joint>
 
   <joint name="${name}_front_side_joint" type="fixed">
-    <origin xyz=" 0.255 0 0.075" rpy="0 0 ${1.5 * pi}"/>
+    <origin xyz=" 0.255 0 0.075" />
     <parent link="${name}_main"/>
     <child link="${name}_front_side"/>
   </joint>
 
   <iai_popcorn_table_drawer_handle name="${name}_handle" parent="${name}_front_side">
-    <origin xyz="0 0.03 0" rpy="0 0 ${0.5 * pi}"/>
+    <origin xyz="0.03 0 0"/>
   </iai_popcorn_table_drawer_handle>
 
   </macro>
@@ -396,45 +394,39 @@
 
   <link name="${name}_left_part">
     <visual>
-      <origin rpy="0 0  ${1.5 * pi}"/>
       <geometry>
-        <box size="0.01 0.03 0.01"/>
+        <box size="0.03 0.01 0.01"/>
       </geometry>
     </visual>
     <collision>
-      <origin rpy="0 0  ${1.5 * pi}"/>
       <geometry>
-        <box size="0.01 0.03 0.01"/>
+        <box size="0.03 0.01  0.01"/>
       </geometry>
     </collision>
   </link>
 
   <link name="${name}_right_part">
     <visual>
-      <origin rpy="0 0  ${1.5 * pi}"/>
       <geometry>
-        <box size="0.01 0.03 0.01"/>
+        <box size="0.03 0.01 0.01"/>
       </geometry>
     </visual>
     <collision>
-      <origin rpy="0 0  ${1.5 * pi}"/>
       <geometry>
-        <box size="0.01 0.03 0.01"/>
+        <box size="0.03 0.01 0.01"/>
       </geometry>
     </collision>
   </link>
 
   <link name="${name}_middle_part">
     <visual>
-      <origin rpy="0 0  ${1.5 * pi}"/>
       <geometry>
-        <box size="0.3 0.01 0.01"/>
+        <box size="0.01 0.3 0.01"/>
       </geometry>
     </visual>
     <collision>
-      <origin rpy="0 0  ${1.5 * pi}"/>
       <geometry>
-        <box size="0.3 0.01 0.01"/>
+        <box size="0.01 0.3 0.01"/>
       </geometry>
     </collision>
   </link>
