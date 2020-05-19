@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<robot name="dm_shelves" xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:include filename="$(find iai_refills_lab)/maps/dm_shelves.urdf.xacro"/>
+
+  <link name="room_link"/>
+
+  <!-- Center shelves -->
+  <shelf_2 parent="room_link" name="shelf-center-left">
+    <origin xyz="-1 1 0"/>
+  </shelf_2>
+
+  <shelf_2 parent="room_link" name="shelf-center-middle">
+    <origin xyz="0 1 0"/>
+  </shelf_2>
+
+  <shelf_2 parent="room_link" name="shelf-center-right">
+    <origin xyz="1 1 0"/>
+  </shelf_2>
+
+  <shelf_2 parent="room_link" name="shelf-center-left-back">
+    <origin xyz="-1 1.5 0" rpy="0 0 ${pi}"/>
+  </shelf_2>
+
+  <shelf_2 parent="room_link" name="shelf-center-middle-back">
+    <origin xyz="0 1.5 0" rpy="0 0 ${pi}"/>
+  </shelf_2>
+
+  <shelf_2 parent="room_link" name="shelf-center-right-back">
+    <origin xyz="1 1.5 0" rpy="0 0 ${pi}"/>
+  </shelf_2>
+
+
+  <!-- Left side shelves -->
+  <shelf_1 parent="room_link" name="shelf-left-left">
+      <origin xyz="-3.5 0 0" rpy="0 0 ${pi/2}"/>
+  </shelf_1>
+
+  <shelf_1 parent="room_link" name="shelf-left-center">
+      <origin xyz="-3.5 1 0" rpy="0 0 ${pi/2}"/>
+  </shelf_1>
+
+  <shelf_1 parent="room_link" name="shelf-left-right">
+      <origin xyz="-3.5 2 0" rpy="0 0 ${pi/2}"/>
+  </shelf_1>
+
+  <shelf_1 parent="room_link" name="shelf-left-right2">
+      <origin xyz="-3.5 3 0" rpy="0 0 ${pi/2}"/>
+  </shelf_1>
+
+  <!-- Backside shelves -->
+  <shelf_1 parent="room_link" name="shelf-back-1">
+      <origin xyz="-2.4 4 0" rpy="0 0 0"/>
+  </shelf_1>
+
+  <shelf_1 parent="room_link" name="shelf-back-2">
+      <origin xyz="-1.4 4 0" rpy="0 0 0"/>
+  </shelf_1>
+
+  <shelf_1 parent="room_link" name="shelf-back-3">
+      <origin xyz="-0.4 4 0" rpy="0 0 0"/>
+  </shelf_1>
+
+  <shelf_1 parent="room_link" name="shelf-back-4">
+      <origin xyz="0.6 4 0" rpy="0 0 0"/>
+  </shelf_1>
+
+  <shelf_1 parent="room_link" name="shelf-back-5">
+      <origin xyz="1.6 4 0" rpy="0 0 0"/>
+  </shelf_1>
+
+  <shelf_1 parent="room_link" name="shelf-back-6">
+      <origin xyz="2.6 4 0" rpy="0 0 0"/>
+  </shelf_1>
+
+
+<!--Right side shelves -->
+  <shelf_1 parent="room_link" name="shelf-right-left">
+    <origin xyz="3.5 0.5 0" rpy="0 0 -${pi/2}"/>
+  </shelf_1>
+
+  <shelf_1 parent="room_link" name="shelf-right-center">
+    <origin xyz="3.5 1.5 0" rpy="0 0 -${pi/2}"/>
+  </shelf_1>
+
+  <shelf_1 parent="room_link" name="shelf-right-right">
+    <origin xyz="3.5 2.5 0" rpy="0 0 -${pi/2}"/>
+  </shelf_1>
+
+
+</robot>
