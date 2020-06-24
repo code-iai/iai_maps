@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<robot name="iai_dlr_cutting_map">
+
+  <link name="map"/>
+
+  <joint name="table_location_joint" type="fixed">
+    <parent link="map"/>
+    <child link="table"/>
+    <origin xyz="0 0 0" rpy="0 0 0.707"/>
+  </joint>
+
+  <link name="table">
+    <visual>
+      <geometry>
+        <mesh filename="package://iai_dlr_cutting_demo/meshes/justins_table_at_dlr/mesh.dae"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <joint name="cutting_board_location_joint" type="fixed">
+    <parent link="table"/>
+    <child link="cutting_board"/>
+    <origin xyz="-0.65 0.4 0.786" rpy="0 0 0"/>
+  </joint>
+
+  <link name="cutting_board">
+    <visual>
+      <geometry>
+        <mesh filename="package://iai_dlr_cutting_demo/meshes/tableware/ikea_wooden_chopping_board_laemplig/mesh.dae"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <joint name="knife_location_joint" type="fixed">
+    <parent link="table"/>
+    <child link="knife"/>
+    <origin xyz="-0.5 0.2 0.775" rpy="-1.57 1.57 -1"/>
+  </joint>
+
+  <link name="knife">
+    <visual>
+      <geometry>
+        <mesh filename="package://iai_dlr_cutting_demo/meshes/hand-tools/big_ikea_knife_blender.dae"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <joint name="cucumber_location_joint" type="fixed">
+    <parent link="cutting_board"/>
+    <child link="cucumber"/>
+    <origin xyz="0.2 0.25 0.03" rpy="0 0 -1"/>
+  </joint>
+
+  <link name="cucumber">
+    <visual>
+      <material name="dark_green">
+       <color rgba="0.09 0.34 0.09 1"/>
+      </material>
+      <geometry>
+        <mesh filename="package://iai_dlr_cutting_demo/meshes/food-drinks/cucumber/cucumber_decimated.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+
+
+</robot>

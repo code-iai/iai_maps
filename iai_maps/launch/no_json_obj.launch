@@ -1,0 +1,5 @@
+<launch>
+  <include file="$(find iai_maps)/launch/map.launch" />
+  <include file="$(find iai_maps)/launch/room.launch" />
+  <include file="$(find iai_kitchen)/launch/upload_kitchen_obj.launch" />
+</launch>

@@ -27,13 +27,13 @@
       
       <sphere_inertia radius="0" mass="0"/>
       <visual>
-        <origin xyz="0 -0.3 0" rpy="0 0 0" />
+        <origin xyz="0 0.3 0" rpy="0 0 0" />
         <geometry>
           <mesh filename="package://iai_kitchen/meshes/misc/FridgeDoor.dae"/>
         </geometry>
       </visual>
       <collision>
-        <origin xyz="0 -0.3 0" rpy="0 0 0" />
+        <origin xyz="0 0.3 0" rpy="0 0 0" />
         <geometry>
           <mesh filename="package://iai_kitchen/meshes/misc/FridgeDoor.dae"/>
         </geometry>
@@ -64,7 +64,7 @@
     </joint>
     
     <joint name="${name}_door_joint" type="revolute">
-      <origin xyz="0.29 0.3 0.245" rpy="0 0 0" />
+      <origin xyz="0.29 0 0.245" rpy="0 0 0" />
       <parent link="${name}_main"/>
       <child link="${name}_door"/>
       <axis xyz="0 0 1"/>     
@@ -75,7 +75,7 @@
     </joint>
     
     <joint name="${name}_door_handle_joint" type="fixed">
-      <origin xyz="0.06 -0.57 0." rpy="0 0 0" />
+      <origin xyz="0.06 -0.27 0." rpy="0 0 0" />
       <parent link="${name}_door"/>
       <child link="${name}_door_handle"/>
     </joint>

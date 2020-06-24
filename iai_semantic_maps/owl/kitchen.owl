@@ -140,7 +140,7 @@
 
     <owl:NamedIndividual rdf:about="&iai-map;Transformation_7HUx90mA">
         <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:relativeTo rdf:resource="&iai-map;Transformation_t7n0Elaz"/>
+        <!-- <knowrob:relativeTo rdf:resource="&iai-map;iai_kitchen_sink_area_footprint"/> -->
         <knowrob:quaternion rdf:datatype="&xsd;string">0.000000 0.000000 1.000000 0.000000</knowrob:quaternion>
         <knowrob:translation rdf:datatype="&xsd;string">1.535000000000213 0.26999999999994007 0.41</knowrob:translation>
     </owl:NamedIndividual>
@@ -170,9 +170,9 @@
 
     <owl:NamedIndividual rdf:about="&iai-map;Transformation_3FBGS0Sy">
         <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:relativeTo rdf:resource="&iai-map;Transformation_7HUx90mA"/>
+        <!-- <knowrob:relativeTo rdf:resource="&iai-map;iai_kitchen_sink_area"/> -->
         <knowrob:quaternion rdf:datatype="&xsd;string">0.000000 0.000000 1.000000 0.000000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">1.5300000000003102 -0.20000000000006102 0.8513999999999999</knowrob:translation>
+        <knowrob:translation rdf:datatype="&xsd;string">1.5300000000003102 -0.30000000000006102 0.8513999999999999</knowrob:translation>
     </owl:NamedIndividual>
 
     
@@ -202,7 +202,7 @@
 
     <owl:NamedIndividual rdf:about="&iai-map;Transformation_eFyUr9HL">
         <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:relativeTo rdf:resource="&iai-map;Transformation_7HUx90mA"/>
+        <!-- <knowrob:relativeTo rdf:resource="&iai-map;iai_kitchen_sink_area_sink"/> -->
         <knowrob:quaternion rdf:datatype="&xsd;string">0.000000 0.000000 1.000000 0.000000</knowrob:quaternion>
         <knowrob:translation rdf:datatype="&xsd;string">1.2550000000003576 -0.43000000000011784 0.7349999999999999</knowrob:translation>
     </owl:NamedIndividual>
@@ -233,7 +233,7 @@
 
     <owl:NamedIndividual rdf:about="&iai-map;Transformation_aDf4b7YJ">
         <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:relativeTo rdf:resource="&iai-map;Transformation_7HUx90mA"/>
+        <!-- <knowrob:relativeTo rdf:resource="&iai-map;iai_kitchen_sink_area"/> -->
         <knowrob:quaternion rdf:datatype="&xsd;string">0.000000 0.000000 1.000000 0.000000</knowrob:quaternion>
         <knowrob:translation rdf:datatype="&xsd;string">1.525 -0.43 0.375</knowrob:translation>
     </owl:NamedIndividual>
@@ -264,7 +264,7 @@
 
     <owl:NamedIndividual rdf:about="&iai-map;Transformation_4Oz27cMq">
         <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:relativeTo rdf:resource="&iai-map;Transformation_aDf4b7YJ"/>
+        <!-- <knowrob:relativeTo rdf:resource="&iai-map;iai_kitchen_sink_area_trash_drawer_main"/> -->
         <knowrob:quaternion rdf:datatype="&xsd;string">0.000000 0.000000 1.000000 0.000000</knowrob:quaternion>
         <knowrob:translation rdf:datatype="&xsd;string">1.1925 -0.43 0.6125</knowrob:translation>
     </owl:NamedIndividual>
@@ -296,7 +296,7 @@
 
     <owl:NamedIndividual rdf:about="&iai-map;Transformation_fOufFdPS">
         <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:relativeTo rdf:resource="&iai-map;Transformation_7HUx90mA"/>
+        <!-- <knowrob:relativeTo rdf:resource="&iai-map;iai_kitchen_sink_area"/> -->
         <knowrob:quaternion rdf:datatype="&xsd;string">0.000000 0.000000 1.000000 0.000000</knowrob:quaternion>
         <knowrob:translation rdf:datatype="&xsd;string">1.525 0.87 0.735</knowrob:translation>
     </owl:NamedIndividual>
@@ -2103,4 +2103,109 @@
         <knowrob:translation rdf:datatype="&xsd;string">-1.475 -1.28 0.75</knowrob:translation>
 
     </owl:NamedIndividual>
+
+<!--
+
+    <owl:NamedIndividual rdf:about="&knowrob;CeilingLight_ovmsdobgzw">
+        <rdf:type rdf:resource="&knowrob;CeilingLight"/>
+	<knowrob:describedInMap rdf:resource="&iai-map;IAIKitchenMap_PM580j"/>
+        <knowrob:properPhysicalParts rdf:resource="&knowrob;Lightbulb_dfr0zuejssdfx"/>
+        <knowrob:properPhysicalParts rdf:resource="&knowrob;Lightbulb_afg46sdfgsdfd"/>
+        <knowrob:properPhysicalParts rdf:resource="&knowrob;Lightbulb_sdgt456sgdsdfyw"/>
+        <knowrob:properPhysicalParts rdf:resource="&knowrob;Lightbulb_sdafg58hjco"/>
+        <knowrob:properPhysicalParts rdf:resource="&knowrob;Lightbulb_hfdfh46fadsb"/>
+        <knowrob:properPhysicalParts rdf:resource="&knowrob;Lightbulb_safh98ewhgb"/>
+        <knowrob:hasVisual rdf:datatype="&xsd;boolean">false</knowrob:hasVisual>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="&knowrob;Lightbulb_dfr0zuejssdfx">
+        <rdf:type rdf:resource="&knowrob;Lightbulb"/>
+        <knowrob:pose rdf:resource="&knowrob;Pose_dfr0zuejssdfx"/>
+        <knowrob:mainColorOfObject rdf:datatype="&xsd;string">1.0 0.9450980392156862 0.8784313725490196 0.6</knowrob:mainColorOfObject>
+        <knowrob:lightConeAngle rdf:datatype="&xsd;double">3.14159</knowrob:lightConeAngle>
+        <knowrob:lightSpotExponent rdf:datatype="&xsd;double">1.2</knowrob:lightSpotExponent>
+        <knowrob:lightType rdf:resource="&knowrob;LightTypeSpot"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&knowrob;Pose_dfr0zuejssdfx">
+        <rdf:type rdf:resource="&knowrob;Pose"/>
+        <knowrob:translation rdf:datatype="&xsd;string">0.2 -1.6 2.5</knowrob:translation>
+        <knowrob:quaternion rdf:datatype="&xsd;string">0.0 0.0 0.0 1.0</knowrob:quaternion>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&knowrob;Lightbulb_afg46sdfgsdfd">
+        <rdf:type rdf:resource="&knowrob;Lightbulb"/>
+        <knowrob:pose rdf:resource="&knowrob;Pose_afg46sdfgsdfd"/>
+        <knowrob:mainColorOfObject rdf:datatype="&xsd;string">1.0 0.9450980392156862 0.8784313725490196 0.6</knowrob:mainColorOfObject>
+        <knowrob:lightConeAngle rdf:datatype="&xsd;double">3.14159</knowrob:lightConeAngle>
+        <knowrob:lightSpotExponent rdf:datatype="&xsd;double">1.2</knowrob:lightSpotExponent>
+        <knowrob:lightType rdf:resource="&knowrob;LightTypeSpot"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&knowrob;Pose_afg46sdfgsdfd">
+        <rdf:type rdf:resource="&knowrob;Pose"/>
+        <knowrob:translation rdf:datatype="&xsd;string">0.2 0.6 2.5</knowrob:translation>
+        <knowrob:quaternion rdf:datatype="&xsd;string">0.0 0.0 0.0 1.0</knowrob:quaternion>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&knowrob;Lightbulb_sdgt456sgdsdfyw">
+        <rdf:type rdf:resource="&knowrob;Lightbulb"/>
+        <knowrob:pose rdf:resource="&knowrob;Pose_sdgt456sgdsdfyw"/>
+        <knowrob:mainColorOfObject rdf:datatype="&xsd;string">1.0 0.9450980392156862 0.8784313725490196 0.6</knowrob:mainColorOfObject>
+        <knowrob:lightConeAngle rdf:datatype="&xsd;double">3.14159</knowrob:lightConeAngle>
+        <knowrob:lightSpotExponent rdf:datatype="&xsd;double">1.2</knowrob:lightSpotExponent>
+        <knowrob:lightType rdf:resource="&knowrob;LightTypeSpot"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&knowrob;Pose_sdgt456sgdsdfyw">
+        <rdf:type rdf:resource="&knowrob;Pose"/>
+        <knowrob:translation rdf:datatype="&xsd;string">0.2 2.8 2.5</knowrob:translation>
+        <knowrob:quaternion rdf:datatype="&xsd;string">0.0 0.0 0.0 1.0</knowrob:quaternion>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&knowrob;Lightbulb_sdafg58hjco">
+        <rdf:type rdf:resource="&knowrob;Lightbulb"/>
+        <knowrob:pose rdf:resource="&knowrob;Pose_sdafg58hjco"/>
+        <knowrob:mainColorOfObject rdf:datatype="&xsd;string">1.0 0.9450980392156862 0.8784313725490196 0.6</knowrob:mainColorOfObject>
+        <knowrob:lightConeAngle rdf:datatype="&xsd;double">3.14159</knowrob:lightConeAngle>
+        <knowrob:lightSpotExponent rdf:datatype="&xsd;double">1.2</knowrob:lightSpotExponent>
+        <knowrob:lightType rdf:resource="&knowrob;LightTypeSpot"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&knowrob;Pose_sdafg58hjco">
+        <rdf:type rdf:resource="&knowrob;Pose"/>
+        <knowrob:translation rdf:datatype="&xsd;string">-2.5 -1.6 2.5</knowrob:translation>
+        <knowrob:quaternion rdf:datatype="&xsd;string">0.0 0.0 0.0 1.0</knowrob:quaternion>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&knowrob;Lightbulb_hfdfh46fadsb">
+        <rdf:type rdf:resource="&knowrob;Lightbulb"/>
+        <knowrob:pose rdf:resource="&knowrob;Pose_hfdfh46fadsb"/>
+        <knowrob:mainColorOfObject rdf:datatype="&xsd;string">1.0 0.9450980392156862 0.8784313725490196 0.6</knowrob:mainColorOfObject>
+        <knowrob:lightConeAngle rdf:datatype="&xsd;double">3.14159</knowrob:lightConeAngle>
+        <knowrob:lightSpotExponent rdf:datatype="&xsd;double">1.2</knowrob:lightSpotExponent>
+        <knowrob:lightType rdf:resource="&knowrob;LightTypeSpot"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&knowrob;Pose_hfdfh46fadsb">
+        <rdf:type rdf:resource="&knowrob;Pose"/>
+        <knowrob:translation rdf:datatype="&xsd;string">-2.5 0.6 2.5</knowrob:translation>
+        <knowrob:quaternion rdf:datatype="&xsd;string">0.0 0.0 0.0 1.0</knowrob:quaternion>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&knowrob;Lightbulb_safh98ewhgb">
+        <rdf:type rdf:resource="&knowrob;Lightbulb"/>
+        <knowrob:pose rdf:resource="&knowrob;Pose_safh98ewhgb"/>
+        <knowrob:mainColorOfObject rdf:datatype="&xsd;string">1.0 0.9450980392156862 0.8784313725490196 0.6</knowrob:mainColorOfObject>
+        <knowrob:lightConeAngle rdf:datatype="&xsd;double">3.14159</knowrob:lightConeAngle>
+        <knowrob:lightSpotExponent rdf:datatype="&xsd;double">1.2</knowrob:lightSpotExponent>
+        <knowrob:lightType rdf:resource="&knowrob;LightTypeSpot"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="&knowrob;Pose_safh98ewhgb">
+        <rdf:type rdf:resource="&knowrob;Pose"/>
+        <knowrob:translation rdf:datatype="&xsd;string">-2.5 2.8 2.5</knowrob:translation>
+        <knowrob:quaternion rdf:datatype="&xsd;string">0.0 0.0 0.0 1.0</knowrob:quaternion>
+    </owl:NamedIndividual>
+-->
 </rdf:RDF>
