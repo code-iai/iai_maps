@@ -48,7 +48,7 @@
     
     <iai_generic_drawer name="${name}" parent="${parent}" width="${width}" height="58">
       <xacro:insert_block name="origin" />
-      <origin xyz="0.3325 0 0.2375" rpy="0 0 0" />
+      <origin xyz="0.37 0 0.25" rpy="0 0 0" />
     </iai_generic_drawer>
   </macro>
 

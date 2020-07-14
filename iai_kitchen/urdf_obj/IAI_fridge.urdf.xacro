@@ -59,12 +59,12 @@
   <link name="${name}_ceiling">
         <visual>
             <geometry>
-                <box size="0.48 0.5 0.05"/>
+                <box size="0.56 0.5 0.13"/>
             </geometry>
         </visual>
         <collision>
             <geometry>
-                <box size="0.48 0.5 0.05"/>
+                <box size="0.56 0.5 0.13"/>
             </geometry>
         </collision>
   </link>
@@ -95,7 +95,7 @@
     <joint name="${name}_main_middle_level_joint" type="fixed">
       <parent link="${name}_main"/>
       <child link="${name}_main_middle_level"/>
-      <origin xyz="-0.01 0 0.07" rpy="0 0 0" />
+      <origin xyz="-0.01 0 0.01" rpy="0 0 0" />
     </joint>
 
     <joint name="${name}_door_joint" type="revolute">
@@ -211,7 +211,7 @@
     </fridge_door_shelf>
 
     <fridge_door_shelf name="${name}_door_shelf3" parent="${name}_door_block" height="0.065">
-      <origin xyz="-0.07 0 0.26"/>
+      <origin xyz="-0.07 0 0.23"/>
     </fridge_door_shelf>
 
 
