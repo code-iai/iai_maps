@@ -95,11 +95,11 @@
     <joint name="${name}_main_middle_level_joint" type="fixed">
       <parent link="${name}_main"/>
       <child link="${name}_main_middle_level"/>
-      <origin xyz="-0.01 0 0.27" rpy="0 0 0" />
+      <origin xyz="-0.01 0 0.07" rpy="0 0 0" />
     </joint>
 
     <joint name="${name}_door_joint" type="revolute">
-      <origin xyz="0.29 0.3 0.245" rpy="0 0 0" />
+      <origin xyz="0.29 0.3 0" rpy="0 0 0" />
       <parent link="${name}_main"/>
       <child link="${name}_door"/>
       <axis xyz="0 0 1"/>
@@ -112,7 +112,7 @@
 
 
     <joint name="${name}_ceiling_joint" type="fixed">
-        <origin xyz="0.0 0.0 0.64"/>
+        <origin xyz="0.0 0.0 0.44"/>
         <parent link="${name}_main"/>
         <child link="${name}_ceiling"/>
     </joint>
