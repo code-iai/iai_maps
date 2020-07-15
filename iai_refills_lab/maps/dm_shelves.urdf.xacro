@@ -161,14 +161,6 @@
 
 
     <macro name="shelf_1" params="*origin parent">
-    <link name="shelf_1_footprint"/>
-    
-    <joint type="fixed" name="romm_shleve_1_joint">
-        <xacro:insert_block name="origin"/>
-        <parent link="${parent}"/>
-        <child link="shelf_1_footprint"/>
-    </joint>
-
     <link name="shelf_1_base">
         <visual>
             <geometry>
@@ -182,9 +174,9 @@
         </collision>
     </link>
 
-    <joint type="fixed" name="foot_base_joint">
-        <iorigin xyz="0 0 0"/>
-        <parent link="shelf_1_footprint"/>
+    <joint type="fixed" name="romm_shleve_1_joint">
+        <xacro:insert_block name="origin"/>
+        <parent link="${parent}"/>
         <child link="shelf_1_base"/>
     </joint>
 
@@ -203,7 +195,7 @@
 
     <joint type="fixed" name="foot_back_joint">
         <origin xyz="0 0.365 1"/>
-        <parent link="shelf_1_footprint"/>
+        <parent link="shelf_1_base"/>
         <child link="shelf_1_back"/>
     </joint>
 
@@ -222,29 +214,29 @@
     
     <joint type="fixed" name="shelf_1_level_0_joint">
         <origin xyz="0 -0.06 0.10665"/>
-        <parent link="shelf_1_footprint"/>
+        <parent link="shelf_1_base"/>
         <child link="shelf_1_level_0_link"/>
     </joint>
 
 
 
-    <shelf_1_level name="level_1" parent="shelf_1_footprint" dist1="0.15" dist2="0.133" dist3="0.082" dist4="0.167" dist5="0.095" dist6="0.148" dist7="0.095" dist8="0.125" dist9="0" >
+    <shelf_1_level name="level_1" parent="shelf_1_base" dist1="0.15" dist2="0.133" dist3="0.082" dist4="0.167" dist5="0.095" dist6="0.148" dist7="0.095" dist8="0.125" dist9="0" >
         <origin xyz="0 0 0.50965" />
     </shelf_1_level>
 
-    <shelf_1_level name="level_2" parent="shelf_1_footprint" dist1="0.177" dist2="0.208" dist3="0.147" dist4="0.20" dist5="0.124" dist6="0.14" dist7="0" dist8="0" dist9="0" >
+    <shelf_1_level name="level_2" parent="shelf_1_base" dist1="0.177" dist2="0.208" dist3="0.147" dist4="0.20" dist5="0.124" dist6="0.14" dist7="0" dist8="0" dist9="0" >
         <origin xyz="0 0 0.84465" />
     </shelf_1_level>
     
-    <shelf_1_level name="level_3" parent="shelf_1_footprint" dist1="0" dist2="0" dist3="0" dist4="0" dist5="0" dist6="0" dist7="0" dist8="0" dist9="0" >
+    <shelf_1_level name="level_3" parent="shelf_1_base" dist1="0" dist2="0" dist3="0" dist4="0" dist5="0" dist6="0" dist7="0" dist8="0" dist9="0" >
         <origin xyz="0 0 1.22265" />
     </shelf_1_level>
 
-    <shelf_1_level name="level_4" parent="shelf_1_footprint" dist1="0" dist2="0" dist3="0" dist4="0" dist5="0" dist6="0" dist7="0" dist8="0" dist9="0" >
+    <shelf_1_level name="level_4" parent="shelf_1_base" dist1="0" dist2="0" dist3="0" dist4="0" dist5="0" dist6="0" dist7="0" dist8="0" dist9="0" >
         <origin xyz="0 0 1.53565" />
     </shelf_1_level>
 
-    <shelf_1_level name="level_5" parent="shelf_1_footprint" dist1="0" dist2="0" dist3="0" dist4="0" dist5="0" dist6="0" dist7="0" dist8="0" dist9="0" >
+    <shelf_1_level name="level_5" parent="shelf_1_base" dist1="0" dist2="0" dist3="0" dist4="0" dist5="0" dist6="0" dist7="0" dist8="0" dist9="0" >
         <origin xyz="0 0 1.86865" />
     </shelf_1_level>
 </macro>
@@ -252,14 +244,6 @@
 
     <!-- Shelve 2 -->
     <macro name="shelf_2" params="*origin parent">
-     <link name="shelf_2_footprint"/>
-    
-    <joint type="fixed" name="romm_shleve_2_joint">
-        <xacro:insert_block name="origin"/>
-        <parent link="${parent}"/>
-        <child link="shelf_2_footprint"/>
-    </joint>
-    
      <link name="shelf_2_base">
         <visual>
             <geometry>
@@ -273,9 +257,9 @@
         </collision>
     </link>
 
-    <joint type="fixed" name="shelf_2_foot_base_joint">
-        <iorigin xyz="0 0 0"/>
-        <parent link="shelf_2_footprint"/>
+    <joint type="fixed" name="romm_shleve_2_joint">
+        <xacro:insert_block name="origin"/>
+        <parent link="${parent}"/>
         <child link="shelf_2_base"/>
     </joint>
 
@@ -294,7 +278,7 @@
 
     <joint type="fixed" name="shelf_2_foot_left_joint">
         <origin xyz="-0.475 0 0.7225"/>
-        <parent link="shelf_2_footprint"/>
+        <parent link="shelf_2_base"/>
         <child link="shelf_2_left_side"/>
     </joint>
 
@@ -313,7 +297,7 @@
 
     <joint type="fixed" name="shelf_2_foot_right_joint">
         <origin xyz="0.475 0 0.7225"/>
-        <parent link="shelf_2_footprint"/>
+        <parent link="shelf_2_base"/>
         <child link="shelf_2_right_side"/>
     </joint>
 
@@ -332,7 +316,7 @@
 
     <joint type="fixed" name="shelf_2_foot_back_joint">
         <origin xyz="0 0.275 0.7725"/>
-        <parent link="shelf_2_footprint"/>
+        <parent link="shelf_2_base"/>
         <child link="shelf_2_back"/>
     </joint>
 
@@ -352,29 +336,29 @@
     
     <joint type="fixed" name="shelf_2_level_0_joint">
         <origin xyz="0 0 0.0925"/>
-        <parent link="shelf_2_footprint"/>
+        <parent link="shelf_2_base"/>
         <child link="shelf_2_level_0_link"/>
     </joint>
 
 
 
-    <shelf_2_level name="level_1" parent="shelf_2_footprint">
+    <shelf_2_level name="level_1" parent="shelf_2_base">
         <origin xyz="0 0.0 0.374"/>
     </shelf_2_level>
 
-    <shelf_2_level name="level_2" parent="shelf_2_footprint">
+    <shelf_2_level name="level_2" parent="shelf_2_base">
         <origin xyz="0 0.0 0.624"/>
     </shelf_2_level>
 
-    <shelf_2_level name="level_3" parent="shelf_2_footprint">
+    <shelf_2_level name="level_3" parent="shelf_2_base">
         <origin xyz="0 0.0 0.864"/>
     </shelf_2_level>
 
-    <shelf_2_level name="level_4" parent="shelf_2_footprint">
+    <shelf_2_level name="level_4" parent="shelf_2_base">
         <origin xyz="0 0.0 1.17"/>
     </shelf_2_level>
 
-    <shelf_2_level name="level_5" parent="shelf_2_footprint">
+    <shelf_2_level name="level_5" parent="shelf_2_base">
         <origin xyz="0 0.0 1.42"/>
     </shelf_2_level>
 
