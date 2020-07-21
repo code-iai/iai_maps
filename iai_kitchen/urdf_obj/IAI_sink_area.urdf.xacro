@@ -96,10 +96,10 @@
     <origin rpy="0 0 0" xyz="0.01 -0.6 0.12 "/>
   </iai_drawer_80_29>
   <iai_drawer_80_29 name="${name}_left_bottom_drawer" parent="${name}">
-    <origin rpy="0 0 0" xyz="0.01 -0.6 -0.18 "/>
+    <origin rpy="0 0 0" xyz="0.01 -0.6 -0.18" />
   </iai_drawer_80_29>
   <iai_dish_washer name="${name}_dish_washer" parent="${name}">
-    <origin rpy="0 0 0" xyz="0.01 0.1 0.044 "/>
+    <origin rpy="0 0 0" xyz="0.01 0.1 0.06" />
   </iai_dish_washer>
   </macro> 
   

@@ -101,7 +101,7 @@
     </joint>
 
     <dishwasher_tray name="${name}_tray" parent="${name}_main">
-      <origin xyz="-0.05 0 0.15"/>
+      <origin xyz="-0.10 0 0.15"/>
     </dishwasher_tray>
 
   </macro>
@@ -207,7 +207,7 @@
     </joint>
 
     <tray_handle name="${name}_handle" parent="${name}_front_side">
-      <origin xyz="0.025 0 0.025"/>
+      <origin xyz="0.025 0 -0.05"/>
     </tray_handle>
 
   </macro>
