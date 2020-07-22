@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<robot name="dm_room" xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <xacro:include filename="$(find iai_refills_lab)/urdf/dm_shelf_macros.urdf.xacro"/>
+  <xacro:include filename="$(find iai_refills_lab)/urdf/dm_shelves.urdf.xacro"/>
+
+  <!-- <link name="room_link"/> -->
+
+  <!-- Left side shelves -->
+  <!-- <shelf_1 parent="room_link" name="shelf_1"> -->
+  <!--   <origin xyz="4.3223 -0.2415761 0.08515" rpy="0 0 -1.5756"/> -->
+  <!-- </shelf_1> -->
+
+  <shelf_1 parent="room_link" name="shelf_left_center_front">
+    <origin xyz="4.3223 -1.2415761 0.08515" rpy="0 0 -1.5756"/>
+  </shelf_1>
+
+  <shelf_1 parent="room_link" name="shelf_left_center_back">
+    <origin xyz="4.3223 -2.2415761 0.08515" rpy="0 0 -1.5756"/>
+  </shelf_1>
+
+  <shelf_1 parent="room_link" name="shelf_left_back">
+    <origin xyz="4.3223 -3.2415761 0.08515" rpy="0 0 -1.5756"/>
+  </shelf_1>
+
+
+  <!-- Center shelves -->
+  <!-- <shelf_2 parent="room_link" name="shelf_2"> -->
+  <!--   <origin xyz="1.75 -1.45 0.08515" rpy="0 0 3.09652"/> -->
+  <!-- </shelf_2> -->
+
+  <shelf_2 parent="room_link" name="shelf_center_front_middle">
+    <origin xyz="0.75 -1.4 0.08515" rpy="0 0 3.09652"/>
+  </shelf_2>
+
+  <shelf_2 parent="room_link" name="shelf_center_front_right">
+    <origin xyz="-0.25 -1.35 0.08515" rpy="0 0 3.09652"/>
+  </shelf_2>
+
+  <shelf_2 parent="room_link" name="shelf_center_back_left">
+    <origin xyz="1.73 -2.0 0.08515" rpy="0 0 -3.18666530718"/>
+  </shelf_2>
+
+  <shelf_2 parent="room_link" name="shelf_center_back_middle">
+    <origin xyz="0.73 -1.95 0.08515" rpy="0 0 -3.18666530718"/>
+  </shelf_2>
+
+  <shelf_2 parent="room_link" name="shelf_center_back_right">
+    <origin xyz="-0.27 -1.9 0.08515" rpy="0 0 -3.18666530718"/>
+  </shelf_2>
+
+
+  <!-- Back shelves -->
+  <shelf_1 parent="room_link" name="shelf_back_1">
+    <origin xyz="3 -4.3 0.08515" rpy="0 0 ${pi}"/>
+  </shelf_1>
+
+  <shelf_1 parent="room_link" name="shelf_back_2">
+    <origin xyz="2 -4.3 0.08515" rpy="0 0 ${pi}"/>
+  </shelf_1>
+
+  <shelf_1 parent="room_link" name="shelf_back_3">
+    <origin xyz="1 -4.3 0.08515" rpy="0 0 ${pi}"/>
+  </shelf_1>
+
+  <shelf_1 parent="room_link" name="shelf_back_4">
+    <origin xyz="0 -4.3 0.08515" rpy="0 0 ${pi}"/>
+  </shelf_1>
+
+  <shelf_1 parent="room_link" name="shelf_back_5">
+    <origin xyz="-1 -4.3 0.08515" rpy="0 0 ${pi}"/>
+  </shelf_1>
+
+  <shelf_1 parent="room_link" name="shelf_back_6">
+    <origin xyz="-2 -4.3 0.08515" rpy="0 0 ${pi}"/>
+  </shelf_1>
+
+
+  <!--Right side shelves -->
+  <shelf_1 parent="room_link" name="shelf_right_front">
+    <origin xyz="-2.6 -1.0 0.08515" rpy="0 0 1.5756"/>
+  </shelf_1>
+
+  <shelf_1 parent="room_link" name="shelf_right_center">
+    <origin xyz="-2.6 -2.0 0.08515" rpy="0 0 1.5756"/>
+  </shelf_1>
+
+  <shelf_1 parent="room_link" name="shelf_right_back">
+    <origin xyz="-2.6 -3.0 0.08515" rpy="0 0 1.5756"/>
+  </shelf_1>
+
+
+  <!-- Walls -->
+  <xacro:property name="wall_thickness" value="0.2" />
+  <xacro:property name="wall_height" value="2.4" />
+  <wall parent="room_link" name="back_wall"
+        size="8.0 ${wall_thickness} ${wall_height}">
+    <origin xyz="1.0 -5.0 ${wall_height/2}" rpy="0 0 0"/>
+  </wall>
+  <wall parent="room_link" name="left_wall"
+        size="${wall_thickness} 9.6 ${wall_height}">
+    <origin xyz="5.0 -0.3 ${wall_height/2}" rpy="0 0 0"/>
+  </wall>
+  <wall parent="room_link" name="front_wall"
+        size="5.0 ${wall_thickness} ${wall_height}">
+    <origin xyz="2.5 4.6 ${wall_height/2}" rpy="0 0 0"/>
+  </wall>
+  <wall parent="room_link" name="right_wall"
+        size="${wall_thickness} 5.0 ${wall_height}">
+    <origin xyz="-3.0 -2.5 ${wall_height/2}" rpy="0 0 0"/>
+  </wall>
+  <wall parent="room_link" name="back_corner_wall"
+        size="3.0 ${wall_thickness} ${wall_height}">
+    <origin xyz="-1.5 0.0 ${wall_height/2}" rpy="0 0 0"/>
+  </wall>
+  <wall parent="room_link" name="right_corner_wall"
+        size="${wall_thickness} 4.6 ${wall_height}">
+    <origin xyz="0 2.3 ${wall_height/2}" rpy="0 0 0"/>
+  </wall>
+</robot>
