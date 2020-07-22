@@ -4,27 +4,23 @@
 
   <macro name="iai_table_1" params="name parent *origin">
     <!-- LINKS -->
-    
     <link name="${name}_main">
-      
       <sphere_inertia radius="0" mass="0"/>
       <visual>
         <origin xyz="0 0 0.3619" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://iai_kitchen/meshes/misc/big_table_1.obj"/>
+          <mesh filename="package://iai_kitchen/meshes/misc/big_table_1.stl"/>
         </geometry>
       </visual>
       <collision>
         <origin xyz="0 0 0.3619" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://iai_kitchen/meshes/misc/big_table_1.stl"/>
+          <mesh filename="package://iai_kitchen/meshes/misc/big_table_1.obj"/>
         </geometry>
       </collision>
     </link>
-      
-    
+
     <!-- JOINTS -->
-    
     <joint name="${name}_main_joint" type="fixed">
       <xacro:insert_block name="origin" />
       <parent link="${parent}"/>
