@@ -98,13 +98,6 @@
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_sink_area_footprint"/>
     </owl:NamedIndividual>
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_t7n0Elaz">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:quaternion rdf:datatype="&xsd;string">-0.000000 0.000000 1.000000 -0.000000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">1.825 1.3 0.0</knowrob:translation>
-    </owl:NamedIndividual>
-    
     
 
     <!-- &iai-map;iai_kitchen_sink_area -->
@@ -135,16 +128,6 @@
     </owl:NamedIndividual>
 
 
-
-    <!-- &iai-map;Transformation_7HUx90mA -->
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_7HUx90mA">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <!-- <knowrob:relativeTo rdf:resource="&iai-map;iai_kitchen_sink_area_footprint"/> -->
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.000000 0.000000 1.000000 0.000000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">1.535000000000213 0.26999999999994007 0.41</knowrob:translation>
-    </owl:NamedIndividual>
-
     <!-- &iai-map;iai_kitchen_sink_area_sink -->
 
     <owl:NamedIndividual rdf:about="&iai-map;iai_kitchen_sink_area_sink">
@@ -162,17 +145,6 @@
         <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_3FBGS0Sy"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_sink_area_sink"/>
-    </owl:NamedIndividual>
-
-
-
-    <!-- &iai-map;Transformation_3FBGS0Sy -->
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_3FBGS0Sy">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <!-- <knowrob:relativeTo rdf:resource="&iai-map;iai_kitchen_sink_area"/> -->
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.000000 0.000000 1.000000 0.000000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">1.5300000000003102 -0.30000000000006102 0.8513999999999999</knowrob:translation>
     </owl:NamedIndividual>
 
     
@@ -194,17 +166,6 @@
         <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_eFyUr9HL"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_sink_area_right_panel"/>
-    </owl:NamedIndividual>
-
-
-
-    <!-- &iai-map;Transformation_eFyUr9HL -->
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_eFyUr9HL">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <!-- <knowrob:relativeTo rdf:resource="&iai-map;iai_kitchen_sink_area_sink"/> -->
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.000000 0.000000 1.000000 0.000000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">1.2550000000003576 -0.43000000000011784 0.7349999999999999</knowrob:translation>
     </owl:NamedIndividual>
     
     <!-- &iai-map;iai_kitchen_sink_area_trash_drawer_main -->
@@ -228,17 +189,6 @@
     </owl:NamedIndividual>
 
 
-
-    <!-- &iai-map;Transformation_aDf4b7YJ -->
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_aDf4b7YJ">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <!-- <knowrob:relativeTo rdf:resource="&iai-map;iai_kitchen_sink_area"/> -->
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.000000 0.000000 1.000000 0.000000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">1.525 -0.43 0.375</knowrob:translation>
-    </owl:NamedIndividual>
-
-
     <!-- &iai-map;iai_kitchen_sink_area_trash_drawer_handle -->
 
     <owl:NamedIndividual rdf:about="&iai-map;iai_kitchen_sink_area_trash_drawer_handle">
@@ -258,16 +208,6 @@
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_sink_area_trash_drawer_handle"/>
     </owl:NamedIndividual>
 
-
-
-    <!-- &iai-map;Transformation_4Oz27cMq -->
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_4Oz27cMq">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <!-- <knowrob:relativeTo rdf:resource="&iai-map;iai_kitchen_sink_area_trash_drawer_main"/> -->
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.000000 0.000000 1.000000 0.000000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">1.1925 -0.43 0.6125</knowrob:translation>
-    </owl:NamedIndividual>
 
     <!-- &iai-map;iai_kitchen_sink_area_left_upper_drawer_main -->
 
@@ -290,16 +230,6 @@
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_sink_area_left_upper_drawer_main"/>
     </owl:NamedIndividual>
 
-
-
-    <!-- &iai-map;Transformation_fOufFdPS -->
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_fOufFdPS">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <!-- <knowrob:relativeTo rdf:resource="&iai-map;iai_kitchen_sink_area"/> -->
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.000000 0.000000 1.000000 0.000000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">1.525 0.87 0.735</knowrob:translation>
-    </owl:NamedIndividual>
 
     <!-- &iai-map;iai_kitchen_sink_area_left_upper_drawer_handle -->
 
@@ -1040,12 +970,6 @@
         <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_fridge_door_hinged_joint"/>
     </owl:NamedIndividual>
 
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_fridge_door_hinged_joint">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.00000 0.00000 1.00000 -0.00000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">1.265 -1.35000 0.99</knowrob:translation>
-    </owl:NamedIndividual>
-
 
     <!-- &iai-map;iai_kitchen_fridge_door_handle -->
 
@@ -1069,16 +993,6 @@
     </owl:NamedIndividual>
 
 
-    <!-- &iai-map;Transformation_Hd63PbAW -->
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_Hd63PbAW">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.00000 0.00000 1.00000 -0.00000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">1.1925 0.87 0.7525</knowrob:translation>
-
-    </owl:NamedIndividual>
-
-
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_Hd63PbAW">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
         <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_Hd63PbAW"/>
@@ -1086,17 +1000,7 @@
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_sink_area_left_upper_drawer_handle"/>
     </owl:NamedIndividual>
 
-
-    <!-- &iai-map;Transformation_bLdopb6S -->
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_IAI_K1">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.00000 0.00000 1.00000 -0.00000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">1.52500 0.87000 0.52000</knowrob:translation>
-
-    </owl:NamedIndividual>
-
-
+ 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K2">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
         <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K2"/>
@@ -1104,34 +1008,11 @@
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_sink_area_left_middle_drawer_handle"/>
     </owl:NamedIndividual>
 
-
-
-    <!-- &iai-map;Transformation_bLdopb6S -->
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_IAI_K2">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.00000 0.00000 1.00000 -0.00000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">1.19250 0.87000 0.63000</knowrob:translation>
-
-    </owl:NamedIndividual>
-
-
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K3">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
         <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K3"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_sink_area_left_bottom_drawer_main"/>
-    </owl:NamedIndividual>
-
-
-
-    <!-- &iai-map;Transformation_bLdopb6S -->
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_IAI_K3">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.00000 0.00000 1.00000 -0.00000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">1.52500 0.87000 0.23000</knowrob:translation>
-
     </owl:NamedIndividual>
 
 
@@ -1142,18 +1023,6 @@
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_sink_area_left_bottom_drawer_handle"/>
     </owl:NamedIndividual>
 
-
-
-    <!-- &iai-map;Transformation_bLdopb6S -->
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_IAI_K4">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.00000 0.00000 1.00000 -0.00000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">1.19250 0.87000 0.34000</knowrob:translation>
-
-    </owl:NamedIndividual>
-
-
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K5">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
         <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K5"/>
@@ -1161,37 +1030,11 @@
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_sink_area_dish_washer_main"/>
     </owl:NamedIndividual>
 
-
-
-    <!-- &iai-map;Transformation_bLdopb6S -->
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_IAI_K5">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.00000 0.00000 1.00000 -0.00000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">1.52500 0.17000 0.44500</knowrob:translation>
-
-    </owl:NamedIndividual>
-
-
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K6">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
         <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K6"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_sink_area_dish_washer_door"/>
-    </owl:NamedIndividual>
-
-
-
-    <!-- &iai-map;Transformation_bLdopb6S -->
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_IAI_K6">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-	<!--
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.00000 -0.70711 0.70711 -0.00000</knowrob:quaternion>
-	-->
-	<knowrob:quaternion rdf:datatype="&xsd;string">0.00000 0.00000 1.00000 -0.00000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">1.25500 0.17000 0.12000</knowrob:translation>
-
     </owl:NamedIndividual>
 
 
@@ -1202,17 +1045,6 @@
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_sink_area_dish_washer_door_handle"/>
     </owl:NamedIndividual>
 
- 
-
-    <!-- &iai-map;Transformation_bLdopb6S -->
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_IAI_K7">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:quaternion rdf:datatype="&xsd;string">-0.00000 1.00000 -0.00000 0.00000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">1.19250 0.17000 0.75250</knowrob:translation>
-
-    </owl:NamedIndividual>
-
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K8">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
@@ -1221,36 +1053,12 @@
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_oven_area_area_footprint"/>
     </owl:NamedIndividual>
 
-
-
-    <!-- &iai-map;Transformation_bLdopb6S -->
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_IAI_K8">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.00000 0.00000 1.00000 -0.00000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">1.80500 2.50000 0.00000</knowrob:translation>
-
-    </owl:NamedIndividual>
-
-
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K9">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
         <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K9"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_oven_area_area"/>
     </owl:NamedIndividual>
-
-
-
-    <!-- &iai-map;Transformation_bLdopb6S -->
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_IAI_K9">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.00000 0.00000 1.00000 -0.00000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">1.51500 1.90000 0.75500</knowrob:translation>
-
-    </owl:NamedIndividual>
-
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K10">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
@@ -1259,39 +1067,12 @@
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_oven_area_oven_main"/>
     </owl:NamedIndividual>
 
-
-
-    <!-- &iai-map;Transformation_bLdopb6S -->
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_IAI_K10">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.00000 0.00000 1.00000 -0.00000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">1.51500 1.90000 1.17000</knowrob:translation>
-
-    </owl:NamedIndividual>
-
-
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K11">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
         <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K11"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_oven_area_oven_door"/>
     </owl:NamedIndividual>
-
-
-
-    <!-- &iai-map;Transformation_bLdopb6S -->
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_IAI_K11">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-	<!--
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.00000 -0.70711 0.70711 -0.00000</knowrob:quaternion>
-	-->
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.00000 0.00000 1.00000 -0.00000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">1.24130 1.90000 0.90860</knowrob:translation>
-
-    </owl:NamedIndividual>
-
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K12">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
@@ -1300,36 +1081,12 @@
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_oven_area_oven_door_handle"/>
     </owl:NamedIndividual>
 
-
-
-    <!-- &iai-map;Transformation_bLdopb6S -->
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_IAI_K12">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:quaternion rdf:datatype="&xsd;string">-0.00000 1.00000 -0.00000 0.00000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">1.18254 1.90000 1.30663</knowrob:translation>
-
-    </owl:NamedIndividual>
-
-
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K13">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
         <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K13"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_oven_area_oven_panel"/>
     </owl:NamedIndividual>
-
-
-
-    <!-- &iai-map;Transformation_bLdopb6S -->
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_IAI_K13">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.00000 0.00000 1.00000 -0.00000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">1.24500 1.90000 1.41490</knowrob:translation>
-
-    </owl:NamedIndividual>
-
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K14">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
@@ -1338,36 +1095,12 @@
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_oven_area_oven_knob_stove_1"/>
     </owl:NamedIndividual>
 
-
-
-    <!-- &iai-map;Transformation_bLdopb6S -->
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_IAI_K14">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.70711 0.00000 0.70711 -0.00000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">1.24500 2.11000 1.41490</knowrob:translation>
-
-    </owl:NamedIndividual>
-
-
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K15">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
         <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K15"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_oven_area_oven_knob_stove_2"/>
     </owl:NamedIndividual>
-
-
-
-    <!-- &iai-map;Transformation_bLdopb6S -->
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_IAI_K15">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.70711 0.00000 0.70711 -0.00000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">1.24500 2.04000 1.41490</knowrob:translation>
-
-    </owl:NamedIndividual>
-
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K16">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
@@ -1376,36 +1109,12 @@
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_oven_area_oven_knob_stove_3"/>
     </owl:NamedIndividual>
 
-
-
-    <!-- &iai-map;Transformation_bLdopb6S -->
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_IAI_K16">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.70711 0.00000 0.70711 -0.00000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">1.24500 1.97000 1.41490</knowrob:translation>
-
-    </owl:NamedIndividual>
-
-
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K17">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
         <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K17"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_oven_area_oven_knob_stove_4"/>
     </owl:NamedIndividual>
-
-
-
-    <!-- &iai-map;Transformation_bLdopb6S -->
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_IAI_K17">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.70711 0.00000 0.70711 -0.00000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">1.24500 1.90000 1.41490</knowrob:translation>
-
-    </owl:NamedIndividual>
-
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K18">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
@@ -1414,36 +1123,12 @@
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_oven_area_oven_knob_oven"/>
     </owl:NamedIndividual>
 
-
-
-    <!-- &iai-map;Transformation_bLdopb6S -->
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_IAI_K18">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.70711 0.00000 0.70711 -0.00000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">1.24500 1.74000 1.41490</knowrob:translation>
-
-    </owl:NamedIndividual>
-
-
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K19">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
         <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K19"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_oven_area_area_middle_upper_drawer_main"/>
     </owl:NamedIndividual>
-
-
-
-    <!-- &iai-map;Transformation_bLdopb6S -->
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_IAI_K19">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.00000 0.00000 1.00000 -0.00000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">1.51500 1.90000 0.80000</knowrob:translation>
-
-    </owl:NamedIndividual>
-
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K20">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
@@ -1452,36 +1137,12 @@
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_oven_area_area_middle_upper_drawer_handle"/>
     </owl:NamedIndividual>
 
-
-
-    <!-- &iai-map;Transformation_bLdopb6S -->
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_IAI_K20">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.00000 0.00000 1.00000 -0.00000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">1.18250 1.90000 0.81750</knowrob:translation>
-
-    </owl:NamedIndividual>
-
-
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K21">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
         <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K21"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_oven_area_area_middle_lower_drawer_main"/>
     </owl:NamedIndividual>
-
-
-
-    <!-- &iai-map;Transformation_bLdopb6S -->
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_IAI_K21">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.00000 0.00000 1.00000 -0.00000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">1.51500 1.90000 0.44000</knowrob:translation>
-
-    </owl:NamedIndividual>
-
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K22">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
@@ -1490,36 +1151,12 @@
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_oven_area_area_middle_lower_drawer_handle"/>
     </owl:NamedIndividual>
 
-
-
-    <!-- &iai-map;Transformation_bLdopb6S -->
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_IAI_K22">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.00000 0.00000 1.00000 -0.00000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">1.18250 1.90000 0.67750</knowrob:translation>
-
-    </owl:NamedIndividual>
-
-
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K23">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
         <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K23"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_oven_area_area_left_drawer_main"/>
     </owl:NamedIndividual>
-
-
-
-    <!-- &iai-map;Transformation_bLdopb6S -->
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_IAI_K23">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.00000 0.00000 1.00000 -0.00000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">1.51500 2.35000 0.81500</knowrob:translation>
-
-    </owl:NamedIndividual>
-
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K24">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
@@ -1528,36 +1165,12 @@
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_oven_area_area_left_drawer_handle"/>
     </owl:NamedIndividual>
 
-
-
-    <!-- &iai-map;Transformation_bLdopb6S -->
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_IAI_K24">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.00000 0.00000 1.00000 -0.00000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">1.16250 2.35000 0.81500</knowrob:translation>
-
-    </owl:NamedIndividual>
-
-
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K25">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
         <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K25"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_oven_area_area_right_drawer_main"/>
     </owl:NamedIndividual>
-
-
-
-    <!-- &iai-map;Transformation_bLdopb6S -->
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_IAI_K25">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.00000 0.00000 1.00000 -0.00000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">1.51500 1.45000 0.81500</knowrob:translation>
-
-    </owl:NamedIndividual>
-
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K26">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
@@ -1566,36 +1179,12 @@
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_oven_area_area_right_drawer_handle"/>
     </owl:NamedIndividual>
 
-
-
-    <!-- &iai-map;Transformation_bLdopb6S -->
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_IAI_K26">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.00000 0.00000 1.00000 -0.00000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">1.16250 1.45000 0.81500</knowrob:translation>
-
-    </owl:NamedIndividual>
-
-
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K27">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
         <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K27"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_kitchen_island_footprint"/>
     </owl:NamedIndividual>
-
-
-
-    <!-- &iai-map;Transformation_bLdopb6S -->
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_IAI_K27">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.00000 0.00000 0.00000 1.00000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">-1.36500 0.59000 0.00000</knowrob:translation>
-
-    </owl:NamedIndividual>
-
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K28">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
@@ -1604,36 +1193,12 @@
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_kitchen_island"/>
     </owl:NamedIndividual>
 
-
-
-    <!-- &iai-map;Transformation_bLdopb6S -->
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_IAI_K28">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.00000 0.00000 0.00000 1.00000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">-1.06750 1.71920 0.42100</knowrob:translation>
-
-    </owl:NamedIndividual>
-
-
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K29">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
         <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K29"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_kitchen_island_stove"/>
     </owl:NamedIndividual>
-
-
-
-    <!-- &iai-map;Transformation_bLdopb6S -->
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_IAI_K29">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.00000 0.00000 0.00000 1.00000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">-1.04250 2.48500 0.85250</knowrob:translation>
-
-    </owl:NamedIndividual>
-
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K30">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
@@ -1642,36 +1207,12 @@
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_kitchen_island_left_panel"/>
     </owl:NamedIndividual>
 
-
-
-    <!-- &iai-map;Transformation_bLdopb6S -->
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_IAI_K30">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.00000 0.00000 0.00000 1.00000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">-0.79500 0.91920 0.75000</knowrob:translation>
-
-    </owl:NamedIndividual>
-
-
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K31">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
         <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K31"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_kitchen_island_left_upper_drawer_main"/>
     </owl:NamedIndividual>
-
-
-
-    <!-- &iai-map;Transformation_bLdopb6S -->
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_IAI_K31">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.00000 0.00000 0.00000 1.00000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">-1.06500 0.91920 0.53500</knowrob:translation>
-
-    </owl:NamedIndividual>
-
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K32">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
@@ -1680,36 +1221,12 @@
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_kitchen_island_left_upper_drawer_handle"/>
     </owl:NamedIndividual>
 
-
-
-    <!-- &iai-map;Transformation_bLdopb6S -->
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_IAI_K32">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.00000 0.00000 0.00000 1.00000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">-0.73250 0.91920 0.64500</knowrob:translation>
-
-    </owl:NamedIndividual>
-
-
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K33">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
         <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K33"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_kitchen_island_left_lower_drawer_main"/>
     </owl:NamedIndividual>
-
-
-
-    <!-- &iai-map;Transformation_bLdopb6S -->
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_IAI_K33">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.00000 0.00000 0.00000 1.00000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">-1.06500 0.91920 0.24500</knowrob:translation>
-
-    </owl:NamedIndividual>
-
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K34">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
@@ -1718,34 +1235,11 @@
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_kitchen_island_left_lower_drawer_handle"/>
     </owl:NamedIndividual>
 
-
-
-    <!-- &iai-map;Transformation_bLdopb6S -->
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_IAI_K34">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.00000 0.00000 0.00000 1.00000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">-0.73250 0.91920 0.35500</knowrob:translation>
-
-    </owl:NamedIndividual>
-
-
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K35">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
         <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K35"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_kitchen_island_middle_panel"/>
-    </owl:NamedIndividual>
-
-
-
-    <!-- &iai-map;Transformation_bLdopb6S -->
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_IAI_K35">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.00000 0.00000 0.00000 1.00000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">-0.79500 1.71920 0.75000</knowrob:translation>
-
     </owl:NamedIndividual>
 
 
@@ -1756,36 +1250,12 @@
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_kitchen_island_middle_upper_drawer_main"/>
     </owl:NamedIndividual>
 
-
-
-    <!-- &iai-map;Transformation_bLdopb6S -->
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_IAI_K36">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.00000 0.00000 0.00000 1.00000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">-1.06500 1.71920 0.53500</knowrob:translation>
-
-    </owl:NamedIndividual>
-
-
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K37">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
         <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K37"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_kitchen_island_middle_upper_drawer_handle"/>
     </owl:NamedIndividual>
-
-
-
-    <!-- &iai-map;Transformation_bLdopb6S -->
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_IAI_K37">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.00000 0.00000 0.00000 1.00000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">-0.73250 1.71920 0.64500</knowrob:translation>
-
-    </owl:NamedIndividual>
-
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K38">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
@@ -1794,36 +1264,12 @@
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_kitchen_island_middle_lower_drawer_main"/>
     </owl:NamedIndividual>
 
-
-
-    <!-- &iai-map;Transformation_bLdopb6S -->
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_IAI_K38">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.00000 0.00000 0.00000 1.00000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">-1.06500 1.71920 0.24500</knowrob:translation>
-
-    </owl:NamedIndividual>
-
-
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K39">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
         <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K39"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_kitchen_island_middle_lower_drawer_handle"/>
     </owl:NamedIndividual>
-
-
-
-    <!-- &iai-map;Transformation_bLdopb6S -->
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_IAI_K39">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.00000 0.00000 0.00000 1.00000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">-0.73250 1.71920 0.35500</knowrob:translation>
-
-    </owl:NamedIndividual>
-
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K40">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
@@ -1832,36 +1278,12 @@
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_kitchen_island_right_panel"/>
     </owl:NamedIndividual>
 
-
-
-    <!-- &iai-map;Transformation_bLdopb6S -->
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_IAI_K40">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.00000 0.00000 0.00000 1.00000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">-0.79500 2.51920 0.75000</knowrob:translation>
-
-    </owl:NamedIndividual>
-
-
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K41">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
         <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K41"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_kitchen_island_right_upper_drawer_main"/>
     </owl:NamedIndividual>
-
-
-
-    <!-- &iai-map;Transformation_bLdopb6S -->
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_IAI_K41">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.00000 0.00000 0.00000 1.00000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">-1.06500 2.51920 0.53500</knowrob:translation>
-
-    </owl:NamedIndividual>
-
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K42">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
@@ -1870,36 +1292,12 @@
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_kitchen_island_right_upper_drawer_handle"/>
     </owl:NamedIndividual>
 
-
-
-    <!-- &iai-map;Transformation_bLdopb6S -->
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_IAI_K42">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.00000 0.00000 0.00000 1.00000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">-0.73250 2.51920 0.64500</knowrob:translation>
-
-    </owl:NamedIndividual>
-
-
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K43">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
         <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K43"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_kitchen_island_right_lower_drawer_main"/>
     </owl:NamedIndividual>
-
-
-
-    <!-- &iai-map;Transformation_bLdopb6S -->
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_IAI_K43">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.00000 0.00000 0.00000 1.00000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">-1.06500 2.51920 0.24500</knowrob:translation>
-
-    </owl:NamedIndividual>
-
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K44">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
@@ -1908,36 +1306,12 @@
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_kitchen_island_right_lower_drawer_handle"/>
     </owl:NamedIndividual>
 
-
-
-    <!-- &iai-map;Transformation_bLdopb6S -->
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_IAI_K44">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.00000 0.00000 0.00000 1.00000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">-0.73250 2.51920 0.35500</knowrob:translation>
-
-    </owl:NamedIndividual>
-
-
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K45">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
         <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K45"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_fridge_area_footprint"/>
     </owl:NamedIndividual>
-
-
-
-    <!-- &iai-map;Transformation_bLdopb6S -->
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_IAI_K45">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.00000 0.00000 1.00000 -0.00000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">1.82500 -0.76000 0.00000</knowrob:translation>
-
-    </owl:NamedIndividual>
-
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K46">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
@@ -1946,36 +1320,12 @@
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_fridge_area"/>
     </owl:NamedIndividual>
 
-
-
-    <!-- &iai-map;Transformation_bLdopb6S -->
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_IAI_K46">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.00000 0.00000 1.00000 -0.00000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">1.53500 -1.06000 0.74000</knowrob:translation>
-
-    </owl:NamedIndividual>
-
-
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K47">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
         <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K47"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_fridge_area_lower_drawer_main"/>
     </owl:NamedIndividual>
-
-
-
-    <!-- &iai-map;Transformation_bLdopb6S -->
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_IAI_K47">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.00000 0.00000 1.00000 -0.00000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">1.53500 -1.06000 0.32250</knowrob:translation>
-
-    </owl:NamedIndividual>
-
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K48">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
@@ -1984,36 +1334,12 @@
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_fridge_area_lower_drawer_handle"/>
     </owl:NamedIndividual>
 
-
-
-    <!-- &iai-map;Transformation_bLdopb6S -->
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_IAI_K48">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.00000 0.00000 1.00000 -0.00000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">1.20250 -1.06000 0.43250</knowrob:translation>
-
-    </owl:NamedIndividual>
-
-
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K49">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
         <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K49"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_fridge_main"/>
     </owl:NamedIndividual>
-
-
-
-    <!-- &iai-map;Transformation_bLdopb6S -->
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_IAI_K49">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.00000 0.00000 1.00000 -0.00000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">1.53500 -1.06000 0.74000</knowrob:translation>
-
-    </owl:NamedIndividual>
-
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K50">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
@@ -2022,17 +1348,6 @@
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_fridge_door"/>
     </owl:NamedIndividual>
 
-
-
-    <!-- &iai-map;Transformation_bLdopb6S -->
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_IAI_K50">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.00000 0.00000 1.00000 -0.00000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">1.24500 -1.06000 0.98500</knowrob:translation>
-    </owl:NamedIndividual>
-
-
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K51">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
         <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K51"/>
@@ -2040,36 +1355,12 @@
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_fridge_door_handle"/>
     </owl:NamedIndividual>
 
-
-
-    <!-- &iai-map;Transformation_bLdopb6S -->
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_IAI_K51">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.00000 0.00000 1.00000 -0.00000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">1.18500 -0.79000 0.98500</knowrob:translation>
-    </owl:NamedIndividual>
-
-
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_Sink_CT">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
         <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_Sink_CT"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_sink_area_counter_top"/>
     </owl:NamedIndividual>
-
-
-
-    <!-- &iai-map;Transformation_bLdopb6S -->
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_Sink_CT">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.00000 1.00000 0.00000 -0.00000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">1.535 0.270 0.840</knowrob:translation>
-
-    </owl:NamedIndividual>
-
-
     
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_Island_CT">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
@@ -2083,25 +1374,6 @@
         <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_Island_MealTable_CT"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_meal_table_counter_top"/>
-    </owl:NamedIndividual>
-
-
-
-    <!-- &iai-map;Transformation_bLdopb6S -->
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_Island_CT">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.00000 0.00000 0.00000 1.00000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">-0.975 1.719 0.841</knowrob:translation>
-
-    </owl:NamedIndividual>
-
-
-    <owl:NamedIndividual rdf:about="&iai-map;Transformation_Island_MealTable_CT">
-        <rdf:type rdf:resource="&knowrob;Transformation"/>
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.00000 0.00000 0.00000 1.00000</knowrob:quaternion>
-        <knowrob:translation rdf:datatype="&xsd;string">-1.475 -1.28 0.75</knowrob:translation>
-
     </owl:NamedIndividual>
 
 <!--
@@ -2127,12 +1399,6 @@
         <knowrob:lightType rdf:resource="&knowrob;LightTypeSpot"/>
     </owl:NamedIndividual>
     
-    <owl:NamedIndividual rdf:about="&knowrob;Pose_dfr0zuejssdfx">
-        <rdf:type rdf:resource="&knowrob;Pose"/>
-        <knowrob:translation rdf:datatype="&xsd;string">0.2 -1.6 2.5</knowrob:translation>
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.0 0.0 0.0 1.0</knowrob:quaternion>
-    </owl:NamedIndividual>
-    
     <owl:NamedIndividual rdf:about="&knowrob;Lightbulb_afg46sdfgsdfd">
         <rdf:type rdf:resource="&knowrob;Lightbulb"/>
         <knowrob:pose rdf:resource="&knowrob;Pose_afg46sdfgsdfd"/>
@@ -2141,13 +1407,7 @@
         <knowrob:lightSpotExponent rdf:datatype="&xsd;double">1.2</knowrob:lightSpotExponent>
         <knowrob:lightType rdf:resource="&knowrob;LightTypeSpot"/>
     </owl:NamedIndividual>
-    
-    <owl:NamedIndividual rdf:about="&knowrob;Pose_afg46sdfgsdfd">
-        <rdf:type rdf:resource="&knowrob;Pose"/>
-        <knowrob:translation rdf:datatype="&xsd;string">0.2 0.6 2.5</knowrob:translation>
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.0 0.0 0.0 1.0</knowrob:quaternion>
-    </owl:NamedIndividual>
-    
+        
     <owl:NamedIndividual rdf:about="&knowrob;Lightbulb_sdgt456sgdsdfyw">
         <rdf:type rdf:resource="&knowrob;Lightbulb"/>
         <knowrob:pose rdf:resource="&knowrob;Pose_sdgt456sgdsdfyw"/>
@@ -2155,12 +1415,6 @@
         <knowrob:lightConeAngle rdf:datatype="&xsd;double">3.14159</knowrob:lightConeAngle>
         <knowrob:lightSpotExponent rdf:datatype="&xsd;double">1.2</knowrob:lightSpotExponent>
         <knowrob:lightType rdf:resource="&knowrob;LightTypeSpot"/>
-    </owl:NamedIndividual>
-    
-    <owl:NamedIndividual rdf:about="&knowrob;Pose_sdgt456sgdsdfyw">
-        <rdf:type rdf:resource="&knowrob;Pose"/>
-        <knowrob:translation rdf:datatype="&xsd;string">0.2 2.8 2.5</knowrob:translation>
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.0 0.0 0.0 1.0</knowrob:quaternion>
     </owl:NamedIndividual>
     
     <owl:NamedIndividual rdf:about="&knowrob;Lightbulb_sdafg58hjco">
@@ -2172,12 +1426,6 @@
         <knowrob:lightType rdf:resource="&knowrob;LightTypeSpot"/>
     </owl:NamedIndividual>
     
-    <owl:NamedIndividual rdf:about="&knowrob;Pose_sdafg58hjco">
-        <rdf:type rdf:resource="&knowrob;Pose"/>
-        <knowrob:translation rdf:datatype="&xsd;string">-2.5 -1.6 2.5</knowrob:translation>
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.0 0.0 0.0 1.0</knowrob:quaternion>
-    </owl:NamedIndividual>
-    
     <owl:NamedIndividual rdf:about="&knowrob;Lightbulb_hfdfh46fadsb">
         <rdf:type rdf:resource="&knowrob;Lightbulb"/>
         <knowrob:pose rdf:resource="&knowrob;Pose_hfdfh46fadsb"/>
@@ -2185,12 +1433,6 @@
         <knowrob:lightConeAngle rdf:datatype="&xsd;double">3.14159</knowrob:lightConeAngle>
         <knowrob:lightSpotExponent rdf:datatype="&xsd;double">1.2</knowrob:lightSpotExponent>
         <knowrob:lightType rdf:resource="&knowrob;LightTypeSpot"/>
-    </owl:NamedIndividual>
-    
-    <owl:NamedIndividual rdf:about="&knowrob;Pose_hfdfh46fadsb">
-        <rdf:type rdf:resource="&knowrob;Pose"/>
-        <knowrob:translation rdf:datatype="&xsd;string">-2.5 0.6 2.5</knowrob:translation>
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.0 0.0 0.0 1.0</knowrob:quaternion>
     </owl:NamedIndividual>
     
     <owl:NamedIndividual rdf:about="&knowrob;Lightbulb_safh98ewhgb">
@@ -2202,10 +1444,5 @@
         <knowrob:lightType rdf:resource="&knowrob;LightTypeSpot"/>
     </owl:NamedIndividual>
     
-    <owl:NamedIndividual rdf:about="&knowrob;Pose_safh98ewhgb">
-        <rdf:type rdf:resource="&knowrob;Pose"/>
-        <knowrob:translation rdf:datatype="&xsd;string">-2.5 2.8 2.5</knowrob:translation>
-        <knowrob:quaternion rdf:datatype="&xsd;string">0.0 0.0 0.0 1.0</knowrob:quaternion>
-    </owl:NamedIndividual>
 -->
 </rdf:RDF>
