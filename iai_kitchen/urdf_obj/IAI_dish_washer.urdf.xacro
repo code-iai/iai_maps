@@ -26,13 +26,13 @@
 
       <sphere_inertia radius="0" mass="0"/>
       <visual>
-        <origin xyz="0 0 0" rpy="${0.5*pi} 0 0" />
+        <origin xyz="0 0.055 0" rpy="${0.5*pi} 0 0" />
         <geometry>
           <mesh filename="package://iai_kitchen/meshes/misc/DishWasherDoor.obj"/>
         </geometry>
       </visual>
       <collision>
-        <origin xyz="0 0 0" rpy="${0.5*pi} 0 0" />
+        <origin xyz="0 0.055 0" rpy="${0.5*pi} 0 0" />
         <geometry>
           <mesh filename="package://iai_kitchen/meshes/misc/DishWasherDoor.obj"/>
         </geometry>
@@ -82,7 +82,7 @@
     <xacro:unless value="${simulated}">
     -->
     <joint name="${name}_door_joint" type="revolute">
-      <origin xyz="0.27 0. -0.325" rpy="${-0.5*pi} 0 0" />
+      <origin xyz="0.27 0. -0.285" rpy="${-0.5*pi} 0 0" />
       <parent link="${name}_main"/>
       <child link="${name}_door"/>
       <axis xyz="0 0 1"/>
@@ -95,7 +95,7 @@
     </xacro:unless>
   -->
     <joint name="${name}_door_handle_joint" type="fixed">
-      <origin xyz="0.09 -0.65 0.0" rpy="${-0.5*pi} 0 0" />
+      <origin xyz="0.09 -0.575 0.0" rpy="${-0.5*pi} 0 0" />
       <parent link="${name}_door"/>
       <child link="${name}_door_handle"/>
     </joint>
