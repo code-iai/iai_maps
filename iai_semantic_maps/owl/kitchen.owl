@@ -94,7 +94,6 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_iAFczzSR">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_t7n0Elaz"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_sink_area_footprint"/>
     </owl:NamedIndividual>
@@ -122,7 +121,6 @@
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_RbTLNllQ">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_7HUx90mA"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_sink_area"/>
     </owl:NamedIndividual>
@@ -142,7 +140,6 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_e0NdTlte">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_3FBGS0Sy"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_sink_area_sink"/>
     </owl:NamedIndividual>
@@ -163,7 +160,6 @@
     
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_9l8bOshW">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_eFyUr9HL"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_sink_area_right_panel"/>
     </owl:NamedIndividual>
@@ -183,7 +179,6 @@
     
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_5jOkypyU">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_aDf4b7YJ"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_sink_area_trash_drawer_main"/>
     </owl:NamedIndividual>
@@ -203,7 +198,6 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_rhHLEqFj">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_4Oz27cMq"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_sink_area_trash_drawer_handle"/>
     </owl:NamedIndividual>
@@ -225,7 +219,6 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_gU0oFdUx">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_fOufFdPS"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_sink_area_left_upper_drawer_main"/>
     </owl:NamedIndividual>
@@ -967,7 +960,6 @@
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_fridge_door_hinged_joint"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_fridge_door_hinged_joint"/>
     </owl:NamedIndividual>
 
 
@@ -987,7 +979,6 @@
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K1">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K1"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_sink_area_left_middle_drawer_main"/>
     </owl:NamedIndividual>
@@ -995,7 +986,6 @@
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_Hd63PbAW">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_Hd63PbAW"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_sink_area_left_upper_drawer_handle"/>
     </owl:NamedIndividual>
@@ -1003,14 +993,12 @@
  
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K2">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K2"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_sink_area_left_middle_drawer_handle"/>
     </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K3">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K3"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_sink_area_left_bottom_drawer_main"/>
     </owl:NamedIndividual>
@@ -1018,21 +1006,18 @@
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K4">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K4"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_sink_area_left_bottom_drawer_handle"/>
     </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K5">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K5"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_sink_area_dish_washer_main"/>
     </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K6">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K6"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_sink_area_dish_washer_door"/>
     </owl:NamedIndividual>
@@ -1040,7 +1025,6 @@
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K7">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K7"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_sink_area_dish_washer_door_handle"/>
     </owl:NamedIndividual>
@@ -1048,196 +1032,168 @@
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K8">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K8"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_oven_area_area_footprint"/>
     </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K9">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K9"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_oven_area_area"/>
     </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K10">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K10"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_oven_area_oven_main"/>
     </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K11">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K11"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_oven_area_oven_door"/>
     </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K12">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K12"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_oven_area_oven_door_handle"/>
     </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K13">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K13"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_oven_area_oven_panel"/>
     </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K14">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K14"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_oven_area_oven_knob_stove_1"/>
     </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K15">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K15"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_oven_area_oven_knob_stove_2"/>
     </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K16">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K16"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_oven_area_oven_knob_stove_3"/>
     </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K17">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K17"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_oven_area_oven_knob_stove_4"/>
     </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K18">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K18"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_oven_area_oven_knob_oven"/>
     </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K19">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K19"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_oven_area_area_middle_upper_drawer_main"/>
     </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K20">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K20"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_oven_area_area_middle_upper_drawer_handle"/>
     </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K21">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K21"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_oven_area_area_middle_lower_drawer_main"/>
     </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K22">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K22"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_oven_area_area_middle_lower_drawer_handle"/>
     </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K23">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K23"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_oven_area_area_left_drawer_main"/>
     </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K24">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K24"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_oven_area_area_left_drawer_handle"/>
     </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K25">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K25"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_oven_area_area_right_drawer_main"/>
     </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K26">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K26"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_oven_area_area_right_drawer_handle"/>
     </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K27">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K27"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_kitchen_island_footprint"/>
     </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K28">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K28"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_kitchen_island"/>
     </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K29">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K29"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_kitchen_island_stove"/>
     </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K30">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K30"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_kitchen_island_left_panel"/>
     </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K31">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K31"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_kitchen_island_left_upper_drawer_main"/>
     </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K32">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K32"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_kitchen_island_left_upper_drawer_handle"/>
     </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K33">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K33"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_kitchen_island_left_lower_drawer_main"/>
     </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K34">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K34"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_kitchen_island_left_lower_drawer_handle"/>
     </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K35">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K35"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_kitchen_island_middle_panel"/>
     </owl:NamedIndividual>
@@ -1245,133 +1201,114 @@
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K36">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K36"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_kitchen_island_middle_upper_drawer_main"/>
     </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K37">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K37"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_kitchen_island_middle_upper_drawer_handle"/>
     </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K38">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K38"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_kitchen_island_middle_lower_drawer_main"/>
     </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K39">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K39"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_kitchen_island_middle_lower_drawer_handle"/>
     </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K40">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K40"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_kitchen_island_right_panel"/>
     </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K41">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K41"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_kitchen_island_right_upper_drawer_main"/>
     </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K42">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K42"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_kitchen_island_right_upper_drawer_handle"/>
     </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K43">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K43"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_kitchen_island_right_lower_drawer_main"/>
     </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K44">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K44"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_kitchen_island_right_lower_drawer_handle"/>
     </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K45">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K45"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_fridge_area_footprint"/>
     </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K46">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K46"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_fridge_area"/>
     </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K47">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K47"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_fridge_area_lower_drawer_main"/>
     </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K48">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K48"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_fridge_area_lower_drawer_handle"/>
     </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K49">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K49"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_fridge_main"/>
     </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K50">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K50"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_fridge_door"/>
     </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_IAI_K51">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_IAI_K51"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_fridge_door_handle"/>
     </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_Sink_CT">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_Sink_CT"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_sink_area_counter_top"/>
     </owl:NamedIndividual>
     
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_Island_CT">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_Island_CT"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_kitchen_island_counter_top"/>
     </owl:NamedIndividual>
     
     <owl:NamedIndividual rdf:about="&knowrob;SemanticMapPerception_Island_MealTable_CT">
         <rdf:type rdf:resource="&knowrob;SemanticMapPerception"/>
-        <knowrob:eventOccursAt rdf:resource="&iai-map;Transformation_Island_MealTable_CT"/>
         <knowrob:startTime rdf:resource="&iai-map;timepoint_0000000001"/>
         <knowrob:objectActedOn rdf:resource="&iai-map;iai_kitchen_meal_table_counter_top"/>
     </owl:NamedIndividual>
