@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://www.ease-crc.org/ont/EASE-OBJ.owl" uri="file:/home/abhijit/catkin_ws/src/ease_ontology/owl/EASE-OBJ.owl"/>
+    <uri id="User Entered Import Resolution" name="package://knowrob_household/owl/kitchen.owl" uri="file:/home/abhijit/catkin_ws/src/knowrob/owl/knowrob.owl"/>
+    <uri id="User Entered Import Resolution" name="package://iai_kitchen/owl/iai-kitchen-objects.owl" uri="file:/home/abhijit/catkin_ws/src/iai_maps/iai_kitchen/owl/iai-kitchen-objects.owl"/>
+    <uri id="User Entered Import Resolution" name="package://ease_ontology/owl/EASE-IO.owl" uri="file:/home/abhijit/catkin_ws/src/ease_ontology/owl/EASE-IO.owl"/>
+    <uri id="User Entered Import Resolution" name="package://knowrob/owl/URDF.owl" uri="file:/home/abhijit/catkin_ws/src/knowrob/owl/URDF.owl"/>
+    <uri id="User Entered Import Resolution" name="package://ease_ontology/owl/EASE-STATE.owl" uri="file:/home/abhijit/catkin_ws/src/ease_ontology/owl/EASE-STATE.owl"/>
+    <uri id="User Entered Import Resolution" name="package://ease_ontology/owl/EASE-OBJ.owl" uri="file:/home/abhijit/catkin_ws/src/ease_ontology/owl/EASE-OBJ.owl"/>
+    <uri id="User Entered Import Resolution" name="package://ease_ontology/owl/EASE-PROC.owl" uri="file:/home/abhijit/catkin_ws/src/ease_ontology/owl/EASE-PROC.owl"/>
+    <uri id="User Entered Import Resolution" name="package://ease_ontology/owl/EASE-ACT.owl" uri="file:/home/abhijit/catkin_ws/src/ease_ontology/owl/EASE-ACT.owl"/>
+    <uri id="User Entered Import Resolution" name="package://ease_ontology/owl/EASE.owl" uri="file:/home/abhijit/catkin_ws/src/ease_ontology/owl/EASE.owl"/>
+    <uri id="User Entered Import Resolution" name="package://ease_ontology/owl/EASE-WF.owl" uri="file:/home/abhijit/catkin_ws/src/ease_ontology/owl/EASE-WF.owl"/>
+    <uri id="User Entered Import Resolution" name="package://knowrob_common/owl/knowrob.owl" uri="file:/home/abhijit/catkin_ws/src/knowrob/owl/knowrob.owl"/>
+    <uri id="User Entered Import Resolution" name="package://iai_kitchen/owl/iai-kitchen-knowledge.owl" uri="file:/home/abhijit/catkin_ws/src/iai_maps/iai_kitchen/owl/iai-kitchen-knowledge.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1596017352722" name="http://knowrob.org/kb/IAI-kitchen.owl" uri="kitchen.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1596017352722" name="http://knowrob.org/kb/iai_maps_addons.owl" uri="iai_maps_addons.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1596017352722" name="http://knowrob.org/kb/ias_semantic_map.owl" uri="room.owl"/>
+    </group>
+</catalog>

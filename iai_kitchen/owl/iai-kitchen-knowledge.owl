@@ -1,49 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-
-<!DOCTYPE rdf:RDF [
-    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
-    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
-    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
-    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-    <!ENTITY knowrob "http://knowrob.org/kb/knowrob.owl#" >
-]>
-
-
+<?xml version="1.0"?>
 <rdf:RDF xmlns="http://knowrob.org/kb/iai-kitchen.owl#"
      xml:base="http://knowrob.org/kb/iai-kitchen.owl"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:knowrob="http://knowrob.org/kb/knowrob.owl#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://knowrob.org/kb/IAI-kitchen-knowledge.owl">
         <owl:imports rdf:resource="package://knowrob_common/owl/knowrob.owl"/>
-        <!--
-        <owl:imports rdf:resource="package://iai_kitchen/owl/map-knowledge.owl"/>
-        -->
     </owl:Ontology>
     
 
 
-    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#Transformation"/>
-    <owl:DatatypeProperty rdf:about="http://knowrob.org/kb/knowrob.owl#quaternion"/>
-    <owl:DatatypeProperty rdf:about="http://knowrob.org/kb/knowrob.owl#translation"/>
-
-    <!-- GENERAL DEFS -->
-    <owl:ObjectProperty rdf:about="http://knowrob.org/kb/knowrob.owl#describedInMap"/>
-    <owl:DatatypeProperty rdf:about="http://knowrob.org/kb/knowrob.owl#depthOfObject"/>
-    <owl:DatatypeProperty rdf:about="http://knowrob.org/kb/knowrob.owl#heightOfObject"/>
-    <owl:DatatypeProperty rdf:about="http://knowrob.org/kb/knowrob.owl#widthOfObject"/>
-    <owl:DatatypeProperty rdf:about="http://knowrob.org/kb/knowrob.owl#vectorX"/>
-    <owl:DatatypeProperty rdf:about="http://knowrob.org/kb/knowrob.owl#vectorY"/>
-    <owl:DatatypeProperty rdf:about="http://knowrob.org/kb/knowrob.owl#vectorZ"/>
-    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#SemanticEnvironmentMap"/>
-    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#SemanticMapPerception"/>
-    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#TimePoint"/>
-    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#Vector"/>
-    <owl:DatatypeProperty rdf:about="&knowrob;pathToCadModel"/>
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -52,547 +21,784 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <!-- Generic -->
     
-    <!-- DRAWERS -->
-    <owl:Class rdf:about="&knowrob;IAIDrawer">
-        <rdfs:subClassOf rdf:resource="&knowrob;Drawer"/>
-    </owl:Class>
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#describedInMap -->
+
+    <owl:ObjectProperty rdf:about="http://knowrob.org/kb/knowrob.owl#describedInMap"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
     
-    <owl:Class rdf:about="&knowrob;IAIDrawer_60_14">
 
-        <rdfs:subClassOf rdf:resource="&knowrob;IAIDrawer"/> 
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
-                <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/drawers/Drawer_60_14.dae</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>  
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&knowrob;boundingBoxSize"/>
-                <owl:hasValue rdf:datatype="&xsd;string">0.5600001215934753 0.5950000882148743 0.13500000536441803</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>  
-  </owl:Class>
 
+    <!-- http://knowrob.org/kb/knowrob.owl#boundingBoxSize -->
+
+    <owl:DatatypeProperty rdf:about="http://knowrob.org/kb/knowrob.owl#boundingBoxSize"/>
     
-    <owl:Class rdf:about="&knowrob;IAIDrawer_60_29">
-        <rdfs:subClassOf rdf:resource="&knowrob;IAIDrawer"/> 
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
-                <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/drawers/Drawer_60_29.dae</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>   
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&knowrob;boundingBoxSize"/>
-                <owl:hasValue rdf:datatype="&xsd;string">0.5600001215934753 0.595000147819519 0.2849999964237213</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>  
-  </owl:Class>
 
-    
-    <owl:Class rdf:about="&knowrob;IAIDrawer_60_58">
-        <rdfs:subClassOf rdf:resource="&knowrob;IAIDrawer"/> 
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
-                <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/drawers/Drawer_60_58.dae</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>   
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&knowrob;boundingBoxSize"/>
-                <owl:hasValue rdf:datatype="&xsd;string">0.5600000023841858 0.5950000286102295 0.5750000476837158</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>  
-  </owl:Class>
 
-    
-    <owl:Class rdf:about="&knowrob;IAIDrawer_Vert">
-        <rdfs:subClassOf rdf:resource="&knowrob;IAIDrawer"/> 
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
-                <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/drawers/VDrawer.dae</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>   
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&knowrob;boundingBoxSize"/>
-                <owl:hasValue rdf:datatype="&xsd;string">0.574999988079071 0.29499998688697815 1.3250000476837158</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>  
-  </owl:Class>
+    <!-- http://knowrob.org/kb/knowrob.owl#depthOfObject -->
 
+    <owl:DatatypeProperty rdf:about="http://knowrob.org/kb/knowrob.owl#depthOfObject"/>
     
-    <owl:Class rdf:about="&knowrob;IAIDrawer_80_14">
-        <rdfs:subClassOf rdf:resource="&knowrob;IAIDrawer"/> 
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
-                <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/drawers/Drawer_80_14.dae</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>   
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&knowrob;boundingBoxSize"/>
-                <owl:hasValue rdf:datatype="&xsd;string">0.5600001215934753 0.7949999570846558 0.13500000536441803</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>  
-  </owl:Class>
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#heightOfObject -->
+
+    <owl:DatatypeProperty rdf:about="http://knowrob.org/kb/knowrob.owl#heightOfObject"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#pathToCadModel -->
+
+    <owl:DatatypeProperty rdf:about="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#quaternion -->
+
+    <owl:DatatypeProperty rdf:about="http://knowrob.org/kb/knowrob.owl#quaternion"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#translation -->
+
+    <owl:DatatypeProperty rdf:about="http://knowrob.org/kb/knowrob.owl#translation"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#vectorX -->
+
+    <owl:DatatypeProperty rdf:about="http://knowrob.org/kb/knowrob.owl#vectorX"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#vectorY -->
+
+    <owl:DatatypeProperty rdf:about="http://knowrob.org/kb/knowrob.owl#vectorY"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#vectorZ -->
+
+    <owl:DatatypeProperty rdf:about="http://knowrob.org/kb/knowrob.owl#vectorZ"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#widthOfObject -->
+
+    <owl:DatatypeProperty rdf:about="http://knowrob.org/kb/knowrob.owl#widthOfObject"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
     
-    <owl:Class rdf:about="&knowrob;IAIDrawer_80_29">
-        <rdfs:subClassOf rdf:resource="&knowrob;IAIDrawer"/> 
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
-                <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/drawers/Drawer_80_29.dae</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>   
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&knowrob;boundingBoxSize"/>
-                <owl:hasValue rdf:datatype="&xsd;string">0.5600000619888306 0.7950000166893005 0.2850000262260437</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>  
-  </owl:Class>
 
+
+    <!-- http://knowrob.org/kb/knowrob.owl#ContainerLid -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#ContainerLid"/>
     
-    <owl:Class rdf:about="&knowrob;IAIDrawer_100_29">
-        <rdfs:subClassOf rdf:resource="&knowrob;IAIDrawer"/> 
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
-                <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/drawers/Drawer_100_29.dae</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>   
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&knowrob;boundingBoxSize"/>
-                <owl:hasValue rdf:datatype="&xsd;string">0.5600001215934753 0.9950000047683716 0.2849999964237213</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>  
-  </owl:Class>
-  
-    <owl:Class rdf:about="&knowrob;IAIThrashDrawer">
-        <rdfs:subClassOf rdf:resource="&knowrob;IAIDrawer"/> 
-        <rdfs:subClassOf rdf:resource="&knowrob;ThrashContainer"/> 
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
-                <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/drawers/Drawer_60_58.dae</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>   
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&knowrob;boundingBoxSize"/>
-                <owl:hasValue rdf:datatype="&xsd;string">0.5600000023841858 0.5950000286102295 0.5750000476837158</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>  
-  </owl:Class>
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#ElectricalDevice -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#ElectricalDevice"/>
     
-  
-  
-    <!-- PANELS -->
-    <owl:Class rdf:about="&knowrob;IAIPanel">
-        <rdfs:subClassOf rdf:resource="&knowrob;Drawer"/>
-    </owl:Class>
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#HeatingElement -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#HeatingElement"/>
     
-    
-    <owl:Class rdf:about="&knowrob;IAIPanel60">
-        <rdfs:subClassOf rdf:resource="&knowrob;IAIPanel"/> 
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#IAIDishWasher -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIDishWasher">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
-                <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/drawers/Panel_60.dae</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>   
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&knowrob;boundingBoxSize"/>
-                <owl:hasValue rdf:datatype="&xsd;string">0.05999999865889549 0.5950000286102295 0.13500000536441803</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>  
-    </owl:Class>
-    
-    
-    <owl:Class rdf:about="&knowrob;IAIPanel100">
-        <rdfs:subClassOf rdf:resource="&knowrob;IAIPanel"/> 
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
-                <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/drawers/Panel_100.dae</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>   
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&knowrob;boundingBoxSize"/>
-                <owl:hasValue rdf:datatype="&xsd;string">0.05999999865889549 0.9950000047683716 0.13500000536441803</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>  
-  </owl:Class>
-  
-  
-    
-    <!-- HANDLES -->
-  
-    <owl:Class rdf:about="&knowrob;IAIHandle">
-        <rdfs:subClassOf rdf:resource="&knowrob;Handle"/>
-    </owl:Class>
-    
-    <owl:Class rdf:about="&knowrob;IAIHandle60">
-        <rdfs:subClassOf rdf:resource="&knowrob;IAIHandle"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
-                <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/handles/Handle60.dae</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>  
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&knowrob;boundingBoxSize"/>
-                <owl:hasValue rdf:datatype="&xsd;string">0.10622437298297882 0.5049999952316284 0.01500004529953003</owl:hasValue>
-            </owl:Restriction> 
-        </rdfs:subClassOf>  
-    </owl:Class>
-    
-    <owl:Class rdf:about="&knowrob;IAIHandleVert">
-      
-        <rdfs:subClassOf rdf:resource="&knowrob;IAIHandle"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
-                <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/handles/VHandle130.dae</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>   
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&knowrob;boundingBoxSize"/>
-                <owl:hasValue rdf:datatype="&xsd;string">0.10622437298297882 0.015000104904174805 1.2350000143051147</owl:hasValue>
-            </owl:Restriction> 
-        </rdfs:subClassOf>  
-    </owl:Class>
-    
-    <owl:Class rdf:about="&knowrob;IAIHandle80">
-        <rdfs:subClassOf rdf:resource="&knowrob;IAIHandle"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
-                <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/handles/Handle80.dae</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>   
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&knowrob;boundingBoxSize"/>
-                <owl:hasValue rdf:datatype="&xsd;string">0.10622436553239822 0.7049999833106995 0.015000015497207642</owl:hasValue>
-            </owl:Restriction> 
-        </rdfs:subClassOf>  
-    </owl:Class>
-    
-    <owl:Class rdf:about="&knowrob;IAIHandle100">
-        <rdfs:subClassOf rdf:resource="&knowrob;IAIHandle"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
-                <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/handles/Handle100.dae</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>   
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&knowrob;boundingBoxSize"/>
-                <owl:hasValue rdf:datatype="&xsd;string">0.1062244102358818 0.9100418090820312 0.015000035054981709</owl:hasValue>
-            </owl:Restriction> 
-        </rdfs:subClassOf>  
-    </owl:Class>
-  <!--
-        <rdf:type rdf:resource="&srdl2-comp;UrdfLink"/>
-        I am not shure if all objects should be urdf links(they can move...)
-  -->
-    <owl:Class rdf:about="&knowrob;IAIKitchen">
-        <rdfs:subClassOf rdf:resource="&knowrob;Kitchen"/>
-        <!-- TODO add a ground plane -->
-    </owl:Class>
-    
-    <!-- SINK -->
-    
-    <owl:Class rdf:about="&knowrob;IAISinkArea">
-        <rdfs:subClassOf rdf:resource="&knowrob;Cupboard"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
-                <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/racks/SinkArea.dae</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>   
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&knowrob;boundingBoxSize"/>
-                <owl:hasValue rdf:datatype="&xsd;string">0.5800000429153442 2.060000419616699 0.8799999356269836</owl:hasValue>
-            </owl:Restriction> 
-        </rdfs:subClassOf>  
-    </owl:Class>
-    
-    
-    <owl:Class rdf:about="&knowrob;IAISink">
-        <rdfs:subClassOf rdf:resource="&knowrob;SpatialThing-Localized"/>
-        <!-- TODO add sink to knowrob ontology -->
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
-                <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/misc/Sink.dae</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>   
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&knowrob;boundingBoxSize"/>
-                <owl:hasValue rdf:datatype="&xsd;string">0.5 0.8600000143051147 0.3649999797344208</owl:hasValue>
-            </owl:Restriction> 
-        </rdfs:subClassOf>  
-    </owl:Class>
-    
-    
-    
-    <owl:Class rdf:about="&knowrob;IAIDishWasher">
-        <rdfs:subClassOf rdf:resource="&knowrob;Dishwasher"/>
-        <!-- TODO add sink to knowrob ontology -->
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
-                <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/misc/DishWasher.dae</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>   
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&knowrob;boundingBoxSize"/>
-                <owl:hasValue rdf:datatype="&xsd;string">0.5600001215934753 0.5 0.6700000166893005</owl:hasValue>
-            </owl:Restriction> 
-        </rdfs:subClassOf>  
-    </owl:Class>
-    
-    
-    
-    <owl:Class rdf:about="&knowrob;IAIDishWasherDoor">
-        <rdfs:subClassOf rdf:resource="&knowrob;ContainerLid"/>
-        <!-- TODO add sink to knowrob ontology -->
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
-                <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/misc/DishWasherDoor.dae</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>   
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&knowrob;boundingBoxSize"/>
-                <owl:hasValue rdf:datatype="&xsd;string">0.02000017836689949 0.5950000286102295 1.3649998903274536</owl:hasValue>
-            </owl:Restriction> 
-        </rdfs:subClassOf>  
-    </owl:Class>
-    <!-- OvenArea -->
-    
-    
-    <owl:Class rdf:about="&knowrob;IAIOvenArea">
-        <rdfs:subClassOf rdf:resource="&knowrob;Cupboard"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
-                <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/racks/OvenArea.dae</owl:hasValue>
+                <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#boundingBoxSize"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.5600001215934753 0.5 0.6700000166893005</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&knowrob;boundingBoxSize"/>
-                <owl:hasValue rdf:datatype="&xsd;string">0.5799999833106995 1.2000000476837158 1.5099999904632568</owl:hasValue>
-            </owl:Restriction> 
-        </rdfs:subClassOf>  
-    </owl:Class>
-    
-    
-    <owl:Class rdf:about="&knowrob;IAIOven">
-        <rdfs:subClassOf rdf:resource="&knowrob;Oven"/>
-        <rdfs:subClassOf rdf:resource="&knowrob;ElectricalDevice"/>
-        <!-- TODO add sink to knowrob ontology -->
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
-                <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/oven/OvenMain.dae</owl:hasValue>
+                <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_kitchen/meshes/misc/DishWasher.dae</owl:hasValue>
             </owl:Restriction>
-        </rdfs:subClassOf>   
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&knowrob;boundingBoxSize"/>
-                <owl:hasValue rdf:datatype="&xsd;string">0.5597404837608337 0.5013357400894165 0.6011766791343689</owl:hasValue>
-            </owl:Restriction> 
-        </rdfs:subClassOf>  
+        </rdfs:subClassOf>
     </owl:Class>
     
-    
-    <owl:Class rdf:about="&knowrob;IAIOvenDoor">
-        <rdfs:subClassOf rdf:resource="&knowrob;ContainerLid"/>
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#IAIDishWasherDoor -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIDishWasherDoor">
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/knowrob.owl#ContainerLid"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
-                <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/oven/OvenDoor.dae</owl:hasValue>
+                <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#boundingBoxSize"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.02000017836689949 0.5950000286102295 1.3649998903274536</owl:hasValue>
             </owl:Restriction>
-        </rdfs:subClassOf>   
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&knowrob;boundingBoxSize"/>
-                <owl:hasValue rdf:datatype="&xsd;string">0.02748239040374756 0.5950000882148743 0.8977498412132263</owl:hasValue>
-            </owl:Restriction> 
-        </rdfs:subClassOf>  
-    </owl:Class>
-    
-    
-    
-    <owl:Class rdf:about="&knowrob;IAIOvenPanel">
-        <rdfs:subClassOf rdf:resource="&knowrob;IAIPanel"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
-                <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/oven/OvenPanel.dae</owl:hasValue>
+                <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_kitchen/meshes/misc/DishWasherDoor.dae</owl:hasValue>
             </owl:Restriction>
-        </rdfs:subClassOf>   
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&knowrob;boundingBoxSize"/>
-                <owl:hasValue rdf:datatype="&xsd;string">0.02000001072883606 0.5950000882148743 0.12514778971672058</owl:hasValue>
-            </owl:Restriction> 
-        </rdfs:subClassOf>  
+        </rdfs:subClassOf>
     </owl:Class>
     
-    
-    
-    <owl:Class rdf:about="&knowrob;IAIKnob">
-      <!-- FIXME THERE MUST BE SOMTHING -->
-        <rdfs:subClassOf rdf:resource="&knowrob;SpatialThing-Localized"/>
-        <!-- TODO add sink to knowrob ontology -->
-       
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#IAIDrawer -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIDrawer">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/EASE.owl#Drawer"/>
     </owl:Class>
     
-    <owl:Class rdf:about="&knowrob;IAIOvenKnob">
-        <rdfs:subClassOf rdf:resource="&knowrob;IAIKnob"/>
-        <!-- TODO add sink to knowrob ontology -->
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#IAIDrawer_100_29 -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIDrawer_100_29">
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIDrawer"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
-                <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/oven/Knob.dae</owl:hasValue>
+                <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#boundingBoxSize"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.5600001215934753 0.9950000047683716 0.2849999964237213</owl:hasValue>
             </owl:Restriction>
-        </rdfs:subClassOf>   
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&knowrob;boundingBoxSize"/>
-                <owl:hasValue rdf:datatype="&xsd;string">0.045790545642375946 0.03841124475002289 0.03841124475002289</owl:hasValue>
-            </owl:Restriction> 
-        </rdfs:subClassOf>  
+                <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_kitchen/meshes/drawers/Drawer_100_29.dae</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
-    <!-- Kitchen Area -->
-    <owl:Class rdf:about="&knowrob;IAIKitchenIsland">
-        <rdfs:subClassOf rdf:resource="&knowrob;Cupboard"/>
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#IAIDrawer_60_14 -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIDrawer_60_14">
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIDrawer"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
-                <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/racks/IslandArea.dae</owl:hasValue>
+                <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#boundingBoxSize"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.5600001215934753 0.5950000882148743 0.13500000536441803</owl:hasValue>
             </owl:Restriction>
-        </rdfs:subClassOf> 
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&knowrob;boundingBoxSize"/>
-                <owl:hasValue rdf:datatype="&xsd;string">0.9849997162818909 2.458333730697632 0.8620001673698425</owl:hasValue>
-            </owl:Restriction> 
-        </rdfs:subClassOf>   
+                <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_kitchen/meshes/drawers/Drawer_60_14.dae</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
-    <owl:Class rdf:about="&knowrob;IAIKitchenIslandStove">
-        <rdfs:subClassOf rdf:resource="&knowrob;HeatingElement"/>
-        <rdfs:subClassOf rdf:resource="&knowrob;ElectricalDevice"/>
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#IAIDrawer_60_29 -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIDrawer_60_29">
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIDrawer"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
-                <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/misc/Stove.dae</owl:hasValue>
+                <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#boundingBoxSize"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.5600001215934753 0.595000147819519 0.2849999964237213</owl:hasValue>
             </owl:Restriction>
-        </rdfs:subClassOf>  
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&knowrob;boundingBoxSize"/>
-                <owl:hasValue rdf:datatype="&xsd;string">0.5 0.5699999928474426 0.004999999888241291</owl:hasValue>
-            </owl:Restriction> 
-        </rdfs:subClassOf>   
-    </owl:Class>
-    <!-- TODO -->
-    <owl:Class rdf:about="&knowrob;IAIFridgeArea">
-        <rdfs:subClassOf rdf:resource="&knowrob;Cupboard"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
-                <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/racks/FridgeArea.dae</owl:hasValue>
+                <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_kitchen/meshes/drawers/Drawer_60_29.dae</owl:hasValue>
             </owl:Restriction>
-        </rdfs:subClassOf>  
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&knowrob;boundingBoxSize"/>
-                <owl:hasValue rdf:datatype="&xsd;string">0.5799999833106995 0.6000000238418579 1.5199998617172241</owl:hasValue>
-            </owl:Restriction> 
-        </rdfs:subClassOf>   
-    </owl:Class>
-    <owl:Class rdf:about="&knowrob;IAIFridge">
-        <rdfs:subClassOf rdf:resource="&knowrob;Refrigerator"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
-                <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/misc/Fridge.dae</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>  
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&knowrob;boundingBoxSize"/>
-                <owl:hasValue rdf:datatype="&xsd;string">0.5512440204620361 0.5590660572052002 1.456691026687622</owl:hasValue>
-            </owl:Restriction> 
-        </rdfs:subClassOf>   
+        </rdfs:subClassOf>
     </owl:Class>
     
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#IAIDrawer_60_58 -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIDrawer_60_58">
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIDrawer"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#boundingBoxSize"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.5600000023841858 0.5950000286102295 0.5750000476837158</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_kitchen/meshes/drawers/Drawer_60_58.dae</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
-    <owl:Class rdf:about="&knowrob;IAIFridgeDoor">
-        <rdfs:subClassOf rdf:resource="&knowrob;ContainerLid"/>
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#IAIDrawer_80_14 -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIDrawer_80_14">
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIDrawer"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
-                <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/misc/FridgeDoor.dae</owl:hasValue>
+                <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#boundingBoxSize"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.5600001215934753 0.7949999570846558 0.13500000536441803</owl:hasValue>
             </owl:Restriction>
-        </rdfs:subClassOf>   
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&knowrob;boundingBoxSize"/>
-                <owl:hasValue rdf:datatype="&xsd;string"> 0.014999999664723873 1.1950000524520874 0.965</owl:hasValue>
-            </owl:Restriction> 
-        </rdfs:subClassOf>  
-    </owl:Class>
-    <owl:Class rdf:about="&knowrob;IAIFridgeDoorHandle">
-        <rdfs:subClassOf rdf:resource="&knowrob;IAIHandle"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&knowrob;pathToCadModel"/>
-                <owl:hasValue rdf:datatype="&xsd;string">package://iai_kitchen/meshes/handles/VHandle90.dae</owl:hasValue>
+                <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_kitchen/meshes/drawers/Drawer_80_14.dae</owl:hasValue>
             </owl:Restriction>
-        </rdfs:subClassOf> 
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#IAIDrawer_80_29 -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIDrawer_80_29">
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIDrawer"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&knowrob;boundingBoxSize"/>
-                <owl:hasValue rdf:datatype="&xsd;string"> 0.10622437298297882 0.015000104904174805 0.875</owl:hasValue>
-            </owl:Restriction> 
-        </rdfs:subClassOf>  
+                <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#boundingBoxSize"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.5600000619888306 0.7950000166893005 0.2850000262260437</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_kitchen/meshes/drawers/Drawer_80_29.dae</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#IAIDrawer_Vert -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIDrawer_Vert">
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIDrawer"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#boundingBoxSize"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.574999988079071 0.29499998688697815 1.3250000476837158</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_kitchen/meshes/drawers/VDrawer.dae</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#IAIFridge -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIFridge">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#boundingBoxSize"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.5512440204620361 0.5590660572052002 1.456691026687622</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_kitchen/meshes/misc/Fridge.dae</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#IAIFridgeArea -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIFridgeArea">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#boundingBoxSize"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.5799999833106995 0.6000000238418579 1.5199998617172241</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_kitchen/meshes/racks/FridgeArea.dae</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#IAIFridgeDoor -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIFridgeDoor">
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/knowrob.owl#ContainerLid"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#boundingBoxSize"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 0.014999999664723873 1.1950000524520874 0.965</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_kitchen/meshes/misc/FridgeDoor.dae</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#IAIFridgeDoorHandle -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIFridgeDoorHandle">
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIHandle"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#boundingBoxSize"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 0.10622437298297882 0.015000104904174805 0.875</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_kitchen/meshes/handles/VHandle90.dae</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#IAIHandle -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIHandle"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#IAIHandle100 -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIHandle100">
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIHandle"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#boundingBoxSize"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.1062244102358818 0.9100418090820312 0.015000035054981709</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_kitchen/meshes/handles/Handle100.dae</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#IAIHandle60 -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIHandle60">
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIHandle"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#boundingBoxSize"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.10622437298297882 0.5049999952316284 0.01500004529953003</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_kitchen/meshes/handles/Handle60.dae</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#IAIHandle80 -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIHandle80">
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIHandle"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#boundingBoxSize"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.10622436553239822 0.7049999833106995 0.015000015497207642</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_kitchen/meshes/handles/Handle80.dae</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#IAIHandleVert -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIHandleVert">
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIHandle"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#boundingBoxSize"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.10622437298297882 0.015000104904174805 1.2350000143051147</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_kitchen/meshes/handles/VHandle130.dae</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#IAIKitchen -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIKitchen">
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/knowrob.owl#Kitchen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#IAIKitchenIsland -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIKitchenIsland">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#boundingBoxSize"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.9849997162818909 2.458333730697632 0.8620001673698425</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_kitchen/meshes/racks/IslandArea.dae</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#IAIKitchenIslandStove -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIKitchenIslandStove">
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/knowrob.owl#ElectricalDevice"/>
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/knowrob.owl#HeatingElement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#boundingBoxSize"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.5 0.5699999928474426 0.004999999888241291</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_kitchen/meshes/misc/Stove.dae</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#IAIKnob -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIKnob">
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/knowrob.owl#SpatialThing-Localized"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#IAIOven -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIOven">
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/knowrob.owl#ElectricalDevice"/>
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/knowrob.owl#Oven"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#boundingBoxSize"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.5597404837608337 0.5013357400894165 0.6011766791343689</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_kitchen/meshes/oven/OvenMain.dae</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#IAIOvenArea -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIOvenArea">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#boundingBoxSize"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.5799999833106995 1.2000000476837158 1.5099999904632568</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_kitchen/meshes/racks/OvenArea.dae</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#IAIOvenDoor -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIOvenDoor">
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/knowrob.owl#ContainerLid"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#boundingBoxSize"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.02748239040374756 0.5950000882148743 0.8977498412132263</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_kitchen/meshes/oven/OvenDoor.dae</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#IAIOvenKnob -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIOvenKnob">
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIKnob"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#boundingBoxSize"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.045790545642375946 0.03841124475002289 0.03841124475002289</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_kitchen/meshes/oven/Knob.dae</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#IAIOvenPanel -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIOvenPanel">
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIPanel"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#boundingBoxSize"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.02000001072883606 0.5950000882148743 0.12514778971672058</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_kitchen/meshes/oven/OvenPanel.dae</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#IAIPanel -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIPanel">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/EASE.owl#Drawer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#IAIPanel100 -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIPanel100">
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIPanel"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#boundingBoxSize"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.05999999865889549 0.9950000047683716 0.13500000536441803</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_kitchen/meshes/drawers/Panel_100.dae</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#IAIPanel60 -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIPanel60">
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIPanel"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#boundingBoxSize"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.05999999865889549 0.5950000286102295 0.13500000536441803</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_kitchen/meshes/drawers/Panel_60.dae</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#IAISink -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAISink">
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/knowrob.owl#SpatialThing-Localized"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#boundingBoxSize"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.5 0.8600000143051147 0.3649999797344208</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_kitchen/meshes/misc/Sink.dae</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#IAISinkArea -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAISinkArea">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#boundingBoxSize"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.5800000429153442 2.060000419616699 0.8799999356269836</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_kitchen/meshes/racks/SinkArea.dae</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#IAIThrashDrawer -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIThrashDrawer">
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIDrawer"/>
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/knowrob.owl#ThrashContainer"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#boundingBoxSize"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.5600000023841858 0.5950000286102295 0.5750000476837158</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_kitchen/meshes/drawers/Drawer_60_58.dae</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Kitchen -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#Kitchen"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Oven -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#Oven"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#SemanticEnvironmentMap -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#SemanticEnvironmentMap"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#SemanticMapPerception -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#SemanticMapPerception"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#SpatialThing-Localized -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#SpatialThing-Localized"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#ThrashContainer -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#ThrashContainer"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Transformation -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#Transformation"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Vector -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#Vector"/>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/EASE.owl#Drawer -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/EASE.owl#Drawer"/>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
-
-
-
-<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
 
