@@ -242,13 +242,17 @@
 
     <!-- http://knowrob.org/kb/knowrob.owl#CounterTop -->
 
-    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#CounterTop"/>
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#CounterTop">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/EASE-OBJ.owl#DesignedComponent"/>
+    </owl:Class>
     
 
 
     <!-- http://knowrob.org/kb/knowrob.owl#HingedJoint -->
 
-    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#HingedJoint"/>
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#HingedJoint">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/EASE-OBJ.owl#DesignedComponent"/>
+    </owl:Class>
     
 
 
@@ -270,7 +274,9 @@
 
     <!-- http://knowrob.org/kb/knowrob.owl#IAIDrawer_100_29 -->
 
-    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIDrawer_100_29"/>
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIDrawer_100_29">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/EASE.owl#Drawer"/>
+    </owl:Class>
     
 
 
@@ -284,7 +290,9 @@
 
     <!-- http://knowrob.org/kb/knowrob.owl#IAIDrawer_60_29 -->
 
-    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIDrawer_60_29"/>
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIDrawer_60_29">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/EASE.owl#Drawer"/>
+    </owl:Class>
     
 
 
