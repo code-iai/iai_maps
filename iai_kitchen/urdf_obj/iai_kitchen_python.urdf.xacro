@@ -41,7 +41,7 @@
   </iai_sink_area>
 
   <iai_oven_area name="oven_area" parent="room_link">
-    <origin xyz="1.855 2.5 0" rpy="0 0 ${pi}" />
+    <origin xyz="1.845 2.5 0" rpy="0 0 ${pi}" />
     <!-- <origin xyz="-5.27 -6.85 0" rpy="0 0 0" /> -->
   </iai_oven_area>
 
