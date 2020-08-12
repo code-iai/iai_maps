@@ -60,7 +60,7 @@
   </iai_table_1>
 
   <iai_dining_area name="dining_area" parent="room_link">
-    <origin xyz="-3.35 0.4 0" rpy="0 0 ${pi / 2}" />
+    <origin xyz="-3.38 0.28 0" rpy="0 0 ${pi / 2}" />
   </iai_dining_area>
 
   <iai_kitchen_wall_robohow parent="room_link">
