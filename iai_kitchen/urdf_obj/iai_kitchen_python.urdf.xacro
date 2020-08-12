@@ -59,6 +59,10 @@
     <origin xyz="-2.4 -1.5 0" rpy="0 0 ${pi}" />
   </iai_table_1>
 
+  <iai_dining_area name="dining_area" parent="room_link">
+    <origin xyz="-3.35 0.4 0" rpy="0 0 ${pi / 2}" />
+  </iai_dining_area>
+
   <iai_kitchen_wall_robohow parent="room_link">
     <origin xyz="-0.96 0.65 0" rpy="0.0 0.0 0.0" />
   </iai_kitchen_wall_robohow>
