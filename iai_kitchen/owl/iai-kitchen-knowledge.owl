@@ -757,18 +757,6 @@
     
 
 
-    <!-- http://knowrob.org/kb/knowrob.owl#SemanticEnvironmentMap -->
-
-    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#SemanticEnvironmentMap"/>
-    
-
-
-    <!-- http://knowrob.org/kb/knowrob.owl#SemanticMapPerception -->
-
-    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#SemanticMapPerception"/>
-    
-
-
     <!-- http://knowrob.org/kb/knowrob.owl#SpatialThing-Localized -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#SpatialThing-Localized"/>

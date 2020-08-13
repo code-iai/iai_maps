@@ -513,18 +513,6 @@
     
 
 
-    <!-- http://knowrob.org/kb/knowrob.owl#SemanticEnvironmentMap -->
-
-    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#SemanticEnvironmentMap"/>
-    
-
-
-    <!-- http://knowrob.org/kb/knowrob.owl#SemanticMapPerception -->
-
-    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#SemanticMapPerception"/>
-    
-
-
     <!-- http://knowrob.org/kb/knowrob.owl#Spoon -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#Spoon">
@@ -555,7 +543,7 @@
     <!-- http://knowrob.org/kb/IAI-kitchen.owl#IAIKitchenMap_PM580j -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#IAIKitchenMap_PM580j">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#SemanticEnvironmentMap"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE.owl#Room"/>
     </owl:NamedIndividual>
     
 
