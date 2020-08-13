@@ -73,7 +73,7 @@
     <!-- http://knowrob.org/kb/iai-kitchen.owl#EdekaRedBowl -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/iai-kitchen.owl#EdekaRedBowl">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/EASE.owl#Bowl"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Bowl"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
@@ -157,9 +157,9 @@
     
 
 
-    <!-- http://www.ease-crc.org/ont/EASE.owl#Bowl -->
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#Bowl -->
 
-    <owl:Class rdf:about="http://www.ease-crc.org/ont/EASE.owl#Bowl"/>
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Bowl"/>
 </rdf:RDF>
 
 

@@ -172,7 +172,7 @@
     <!-- http://knowrob.org/kb/knowrob.owl#IAIDrawer -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIDrawer">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/EASE.owl#Drawer"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Drawer"/>
     </owl:Class>
     
 
@@ -640,7 +640,7 @@
     <!-- http://knowrob.org/kb/knowrob.owl#IAIPanel -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIPanel">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/EASE.owl#Drawer"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Drawer"/>
     </owl:Class>
     
 
@@ -781,9 +781,9 @@
     
 
 
-    <!-- http://www.ease-crc.org/ont/EASE.owl#Drawer -->
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#Drawer -->
 
-    <owl:Class rdf:about="http://www.ease-crc.org/ont/EASE.owl#Drawer"/>
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Drawer"/>
 </rdf:RDF>
 
 
