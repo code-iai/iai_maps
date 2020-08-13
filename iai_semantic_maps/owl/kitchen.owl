@@ -11,13 +11,14 @@
      xmlns:EASE="http://www.ease-crc.org/ont/EASE.owl#"
      xmlns:iai-map="http://knowrob.org/kb/IAI-kitchen.owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:SOMA="http://www.ease-crc.org/ont/SOMA.owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:srdl2-comp="http://knowrob.org/kb/srdl2-comp.owl#"
      xmlns:knowrob="http://knowrob.org/kb/knowrob.owl#">
     <owl:Ontology rdf:about="http://knowrob.org/kb/IAI-kitchen.owl">
+        <owl:imports rdf:resource="http://www.ease-crc.org/ont/SOMA.owl"/>
         <owl:imports rdf:resource="package://iai_kitchen/owl/iai-kitchen-knowledge.owl"/>
         <owl:imports rdf:resource="package://iai_kitchen/owl/iai-kitchen-objects.owl"/>
-        <owl:imports rdf:resource="http://www.ease-crc.org/ont/EASE-OBJ.owl"/>
     </owl:Ontology>
     
 
@@ -218,7 +219,7 @@
     <!-- http://knowrob.org/kb/IAI-kitchen.owl#Knob -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#Knob">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/EASE-OBJ.owl#DesignedComponent"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#DesignedComponent"/>
         <rdfs:comment>It can be descrbed as usually round shaped object(although the shape can vary based on design), attached to surface of something (mostly doors or euipments) which can be used either for opening and closing in case of doors or starting and stoping in case of machines or equipments.</rdfs:comment>
     </owl:Class>
     
@@ -227,7 +228,7 @@
     <!-- http://knowrob.org/kb/IAI-kitchen.owl#Panel -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#Panel">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/EASE-OBJ.owl#DesignedComponent"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#DesignedComponent"/>
     </owl:Class>
     
 
@@ -235,15 +236,7 @@
     <!-- http://knowrob.org/kb/knowrob.owl#ContainerLid -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#ContainerLid">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/EASE.owl#DesignedContainer"/>
-    </owl:Class>
-    
-
-
-    <!-- http://knowrob.org/kb/knowrob.owl#CounterTop -->
-
-    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#CounterTop">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/EASE-OBJ.owl#DesignedComponent"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#DesignedContainer"/>
     </owl:Class>
     
 
@@ -251,7 +244,7 @@
     <!-- http://knowrob.org/kb/knowrob.owl#HingedJoint -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#HingedJoint">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/EASE-OBJ.owl#DesignedComponent"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#DesignedComponent"/>
     </owl:Class>
     
 
@@ -259,7 +252,7 @@
     <!-- http://knowrob.org/kb/knowrob.owl#IAIDishWasher -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIDishWasher">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/EASE.owl#Dishwasher"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Dishwasher"/>
     </owl:Class>
     
 
@@ -267,7 +260,7 @@
     <!-- http://knowrob.org/kb/knowrob.owl#IAIDishWasherDoor -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIDishWasherDoor">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/EASE.owl#Door"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Door"/>
     </owl:Class>
     
 
@@ -275,7 +268,7 @@
     <!-- http://knowrob.org/kb/knowrob.owl#IAIDrawer_100_29 -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIDrawer_100_29">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/EASE.owl#Drawer"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Drawer"/>
     </owl:Class>
     
 
@@ -283,7 +276,7 @@
     <!-- http://knowrob.org/kb/knowrob.owl#IAIDrawer_60_14 -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIDrawer_60_14">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/EASE.owl#Drawer"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Drawer"/>
     </owl:Class>
     
 
@@ -291,7 +284,7 @@
     <!-- http://knowrob.org/kb/knowrob.owl#IAIDrawer_60_29 -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIDrawer_60_29">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/EASE.owl#Drawer"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Drawer"/>
     </owl:Class>
     
 
@@ -299,7 +292,7 @@
     <!-- http://knowrob.org/kb/knowrob.owl#IAIDrawer_60_58 -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIDrawer_60_58">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/EASE.owl#Drawer"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Drawer"/>
     </owl:Class>
     
 
@@ -307,7 +300,7 @@
     <!-- http://knowrob.org/kb/knowrob.owl#IAIDrawer_80_14 -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIDrawer_80_14">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/EASE.owl#Drawer"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Drawer"/>
     </owl:Class>
     
 
@@ -315,7 +308,7 @@
     <!-- http://knowrob.org/kb/knowrob.owl#IAIDrawer_80_29 -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIDrawer_80_29">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/EASE.owl#Drawer"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Drawer"/>
     </owl:Class>
     
 
@@ -323,7 +316,7 @@
     <!-- http://knowrob.org/kb/knowrob.owl#IAIDrawer_Vert -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIDrawer_Vert">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/EASE.owl#Drawer"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Drawer"/>
     </owl:Class>
     
 
@@ -331,7 +324,7 @@
     <!-- http://knowrob.org/kb/knowrob.owl#IAIFridge -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIFridge">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/EASE.owl#Refrigerator"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Refrigerator"/>
     </owl:Class>
     
 
@@ -339,7 +332,7 @@
     <!-- http://knowrob.org/kb/knowrob.owl#IAIFridgeArea -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIFridgeArea">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/EASE.owl#Cupboard"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Cupboard"/>
     </owl:Class>
     
 
@@ -347,7 +340,7 @@
     <!-- http://knowrob.org/kb/knowrob.owl#IAIFridgeDoor -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIFridgeDoor">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/EASE.owl#Door"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Door"/>
     </owl:Class>
     
 
@@ -355,7 +348,7 @@
     <!-- http://knowrob.org/kb/knowrob.owl#IAIFridgeDoorHandle -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIFridgeDoorHandle">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/EASE.owl#DesignedHandle"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#DesignedHandle"/>
     </owl:Class>
     
 
@@ -363,7 +356,7 @@
     <!-- http://knowrob.org/kb/knowrob.owl#IAIHandle -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIHandle">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/EASE.owl#DesignedHandle"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#DesignedHandle"/>
     </owl:Class>
     
 
@@ -403,7 +396,7 @@
     <!-- http://knowrob.org/kb/knowrob.owl#IAIKitchen -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIKitchen">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/EASE.owl#DesignedFurniture"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#DesignedFurniture"/>
     </owl:Class>
     
 
@@ -411,7 +404,7 @@
     <!-- http://knowrob.org/kb/knowrob.owl#IAIKitchenIsland -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIKitchenIsland">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/EASE.owl#Cupboard"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Cupboard"/>
     </owl:Class>
     
 
@@ -419,7 +412,7 @@
     <!-- http://knowrob.org/kb/knowrob.owl#IAIKitchenIslandStove -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIKitchenIslandStove">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/EASE.owl#Stove"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Stove"/>
     </owl:Class>
     
 
@@ -435,7 +428,7 @@
     <!-- http://knowrob.org/kb/knowrob.owl#IAIOvenArea -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIOvenArea">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/EASE.owl#Cupboard"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Cupboard"/>
     </owl:Class>
     
 
@@ -443,7 +436,7 @@
     <!-- http://knowrob.org/kb/knowrob.owl#IAIOvenDoor -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIOvenDoor">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/EASE.owl#Door"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Door"/>
     </owl:Class>
     
 
@@ -483,7 +476,7 @@
     <!-- http://knowrob.org/kb/knowrob.owl#IAISink -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAISink">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/EASE.owl#DesignedFurniture"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#DesignedFurniture"/>
     </owl:Class>
     
 
@@ -491,7 +484,7 @@
     <!-- http://knowrob.org/kb/knowrob.owl#IAISinkArea -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAISinkArea">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/EASE.owl#Cupboard"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Cupboard"/>
     </owl:Class>
     
 
@@ -499,7 +492,7 @@
     <!-- http://knowrob.org/kb/knowrob.owl#IAIThrashDrawer -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIThrashDrawer">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/EASE.owl#Drawer"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Drawer"/>
     </owl:Class>
     
 
@@ -507,8 +500,8 @@
     <!-- http://knowrob.org/kb/knowrob.owl#Oven -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#Oven">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/EASE-OBJ.owl#Appliance"/>
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/EASE.owl#DesignedContainer"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Appliance"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#DesignedContainer"/>
     </owl:Class>
     
 
@@ -516,7 +509,7 @@
     <!-- http://knowrob.org/kb/knowrob.owl#Spoon -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#Spoon">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/EASE-OBJ.owl#Cutlery"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Cutlery"/>
     </owl:Class>
     
 
@@ -524,7 +517,7 @@
     <!-- http://knowrob.org/kb/knowrob.owl#ThrashContainer -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#ThrashContainer">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/EASE.owl#DesignedContainer"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#DesignedContainer"/>
     </owl:Class>
     
 
@@ -542,9 +535,7 @@
 
     <!-- http://knowrob.org/kb/IAI-kitchen.owl#IAIKitchenMap_PM580j -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#IAIKitchenMap_PM580j">
-        <rdf:type rdf:resource="http://www.ease-crc.org/ont/EASE.owl#Room"/>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#IAIKitchenMap_PM580j"/>
     
 
 
@@ -692,7 +683,7 @@
     <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_counter_top -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_counter_top">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#CounterTop"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Countertop"/>
         <knowrob:describedInMap rdf:resource="http://knowrob.org/kb/IAI-kitchen.owl#IAIKitchenMap_PM580j"/>
         <knowrob:depthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.8</knowrob:depthOfObject>
         <knowrob:hasVisual rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</knowrob:hasVisual>
@@ -918,7 +909,7 @@
     <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_meal_table_counter_top -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_meal_table_counter_top">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#CounterTop"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Countertop"/>
         <knowrob:describedInMap rdf:resource="http://knowrob.org/kb/IAI-kitchen.owl#IAIKitchenMap_PM580j"/>
         <knowrob:depthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.6</knowrob:depthOfObject>
         <knowrob:heightOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.02</knowrob:heightOfObject>
@@ -1221,7 +1212,7 @@
     <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_counter_top -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_counter_top">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#CounterTop"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Countertop"/>
         <knowrob:describedInMap rdf:resource="http://knowrob.org/kb/IAI-kitchen.owl#IAIKitchenMap_PM580j"/>
         <knowrob:depthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.575</knowrob:depthOfObject>
         <knowrob:hasVisual rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</knowrob:hasVisual>
