@@ -4,6 +4,7 @@
 
   <xacro:property name="pi" value="3.1415926535897931" />
   <xacro:property name="simulated" value="true" />
+  <xacro:property name="include_wall_7" value="true"/>
 
   <macro name="sphere_inertia" params="radius mass">
         <inertial>
@@ -65,13 +66,9 @@
   </iai_table_1>
 
 
-  <iai_kitchen_wall_robohow parent="room_link" wall_7="true">
+  <iai_kitchen_wall_robohow parent="room_link" wall_7="${include_wall_7}">
     <origin xyz="-0.96 0.65 0" rpy="0.0 0.0 0.0" />
   </iai_kitchen_wall_robohow>
-
-  <iai_popcorn_table name="iai_popcorn_table" parent="room_link">
-    <origin xyz="-0.05 -1.7 0"/>
-  </iai_popcorn_table>
 
 
 
