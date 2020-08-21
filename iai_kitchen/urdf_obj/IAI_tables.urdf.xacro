@@ -1,30 +1,92 @@
 <?xml version="1.0"?>
 
 <robot name="iai_table" xmlns:xacro="http://ros.org/wiki/xacro">
-
   <macro name="iai_table_1" params="name parent *origin">
-    <!-- LINKS -->
     <link name="${name}_main">
       <sphere_inertia radius="0" mass="0"/>
       <visual>
-        <origin xyz="0 0 0.3619" rpy="0 0 0" />
+        <origin xyz="0 0 0.3619" rpy="0 0 0"/>
         <geometry>
           <mesh filename="package://iai_kitchen/meshes/misc/big_table_1.stl"/>
         </geometry>
       </visual>
       <collision>
-        <origin xyz="0 0 0.3619" rpy="0 0 0" />
+        <origin xyz="0 0 0.3619" rpy="0 0 0"/>
         <geometry>
           <mesh filename="package://iai_kitchen/meshes/misc/big_table_1.obj"/>
         </geometry>
       </collision>
     </link>
-
-    <!-- JOINTS -->
     <joint name="${name}_main_joint" type="fixed">
-      <xacro:insert_block name="origin" />
+      <xacro:insert_block name="origin"/>
       <parent link="${parent}"/>
       <child link="${name}_main"/>
     </joint>
+  </macro>
+
+  <macro name="jokkmokk_table" params="name parent *origin">
+    <link name="${name}_main">
+      <sphere_inertia radius="0" mass="0"/>
+      <visual>
+        <origin xyz="0.0 0.0 0.35" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/jokkmokk/JokkmokkTable.obj"/>
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0.0 0.0 0.35" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/jokkmokk/JokkmokkTable.obj"/>
+        </geometry>
+      </collision>
+    </link>
+    <joint name="${name}_main_joint" type="fixed">
+      <xacro:insert_block name="origin"/>
+      <parent link="${parent}"/>
+      <child link="${name}_main"/>
+    </joint>
+  </macro>
+
+  <macro name="jokkmokk_chair" params="name parent *origin">
+    <link name="${name}_main">
+      <sphere_inertia radius="0" mass="0"/>
+      <visual>
+        <origin xyz="0.0 0.0 0.5535" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/jokkmokk/JokkmokkChair.obj"/>
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0.0 0.0 0.5535" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://iai_kitchen/meshes/jokkmokk/JokkmokkChair.obj"/>
+        </geometry>
+      </collision>
+    </link>
+    <joint name="${name}_main_joint" type="fixed">
+      <xacro:insert_block name="origin"/>
+      <parent link="${parent}"/>
+      <child link="${name}_main"/>
+    </joint>
+  </macro>
+
+  <macro name="iai_dining_area" params="parent name *origin">
+    <link name="${name}_footprint">
+      <sphere_inertia radius="0" mass="0"/>
+    </link>
+    <joint name="${name}_footprint_joint" type="fixed">
+      <xacro:insert_block name="origin" />
+      <child link="${name}_footprint"/>
+      <parent link="${parent}"/>
+    </joint>
+    <jokkmokk_table name="${name}_jokkmokk_table" parent="${name}_footprint">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+    </jokkmokk_table>
+    <jokkmokk_chair name="${name}_jokkmokk_left_chair" parent="${name}_footprint">
+      <origin xyz="-1 0 0" rpy="0 0 0" />
+    </jokkmokk_chair>
+    <jokkmokk_chair name="${name}_jokkmokk_right_chair" parent="${name}_footprint">
+      <origin xyz="1 0 0" rpy="0 0 ${-pi}" />
+    </jokkmokk_chair>
   </macro>
 </robot>
