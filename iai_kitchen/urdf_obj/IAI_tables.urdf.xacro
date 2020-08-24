@@ -30,13 +30,13 @@
       <visual>
         <origin xyz="0.0 0.0 0.35" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://iai_kitchen/meshes/jokkmokk/JokkmokkTable.obj"/>
+          <mesh filename="package://iai_kitchen/meshes/jokkmokk/jokkmokkTable.stl"/>
         </geometry>
       </visual>
       <collision>
         <origin xyz="0.0 0.0 0.35" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://iai_kitchen/meshes/jokkmokk/JokkmokkTable.obj"/>
+          <mesh filename="package://iai_kitchen/meshes/jokkmokk/jokkmokkTable.stl"/>
         </geometry>
       </collision>
     </link>
@@ -53,13 +53,13 @@
       <visual>
         <origin xyz="0.0 0.0 0.5535" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://iai_kitchen/meshes/jokkmokk/JokkmokkChair.obj"/>
+          <mesh filename="package://iai_kitchen/meshes/jokkmokk/jokkmokkChair.stl"/>
         </geometry>
       </visual>
       <collision>
         <origin xyz="0.0 0.0 0.5535" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://iai_kitchen/meshes/jokkmokk/JokkmokkChair.obj"/>
+          <mesh filename="package://iai_kitchen/meshes/jokkmokk/jokkmokkChair.stl"/>
         </geometry>
       </collision>
     </link>
