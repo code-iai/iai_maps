@@ -46,7 +46,7 @@
   </iai_oven_area>
 
   <iai_kitchen_island name="kitchen_island" parent="room_link">
-    <origin xyz="-1.365 0.59 0" rpy="0 0 0" />
+    <origin xyz="-1.363 0.59 0" rpy="0 0 0" />
     <!-- <origin xyz="-2.1 -4.94 0" rpy="0 0 ${pi}" /> -->
   </iai_kitchen_island>
 

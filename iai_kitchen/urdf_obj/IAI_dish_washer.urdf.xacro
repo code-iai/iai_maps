@@ -95,13 +95,13 @@
     </xacro:unless>
   -->
     <joint name="${name}_door_handle_joint" type="fixed">
-      <origin xyz="0.09 -0.575 0.0" rpy="${-0.5*pi} 0 0" />
+      <origin xyz="0.085 -0.575 0.0" rpy="${-0.5*pi} 0 0" />
       <parent link="${name}_door"/>
       <child link="${name}_door_handle"/>
     </joint>
 
     <dishwasher_tray name="${name}_tray" parent="${name}_main">
-      <origin xyz="-0.10 0 0.15"/>
+      <origin xyz="-0.01 0 0.15"/>
     </dishwasher_tray>
 
   </macro>
@@ -207,7 +207,7 @@
     </joint>
 
     <tray_handle name="${name}_handle" parent="${name}_front_side">
-      <origin xyz="0.025 0 -0.05"/>
+      <origin xyz="0.04 0 -0.0"/>
     </tray_handle>
 
   </macro>
