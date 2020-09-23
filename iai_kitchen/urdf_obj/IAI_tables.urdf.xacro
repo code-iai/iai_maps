@@ -28,13 +28,13 @@
     <link name="${name}_main">
       <sphere_inertia radius="0" mass="0"/>
       <visual>
-        <origin xyz="0.0 0.0 0.35" rpy="0 0 0" />
+        <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
         <geometry>
           <mesh filename="package://iai_kitchen/meshes/jokkmokk/JokkmokkTable.obj"/>
         </geometry>
       </visual>
       <collision>
-        <origin xyz="0.0 0.0 0.35" rpy="0 0 0" />
+        <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
         <geometry>
           <mesh filename="package://iai_kitchen/meshes/jokkmokk/JokkmokkTable.obj"/>
         </geometry>
@@ -44,6 +44,7 @@
       <xacro:insert_block name="origin"/>
       <parent link="${parent}"/>
       <child link="${name}_main"/>
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
     </joint>
   </macro>
 
@@ -51,13 +52,13 @@
     <link name="${name}_main">
       <sphere_inertia radius="0" mass="0"/>
       <visual>
-        <origin xyz="0.0 0.0 0.5535" rpy="0 0 0" />
+        <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
         <geometry>
           <mesh filename="package://iai_kitchen/meshes/jokkmokk/JokkmokkChair.obj"/>
         </geometry>
       </visual>
       <collision>
-        <origin xyz="0.0 0.0 0.5535" rpy="0 0 0" />
+        <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
         <geometry>
           <mesh filename="package://iai_kitchen/meshes/jokkmokk/JokkmokkChair.obj"/>
         </geometry>
@@ -80,13 +81,13 @@
       <parent link="${parent}"/>
     </joint>
     <jokkmokk_table name="${name}_jokkmokk_table" parent="${name}_footprint">
-      <origin xyz="0 0 0" rpy="0 0 0" />
+      <origin xyz="0 0 0.35" rpy="0 0 0" />
     </jokkmokk_table>
     <jokkmokk_chair name="${name}_jokkmokk_left_chair" parent="${name}_footprint">
-      <origin xyz="-1 0 0" rpy="0 0 0" />
+      <origin xyz="-1 0 0.5535" rpy="0 0 0" />
     </jokkmokk_chair>
     <jokkmokk_chair name="${name}_jokkmokk_right_chair" parent="${name}_footprint">
-      <origin xyz="1 0 0" rpy="0 0 ${-pi}" />
+      <origin xyz="1 0 0.5535" rpy="0 0 ${-pi}" />
     </jokkmokk_chair>
   </macro>
 </robot>
