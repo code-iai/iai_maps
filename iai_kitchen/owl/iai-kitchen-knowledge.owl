@@ -28,21 +28,7 @@
 
 
     <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#Transformation"/>
-    <owl:DatatypeProperty rdf:about="http://knowrob.org/kb/knowrob.owl#quaternion"/>
-    <owl:DatatypeProperty rdf:about="http://knowrob.org/kb/knowrob.owl#translation"/>
 
-    <!-- GENERAL DEFS -->
-    <owl:ObjectProperty rdf:about="http://knowrob.org/kb/knowrob.owl#describedInMap"/>
-    <owl:DatatypeProperty rdf:about="http://knowrob.org/kb/knowrob.owl#depthOfObject"/>
-    <owl:DatatypeProperty rdf:about="http://knowrob.org/kb/knowrob.owl#heightOfObject"/>
-    <owl:DatatypeProperty rdf:about="http://knowrob.org/kb/knowrob.owl#widthOfObject"/>
-    <owl:DatatypeProperty rdf:about="http://knowrob.org/kb/knowrob.owl#vectorX"/>
-    <owl:DatatypeProperty rdf:about="http://knowrob.org/kb/knowrob.owl#vectorY"/>
-    <owl:DatatypeProperty rdf:about="http://knowrob.org/kb/knowrob.owl#vectorZ"/>
-    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#SemanticEnvironmentMap"/>
-    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#SemanticMapPerception"/>
-    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#TimePoint"/>
-    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#Vector"/>
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
