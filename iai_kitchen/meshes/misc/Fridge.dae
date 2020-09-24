@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
     <asset>
-        <contributor>
-        <author>Benjamin Brieber</author>
-        <authoring_tool>Blender 2.73.0 commit date:2015-01-20, commit time:18:16, hash:bbf09d9</authoring_tool>
-        </contributor>
-        <created>2015-03-19T10:54:11</created>
-        <modified>2015-03-19T10:54:11</modified>
-        <unit name="meter" meter="1"/>
-        <up_axis>Z_UP</up_axis>
+    	<contributor>
+	      	<author>Blender User</author>
+	      	<authoring_tool>Blender 2.79.0 commit date:2020-09-24, commit time:18:16</authoring_tool>
+    	</contributor>
+    	<created>2020-09-24T10:54:11</created>
+    	<modified>2020-09-24T10:54:11</modified>
+    	<unit name="meter" meter="1"/>
+    	<up_axis>Z_UP</up_axis>
     </asset>
     <library_images/>
     <library_effects>
