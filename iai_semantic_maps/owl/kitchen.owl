@@ -259,11 +259,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#IAIDishWasherTray -->
-
-    <owl:Class rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#IAIDishWasherTray">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#DesignedComponent"/>
-    </owl:Class>
+    
 
 
     <!-- http://knowrob.org/kb/IAI-kitchen.owl#Knob -->
@@ -283,10 +279,66 @@
     
 
 
+    <!-- http://knowrob.org/kb/knowrob.owl#Bowl-Eating -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#Bowl-Eating">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Bowl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Bowl-Mixing -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#Bowl-Mixing">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Bowl"/>
+    </owl:Class>
+    
+
+
     <!-- http://knowrob.org/kb/knowrob.owl#ContainerLid -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#ContainerLid">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#DesignedFurniture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#CookingVessel -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#CookingVessel">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#DesignedContainer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#DinnerPlate -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#DinnerPlate">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Plate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#DrinkingBottle -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#DrinkingBottle">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Bottle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#DrinkingMug -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#DrinkingMug">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Crockery"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#HeatingElement -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#HeatingElement">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Appliance"/>
     </owl:Class>
     
 
@@ -315,59 +367,53 @@
     
 
 
+    <!-- http://knowrob.org/kb/knowrob.owl#IAIDishWasherTray -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIDishWasherTray">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#DesignedComponent"/>
+    </owl:Class>
+    
+
+
     <!-- http://knowrob.org/kb/knowrob.owl#IAIDrawer_100_29 -->
 
-    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIDrawer_100_29">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Drawer"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIDrawer_100_29"/>
     
 
 
     <!-- http://knowrob.org/kb/knowrob.owl#IAIDrawer_60_14 -->
 
-    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIDrawer_60_14">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Drawer"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIDrawer_60_14"/>
     
 
 
     <!-- http://knowrob.org/kb/knowrob.owl#IAIDrawer_60_29 -->
 
-    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIDrawer_60_29">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Drawer"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIDrawer_60_29"/>
     
 
 
     <!-- http://knowrob.org/kb/knowrob.owl#IAIDrawer_60_58 -->
 
-    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIDrawer_60_58">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Drawer"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIDrawer_60_58"/>
     
 
 
     <!-- http://knowrob.org/kb/knowrob.owl#IAIDrawer_80_14 -->
 
-    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIDrawer_80_14">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Drawer"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIDrawer_80_14"/>
     
 
 
     <!-- http://knowrob.org/kb/knowrob.owl#IAIDrawer_80_29 -->
 
-    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIDrawer_80_29">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Drawer"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIDrawer_80_29"/>
     
 
 
     <!-- http://knowrob.org/kb/knowrob.owl#IAIDrawer_Vert -->
 
-    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIDrawer_Vert">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Drawer"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIDrawer_Vert"/>
     
 
 
@@ -501,25 +547,19 @@
 
     <!-- http://knowrob.org/kb/knowrob.owl#IAIOvenPanel -->
 
-    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIOvenPanel">
-        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/IAI-kitchen.owl#Panel"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIOvenPanel"/>
     
 
 
     <!-- http://knowrob.org/kb/knowrob.owl#IAIPanel100 -->
 
-    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIPanel100">
-        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/IAI-kitchen.owl#Panel"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIPanel100"/>
     
 
 
     <!-- http://knowrob.org/kb/knowrob.owl#IAIPanel60 -->
 
-    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIPanel60">
-        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/IAI-kitchen.owl#Panel"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIPanel60"/>
     
 
 
@@ -541,9 +581,7 @@
 
     <!-- http://knowrob.org/kb/knowrob.owl#IAIThrashDrawer -->
 
-    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIThrashDrawer">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Drawer"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#IAIThrashDrawer"/>
     
 
 
@@ -551,6 +589,22 @@
 
     <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#Oven">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Appliance"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#DesignedContainer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#PancakeMaker -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#PancakeMaker">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Appliance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Pitcher -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#Pitcher">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#DesignedContainer"/>
     </owl:Class>
     
@@ -666,463 +720,86 @@
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#IAIKitchenMap_PM580j"/>
     
 
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_room_link -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_room_link">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIKitchen"/>
-        <knowrob:hasVisual rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</knowrob:hasVisual>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room_link</urdf:hasBaseLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_footprint</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_footprint</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_footprint</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fridge_area_footprint</urdf:hasEndLinkName>
-<!--        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dining_area_footprint</urdf:hasEndLinkName>-->
-<!--        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">table_area_main</urdf:hasEndLinkName>-->
-<!--        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_walls</urdf:hasEndLinkName>-->
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_fridge_ceiling -->
 
-        <srdl2-comp:hasBodyPart rdf:resource="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_fridge_area"/>
-        <srdl2-comp:hasBodyPart rdf:resource="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island"/>
-        <srdl2-comp:hasBodyPart rdf:resource="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_area"/>
-        <srdl2-comp:hasBodyPart rdf:resource="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area"/>
-    </owl:NamedIndividual>
-
-    <!-- sink area instances -->
-
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_footprint -->
-
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_footprint">
-        <knowrob:hasVisual rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</knowrob:hasVisual>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_footprint</urdf:hasBaseLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area</urdf:hasEndLinkName>
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_fridge_ceiling">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIFridge"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_fridge_ceiling</urdf:hasBaseLinkName>
         <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
         <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
     </owl:NamedIndividual>
+    
 
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAISinkArea"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area</urdf:hasBaseLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_surface</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_sink</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_right_panel</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_trash_drawer_main</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_left_upper_drawer_main</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_left_middle_drawer_main</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_left_bottom_drawer_main</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_dish_washer_main</urdf:hasEndLinkName>
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_fridge_door_block -->
 
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_fridge_door_block">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIFridgeDoor"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_fridge_door_block</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_fridge_door_block_left_bar</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_fridge_door_block_right_bar</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_fridge_door_block_top_bar</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_fridge_door_shelf1_bottom</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_fridge_door_shelf2_bottom</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_fridge_door_shelf3_bottom</urdf:hasEndLinkName>
         <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
         <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
     </owl:NamedIndividual>
+    
 
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_surface -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_surface">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAISink"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_surface</urdf:hasBaseLinkName>
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_fridge_door_shelf1_bottom -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_fridge_door_shelf1_bottom">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIFridgeDoor"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_fridge_door_shelf1_bottom</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_fridge_door_shelf1_front_side</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_fridge_door_shelf1_left_side</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_fridge_door_shelf1_right_side</urdf:hasEndLinkName>
         <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
         <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
     </owl:NamedIndividual>
+    
 
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_sink -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_sink">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAISink"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_sink</urdf:hasBaseLinkName>
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_fridge_door_shelf2_bottom -->
 
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_fridge_door_shelf2_bottom">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIFridgeDoor"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_fridge_door_shelf2_bottom</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_fridge_door_shelf2_front_side</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_fridge_door_shelf2_left_side</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_fridge_door_shelf2_right_side</urdf:hasEndLinkName>
         <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
         <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
     </owl:NamedIndividual>
+    
 
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_right_panel -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_right_panel">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIPanel60"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_right_panel</urdf:hasBaseLinkName>
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_fridge_door_shelf3_bottom -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_fridge_door_shelf3_bottom">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIFridgeDoor"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_fridge_door_shelf3_bottom</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_fridge_door_shelf3_front_side</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_fridge_door_shelf3_left_side</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_fridge_door_shelf3_right_side</urdf:hasEndLinkName>
         <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
         <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
     </owl:NamedIndividual>
+    
 
-     <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_trash_drawer_main -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_trash_drawer_main">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIThrashDrawer"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_trash_drawer_main</urdf:hasBaseLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_trash_drawer_handle</urdf:hasEndLinkName>
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_fridge_main_middle_level -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_fridge_main_middle_level">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIFridge"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_fridge_main_middle_level</urdf:hasBaseLinkName>
         <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
         <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
     </owl:NamedIndividual>
-
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_trash_drawer_handle -->
-
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_trash_drawer_handle">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIHandle60"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_trash_drawer_handle</urdf:hasBaseLinkName>
-        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
-        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
-    </owl:NamedIndividual>
-
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_left_upper_drawer_main -->
-
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_left_upper_drawer_main">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIDrawer_80_14"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_left_upper_drawer_main</urdf:hasBaseLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_left_upper_drawer_handle</urdf:hasEndLinkName>
-        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
-        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
-    </owl:NamedIndividual>
-
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_left_upper_drawer_handle -->
-
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_left_upper_drawer_handle">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIHandle80"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_left_upper_drawer_handle</urdf:hasBaseLinkName>
-        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
-        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
-    </owl:NamedIndividual>
-
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_left_middle_drawer_main -->
-
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_left_middle_drawer_main">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIDrawer_80_29"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_left_middle_drawer_main</urdf:hasBaseLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_left_middle_drawer_handle</urdf:hasEndLinkName>
-        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
-        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
-    </owl:NamedIndividual>
-
-
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_left_middle_drawer_handle -->
-
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_left_middle_drawer_handle">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIHandle80"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_left_middle_drawer_handle</urdf:hasBaseLinkName>
-        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
-        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
-    </owl:NamedIndividual>
-
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_left_bottom_drawer_main -->
-
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_left_bottom_drawer_main">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIDrawer_80_29"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_left_bottom_drawer_main</urdf:hasBaseLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_left_bottom_drawer_handle</urdf:hasEndLinkName>
-        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
-        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
-    </owl:NamedIndividual>
-
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_left_bottom_drawer_handle -->
-
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_left_bottom_drawer_handle">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIHandle80"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_left_bottom_drawer_handle</urdf:hasBaseLinkName>
-        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
-        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
-    </owl:NamedIndividual>
-
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_dish_washer_main -->
-
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_dish_washer_main">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIDishWasher"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_dish_washer_main</urdf:hasBaseLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_dish_washer_door</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_dish_washer_tray_bottom</urdf:hasEndLinkName>
-        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
-        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
-    </owl:NamedIndividual>
-
-
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_dish_washer_door -->
-
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_dish_washer_door">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIDishWasherDoor"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_dish_washer_door</urdf:hasBaseLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_dish_washer_door_handle</urdf:hasEndLinkName>
-        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
-        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
-    </owl:NamedIndividual>
-
-
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_dish_washer_door_handle -->
-
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_dish_washer_door_handle">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIHandle60"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_dish_washer_door_handle</urdf:hasBaseLinkName>
-        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
-        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
-    </owl:NamedIndividual>
-
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_dish_washer_tray_bottom -->
-
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_dish_washer_tray_bottom">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIDishWasherTray"/>
-            <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_dish_washer_tray_bottom</urdf:hasBaseLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_dish_washer_tray_left_side</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_dish_washer_tray_right_side</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_dish_washer_tray_back_side</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_dish_washer_tray_front_side</urdf:hasEndLinkName>
-        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
-        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
-    </owl:NamedIndividual>
-
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_dish_washer_tray_left_side -->
-
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_dish_washer_tray_left_side">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIDishWasherTray"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_dish_washer_tray_left_side</urdf:hasBaseLinkName>
-        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
-        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
-    </owl:NamedIndividual>
-
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_dish_washer_tray_right_side -->
-
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_dish_washer_tray_right_side">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIDishWasherTray"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_dish_washer_tray_right_side</urdf:hasBaseLinkName>
-        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
-        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
-    </owl:NamedIndividual>
-
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_dish_washer_tray_back_side -->
-
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_dish_washer_tray_back_side">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIDishWasherTray"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_dish_washer_tray_back_side</urdf:hasBaseLinkName>
-        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
-        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
-    </owl:NamedIndividual>
-
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_dish_washer_tray_front_side -->
-
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_dish_washer_tray_front_side">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIDishWasherTray"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_dish_washer_tray_front_side</urdf:hasBaseLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_dish_washer_tray_handle_front_side</urdf:hasEndLinkName>
-
-        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
-        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
-    </owl:NamedIndividual>
-
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_dish_washer_tray_handle_right_side -->
-
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_dish_washer_tray_handle_right_side">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIDishWasherTray"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_dish_washer_tray_handle_right_side</urdf:hasBaseLinkName>
-        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
-        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
-    </owl:NamedIndividual>
-
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_dish_washer_tray_handle_left_side -->
-
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_dish_washer_tray_handle_left_side">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIDishWasherTray"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_dish_washer_tray_handle_left_side</urdf:hasBaseLinkName>
-        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
-        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
-    </owl:NamedIndividual>
-
-    <!-- end of sink area -->
-
-    <!-- kitchen_island instances -->
-
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_footprint -->
-
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_footprint">
-        <knowrob:hasVisual rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</knowrob:hasVisual>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_footprint</urdf:hasBaseLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island</urdf:hasEndLinkName>
-        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
-        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
-    </owl:NamedIndividual>
-
-
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island -->
-
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIKitchenIsland"/>
-
-        <dul:hasComponent rdf:resource="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_stove"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island</urdf:hasBaseLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_surface</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_left_lower_drawer_main</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_left_panel</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_left_upper_drawer_main</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_middle_lower_drawer_main</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_middle_panel</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_middle_upper_drawer_main</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_right_lower_drawer_main</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_right_panel</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_right_upper_drawer_main</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_stove</urdf:hasEndLinkName>
-        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
-        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
-    </owl:NamedIndividual>
-
-
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_stove -->
-
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_stove">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIKitchenIslandStove"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_stove</urdf:hasBaseLinkName>
-        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
-        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
-    </owl:NamedIndividual>
-
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_left_upper_drawer_main -->
-
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_left_upper_drawer_main">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIDrawer_60_29"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_left_upper_drawer_main</urdf:hasBaseLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_left_upper_drawer_handle</urdf:hasEndLinkName>
-        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
-        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
-    </owl:NamedIndividual>
-
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_left_upper_drawer_handle -->
-
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_left_upper_drawer_handle">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIHandle60"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_left_upper_drawer_handle</urdf:hasBaseLinkName>
-        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
-        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
-    </owl:NamedIndividual>
-
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_left_lower_drawer_main -->
-
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_left_lower_drawer_main">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIDrawer_60_29"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_left_lower_drawer_main</urdf:hasBaseLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_left_lower_drawer_handle</urdf:hasEndLinkName>
-        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
-        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
-    </owl:NamedIndividual>
-
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_left_lower_drawer_handle -->
-
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_left_lower_drawer_handle">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIHandle60"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_left_lower_drawer_handle</urdf:hasBaseLinkName>
-        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
-        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
-    </owl:NamedIndividual>
-
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_middle_panel -->
-
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_middle_panel">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIPanel100"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_middle_panel</urdf:hasBaseLinkName>
-        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
-        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
-    </owl:NamedIndividual>
-
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_middle_upper_drawer_main -->
-
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_middle_upper_drawer_main">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIDrawer_100_29"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_middle_upper_drawer_main</urdf:hasBaseLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_middle_upper_drawer_handle</urdf:hasEndLinkName>
-        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
-        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
-    </owl:NamedIndividual>
-
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_middle_upper_drawer_handle -->
-
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_middle_upper_drawer_handle">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIHandle100"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_middle_upper_drawer_handle</urdf:hasBaseLinkName>
-        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
-        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
-    </owl:NamedIndividual>
-
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_right_panel -->
-
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_right_panel">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIPanel60"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_right_panel</urdf:hasBaseLinkName>
-        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
-        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
-    </owl:NamedIndividual>
-
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_right_upper_drawer_main -->
-
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_right_upper_drawer_main">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIDrawer_60_29"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_right_upper_drawer_main</urdf:hasBaseLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_right_upper_drawer_handle</urdf:hasEndLinkName>
-        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
-        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
-    </owl:NamedIndividual>
-
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_right_upper_drawer_handle -->
-
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_right_upper_drawer_handle">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIHandle60"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_right_upper_drawer_handle</urdf:hasBaseLinkName>
-        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
-        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
-    </owl:NamedIndividual>
-
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_right_lower_drawer_main -->
-
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_right_lower_drawer_main">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIDrawer_60_29"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_right_lower_drawer_main</urdf:hasBaseLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_right_lower_drawer_handle</urdf:hasEndLinkName>
-        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
-        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
-    </owl:NamedIndividual>
-
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_right_lower_drawer_handle -->
-
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_right_lower_drawer_handle">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIHandle60"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_right_lower_drawer_handle</urdf:hasBaseLinkName>
-        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
-        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
-    </owl:NamedIndividual>
-
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_left_panel -->
-
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_left_panel">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIPanel60"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_left_panel</urdf:hasBaseLinkName>
-        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
-        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
-    </owl:NamedIndividual>
-
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_middle_lower_drawer_main -->
-
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_middle_lower_drawer_main">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIDrawer_100_29"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_middle_lower_drawer_main</urdf:hasBaseLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_middle_lower_drawer_handle</urdf:hasEndLinkName>
-        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
-        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
-    </owl:NamedIndividual>
-
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_middle_lower_drawer_handle -->
-
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_middle_lower_drawer_handle">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIHandle100"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_middle_lower_drawer_handle</urdf:hasBaseLinkName>
-        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
-        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
-    </owl:NamedIndividual>
-
-    <!-- kitchen area ended -->
-
-
-    <!-- fridge area instances -->
-
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_fridge_area_footprint -->
-
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_fridge_area_footprint">
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fridge_area_footprint</urdf:hasBaseLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fridge_area</urdf:hasEndLinkName>
-        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
-        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
-    </owl:NamedIndividual>
+    
 
 
     <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_fridge_area -->
@@ -1135,6 +812,30 @@
         <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
         <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_fridge_area_footprint -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_fridge_area_footprint">
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fridge_area_footprint</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fridge_area</urdf:hasEndLinkName>
+        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
+        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_fridge_area_lower_drawer_handle -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_fridge_area_lower_drawer_handle">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIHandle60"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fridge_area_lower_drawer_handle</urdf:hasBaseLinkName>
+        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
+        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
+    </owl:NamedIndividual>
+    
+
 
     <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_fridge_area_lower_drawer_main -->
 
@@ -1145,31 +846,7 @@
         <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
         <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
     </owl:NamedIndividual>
-
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_fridge_area_lower_drawer_handle -->
-
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_fridge_area_lower_drawer_handle">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIHandle60"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fridge_area_lower_drawer_handle</urdf:hasBaseLinkName>
-        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
-        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
-    </owl:NamedIndividual>
-
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_fridge_main -->
-
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_fridge_main">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIFridge"/>
-        <dul:hasComponent rdf:resource="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_fridge_door"/>
-        <dul:hasComponent rdf:resource="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_fridge_door_handle"/>
-        <dul:hasComponent rdf:resource="http://knowrob.org/kb/IAI-kitchen.owl#iai_fridge_main_middle_level"/>
-        <dul:hasComponent rdf:resource="http://knowrob.org/kb/IAI-kitchen.owl#iai_fridge_ceiling"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_fridge_main</urdf:hasBaseLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_fridge_door</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_fridge_main_middle_level</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_fridge_ceiling</urdf:hasEndLinkName>
-        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
-        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
-    </owl:NamedIndividual>
+    
 
 
     <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_fridge_door -->
@@ -1181,12 +858,12 @@
         <knowrob:heightOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.72</knowrob:heightOfObject>
         <knowrob:widthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.59</knowrob:widthOfObject>
         <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_fridge_door</urdf:hasBaseLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_fridge_door_handle</urdf:hasEndLinkName>
         <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_fridge_door_block</urdf:hasEndLinkName>
-
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_fridge_door_handle</urdf:hasEndLinkName>
         <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
         <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
     </owl:NamedIndividual>
+    
 
 
     <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_fridge_door_handle -->
@@ -1196,88 +873,265 @@
         <knowrob:depthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.07</knowrob:depthOfObject>
         <knowrob:heightOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.85</knowrob:heightOfObject>
         <knowrob:widthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.01</knowrob:widthOfObject>
-        <urdf:hasURDFName>iai_fridge_door_handle</urdf:hasURDFName>
         <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_fridge_door_handle</urdf:hasBaseLinkName>
+        <urdf:hasURDFName>iai_fridge_door_handle</urdf:hasURDFName>
         <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
         <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
     </owl:NamedIndividual>
+    
 
 
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_fridge_door_block -->
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_fridge_main -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_fridge_door_block">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIFridgeDoor"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_fridge_door_block</urdf:hasBaseLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_fridge_door_block_right_bar</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_fridge_door_block_left_bar</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_fridge_door_block_top_bar</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_fridge_door_shelf1_bottom</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_fridge_door_shelf2_bottom</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_fridge_door_shelf3_bottom</urdf:hasEndLinkName>
-        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
-        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
-    </owl:NamedIndividual>
-
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_fridge_door_shelf1_bottom -->
-
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_fridge_door_shelf1_bottom">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIFridgeDoor"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_fridge_door_shelf1_bottom</urdf:hasBaseLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_fridge_door_shelf1_left_side</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_fridge_door_shelf1_right_side</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_fridge_door_shelf1_front_side</urdf:hasEndLinkName>
-        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
-        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
-    </owl:NamedIndividual>
-
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_fridge_door_shelf2_bottom -->
-
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_fridge_door_shelf2_bottom">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIFridgeDoor"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_fridge_door_shelf2_bottom</urdf:hasBaseLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_fridge_door_shelf2_left_side</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_fridge_door_shelf2_right_side</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_fridge_door_shelf2_front_side</urdf:hasEndLinkName>
-        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
-        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
-    </owl:NamedIndividual>
-
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_fridge_door_shelf3_bottom -->
-
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_fridge_door_shelf3_bottom">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIFridgeDoor"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_fridge_door_shelf3_bottom</urdf:hasBaseLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_fridge_door_shelf3_left_side</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_fridge_door_shelf3_right_side</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_fridge_door_shelf3_front_side</urdf:hasEndLinkName>
-        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
-        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
-    </owl:NamedIndividual>
-
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_fridge_main_middle_level -->
-
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_fridge_main_middle_level">
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_fridge_main">
         <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIFridge"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_fridge_main_middle_level</urdf:hasBaseLinkName>
+        <dul:hasComponent rdf:resource="http://knowrob.org/kb/IAI-kitchen.owl#iai_fridge_ceiling"/>
+        <dul:hasComponent rdf:resource="http://knowrob.org/kb/IAI-kitchen.owl#iai_fridge_main_middle_level"/>
+        <dul:hasComponent rdf:resource="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_fridge_door"/>
+        <dul:hasComponent rdf:resource="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_fridge_door_handle"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_fridge_main</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_fridge_ceiling</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_fridge_door</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_fridge_main_middle_level</urdf:hasEndLinkName>
         <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
         <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
     </owl:NamedIndividual>
+    
 
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_fridge_ceiling -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_fridge_ceiling">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIFridge"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_fridge_ceiling</urdf:hasBaseLinkName>
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIKitchenIsland"/>
+        <dul:hasComponent rdf:resource="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_stove"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_left_lower_drawer_main</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_left_panel</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_left_upper_drawer_main</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_middle_lower_drawer_main</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_middle_panel</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_middle_upper_drawer_main</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_right_lower_drawer_main</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_right_panel</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_right_upper_drawer_main</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_stove</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_surface</urdf:hasEndLinkName>
         <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
         <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
     </owl:NamedIndividual>
+    
 
 
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_footprint -->
 
-    <!-- iai fridge ended -->
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_footprint">
+        <knowrob:hasVisual rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</knowrob:hasVisual>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_footprint</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island</urdf:hasEndLinkName>
+        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
+        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
+    </owl:NamedIndividual>
+    
 
 
-    <!-- Oven area instances -->
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_left_lower_drawer_handle -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_left_lower_drawer_handle">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIHandle60"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_left_lower_drawer_handle</urdf:hasBaseLinkName>
+        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
+        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_left_lower_drawer_main -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_left_lower_drawer_main">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIDrawer_60_29"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_left_lower_drawer_main</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_left_lower_drawer_handle</urdf:hasEndLinkName>
+        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
+        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_left_panel -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_left_panel">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIPanel60"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_left_panel</urdf:hasBaseLinkName>
+        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
+        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_left_upper_drawer_handle -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_left_upper_drawer_handle">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIHandle60"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_left_upper_drawer_handle</urdf:hasBaseLinkName>
+        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
+        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_left_upper_drawer_main -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_left_upper_drawer_main">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIDrawer_60_29"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_left_upper_drawer_main</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_left_upper_drawer_handle</urdf:hasEndLinkName>
+        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
+        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_middle_lower_drawer_handle -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_middle_lower_drawer_handle">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIHandle100"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_middle_lower_drawer_handle</urdf:hasBaseLinkName>
+        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
+        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_middle_lower_drawer_main -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_middle_lower_drawer_main">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIDrawer_100_29"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_middle_lower_drawer_main</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_middle_lower_drawer_handle</urdf:hasEndLinkName>
+        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
+        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_middle_panel -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_middle_panel">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIPanel100"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_middle_panel</urdf:hasBaseLinkName>
+        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
+        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_middle_upper_drawer_handle -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_middle_upper_drawer_handle">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIHandle100"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_middle_upper_drawer_handle</urdf:hasBaseLinkName>
+        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
+        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_middle_upper_drawer_main -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_middle_upper_drawer_main">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIDrawer_100_29"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_middle_upper_drawer_main</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_middle_upper_drawer_handle</urdf:hasEndLinkName>
+        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
+        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_right_lower_drawer_handle -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_right_lower_drawer_handle">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIHandle60"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_right_lower_drawer_handle</urdf:hasBaseLinkName>
+        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
+        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_right_lower_drawer_main -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_right_lower_drawer_main">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIDrawer_60_29"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_right_lower_drawer_main</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_right_lower_drawer_handle</urdf:hasEndLinkName>
+        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
+        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_right_panel -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_right_panel">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIPanel60"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_right_panel</urdf:hasBaseLinkName>
+        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
+        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_right_upper_drawer_handle -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_right_upper_drawer_handle">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIHandle60"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_right_upper_drawer_handle</urdf:hasBaseLinkName>
+        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
+        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_right_upper_drawer_main -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_right_upper_drawer_main">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIDrawer_60_29"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_right_upper_drawer_main</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_right_upper_drawer_handle</urdf:hasEndLinkName>
+        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
+        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_stove -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island_stove">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIKitchenIslandStove"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_stove</urdf:hasBaseLinkName>
+        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
+        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_area -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_area">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIOvenArea"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_left_drawer_main</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_middle_lower_drawer_main</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_middle_upper_drawer_main</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_right_drawer_main</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_oven_main</urdf:hasEndLinkName>
+        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
+        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_area_footprint -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_area_footprint">
@@ -1286,22 +1140,210 @@
         <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
         <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
     </owl:NamedIndividual>
+    
 
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_area -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_area">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIOvenArea"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area</urdf:hasBaseLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_oven_main</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_middle_upper_drawer_main</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_middle_lower_drawer_main</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_left_drawer_main</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_right_drawer_main</urdf:hasEndLinkName>
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_area_left_drawer_handle -->
 
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_area_left_drawer_handle">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIHandleVert"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_left_drawer_handle</urdf:hasBaseLinkName>
         <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
         <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
     </owl:NamedIndividual>
     
+
+
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_area_left_drawer_main -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_area_left_drawer_main">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIDrawer_Vert"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_left_drawer_main</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_left_drawer_barrier_0_back_link</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_left_drawer_barrier_0_left_link</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_left_drawer_barrier_0_right_link</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_left_drawer_barrier_1_back_link</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_left_drawer_barrier_1_left_link</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_left_drawer_barrier_1_right_link</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_left_drawer_barrier_2_back_link</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_left_drawer_barrier_2_left_link</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_left_drawer_barrier_2_right_link</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_left_drawer_barrier_3_back_link</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_left_drawer_barrier_3_left_link</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_left_drawer_barrier_3_right_link</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_left_drawer_board_0_link</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_left_drawer_board_1_link</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_left_drawer_board_2_link</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_left_drawer_board_3_link</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_left_drawer_handle</urdf:hasEndLinkName>
+        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
+        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_area_middle_lower_drawer_handle -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_area_middle_lower_drawer_handle">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIHandle60"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_middle_lower_drawer_handle</urdf:hasBaseLinkName>
+        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
+        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_area_middle_lower_drawer_main -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_area_middle_lower_drawer_main">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIDrawer_60_58"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_middle_lower_drawer_main</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_middle_lower_drawer_handle</urdf:hasEndLinkName>
+        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
+        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_area_middle_upper_drawer_handle -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_area_middle_upper_drawer_handle">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIHandle60"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_middle_upper_drawer_handle</urdf:hasBaseLinkName>
+        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
+        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_area_middle_upper_drawer_main -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_area_middle_upper_drawer_main">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIDrawer_60_14"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_middle_upper_drawer_main</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_middle_upper_drawer_handle</urdf:hasEndLinkName>
+        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
+        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_area_right_drawer_handle -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_area_right_drawer_handle">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIHandleVert"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_right_drawer_handle</urdf:hasBaseLinkName>
+        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
+        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_area_right_drawer_main -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_area_right_drawer_main">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIDrawer_Vert"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_right_drawer_main</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_right_drawer_barrier_0_back_link</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_right_drawer_barrier_0_left_link</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_right_drawer_barrier_0_right_link</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_right_drawer_barrier_1_back_link</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_right_drawer_barrier_1_left_link</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_right_drawer_barrier_1_right_link</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_right_drawer_barrier_2_back_link</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_right_drawer_barrier_2_left_link</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_right_drawer_barrier_2_right_link</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_right_drawer_barrier_3_back_link</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_right_drawer_barrier_3_left_link</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_right_drawer_barrier_3_right_link</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_right_drawer_board_0_link</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_right_drawer_board_1_link</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_right_drawer_board_2_link</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_right_drawer_board_3_link</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_right_drawer_handle</urdf:hasEndLinkName>
+        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
+        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_oven_door -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_oven_door">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIOvenDoor"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_oven_door</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_oven_door_handle</urdf:hasEndLinkName>
+        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
+        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_oven_door_handle -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_oven_door_handle">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIHandle60"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_oven_door_handle</urdf:hasBaseLinkName>
+        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
+        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_oven_knob_oven -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_oven_knob_oven">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIOvenKnob"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_oven_knob_oven</urdf:hasBaseLinkName>
+        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
+        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_oven_knob_stove_1 -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_oven_knob_stove_1">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIOvenKnob"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_oven_knob_stove_1</urdf:hasBaseLinkName>
+        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
+        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_oven_knob_stove_2 -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_oven_knob_stove_2">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIOvenKnob"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_oven_knob_stove_2</urdf:hasBaseLinkName>
+        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
+        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_oven_knob_stove_3 -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_oven_knob_stove_3">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIOvenKnob"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_oven_knob_stove_3</urdf:hasBaseLinkName>
+        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
+        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_oven_knob_stove_4 -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_oven_knob_stove_4">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIOvenKnob"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_oven_knob_stove_4</urdf:hasBaseLinkName>
+        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
+        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
+    </owl:NamedIndividual>
+    
+
 
     <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_oven_main -->
 
@@ -1315,32 +1357,13 @@
         <dul:hasComponent rdf:resource="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_oven_knob_stove_3"/>
         <dul:hasComponent rdf:resource="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_oven_knob_stove_4"/>
         <dul:hasComponent rdf:resource="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_oven_panel"/>
-
         <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_oven_main</urdf:hasBaseLinkName>
         <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_oven_door</urdf:hasEndLinkName>
         <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_oven_panel</urdf:hasEndLinkName>
         <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
         <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
     </owl:NamedIndividual>
-
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_oven_door -->
-
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_oven_door">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIOvenDoor"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_oven_door</urdf:hasBaseLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_oven_door_handle</urdf:hasEndLinkName>
-        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
-        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
-    </owl:NamedIndividual>
-
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_oven_door_handle -->
-
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_oven_door_handle">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIHandle60"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_oven_door_handle</urdf:hasBaseLinkName>
-        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
-        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
-    </owl:NamedIndividual>
+    
 
 
     <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_oven_panel -->
@@ -1356,167 +1379,298 @@
         <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
         <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
     </owl:NamedIndividual>
+    
 
 
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_oven_knob_stove_1 -->
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_room_link -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_oven_knob_stove_1">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIOvenKnob"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_oven_knob_stove_1</urdf:hasBaseLinkName>
-        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
-        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_room_link">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIKitchen"/>
+        <knowrob:hasVisual rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</knowrob:hasVisual>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room_link</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fridge_area_footprint</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_footprint</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_footprint</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_footprint</urdf:hasEndLinkName>
+        <srdl2-comp:hasBodyPart rdf:resource="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_fridge_area"/>
+        <srdl2-comp:hasBodyPart rdf:resource="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island"/>
+        <srdl2-comp:hasBodyPart rdf:resource="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_area"/>
+        <srdl2-comp:hasBodyPart rdf:resource="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area"/>
     </owl:NamedIndividual>
-
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_oven_knob_stove_2 -->
-
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_oven_knob_stove_2">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIOvenKnob"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_oven_knob_stove_2</urdf:hasBaseLinkName>
-        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
-        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
-    </owl:NamedIndividual>
-
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_oven_knob_stove_3 -->
-
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_oven_knob_stove_3">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIOvenKnob"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_oven_knob_stove_3</urdf:hasBaseLinkName>
-        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
-        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
-    </owl:NamedIndividual>
+    
 
 
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area -->
 
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_oven_knob_stove_4 -->
-
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_oven_knob_stove_4">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIOvenKnob"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_oven_knob_stove_4</urdf:hasBaseLinkName>
-        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
-        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
-    </owl:NamedIndividual>
-
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_oven_knob_oven -->
-
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_oven_knob_oven">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIOvenKnob"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_oven_knob_oven</urdf:hasBaseLinkName>
-        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
-        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
-    </owl:NamedIndividual>
-
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_area_middle_upper_drawer_main -->
-
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_area_middle_upper_drawer_main">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIDrawer_60_14"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_middle_upper_drawer_main</urdf:hasBaseLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_middle_upper_drawer_handle</urdf:hasEndLinkName>
-        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
-        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
-    </owl:NamedIndividual>
-
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_area_middle_upper_drawer_handle -->
-
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_area_middle_upper_drawer_handle">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIHandle60"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_middle_upper_drawer_handle</urdf:hasBaseLinkName>
-        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
-        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
-    </owl:NamedIndividual>
-
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_area_middle_lower_drawer_main -->
-
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_area_middle_lower_drawer_main">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIDrawer_60_58"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_middle_lower_drawer_main</urdf:hasBaseLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_middle_lower_drawer_handle</urdf:hasEndLinkName>
-        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
-        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
-    </owl:NamedIndividual>
-
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_area_middle_lower_drawer_handle -->
-
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_area_middle_lower_drawer_handle">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIHandle60"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_middle_lower_drawer_handle</urdf:hasBaseLinkName>
-        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
-        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
-    </owl:NamedIndividual>
-
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_area_left_drawer_main -->
-
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_area_left_drawer_main">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIDrawer_Vert"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_left_drawer_main</urdf:hasBaseLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_left_drawer_handle</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_left_drawer_board_0_link</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_left_drawer_barrier_0_right_link</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_left_drawer_barrier_0_left_link</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_left_drawer_barrier_0_back_link</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_left_drawer_board_1_link</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_left_drawer_barrier_1_right_link</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_left_drawer_barrier_1_left_link</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_left_drawer_barrier_1_back_link</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_left_drawer_board_2_link</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_left_drawer_barrier_2_right_link</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_left_drawer_barrier_2_left_link</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_left_drawer_barrier_2_back_link</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_left_drawer_board_3_link</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_left_drawer_barrier_3_right_link</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_left_drawer_barrier_3_left_link</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_left_drawer_barrier_3_back_link</urdf:hasEndLinkName>
-        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
-        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
-    </owl:NamedIndividual>
-
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_area_left_drawer_handle -->
-
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_area_left_drawer_handle">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIHandleVert"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_left_drawer_handle</urdf:hasBaseLinkName>
-        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
-        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
-    </owl:NamedIndividual>
-
-
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_area_right_drawer_main -->
-
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_area_right_drawer_main">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIDrawer_Vert"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_right_drawer_main</urdf:hasBaseLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_right_drawer_handle</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_right_drawer_board_0_link</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_right_drawer_barrier_0_right_link</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_right_drawer_barrier_0_left_link</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_right_drawer_barrier_0_back_link</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_right_drawer_board_1_link</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_right_drawer_barrier_1_right_link</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_right_drawer_barrier_1_left_link</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_right_drawer_barrier_1_back_link</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_right_drawer_board_2_link</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_right_drawer_barrier_2_right_link</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_right_drawer_barrier_2_left_link</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_right_drawer_barrier_2_back_link</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_right_drawer_board_3_link</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_right_drawer_barrier_3_right_link</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_right_drawer_barrier_3_left_link</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_right_drawer_barrier_3_back_link</urdf:hasEndLinkName>
-        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
-        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
-    </owl:NamedIndividual>
-
-    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_area_right_drawer_handle -->
-
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_area_right_drawer_handle">
-        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIHandleVert"/>
-        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_right_drawer_handle</urdf:hasBaseLinkName>
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAISinkArea"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_dish_washer_main</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_left_bottom_drawer_main</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_left_middle_drawer_main</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_left_upper_drawer_main</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_right_panel</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_sink</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_surface</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_trash_drawer_main</urdf:hasEndLinkName>
         <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
         <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
     </owl:NamedIndividual>
     
 
-    <!-- end of over_area_area -->
 
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_dish_washer_door -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_dish_washer_door">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIDishWasherDoor"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_dish_washer_door</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_dish_washer_door_handle</urdf:hasEndLinkName>
+        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
+        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_dish_washer_door_handle -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_dish_washer_door_handle">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIHandle60"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_dish_washer_door_handle</urdf:hasBaseLinkName>
+        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
+        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_dish_washer_main -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_dish_washer_main">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIDishWasher"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_dish_washer_main</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_dish_washer_door</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_dish_washer_tray_bottom</urdf:hasEndLinkName>
+        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
+        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_dish_washer_tray_back_side -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_dish_washer_tray_back_side">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIDishWasherTray"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_dish_washer_tray_back_side</urdf:hasBaseLinkName>
+        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
+        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_dish_washer_tray_bottom -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_dish_washer_tray_bottom">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIDishWasherTray"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_dish_washer_tray_bottom</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_dish_washer_tray_back_side</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_dish_washer_tray_front_side</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_dish_washer_tray_left_side</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_dish_washer_tray_right_side</urdf:hasEndLinkName>
+        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
+        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_dish_washer_tray_front_side -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_dish_washer_tray_front_side">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIDishWasherTray"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_dish_washer_tray_front_side</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_dish_washer_tray_handle_front_side</urdf:hasEndLinkName>
+        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
+        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_dish_washer_tray_handle_left_side -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_dish_washer_tray_handle_left_side">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIDishWasherTray"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_dish_washer_tray_handle_left_side</urdf:hasBaseLinkName>
+        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
+        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_dish_washer_tray_handle_right_side -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_dish_washer_tray_handle_right_side">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIDishWasherTray"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_dish_washer_tray_handle_right_side</urdf:hasBaseLinkName>
+        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
+        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_dish_washer_tray_left_side -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_dish_washer_tray_left_side">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIDishWasherTray"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_dish_washer_tray_left_side</urdf:hasBaseLinkName>
+        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
+        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_dish_washer_tray_right_side -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_dish_washer_tray_right_side">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIDishWasherTray"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_dish_washer_tray_right_side</urdf:hasBaseLinkName>
+        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
+        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_footprint -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_footprint">
+        <knowrob:hasVisual rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</knowrob:hasVisual>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_footprint</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area</urdf:hasEndLinkName>
+        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
+        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_left_bottom_drawer_handle -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_left_bottom_drawer_handle">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIHandle80"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_left_bottom_drawer_handle</urdf:hasBaseLinkName>
+        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
+        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_left_bottom_drawer_main -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_left_bottom_drawer_main">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIDrawer_80_29"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_left_bottom_drawer_main</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_left_bottom_drawer_handle</urdf:hasEndLinkName>
+        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
+        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_left_middle_drawer_handle -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_left_middle_drawer_handle">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIHandle80"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_left_middle_drawer_handle</urdf:hasBaseLinkName>
+        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
+        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_left_middle_drawer_main -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_left_middle_drawer_main">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIDrawer_80_29"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_left_middle_drawer_main</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_left_middle_drawer_handle</urdf:hasEndLinkName>
+        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
+        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_left_upper_drawer_handle -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_left_upper_drawer_handle">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIHandle80"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_left_upper_drawer_handle</urdf:hasBaseLinkName>
+        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
+        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_left_upper_drawer_main -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_left_upper_drawer_main">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIDrawer_80_14"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_left_upper_drawer_main</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_left_upper_drawer_handle</urdf:hasEndLinkName>
+        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
+        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_right_panel -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_right_panel">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIPanel60"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_right_panel</urdf:hasBaseLinkName>
+        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
+        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_sink -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_sink">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAISink"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_sink</urdf:hasBaseLinkName>
+        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
+        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_surface -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_surface">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAISink"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_surface</urdf:hasBaseLinkName>
+        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
+        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_trash_drawer_handle -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_trash_drawer_handle">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIHandle60"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_trash_drawer_handle</urdf:hasBaseLinkName>
+        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
+        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_trash_drawer_main -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_sink_area_trash_drawer_main">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#IAIThrashDrawer"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_trash_drawer_main</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_trash_drawer_handle</urdf:hasEndLinkName>
+        <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
+        <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
