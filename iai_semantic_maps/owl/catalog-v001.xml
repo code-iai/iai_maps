@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="package://knowrob_household/owl/kitchen.owl" uri="file:/home/abhijit/catkin_ws/src/knowrob/owl/knowrob.owl"/>
+    <uri id="User Entered Import Resolution" name="package://knowrob_common/owl/knowrob.owl" uri="file:/home/abhijit/catkin_ws/src/knowrob/owl/knowrob.owl"/>
+    <uri id="User Entered Import Resolution" name="http://www.ease-crc.org/ont/SOMA.owl" uri="file:/home/abhijit/Desktop/SOMA_version1.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1602581498724" name="duplicate:http://knowrob.org/kb/IAI-kitchen.owl" uri="kitchen.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1602581498724" name="duplicate:http://knowrob.org/kb/IAI-kitchen.owl" uri="kitchen_new.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1602581498724" name="http://knowrob.org/kb/iai_maps_addons.owl" uri="iai_maps_addons.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1602581498724" name="http://knowrob.org/kb/ias_semantic_map.owl" uri="room.owl"/>
+    </group>
+</catalog>
