@@ -2,7 +2,7 @@
 
 <robot name="iai_kitchen_wall_robohow" xmlns:xacro="http://ros.org/wiki/xacro">
 
-  <macro name="iai_kitchen_wall_robohow" params="parent *origin wall_7:=true">
+  <macro name="iai_kitchen_wall_robohow" params="parent *origin include_wall_7:=true">
     <!-- LINKS -->
 
     <link name="kitchen_wall_1">
@@ -103,7 +103,7 @@
       </collision>
     </link>
 
-<xacro:if value="${wall_7 == 'true'}">
+<xacro:if value="${include_wall_7 == 'true'}">
     <link name="kitchen_wall_7">
       <sphere_inertia radius="0" mass="0"/>
       <visual>
@@ -173,7 +173,7 @@
       <parent link="kitchen_walls"/>
       <child link="kitchen_wall_6"/>
     </joint>
-<xacro:if value="${wall_7 == 'true'}">
+<xacro:if value="${include_wall_7 == 'true'}">
     <joint name="wall_7_joint" type="fixed">
       <origin xyz="1.01271 -2.556 0" rpy="0 -0 3.14159" />
       <parent link="kitchen_walls"/>
