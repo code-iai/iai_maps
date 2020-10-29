@@ -2,7 +2,7 @@
 
 <robot name="iai_kitchen_wall_robohow" xmlns:xacro="http://ros.org/wiki/xacro">
 
-  <macro name="iai_kitchen_wall_robohow" params="parent *origin wall_7">
+  <macro name="iai_kitchen_wall_robohow" params="parent *origin wall_7:=true">
     <!-- LINKS -->
 
     <link name="kitchen_wall_1">
