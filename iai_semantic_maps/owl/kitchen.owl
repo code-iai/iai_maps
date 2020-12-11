@@ -1564,6 +1564,7 @@
         <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_island_footprint</urdf:hasEndLinkName>
         <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven_area_area_footprint</urdf:hasEndLinkName>
         <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink_area_footprint</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dining_area_footprint</urdf:hasEndLinkName>
         <dul:hasComponent rdf:resource="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_fridge_area"/>
         <dul:hasComponent rdf:resource="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_kitchen_island"/>
         <dul:hasComponent rdf:resource="http://knowrob.org/kb/IAI-kitchen.owl#iai_kitchen_oven_area_area"/>
