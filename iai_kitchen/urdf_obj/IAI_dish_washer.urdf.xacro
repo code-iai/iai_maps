@@ -95,13 +95,13 @@
     </xacro:unless>
   -->
     <joint name="${name}_door_handle_joint" type="fixed">
-      <origin xyz="0.09 -0.575 0.0" rpy="${-0.5*pi} 0 0" />
+      <origin xyz="0.085 -0.575 0.0" rpy="${-0.5*pi} 0 0" />
       <parent link="${name}_door"/>
       <child link="${name}_door_handle"/>
     </joint>
 
     <dishwasher_tray name="${name}_tray" parent="${name}_main">
-      <origin xyz="-0.10 0 0.15"/>
+      <origin xyz="-0.08 0 0.15"/>
     </dishwasher_tray>
 
   </macro>
@@ -113,19 +113,19 @@
       <parent link="${parent}"/>
       <child link="${name}_bottom"/>
       <axis xyz="1 0 0"/>
-      <limit lower="0" upper="0.40" effort="300" velocity="10"/>
+      <limit lower="0" upper="0.48" effort="300" velocity="10"/>
     </joint>
 
 
     <link name="${name}_bottom">
       <visual>
         <geometry>
-          <box size="0.32 0.5 0.02"/>
+          <box size="0.32 0.5 0.05"/>
         </geometry>
       </visual>
       <collision>
         <geometry>
-          <box size="0.32 0.5 0.02"/>
+          <box size="0.32 0.5 0.05"/>
         </geometry>
       </collision>
     </link>
@@ -207,7 +207,7 @@
     </joint>
 
     <tray_handle name="${name}_handle" parent="${name}_front_side">
-      <origin xyz="0.025 0 -0.05"/>
+      <origin xyz="0.06 -0.1 -0.02"/>
     </tray_handle>
 
   </macro>
@@ -249,24 +249,24 @@
     <link name="${name}_front_side">
       <visual>
         <geometry>
-          <box size="0.01 0.4 0.01"/>
+          <box size="0.01 0.2 0.01"/>
         </geometry>
       </visual>
       <collision>
         <geometry>
-          <box size="0.01 0.4 0.01"/>
+          <box size="0.01 0.2 0.01"/>
         </geometry>
       </collision>
     </link>
 
     <joint name="${name}_front_left_joint" type="fixed">
-      <origin xyz="-0.01 -0.2 0"/>
+      <origin xyz="-0.01 -0.1 0"/>
       <child link="${name}_left_side" />
       <parent link="${name}_front_side"/>
     </joint>
 
     <joint name="${name}_front_right_joint" type="fixed">
-      <origin xyz="-0.01 0.2 0"/>
+      <origin xyz="-0.01 0.1 0"/>
       <child link="${name}_right_side" />
       <parent link="${name}_front_side"/>
     </joint>
