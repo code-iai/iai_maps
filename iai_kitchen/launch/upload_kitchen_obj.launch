@@ -7,7 +7,7 @@
                     the right way and the right place -->
 
   <arg name="model" default="$(find iai_kitchen)/urdf_obj/iai_kitchen_python.urdf.xacro"/>
-  <param name="kitchen_description" command="$(find xacro)/xacro.py '$(arg model)'" />
+  <param name="kitchen_description" command="$(find xacro)/xacro '$(arg model)'" />
 
   <node pkg="tf"
         type="static_transform_publisher"
@@ -15,7 +15,7 @@
         args="0.0 0.0 0. 0.0 0. 0. map iai_kitchen/world 25">
   </node>
 
-  <node pkg="joint_state_publisher" type="joint_state_publisher"
+  <node pkg="joint_state_publisher_gui" type="joint_state_publisher_gui"
         name="kitchen_joint_state_publisher" output="screen">
     <remap from="robot_description" to="kitchen_description"/>
     <param name="rate" value="25"/>
@@ -26,7 +26,7 @@
     </rosparam>
   </node>
 
-  <node name="kitchen_state_publisher" pkg="robot_state_publisher" type="state_publisher" >
+  <node name="kitchen_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" >
     <remap from="robot_description" to="kitchen_description"/>
     <remap from="joint_states" to="/kitchen/joint_states"/>
     <param name="tf_prefix" value="iai_kitchen"/>
