@@ -15,11 +15,10 @@
         args="0.0 0.0 0. 0.0 0. 0. map iai_kitchen/world 25">
   </node>
 
-  <node pkg="joint_state_publisher_gui" type="joint_state_publisher_gui"
+  <node pkg="joint_state_publisher" type="joint_state_publisher"
         name="kitchen_joint_state_publisher" output="screen">
     <remap from="robot_description" to="kitchen_description"/>
     <param name="rate" value="25"/>
-    <param name="use_gui" value="False"/>
     <remap from="/joint_states" to="/kitchen/joint_states" />
     <rosparam param="source_list">
       - /kitchen/cram_joint_states
