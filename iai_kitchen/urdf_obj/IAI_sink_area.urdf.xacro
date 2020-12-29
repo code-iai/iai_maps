@@ -8,7 +8,7 @@
   <xacro:include filename="$(find iai_kitchen)/urdf_obj/IAI_drawers.urdf.xacro"/>
   <xacro:include filename="$(find iai_kitchen)/urdf_obj/IAI_dish_washer.urdf.xacro"/>
   
-  <macro name="iai_sink_area" params="parent name *origin">
+  <xacro:macro name="iai_sink_area" params="parent name *origin">
   <link name="${name}_footprint">    
     <sphere_inertia radius="0" mass="0"/>
   </link>
@@ -83,24 +83,24 @@
     <child link="${name}_sink"/>
   </joint>
   
-  <iai_generic_panel name="${name}_right_panel" parent="${name}" width="60">
+  <xacro:iai_generic_panel name="${name}_right_panel" parent="${name}" width="60">
     <origin rpy="0 0 0" xyz="0.28 0.7 0.355 "/>
-  </iai_generic_panel>
-  <iai_drawer_60_58 name="${name}_trash_drawer" parent="${name}">
+  </xacro:iai_generic_panel>
+  <xacro:iai_drawer_60_58 name="${name}_trash_drawer" parent="${name}">
     <origin rpy="0 0 0" xyz="0.01 0.7 -0.015 "/>
-  </iai_drawer_60_58>
-  <iai_drawer_80_14 name="${name}_left_upper_drawer" parent="${name}">
+  </xacro:iai_drawer_60_58>
+  <xacro:iai_drawer_80_14 name="${name}_left_upper_drawer" parent="${name}">
     <origin rpy="0 0 0" xyz="0.01 -0.6 0.345 "/>
-  </iai_drawer_80_14>
-  <iai_drawer_80_29 name="${name}_left_middle_drawer" parent="${name}">
+  </xacro:iai_drawer_80_14>
+  <xacro:iai_drawer_80_29 name="${name}_left_middle_drawer" parent="${name}">
     <origin rpy="0 0 0" xyz="0.01 -0.6 0.12 "/>
-  </iai_drawer_80_29>
-  <iai_drawer_80_29 name="${name}_left_bottom_drawer" parent="${name}">
+  </xacro:iai_drawer_80_29>
+  <xacro:iai_drawer_80_29 name="${name}_left_bottom_drawer" parent="${name}">
     <origin rpy="0 0 0" xyz="0.01 -0.6 -0.18" />
-  </iai_drawer_80_29>
-  <iai_dish_washer name="${name}_dish_washer" parent="${name}">
+  </xacro:iai_drawer_80_29>
+  <xacro:iai_dish_washer name="${name}_dish_washer" parent="${name}">
     <origin rpy="0 0 0" xyz="0.01 0.1 0.06" />
-  </iai_dish_washer>
-  </macro> 
+  </xacro:iai_dish_washer>
+  </xacro:macro> 
   
 </robot>
