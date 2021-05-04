@@ -4,7 +4,7 @@
 
   <xacro:property name="pi" value="3.1415926535897931" />
 
-  <macro name="iai_dish_washer" params="name parent *origin">
+  <xacro:macro name="iai_dish_washer" params="name parent *origin">
      <link name="${name}_main">
 
       <sphere_inertia radius="0" mass="0"/>
@@ -100,13 +100,13 @@
       <child link="${name}_door_handle"/>
     </joint>
 
-    <dishwasher_tray name="${name}_tray" parent="${name}_main">
+    <xacro:dishwasher_tray name="${name}_tray" parent="${name}_main">
       <origin xyz="-0.08 0 0.15"/>
-    </dishwasher_tray>
+    </xacro:dishwasher_tray>
 
-  </macro>
+  </xacro:macro>
 
-  <macro name="dishwasher_tray" params="name parent *origin">
+  <xacro:macro name="dishwasher_tray" params="name parent *origin">
 
     <joint name="${name}_main" type="prismatic">
       <xacro:insert_block name="origin"/>
@@ -206,13 +206,13 @@
       <parent link="${name}_bottom"/>
     </joint>
 
-    <tray_handle name="${name}_handle" parent="${name}_front_side">
+    <xacro:tray_handle name="${name}_handle" parent="${name}_front_side">
       <origin xyz="0.06 -0.1 -0.02"/>
-    </tray_handle>
+    </xacro:tray_handle>
 
-  </macro>
+  </xacro:macro>
 
-  <macro name="tray_handle" params="name parent *origin">
+  <xacro:macro name="tray_handle" params="name parent *origin">
 
     <joint name="${name}_joint" type="fixed">
       <xacro:insert_block name="origin"/>
@@ -272,6 +272,6 @@
     </joint>
 
 
-  </macro>
+  </xacro:macro>
 
 </robot>

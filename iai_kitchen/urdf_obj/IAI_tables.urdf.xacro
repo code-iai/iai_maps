@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 
 <robot name="iai_table" xmlns:xacro="http://ros.org/wiki/xacro">
-  <macro name="iai_table_1" params="name parent *origin">
+  <xacro:macro name="iai_table_1" params="name parent *origin">
     <link name="${name}_main">
       <sphere_inertia radius="0" mass="0"/>
       <visual>
@@ -22,9 +22,9 @@
       <parent link="${parent}"/>
       <child link="${name}_main"/>
     </joint>
-  </macro>
+  </xacro:macro>
 
-  <macro name="jokkmokk_table" params="name parent *origin">
+  <xacro:macro name="jokkmokk_table" params="name parent *origin">
     <link name="${name}_main">
       <sphere_inertia radius="0" mass="0"/>
       <visual>
@@ -46,9 +46,9 @@
       <child link="${name}_main"/>
       <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
     </joint>
-  </macro>
+  </xacro:macro>
 
-  <macro name="jokkmokk_chair" params="name parent *origin">
+  <xacro:macro name="jokkmokk_chair" params="name parent *origin">
     <link name="${name}_main">
       <sphere_inertia radius="0" mass="0"/>
       <visual>
@@ -69,9 +69,9 @@
       <parent link="${parent}"/>
       <child link="${name}_main"/>
     </joint>
-  </macro>
+  </xacro:macro>
 
-  <macro name="iai_dining_area" params="parent name *origin">
+  <xacro:macro name="iai_dining_area" params="parent name *origin">
     <link name="${name}_footprint">
       <sphere_inertia radius="0" mass="0"/>
     </link>
@@ -80,14 +80,14 @@
       <child link="${name}_footprint"/>
       <parent link="${parent}"/>
     </joint>
-    <jokkmokk_table name="${name}_jokkmokk_table" parent="${name}_footprint">
+    <xacro:jokkmokk_table name="${name}_jokkmokk_table" parent="${name}_footprint">
       <origin xyz="0 0 0.35" rpy="0 0 0" />
-    </jokkmokk_table>
-    <jokkmokk_chair name="${name}_jokkmokk_left_chair" parent="${name}_footprint">
+    </xacro:jokkmokk_table>
+    <xacro:jokkmokk_chair name="${name}_jokkmokk_left_chair" parent="${name}_footprint">
       <origin xyz="-1 0 0.5535" rpy="0 0 0" />
-    </jokkmokk_chair>
-    <jokkmokk_chair name="${name}_jokkmokk_right_chair" parent="${name}_footprint">
+    </xacro:jokkmokk_chair>
+    <xacro:jokkmokk_chair name="${name}_jokkmokk_right_chair" parent="${name}_footprint">
       <origin xyz="1 0 0.5535" rpy="0 0 ${-pi}" />
-    </jokkmokk_chair>
-  </macro>
+    </xacro:jokkmokk_chair>
+  </xacro:macro>
 </robot>

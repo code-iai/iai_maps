@@ -4,7 +4,7 @@
 
   <xacro:property name="pi" value="3.1415926535897931" />
 
-  <macro name="iai_oven" params="name parent *origin">
+  <xacro:macro name="iai_oven" params="name parent *origin">
     <!-- LINKS -->
     
     <link name="${name}_main">
@@ -135,17 +135,17 @@
     
     <!--KNOBS -->
     
-    <iai_oven_knob name="${name}_knob_stove_1" parent="${name}_panel" xyz="0 -0.21 0"/>
-    <iai_oven_knob name="${name}_knob_stove_2" parent="${name}_panel" xyz="0 -0.14 0"/>
-    <iai_oven_knob name="${name}_knob_stove_3" parent="${name}_panel" xyz="0 -0.07 0"/>
-    <iai_oven_knob name="${name}_knob_stove_4" parent="${name}_panel" xyz="0 -0.0 0"/>
-    <iai_oven_knob name="${name}_knob_oven" parent="${name}_panel" xyz="0 0.16 0"/>
+    <xacro:iai_oven_knob name="${name}_knob_stove_2" parent="${name}_panel" xyz="0 -0.14 0"/>
+    <xacro:iai_oven_knob name="${name}_knob_stove_1" parent="${name}_panel" xyz="0 -0.21 0"/>
+    <xacro:iai_oven_knob name="${name}_knob_stove_3" parent="${name}_panel" xyz="0 -0.07 0"/>
+    <xacro:iai_oven_knob name="${name}_knob_stove_4" parent="${name}_panel" xyz="0 -0.0 0"/>
+    <xacro:iai_oven_knob name="${name}_knob_oven" parent="${name}_panel" xyz="0 0.16 0"/>
     
-  </macro>
+  </xacro:macro>
 
   
   
-  <macro name="iai_oven_knob" params="name parent xyz">
+  <xacro:macro name="iai_oven_knob" params="name parent xyz">
     <link name="${name}">
       
       <sphere_inertia radius="0" mass="0"/>
@@ -171,7 +171,7 @@
       <limit lower="0" upper="${pi}" effort="300" velocity="10"/>
     </joint>
     
-  </macro>
+  </xacro:macro>
   
 
   <!--- FIXME THIS should NOT be here -->

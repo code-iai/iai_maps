@@ -7,7 +7,7 @@
   <xacro:include filename="$(find iai_kitchen)/urdf_obj/IAI_drawers.urdf.xacro"/>
   <xacro:include filename="$(find iai_kitchen)/urdf_obj/IAI_fridge.urdf.xacro"/>
 
-  <macro name="iai_fridge_area" params="parent name *origin">
+  <xacro:macro name="iai_fridge_area" params="parent name *origin">
     <link name="${name}_footprint">
       <sphere_inertia radius="0" mass="0"/>
     </link>
@@ -40,13 +40,13 @@
       <parent link="${name}_footprint"/>
       <child link="${name}"/>
     </joint>
-  <iai_drawer_60_29 name="${name}_lower_drawer" parent="${name}">
+  <xacro:iai_drawer_60_29 name="${name}_lower_drawer" parent="${name}">
     <origin rpy="0 0 0" xyz="0.0 -0.0 -0.4175 "/>
-  </iai_drawer_60_29>
+  </xacro:iai_drawer_60_29>
 
-  <iai_fridge name="iai_fridge" parent="${name}">
+  <xacro:iai_fridge name="iai_fridge" parent="${name}">
     <origin xyz="0 0 0.25" rpy="0 0 0" />
-  </iai_fridge>
-  </macro>
+  </xacro:iai_fridge>
+  </xacro:macro>
 
 </robot>
