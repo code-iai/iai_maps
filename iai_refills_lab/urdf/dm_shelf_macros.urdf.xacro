@@ -13,6 +13,11 @@
           <box size="0.004 0.65 0.05"/>
         </geometry>
       </collision>
+      <inertial>
+        <mass value="1."/>
+        <inertia ixx="0.1" ixy="0.1" ixz="0.1" iyy="0.1" iyz="0.1" izz="0.1"/>
+        <origin rpy="0 0 0" xyz="0.00312 0 0.11152"/>
+      </inertial>
     </link>
 
     <joint type="fixed" name="${name}_joint">
@@ -23,45 +28,45 @@
   </xacro:macro>
 
   <xacro:macro name="shelf_divider" params="parent name dist1 dist2 dist3 dist4 dist5 dist6 dist7 dist8 dist9">
-    <divider_link parent="${parent}" name="${name}_divider_1">
+    <xacro:divider_link parent="${parent}" name="${name}_divider_1">
       <origin xyz="-0.495 0 0.024"/>
-    </divider_link>
+    </xacro:divider_link>
 
-    <divider_link parent="${parent}" name="${name}_divider_2">
+    <xacro:divider_link parent="${parent}" name="${name}_divider_2">
       <origin xyz="${-0.495 + dist1} 0 0.024"/>
-    </divider_link>
+    </xacro:divider_link>
 
-    <divider_link parent="${parent}" name="${name}_divider_3">
+    <xacro:divider_link parent="${parent}" name="${name}_divider_3">
       <origin xyz="${-0.495 + dist1 + dist2} 0 0.024"/>
-    </divider_link>
+    </xacro:divider_link>
 
-    <divider_link parent="${parent}" name="${name}_divider_4">
+    <xacro:divider_link parent="${parent}" name="${name}_divider_4">
       <origin xyz="${-0.495 + dist1 + dist2 + dist3} 0 0.024"/>
-    </divider_link>
+    </xacro:divider_link>
 
-    <divider_link parent="${parent}" name="${name}_divider_5">
+    <xacro:divider_link parent="${parent}" name="${name}_divider_5">
       <origin xyz="${-0.495 + dist1 + dist2 + dist3 + dist4} 0 0.024"/>
-    </divider_link>
+    </xacro:divider_link>
 
-    <divider_link parent="${parent}" name="${name}_divider_6">
+    <xacro:divider_link parent="${parent}" name="${name}_divider_6">
       <origin xyz="${-0.495 + dist1 + dist2 + dist3 + dist4 + dist5} 0 0.024"/>
-    </divider_link>
+    </xacro:divider_link>
 
-    <divider_link parent="${parent}" name="${name}_divider_7">
+    <xacro:divider_link parent="${parent}" name="${name}_divider_7">
       <origin xyz="${-0.495 + dist1 + dist2 + dist3 + dist4 + dist5 + dist6} 0 0.024"/>
-    </divider_link>
+    </xacro:divider_link>
 
-    <divider_link parent="${parent}" name="${name}_divider_8">
+    <xacro:divider_link parent="${parent}" name="${name}_divider_8">
       <origin xyz="${-0.495 + dist1 + dist2 + dist3 + dist4 + dist5 + dist6 + dist7} 0 0.024"/>
-    </divider_link>
+    </xacro:divider_link>
 
-    <divider_link parent="${parent}" name="${name}_divider_9">
+    <xacro:divider_link parent="${parent}" name="${name}_divider_9">
       <origin xyz="${-0.495 + dist1 + dist2 + dist3 + dist4 + dist5 + dist6 + dist7 + dist8} 0 0.024"/>
-    </divider_link>
+    </xacro:divider_link>
 
-    <divider_link parent="${parent}" name="${name}_divider_10">
+    <xacro:divider_link parent="${parent}" name="${name}_divider_10">
       <origin xyz="${-0.495 + dist1 + dist2 + dist3 + dist4 + dist5 + dist6 + dist7 + dist8 + dist9} 0 0.024"/>
-    </divider_link>
+    </xacro:divider_link>
   </xacro:macro>
 
 
@@ -77,6 +82,11 @@
           <box size="0.988 0.65 0.043"/>
         </geometry>
       </collision>
+      <inertial>
+        <mass value="1."/>
+        <inertia ixx="0.1" ixy="0.1" ixz="0.1" iyy="0.1" iyz="0.1" izz="0.1"/>
+        <origin rpy="0 0 0" xyz="0.00312 0 0.11152"/>
+      </inertial>
     </link>
 
     <link name="${name}_left_support_link">
@@ -90,6 +100,11 @@
           <box size="0.004 0.65 0.12"/>
         </geometry>
       </collision>
+      <inertial>
+        <mass value="1."/>
+        <inertia ixx="0.1" ixy="0.1" ixz="0.1" iyy="0.1" iyz="0.1" izz="0.1"/>
+        <origin rpy="0 0 0" xyz="0.00312 0 0.11152"/>
+      </inertial>
     </link>
 
     <link name="${name}_right_support_link">
@@ -103,6 +118,11 @@
           <box size="0.004 0.65 0.12"/>
         </geometry>
       </collision>
+      <inertial>
+        <mass value="1."/>
+        <inertia ixx="0.1" ixy="0.1" ixz="0.1" iyy="0.1" iyz="0.1" izz="0.1"/>
+        <origin rpy="0 0 0" xyz="0.00312 0 0.11152"/>
+      </inertial>
     </link>
 
 
@@ -125,7 +145,7 @@
     </joint>
 
 
-    <shelf_divider parent="${name}_link" name="${name}" dist1="${dist1}" dist2="${dist2}" dist3="${dist3}" dist4="${dist4}" dist5="${dist5}" dist6="${dist6}" dist7="${dist7}" dist8="${dist8}" dist9="${dist9}" />
+    <xacro:shelf_divider parent="${name}_link" name="${name}" dist1="${dist1}" dist2="${dist2}" dist3="${dist3}" dist4="${dist4}" dist5="${dist5}" dist6="${dist6}" dist7="${dist7}" dist8="${dist8}" dist9="${dist9}" />
   </xacro:macro>
 
 
@@ -144,6 +164,11 @@
           <box size="1.1 1.05 0.173"/>
         </geometry>
       </collision>
+      <inertial>
+        <mass value="1."/>
+        <inertia ixx="0.1" ixy="0.1" ixz="0.1" iyy="0.1" iyz="0.1" izz="0.1"/>
+        <origin rpy="0 0 0" xyz="0.00312 0 0.11152"/>
+      </inertial>
     </link>
 
     <joint type="fixed" name="${name}_joint">
@@ -163,6 +188,11 @@
           <box size="1.04 0.12 2"/>
         </geometry>
       </collision>
+      <inertial>
+        <mass value="1."/>
+        <inertia ixx="0.1" ixy="0.1" ixz="0.1" iyy="0.1" iyz="0.1" izz="0.1"/>
+        <origin rpy="0 0 0" xyz="0.00312 0 0.11152"/>
+      </inertial>
     </link>
 
     <joint type="fixed" name="${name}_base_back_joint">
@@ -182,6 +212,11 @@
           <box size="1 0.78 0.043"/>
         </geometry>
       </collision>
+      <inertial>
+        <mass value="1."/>
+        <inertia ixx="0.1" ixy="0.1" ixz="0.1" iyy="0.1" iyz="0.1" izz="0.1"/>
+        <origin rpy="0 0 0" xyz="0.00312 0 0.11152"/>
+      </inertial>
     </link>
 
     <joint type="fixed" name="${name}_level_0_joint">
@@ -192,25 +227,25 @@
 
 
 
-    <shelf_1_level name="${name}_level_1" parent="${name}_base" dist1="0.15" dist2="0.133" dist3="0.082" dist4="0.167" dist5="0.095" dist6="0.148" dist7="0.095" dist8="0.125" dist9="0" >
+    <xacro:shelf_1_level name="${name}_level_1" parent="${name}_base" dist1="0.15" dist2="0.133" dist3="0.082" dist4="0.167" dist5="0.095" dist6="0.148" dist7="0.095" dist8="0.125" dist9="0" >
       <origin xyz="0 0 0.50965" />
-    </shelf_1_level>
+    </xacro:shelf_1_level>
 
-    <shelf_1_level name="${name}_level_2" parent="${name}_base" dist1="0.177" dist2="0.208" dist3="0.147" dist4="0.20" dist5="0.124" dist6="0.14" dist7="0" dist8="0" dist9="0" >
+    <xacro:shelf_1_level name="${name}_level_2" parent="${name}_base" dist1="0.177" dist2="0.208" dist3="0.147" dist4="0.20" dist5="0.124" dist6="0.14" dist7="0" dist8="0" dist9="0" >
       <origin xyz="0 0 0.84465" />
-    </shelf_1_level>
+    </xacro:shelf_1_level>
 
-    <shelf_1_level name="${name}_level_3" parent="${name}_base" dist1="0" dist2="0" dist3="0" dist4="0" dist5="0" dist6="0" dist7="0" dist8="0" dist9="0" >
+    <xacro:shelf_1_level name="${name}_level_3" parent="${name}_base" dist1="0" dist2="0" dist3="0" dist4="0" dist5="0" dist6="0" dist7="0" dist8="0" dist9="0" >
       <origin xyz="0 0 1.22265" />
-    </shelf_1_level>
+    </xacro:shelf_1_level>
 
-    <shelf_1_level name="${name}_level_4" parent="${name}_base" dist1="0" dist2="0" dist3="0" dist4="0" dist5="0" dist6="0" dist7="0" dist8="0" dist9="0" >
+    <xacro:shelf_1_level name="${name}_level_4" parent="${name}_base" dist1="0" dist2="0" dist3="0" dist4="0" dist5="0" dist6="0" dist7="0" dist8="0" dist9="0" >
       <origin xyz="0 0 1.53565" />
-    </shelf_1_level>
+    </xacro:shelf_1_level>
 
-    <shelf_1_level name="${name}_level_5" parent="${name}_base" dist1="0" dist2="0" dist3="0" dist4="0" dist5="0" dist6="0" dist7="0" dist8="0" dist9="0" >
+    <xacro:shelf_1_level name="${name}_level_5" parent="${name}_base" dist1="0" dist2="0" dist3="0" dist4="0" dist5="0" dist6="0" dist7="0" dist8="0" dist9="0" >
       <origin xyz="0 0 1.86865" />
-    </shelf_1_level>
+    </xacro:shelf_1_level>
   </xacro:macro>
 
 
@@ -227,6 +262,11 @@
           <box size="0.992 0.435 0.043"/>
         </geometry>
       </collision>
+      <inertial>
+        <mass value="1."/>
+        <inertia ixx="0.1" ixy="0.1" ixz="0.1" iyy="0.1" iyz="0.1" izz="0.1"/>
+        <origin rpy="0 0 0" xyz="0.00312 0 0.11152"/>
+      </inertial>
     </link>
 
     <joint type="fixed" name="shelf_2_${name}_joint">
@@ -249,6 +289,11 @@
           <box size="1.1 0.8 0.145"/>
         </geometry>
       </collision>
+      <inertial>
+        <mass value="1."/>
+        <inertia ixx="0.1" ixy="0.1" ixz="0.1" iyy="0.1" iyz="0.1" izz="0.1"/>
+        <origin rpy="0 0 0" xyz="0.00312 0 0.11152"/>
+      </inertial>
     </link>
 
     <joint type="fixed" name="${name}_joint">
@@ -268,6 +313,11 @@
           <box size="0.05 0.54 1.6"/>
         </geometry>
       </collision>
+      <inertial>
+        <mass value="1."/>
+        <inertia ixx="0.1" ixy="0.1" ixz="0.1" iyy="0.1" iyz="0.1" izz="0.1"/>
+        <origin rpy="0 0 0" xyz="0.00312 0 0.11152"/>
+      </inertial>
     </link>
 
     <joint type="fixed" name="${name}_base_left_joint">
@@ -287,6 +337,11 @@
           <box size="0.05 0.54 1.6"/>
         </geometry>
       </collision>
+      <inertial>
+        <mass value="1."/>
+        <inertia ixx="0.1" ixy="0.1" ixz="0.1" iyy="0.1" iyz="0.1" izz="0.1"/>
+        <origin rpy="0 0 0" xyz="0.00312 0 0.11152"/>
+      </inertial>
     </link>
 
     <joint type="fixed" name="${name}_base_right_joint">
@@ -306,6 +361,11 @@
           <box size="1 0.05 1.45"/>
         </geometry>
       </collision>
+      <inertial>
+        <mass value="1."/>
+        <inertia ixx="0.1" ixy="0.1" ixz="0.1" iyy="0.1" iyz="0.1" izz="0.1"/>
+        <origin rpy="0 0 0" xyz="0.00312 0 0.11152"/>
+      </inertial>
     </link>
 
     <joint type="fixed" name="${name}_base_back_joint">
@@ -325,6 +385,11 @@
           <box size="0.992 0.54 0.043"/>
         </geometry>
       </collision>
+      <inertial>
+        <mass value="1."/>
+        <inertia ixx="0.1" ixy="0.1" ixz="0.1" iyy="0.1" iyz="0.1" izz="0.1"/>
+        <origin rpy="0 0 0" xyz="0.00312 0 0.11152"/>
+      </inertial>
     </link>
 
     <joint type="fixed" name="${name}_level_0_joint">
@@ -335,25 +400,25 @@
 
 
 
-    <shelf_2_level name="${name}_level_1" parent="${name}_base">
+    <xacro:shelf_2_level name="${name}_level_1" parent="${name}_base">
       <origin xyz="0 0.0 0.374"/>
-    </shelf_2_level>
+    </xacro:shelf_2_level>
 
-    <shelf_2_level name="${name}_level_2" parent="${name}_base">
+    <xacro:shelf_2_level name="${name}_level_2" parent="${name}_base">
       <origin xyz="0 0.0 0.624"/>
-    </shelf_2_level>
+    </xacro:shelf_2_level>
 
-    <shelf_2_level name="${name}_level_3" parent="${name}_base">
+    <xacro:shelf_2_level name="${name}_level_3" parent="${name}_base">
       <origin xyz="0 0.0 0.864"/>
-    </shelf_2_level>
+    </xacro:shelf_2_level>
 
-    <shelf_2_level name="${name}_level_4" parent="${name}_base">
+    <xacro:shelf_2_level name="${name}_level_4" parent="${name}_base">
       <origin xyz="0 0.0 1.17"/>
-    </shelf_2_level>
+    </xacro:shelf_2_level>
 
-    <shelf_2_level name="${name}_level_5" parent="${name}_base">
+    <xacro:shelf_2_level name="${name}_level_5" parent="${name}_base">
       <origin xyz="0 0.0 1.42"/>
-    </shelf_2_level>
+    </xacro:shelf_2_level>
   </xacro:macro>
 
 
@@ -369,6 +434,11 @@
           <box size="${size}"/>
         </geometry>
       </collision>
+      <inertial>
+        <mass value="1."/>
+        <inertia ixx="0.1" ixy="0.1" ixz="0.1" iyy="0.1" iyz="0.1" izz="0.1"/>
+        <origin rpy="0 0 0" xyz="0.00312 0 0.11152"/>
+      </inertial>
     </link>
 
     <joint type="fixed" name="${name}_joint">
