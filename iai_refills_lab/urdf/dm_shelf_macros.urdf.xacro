@@ -13,6 +13,11 @@
           <box size="0.004 0.65 0.05"/>
         </geometry>
       </collision>
+      <inertial>
+        <mass value="1."/>
+        <inertia ixx="0.1" ixy="0.1" ixz="0.1" iyy="0.1" iyz="0.1" izz="0.1"/>
+        <origin rpy="0 0 0" xyz="0.00312 0 0.11152"/>
+      </inertial>
     </link>
 
     <joint type="fixed" name="${name}_joint">
@@ -77,6 +82,11 @@
           <box size="0.988 0.65 0.043"/>
         </geometry>
       </collision>
+      <inertial>
+        <mass value="1."/>
+        <inertia ixx="0.1" ixy="0.1" ixz="0.1" iyy="0.1" iyz="0.1" izz="0.1"/>
+        <origin rpy="0 0 0" xyz="0.00312 0 0.11152"/>
+      </inertial>
     </link>
 
     <link name="${name}_left_support_link">
@@ -90,6 +100,11 @@
           <box size="0.004 0.65 0.12"/>
         </geometry>
       </collision>
+      <inertial>
+        <mass value="1."/>
+        <inertia ixx="0.1" ixy="0.1" ixz="0.1" iyy="0.1" iyz="0.1" izz="0.1"/>
+        <origin rpy="0 0 0" xyz="0.00312 0 0.11152"/>
+      </inertial>
     </link>
 
     <link name="${name}_right_support_link">
@@ -103,6 +118,11 @@
           <box size="0.004 0.65 0.12"/>
         </geometry>
       </collision>
+      <inertial>
+        <mass value="1."/>
+        <inertia ixx="0.1" ixy="0.1" ixz="0.1" iyy="0.1" iyz="0.1" izz="0.1"/>
+        <origin rpy="0 0 0" xyz="0.00312 0 0.11152"/>
+      </inertial>
     </link>
 
 
@@ -144,6 +164,11 @@
           <box size="1.1 1.05 0.173"/>
         </geometry>
       </collision>
+      <inertial>
+        <mass value="1."/>
+        <inertia ixx="0.1" ixy="0.1" ixz="0.1" iyy="0.1" iyz="0.1" izz="0.1"/>
+        <origin rpy="0 0 0" xyz="0.00312 0 0.11152"/>
+      </inertial>
     </link>
 
     <joint type="fixed" name="${name}_joint">
@@ -163,6 +188,11 @@
           <box size="1.04 0.12 2"/>
         </geometry>
       </collision>
+      <inertial>
+        <mass value="1."/>
+        <inertia ixx="0.1" ixy="0.1" ixz="0.1" iyy="0.1" iyz="0.1" izz="0.1"/>
+        <origin rpy="0 0 0" xyz="0.00312 0 0.11152"/>
+      </inertial>
     </link>
 
     <joint type="fixed" name="${name}_base_back_joint">
@@ -182,6 +212,11 @@
           <box size="1 0.78 0.043"/>
         </geometry>
       </collision>
+      <inertial>
+        <mass value="1."/>
+        <inertia ixx="0.1" ixy="0.1" ixz="0.1" iyy="0.1" iyz="0.1" izz="0.1"/>
+        <origin rpy="0 0 0" xyz="0.00312 0 0.11152"/>
+      </inertial>
     </link>
 
     <joint type="fixed" name="${name}_level_0_joint">
@@ -227,6 +262,11 @@
           <box size="0.992 0.435 0.043"/>
         </geometry>
       </collision>
+      <inertial>
+        <mass value="1."/>
+        <inertia ixx="0.1" ixy="0.1" ixz="0.1" iyy="0.1" iyz="0.1" izz="0.1"/>
+        <origin rpy="0 0 0" xyz="0.00312 0 0.11152"/>
+      </inertial>
     </link>
 
     <joint type="fixed" name="shelf_2_${name}_joint">
@@ -249,6 +289,11 @@
           <box size="1.1 0.8 0.145"/>
         </geometry>
       </collision>
+      <inertial>
+        <mass value="1."/>
+        <inertia ixx="0.1" ixy="0.1" ixz="0.1" iyy="0.1" iyz="0.1" izz="0.1"/>
+        <origin rpy="0 0 0" xyz="0.00312 0 0.11152"/>
+      </inertial>
     </link>
 
     <joint type="fixed" name="${name}_joint">
@@ -268,6 +313,11 @@
           <box size="0.05 0.54 1.6"/>
         </geometry>
       </collision>
+      <inertial>
+        <mass value="1."/>
+        <inertia ixx="0.1" ixy="0.1" ixz="0.1" iyy="0.1" iyz="0.1" izz="0.1"/>
+        <origin rpy="0 0 0" xyz="0.00312 0 0.11152"/>
+      </inertial>
     </link>
 
     <joint type="fixed" name="${name}_base_left_joint">
@@ -287,6 +337,11 @@
           <box size="0.05 0.54 1.6"/>
         </geometry>
       </collision>
+      <inertial>
+        <mass value="1."/>
+        <inertia ixx="0.1" ixy="0.1" ixz="0.1" iyy="0.1" iyz="0.1" izz="0.1"/>
+        <origin rpy="0 0 0" xyz="0.00312 0 0.11152"/>
+      </inertial>
     </link>
 
     <joint type="fixed" name="${name}_base_right_joint">
@@ -306,6 +361,11 @@
           <box size="1 0.05 1.45"/>
         </geometry>
       </collision>
+      <inertial>
+        <mass value="1."/>
+        <inertia ixx="0.1" ixy="0.1" ixz="0.1" iyy="0.1" iyz="0.1" izz="0.1"/>
+        <origin rpy="0 0 0" xyz="0.00312 0 0.11152"/>
+      </inertial>
     </link>
 
     <joint type="fixed" name="${name}_base_back_joint">
@@ -325,6 +385,11 @@
           <box size="0.992 0.54 0.043"/>
         </geometry>
       </collision>
+      <inertial>
+        <mass value="1."/>
+        <inertia ixx="0.1" ixy="0.1" ixz="0.1" iyy="0.1" iyz="0.1" izz="0.1"/>
+        <origin rpy="0 0 0" xyz="0.00312 0 0.11152"/>
+      </inertial>
     </link>
 
     <joint type="fixed" name="${name}_level_0_joint">
@@ -369,6 +434,11 @@
           <box size="${size}"/>
         </geometry>
       </collision>
+      <inertial>
+        <mass value="1."/>
+        <inertia ixx="0.1" ixy="0.1" ixz="0.1" iyy="0.1" iyz="0.1" izz="0.1"/>
+        <origin rpy="0 0 0" xyz="0.00312 0 0.11152"/>
+      </inertial>
     </link>
 
     <joint type="fixed" name="${name}_joint">
