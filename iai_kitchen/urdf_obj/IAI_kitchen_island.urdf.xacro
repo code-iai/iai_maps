@@ -8,7 +8,7 @@
   <xacro:include filename="$(find iai_kitchen)/urdf_obj/IAI_drawers.urdf.xacro"/>
   
   
-  <macro name="iai_kitchen_island" params="parent name *origin">
+  <xacro:macro name="iai_kitchen_island" params="parent name *origin">
      
     <link name="${name}_footprint">    
       <sphere_inertia radius="0" mass="0"/>
@@ -81,36 +81,36 @@
       <child link="${name}_stove"/>
     </joint>
     
-    <iai_generic_panel name="${name}_left_panel" parent="${name}" width="60">
+    <xacro:iai_generic_panel name="${name}_left_panel" parent="${name}" width="60">
       <origin rpy="0 0 0" xyz="0.2725 -0.8 0.329 "/>
-    </iai_generic_panel>
-    <iai_drawer_60_29 name="${name}_left_upper_drawer" parent="${name}">
+    </xacro:iai_generic_panel>
+    <xacro:iai_drawer_60_29 name="${name}_left_upper_drawer" parent="${name}">
       <origin rpy="0 0 0" xyz="0.0025 -0.8 0.114 "/>
-    </iai_drawer_60_29>
-    <iai_drawer_60_29 name="${name}_left_lower_drawer" parent="${name}">
+    </xacro:iai_drawer_60_29>
+    <xacro:iai_drawer_60_29 name="${name}_left_lower_drawer" parent="${name}">
       <origin rpy="0 0 0" xyz="0.0025 -0.8 -0.176 "/>
-    </iai_drawer_60_29>
+    </xacro:iai_drawer_60_29>
     
     
-    <iai_generic_panel name="${name}_middle_panel" parent="${name}" width="100">
+    <xacro:iai_generic_panel name="${name}_middle_panel" parent="${name}" width="100">
       <origin rpy="0 0 0" xyz="0.2725 0 0.329 "/>
-    </iai_generic_panel>
-    <iai_drawer_100_29 name="${name}_middle_upper_drawer" parent="${name}">
+    </xacro:iai_generic_panel>
+    <xacro:iai_drawer_100_29 name="${name}_middle_upper_drawer" parent="${name}">
       <origin rpy="0 0 0" xyz="0.0025 0 0.114 "/>
-    </iai_drawer_100_29>
-    <iai_drawer_100_29 name="${name}_middle_lower_drawer" parent="${name}">
+    </xacro:iai_drawer_100_29>
+    <xacro:iai_drawer_100_29 name="${name}_middle_lower_drawer" parent="${name}">
       <origin rpy="0 0 0" xyz="0.0025 0 -0.176 "/>
-    </iai_drawer_100_29>
+    </xacro:iai_drawer_100_29>
     
     
-    <iai_generic_panel name="${name}_right_panel" parent="${name}" width="60">
+    <xacro:iai_generic_panel name="${name}_right_panel" parent="${name}" width="60">
       <origin rpy="0 0 0" xyz="0.2725 0.8 0.329 "/>
-    </iai_generic_panel>
-    <iai_drawer_60_29 name="${name}_right_upper_drawer" parent="${name}">
+    </xacro:iai_generic_panel>
+    <xacro:iai_drawer_60_29 name="${name}_right_upper_drawer" parent="${name}">
       <origin rpy="0 0 0" xyz="0.0025 0.8 0.114 "/>
-    </iai_drawer_60_29>
-    <iai_drawer_60_29 name="${name}_right_lower_drawer" parent="${name}">
+    </xacro:iai_drawer_60_29>
+    <xacro:iai_drawer_60_29 name="${name}_right_lower_drawer" parent="${name}">
       <origin rpy="0 0 0" xyz="0.0025 0.8 -0.176 "/>
-    </iai_drawer_60_29>  
-  </macro>   
+    </xacro:iai_drawer_60_29>  
+  </xacro:macro>   
 </robot>
