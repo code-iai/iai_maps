@@ -263,25 +263,25 @@
       <child link="${name}_left_grid"/>
     </joint>
 
-    <iai_popcorn_table_drawer name="iai_popcorn_table_drawer_left" parent="${name}_footprint">
+    <xacro:iai_popcorn_table_drawer name="iai_popcorn_table_drawer_left" parent="${name}_footprint">
       <origin xyz="0.555 0 0.53" rpy="0 0 ${0.5 * pi}"/>
-    </iai_popcorn_table_drawer>
+    </xacro:iai_popcorn_table_drawer>
 
-    <iai_popcorn_table_drawer name="iai_popcorn_table_drawer_right" parent="${name}_footprint">
+    <xacro:iai_popcorn_table_drawer name="iai_popcorn_table_drawer_right" parent="${name}_footprint">
       <origin xyz="-0.555 0 0.53" rpy="0 0 ${0.5 * pi}"/>
-    </iai_popcorn_table_drawer>
+    </xacro:iai_popcorn_table_drawer>
 
-    <iai_popcorn_stove_knob name="iai_popcorn_stove_knob_1" parent="${name}_stove">
+    <xacro:iai_popcorn_stove_knob name="iai_popcorn_stove_knob_1" parent="${name}_stove">
       <origin xyz="-0.235 0.22 0.01"/>
-    </iai_popcorn_stove_knob>
+    </xacro:iai_popcorn_stove_knob>
 
-    <iai_popcorn_stove_knob name="iai_popcorn_stove_knob_2" parent="${name}_stove">
+    <xacro:iai_popcorn_stove_knob name="iai_popcorn_stove_knob_2" parent="${name}_stove">
       <origin xyz="-0.235 0.17 0.01"/>
-    </iai_popcorn_stove_knob>
+    </xacro:iai_popcorn_stove_knob>
 
-    <iai_popcorn_stove_knob name="iai_popcorn_stove_knob_3" parent="${name}_stove">
+    <xacro:iai_popcorn_stove_knob name="iai_popcorn_stove_knob_3" parent="${name}_stove">
       <origin xyz="-0.235 0.12 0.01"/>
-    </iai_popcorn_stove_knob>
+    </xacro:iai_popcorn_stove_knob>
 
   </xacro:macro>
 
@@ -384,9 +384,9 @@
     <child link="${name}_front_side"/>
   </joint>
 
-  <iai_popcorn_table_drawer_handle name="${name}_handle" parent="${name}_front_side">
+  <xacro:iai_popcorn_table_drawer_handle name="${name}_handle" parent="${name}_front_side">
     <origin xyz="0.03 0 0"/>
-  </iai_popcorn_table_drawer_handle>
+  </xacro:iai_popcorn_table_drawer_handle>
 
   </xacro:macro>
 
