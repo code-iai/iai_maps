@@ -2,7 +2,7 @@
 
 <robot name="iai_popcorn_table" xmlns:xacro="http://ros.org/wiki/xacro">
 
-  <macro name="iai_popcorn_table" params="name parent *origin">
+  <xacro:macro name="iai_popcorn_table" params="name parent *origin">
 
     <link name="${name}_footprint"/>
 
@@ -283,9 +283,9 @@
       <origin xyz="-0.235 0.12 0.01"/>
     </iai_popcorn_stove_knob>
 
-  </macro>
+  </xacro:macro>
 
-  <macro name="iai_popcorn_table_drawer" params="name parent *origin">
+  <xacro:macro name="iai_popcorn_table_drawer" params="name parent *origin">
 
   <joint name="${name}_table_joint" type="prismatic">
         <parent link="${parent}"/>
@@ -388,9 +388,9 @@
     <origin xyz="0.03 0 0"/>
   </iai_popcorn_table_drawer_handle>
 
-  </macro>
+  </xacro:macro>
 
-  <macro name="iai_popcorn_table_drawer_handle" params="name parent *origin">
+  <xacro:macro name="iai_popcorn_table_drawer_handle" params="name parent *origin">
 
   <link name="${name}_left_part">
     <visual>
@@ -449,9 +449,9 @@
     <child link="${name}_middle_part"/>
   </joint>
 
-  </macro>
+  </xacro:macro>
 
-  <macro name="iai_popcorn_stove_knob" params="name parent *origin">
+  <xacro:macro name="iai_popcorn_stove_knob" params="name parent *origin">
 
   <link name="${name}">
 
@@ -478,6 +478,6 @@
     <limit lower="-${pi}" upper="0" effort="300" velocity="10"/>
   </joint>
 
-  </macro>
+  </xacro:macro>
 
 </robot>

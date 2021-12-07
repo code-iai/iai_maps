@@ -2,7 +2,7 @@
 
 <robot name="iai_kitchen_wall_robohow" xmlns:xacro="http://ros.org/wiki/xacro">
 
-  <macro name="iai_kitchen_wall_robohow" params="parent *origin include_wall_7:=true">
+  <xacro:macro name="iai_kitchen_wall_robohow" params="parent *origin include_wall_7:=true">
     <!-- LINKS -->
 
     <link name="kitchen_wall_1">
@@ -183,5 +183,5 @@
     <gazebo reference="kitchen_wall_6">
         <material>Gazebo/DarkGrey</material>
     </gazebo>
-  </macro>
+  </xacro:macro>
 </robot>
