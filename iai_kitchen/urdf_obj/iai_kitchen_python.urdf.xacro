@@ -8,6 +8,7 @@
   <xacro:include filename="$(find iai_kitchen)/urdf_obj/IAI_fridge_area.urdf.xacro"/>
   <xacro:include filename="$(find iai_kitchen)/urdf_obj/IAI_tables.urdf.xacro"/>
   <xacro:include filename="$(find iai_kitchen)/urdf_obj/IAI_kitchen_walls.urdf.xacro"/>
+  <xacro:include filename="$(find iai_kitchen)/urdf_obj/IAI_popcorn_table.urdf.xacro"/>
 
   <xacro:property name="pi" value="3.1415926535897931" />
   <xacro:property name="simulated" value="true" />
@@ -70,4 +71,5 @@
   <gazebo>
     <static>false</static>
   </gazebo>
+
 </robot>
