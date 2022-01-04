@@ -10,18 +10,18 @@
   
   
   <link name="shopping_area_link">
-    <sphere_inertia radius="0.001" mass="1"/>
+    <xacro:sphere_inertia radius="0.001" mass="1"/>
   </link>
   
-  <shopping_block name="left_shopping_block" parent="shopping_area" block_pos="3.8 -4.1 0" block_rpy="0 0 3.141"/>
+  <xacro:shopping_block name="left_shopping_block" parent="shopping_area" block_pos="3.8 -4.1 0" block_rpy="0 0 3.141"/>
 <!--  
   <wine_cooler name="cooler" parent="shopping_area" xyz="3.0 -5.5 0" rpy="0 0 3.9265"/>    
   -->
-  <shopping_block name="right_shopping_block" parent="shopping_area" block_pos="2.2 -6.97 0" block_rpy="0 0 1.57"/>   
+  <xacro:shopping_block name="right_shopping_block" parent="shopping_area" block_pos="2.2 -6.97 0" block_rpy="0 0 1.57"/>   
   
-  <table name="cash_table_1" parent="shopping_area" block_pos="1.52 -5 0" block_rpy="0 0 1.57" material="KitchenWhite"/>
+  <xacro:table name="cash_table_1" parent="shopping_area" block_pos="1.52 -5 0" block_rpy="0 0 1.57" material="KitchenWhite"/>
   
-  <small_table name="cash_table_2" parent="shopping_area" block_pos="0.9 -5 0" block_rpy="0 0 1.57" material="KitchenWhite"/>    
+  <xacro:small_table name="cash_table_2" parent="shopping_area" block_pos="0.9 -5 0" block_rpy="0 0 1.57" material="KitchenWhite"/>    
 <!--  
   <cash_register name="cash" parent="shopping_area" xyz="0.5 -4.4 0.73" rpy="0 0 3.1415"/>
   -->

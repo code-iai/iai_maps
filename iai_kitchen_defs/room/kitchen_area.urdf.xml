@@ -18,19 +18,19 @@
   </link>
   
   <!-- Shelves on top of kitchen counter -->
-  <!--<counter parent="kitchen"
+  <!--<xacro:counter parent="kitchen"
   name="shelf_bottom"
   pos_x="-5.22" pos_y="-5.65" pos_z="0.85"
   roll="0" pitch="0" yaw="0"
   size_x="0.25" size_y="0.38" size_z="0.025"
   />
-  <counter parent="kitchen"
+  <xacro:counter parent="kitchen"
   name="shelf_center"
   pos_x="-5.22" pos_y="-5.65" pos_z="1.15"
   roll="0" pitch="0" yaw="0"
   size_x="0.21" size_y="0.38" size_z="0.025"
   />
-  <counter parent="kitchen"
+  <xacro:counter parent="kitchen"
   name="shelf_top"
   pos_x="-5.22" pos_y="-5.65" pos_z="1.48"
   roll="0" pitch="0" yaw="0"
@@ -38,23 +38,23 @@
   />-->
 
   <!-- Finally, the 5 main blocks of the kitchen -->
-  <island_block block_pos="-2.1 -4.94 0" block_rpy="0 0 3.141"/>
+  <xacro:island_block block_pos="-2.1 -4.94 0" block_rpy="0 0 3.141"/>
   
-  <oven_block block_pos="-5.27 -6.85 0" block_rpy="0 0 0"/>
+  <xacro:oven_block block_pos="-5.27 -6.85 0" block_rpy="0 0 0"/>
   
-  <sink_block block_pos="-5.29 -5.65 0" block_rpy="0 0 0"/>
+  <xacro:sink_block block_pos="-5.29 -5.65 0" block_rpy="0 0 0"/>
   
-  <fridge_block block_pos="-5.29 -3.59 0" block_rpy="0 0 0"/>
+  <xacro:fridge_block block_pos="-5.29 -3.59 0" block_rpy="0 0 0"/>
   
-  <table name="pancake_table" parent="kitchen" block_pos="-2.1 -4.77 0.0" block_rpy="0 0 1.57" material="KitchenWhite" />
+  <xacro:table name="pancake_table" parent="kitchen" block_pos="-2.1 -4.77 0.0" block_rpy="0 0 1.57" material="KitchenWhite" />
   
   
-  <!--<table name="eating_table" parent="kitchen" block_pos="-1.7 -2.1 0" block_rpy="0 0 1.57" material="KitchenWhite"/>-->
+  <!--<xacro:table name="eating_table" parent="kitchen" block_pos="-1.7 -2.1 0" block_rpy="0 0 1.57" material="KitchenWhite"/>-->
     
-<!--    <chair name="eating_1" parent="kitchen" xyz="-1.35 -1.2 0" rpy="0 0 1.57"/>
-    <chair name="eating_2" parent="kitchen" xyz="-1.35 -1.8 0" rpy="0 0 1.57"/>
-    <chair name="eating_3" parent="kitchen" xyz="-2.65 -0.75 0" rpy="0 0 -1.57"/>
-    <chair name="eating_4" parent="kitchen" xyz="-2.65 -1.35 0" rpy="0 0 -1.57"/>-->
+<!--    <xacro:chair name="eating_1" parent="kitchen" xyz="-1.35 -1.2 0" rpy="0 0 1.57"/>
+    <xacro:chair name="eating_2" parent="kitchen" xyz="-1.35 -1.8 0" rpy="0 0 1.57"/>
+    <xacro:chair name="eating_3" parent="kitchen" xyz="-2.65 -0.75 0" rpy="0 0 -1.57"/>
+    <xacro:chair name="eating_4" parent="kitchen" xyz="-2.65 -1.35 0" rpy="0 0 -1.57"/>-->
   
 
 </robot>

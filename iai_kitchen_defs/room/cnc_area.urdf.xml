@@ -6,9 +6,9 @@
   <xacro:include filename="$(find iai_kitchen_defs)/defs/ias_kitchen/furniture_defs.xml"/>
  
   <link name="cnc_area_link">
-    <sphere_inertia radius="0" mass="0"/>
+    <xacro:sphere_inertia radius="0" mass="0"/>
   </link>
 
-  <shopping_block name="cnc_shopping_block" parent="cnc_area" block_pos="0 0 0" block_rpy="0 0 0"/>
+  <xacro:shopping_block name="cnc_shopping_block" parent="cnc_area" block_pos="0 0 0" block_rpy="0 0 0"/>
 
 </robot>

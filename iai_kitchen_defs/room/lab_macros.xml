@@ -2,7 +2,7 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
   <!-- macro for walls -->
-  <macro name="wall" params="name parent xyz sxyz material">
+  <xacro:macro name="wall" params="name parent xyz sxyz material">
     
     <joint name="${name}_joint" type="fixed">
       <origin rpy="0 0 0" xyz="${xyz}"/>
@@ -32,11 +32,11 @@
       <static>true</static>
       <material>${material}</material>
     </gazebo>
-  </macro>
+  </xacro:macro>
   
   
   <!-- macro for pillars -->
-  <macro name="pillar" params="name parent xyz radius length">
+  <xacro:macro name="pillar" params="name parent xyz radius length">
     
     <joint name="${name}_joint" type="fixed">
       <origin rpy="0 0 0" xyz="${xyz}"/>
@@ -65,6 +65,6 @@
     <gazebo reference="${name}_link">
       <static>true</static>
     </gazebo>
-  </macro>
+  </xacro:macro>
   
 </robot>
