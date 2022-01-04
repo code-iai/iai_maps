@@ -8,45 +8,45 @@
   <!-- Oven Area -->
   <!--           -->
 
-  <macro name="oven_block" params="block_pos block_rpy">
+  <xacro:macro name="oven_block" params="block_pos block_rpy">
   
-    <counter parent="oven_block"
+    <xacro:counter parent="oven_block"
       name="counter_top_oven"
       pos_x="0" pos_y="0" pos_z="1.48"
       roll="0" pitch="0" yaw="0"
       size_x="0.58" size_y="1.2" size_z="0.03"
     />
-    <drawer_vert parent="oven_block"
+    <xacro:drawer_vert parent="oven_block"
       name="drawer_oven_left"
       pos_x="0" pos_y="0" pos_z="0.15"
       roll="0" pitch="0" yaw="0"
       size_x="0.58" size_y="0.30" size_z="1.33"
     />
-    <drawer parent="oven_block"
+    <xacro:drawer parent="oven_block"
       name="drawer_oven_bottom"
       pos_x="0.0" pos_y="0.3" pos_z="0.15"
       roll="0" pitch="0" yaw="0"
       size_x="0.58" size_y="0.6" size_z="0.58"
     />
-    <drawer parent="oven_block"
+    <xacro:drawer parent="oven_block"
       name="drawer_oven_center"
       pos_x="0.0" pos_y="0.3" pos_z="0.73"
       roll="0" pitch="0" yaw="0"
       size_x="0.58" size_y="0.6" size_z="0.14"
     />
-    <drawer parent="oven_block"
+    <xacro:drawer parent="oven_block"
       name="drawer_oven_oven"
       pos_x="0.0" pos_y="0.3" pos_z="0.86"
       roll="0" pitch="0" yaw="0"
       size_x="0.58" size_y="0.6" size_z="0.62"
     />
-    <drawer_vert parent="oven_block"
+    <xacro:drawer_vert parent="oven_block"
       name="drawer_oven_right"
       pos_x="0.0" pos_y="0.9" pos_z="0.15"
       roll="0" pitch="0" yaw="0"
       size_x="0.58" size_y="0.30" size_z="1.33"
     />
-    <skirting parent="oven_block"
+    <xacro:skirting parent="oven_block"
       name="skirting_oven"
       pos_x="0" pos_y="0" pos_z="0"
       roll="0" pitch="0" yaw="0"
@@ -61,7 +61,7 @@
   
     <link name="oven_block_link">
       
-      <sphere_inertia radius="0" mass="0"/>
+      <xacro:sphere_inertia radius="0" mass="0"/>
       
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
@@ -71,6 +71,6 @@
       </visual>
     </link>
   
-  </macro>
+  </xacro:macro>
 
 </robot>

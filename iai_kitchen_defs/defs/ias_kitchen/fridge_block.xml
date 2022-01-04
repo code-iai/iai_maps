@@ -8,28 +8,28 @@
   <!-- Fridge Area -->
   <!--             -->
 
-  <macro name="fridge_block" params="block_pos block_rpy">
+  <xacro:macro name="fridge_block" params="block_pos block_rpy">
 
-    <counter parent="fridge_block"
+    <xacro:counter parent="fridge_block"
       name="counter_top_fridge"
       pos_x="0" pos_y="0" pos_z="1.48"
       roll="0" pitch="0" yaw="0"
       size_x="0.58" size_y="0.6" size_z="0.03"
     />
-    <counter_side parent="fridge_block"
+    <xacro:counter_side parent="fridge_block"
       name="counter_side_fridge_left"
       pos_x="0" pos_y="0" pos_z="0.15"
       roll="0" pitch="0" yaw="0"
       size_x="0.58" size_y="0.02" size_z="1.33"
     />
-    <counter_side parent="fridge_block"
+    <xacro:counter_side parent="fridge_block"
       name="counter_side_fridge_right"
       pos_x="0" pos_y="0.58" pos_z="0.15"
       roll="0" pitch="0" yaw="0"
       size_x="0.58" size_y="0.02" size_z="1.33"
     />
 
-    <color_counter parent="fridge_block"
+    <xacro:color_counter parent="fridge_block"
       name="counter_bottom_fridge"
       pos_x="0" pos_y="0" pos_z="0.5"
       roll="0" pitch="0" yaw="0"
@@ -37,7 +37,7 @@
       material="KitchenWhite"
     />
 
-    <color_counter parent="fridge_block"
+    <xacro:color_counter parent="fridge_block"
       name="counter_middle_fridge"
       pos_x="0" pos_y="0" pos_z="0.83"
       roll="0" pitch="0" yaw="0"
@@ -45,19 +45,19 @@
       material="KitchenWhite"
     />
 
-    <drawer parent="fridge_block"
+    <xacro:drawer parent="fridge_block"
       name="drawer_fridge_bottom"
       pos_x="0.0" pos_y="0.0175" pos_z="0.15"
       roll="0" pitch="0" yaw="0"
       size_x="0.58" size_y="0.565" size_z="0.365"
     />
-    <fridge parent="fridge_block"
+    <xacro:fridge parent="fridge_block"
       name="fridge"
       pos_x="0.0" pos_y="0" pos_z="0.51"
       roll="0" pitch="0" yaw="0"
       size_x="0.58" size_y="0.6" size_z="0.97"
     />
-    <skirting parent="fridge_block"
+    <xacro:skirting parent="fridge_block"
       name="skirting_fridge"
       pos_x="0" pos_y="0" pos_z="0"
       roll="0" pitch="0" yaw="0"
@@ -72,7 +72,7 @@
   
     <link name="fridge_block_link">
 
-      <sphere_inertia radius="0" mass="0"/>
+      <xacro:sphere_inertia radius="0" mass="0"/>
 
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
@@ -82,6 +82,6 @@
       </visual>
     </link>
     
-  </macro>
+  </xacro:macro>
 
 </robot>

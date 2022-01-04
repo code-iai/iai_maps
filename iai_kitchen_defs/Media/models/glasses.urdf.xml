@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
-<robot name="glasses">
+<robot name="glasses" xmlns:xacro="http://www.ros.org/wiki/xacro">
   
-  <macro name="glasses" params="name parent xyz rpy">
+  <xacro:macro name="glasses" params="name parent xyz rpy">
     
     <link name="${parent}_${name}_glasses_link">    
       <visual>
@@ -30,6 +30,6 @@
       <child link="${parent}_${name}_glasses_link"/>
     </joint>
     
-  </macro>
+  </xacro:macro>
   
 </robot>

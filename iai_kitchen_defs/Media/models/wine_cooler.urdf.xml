@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
-<robot name="wine_cooler">
+<robot name="wine_cooler" xmlns:xacro="http://www.ros.org/wiki/xacro">
   
-  <macro name="wine_cooler" params="name parent xyz rpy">
+  <xacro:macro name="wine_cooler" params="name parent xyz rpy">
     
     <link name="${parent}_${name}_wine_cooler_link">    
       <visual>
@@ -31,6 +31,6 @@
       <child link="${parent}_${name}_wine_cooler_link"/>
     </joint>
     
-  </macro>
+  </xacro:macro>
   
 </robot>

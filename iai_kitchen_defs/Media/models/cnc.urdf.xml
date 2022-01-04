@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
-<robot name="cnc">
+<robot name="cnc" xmlns:xacro="http://www.ros.org/wiki/xacro">
   
   <include filename="$(find iai_maps)/defs/util_defs.xml"/>  
   
-  <macro name="cnc" params="name parent xyz rpy">
+  <xacro:macro name="cnc" params="name parent xyz rpy">
     
     <link name="${parent}_${name}_cnc_link">    
       <visual>
@@ -20,7 +20,7 @@
         <origin rpy="0 0 0" xyz="0 0 0" />
       </collision>
       
-      <sphere_inertia radius="2" mass="1000"/>
+      <xacro:sphere_inertia radius="2" mass="1000"/>
 
     </link>
     
@@ -30,6 +30,6 @@
       <child link="${parent}_${name}_cnc_link"/>
     </joint>
     
-  </macro>
+  </xacro:macro>
   
 </robot>
