@@ -14,7 +14,7 @@
   
   <!-- This is the top level joint /tf frame. -->
   <link name="kitchen_link">
-    <!--<sphere_inertia radius="0.001" mass="1"/>-->
+    <!--<xacro:sphere_inertia radius="0.001" mass="1"/>-->
   </link>
   
   <!-- Shelves on top of kitchen counter -->

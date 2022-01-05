@@ -10,7 +10,7 @@
 
   
   <link name="room_link">
-    <!--<sphere_inertia radius="0.001" mass="1"/>-->
+    <!--<xacro:sphere_inertia radius="0.001" mass="1"/>-->
   </link>
   
   <!-- west wall -->
