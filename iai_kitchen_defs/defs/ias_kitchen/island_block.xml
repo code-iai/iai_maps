@@ -18,7 +18,7 @@
 
     <link name="stove_link">
 
-      <cuboid_inertia width="0.5" length="0.57" height="0.005" mass="1.0"/>
+      <xacro:cuboid_inertia width="0.5" length="0.57" height="0.005" mass="1.0"/>
 
       <visual>
         <origin xyz=".30 1.895 .8525" rpy="0 0 0"/>
