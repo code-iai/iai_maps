@@ -6,8 +6,8 @@
   <!-- todo(lisca): insert the tf_prefix "iai_kitchen" in
                     the right way and the right place -->
 
-  <arg name="model" default="$(find iai_kitchen)/urdf/IAI_kitchen.urdf.xacro"/>
-  <param name="kitchen_description" command="$(find xacro)/xacro.py '$(arg model)'" />
+  <arg name="model" default="$(find iai_kitchen)/urdf_obj/iai_kitchen_python.urdf.xacro"/>
+  <param name="kitchen_description" command="$(find xacro)/xacro '$(arg model)'" />
 
   <node pkg="tf"
         type="static_transform_publisher"
@@ -24,7 +24,7 @@
   
   <node name="kitchen_state_publisher"
         pkg="robot_state_publisher"
-        type="state_publisher" >
+        type="robot_state_publisher" >
     <remap from="robot_description" to="kitchen_description"/>
     <remap from="joint_states" to="kitchen_joint_states"/>
     <!-- param name="tf_prefix" value="iai_kitchen"/-->

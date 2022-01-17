@@ -1,7 +1,7 @@
 <launch>
 
-  <arg name="model" default="$(find iai_kitchen)/urdf/IAI_kitchen.urdf.xacro"/>
-  <param name="kitchen_description" command="$(find xacro)/xacro.py '$(arg model)'" />
+  <arg name="model" default="$(find iai_kitchen)/urdf_obj/iai_kitchen_python.urdf.xacro"/>
+  <param name="kitchen_description" command="$(find xacro)/xacro '$(arg model)'" />
 
   <node pkg="joint_state_publisher" type="joint_state_publisher"
         name="kitchen_joint_state_publisher" output="screen">

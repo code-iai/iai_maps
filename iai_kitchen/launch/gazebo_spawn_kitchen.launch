@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 
 <launch>
-  <arg name="model" default="$(find iai_kitchen)/urdf/IAI_kitchen.urdf.xacro"/>
-  <param name="kitchen_description" command="$(find xacro)/xacro.py '$(arg model)'" />
+  <arg name="model" default="$(find iai_kitchen)/urdf_obj/iai_kitchen_python.urdf.xacro"/>
+  <param name="kitchen_description" command="$(find xacro)/xacro '$(arg model)'" />
                             
 
   <arg
@@ -32,7 +32,7 @@
   <node
     name="kitchen_state_publisher_gazebo"
     pkg="robot_state_publisher"
-    type="state_publisher" >
+    type="robot_state_publisher" >
     <param name="tf_prefix" value="iai_kitchen"/>
     <remap from="robot_description" to="kitchen_description"/>
     <remap from="joint_states" to="kitchen_joint_states"/>
