@@ -2,12 +2,12 @@
 
 <robot name="iai_kitchen" xmlns:xacro="http://ros.org/wiki/xacro">
 
-  <xacro:include filename="$(find iai_kitchen)/urdf_obj/IAI_oven_area.urdf.xacro"/>
-  <xacro:include filename="$(find iai_kitchen)/urdf_obj/IAI_kitchen_island.urdf.xacro"/>
-  <xacro:include filename="$(find iai_kitchen)/urdf_obj/IAI_sink_area.urdf.xacro"/>
-  <xacro:include filename="$(find iai_kitchen)/urdf_obj/IAI_fridge_area.urdf.xacro"/>
-  <xacro:include filename="$(find iai_kitchen)/urdf_obj/IAI_tables.urdf.xacro"/>
-  <xacro:include filename="$(find iai_kitchen)/urdf_obj/IAI_kitchen_walls.urdf.xacro"/>
+  <xacro:include filename="$(find iai_kitchen)/urdf/IAI_oven_area.urdf.xacro"/>
+  <xacro:include filename="$(find iai_kitchen)/urdf/IAI_kitchen_island.urdf.xacro"/>
+  <xacro:include filename="$(find iai_kitchen)/urdf/IAI_sink_area.urdf.xacro"/>
+  <xacro:include filename="$(find iai_kitchen)/urdf/IAI_fridge_area.urdf.xacro"/>
+  <xacro:include filename="$(find iai_kitchen)/urdf/IAI_tables.urdf.xacro"/>
+  <xacro:include filename="$(find iai_kitchen)/urdf/IAI_kitchen_walls.urdf.xacro"/>
 
   <xacro:property name="pi" value="3.1415926535897931" />
   <xacro:property name="simulated" value="true" />

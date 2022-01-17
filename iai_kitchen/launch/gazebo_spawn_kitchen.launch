@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 
 <launch>
-  <arg name="model" default="$(find iai_kitchen)/urdf_obj/iai_kitchen_python.urdf.xacro"/>
+  <arg name="model" default="$(find iai_kitchen)/urdf/iai_kitchen_python.urdf.xacro"/>
   <param name="kitchen_description" command="$(find xacro)/xacro '$(arg model)'" />
                             
 

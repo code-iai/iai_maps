@@ -5,7 +5,7 @@
     <visual>
       <origin rpy="0 0 1.57" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://iai_kitchen/meshes/racks/BoxyToolholder/tray.dae"/>
+        <mesh filename="package://iai_kitchen/meshes/racks/BoxyToolholder/tray.obj"/>
       </geometry>
     </visual>
   </link>
