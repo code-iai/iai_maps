@@ -11,14 +11,14 @@
   <xacro:macro name="iai_kitchen_island" params="parent name *origin">
      
     <link name="${name}_footprint">    
-      <sphere_inertia radius="0" mass="0"/>
+      <xacro:sphere_inertia radius="0" mass="0"/>
     </link>
     <link name="${name}">    
-      <sphere_inertia radius="0" mass="0"/>
+      <xacro:sphere_inertia radius="0" mass="0"/>
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://iai_kitchen/meshes/racks/IslandArea.obj"/>
+          <mesh filename="package://iai_kitchen/meshes/racks/IslandArea.dae"/>
         </geometry>
       </visual>  
       <collision>
@@ -42,7 +42,7 @@
     </joint>
     
     <link name="${name}_surface">    
-      <sphere_inertia radius="0" mass="0"/>
+      <xacro:sphere_inertia radius="0" mass="0"/>
       <collision>
           <origin xyz="0 0 0" rpy="0 0 0" />
           <geometry>
@@ -59,11 +59,11 @@
     
     
     <link name="${name}_stove">    
-      <sphere_inertia radius="0" mass="0"/>
+      <xacro:sphere_inertia radius="0" mass="0"/>
       <visual>
           <origin xyz="0 0 0" rpy="0 0 0" />
           <geometry>
-            <mesh filename="package://iai_kitchen/meshes/misc/Stove.obj"/>
+            <mesh filename="package://iai_kitchen/meshes/misc/Stove.dae"/>
           </geometry>
         </visual>
         <collision>

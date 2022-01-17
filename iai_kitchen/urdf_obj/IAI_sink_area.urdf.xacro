@@ -10,15 +10,15 @@
   
   <xacro:macro name="iai_sink_area" params="parent name *origin">
   <link name="${name}_footprint">    
-    <sphere_inertia radius="0" mass="0"/>
+    <xacro:sphere_inertia radius="0" mass="0"/>
   </link>
   
   <link name="${name}">    
-    <sphere_inertia radius="0" mass="0"/>
+    <xacro:sphere_inertia radius="0" mass="0"/>
     <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://iai_kitchen/meshes/racks/SinkArea.obj"/>
+          <mesh filename="package://iai_kitchen/meshes/racks/SinkArea.dae"/>
         </geometry>
       </visual>
     <collision>
@@ -43,7 +43,7 @@
   
   
   <link name="${name}_surface">
-    <sphere_inertia radius="0" mass="0"/>
+    <xacro:sphere_inertia radius="0" mass="0"/>
     <collision>
       <origin xyz="0 -0.225 0" rpy="0 0 0" />
       <geometry>
@@ -62,11 +62,11 @@
   
   
   <link name="${name}_sink">    
-    <sphere_inertia radius="0" mass="0"/>
+    <xacro:sphere_inertia radius="0" mass="0"/>
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://iai_kitchen/meshes/misc/Sink.obj"/>
+        <mesh filename="package://iai_kitchen/meshes/misc/Sink.dae"/>
       </geometry>
     </visual>
     <collision>

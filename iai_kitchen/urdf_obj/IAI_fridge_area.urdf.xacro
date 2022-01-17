@@ -9,15 +9,15 @@
 
   <xacro:macro name="iai_fridge_area" params="parent name *origin">
     <link name="${name}_footprint">
-      <sphere_inertia radius="0" mass="0"/>
+      <xacro:sphere_inertia radius="0" mass="0"/>
     </link>
 
     <link name="${name}">
-      <sphere_inertia radius="0" mass="0"/>
+      <xacro:sphere_inertia radius="0" mass="0"/>
       <visual>
     	  <origin xyz="0 0 0.01" rpy="0 0 0" />
     	  <geometry>
-    	    <mesh filename="package://iai_kitchen/meshes/racks/FridgeArea.obj"/>
+    	    <mesh filename="package://iai_kitchen/meshes/racks/FridgeArea.dae"/>
     	  </geometry>
     	</visual>
       <collision>

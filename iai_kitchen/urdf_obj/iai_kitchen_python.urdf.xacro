@@ -24,7 +24,7 @@
   </xacro:macro>
 
   <link name="room_link">
-    <sphere_inertia radius="0" mass="0"/>
+    <xacro:sphere_inertia radius="0" mass="0"/>
   </link>
   <xacro:if value="${simulated}">
     <link name="world"/>

@@ -9,11 +9,11 @@
     
     <link name="${name}_main">
       
-      <sphere_inertia radius="0" mass="0"/>
+      <xacro:sphere_inertia radius="0" mass="0"/>
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://iai_kitchen/meshes/oven/OvenMain.obj"/>
+          <mesh filename="package://iai_kitchen/meshes/oven/OvenMain.dae"/>
         </geometry>
       </visual>
       <collision>
@@ -26,11 +26,11 @@
     
     <link name="${name}_door">
       
-      <sphere_inertia radius="0" mass="0"/>
+      <xacro:sphere_inertia radius="0" mass="0"/>
       <visual>
         <origin xyz="0 0 0" rpy="${0.5*pi} 0 0" />
         <geometry>
-          <mesh filename="package://iai_kitchen/meshes/oven/OvenDoor.obj"/>
+          <mesh filename="package://iai_kitchen/meshes/oven/OvenDoor.dae"/>
         </geometry>
       </visual>
       <collision>
@@ -43,11 +43,11 @@
     
     <link name="${name}_door_handle">
       
-      <sphere_inertia radius="0" mass="0"/>
+      <xacro:sphere_inertia radius="0" mass="0"/>
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://iai_kitchen/meshes/handles/Handle60.obj"/>
+          <mesh filename="package://iai_kitchen/meshes/handles/Handle60.dae"/>
         </geometry>
       </visual>
       <collision>
@@ -61,11 +61,11 @@
     
     <link name="${name}_panel">
       
-      <sphere_inertia radius="0" mass="0"/>
+      <xacro:sphere_inertia radius="0" mass="0"/>
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://iai_kitchen/meshes/oven/OvenPanel.obj"/>
+          <mesh filename="package://iai_kitchen/meshes/oven/OvenPanel.dae"/>
         </geometry>
       </visual>
       <collision>
@@ -148,7 +148,7 @@
   <xacro:macro name="iai_oven_knob" params="name parent xyz">
     <link name="${name}">
       
-      <sphere_inertia radius="0" mass="0"/>
+      <xacro:sphere_inertia radius="0" mass="0"/>
       <visual>
         <origin xyz="0 0 0" rpy="0 ${0.5 * pi} 0" />
         <geometry>
@@ -178,7 +178,7 @@
 <!--
   <link name="oven_footprint">
     
-    <sphere_inertia radius="0" mass="0"/>
+    <xacro:sphere_inertia radius="0" mass="0"/>
   </link>
   <iai_oven name="iai_oven" parent="oven_footprint"/>
   -->

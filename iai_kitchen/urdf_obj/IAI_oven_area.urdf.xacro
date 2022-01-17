@@ -10,15 +10,15 @@
   
   <xacro:macro name="iai_oven_area" params="parent name *origin">
   <link name="${name}_area_footprint">    
-    <sphere_inertia radius="0" mass="0"/>
+    <xacro:sphere_inertia radius="0" mass="0"/>
   </link>
   
   <link name="${name}_area">    
-    <sphere_inertia radius="0" mass="0"/>
+    <xacro:sphere_inertia radius="0" mass="0"/>
     <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://iai_kitchen/meshes/racks/OvenArea.obj"/>
+          <mesh filename="package://iai_kitchen/meshes/racks/OvenArea.dae"/>
         </geometry>
       </visual>
     <collision>

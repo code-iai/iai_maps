@@ -3,11 +3,11 @@
 <robot name="iai_table" xmlns:xacro="http://ros.org/wiki/xacro">
   <xacro:macro name="iai_table_1" params="name parent *origin">
     <link name="${name}_main">
-      <sphere_inertia radius="0" mass="0"/>
+      <xacro:sphere_inertia radius="0" mass="0"/>
       <visual>
         <origin xyz="0 0 0.3619" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://iai_kitchen/meshes/misc/big_table_1.stl"/>
+          <mesh filename="package://iai_kitchen/meshes/misc/big_table_1.dae"/>
         </geometry>
       </visual>
       <collision>
@@ -26,7 +26,7 @@
 
   <xacro:macro name="jokkmokk_table" params="name parent *origin">
     <link name="${name}_main">
-      <sphere_inertia radius="0" mass="0"/>
+      <xacro:sphere_inertia radius="0" mass="0"/>
       <visual>
         <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
         <geometry>
@@ -50,7 +50,7 @@
 
   <xacro:macro name="jokkmokk_chair" params="name parent *origin">
     <link name="${name}_main">
-      <sphere_inertia radius="0" mass="0"/>
+      <xacro:sphere_inertia radius="0" mass="0"/>
       <visual>
         <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
         <geometry>
@@ -73,7 +73,7 @@
 
   <xacro:macro name="iai_dining_area" params="parent name *origin">
     <link name="${name}_footprint">
-      <sphere_inertia radius="0" mass="0"/>
+      <xacro:sphere_inertia radius="0" mass="0"/>
     </link>
     <joint name="${name}_footprint_joint" type="fixed">
       <xacro:insert_block name="origin" />
