@@ -4,7 +4,7 @@
   <link name="green_bowl_frame">
     <visual>
       <geometry>
-        <mesh filename="package://iai_kitchen/meshes/racks/BoxyToolholder/green_bowl.dae"/>
+        <mesh filename="package://iai_kitchen/meshes/racks/BoxyToolholder/green_bowl.obj"/>
       </geometry>
     </visual>
   </link>

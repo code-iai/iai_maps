@@ -8,13 +8,13 @@
   <xacro:include filename="$(find iai_kitchen)/urdf/IAI_drawers.urdf.xacro"/>
   <xacro:include filename="$(find iai_kitchen)/urdf/IAI_dish_washer.urdf.xacro"/>
   
-  <macro name="iai_sink_area" params="parent name *origin">
+  <xacro:macro name="iai_sink_area" params="parent name *origin">
   <link name="${name}_footprint">    
-    <sphere_inertia radius="0" mass="0"/>
+    <xacro:sphere_inertia radius="0" mass="0"/>
   </link>
   
   <link name="${name}">    
-    <sphere_inertia radius="0" mass="0"/>
+    <xacro:sphere_inertia radius="0" mass="0"/>
     <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
@@ -24,7 +24,7 @@
     <collision>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://iai_kitchen/meshes/collision/kitchen_sink.stl"/>
+          <mesh filename="package://iai_kitchen/meshes/racks/SinkArea.obj"/>
         </geometry>
       </collision>
   </link>
@@ -42,64 +42,65 @@
   </joint>
   
   
-  
-  <link name="${name}_surface">    
-    <sphere_inertia radius="0" mass="0"/>
+  <link name="${name}_surface">
+    <xacro:sphere_inertia radius="0" mass="0"/>
     <collision>
-      <origin xyz="0 0 0" rpy="0 0 0" />
+      <origin xyz="0 -0.225 0" rpy="0 0 0" />
       <geometry>
-        <box size="0.575 2.05 0.02"/>
+        <box size="0.575 1.6 0.02"/>
       </geometry>
     </collision>
   </link>
-  
-  <joint name="${name}_surface_joint" type="fixed">
+
+ <joint name="${name}_surface_joint" type="fixed">
     <origin xyz="0.0 0. 0.43" rpy="0 0 0" />
     <parent link="${name}"/>
     <child link="${name}_surface"/>
-  </joint>
+ </joint>
+
+
   
   
   <link name="${name}_sink">    
-    <sphere_inertia radius="0" mass="0"/>
+    <xacro:sphere_inertia radius="0" mass="0"/>
     <visual>
-      <origin xyz="0 0.1 -0.03" rpy="0 0 0" />
+      <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
         <mesh filename="package://iai_kitchen/meshes/misc/Sink.dae"/>
       </geometry>
     </visual>
     <collision>
-      <origin xyz="0 0.1 -0.43" rpy="0 0 0" />
+      <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://iai_kitchen/meshes/misc/Sink.dae"/>
+        <mesh filename="package://iai_kitchen/meshes/misc/Sink.obj"/>
       </geometry>
     </collision>
   </link>
   
   <joint name="${name}_sink_joint" type="fixed">
-    <origin xyz="0.005 0.57 0.4114" rpy="0 0 0" />
+    <origin xyz="0.005 0.47 0.4414" rpy="0 0 0" />
     <parent link="${name}"/>
     <child link="${name}_sink"/>
   </joint>
   
-  <iai_generic_panel name="${name}_right_panel" parent="${name}" width="60">
+  <xacro:iai_generic_panel name="${name}_right_panel" parent="${name}" width="60">
     <origin rpy="0 0 0" xyz="0.28 0.7 0.355 "/>
-  </iai_generic_panel>
-  <iai_drawer_60_58 name="${name}_trash_drawer" parent="${name}">
+  </xacro:iai_generic_panel>
+  <xacro:iai_drawer_60_58 name="${name}_trash_drawer" parent="${name}">
     <origin rpy="0 0 0" xyz="0.01 0.7 -0.015 "/>
-  </iai_drawer_60_58>
-  <iai_drawer_80_14 name="${name}_left_upper_drawer" parent="${name}">
+  </xacro:iai_drawer_60_58>
+  <xacro:iai_drawer_80_14 name="${name}_left_upper_drawer" parent="${name}">
     <origin rpy="0 0 0" xyz="0.01 -0.6 0.345 "/>
-  </iai_drawer_80_14>
-  <iai_drawer_80_29 name="${name}_left_middle_drawer" parent="${name}">
+  </xacro:iai_drawer_80_14>
+  <xacro:iai_drawer_80_29 name="${name}_left_middle_drawer" parent="${name}">
     <origin rpy="0 0 0" xyz="0.01 -0.6 0.12 "/>
-  </iai_drawer_80_29>
-  <iai_drawer_80_29 name="${name}_left_bottom_drawer" parent="${name}">
-    <origin rpy="0 0 0" xyz="0.01 -0.6 -0.18 "/>
-  </iai_drawer_80_29>
-  <iai_dish_washer name="${name}_dish_washer" parent="${name}">
-    <origin rpy="0 0 0" xyz="0.01 0.1 0.044 "/>
-  </iai_dish_washer>
-  </macro> 
+  </xacro:iai_drawer_80_29>
+  <xacro:iai_drawer_80_29 name="${name}_left_bottom_drawer" parent="${name}">
+    <origin rpy="0 0 0" xyz="0.01 -0.6 -0.18" />
+  </xacro:iai_drawer_80_29>
+  <xacro:iai_dish_washer name="${name}_dish_washer" parent="${name}">
+    <origin rpy="0 0 0" xyz="0.01 0.1 0.06" />
+  </xacro:iai_dish_washer>
+  </xacro:macro> 
   
 </robot>

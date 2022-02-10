@@ -6,7 +6,7 @@
   <!-- todo(lisca): insert the tf_prefix "iai_kitchen" in
                     the right way and the right place -->
 
-  <arg name="model" default="$(find iai_kitchen)/urdf_obj/iai_kitchen_python.urdf.xacro"/>
+  <arg name="model" default="$(find iai_kitchen)/urdf/iai_kitchen_python.urdf.xacro"/>
   <param name="kitchen_description" command="$(find xacro)/xacro '$(arg model)'" />
 
   <node pkg="tf"
