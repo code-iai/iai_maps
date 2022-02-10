@@ -12,9 +12,9 @@
     <!-- Table -->
     <!--       -->
     
-    <macro name="small_table" params="name parent block_pos block_rpy material">
+    <xacro:macro name="small_table" params="name parent block_pos block_rpy material">
       
-      <color_counter parent="${name}_table"
+      <xacro:color_counter parent="${name}_table"
       name="${name}_table_top"
       pos_x="0" pos_y="0" pos_z="0.705"
       roll="0" pitch="0" yaw="0"
@@ -30,7 +30,7 @@
           
           <link name="${name}_first_leg_link">
             
-            <cylinder_inertia radius="0.025" length="0.7" mass="1.0"/>
+            <xacro:cylinder_inertia radius="0.025" length="0.7" mass="1.0"/>
             
             <visual>
               <origin xyz="0 0 0" rpy="0 0 0" />
@@ -58,7 +58,7 @@
           
           <link name="${name}_second_leg_link">
             
-            <cylinder_inertia radius="0.025" length="0.7" mass="1.0"/>
+            <xacro:cylinder_inertia radius="0.025" length="0.7" mass="1.0"/>
             
             <visual>
               <origin xyz="0 0 0" rpy="0 0 0" />
@@ -86,7 +86,7 @@
           
           <link name="${name}_third_leg_link">
             
-            <cylinder_inertia radius="0.025" length="0.7" mass="1.0"/>
+            <xacro:cylinder_inertia radius="0.025" length="0.7" mass="1.0"/>
             
             <visual>
               <origin xyz="0 0 0" rpy="0 0 0" />
@@ -114,7 +114,7 @@
           
           <link name="${name}_fourth_leg_link">
             
-            <cylinder_inertia radius="0.025" length="0.7" mass="1.0"/>
+            <xacro:cylinder_inertia radius="0.025" length="0.7" mass="1.0"/>
             
             <visual>
               <origin xyz="0 0 0" rpy="0 0 0" />
@@ -142,7 +142,7 @@
           
           <link name="${name}_table_link">
             
-            <sphere_inertia radius="0" mass="0"/>
+            <xacro:sphere_inertia radius="0" mass="0"/>
             
             <visual>
               <origin xyz="0 0 0" rpy="0 0 0" />
@@ -152,7 +152,7 @@
             </visual>
           </link>
           
-        </macro>
+        </xacro:macro>
         
       </robot>
       

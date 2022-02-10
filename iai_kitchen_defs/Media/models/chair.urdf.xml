@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
-<robot name="chair">
+<robot name="chair" xmlns:xacro="http://www.ros.org/wiki/xacro">
   
-  <macro name="chair" params="name parent xyz rpy">
+  <xacro:macro name="chair" params="name parent xyz rpy">
     
     <link name="${parent}_${name}_chair_link">    
       <visual>
@@ -30,6 +30,6 @@
       <child link="${parent}_${name}_chair_link"/>
     </joint>
     
-  </macro>
+  </xacro:macro>
   
 </robot>

@@ -3,7 +3,7 @@
   <version>1.0.0</version>
   <description>URDF description of the kitchen laboratory of the IAI in Bremen</description>
 
-  <maintainer email="winkler@cs.uni-bremen.de">Jan Winkler</maintainer>
+  <maintainer email="aniedz@cs.uni-bremen.de">Arthur Niedzwiecki</maintainer>
 
   <license>LGPL</license>
 

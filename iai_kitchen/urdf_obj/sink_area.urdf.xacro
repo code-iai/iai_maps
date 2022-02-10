@@ -1,17 +1,12 @@
 <?xml version="1.0"?>
 
 <robot name="iai_kitchen_sink_area" xmlns:xacro="http://ros.org/wiki/xacro">
-<!--
-  <xacro:include filename="$(find iai_kitchen)/urdf/drawers.xacro" />
--->
 
   <xacro:property name="pi" value="3.1415926535897931" />
 
-
-
     <link name="sink_area_footprint">
       
-      <sphere_inertia radius="0" mass="0"/>
+      <xacro:sphere_inertia radius="0" mass="0"/>
       <!-- ???vizualize footprint??? -->
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
@@ -23,12 +18,12 @@
     
     <link name="sink_area_main">
       
-      <sphere_inertia radius="0" mass="0"/>
+      <xacro:sphere_inertia radius="0" mass="0"/>
       <!-- ???vizualize footprint??? -->
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://iai_kitchen/meshes/SinkArea.obj"/>
+          <mesh filename="package://iai_kitchen/meshes/SinkArea.dae"/>
         </geometry>
       </visual>
       <collision>
@@ -52,12 +47,12 @@
     <!-- LEFT BLOCK -->
     <link name="sink_area_drawer_left_bottom">
       
-      <sphere_inertia radius="0" mass="0"/>
+      <xacro:sphere_inertia radius="0" mass="0"/>
       <!-- ???vizualize footprint??? -->
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://iai_kitchen/meshes/SinkAreaMedDrawer.obj"/>
+          <mesh filename="package://iai_kitchen/meshes/SinkAreaMedDrawer.dae"/>
         </geometry>
       </visual>
       <collision>
@@ -80,12 +75,12 @@
     
     <link name="sink_area_drawer_left_bottom_handle">
       
-      <sphere_inertia radius="0" mass="0"/>
+      <xacro:sphere_inertia radius="0" mass="0"/>
       <!-- ???vizualize footprint??? -->
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://iai_kitchen/meshes/SinkAreaBigHandle.obj"/>
+          <mesh filename="package://iai_kitchen/meshes/SinkAreaBigHandle.dae"/>
         </geometry>
       </visual>
       <collision>
@@ -108,12 +103,12 @@
     
     <link name="sink_area_drawer_left_center">
       
-      <sphere_inertia radius="0" mass="0"/>
+      <xacro:sphere_inertia radius="0" mass="0"/>
       <!-- ???vizualize footprint??? -->
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://iai_kitchen/meshes/SinkAreaMedDrawer.obj"/>
+          <mesh filename="package://iai_kitchen/meshes/SinkAreaMedDrawer.dae"/>
         </geometry>
       </visual>
       <collision>
@@ -136,11 +131,11 @@
     
     <link name="sink_area_drawer_left_center_handle">
       
-      <sphere_inertia radius="0" mass="0"/>
+      <xacro:sphere_inertia radius="0" mass="0"/>
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://iai_kitchen/meshes/SinkAreaBigHandle.obj"/>
+          <mesh filename="package://iai_kitchen/meshes/SinkAreaBigHandle.dae"/>
         </geometry>
       </visual>
       <collision>
@@ -161,12 +156,12 @@
     
     <link name="sink_area_drawer_left_top">
       
-      <sphere_inertia radius="0" mass="0"/>
+      <xacro:sphere_inertia radius="0" mass="0"/>
       <!-- ???vizualize footprint??? -->
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://iai_kitchen/meshes/SinkAreaSmallDrawer.obj"/>
+          <mesh filename="package://iai_kitchen/meshes/SinkAreaSmallDrawer.dae"/>
         </geometry>
       </visual>
       <collision>
@@ -188,11 +183,11 @@
     
     <link name="sink_area_drawer_left_top_handle">
       
-      <sphere_inertia radius="0" mass="0"/>
+      <xacro:sphere_inertia radius="0" mass="0"/>
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://iai_kitchen/meshes/SinkAreaBigHandle.obj"/>
+          <mesh filename="package://iai_kitchen/meshes/SinkAreaBigHandle.dae"/>
         </geometry>
       </visual>
       <collision>
@@ -217,11 +212,11 @@
     
     <link name="sink_area_inner_dishwasher">
       
-      <sphere_inertia radius="0" mass="0"/>
+      <xacro:sphere_inertia radius="0" mass="0"/>
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://iai_kitchen/meshes/SinkAreaInnerDishWasher.obj"/>
+          <mesh filename="package://iai_kitchen/meshes/SinkAreaInnerDishWasher.dae"/>
         </geometry>
       </visual>
       <collision>
@@ -240,11 +235,11 @@
     
     <link name="sink_area_dishwasher_door">
       
-      <sphere_inertia radius="0" mass="0"/>
+      <xacro:sphere_inertia radius="0" mass="0"/>
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://iai_kitchen/meshes/SinkAreaDishWasherDoor.obj"/>
+          <mesh filename="package://iai_kitchen/meshes/SinkAreaDishWasherDoor.dae"/>
         </geometry>
       </visual>
       <collision>
@@ -265,11 +260,11 @@
     
     <link name="sink_area_dishwasher_handle">
       
-      <sphere_inertia radius="0" mass="0"/>
+      <xacro:sphere_inertia radius="0" mass="0"/>
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://iai_kitchen/meshes/SinkAreaSmallHandle.obj"/>
+          <mesh filename="package://iai_kitchen/meshes/SinkAreaSmallHandle.dae"/>
         </geometry>
       </visual>
       <collision>
@@ -293,11 +288,11 @@
     
     <link name="sink_area_panel">
       
-      <sphere_inertia radius="0" mass="0"/>
+      <xacro:sphere_inertia radius="0" mass="0"/>
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://iai_kitchen/meshes/SinkAreaPanel.obj"/>
+          <mesh filename="package://iai_kitchen/meshes/SinkAreaPanel.dae"/>
         </geometry>
       </visual>
       <collision>
@@ -317,11 +312,11 @@
     
     <link name="sink_area_trash">
       
-      <sphere_inertia radius="0" mass="0"/>
+      <xacro:sphere_inertia radius="0" mass="0"/>
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://iai_kitchen/meshes/SinkAreaTrash.obj"/>
+          <mesh filename="package://iai_kitchen/meshes/SinkAreaTrash.dae"/>
         </geometry>
       </visual>
       <collision>
@@ -342,11 +337,11 @@
     
     
     <link name="sink_area_trash_handle">      
-      <sphere_inertia radius="0" mass="0"/>
+      <xacro:sphere_inertia radius="0" mass="0"/>
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://iai_kitchen/meshes/SinkAreaSmallHandle.obj"/>
+          <mesh filename="package://iai_kitchen/meshes/SinkAreaSmallHandle.dae"/>
         </geometry>
       </visual>
       <collision>
@@ -365,11 +360,11 @@
     
     
     <link name="sink_area_sink">      
-      <sphere_inertia radius="0" mass="0"/>
+      <xacro:sphere_inertia radius="0" mass="0"/>
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://iai_kitchen/meshes/SinkAreaSink.obj"/>
+          <mesh filename="package://iai_kitchen/meshes/SinkAreaSink.dae"/>
         </geometry>
       </visual>
       <collision>

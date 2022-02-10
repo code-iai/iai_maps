@@ -10,87 +10,87 @@
 
   
   <link name="room_link">
-    <!--<sphere_inertia radius="0.001" mass="1"/>-->
+    <!--<xacro:sphere_inertia radius="0.001" mass="1"/>-->
   </link>
   
   <!-- west wall -->
   
-  <wall name="w_wall_right" parent="room" xyz="2.785 4.99 1.25" sxyz="0.54 0.1 2.5" material="Gazebo/White"/>
-  <wall name="w_wall_right_window" parent="room" xyz="1.415 4.99 0.2925" sxyz="2.2 0.1 0.585" material="Gazebo/White"/>
-  <wall name="w_window_right" parent="room" xyz="1.415 4.99 1.5425" sxyz="2.2 0.1 1.915" material="Gazebo/BlueTransparent"/>
-  <wall name="w_wall_center" parent="room" xyz="0.025 4.99 1.25" sxyz="0.58 0.1 2.5" material="Gazebo/White"/>
-  <wall name="w_wall_center_window" parent="room" xyz="-1.365 4.99 0.2925" sxyz="2.2 0.1 0.585" material="Gazebo/White"/>
-  <wall name="w_window_center" parent="room" xyz="-1.365 4.99 1.5425" sxyz="2.2 0.1 1.915" material="Gazebo/BlueTransparent"/>
-  <wall name="w_wall_left" parent="room" xyz="-3.07025 4.99 1.25" sxyz="1.215 0.1 2.5" material="Custom/acat"/>
-  <wall name="w_wall_left_window" parent="room" xyz="-4.263 4.99 0.075" sxyz="1.175 0.1 0.15" material="Gazebo/White"/>
-  <wall name="w_window_left" parent="room" xyz="-4.263 4.99 1.325" sxyz="1.175 0.1 2.35" material="Gazebo/BlueTransparent"/>
+  <xacro:wall name="w_wall_right" parent="room" xyz="2.785 4.99 1.25" sxyz="0.54 0.1 2.5" material="Gazebo/White"/>
+  <xacro:wall name="w_wall_right_window" parent="room" xyz="1.415 4.99 0.2925" sxyz="2.2 0.1 0.585" material="Gazebo/White"/>
+  <xacro:wall name="w_window_right" parent="room" xyz="1.415 4.99 1.5425" sxyz="2.2 0.1 1.915" material="Gazebo/BlueTransparent"/>
+  <xacro:wall name="w_wall_center" parent="room" xyz="0.025 4.99 1.25" sxyz="0.58 0.1 2.5" material="Gazebo/White"/>
+  <xacro:wall name="w_wall_center_window" parent="room" xyz="-1.365 4.99 0.2925" sxyz="2.2 0.1 0.585" material="Gazebo/White"/>
+  <xacro:wall name="w_window_center" parent="room" xyz="-1.365 4.99 1.5425" sxyz="2.2 0.1 1.915" material="Gazebo/BlueTransparent"/>
+  <xacro:wall name="w_wall_left" parent="room" xyz="-3.07025 4.99 1.25" sxyz="1.215 0.1 2.5" material="Custom/acat"/>
+  <xacro:wall name="w_wall_left_window" parent="room" xyz="-4.263 4.99 0.075" sxyz="1.175 0.1 0.15" material="Gazebo/White"/>
+  <xacro:wall name="w_window_left" parent="room" xyz="-4.263 4.99 1.325" sxyz="1.175 0.1 2.35" material="Gazebo/BlueTransparent"/>
   
   
   <!-- east wall -->
   
-  <wall name="e_wall_right" parent="room" xyz="-5.2605 -7.08 1.25" sxyz="0.21 0.1 2.5" material="Gazebo/White"/>
-  <wall name="e_wall_right_window" parent="room" xyz="-4.0705 -7.08 0.2925" sxyz="2.17 0.1 0.585" material="Gazebo/White"/>
-  <wall name="e_window_right" parent="room" xyz="-4.0705 -7.08 1.5425" sxyz="2.17 0.1 1.915" material="Gazebo/BlueTransparent"/>
-  <wall name="e_wall_center_right" parent="room" xyz="-2.6955 -7.08 1.25" sxyz="0.58 0.1 2.5" material="Custom/robohow"/>
-  <wall name="e_wall_center_window" parent="room" xyz="-1.3205 -7.08 0.2925" sxyz="2.17 0.1 0.585" material="Gazebo/White"/>
-  <wall name="e_window_center" parent="room" xyz="-1.3205 -7.08 1.5425" sxyz="2.17 0.1 1.915" material="Gazebo/BlueTransparent"/>
-  <wall name="e_wall_center_left" parent="room" xyz="0.0545 -7.08 1.25" sxyz="0.58 0.1 2.5" material="Custom/roboearth2"/>
-  <wall name="e_wall_left_window" parent="room" xyz="1.4395 -7.08 0.2925" sxyz="2.19 0.1 0.585" material="Gazebo/White"/>
-  <wall name="e_window_left" parent="room" xyz="1.4395 -7.08 1.5425" sxyz="2.19 0.1 1.915" material="Gazebo/BlueTransparent"/>  
-  <wall name="e_wall_left" parent="room" xyz="2.8 -7.08 1.25" sxyz="0.531 0.1 2.5" material="Gazebo/White"/>
+  <xacro:wall name="e_wall_right" parent="room" xyz="-5.2605 -7.08 1.25" sxyz="0.21 0.1 2.5" material="Gazebo/White"/>
+  <xacro:wall name="e_wall_right_window" parent="room" xyz="-4.0705 -7.08 0.2925" sxyz="2.17 0.1 0.585" material="Gazebo/White"/>
+  <xacro:wall name="e_window_right" parent="room" xyz="-4.0705 -7.08 1.5425" sxyz="2.17 0.1 1.915" material="Gazebo/BlueTransparent"/>
+  <xacro:wall name="e_wall_center_right" parent="room" xyz="-2.6955 -7.08 1.25" sxyz="0.58 0.1 2.5" material="Custom/robohow"/>
+  <xacro:wall name="e_wall_center_window" parent="room" xyz="-1.3205 -7.08 0.2925" sxyz="2.17 0.1 0.585" material="Gazebo/White"/>
+  <xacro:wall name="e_window_center" parent="room" xyz="-1.3205 -7.08 1.5425" sxyz="2.17 0.1 1.915" material="Gazebo/BlueTransparent"/>
+  <xacro:wall name="e_wall_center_left" parent="room" xyz="0.0545 -7.08 1.25" sxyz="0.58 0.1 2.5" material="Custom/roboearth2"/>
+  <xacro:wall name="e_wall_left_window" parent="room" xyz="1.4395 -7.08 0.2925" sxyz="2.19 0.1 0.585" material="Gazebo/White"/>
+  <xacro:wall name="e_window_left" parent="room" xyz="1.4395 -7.08 1.5425" sxyz="2.19 0.1 1.915" material="Gazebo/BlueTransparent"/>  
+  <xacro:wall name="e_wall_left" parent="room" xyz="2.8 -7.08 1.25" sxyz="0.531 0.1 2.5" material="Gazebo/White"/>
   
   
   <!-- north wall (left room) -->
   
-  <wall name="n_l_wall_right" parent="room" xyz="3.90 -0.055 1.25" sxyz="0.1 0.94 2.5" material="Custom/logos"/>
-  <wall name="n_l_wall_center_window" parent="room" xyz="3.90 1.705 0.075" sxyz="0.1 2.58 0.15" material="Gazebo/White"/>
-  <wall name="n_l_window_center" parent="room" xyz="3.90 1.705 1.325" sxyz="0.1 2.58 2.35" material="Gazebo/BlueTransparent"/>
-  <wall name="n_l_wall_left" parent="room" xyz="3.90 3.57 1.25" sxyz="0.1 1.15 2.5" material="Custom/saphari"/>
+  <xacro:wall name="n_l_wall_right" parent="room" xyz="3.90 -0.055 1.25" sxyz="0.1 0.94 2.5" material="Custom/logos"/>
+  <xacro:wall name="n_l_wall_center_window" parent="room" xyz="3.90 1.705 0.075" sxyz="0.1 2.58 0.15" material="Gazebo/White"/>
+  <xacro:wall name="n_l_window_center" parent="room" xyz="3.90 1.705 1.325" sxyz="0.1 2.58 2.35" material="Gazebo/BlueTransparent"/>
+  <xacro:wall name="n_l_wall_left" parent="room" xyz="3.90 3.57 1.25" sxyz="0.1 1.15 2.5" material="Custom/saphari"/>
   
   
   <!-- north wall (right room) -->
   
-  <wall name="n_r_wall_right" parent="room" xyz="3.90 -3.985 1.25" sxyz="0.1 4.5 2.5" material="Custom/unihb_tum"/>
-  <wall name="n_r_wall_center_window" parent="room" xyz="3.90 -1.13 0.075" sxyz="0.1 1.21 0.15" material="Gazebo/White"/>
-  <wall name="n_r_window_center" parent="room" xyz="3.90 -1.13 1.325" sxyz="0.1 1.21 2.35" material="Gazebo/BlueTransparent"/>
+  <xacro:wall name="n_r_wall_right" parent="room" xyz="3.90 -3.985 1.25" sxyz="0.1 4.5 2.5" material="Custom/unihb_tum"/>
+  <xacro:wall name="n_r_wall_center_window" parent="room" xyz="3.90 -1.13 0.075" sxyz="0.1 1.21 0.15" material="Gazebo/White"/>
+  <xacro:wall name="n_r_window_center" parent="room" xyz="3.90 -1.13 1.325" sxyz="0.1 1.21 2.35" material="Gazebo/BlueTransparent"/>
 
   
   <!-- south wall (left room) -->
   
-  <wall name="s_l_wall_right" parent="room" xyz="-4.9005 4.13 1.25" sxyz="0.1 1.82 2.5" material="Gazebo/White"/>
-  <wall name="s_l_wall_v_right" parent="room" xyz="-5.1655 3.27 1.25" sxyz="0.43 0.1 2.5" material="Gazebo/White"/>
-  <wall name="s_l_wall_door_right" parent="room" xyz="-5.3305 3.08 1.25" sxyz="0.1 0.28 2.5" material="Gazebo/White"/>
-  <wall name="s_l_wall_door_left" parent="room" xyz="-5.3305 1.74 1.25" sxyz="0.1 0.28 2.5" material="Gazebo/White"/>
-  <wall name="s_l_wall_v_left" parent="room" xyz="-4.8655 1.55 1.25" sxyz="1.0 0.1 2.5" material="Gazebo/White"/>  
-  <wall name="s_l_wall_left" parent="room" xyz="-4.3155 0.545 1.25" sxyz="0.1 2.11 2.5" material="Gazebo/White"/>
+  <xacro:wall name="s_l_wall_right" parent="room" xyz="-4.9005 4.13 1.25" sxyz="0.1 1.82 2.5" material="Gazebo/White"/>
+  <xacro:wall name="s_l_wall_v_right" parent="room" xyz="-5.1655 3.27 1.25" sxyz="0.43 0.1 2.5" material="Gazebo/White"/>
+  <xacro:wall name="s_l_wall_door_right" parent="room" xyz="-5.3305 3.08 1.25" sxyz="0.1 0.28 2.5" material="Gazebo/White"/>
+  <xacro:wall name="s_l_wall_door_left" parent="room" xyz="-5.3305 1.74 1.25" sxyz="0.1 0.28 2.5" material="Gazebo/White"/>
+  <xacro:wall name="s_l_wall_v_left" parent="room" xyz="-4.8655 1.55 1.25" sxyz="1.0 0.1 2.5" material="Gazebo/White"/>  
+  <xacro:wall name="s_l_wall_left" parent="room" xyz="-4.3155 0.545 1.25" sxyz="0.1 2.11 2.5" material="Gazebo/White"/>
   
 
   <!-- south wall (right room) -->
   
-  <wall name="wall_door_left" parent="room" xyz="-4.3155 -1.9 1.25" sxyz="0.1 0.42 2.5" material="Gazebo/White"/>
-  <wall name="wall_v" parent="room" xyz="-4.8655 -2.06 1.25" sxyz="1.0 0.1 2.5" material="Gazebo/White"/>
-  <wall name="wall_left" parent="room" xyz="-5.3155 -4.57 1.25" sxyz="0.1 4.92 2.5" material="Gazebo/White"/>
+  <xacro:wall name="wall_door_left" parent="room" xyz="-4.3155 -1.9 1.25" sxyz="0.1 0.42 2.5" material="Gazebo/White"/>
+  <xacro:wall name="wall_v" parent="room" xyz="-4.8655 -2.06 1.25" sxyz="1.0 0.1 2.5" material="Gazebo/White"/>
+  <xacro:wall name="wall_left" parent="room" xyz="-5.3155 -4.57 1.25" sxyz="0.1 4.92 2.5" material="Gazebo/White"/>
   
   
   <!-- pillars -->
   
-  <pillar name="small_pillar" parent="room" xyz="0 -0.3 1.25" radius="0.15" length="2.5" />
-  <pillar name="large_pillar_1" parent="room" xyz="3.85 -7.03 1.25" radius="0.795" length="2.5" />
-  <pillar name="large_pillar_2" parent="room" xyz="3.85 4.94 1.25" radius="0.795" length="2.5" />
+  <xacro:pillar name="small_pillar" parent="room" xyz="0 -0.3 1.25" radius="0.15" length="2.5" />
+  <xacro:pillar name="large_pillar_1" parent="room" xyz="3.85 -7.03 1.25" radius="0.795" length="2.5" />
+  <xacro:pillar name="large_pillar_2" parent="room" xyz="3.85 4.94 1.25" radius="0.795" length="2.5" />
   
   
   <!-- partition walls -->
   
-  <wall name="partition_wall_work1" parent="room" xyz="-1.06 -2.04 0.37" sxyz="4.81 0.01 0.74" material="Gazebo/White"/>
-  <!--<wall name="partition_wall_work2" parent="room" xyz="0 -1 0.5" sxyz="0.1 1.5 1" material="Gazebo/White"/>-->
-  <wall name="partition_wall_shop" parent="room" xyz="1.35 -5.05 0.37" sxyz="0.01 4.05 0.74" material="Gazebo/White"/>
+  <xacro:wall name="partition_wall_work1" parent="room" xyz="-1.06 -2.04 0.37" sxyz="4.81 0.01 0.74" material="Gazebo/White"/>
+  <!--<xacro:wall name="partition_wall_work2" parent="room" xyz="0 -1 0.5" sxyz="0.1 1.5 1" material="Gazebo/White"/>-->
+  <xacro:wall name="partition_wall_shop" parent="room" xyz="1.35 -5.05 0.37" sxyz="0.01 4.05 0.74" material="Gazebo/White"/>
  
   
   <!-- ground -->
   
-<!--  <wall name="ground_kitchen" parent="room" xyz="-2.65 -3.7 0.005" sxyz="5.3 6.8 00.01" material="Ground/Blue"/>
-  <wall name="ground_shop" parent="room" xyz="1.95 -4 0.005" sxyz="3.9 6 00.01" material="Ground/Yellow"/>
-  <wall name="ground_mech" parent="room" xyz="1.95 2 0.005" sxyz="3.9 6 00.01" material="Ground/Red"/>
-  <wall name="ground_bio" parent="room" xyz="-2.65 2.35 0.005" sxyz="5.3 5.3 00.01" material="Ground/Green"/>  -->
+<!--  <xacro:wall name="ground_kitchen" parent="room" xyz="-2.65 -3.7 0.005" sxyz="5.3 6.8 00.01" material="Ground/Blue"/>
+  <xacro:wall name="ground_shop" parent="room" xyz="1.95 -4 0.005" sxyz="3.9 6 00.01" material="Ground/Yellow"/>
+  <xacro:wall name="ground_mech" parent="room" xyz="1.95 2 0.005" sxyz="3.9 6 00.01" material="Ground/Red"/>
+  <xacro:wall name="ground_bio" parent="room" xyz="-2.65 2.35 0.005" sxyz="5.3 5.3 00.01" material="Ground/Green"/>  -->
   
 </robot>

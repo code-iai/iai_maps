@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
-<robot name="cash_register">
+<robot name="cash_register" xmlns:xacro="http://www.ros.org/wiki/xacro">
   
-  <macro name="cash_register" params="name parent xyz rpy">
+  <xacro:macro name="cash_register" params="name parent xyz rpy">
     
     <link name="${parent}_${name}_register_link">    
       <visual>
@@ -30,6 +30,6 @@
       <child link="${parent}_${name}_register_link"/>
     </joint>
     
-  </macro>
+  </xacro:macro>
   
 </robot>

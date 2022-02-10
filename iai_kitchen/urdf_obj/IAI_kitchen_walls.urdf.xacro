@@ -6,7 +6,7 @@
     <!-- LINKS -->
     
     <link name="kitchen_wall_1">
-      <sphere_inertia radius="0" mass="0"/>
+      <xacro:sphere_inertia radius="0" mass="0"/>
       <visual>
         <origin xyz="0 0 1.25" rpy="0 0 0" />
         <geometry>
@@ -22,7 +22,7 @@
     </link>
       
     <link name="kitchen_wall_2">
-      <sphere_inertia radius="0" mass="0"/>
+      <xacro:sphere_inertia radius="0" mass="0"/>
       <visual>
         <origin xyz="0 0 1.25" rpy="0 0 0" />
         <geometry>
@@ -38,7 +38,7 @@
     </link>
       
     <link name="kitchen_wall_3">
-      <sphere_inertia radius="0" mass="0"/>
+      <xacro:sphere_inertia radius="0" mass="0"/>
       <visual>
         <origin xyz="0 0 1.25" rpy="0 0 0" />
         <geometry>
@@ -54,7 +54,7 @@
     </link>
       
     <link name="kitchen_wall_4">
-      <sphere_inertia radius="0" mass="0"/>
+      <xacro:sphere_inertia radius="0" mass="0"/>
       <visual>
         <origin xyz="0 0 0.35" rpy="0 0 0" />
         <geometry>
@@ -70,7 +70,7 @@
     </link>
       
     <link name="kitchen_wall_5">
-      <sphere_inertia radius="0" mass="0"/>
+      <xacro:sphere_inertia radius="0" mass="0"/>
       <visual>
         <origin xyz="0 0 0.35" rpy="0 0 0" />
         <geometry>
@@ -88,7 +88,7 @@
     
     
     <link name="kitchen_wall_6">
-      <sphere_inertia radius="0" mass="0"/>
+      <xacro:sphere_inertia radius="0" mass="0"/>
       <visual>
         <origin xyz="0 0 0.35" rpy="0 0 0" />
         <geometry>
@@ -104,7 +104,7 @@
     </link>   
 
     <link name="kitchen_wall_7">
-      <sphere_inertia radius="0" mass="0"/>
+      <xacro:sphere_inertia radius="0" mass="0"/>
       <visual>
         <origin xyz="0 0 0.375" rpy="0 0 0" />
         <geometry>

@@ -8,9 +8,9 @@
   <!-- Cuboid -->
   <!--        -->
 
-  <macro name="cuboid" params="block_pos block_rpy">
+  <xacro:macro name="cuboid" params="block_pos block_rpy">
 
-    <counter parent="cuboid"
+    <xacro:counter parent="cuboid"
       name="cuboid_top"
       pos_x="0" pos_y="0" pos_z="0"
       roll="0" pitch="0" yaw="0"
@@ -27,7 +27,7 @@
 
     <link name="cuboid_link">
       
-      <sphere_inertia radius="0" mass="0"/>
+      <xacro:sphere_inertia radius="0" mass="0"/>
       
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
@@ -37,6 +37,6 @@
       </visual>
     </link>
 
-  </macro>
+  </xacro:macro>
 
 </robot>

@@ -59,7 +59,7 @@
   <xacro:property name="barrier_z" value="0.1"/>
   <xacro:macro name="iai_vdrawer_board" params="name parent joint_origin_z">
     <link name="${parent}_board_${name}_link">
-      <sphere_inertia radius="0" mass="0"/>
+      <xacro:sphere_inertia radius="0" mass="0"/>
       <visual>
         <origin rpy="0 0 0" xyz="0 0 0"/>
         <geometry>
@@ -81,7 +81,7 @@
     </joint>
 
     <link name="${parent}_barrier_${name}_right_link">
-      <sphere_inertia radius="0" mass="0"/>
+      <xacro:sphere_inertia radius="0" mass="0"/>
       <visual>
         <origin rpy="0 0 0" xyz="0 0 0"/>
         <geometry>
@@ -103,7 +103,7 @@
     </joint>
 
     <link name="${parent}_barrier_${name}_left_link">
-      <sphere_inertia radius="0" mass="0"/>
+      <xacro:sphere_inertia radius="0" mass="0"/>
       <visual>
         <origin rpy="0 0 0" xyz="0 0 0"/>
         <geometry>
@@ -125,7 +125,7 @@
     </joint>
 
     <link name="${parent}_barrier_${name}_back_link">
-      <sphere_inertia radius="0" mass="0"/>
+      <xacro:sphere_inertia radius="0" mass="0"/>
       <visual>
         <origin rpy="0 0 0" xyz="0 0 0"/>
         <geometry>
@@ -159,12 +159,15 @@
     </joint>
 
     <link name="${name}_main">
-      <sphere_inertia radius="0" mass="0"/>
+      <xacro:sphere_inertia radius="0" mass="0"/>
       <visual>
         <origin rpy="0 0 0" xyz="0 0 0"/>
         <geometry>
           <box size="0.025 0.3 1.33"/>
         </geometry>
+        <material name="KitchenLightGray">
+          <color rgba="0.7 0.7 0.7 1.0"/>
+        </material>
       </visual>
       <collision>
         <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -180,7 +183,7 @@
       <origin rpy="0 0 0" xyz="-0.03 0.0 0.0"/>
     </joint>
     <link name="${name}_main_padding">
-      <sphere_inertia radius="0" mass="0"/>
+      <xacro:sphere_inertia radius="0" mass="0"/>
       <visual>
         <origin rpy="0 0 0" xyz="0 0 0"/>
         <geometry>
@@ -203,11 +206,11 @@
     </joint>
 
     <link name="${name}_handle">
-      <sphere_inertia radius="0" mass="0"/>
+      <xacro:sphere_inertia radius="0" mass="0"/>
       <visual>
         <origin xyz="0 0 0" rpy="${0.5*pi} 0 0" />
         <geometry>
-          <mesh filename="package://iai_kitchen/meshes/handles/VHandle130.obj"/>
+          <mesh filename="package://iai_kitchen/meshes/handles/VHandle130.dae"/>
         </geometry>
       </visual>
       <collision>
@@ -245,11 +248,11 @@
   
   <xacro:macro name="iai_generic_drawer" params="name parent width height *origin *handle_origin">
     <link name="${name}_main">      
-      <sphere_inertia radius="0" mass="0"/>
+      <xacro:sphere_inertia radius="0" mass="0"/>
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://iai_kitchen/meshes/drawers/Drawer_${width}_${height}.obj"/>
+          <mesh filename="package://iai_kitchen/meshes/drawers/Drawer_${width}_${height}.dae"/>
         </geometry>
       </visual>
       <collision>
@@ -261,11 +264,11 @@
     </link>
 
     <link name="${name}_handle">      
-      <sphere_inertia radius="0" mass="0"/>
+      <xacro:sphere_inertia radius="0" mass="0"/>
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://iai_kitchen/meshes/handles/Handle${width}.obj"/>
+          <mesh filename="package://iai_kitchen/meshes/handles/Handle${width}.dae"/>
         </geometry>
       </visual>
       <collision>
@@ -300,11 +303,11 @@
   
   <xacro:macro name="iai_generic_panel" params="name parent width *origin">
     <link name="${name}">      
-      <sphere_inertia radius="0" mass="0"/>
+      <xacro:sphere_inertia radius="0" mass="0"/>
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://iai_kitchen/meshes/drawers/Panel_${width}.obj"/>
+          <mesh filename="package://iai_kitchen/meshes/drawers/Panel_${width}.dae"/>
         </geometry>
       </visual>
       <collision>
