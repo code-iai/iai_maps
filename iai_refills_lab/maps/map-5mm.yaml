@@ -1,4 +1,4 @@
-image: map-5mm_clean.pgm
+image: map-5mm.pgm
 resolution: 0.005000
 origin: [-6.65, -5.7, 0.000000]
 negate: 0
