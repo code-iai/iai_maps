@@ -30,7 +30,7 @@
       <visual>
         <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://iai_kitchen/meshes/jokkmokk/JokkmokkTable.obj"/>
+          <mesh filename="package://iai_kitchen/meshes/jokkmokk/JokkmokkTable.dae"/>
         </geometry>
       </visual>
       <collision>
