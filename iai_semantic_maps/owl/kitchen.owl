@@ -1885,7 +1885,7 @@
         <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dining_area_jokkmokk_table_main</urdf:hasEndLinkName>
 
         <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dining_area_jokkmokk_left_chair_main</urdf:hasEndLinkName>
-        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">        dining_area_jokkmokk_right_chair_main</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dining_area_jokkmokk_right_chair_main</urdf:hasEndLinkName>
 
         <srdl2-comp:sphere_inertia_mass rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_mass>
         <srdl2-comp:sphere_inertia_radius rdf:datatype="http://qudt.org/vocab/unit#Kilogram">0</srdl2-comp:sphere_inertia_radius>
