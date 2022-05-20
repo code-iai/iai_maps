@@ -1,0 +1,13 @@
+<launch>
+
+  <arg name="model" default="$(find iai_apartment)/urdf/apartment.urdf" />
+  <param name="apartment_description" command="$(find xacro)/xacro '$(arg model)'" />
+
+  <node name="apartment_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher">
+    <remap from="robot_description" to="apartment_description" />
+    <remap from="joint_states" to="apartment_joint_states" />
+    <param name="tf_prefix" value="iai_apartment" />
+    <param name="publish_frequency" value="60" />
+  </node>
+
+</launch>
