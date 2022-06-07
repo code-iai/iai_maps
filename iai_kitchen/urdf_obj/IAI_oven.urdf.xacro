@@ -152,7 +152,7 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 ${0.5 * pi} 0" />
         <geometry>
-          <mesh filename="package://iai_kitchen/meshes/oven/Knob.obj"/>
+          <mesh filename="package://iai_kitchen/meshes/oven/Knob.dae"/>
         </geometry>
       </visual>
       <collision>
