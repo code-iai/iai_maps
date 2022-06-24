@@ -1,0 +1,11 @@
+<launch>
+
+  <include file="$(find iai_apartment)/launch/apartment_bringup.launch" />
+  <node name="joint_state_publisher_gui" pkg="joint_state_publisher_gui" type="joint_state_publisher_gui">
+    <remap from="robot_description" to="apartment_description" />
+    <remap from="joint_states" to="apartment_joint_states" />
+  </node>
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find iai_apartment)/rviz_config/rviz_config.rviz" />
+
+
+</launch>
