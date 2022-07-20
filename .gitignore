@@ -6,3 +6,5 @@ prolog/*.pl
 owl/*.owl
 *.swp
 iai_dlr_cutting_demo/meshes
+iai_kimchen/rviz_config/*
+
