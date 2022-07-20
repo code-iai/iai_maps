@@ -7,12 +7,29 @@
 	<link name="kitchen_root"> 
 		<origin xyz="0 0 0" />
 	</link>
-	
-<!-- -->
-	<!--Cabinet1-->
-	<joint name="cabinet1_joint" type="fixed">
-		<origin xyz="0.5 0.5 1.07" />
+
+<!-- frames and useless/useful definitions -->
+	<joint name="frame_A_joint" type="fixed">
 		<parent link="kitchen_root" />
+		<origin xyz="0.5 0.5 0" />
+		<child link="side_A"/>
+	</joint>
+
+	<joint name="frame_B_joint" type="fixed">
+		<parent link="kitchen_root" />
+		<origin xyz="3 3 0.0" rpy="0 0 3.14"/>
+		<child link="side_B"/>
+	</joint>
+
+	<link name="side_A" />
+
+	<link name="side_B" /> 
+
+<!-- Cabinets side A -->
+	<!-- Cabinet1 -->
+	<joint name="cabinet1_joint" type="fixed">
+		<origin xyz="0.01 0.01 1.07" />
+		<parent link="side_A" />
 		<child link="cabinet1" />
 	</joint>
 
@@ -95,98 +112,10 @@
 		</collision>
 	</link>
 
-
-	<!-- handle_cab1_top -->
-	<joint name="cabinet1_handle_top_joint" type="fixed">
-		<origin xyz="0.01 0.45 0.02" />
-		<parent link="cabinet1_door_top_left" />
-		<child link="cabinet1_handle_top" />
-	</joint>
-
-	<link name="cabinet1_handle_top">
-		<visual>
-			<origin xyz="0 0.0 0.0"/>
-			<geometry>
-				<mesh filename="package://iai_kimchen/meshes/cabinet01/handle_cab1_top.dae" />
-			</geometry>
-		</visual>
-		<collision>
-			<origin xyz="0.0 0.0 0.0"/>
-			<geometry>
-				<mesh filename="package://iai_kimchen/meshes/cabinet01/handle_cab1_top.stl" />
-			</geometry>
-		</collision>
-	</link>
-
-	<!-- Dishwasher -->
-	<joint name="cabinet7_joint" type="fixed">
-		<origin xyz="2 2 0.47" rpy="0 0 3.15"/>
-		<parent link="kitchen_root" />
-		<child link="cabinet7" />
-	</joint>
-
-	<link name="cabinet7">
-		<visual>
-			<origin xyz="0.0 0.0 0.0"/>
-			<geometry>
-				<mesh filename="package://iai_kimchen/meshes/cabinet07/IAIKitchenCabinet7W60.dae"/>
-			</geometry>
-		</visual>
-		<collision>
-			<geometry>
-				<mesh filename="package://iai_kimchen/meshes/cabinet07/IAIKitchenCabinet7W60.stl" />
-			</geometry>
-		</collision>
-	</link>
-
-	<joint name="cabinet7_door_bottom_left_joint" type="revolute">
-		<origin xyz="0.37 -0.3 -0.45"/>
-		<parent link="cabinet7" />
-		<child link="cabinet7_door_bottom_left" />
-		<axis xyz="0 -1 0" />
-		<limit effort="1000.0" lower="-1.5708" upper="0.0" velocity="1.5708" />
-	</joint>
-
-	<link name="cabinet7_door_bottom_left">
-		<visual>
-			<origin xyz="0 0.3 0.39"/>
-			<geometry>
-				<mesh filename="package://iai_kimchen/meshes/cabinet07/IAIKitchenDoorW60H80.dae" />
-			</geometry>
-		</visual>
-		<collision>
-			<origin xyz="0 0.3 0.39"/>
-			<geometry>
-				<mesh filename="package://iai_kimchen/meshes/cabinet07/IAIKitchenDoorW60H80.stl" />
-			</geometry>
-		</collision>
-	</link>
-
-	<!-- Island -->
-	<joint name="island_joint" type="fixed">
-		<origin xyz="2.1 0.7 0.81" rpy="0 0 3.15"/>
-		<parent link="kitchen_root" />
-		<child link="island" />
-	</joint>
-
-	<link name="island">
-		<visual>
-			<origin xyz="0.0 0.0 0.0"/>
-			<geometry>
-				<mesh filename="package://iai_kimchen/meshes/island/IAIKitchenIslandAreaTop.dae"/>
-			</geometry>
-		</visual>
-		<collision>
-			<geometry>
-				<mesh filename="package://iai_kimchen/meshes/island/IAIKitchenIslandAreaTop.stl" />
-			</geometry>
-		</collision>
-	</link>
-
 	<!-- Cabinet2 -->
 	<joint name="cabinet2_joint" type="fixed">
-		<origin xyz="0.33 1 0.98" />
-		<parent link="kitchen_root" />
+		<origin xyz="-0.163 0.51 0.975" />
+		<parent link="side_A" />
 		<child link="cabinet2" />
 	</joint>
 
@@ -270,8 +199,8 @@
 
 	<!-- Cabinet3 -->
 	<joint name="cabinet3_joint" type="fixed">
-		<origin xyz="0.22 1.515 1.07" />
-		<parent link="kitchen_root" />
+		<origin xyz="-0.273 1.022 1.07" />
+		<parent link="side_A" />
 		<child link="cabinet3" />
 	</joint>
 
@@ -335,10 +264,10 @@
 	</link>
 
 
-<!-- Cabinet4 -->
+	<!-- Cabinet4 -->
 	<joint name="cabinet4_joint" type="fixed">
-		<origin xyz="0.32 2.32 1.72" />
-		<parent link="kitchen_root" />
+		<origin xyz="-0.175 1.825 1.72" />
+		<parent link="side_A" />
 		<child link="cabinet4" />
 	</joint>
 
@@ -360,7 +289,7 @@
 		<parent link="cabinet4" />
 		<child link="cabinet4_door_top_top" />
 		<axis xyz="0 1 0" />
-		<limit effort="1000.0" lower="-1.5708" upper="0.0" velocity="1.5708" />
+		<limit effort="1000.0" lower="-2.0" upper="0.0" velocity="1.5708" />
 	</joint>
 
 	<link name="cabinet4_door_top_top">
@@ -371,7 +300,7 @@
 			</geometry>
 		</visual>
 		<collision>
-			<origin xyz="0.0 0.0 -0.18"/>
+			<origin xyz="0.0 0.0 -0.2"/>
 			<geometry>
 				<mesh filename="package://iai_kimchen/meshes/cabinet04/IAIDoor1W100H40.stl" />
 			</geometry>
@@ -384,27 +313,28 @@
 		<child link="cabinet4_door_bottom_bottom" />
 		<axis xyz="0 -1 0" />
 		<limit effort="1000.0" lower="-1.5708" upper="0.0" velocity="1.5708" />
+		<mimic joint="cabinet4_door_top_top_joint" multiplier="1.2"/>
 	</joint>
 
 	<link name="cabinet4_door_bottom_bottom">
 		<visual>
-			<origin xyz="0.01 0.0 -0.2"/>
+			<origin xyz="0.015 0.0 -0.2"/>
 			<geometry>
 				<mesh filename="package://iai_kimchen/meshes/cabinet04/IAIDoor2W100H40.dae" />
 			</geometry>
 		</visual>
 		<collision>
-			<origin xyz="0.0 0.0 0.2"/>
+			<origin xyz="0.02 0.0 -0.2"/>
 			<geometry>
 				<mesh filename="package://iai_kimchen/meshes/cabinet04/IAIDoor2W100H40.stl" />
 			</geometry>
 		</collision>
 	</link>
 
-<!-- Cabinet5 -->
+	<!-- Cabinet5 -->
 	<joint name="cabinet5_joint" type="fixed">
-		<origin xyz="0.37 2.12 0.4" />
-		<parent link="kitchen_root" />
+		<origin xyz="-0.121 1.625 0.4" />
+		<parent link="side_A" />
 		<child link="cabinet5" />
 	</joint>
 
@@ -421,28 +351,618 @@
 		</collision>
 	</link>
 
-<!--
-	<joint name="cabinet5_drawer_small_joint" type="prismatic">
-		<origin xyz="-0.12 0.0 -0.43" />
+	<joint name="cabinet5_drawer_top_joint" type="prismatic">
+		<origin xyz="0.03 0.0 0.327" />
 		<parent link="cabinet5" />
-		<child link="cabinet5_drawer_small" />
+		<child link="cabinet5_drawer_top" />
 		<axis xyz="1 0 0" />
-		<limit effort="1000.0" lower="0.0" upper="0.5" velocity="0.5" />
+		<limit effort="1000.0" lower="0.0" upper="0.45" velocity="0.5" />
 	</joint>
 
-	<link name="cabinet5_drawer_small">
+	<link name="cabinet5_drawer_top">
 		<visual>
 			<geometry>
-				<mesh filename="package://iai_kimchen/meshes/cabinet01/IAIDrawerW60H26.dae" />
+				<mesh filename="package://iai_kimchen/meshes/cabinet05/IAIKitchenDrawerW60H13.dae" />
 			</geometry>
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://iai_kimchen/meshes/cabinet01/IAIDrawerW60H26.stl" />
+				<mesh filename="package://iai_kimchen/meshes/cabinet05/IAIKitchenDrawerW60H13.stl" />
 			</geometry>
 		</collision>
 	</link>
 
--->
+	<joint name="cabinet5_drawer_middle_joint" type="prismatic">
+		<origin xyz="0.027 0.0 0.107" />
+		<parent link="cabinet5" />
+		<child link="cabinet5_drawer_middle" />
+		<axis xyz="1 0 0" />
+		<limit effort="1000.0" lower="0.0" upper="0.45" velocity="0.5" />
+	</joint>
+
+	<link name="cabinet5_drawer_middle">
+		<visual>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/cabinet05/IAIKitchenDrawerW60H26.dae" />
+			</geometry>
+		</visual>
+		<collision>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/cabinet05/IAIKitchenDrawerW60H26.stl" />
+			</geometry>
+		</collision>
+	</link>
+
+	<joint name="cabinet5_drawer_bottom_joint" type="prismatic">
+		<origin xyz="0.037 0.0 -0.28" />
+		<parent link="cabinet5" />
+		<child link="cabinet5_drawer_bottom" />
+		<axis xyz="1 0 0" />
+		<limit effort="1000.0" lower="0.0" upper="0.45" velocity="0.5" />
+	</joint>
+
+	<link name="cabinet5_drawer_bottom">
+		<visual>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/cabinet05/IAIKitchenDrawerW60H40.dae" />
+			</geometry>
+		</visual>
+		<collision>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/cabinet05/IAIKitchenDrawerW60H40.stl" />
+			</geometry>
+		</collision>
+	</link>
+
+	<!-- Cabinet6 -->
+	<joint name="cabinet6_joint" type="fixed">
+		<origin xyz="-0.121 2.127 0.4" />
+		<parent link="side_A" />
+		<child link="cabinet6" />
+	</joint>
+
+	<link name="cabinet6">
+		<visual>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/cabinet06/IAIKitchenCabinet6W40.dae"/>
+			</geometry>
+		</visual>
+		<collision>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/cabinet06/IAIKitchenCabinet6W40.stl" />
+			</geometry>
+		</collision>
+	</link>
+
+	<joint name="cabinet6_drawer_top_joint" type="prismatic">
+		<origin xyz="0.033 -0.0125 0.328" />
+		<parent link="cabinet6" />
+		<child link="cabinet6_drawer_top" />
+		<axis xyz="1 0 0" />
+		<limit effort="1000.0" lower="0.0" upper="0.45" velocity="0.5" />
+	</joint>
+	
+	<link name="cabinet6_drawer_top">
+		<visual>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/cabinet06/IAIKitchenDrawerW40H13.dae" />
+			</geometry>
+		</visual>
+		<collision>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/cabinet06/IAIKitchenDrawerW40H13.stl" />
+			</geometry>
+		</collision>
+	</link>
+
+	<joint name="cabinet6_drawer_middle_joint" type="prismatic">
+		<origin xyz="0.03 0.0 0.105" />
+		<parent link="cabinet6" />
+		<child link="cabinet6_drawer_middle" />
+		<axis xyz="1 0 0" />
+		<limit effort="1000.0" lower="0.0" upper="0.45" velocity="0.5" />
+	</joint>
+
+	<link name="cabinet6_drawer_middle">
+		<visual>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/cabinet06/IAIKitchenDrawerW40H26.dae" />
+			</geometry>
+		</visual>
+		<collision>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/cabinet06/IAIKitchenDrawerW40H26.stl" />
+			</geometry>
+		</collision>
+	</link>
+
+	<joint name="cabinet6_drawer_bottom_joint" type="prismatic">
+		<origin xyz="0.047 0.0 -0.28" />
+		<parent link="cabinet6" />
+		<child link="cabinet6_drawer_bottom" />
+		<axis xyz="1 0 0" />
+		<limit effort="1000.0" lower="0.0" upper="0.45" velocity="0.5" />
+	</joint>
+
+	<link name="cabinet6_drawer_bottom">
+		<visual>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/cabinet06/IAIKitchenDrawerW40H40.dae" />
+			</geometry>
+		</visual>
+		<collision>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/cabinet06/IAIKitchenDrawerW40H40.stl" />
+			</geometry>
+		</collision>
+	</link>
+
+
+<!-- handles side A -->
+	<!-- handle_cab1_top -->
+	<joint name="cabinet1_handle_top_joint" type="fixed">
+		<origin xyz="0.01 0.45 0.02" />
+		<parent link="cabinet1_door_top_left" />
+		<child link="cabinet1_handle_top" />
+	</joint>
+
+	<link name="cabinet1_handle_top">
+		<visual>
+			<origin xyz="0 0.0 0.0"/>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/cabinet01/handle_cab1_top.dae" />
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0.0 0.0 0.0"/>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/cabinet01/handle_cab1_top.stl" />
+			</geometry>
+		</collision>
+	</link>
+
+
+<!-- Cabinets side B -->
+	<!-- Dishwasher: Cabinet 7 -->
+	<joint name="cabinet7_joint" type="fixed">
+		<origin xyz="0.2 0.5 0.47"/>
+		<parent link="side_B" />
+		<child link="cabinet7" />
+	</joint>
+
+	<link name="cabinet7">
+		<visual>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/cabinet07/IAIKitchenCabinet7W60.dae"/>
+			</geometry>
+		</visual>
+		<collision>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/cabinet07/IAIKitchenCabinet7W60.stl" />
+			</geometry>
+		</collision>
+	</link>
+
+	<joint name="cabinet7_door_bottom_left_joint" type="revolute">
+		<origin xyz="0.372 0 -0.45"/>
+		<parent link="cabinet7" />
+		<child link="cabinet7_door_bottom_left" />
+		<axis xyz="0 -1 0" />
+		<limit effort="1000.0" lower="-1.5708" upper="0.0" velocity="1.5708" />
+	</joint>
+
+	<link name="cabinet7_door_bottom_left">
+		<visual>
+			<origin xyz="0 0 0.385"/>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/cabinet07/IAIKitchenDoorW60H80.dae" />
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0.3 0.39"/>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/cabinet07/IAIKitchenDoorW60H80.stl" />
+			</geometry>
+		</collision>
+	</link>
+
+	<!-- Cabinet 8 -->
+	<joint name="cabinet8_joint" type="fixed">
+		<origin xyz="0.357 1.102 0.524"/>
+		<parent link="side_B" />
+		<child link="cabinet8" />
+	</joint>
+
+	<link name="cabinet8">
+		<visual>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/cabinet08/IAIKitchenCabinet8W60.dae" />
+			</geometry>
+		</visual>
+		<collision>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/cabinet08/IAIKitchenCabinet8W60.stl" />
+			</geometry>
+		</collision>
+	</link>
+
+	<joint name="cabinet8_drawer_middle_joint" type="prismatic">
+		<origin xyz="-0.05 0.0 -0.047" />
+		<parent link="cabinet8" />
+		<child link="cabinet8_drawer_middle" />
+		<axis xyz="1 0 0" />
+		<limit effort="1000.0" lower="0.0" upper="0.45" velocity="0.5" />
+	</joint>
+
+	<link name="cabinet8_drawer_middle">
+		<visual>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/cabinet08/IAIKitchenDrawerW56H10.dae" />
+			</geometry>
+		</visual>
+		<collision>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/cabinet08/IAIKitchenDrawerW56H10.stl" />
+			</geometry>
+		</collision>
+	</link>
+
+	<joint name="cabinet8_drawer_bottom_joint" type="prismatic">
+		<origin xyz="0.014 0.0 -0.412" />
+		<parent link="cabinet8" />
+		<child link="cabinet8_drawer_bottom" />
+		<axis xyz="1 0 0" />
+		<limit effort="1000.0" lower="0.0" upper="0.45" velocity="0.5" />
+	</joint>
+
+	<link name="cabinet8_drawer_bottom">
+		<visual>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/cabinet08/IAIKitchenDrawerW60H80.dae" />
+			</geometry>
+		</visual>
+		<collision>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/cabinet08/IAIKitchenDrawerW60H80.stl" />
+			</geometry>
+		</collision>
+	</link>
+
+	<!-- Cabinet9 -->
+	<joint name="cabinet9_joint" type="fixed">
+		<origin xyz="0.334 1.705 0.394"/>
+		<parent link="side_B" />
+		<child link="cabinet9" />
+	</joint>
+
+	<link name="cabinet9">
+		<visual>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/cabinet09/IAIKitchenCabinet9W60.dae"/>
+			</geometry>
+		</visual>
+		<collision>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/cabinet09/IAIKitchenCabinet9W60.stl" />
+			</geometry>
+		</collision>
+	</link>
+
+	<joint name="cabinet9_drawer_top_joint" type="prismatic">
+		<origin xyz="0.03 0.0 0.327" />
+		<parent link="cabinet9" />
+		<child link="cabinet9_drawer_top" />
+		<axis xyz="1 0 0" />
+		<limit effort="1000.0" lower="0.0" upper="0.5" velocity="0.5" />
+	</joint>
+
+	<link name="cabinet9_drawer_top">
+		<visual>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/cabinet09/IAIKitchenDrawerW60H13.dae" />
+			</geometry>
+		</visual>
+		<collision>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/cabinet09/IAIKitchenDrawerW60H13.stl" />
+			</geometry>
+		</collision>
+	</link>
+
+	<joint name="cabinet9_drawer_middle_joint" type="prismatic">
+		<origin xyz="0.027 0.0 0.106" />
+		<parent link="cabinet9" />
+		<child link="cabinet9_drawer_middle" />
+		<axis xyz="1 0 0" />
+		<limit effort="1000.0" lower="0.0" upper="0.5" velocity="0.5" />
+	</joint>
+
+	<link name="cabinet9_drawer_middle">
+		<visual>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/cabinet09/IAIKitchenDrawerW60H26.dae" />
+			</geometry>
+		</visual>
+		<collision>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/cabinet09/IAIKitchenDrawerW60H26.stl" />
+			</geometry>
+		</collision>
+	</link>
+
+	<joint name="cabinet9_drawer_bottom_joint" type="prismatic">
+		<origin xyz="0.036 0.0 -0.281" />
+		<parent link="cabinet9" />
+		<child link="cabinet9_drawer_bottom" />
+		<axis xyz="1 0 0" />
+		<limit effort="1000.0" lower="0.0" upper="0.5" velocity="0.5" />
+	</joint>
+
+	<link name="cabinet9_drawer_bottom">
+		<visual>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/cabinet09/IAIKitchenDrawerW60H40.dae" />
+			</geometry>
+		</visual>
+		<collision>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/cabinet09/IAIKitchenDrawerW60H40.stl" />
+			</geometry>
+		</collision>
+	</link>
+
+	<!-- Cabinet 10 -->
+	<joint name="cabinet10_joint" type="fixed">
+		<origin xyz="0.334 2.207 0.394"/>
+		<parent link="side_B" />
+		<child link="cabinet10" />
+	</joint>
+
+	<link name="cabinet10">
+		<visual>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/cabinet10/IAIKitchenCabinet9W40.dae" />
+			</geometry>
+		</visual>
+		<collision>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/cabinet10/IAIKitchenCabinet9W40.stl" />
+			</geometry>
+		</collision>
+	</link>
+
+	<joint name="cabinet10_drawer_top_joint" type="prismatic">
+		<origin xyz="0.033 0.0 0.326" />
+		<parent link="cabinet10" />
+		<child link="cabinet10_drawer_top" />
+		<axis xyz="1 0 0" />
+		<limit effort="1000.0" lower="0.0" upper="0.5" velocity="0.5" />
+	</joint>
+
+	<link name="cabinet10_drawer_top">
+		<visual>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/cabinet10/IAIKitchenDrawerW40H13.dae" />
+			</geometry>
+		</visual>
+		<collision>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/cabinet10/IAIKitchenDrawerW40H13.stl" />
+			</geometry>
+		</collision>
+	</link>
+
+	<joint name="cabinet10_drawer_middle_joint" type="prismatic">
+		<origin xyz="0.031 0.0 0.104" />
+		<parent link="cabinet10" />
+		<child link="cabinet10_drawer_middle" />
+		<axis xyz="1 0 0" />
+		<limit effort="1000.0" lower="0.0" upper="0.5" velocity="0.5" />
+	</joint>
+
+	<link name="cabinet10_drawer_middle">
+		<visual>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/cabinet10/IAIKitchenDrawerW40H26.dae" />
+			</geometry>
+		</visual>
+		<collision>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/cabinet10/IAIKitchenDrawerW40H26.stl" />
+			</geometry>
+		</collision>
+	</link>
+
+	<joint name="cabinet10_drawer_bottom_joint" type="prismatic">
+		<origin xyz="0.03 0.0 -0.279" />
+		<parent link="cabinet10" />
+		<child link="cabinet10_drawer_bottom" />
+		<axis xyz="1 0 0" />
+		<limit effort="1000.0" lower="0.0" upper="0.5" velocity="0.5" />
+	</joint>
+
+	<link name="cabinet10_drawer_bottom">
+		<visual>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/cabinet10/IAIKitchenDrawerW40H40.dae" />
+			</geometry>
+		</visual>
+		<collision>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/cabinet10/IAIKitchenDrawerW40H40.stl" />
+			</geometry>
+		</collision>
+	</link>
+
+	<!-- Cabinet 11 -->
+	<joint name="cabinet11_joint" type="fixed">
+		<origin xyz="0.334 2.86 0.394"/>
+		<parent link="side_B" />
+		<child link="cabinet11" />
+	</joint>
+
+	<link name="cabinet11">
+		<visual>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/cabinet11/IAIKitchenCabinet11W90.dae" />
+			</geometry>
+		</visual>
+		<collision>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/cabinet11/IAIKitchenCabinet11W90.stl" />
+			</geometry>
+		</collision>
+	</link>
+
+	<joint name="cabinet11_drawer_top_joint" type="prismatic">
+		<origin xyz="0.03 0.0 0.326" />
+		<parent link="cabinet11" />
+		<child link="cabinet11_drawer_top" />
+		<axis xyz="1 0 0" />
+		<limit effort="1000.0" lower="0.0" upper="0.45" velocity="0.5" />
+	</joint>
+
+	<link name="cabinet11_drawer_top">
+		<visual>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/cabinet11/IAIKitchenDrawerW90H13.dae" />
+			</geometry>
+		</visual>
+		<collision>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/cabinet11/IAIKitchenDrawerW90H13.stl" />
+			</geometry>
+		</collision>
+	</link>
+
+	<joint name="cabinet11_drawer_middle_joint" type="prismatic">
+		<origin xyz="0.027 0.0 0.106" />
+		<parent link="cabinet11" />
+		<child link="cabinet11_drawer_middle" />
+		<axis xyz="1 0 0" />
+		<limit effort="1000.0" lower="0.0" upper="0.45" velocity="0.5" />
+	</joint>
+
+	<link name="cabinet11_drawer_middle">
+		<visual>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/cabinet11/IAIKitchenDrawerW90H26.dae" />
+			</geometry>
+		</visual>
+		<collision>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/cabinet11/IAIKitchenDrawerW90H26.stl" />
+			</geometry>
+		</collision>
+	</link>
+
+	<joint name="cabinet11_drawer_bottom_joint" type="prismatic">
+		<origin xyz="0.045 0.0 -0.286" />
+		<parent link="cabinet11" />
+		<child link="cabinet11_drawer_bottom" />
+		<axis xyz="1 0 0" />
+		<limit effort="1000.0" lower="0.0" upper="0.45" velocity="0.5" />
+	</joint>
+
+	<link name="cabinet11_drawer_bottom">
+		<visual>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/cabinet11/IAIKitchenDrawerW90H40.dae" />
+			</geometry>
+		</visual>
+		<collision>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/cabinet11/IAIKitchenDrawerW90H40.stl" />
+			</geometry>
+		</collision>
+	</link>
+
+<!-- Other stuff -->
+	<!-- Island -->
+	<joint name="island_joint" type="fixed">
+		<origin xyz="0.13 1.8 0.808"/>
+		<parent link="side_B" />
+		<child link="island" />
+	</joint>
+
+	<link name="island">
+		<visual>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/island/IAIKitchenIslandAreaTop.dae"/>
+			</geometry>
+		</visual>
+		<collision>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/island/IAIKitchenIslandAreaTop.stl" />
+			</geometry>
+		</collision>
+	</link>
+
+	<!-- Cooktop -->
+	<joint name="cooktop_joint" type="fixed">
+		<origin xyz="0.26 2.86 0.832"/>
+		<parent link="side_B" />
+		<child link="cooktop" />
+	</joint>
+
+	<link name="cooktop">
+		<visual>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/cooktop/IAIKitchenCookTop.dae"/>
+			</geometry>
+		</visual>
+		<collision>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/cooktop/IAIKitchenCookTop.stl" />
+			</geometry>
+		</collision>
+	</link>
+
+	<!-- Tap, Water Tap -->
+	<joint name="tap_joint" type="fixed">
+		<origin xyz="0.1 1.1 0.935"/>
+		<parent link="side_B" />
+		<child link="tap" />
+	</joint>
+
+	<link name="tap">
+		<visual>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/tap/IAIKitchenWaterTap.dae"/>
+			</geometry>
+		</visual>
+		<collision>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/tap/IAIKitchenWaterTap.stl" />
+			</geometry>
+		</collision>
+	</link>
+
+	<!-- Sink, Kitchen Sink -->
+	<joint name="sink_joint" type="fixed">
+		<origin xyz="0.328 1.1 0.769"/>
+		<parent link="side_B" />
+		<child link="sink" />
+	</joint>
+
+	<link name="sink">
+		<visual>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/sink/IAIKitchenSink.dae"/>
+			</geometry>
+		</visual>
+		<collision>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/sink/IAIKitchenSink.stl" />
+			</geometry>
+		</collision>
+	</link>
+
+
+<!-- anything here is not done and should be moved to its proper section -->
+
+
+
+
 
 </robot>
