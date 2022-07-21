@@ -8,7 +8,7 @@
 		<origin xyz="0 0 0" />
 	</link>
 
-<!-- frames and useless/useful definitions -->
+<!-- Frames, reference frames -->
 	<joint name="frame_A_joint" type="fixed">
 		<parent link="kitchen_root" />
 		<origin xyz="0.5 0.5 0.080" />
@@ -497,7 +497,7 @@
 		</collision>
 	</link>
 
-<!-- handles side A -->
+<!-- Handles side A -->
 	<joint name="cabinet1_handle_top_joint" type="fixed">
 		<origin xyz="0.01 0.45 0.02" />
 		<parent link="cabinet1_door_top_left" />
@@ -749,7 +749,7 @@
 <!-- Cabinets side B -->
 	<!-- Dishwasher: Cabinet 7 -->
 	<joint name="cabinet7_joint" type="fixed">
-		<origin xyz="0.2 0.5 0.47"/>
+		<origin xyz="0.2 0.501 0.47"/>
 		<parent link="side_B" />
 		<child link="cabinet7" />
 	</joint>
@@ -855,7 +855,7 @@
 
 	<!-- Cabinet9 -->
 	<joint name="cabinet9_joint" type="fixed">
-		<origin xyz="0.334 1.705 0.394"/>
+		<origin xyz="0.333 1.703 0.394"/>
 		<parent link="side_B" />
 		<child link="cabinet9" />
 	</joint>
@@ -938,7 +938,7 @@
 
 	<!-- Cabinet 10 -->
 	<joint name="cabinet10_joint" type="fixed">
-		<origin xyz="0.334 2.207 0.394"/>
+		<origin xyz="0.333 2.204 0.394"/>
 		<parent link="side_B" />
 		<child link="cabinet10" />
 	</joint>
@@ -1021,7 +1021,7 @@
 
 	<!-- Cabinet 11 -->
 	<joint name="cabinet11_joint" type="fixed">
-		<origin xyz="0.334 2.86 0.394"/>
+		<origin xyz="0.333 2.855 0.394"/>
 		<parent link="side_B" />
 		<child link="cabinet11" />
 	</joint>
@@ -1102,7 +1102,7 @@
 		</collision>
 	</link>
 
-<!-- handles side B -->
+<!-- Handles side B -->
 	<joint name="handle_cab7_top_joint" type="fixed">
 		<origin xyz="0.01 0 0.74" />
 		<parent link="cabinet7_door_bottom_left" />
@@ -1312,10 +1312,10 @@
 		</collision>
 	</link>
 
-<!-- Other stuff -->
-	<!-- Island, Countertop -->
+<!-- Miscellaneous -->
+	<!-- Island, Main Countertop -->
 	<joint name="island_joint" type="fixed">
-		<origin xyz="0.13 1.8 0.808"/>
+		<origin xyz="0.13 1.786 0.807"/>
 		<parent link="side_B" />
 		<child link="island" />
 	</joint>
@@ -1335,7 +1335,7 @@
 
 	<!-- Cooktop -->
 	<joint name="cooktop_joint" type="fixed">
-		<origin xyz="0.26 2.86 0.832"/>
+		<origin xyz="0.26 2.86 0.830"/>
 		<parent link="side_B" />
 		<child link="cooktop" />
 	</joint>
@@ -1355,7 +1355,7 @@
 
 	<!-- Tap, Water Tap -->
 	<joint name="tap_joint" type="fixed">
-		<origin xyz="0.1 1.1 0.935"/>
+		<origin xyz="0.1 1.085 0.933"/>
 		<parent link="side_B" />
 		<child link="tap" />
 	</joint>
@@ -1375,7 +1375,7 @@
 
 	<!-- Sink, Kitchen Sink -->
 	<joint name="sink_joint" type="fixed">
-		<origin xyz="0.328 1.1 0.769"/>
+		<origin xyz="0.328 1.088 0.769"/>
 		<parent link="side_B" />
 		<child link="sink" />
 	</joint>
@@ -1433,10 +1433,7 @@
 		</collision>
 	</link>
 
-<!-- anything here is not done and should be moved to its proper section -->
-
-<!-- Side A countertop IAIKitchenPartW102H60 -->
-
+	<!-- Side A countertop -->
 	<joint name="countertop_joint" type="fixed">
 		<origin xyz="-0.027 0.21 0.423"/>
 		<parent link="cabinet5" />
@@ -1456,6 +1453,124 @@
 		</collision>
 	</link>
 
+	<!-- island waterfall, left side -->
+	<joint name="island_waterfall_left_joint" type="fixed">
+		<origin xyz="0.285 0.191 0.354" rpy="1.57 0 1.57"/>
+		<parent link="side_B" />
+		<child link="island_waterfall_left" />
+	</joint>
 
+	<link name="island_waterfall_left">
+		<visual>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/IAIKitchenVisiblePartIslandUnderSideW90H60/IAIKitchenVisiblePartIslandUnderSideW90H60.dae"/>
+			</geometry>
+		</visual>
+		<collision>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/IAIKitchenVisiblePartIslandUnderSideW90H60/IAIKitchenVisiblePartIslandUnderSideW90H60.stl" />
+			</geometry>
+		</collision>
+	</link>
+
+	<!-- island waterfall, right side -->
+	<joint name="island_waterfall_right_joint" type="fixed">
+		<origin xyz="0.285 3.315 0.354" rpy="1.57 0 1.57"/>
+		<parent link="side_B" />
+		<child link="island_waterfall_right" />
+	</joint>
+
+	<link name="island_waterfall_right">
+		<visual>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/IAIKitchenVisiblePartIslandUnderSideW90H60/IAIKitchenVisiblePartIslandUnderSideW90H60.dae"/>
+			</geometry>
+		</visual>
+		<collision>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/IAIKitchenVisiblePartIslandUnderSideW90H60/IAIKitchenVisiblePartIslandUnderSideW90H60.stl" />
+			</geometry>
+		</collision>
+	</link>
+
+	<!-- island, back panel -->
+	<joint name="island_back_joint" type="fixed">
+		<origin xyz="-0.026 1.754 0.353" rpy="0 1.57 0" />
+		<parent link="side_B" />
+		<child link="island_back" />
+	</joint>
+
+	<link name="island_back">
+		<visual>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/IAIKitchenPartW314H90/IAIKitchenPartW314H90.dae"/>
+			</geometry>
+		</visual>
+		<collision>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/IAIKitchenPartW314H90/IAIKitchenPartW314H90.stl" />
+			</geometry>
+		</collision>
+	</link>
+
+	<!-- side A left panel -->
+	<joint name="side_A_left_joint" type="fixed">
+		<origin xyz="-0.16 -0.296 1.030" rpy="0 0 1.57" />
+		<parent link="side_A" />
+		<child link="side_A_left" />
+	</joint>
+
+	<link name="side_A_left">
+		<visual>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/IAIKitchenPartW58H223/IAIKitchenPartW58H223.dae"/>
+			</geometry>
+		</visual>
+		<collision>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/IAIKitchenPartW58H223/IAIKitchenPartW58H223.stl" />
+			</geometry>
+		</collision>
+	</link>
+
+	<!-- side A right panel up -->
+	<joint name="side_A_right_top_joint" type="fixed">
+		<origin xyz="-0.262 2.336 1.74" rpy="0 0 1.57" />
+		<parent link="side_A" />
+		<child link="side_A_rt" />
+	</joint>
+
+	<link name="side_A_rt">
+		<visual>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/IAIKitchenVisiblePartUppersideW80H39/IAIKitchenVisiblePartUppersideW80H39.dae"/>
+			</geometry>
+		</visual>
+		<collision>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/IAIKitchenVisiblePartUppersideW80H39/IAIKitchenVisiblePartUppersideW80H39.stl" />
+			</geometry>
+		</collision>
+	</link>
+
+	<!-- side A right panel bottom -->
+	<joint name="side_A_right_bott_joint" type="fixed">
+		<origin xyz="-0.159 2.338 0.361" rpy="1.57 0 1.57" />
+		<parent link="side_A" />
+		<child link="side_A_rb" />
+	</joint>
+
+	<link name="side_A_rb">
+		<visual>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/IAIKitchenVisiblePartUnderSideW90H58/IAIKitchenVisiblePartUnderSideW90H58.dae"/>
+			</geometry>
+		</visual>
+		<collision>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/IAIKitchenVisiblePartUnderSideW90H58/IAIKitchenVisiblePartUnderSideW90H58.stl" />
+			</geometry>
+		</collision>
+	</link>
 
 </robot>
