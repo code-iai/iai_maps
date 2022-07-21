@@ -11,13 +11,14 @@
 <!-- frames and useless/useful definitions -->
 	<joint name="frame_A_joint" type="fixed">
 		<parent link="kitchen_root" />
-		<origin xyz="0.5 0.5 0" />
+		<origin xyz="0.5 0.5 0.080" />
 		<child link="side_A"/>
 	</joint>
 
+	<!-- Bond, James Bond -->
 	<joint name="frame_B_joint" type="fixed">
 		<parent link="kitchen_root" />
-		<origin xyz="3 3 0.0" rpy="0 0 3.14"/>
+		<origin xyz="3 3 0.092" rpy="0 0 3.14"/>
 		<child link="side_B"/>
 	</joint>
 
@@ -57,13 +58,13 @@
 
 	<link name="cabinet1_door_top_left">
 		<visual>
-			<origin xyz="0 0.3 0.35"/>
+			<origin xyz="0.001 0.305 0.35"/>
 			<geometry>
 				<mesh filename="package://iai_kimchen/meshes/cabinet01/IAIDoorW60H80.dae" />
 			</geometry>
 		</visual>
 		<collision>
-			<origin xyz="0 0.3 0.35"/>
+			<origin xyz="0.001 0.305 0.35"/>
 			<geometry>
 				<mesh filename="package://iai_kimchen/meshes/cabinet01/IAIDoorW60H80.stl" />
 			</geometry>
@@ -133,7 +134,7 @@
 	</link>
 
 	<joint name="cabinet2_door_left_joint" type="revolute">
-		<origin xyz="0.27 -0.19 0.0" />
+		<origin xyz="0.277 -0.19 0.0" />
 		<parent link="cabinet2" />
 		<child link="cabinet2_door_left" />
 		<axis xyz="0 0 1" />
@@ -495,7 +496,6 @@
 			</geometry>
 		</collision>
 	</link>
-
 
 <!-- handles side A -->
 	<joint name="cabinet1_handle_top_joint" type="fixed">
@@ -1102,11 +1102,10 @@
 		</collision>
 	</link>
 
-
 <!-- handles side B -->
 	<joint name="handle_cab7_top_joint" type="fixed">
-		<origin xyz="0.38 0 0.29" />
-		<parent link="cabinet7" />
+		<origin xyz="0.01 0 0.74" />
+		<parent link="cabinet7_door_bottom_left" />
 		<child link="handle_cab7" />
 	</joint>
 
@@ -1314,7 +1313,7 @@
 	</link>
 
 <!-- Other stuff -->
-	<!-- Island -->
+	<!-- Island, Countertop -->
 	<joint name="island_joint" type="fixed">
 		<origin xyz="0.13 1.8 0.808"/>
 		<parent link="side_B" />
@@ -1394,8 +1393,68 @@
 		</collision>
 	</link>
 
+	<!-- floor socket: A -->
+	<joint name="socket_a_joint" type="fixed">
+		<origin xyz="0.095 1.02 -0.03"/>
+		<parent link="side_A" />
+		<child link="sa" />
+	</joint>
+
+	<link name="sa">
+		<visual>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/floor_socket_side_a/IAIKitchenPartSocketW260.dae"/>
+			</geometry>
+		</visual>
+		<collision>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/floor_socket_side_a/IAIKitchenPartSocketW260.stl" />
+			</geometry>
+		</collision>
+	</link>
+
+	<!-- floor socket: B -->
+	<joint name="socket_b_joint" type="fixed">
+		<origin xyz="0.552 1.755 -0.045"/>
+		<parent link="side_B" />
+		<child link="sb" />
+	</joint>
+
+	<link name="sb">
+		<visual>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/floor_socket_side_b/IAIKitchenPartSocketW310.dae"/>
+			</geometry>
+		</visual>
+		<collision>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/floor_socket_side_b/IAIKitchenPartSocketW310.stl" />
+			</geometry>
+		</collision>
+	</link>
 
 <!-- anything here is not done and should be moved to its proper section -->
+
+<!-- Side A countertop IAIKitchenPartW102H60 -->
+
+	<joint name="countertop_joint" type="fixed">
+		<origin xyz="-0.027 0.21 0.423"/>
+		<parent link="cabinet5" />
+		<child link="countertop" />
+	</joint>
+
+	<link name="countertop">
+		<visual>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/countertop/IAIKitchenPartW102H60.dae"/>
+			</geometry>
+		</visual>
+		<collision>
+			<geometry>
+				<mesh filename="package://iai_kimchen/meshes/countertop/IAIKitchenPartW102H60.stl" />
+			</geometry>
+		</collision>
+	</link>
 
 
 
