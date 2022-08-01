@@ -80,7 +80,6 @@
 
 		<link name="handle_cab1_top_door">
 			<visual>
-				<!--origin rpy="-1.57 3.14 0" /-->
 				<geometry>
 					<mesh filename="package://iai_apartment/meshes/handles/handle_horizontal.dae" />
 				</geometry>
@@ -797,7 +796,6 @@
 
 		<link name="cabinet7_door_bottom_left">
 			<visual>
-				<!--origin rpy="0 0 3.14" /-->
 				<origin xyz="0 0 0.385"/>
 				<geometry>
 					<mesh filename="package://iai_apartment/meshes/cabinet07/IAIKitchenDoorW60H80.dae" />
@@ -832,7 +830,6 @@
 
 	<!-- Cabinet 8 -->
 		<joint name="cabinet8_joint" type="fixed">
-			<!--origin xyz="0.357 1.102 0.524"/-->
 			<origin xyz="0.256 1.102 0.006"/>
 			<parent link="side_B" />
 			<child link="cabinet8" />
