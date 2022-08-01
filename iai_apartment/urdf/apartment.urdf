@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 
-<robot name="apartment">
+<robot name="apartment" xmlns:xacro="http://ros.org/wiki/xacro">
 
   <link name="apartment_root">
     <origin rpy="0 0 0" xyz="0 0 0" />
@@ -323,5 +323,9 @@
       </geometry>
     </collision>
   </link>
+
+
+  <xacro:include filename="$(find iai_apartment)/urdf/kitchen.xarco" />
+  <xacro:kitchen_macro name="kitchen_base" parent="apartment_root" />
 
 </robot>
