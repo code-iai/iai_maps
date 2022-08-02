@@ -4,19 +4,26 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="kitchen">
 
 	<!-- Such is life in a kitchen : xacro -->
-	<xacro:macro name="kitchen_macro" params="name parent"> 
+	<xacro:macro name="kitchen_macro" params="name parent *origin"> 
+
+		<joint name="${name}" type="fixed">
+			<xacro:insert_block name="origin" />
+			<parent link="${parent}" />
+			<child link="kitchen_root"/>
+		</joint>
+		<link name="kitchen_root" />
 
 <!-- Frames, reference frames -->
 	<joint name="frame_A_joint" type="fixed">
-		<parent link="${parent}" />
+		<parent link="kitchen_root" />
 		<origin xyz="0.5 0.5 0.080" />
 		<child link="side_A"/>
 	</joint>
 
 	<!-- Bond, James Bond -->
 	<joint name="frame_B_joint" type="fixed">
-		<parent link="${parent}" />
-		<origin xyz="3 3 0.092" rpy="0 0 3.14"/>
+		<parent link="kitchen_root" />
+		<origin xyz="3 3.5 0.092" rpy="0 0 3.14"/>
 		<child link="side_B"/>
 	</joint>
 
@@ -193,9 +200,19 @@
 			</collision>
 		</link>
 
-		<joint name="cabinet2_door_left_joint" type="revolute">
+		<joint name="cabinet2_door_out_joint" type="prismatic">
 			<origin xyz="0.277 -0.19 0.0" rpy="0 0 3.14" />
 			<parent link="cabinet2" />
+			<child link="cabinet2_door_out_fancy" />
+			<axis xyz="-1 0 0" />
+			<limit effort="1.0" lower="0.0" upper="0.02" velocity="1.5708" />
+			<mimic joint="cabinet2_door_left_joint" multiplier="0.01"/>
+		</joint>
+
+		<link name="cabinet2_door_out_fancy" />
+
+		<joint name="cabinet2_door_left_joint" type="revolute">
+			<parent link="cabinet2_door_out_fancy" />
 			<child link="cabinet2_door_left" />
 			<axis xyz="0 0 -1" />
 			<limit effort="1000.0" lower="0.0" upper="1.5708" velocity="1.5708" />
@@ -301,9 +318,20 @@
 			</collision>
 		</link>
 
-		<joint name="cabinet3_door_top_left_joint" type="revolute">
+		<joint name="cabinet3_door_top_out_joint" type="prismatic">
 			<origin xyz="0.39 -0.3 0.5" rpy="0 0 3.14" />
 			<parent link="cabinet3" />
+			<child link="cabinet3_door_top_out_fancy" />
+			<axis xyz="-1 0 0" />
+			<limit effort="1.0" lower="0.0" upper="0.02" velocity="1.5708" />
+			<mimic joint="cabinet3_door_top_left_joint" multiplier="0.01"/>
+		</joint>
+
+		<link name="cabinet3_door_top_out_fancy" />
+
+		<joint name="cabinet3_door_top_left_joint" type="revolute">
+			
+			<parent link="cabinet3_door_top_out_fancy" />
 			<child link="cabinet3_door_top_left" />
 			<axis xyz="0 0 -1" />
 			<limit effort="1000.0" lower="0.0" upper="1.5708" velocity="1.5708" />
@@ -343,9 +371,19 @@
 			</collision>
 		</link>
 
-		<joint name="cabinet3_door_bottom_left_joint" type="revolute">
+		<joint name="cabinet3_door_bottom_out_joint" type="prismatic">
 			<origin xyz="0.39 -0.3 -0.5" rpy="0 0 3.14" />
 			<parent link="cabinet3" />
+			<child link="cabinet3_door_bottom_out_fancy" />
+			<axis xyz="-1 0 0" />
+			<limit effort="1.0" lower="0.0" upper="0.02" velocity="1.5708" />
+			<mimic joint="cabinet3_door_bottom_left_joint" multiplier="0.01"/>
+		</joint>
+
+		<link name="cabinet3_door_bottom_out_fancy" />
+
+		<joint name="cabinet3_door_bottom_left_joint" type="revolute">
+			<parent link="cabinet3_door_bottom_out_fancy" />
 			<child link="cabinet3_door_bottom_left" />
 			<axis xyz="0 0 -1" />
 			<limit effort="1000.0" lower="0.0" upper="1.5708" velocity="1.5708" />
@@ -1609,5 +1647,6 @@
 				</geometry>
 			</collision>
 		</link>
+
 	</xacro:macro>
 </robot>

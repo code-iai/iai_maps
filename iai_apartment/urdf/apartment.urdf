@@ -326,6 +326,8 @@
 
 
   <xacro:include filename="$(find iai_apartment)/urdf/kitchen.xarco" />
-  <xacro:kitchen_macro name="kitchen_base" parent="apartment_root" />
+  <xacro:kitchen_macro name="kitchen_base" parent="apartment_root">
+    <origin xyz="-8.9 -1.0 0.2"/>
+  </xacro:kitchen_macro>
 
 </robot>
