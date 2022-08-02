@@ -1472,10 +1472,10 @@
 		<joint name="socket_a_joint" type="fixed">
 			<origin xyz="0.095 1.02 -0.03"/>
 			<parent link="side_A" />
-			<child link="sa" />
+			<child link="useless_underbar_a" />
 		</joint>
 
-		<link name="sa">
+		<link name="useless_underbar_a">
 			<visual>
 				<geometry>
 					<mesh filename="package://iai_apartment/meshes/floor_socket_side_a/IAIKitchenPartSocketW260.dae"/>
@@ -1492,10 +1492,10 @@
 		<joint name="socket_b_joint" type="fixed">
 			<origin xyz="0.552 1.755 -0.045"/>
 			<parent link="side_B" />
-			<child link="sb" />
+			<child link="useless_underbar_b" />
 		</joint>
 
-		<link name="sb">
+		<link name="useless_underbar_b">
 			<visual>
 				<geometry>
 					<mesh filename="package://iai_apartment/meshes/floor_socket_side_b/IAIKitchenPartSocketW310.dae"/>

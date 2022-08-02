@@ -149,6 +149,10 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        cabinet2_door_out_fancy:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         cabinet2_drawer_big:
           Alpha: 1
           Show Axes: false
@@ -169,11 +173,19 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        cabinet3_door_bottom_out_fancy:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         cabinet3_door_top_left:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
+        cabinet3_door_top_out_fancy:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         cabinet4:
           Alpha: 1
           Show Axes: false
@@ -438,16 +450,10 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-        sa:
+        middle_of_the_room:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
-        sb:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
         side_A:
           Alpha: 1
           Show Axes: false
@@ -482,6 +488,16 @@ Visualization Manager:
           Show Trail: false
           Value: true
         tap:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        useless_underbar_a:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        useless_underbar_b:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -556,6 +572,8 @@ Visualization Manager:
           Value: false
         iai_apartment/cabinet2_door_left:
           Value: true
+        iai_apartment/cabinet2_door_out_fancy:
+          Value: true
         iai_apartment/cabinet2_drawer_big:
           Value: false
         iai_apartment/cabinet2_drawer_small:
@@ -564,8 +582,12 @@ Visualization Manager:
           Value: false
         iai_apartment/cabinet3_door_bottom_left:
           Value: false
+        iai_apartment/cabinet3_door_bottom_out_fancy:
+          Value: true
         iai_apartment/cabinet3_door_top_left:
           Value: false
+        iai_apartment/cabinet3_door_top_out_fancy:
+          Value: true
         iai_apartment/cabinet4:
           Value: false
         iai_apartment/cabinet4_door_bottom:
@@ -672,10 +694,8 @@ Visualization Manager:
           Value: false
         iai_apartment/kitchen_root:
           Value: false
-        iai_apartment/sa:
-          Value: false
-        iai_apartment/sb:
-          Value: false
+        iai_apartment/middle_of_the_room:
+          Value: true
         iai_apartment/side_A:
           Value: false
         iai_apartment/side_A_left:
@@ -692,6 +712,10 @@ Visualization Manager:
           Value: false
         iai_apartment/tap:
           Value: false
+        iai_apartment/useless_underbar_a:
+          Value: true
+        iai_apartment/useless_underbar_b:
+          Value: true
         iai_apartment/walls:
           Value: false
         iai_apartment/wardrobe:
@@ -730,20 +754,23 @@ Visualization Manager:
                   iai_apartment/handle_cab1_drawer_mid:
                     {}
               iai_apartment/cabinet2:
-                iai_apartment/cabinet2_door_left:
-                  iai_apartment/handle_cab2_door:
-                    {}
+                iai_apartment/cabinet2_door_out_fancy:
+                  iai_apartment/cabinet2_door_left:
+                    iai_apartment/handle_cab2_door:
+                      {}
                 iai_apartment/cabinet2_drawer_big:
                   {}
                 iai_apartment/cabinet2_drawer_small:
                   {}
               iai_apartment/cabinet3:
-                iai_apartment/cabinet3_door_bottom_left:
-                  iai_apartment/handle_cab3_door_bottom:
-                    {}
-                iai_apartment/cabinet3_door_top_left:
-                  iai_apartment/handle_cab3_door_top:
-                    {}
+                iai_apartment/cabinet3_door_bottom_out_fancy:
+                  iai_apartment/cabinet3_door_bottom_left:
+                    iai_apartment/handle_cab3_door_bottom:
+                      {}
+                iai_apartment/cabinet3_door_top_out_fancy:
+                  iai_apartment/cabinet3_door_top_left:
+                    iai_apartment/handle_cab3_door_top:
+                      {}
               iai_apartment/cabinet4:
                 iai_apartment/cabinet4_door_top:
                   iai_apartment/cabinet4_door_bottom:
@@ -771,13 +798,13 @@ Visualization Manager:
                 iai_apartment/cabinet6_drawer_top:
                   iai_apartment/handle_cab6_t:
                     {}
-              iai_apartment/sa:
-                {}
               iai_apartment/side_A_left:
                 {}
               iai_apartment/side_A_rb:
                 {}
               iai_apartment/side_A_rt:
+                {}
+              iai_apartment/useless_underbar_a:
                 {}
             iai_apartment/side_B:
               iai_apartment/cabinet10:
@@ -830,12 +857,14 @@ Visualization Manager:
                 {}
               iai_apartment/island_waterfall_right:
                 {}
-              iai_apartment/sb:
-                {}
               iai_apartment/sink:
                 {}
               iai_apartment/tap:
                 {}
+              iai_apartment/useless_underbar_b:
+                {}
+          iai_apartment/middle_of_the_room:
+            {}
           iai_apartment/sofa:
             {}
           iai_apartment/walls:
@@ -885,17 +914,17 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: -8.972981452941895
-        Y: 0.25444281101226807
-        Z: 0.355345755815506
+        X: -8.668451309204102
+        Y: -1.3861234188079834
+        Z: -0.3409794867038727
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.8347960114479065
+      Pitch: -1.5697963237762451
       Target Frame: <Fixed Frame>
-      Yaw: 0.5035064220428467
+      Yaw: 3.6366662979125977
     Saved: ~
 Window Geometry:
   Displays:
