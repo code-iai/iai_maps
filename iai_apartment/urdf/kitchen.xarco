@@ -1649,4 +1649,49 @@
 		</link>
 
 	</xacro:macro>
+
+<!-- extras -->
+
+	<!-- Collision okay surface for cabinet1-->
+	<material name="white">
+		<color rgba="1 1 1 1"/>
+	</material>
+	<joint name="cabinet1_coloksu_level4_joint" type="fixed">
+		<origin xyz="-0.172 0.005 0.281" />
+		<parent link="cabinet1" />
+		<child link="cabinet1_coloksu_level4" />
+	</joint>
+	<link name="cabinet1_coloksu_level4">
+		<visual>
+			<geometry>
+				<box size="0.534 0.568 0.003"/>
+			</geometry>
+			<material name="white" />
+		</visual>
+		<collision>
+			<geometry>
+				<box size="0.534 0.568 0.003"/>
+			</geometry>
+		</collision>
+	</link>
+
+	<joint name="cabinet1_coloksu_level5_joint" type="fixed">
+		<origin xyz="-0.172 0.005 0.672" />
+		<parent link="cabinet1" />
+		<child link="cabinet1_coloksu_level5" />
+	</joint>
+	<link name="cabinet1_coloksu_level5">
+		<visual>
+			<geometry>
+				<box size="0.534 0.568 0.003"/>
+			</geometry>
+			<material name="white" />
+		</visual>
+		<collision>
+			<geometry>
+				<box size="0.534 0.568 0.003"/>
+			</geometry>
+		</collision>
+	</link>
+	
 </robot>
