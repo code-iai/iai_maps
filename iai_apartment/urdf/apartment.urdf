@@ -3,7 +3,6 @@
 <robot name="apartment" xmlns:xacro="http://ros.org/wiki/xacro">
 
 
-  
   <link name="apartment_root">
     <origin rpy="0 0 0" xyz="0 0 0" />
   </link>
@@ -13,10 +12,10 @@
     <parent link="apartment_root" />
     <child link="middle_of_the_room" />
   </joint>
-
   <link name="middle_of_the_room" />
 
   <joint name="walls_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 -0.2" />
     <parent link="middle_of_the_room" />
     <child link="walls" />
   </joint>
@@ -33,6 +32,7 @@
     </collision>
   </link>
   <joint name="windows_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 -0.2" />
     <parent link="middle_of_the_room" />
     <child link="windows" />
   </joint>
@@ -50,7 +50,7 @@
   </link>
 
   <joint name="wardrobe_joint" type="fixed">
-    <origin rpy="0 0 0" xyz="9.7082 -0.6331 0.2000" />
+    <origin rpy="0 0 0" xyz="9.7082 -0.6331 0.0" />
     <parent link="middle_of_the_room" />
     <child link="wardrobe" />
   </joint>
@@ -150,7 +150,6 @@
         <cylinder radius="0.0075" length="0.469897" />
       </geometry>
     </collision>
-
   </link>
   <joint name="wardrobe_door_left_joint" type="revolute">
     <origin rpy="0 0 0" xyz="-0.3246 0.5 0.0000" />
@@ -192,7 +191,7 @@
   </link>
 
   <joint name="armchair_joint" type="fixed">
-    <origin rpy="0 0 1.9199" xyz="7.9688 -0.3791 0.2000" />
+    <origin rpy="0 0 1.9199" xyz="7.9688 -0.3791 0.0" />
     <parent link="middle_of_the_room" />
     <child link="armchair" />
   </joint>
@@ -209,7 +208,7 @@
     </collision>
   </link>
   <joint name="sofa_joint" type="fixed">
-    <origin rpy="0 0 0" xyz="8.1986 2.4096 0.2000" />
+    <origin rpy="0 0 0" xyz="8.1986 2.4096 0.0" />
     <parent link="middle_of_the_room" />
     <child link="sofa" />
   </joint>
@@ -226,7 +225,7 @@
     </collision>
   </link>
   <joint name="coffee_table_joint" type="fixed">
-    <origin rpy="0 0 1.5708" xyz="7.8034 1.02957 0.2000" />
+    <origin rpy="0 0 1.5708" xyz="7.8034 1.02957 0.0" />
     <parent link="middle_of_the_room" />
     <child link="coffee_table" />
   </joint>
@@ -317,7 +316,7 @@
     </collision>
   </link>
   <joint name="bedside_table_joint" type="fixed">
-    <origin rpy="0 0 0" xyz="7.2110 0.1296 0.2000" />
+    <origin rpy="0 0 0" xyz="7.2110 0.1296 0.0" />
     <parent link="middle_of_the_room" />
     <child link="bedside_table" />
   </joint>
@@ -338,7 +337,7 @@
 
   <xacro:include filename="$(find iai_apartment)/urdf/kitchen.xarco" />
   <xacro:kitchen_macro name="kitchen_base" parent="apartment_root">
-    <origin xyz="-0.05 0.75 0.2"/>
+    <origin xyz="-0.05 0.75 0.005"/>
   </xacro:kitchen_macro>
 
 </robot>
