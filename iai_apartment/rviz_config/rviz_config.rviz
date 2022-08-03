@@ -4,12 +4,11 @@ Panels:
     Name: Displays
     Property Tree Widget:
       Expanded:
-        - /Global Options1
-        - /Status1
-        - /Grid1
         - /Grid1/Offset1
+        - /RobotModel1
+        - /RobotModel1/Links1
         - /TF1/Frames1
-      Splitter Ratio: 0.4933628439903259
+      Splitter Ratio: 0.721238911151886
     Tree Height: 797
   - Class: rviz/Selection
     Name: Selection
@@ -60,7 +59,7 @@ Visualization Manager:
       Collision Enabled: false
       Enabled: true
       Links:
-        All Links Enabled: true
+        All Links Enabled: false
         Expand Joint Details: false
         Expand Link Details: false
         Expand Tree: false
@@ -73,82 +72,92 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         bedside_table:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         cabinet1:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         cabinet10:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         cabinet10_drawer_bottom:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         cabinet10_drawer_middle:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         cabinet10_drawer_top:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         cabinet11:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         cabinet11_drawer_bottom:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         cabinet11_drawer_middle:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         cabinet11_drawer_top:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
+        cabinet1_coloksu_level4:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: false
+        cabinet1_coloksu_level5:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: false
         cabinet1_door_top_left:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         cabinet1_drawer_bottom:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         cabinet1_drawer_middle:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         cabinet2:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         cabinet2_door_left:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         cabinet2_door_out_fancy:
           Alpha: 1
           Show Axes: false
@@ -157,22 +166,22 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         cabinet2_drawer_small:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         cabinet3:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         cabinet3_door_bottom_left:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         cabinet3_door_bottom_out_fancy:
           Alpha: 1
           Show Axes: false
@@ -181,7 +190,7 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         cabinet3_door_top_out_fancy:
           Alpha: 1
           Show Axes: false
@@ -190,63 +199,68 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         cabinet4_door_bottom:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         cabinet4_door_top:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         cabinet5:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         cabinet5_drawer_bottom:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         cabinet5_drawer_middle:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         cabinet5_drawer_top:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         cabinet6:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         cabinet6_drawer_bottom:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         cabinet6_drawer_middle:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         cabinet6_drawer_top:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         cabinet7:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         cabinet7_door_bottom_left:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: false
+        cabinet7_drawer_middle:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -255,153 +269,158 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         cabinet8_drawer_bottom:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         cabinet8_drawer_middle:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         cabinet9:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         cabinet9_drawer_bottom:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         cabinet9_drawer_middle:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         cabinet9_drawer_top:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         coffee_table:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         coffee_table_drawer:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         cooktop:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         countertop:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         handle_cab10_b:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         handle_cab10_m:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         handle_cab10_t:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         handle_cab11_b:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         handle_cab11_m:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         handle_cab11_t:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         handle_cab1_drawer_bottom:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         handle_cab1_drawer_mid:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         handle_cab1_top_door:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         handle_cab2_door:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         handle_cab3_door_bottom:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         handle_cab3_door_top:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         handle_cab4_door_bottom:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         handle_cab5_b:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         handle_cab5_m:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         handle_cab5_t:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         handle_cab6_b:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         handle_cab6_m:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         handle_cab6_t:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         handle_cab7:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: false
+        handle_cab7_middle:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -410,42 +429,42 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         handle_cab9_b:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         handle_cab9_m:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         handle_cab9_t:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         island:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         island_back:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         island_waterfall_left:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         island_waterfall_right:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         kitchen_root:
           Alpha: 1
           Show Axes: false
@@ -462,17 +481,17 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         side_A_rb:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         side_A_rt:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         side_B:
           Alpha: 1
           Show Axes: false
@@ -481,52 +500,52 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         sofa:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         tap:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         useless_underbar_a:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         useless_underbar_b:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         walls:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         wardrobe:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         wardrobe_door_left:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         wardrobe_door_right:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         windows:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
       Name: RobotModel
       Robot Description: apartment_description
       TF Prefix: iai_apartment
@@ -561,6 +580,10 @@ Visualization Manager:
         iai_apartment/cabinet11_drawer_middle:
           Value: false
         iai_apartment/cabinet11_drawer_top:
+          Value: false
+        iai_apartment/cabinet1_coloksu_level4:
+          Value: false
+        iai_apartment/cabinet1_coloksu_level5:
           Value: false
         iai_apartment/cabinet1_door_top_left:
           Value: false
@@ -613,6 +636,8 @@ Visualization Manager:
         iai_apartment/cabinet7:
           Value: false
         iai_apartment/cabinet7_door_bottom_left:
+          Value: false
+        iai_apartment/cabinet7_drawer_middle:
           Value: false
         iai_apartment/cabinet8:
           Value: false
@@ -676,6 +701,8 @@ Visualization Manager:
           Value: false
         iai_apartment/handle_cab7:
           Value: false
+        iai_apartment/handle_cab7_middle:
+          Value: false
         iai_apartment/handle_cab8:
           Value: false
         iai_apartment/handle_cab9_b:
@@ -737,6 +764,10 @@ Visualization Manager:
           iai_apartment/kitchen_root:
             iai_apartment/side_A:
               iai_apartment/cabinet1:
+                iai_apartment/cabinet1_coloksu_level4:
+                  {}
+                iai_apartment/cabinet1_coloksu_level5:
+                  {}
                 iai_apartment/cabinet1_door_top_left:
                   iai_apartment/handle_cab1_top_door:
                     {}
@@ -824,6 +855,9 @@ Visualization Manager:
                 iai_apartment/cabinet7_door_bottom_left:
                   iai_apartment/handle_cab7:
                     {}
+                iai_apartment/cabinet7_drawer_middle:
+                  iai_apartment/handle_cab7_middle:
+                    {}
               iai_apartment/cabinet8:
                 iai_apartment/cabinet8_drawer_bottom:
                   iai_apartment/handle_cab8:
@@ -905,7 +939,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 17.793180465698242
+      Distance: 0.31698018312454224
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -913,17 +947,17 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: 1.5244380235671997
-        Y: -0.34056997299194336
-        Z: -1.381699562072754
+        X: 2.3073458671569824
+        Y: 3.6847317218780518
+        Z: 0.5730085968971252
       Focal Shape Fixed Size: false
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.4853983521461487
+      Pitch: 0.2997981905937195
       Target Frame: <Fixed Frame>
-      Yaw: 0.4203989505767822
+      Yaw: 6.153569221496582
     Saved: ~
 Window Geometry:
   Displays:
