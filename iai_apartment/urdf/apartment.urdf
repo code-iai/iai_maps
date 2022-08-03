@@ -1,6 +1,4 @@
-<?xml version="1.0"?>
-
-<robot name="apartment" xmlns:xacro="http://ros.org/wiki/xacro">
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="apartment">
 
 
   <link name="apartment_root">
@@ -27,7 +25,7 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://iai_apartment/meshes/collision/walls.stl" />
+        <mesh filename="package://iai_apartment/meshes/collision/walls.obj" />
       </geometry>
     </collision>
   </link>
@@ -44,7 +42,7 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://iai_apartment/meshes/collision/windows.stl" />
+        <mesh filename="package://iai_apartment/meshes/collision/windows.obj" />
       </geometry>
     </collision>
   </link>
@@ -155,8 +153,8 @@
     <origin rpy="0 0 0" xyz="-0.3246 0.5 0.0000" />
     <parent link="wardrobe" />
     <child link="wardrobe_door_left" />
-    <axis xyz="0 0 1" />
-    <limit effort="1000.0" lower="-1.5708" upper="0.0" velocity="1.5708" />
+    <axis xyz="0 0 -1" />
+    <limit effort="1000.0" lower="0.0" upper="1.5708" velocity="1.5708" />
   </joint>
   <link name="wardrobe_door_left">
     <visual>
@@ -166,7 +164,7 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://iai_apartment/meshes/collision/wardrobe_door_left.stl" />
+        <mesh filename="package://iai_apartment/meshes/collision/wardrobe_door_left.obj" />
       </geometry>
     </collision>
   </link>
@@ -185,7 +183,7 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://iai_apartment/meshes/collision/wardrobe_door_right.stl" />
+        <mesh filename="package://iai_apartment/meshes/collision/wardrobe_door_right.obj" />
       </geometry>
     </collision>
   </link>
@@ -203,7 +201,7 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://iai_apartment/meshes/collision/armchair.stl" />
+        <mesh filename="package://iai_apartment/meshes/collision/armchair.obj" />
       </geometry>
     </collision>
   </link>
@@ -220,7 +218,7 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://iai_apartment/meshes/collision/sofa.stl" />
+        <mesh filename="package://iai_apartment/meshes/collision/sofa.obj" />
       </geometry>
     </collision>
   </link>
@@ -337,7 +335,7 @@
 
   <xacro:include filename="$(find iai_apartment)/urdf/kitchen.xarco" />
   <xacro:kitchen_macro name="kitchen_base" parent="apartment_root">
-    <origin xyz="-0.05 0.75 0.005"/>
+    <origin xyz="-0.05 0.75 0.005" />
   </xacro:kitchen_macro>
 
 </robot>
