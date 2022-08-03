@@ -21,7 +21,7 @@
     <param name="rate" value="25"/>
     <remap from="/joint_states" to="/apartment_joint_states" />
     <rosparam param="source_list">
-      - /iai_apartment/cram_joint_states
+      - /iai_kitchen/cram_joint_states
     </rosparam>
   </node>
 
