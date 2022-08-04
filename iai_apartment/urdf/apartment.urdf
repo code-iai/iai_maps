@@ -50,6 +50,64 @@
       </collision>
     </link>
 
+    <!-- Collision okay Walls -->
+    <!-- From the door side being wall 1, turn right and count the walls. -->
+      <joint name="wall_coloksu_wall1_joint" type="fixed">
+        <origin xyz="0.6 -1.615 1.53" rpy="0 0 -1.57"/>
+        <parent link="middle_of_the_room" />
+        <child link="wall_coloksu_wall1" />
+      </joint>
+      <link name="wall_coloksu_wall1">
+        <collision>
+          <origin rpy="0 1.57 0" />
+          <geometry>
+            <box size="3.05 18.95 0.003"/>
+          </geometry>
+        </collision>
+      </link>
+
+      <joint name="wall_coloksu_wall2_joint" type="fixed">
+        <origin xyz="-8.855 0.782 1.53" rpy="0 0 3.14"/>
+        <parent link="middle_of_the_room" />
+        <child link="wall_coloksu_wall2" />
+      </joint>
+      <link name="wall_coloksu_wall2">
+        <collision>
+          <origin rpy="0 1.57 0" />
+          <geometry>
+            <box size="3.05 4.808 0.003"/>
+          </geometry>
+        </collision>
+      </link>
+
+      <joint name="wall_coloksu_wall3_joint" type="fixed">
+        <origin xyz="0.6 3.180 1.53" rpy="0 0 1.57"/>
+        <parent link="middle_of_the_room" />
+        <child link="wall_coloksu_wall3" />
+      </joint>
+      <link name="wall_coloksu_wall3">
+        <collision>
+          <origin rpy="0 1.57 0" />
+          <geometry>
+            <box size="3.05 18.95 0.003"/>
+          </geometry>
+        </collision>
+      </link>
+
+      <joint name="wall_coloksu_wall4_joint" type="fixed">
+        <origin xyz="10.069 0.782 1.53" rpy="0 0 0"/>
+        <parent link="middle_of_the_room" />
+        <child link="wall_coloksu_wall4" />
+      </joint>
+      <link name="wall_coloksu_wall4">
+        <collision>
+          <origin rpy="0 1.57 0" />
+          <geometry>
+            <box size="3.05 4.808 0.003"/>
+          </geometry>
+        </collision>
+      </link>
+
     <joint name="wardrobe_joint" type="fixed">
       <origin rpy="0 0 0" xyz="9.7082 -0.6331 0.0" />
       <parent link="middle_of_the_room" />
@@ -340,63 +398,5 @@
     <xacro:kitchen_macro name="kitchen_base" parent="apartment_root">
       <origin xyz="-0.05 0.75 0.005"/>
     </xacro:kitchen_macro>
-
-  <!-- Collision okay Walls -->
-  <!-- From the door side being wall 1, turn right and count the walls. -->
-    <joint name="wall_coloksu_wall1_joint" type="fixed">
-      <origin xyz="0.6 -1.615 1.53" rpy="0 0 -1.57"/>
-      <parent link="middle_of_the_room" />
-      <child link="wall_coloksu_wall1" />
-    </joint>
-    <link name="wall_coloksu_wall1">
-      <collision>
-        <origin rpy="0 1.57 0" />
-        <geometry>
-          <box size="3.05 18.95 0.003"/>
-        </geometry>
-      </collision>
-    </link>
-
-    <joint name="wall_coloksu_wall2_joint" type="fixed">
-      <origin xyz="-8.855 0.782 1.53" rpy="0 0 3.14"/>
-      <parent link="middle_of_the_room" />
-      <child link="wall_coloksu_wall2" />
-    </joint>
-    <link name="wall_coloksu_wall2">
-      <collision>
-        <origin rpy="0 1.57 0" />
-        <geometry>
-          <box size="3.05 4.808 0.003"/>
-        </geometry>
-      </collision>
-    </link>
-
-    <joint name="wall_coloksu_wall3_joint" type="fixed">
-      <origin xyz="0.6 3.180 1.53" rpy="0 0 1.57"/>
-      <parent link="middle_of_the_room" />
-      <child link="wall_coloksu_wall3" />
-    </joint>
-    <link name="wall_coloksu_wall3">
-      <collision>
-        <origin rpy="0 1.57 0" />
-        <geometry>
-          <box size="3.05 18.95 0.003"/>
-        </geometry>
-      </collision>
-    </link>
-
-    <joint name="wall_coloksu_wall4_joint" type="fixed">
-      <origin xyz="10.069 0.782 1.53" rpy="0 0 0"/>
-      <parent link="middle_of_the_room" />
-      <child link="wall_coloksu_wall4" />
-    </joint>
-    <link name="wall_coloksu_wall4">
-      <collision>
-        <origin rpy="0 1.57 0" />
-        <geometry>
-          <box size="3.05 4.808 0.003"/>
-        </geometry>
-      </collision>
-    </link>
 
 </robot>
