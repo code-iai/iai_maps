@@ -180,6 +180,49 @@
 			</collision>
 		</link>
 
+		<!-- Collision okay surface for cabinet1-->
+		<material name="white">
+			<color rgba="1 1 1 1"/>
+		</material>
+		<joint name="cabinet1_coloksu_level4_joint" type="fixed">
+			<origin xyz="-0.172 0.005 0.281" />
+			<parent link="cabinet1" />
+			<child link="cabinet1_coloksu_level4" />
+		</joint>
+		<link name="cabinet1_coloksu_level4">
+			<visual>
+				<geometry>
+					<box size="0.534 0.568 0.003"/>
+				</geometry>
+				<material name="white" />
+			</visual>
+			<collision>
+				<geometry>
+					<box size="0.534 0.568 0.003"/>
+				</geometry>
+			</collision>
+		</link>
+
+		<joint name="cabinet1_coloksu_level5_joint" type="fixed">
+			<origin xyz="-0.172 0.005 0.672" />
+			<parent link="cabinet1" />
+			<child link="cabinet1_coloksu_level5" />
+		</joint>
+		<link name="cabinet1_coloksu_level5">
+			<visual>
+				<geometry>
+					<box size="0.534 0.568 0.003"/>
+				</geometry>
+				<material name="white" />
+			</visual>
+			<collision>
+				<geometry>
+					<box size="0.534 0.568 0.003"/>
+				</geometry>
+			</collision>
+		</link>
+
+
 	<!-- Cabinet2 -->
 		<joint name="cabinet2_joint" type="fixed">
 			<origin xyz="-0.163 0.51 0.975" />
@@ -864,6 +907,52 @@
 			</collision>
 		</link>
 
+		<!-- dishwasher rack -->
+		<joint name="dishwasher_drawer_middle_joint" type="prismatic">
+			<origin xyz="0.030 0.0 0.01" rpy="0 0 3.14" />
+			<parent link="cabinet7" />
+			<child link="dishwasher_drawer_middle" />
+			<axis xyz="-1 0  0" />
+			<limit effort="1000.0" lower="0.0" upper="0.45" velocity="0.5" />
+		</joint>
+
+		<link name="dishwasher_drawer_middle">
+			<visual>
+				<origin rpy="0 0 3.14" />
+				<geometry>
+					<mesh filename="package://iai_apartment/meshes/cabinet07/dishwasher_drawer_middle.dae" />
+				</geometry>
+			</visual>
+			<collision>
+				<origin rpy="0 0 3.14" />
+				<geometry>
+					<mesh filename="package://iai_apartment/meshes/cabinet07/dishwasher_drawer_middle.stl" />
+				</geometry>
+			</collision>
+		</link>
+
+		<joint name="handle_cab7_drawer_middle_joint" type="fixed">
+			<origin xyz="-0.315 0 0.068" rpy="1.57 0 0" />
+			<parent link="dishwasher_drawer_middle" />
+			<child link="handle_cab7_middle" />
+		</joint>
+
+		<link name="handle_cab7_middle">
+			<visual>
+				<origin rpy="-1.57 0 0" />
+				<geometry>
+					<box size="0.015 0.325 0.021"/>
+				</geometry>
+				<material name="white" />
+			</visual>
+			<collision>
+				<origin rpy="-1.57 0 0" />
+				<geometry>
+					<box size="0.015 0.325 0.021"/>
+				</geometry>
+			</collision>
+		</link>
+
 	<!-- Cabinet 8 -->
 		<joint name="cabinet8_joint" type="fixed">
 			<origin xyz="0.256 1.102 0.006"/>
@@ -1389,13 +1478,13 @@
 
 <!-- Miscellaneous -->
 	<!-- Island, Main Countertop -->
-		<joint name="island_joint" type="fixed">
+		<joint name="island_countertop_joint" type="fixed">
 			<origin xyz="0.13 1.786 0.807"/>
 			<parent link="side_B" />
-			<child link="island" />
+			<child link="island_countertop" />
 		</joint>
 
-		<link name="island">
+		<link name="island_countertop">
 			<visual>
 				<geometry>
 					<mesh filename="package://iai_apartment/meshes/island/IAIKitchenIslandAreaTop.dae"/>
