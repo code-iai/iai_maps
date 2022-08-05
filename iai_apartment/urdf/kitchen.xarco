@@ -908,15 +908,15 @@
 		</link>
 
 		<!-- dishwasher rack -->
-		<joint name="cabinet7_drawer_middle_joint" type="prismatic">
+		<joint name="dishwasher_drawer_middle_joint" type="prismatic">
 			<origin xyz="0.030 0.0 0.01" rpy="0 0 3.14" />
 			<parent link="cabinet7" />
-			<child link="cabinet7_drawer_middle" />
+			<child link="dishwasher_drawer_middle" />
 			<axis xyz="-1 0  0" />
 			<limit effort="1000.0" lower="0.0" upper="0.45" velocity="0.5" />
 		</joint>
 
-		<link name="cabinet7_drawer_middle">
+		<link name="dishwasher_drawer_middle">
 			<visual>
 				<origin rpy="0 0 3.14" />
 				<geometry>
@@ -933,7 +933,7 @@
 
 		<joint name="handle_cab7_drawer_middle_joint" type="fixed">
 			<origin xyz="-0.315 0 0.068" rpy="1.57 0 0" />
-			<parent link="cabinet7_drawer_middle" />
+			<parent link="dishwasher_drawer_middle" />
 			<child link="handle_cab7_middle" />
 		</joint>
 
