@@ -41,11 +41,11 @@
           <mesh filename="package://iai_apartment/meshes/visual/windows.dae"/>
         </geometry>
       </visual>
-      <collision>
+      <!--collision>
         <geometry>
           <mesh filename="package://iai_apartment/meshes/collision/windows.obj"/>
         </geometry>
-      </collision>
+      </collision-->
     </link>
 
     <!-- Collision okay Walls -->
