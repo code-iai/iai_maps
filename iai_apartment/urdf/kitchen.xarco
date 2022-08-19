@@ -13,14 +13,14 @@
 <!-- Frames, reference frames -->
 	<joint name="frame_A_joint" type="fixed">
 		<parent link="kitchen_root"/>
-		<origin xyz="0.5 0.95 0.080"/>
+		<origin xyz="0.5 0.696 0.080"/>
 		<child link="side_A"/>
 	</joint>
 
 	<!-- Bond, James Bond -->
 	<joint name="frame_B_joint" type="fixed">
 		<parent link="kitchen_root"/>
-		<origin xyz="3 3.5 0.092" rpy="0 0 3.14"/>
+		<origin xyz="2.94 3.735 0.092" rpy="0 0 3.14"/>
 		<child link="side_B"/>
 	</joint>
 
