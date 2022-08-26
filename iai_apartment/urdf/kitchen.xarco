@@ -94,7 +94,8 @@
     </link>
 
     <joint name="oven_joint" type="fixed">
-      <origin xyz="-0.175 0.0 -0.025" rpy="1.57 0 0"/>
+      <!-- <origin xyz="-0.175 0.0 -0.025" rpy="1.57 0 0"/> -->
+      <origin xyz="-0.125 0.0 -0.025" rpy="1.57 0 0"/>
       <parent link="cabinet1"/>
       <child link="oven"/>
     </joint>
@@ -112,6 +113,9 @@
       <collision>
         <geometry>
           <box size="0.58 0.58 0.59"/>
+          <box size="0.56 0.56 0.56"/>
+          <box size="0.54 0.54 0.54"/>
+          <box size="0.52 0.52 0.52"/>
         </geometry>
       </collision>
     </link>
