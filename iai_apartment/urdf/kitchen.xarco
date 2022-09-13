@@ -13,14 +13,14 @@
     <!-- Frames, reference frames -->
     <joint name="frame_A_joint" type="fixed">
       <parent link="kitchen_root"/>
-      <origin xyz="0.5 0.696 0.080"/>
+      <origin xyz="0.49 0.696 0.080"/>
       <child link="side_A"/>
     </joint>
 
     <!-- Bond, James Bond -->
     <joint name="frame_B_joint" type="fixed">
       <parent link="kitchen_root"/>
-      <origin xyz="2.94 3.735 0.092" rpy="0 0 3.14"/>
+      <origin xyz="2.91 3.7 0.11" rpy="0 0 3.14"/>
       <child link="side_B"/>
     </joint>
 
@@ -31,7 +31,7 @@
     <!-- - - - - - - - - - - - - Cabinets side A - - - - - - - - - -->
     <!-- Cabinet1 -->
     <joint name="cabinet1_joint" type="fixed">
-      <origin xyz="0.01 0.01 0.99"/>
+      <origin xyz="0.01 0.01 1.02"/>
       <parent link="side_A"/>
       <child link="cabinet1"/>
     </joint>
@@ -75,7 +75,7 @@
     </link>
 
     <joint name="handle_cab1_top_door_joint" type="fixed">
-      <origin xyz="-0.038 -0.5 0.0" rpy="1.57 0 0"/>
+      <origin xyz="-0.055 -0.5 0.0" rpy="1.57 0 0"/>
       <parent link="cabinet1_door_top_left"/>
       <child link="handle_cab1_top_door"/>
     </joint>
@@ -226,20 +226,22 @@
     </link>
 
     <joint name="cabinet1_coloksu_level5_joint" type="fixed">
-      <origin xyz="-0.172 0.005 0.672"/>
+      <!-- actually this should align with the CAD model but the CAD model is incorrect. -->
+      <!-- <origin xyz="-0.172 0.005 0.672"/> -->
+      <origin xyz="-0.172 0.005 0.56"/>
       <parent link="cabinet1"/>
       <child link="cabinet1_coloksu_level5"/>
     </joint>
     <link name="cabinet1_coloksu_level5">
       <visual>
 	<geometry>
-	  <box size="0.534 0.568 0.003"/>
+	  <box size="0.534 0.568 0.02"/>
 	</geometry>
 	<material name="white"/>
       </visual>
       <collision>
 	<geometry>
-	  <box size="0.534 0.568 0.003"/>
+	  <box size="0.534 0.568 0.02"/>
 	</geometry>
       </collision>
     </link>
@@ -911,7 +913,7 @@
     </link>
 
     <joint name="handle_cab7_top_joint" type="fixed">
-      <origin xyz="-0.038 0 0.74" rpy="1.57 0 0"/>
+      <origin xyz="-0.06 0 0.74" rpy="1.57 0 0"/>
       <parent link="cabinet7_door_bottom_left"/>
       <child link="handle_cab7"/>
     </joint>
@@ -931,7 +933,7 @@
 
     <!-- dishwasher rack -->
     <joint name="dishwasher_drawer_middle_joint" type="prismatic">
-      <origin xyz="0.030 0.0 0.01" rpy="0 0 3.14"/>
+      <origin xyz="-0.065 0.03 0.08" rpy="0 0 3.14"/>
       <parent link="cabinet7"/>
       <child link="dishwasher_drawer_middle"/>
       <axis xyz="-1 0  0"/>
@@ -1628,14 +1630,35 @@
 
     <link name="countertop">
       <visual>
-	<geometry>
-	  <mesh filename="package://iai_apartment/meshes/countertop/IAIKitchenPartW102H60.dae"/>
-	</geometry>
+    	<geometry>
+    	  <mesh filename="package://iai_apartment/meshes/countertop/IAIKitchenPartW102H60.dae"/>
+    	</geometry>
       </visual>
       <collision>
-	<geometry>
-	  <mesh filename="package://iai_apartment/meshes/countertop/IAIKitchenPartW102H60.obj"/>
-	</geometry>
+    	<geometry>
+    	  <mesh filename="package://iai_apartment/meshes/countertop/IAIKitchenPartW102H60.obj"/>
+    	</geometry>
+      </collision>
+    </link>
+
+    <joint name="coffe_machine_joint" type="fixed">
+      <origin xyz="0 0.3 0.2"/>
+      <parent link="countertop"/>
+      <child link="coffe_machine"/>
+    </joint>
+
+    <link name="coffe_machine">
+      <visual>
+        <geometry>
+          <box size="0.58 0.33 0.41"/>
+        </geometry>
+        <material name="oven_gray"/>
+      </visual>
+      <collision>
+        <geometry>
+          <box size="0.58 0.32 0.41"/>
+        </geometry>
+        <material name="oven_gray"/>
       </collision>
     </link>
 
