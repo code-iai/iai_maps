@@ -10,12 +10,11 @@
      xmlns:SOMA="http://www.ease-crc.org/ont/SOMA.owl#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:knowrob="http://knowrob.org/kb/knowrob.owl#"
+     xmlns:urdf="http://knowrob.org/kb/urdf.owl#"
      xmlns:srdl2-comp="http://knowrob.org/kb/srdl2-comp.owl#">
     <owl:Ontology rdf:about="http://knowrob.org/kb/iai-apartment.owl#">
-        <owl:imports rdf:resource="http://knowrob.org/kb/knowrob.owl"/>
-        <owl:imports rdf:resource="http://knowrob.org/kb/srdl2-comp.owl"/>
-        <owl:imports rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#"/>
-        <owl:imports rdf:resource="http://www.ease-crc.org/ont/SOMA-HOME.owl"/>
+        <owl:imports rdf:resource="package://knowrob/owl/srdl2.owl"/>
+        <owl:imports rdf:resource="package://iai_apartment/owl/SOMA-HOME-addons.owl"/>
     </owl:Ontology>
     
 
@@ -1870,10 +1869,10 @@
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#cabinet10_drawer_bottom"/>
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#cabinet10_drawer_middle"/>
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#cabinet10_drawer_top"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet10</srdl2-comp:hasBaseLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet10_drawer_bottom</srdl2-comp:hasEndLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet10_drawer_middle</srdl2-comp:hasEndLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet10_drawer_top</srdl2-comp:hasEndLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet10</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet10_drawer_bottom</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet10_drawer_middle</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet10_drawer_top</urdf:hasEndLinkName>
     </owl:NamedIndividual>
     
 
@@ -1886,10 +1885,10 @@
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#cabinet11_drawer_bottom"/>
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#cabinet11_drawer_middle"/>
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#cabinet11_drawer_top"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet11</srdl2-comp:hasBaseLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet11_drawer_bottom</srdl2-comp:hasEndLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet11_drawer_middle</srdl2-comp:hasEndLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet11_drawer_top</srdl2-comp:hasEndLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet11</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet11_drawer_bottom</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet11_drawer_middle</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet11_drawer_top</urdf:hasEndLinkName>
     </owl:NamedIndividual>
     
 
@@ -1902,10 +1901,10 @@
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#cabinet1_door_top_left"/>
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#cabinet1_drawer_bottom"/>
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#cabinet1_drawer_middle"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet1</srdl2-comp:hasBaseLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet1_door_top_left</srdl2-comp:hasEndLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet1_drawer_bottom</srdl2-comp:hasEndLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet1_drawer_middle</srdl2-comp:hasEndLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet1</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet1_door_top_left</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet1_drawer_bottom</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet1_drawer_middle</urdf:hasEndLinkName>
     </owl:NamedIndividual>
     
 
@@ -1918,10 +1917,10 @@
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#cabinet2_door_left"/>
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#cabinet2_drawer_big"/>
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#cabinet2_drawer_small"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet2</srdl2-comp:hasBaseLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet2_door_left</srdl2-comp:hasEndLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet2_drawer_big</srdl2-comp:hasEndLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet2_drawer_small</srdl2-comp:hasEndLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet2</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet2_door_left</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet2_drawer_big</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet2_drawer_small</urdf:hasEndLinkName>
     </owl:NamedIndividual>
     
 
@@ -1933,9 +1932,9 @@
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#cabinet3"/>
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#cabinet3_door_bottom_left"/>
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#cabinet3_door_top_left"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet3</srdl2-comp:hasBaseLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet3_door_bottom_left</srdl2-comp:hasEndLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet3_door_top_left</srdl2-comp:hasEndLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet3</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet3_door_bottom_left</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet3_door_top_left</urdf:hasEndLinkName>
     </owl:NamedIndividual>
     
 
@@ -1947,9 +1946,9 @@
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#cabinet4"/>
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#cabinet4_door_bottom"/>
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#cabinet4_door_top"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet4</srdl2-comp:hasBaseLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet4_door_bottom</srdl2-comp:hasEndLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet4_door_top</srdl2-comp:hasEndLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet4</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet4_door_bottom</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet4_door_top</urdf:hasEndLinkName>
     </owl:NamedIndividual>
     
 
@@ -1962,10 +1961,10 @@
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#cabinet5_drawer_bottom"/>
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#cabinet5_drawer_middle"/>
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#cabinet5_drawer_top"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet5</srdl2-comp:hasBaseLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet5_drawer_bottom</srdl2-comp:hasEndLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet5_drawer_middle</srdl2-comp:hasEndLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet5_drawer_top</srdl2-comp:hasEndLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet5</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet5_drawer_bottom</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet5_drawer_middle</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet5_drawer_top</urdf:hasEndLinkName>
     </owl:NamedIndividual>
     
 
@@ -1978,10 +1977,10 @@
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#cabinet6_drawer_bottom"/>
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#cabinet6_drawer_middle"/>
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#cabinet6_drawer_top"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet6</srdl2-comp:hasBaseLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet6_drawer_bottom</srdl2-comp:hasEndLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet6_drawer_middle</srdl2-comp:hasEndLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet6_drawer_top</srdl2-comp:hasEndLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet6</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet6_drawer_bottom</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet6_drawer_middle</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet6_drawer_top</urdf:hasEndLinkName>
     </owl:NamedIndividual>
     
 
@@ -1993,9 +1992,9 @@
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#cabinet7"/>
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#cabinet7_door_bottom_left"/>
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#dishwasher_drawer_middle"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet7</srdl2-comp:hasBaseLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet7_door_bottom_left</srdl2-comp:hasEndLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dishwasher_drawer_middle</srdl2-comp:hasEndLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet7</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet7_door_bottom_left</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dishwasher_drawer_middle</urdf:hasEndLinkName>
     </owl:NamedIndividual>
     
 
@@ -2007,9 +2006,9 @@
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#cabinet8"/>
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#cabinet8_drawer_bottom"/>
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#cabinet8_drawer_middle"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet8</srdl2-comp:hasBaseLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet8_drawer_bottom</srdl2-comp:hasEndLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet8_drawer_middle</srdl2-comp:hasEndLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet8</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet8_drawer_bottom</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet8_drawer_middle</urdf:hasEndLinkName>
     </owl:NamedIndividual>
     
 
@@ -2022,10 +2021,10 @@
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#cabinet9_drawer_bottom"/>
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#cabinet9_drawer_middle"/>
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#cabinet9_drawer_top"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet9</srdl2-comp:hasBaseLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet9_drawer_bottom</srdl2-comp:hasEndLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet9_drawer_middle</srdl2-comp:hasEndLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet9_drawer_top</srdl2-comp:hasEndLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet9</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet9_drawer_bottom</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet9_drawer_middle</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet9_drawer_top</urdf:hasEndLinkName>
     </owl:NamedIndividual>
     
 
@@ -2037,9 +2036,9 @@
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#wardrobe"/>
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#wardrobe_door_left"/>
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#wardrobe_door_right"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wardrobe</srdl2-comp:hasBaseLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wardrobe_door_left</srdl2-comp:hasEndLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wardrobe_door_right</srdl2-comp:hasEndLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wardrobe</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wardrobe_door_left</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wardrobe_door_right</urdf:hasEndLinkName>
     </owl:NamedIndividual>
     
 
@@ -2052,13 +2051,13 @@
         <DUL:hasComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#coffee_table"/>
         <DUL:hasComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#kitchen_root"/>
         <DUL:hasComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#sofa"/>
-        <DUL:hasComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#wardrobe"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">apartment_root</srdl2-comp:hasBaseLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bedside_table</srdl2-comp:hasEndLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">coffee_table</srdl2-comp:hasEndLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_root</srdl2-comp:hasEndLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sofa</srdl2-comp:hasEndLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wardrobe</srdl2-comp:hasEndLinkName>
+        <DUL:hasComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAIWardrobe0"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">apartment_root</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bedside_table</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">coffee_table</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_root</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sofa</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wardrobe</urdf:hasEndLinkName>
     </owl:NamedIndividual>
     
 
@@ -2067,7 +2066,7 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#armchair">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAIArmChair"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">armchair</srdl2-comp:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">armchair</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
     
 
@@ -2076,7 +2075,7 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#bedside_table">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAIBedsideTable"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bedside_table</srdl2-comp:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bedside_table</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
     
 
@@ -2085,7 +2084,7 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet1">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAICabinet1Frame"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet1</srdl2-comp:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet1</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
     
 
@@ -2094,7 +2093,7 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet10">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAICabinet10Frame"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet10</srdl2-comp:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet10</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
     
 
@@ -2104,8 +2103,8 @@
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet10_drawer_bottom">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAICabinet10DrawerBottom"/>
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#handle_cab10_b"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet10_drawer_bottom</srdl2-comp:hasBaseLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab10_b</srdl2-comp:hasEndLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet10_drawer_bottom</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab10_b</urdf:hasEndLinkName>
     </owl:NamedIndividual>
     
 
@@ -2115,8 +2114,8 @@
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet10_drawer_middle">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAICabinet10DrawerMiddle"/>
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#handle_cab10_m"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet10_drawer_middle</srdl2-comp:hasBaseLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab10_m</srdl2-comp:hasEndLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet10_drawer_middle</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab10_m</urdf:hasEndLinkName>
     </owl:NamedIndividual>
     
 
@@ -2126,8 +2125,8 @@
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet10_drawer_top">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAICabinet10DrawerTop"/>
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#handle_cab10_t"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet10_drawer_top</srdl2-comp:hasBaseLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab10_t</srdl2-comp:hasEndLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet10_drawer_top</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab10_t</urdf:hasEndLinkName>
     </owl:NamedIndividual>
     
 
@@ -2136,7 +2135,7 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet11">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAICabinet11Frame"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet11</srdl2-comp:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet11</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
     
 
@@ -2146,8 +2145,8 @@
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet11_drawer_bottom">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAICabinet11DrawerBottom"/>
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#handle_cab11_b"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet11_drawer_bottom</srdl2-comp:hasBaseLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab11_b</srdl2-comp:hasEndLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet11_drawer_bottom</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab11_b</urdf:hasEndLinkName>
     </owl:NamedIndividual>
     
 
@@ -2157,8 +2156,8 @@
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet11_drawer_middle">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAICabinet11DrawerMiddle"/>
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#handle_cab11_m"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet11_drawer_middle</srdl2-comp:hasBaseLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab11_m</srdl2-comp:hasEndLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet11_drawer_middle</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab11_m</urdf:hasEndLinkName>
     </owl:NamedIndividual>
     
 
@@ -2168,8 +2167,8 @@
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet11_drawer_top">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAICabinet11DrawerTop"/>
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#handle_cab11_t"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet11_drawer_top</srdl2-comp:hasBaseLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab11_t</srdl2-comp:hasEndLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet11_drawer_top</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab11_t</urdf:hasEndLinkName>
     </owl:NamedIndividual>
     
 
@@ -2179,8 +2178,8 @@
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet1_door_top_left">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAICabinet1Door"/>
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#handle_cab1_top_door"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet1_door_top_left</srdl2-comp:hasBaseLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab1_top_door</srdl2-comp:hasEndLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet1_door_top_left</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab1_top_door</urdf:hasEndLinkName>
     </owl:NamedIndividual>
     
 
@@ -2190,8 +2189,8 @@
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet1_drawer_bottom">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAICabinet1DrawerBottom"/>
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#handle_cab1_drawer_bottom"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet1_drawer_bottom</srdl2-comp:hasBaseLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab1_drawer_bottom</srdl2-comp:hasEndLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet1_drawer_bottom</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab1_drawer_bottom</urdf:hasEndLinkName>
     </owl:NamedIndividual>
     
 
@@ -2201,8 +2200,8 @@
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet1_drawer_middle">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAICabinet1DrawerMiddle"/>
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#handle_cab1_drawer_mid"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet1_drawer_middle</srdl2-comp:hasBaseLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab1_drawer_mid</srdl2-comp:hasEndLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet1_drawer_middle</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab1_drawer_mid</urdf:hasEndLinkName>
     </owl:NamedIndividual>
     
 
@@ -2211,7 +2210,7 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet2">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAICabinet2Frame"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet2</srdl2-comp:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet2</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
     
 
@@ -2221,8 +2220,8 @@
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet2_door_left">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAICabinet2Door"/>
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#handle_cab2_door"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet2_door_left</srdl2-comp:hasBaseLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab2_door</srdl2-comp:hasEndLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet2_door_left</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab2_door</urdf:hasEndLinkName>
     </owl:NamedIndividual>
     
 
@@ -2231,7 +2230,7 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet2_drawer_big">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAICabinet2DrawerBig"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet2_drawer_big</srdl2-comp:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet2_drawer_big</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
     
 
@@ -2240,7 +2239,7 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet2_drawer_small">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAICabinet2DrawerSmall"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet2_drawer_small</srdl2-comp:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet2_drawer_small</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
     
 
@@ -2249,7 +2248,7 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet3">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAICabinet3Frame"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet3</srdl2-comp:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet3</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
     
 
@@ -2259,8 +2258,8 @@
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet3_door_bottom_left">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAICabinet3DoorBottom"/>
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#handle_cab3_door_bottom"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet3_door_bottom_left</srdl2-comp:hasBaseLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab3_door_bottom</srdl2-comp:hasEndLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet3_door_bottom_left</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab3_door_bottom</urdf:hasEndLinkName>
     </owl:NamedIndividual>
     
 
@@ -2270,8 +2269,8 @@
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet3_door_top_left">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAICabinet3DoorTop"/>
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#handle_cab3_door_top"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet3_door_top_left</srdl2-comp:hasBaseLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab3_door_top</srdl2-comp:hasEndLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet3_door_top_left</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab3_door_top</urdf:hasEndLinkName>
     </owl:NamedIndividual>
     
 
@@ -2280,7 +2279,7 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet4">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAICabinet4Frame"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet4</srdl2-comp:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet4</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
     
 
@@ -2290,8 +2289,8 @@
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet4_door_bottom">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAICabinet4DoorBottom"/>
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#handle_cab4_door_bottom"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet4_door_bottom</srdl2-comp:hasBaseLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab4_door_bottom</srdl2-comp:hasEndLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet4_door_bottom</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab4_door_bottom</urdf:hasEndLinkName>
     </owl:NamedIndividual>
     
 
@@ -2300,7 +2299,7 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet4_door_top">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAICabinet4DoorTop"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet4_door_top</srdl2-comp:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet4_door_top</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
     
 
@@ -2309,7 +2308,7 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet5">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAICabinet5Frame"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet5</srdl2-comp:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet5</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
     
 
@@ -2319,8 +2318,8 @@
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet5_drawer_bottom">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAICabinet5DrawerBottom"/>
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#handle_cab5_b"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet5_drawer_bottom</srdl2-comp:hasBaseLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab5_b</srdl2-comp:hasEndLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet5_drawer_bottom</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab5_b</urdf:hasEndLinkName>
     </owl:NamedIndividual>
     
 
@@ -2330,8 +2329,8 @@
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet5_drawer_middle">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAICabinet5DrawerMiddle"/>
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#handle_cab5_m"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet5_drawer_middle</srdl2-comp:hasBaseLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab5_m</srdl2-comp:hasEndLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet5_drawer_middle</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab5_m</urdf:hasEndLinkName>
     </owl:NamedIndividual>
     
 
@@ -2341,8 +2340,8 @@
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet5_drawer_top">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAICabinet5DrawerTop"/>
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#handle_cab5_t"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet5_drawer_top</srdl2-comp:hasBaseLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab5_t</srdl2-comp:hasEndLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet5_drawer_top</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab5_t</urdf:hasEndLinkName>
     </owl:NamedIndividual>
     
 
@@ -2351,7 +2350,7 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet6">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAICabinet6Frame"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet6</srdl2-comp:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet6</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
     
 
@@ -2361,8 +2360,8 @@
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet6_drawer_bottom">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAICabinet6DrawerBottom"/>
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#handle_cab6_b"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet6_drawer_bottom</srdl2-comp:hasBaseLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab6_b</srdl2-comp:hasEndLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet6_drawer_bottom</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab6_b</urdf:hasEndLinkName>
     </owl:NamedIndividual>
     
 
@@ -2372,8 +2371,8 @@
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet6_drawer_middle">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAICabinet6DrawerMiddle"/>
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#handle_cab6_m"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet6_drawer_middle</srdl2-comp:hasBaseLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab6_m</srdl2-comp:hasEndLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet6_drawer_middle</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab6_m</urdf:hasEndLinkName>
     </owl:NamedIndividual>
     
 
@@ -2383,8 +2382,8 @@
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet6_drawer_top">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAICabinet6DrawerTop"/>
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#handle_cab6_t"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet6_drawer_top</srdl2-comp:hasBaseLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab6_t</srdl2-comp:hasEndLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet6_drawer_top</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab6_t</urdf:hasEndLinkName>
     </owl:NamedIndividual>
     
 
@@ -2393,7 +2392,7 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet7">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAICabinet7Frame"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet7</srdl2-comp:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet7</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
     
 
@@ -2403,8 +2402,8 @@
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet7_door_bottom_left">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAICabinet7Door"/>
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#handle_cab7"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet7_door_bottom_left</srdl2-comp:hasBaseLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab7</srdl2-comp:hasEndLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet7_door_bottom_left</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab7</urdf:hasEndLinkName>
     </owl:NamedIndividual>
     
 
@@ -2413,7 +2412,7 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet8">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAICabinet8Frame"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet8</srdl2-comp:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet8</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
     
 
@@ -2423,8 +2422,8 @@
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet8_drawer_bottom">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAICabinet8DrawerBottom"/>
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#handle_cab8"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet8_drawer_bottom</srdl2-comp:hasBaseLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab8</srdl2-comp:hasEndLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet8_drawer_bottom</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab8</urdf:hasEndLinkName>
     </owl:NamedIndividual>
     
 
@@ -2433,7 +2432,7 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet8_drawer_middle">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAICabinet8DrawerMiddle"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet8_drawer_middle</srdl2-comp:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet8_drawer_middle</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
     
 
@@ -2442,7 +2441,7 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet9">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAICabinet9Frame"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet9</srdl2-comp:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet9</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
     
 
@@ -2452,8 +2451,8 @@
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet9_drawer_bottom">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAICabinet9DrawerBottom"/>
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#handle_cab9_b"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet9_drawer_bottom</srdl2-comp:hasBaseLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab9_b</srdl2-comp:hasEndLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet9_drawer_bottom</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab9_b</urdf:hasEndLinkName>
     </owl:NamedIndividual>
     
 
@@ -2463,8 +2462,8 @@
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet9_drawer_middle">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAICabinet9DrawerMiddle"/>
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#handle_cab9_m"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet9_drawer_middle</srdl2-comp:hasBaseLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab9_m</srdl2-comp:hasEndLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet9_drawer_middle</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab9_m</urdf:hasEndLinkName>
     </owl:NamedIndividual>
     
 
@@ -2474,8 +2473,8 @@
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet9_drawer_top">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAICabinet9DrawerTop"/>
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#handle_cab9_t"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet9_drawer_top</srdl2-comp:hasBaseLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab9_t</srdl2-comp:hasEndLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet9_drawer_top</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab9_t</urdf:hasEndLinkName>
     </owl:NamedIndividual>
     
 
@@ -2485,8 +2484,8 @@
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#coffee_table">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAICoffeeTable"/>
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#coffee_table_drawer"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">coffee_table</srdl2-comp:hasBaseLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">coffee_table_drawer</srdl2-comp:hasEndLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">coffee_table</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">coffee_table_drawer</urdf:hasEndLinkName>
     </owl:NamedIndividual>
     
 
@@ -2495,7 +2494,7 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#coffee_table_drawer">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAICoffeeTableDrawer"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">coffee_table_drawer</srdl2-comp:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">coffee_table_drawer</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
     
 
@@ -2504,7 +2503,7 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cooktop">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAICooktop"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cooktop</srdl2-comp:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cooktop</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
     
 
@@ -2513,7 +2512,7 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#countertop">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAICountertopSmall"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">countertop</srdl2-comp:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">countertop</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
     
 
@@ -2522,7 +2521,7 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#dishwasher_drawer_middle">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAICabinet7Drawer"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dishwasher_drawer_middle</srdl2-comp:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dishwasher_drawer_middle</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
     
 
@@ -2531,7 +2530,7 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#handle_cab10_b">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAIHandle"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab10_b</srdl2-comp:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab10_b</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
     
 
@@ -2540,7 +2539,7 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#handle_cab10_m">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAIHandle"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab10_m</srdl2-comp:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab10_m</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
     
 
@@ -2549,7 +2548,7 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#handle_cab10_t">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAIHandle"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab10_t</srdl2-comp:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab10_t</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
     
 
@@ -2558,7 +2557,7 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#handle_cab11_b">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAIHandle"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab11_b</srdl2-comp:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab11_b</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
     
 
@@ -2567,7 +2566,7 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#handle_cab11_m">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAIHandle"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab11_m</srdl2-comp:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab11_m</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
     
 
@@ -2576,7 +2575,7 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#handle_cab11_t">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAIHandle"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab11_t</srdl2-comp:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab11_t</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
     
 
@@ -2585,7 +2584,7 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#handle_cab1_drawer_bottom">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAIHandle"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab1_drawer_bottom</srdl2-comp:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab1_drawer_bottom</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
     
 
@@ -2594,7 +2593,7 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#handle_cab1_drawer_mid">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAIHandle"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab1_drawer_mid</srdl2-comp:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab1_drawer_mid</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
     
 
@@ -2603,7 +2602,7 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#handle_cab1_top_door">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAIHandle"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab1_top_door</srdl2-comp:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab1_top_door</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
     
 
@@ -2612,7 +2611,7 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#handle_cab2_door">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAIHandle"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab2_door</srdl2-comp:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab2_door</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
     
 
@@ -2621,7 +2620,7 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#handle_cab3_door_bottom">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAIHandle"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab3_door_bottom</srdl2-comp:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab3_door_bottom</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
     
 
@@ -2630,7 +2629,7 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#handle_cab3_door_top">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAIHandle"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab3_door_top</srdl2-comp:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab3_door_top</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
     
 
@@ -2639,7 +2638,7 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#handle_cab4_door_bottom">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAIHandle"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab4_door_bottom</srdl2-comp:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab4_door_bottom</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
     
 
@@ -2648,7 +2647,7 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#handle_cab5_b">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAIHandle"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab5_b</srdl2-comp:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab5_b</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
     
 
@@ -2657,7 +2656,7 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#handle_cab5_m">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAIHandle"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab5_m</srdl2-comp:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab5_m</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
     
 
@@ -2666,7 +2665,7 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#handle_cab5_t">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAIHandle"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab5_t</srdl2-comp:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab5_t</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
     
 
@@ -2675,7 +2674,7 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#handle_cab6_b">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAIHandle"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab6_b</srdl2-comp:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab6_b</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
     
 
@@ -2684,7 +2683,7 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#handle_cab6_m">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAIHandle"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab6_m</srdl2-comp:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab6_m</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
     
 
@@ -2693,7 +2692,7 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#handle_cab6_t">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAIHandle"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab6_t</srdl2-comp:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab6_t</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
     
 
@@ -2702,7 +2701,7 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#handle_cab7">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAIHandle"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab7</srdl2-comp:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab7</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
     
 
@@ -2711,7 +2710,7 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#handle_cab8">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAIHandle"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab8</srdl2-comp:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab8</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
     
 
@@ -2720,7 +2719,7 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#handle_cab9_b">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAIHandle"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab9_b</srdl2-comp:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab9_b</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
     
 
@@ -2729,7 +2728,7 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#handle_cab9_m">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAIHandle"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab9_m</srdl2-comp:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab9_m</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
     
 
@@ -2738,7 +2737,7 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#handle_cab9_t">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAIHandle"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab9_t</srdl2-comp:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handle_cab9_t</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
     
 
@@ -2747,7 +2746,7 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#island_back">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAIBackShelf"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">island_back</srdl2-comp:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">island_back</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
     
 
@@ -2758,9 +2757,9 @@
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAICountertopBig"/>
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#cooktop"/>
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#sink"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">island_countertop</srdl2-comp:hasBaseLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cooktop</srdl2-comp:hasEndLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink</srdl2-comp:hasEndLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">island_countertop</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cooktop</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink</urdf:hasEndLinkName>
     </owl:NamedIndividual>
     
 
@@ -2769,7 +2768,7 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#island_waterfall_left">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAIShelfWater"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">island_waterfall_left</srdl2-comp:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">island_waterfall_left</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
     
 
@@ -2778,7 +2777,7 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#island_waterfall_right">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAIShelfWater"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">island_waterfall_right</srdl2-comp:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">island_waterfall_right</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
     
 
@@ -2789,9 +2788,9 @@
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAIKitchen"/>
         <DUL:hasComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#side_A"/>
         <DUL:hasComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#side_B"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_root</srdl2-comp:hasBaseLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">side_A</srdl2-comp:hasEndLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">side_B</srdl2-comp:hasEndLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_root</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">side_A</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">side_B</urdf:hasEndLinkName>
     </owl:NamedIndividual>
     
 
@@ -2800,7 +2799,7 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#middle_of_the_room">
         <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalPlace"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">middle_of_the_room</srdl2-comp:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">middle_of_the_room</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
     
 
@@ -2809,27 +2808,27 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#side_A">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAIKitchenUnitA"/>
-        <DUL:hasComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#cabinet1"/>
-        <DUL:hasComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#cabinet2"/>
-        <DUL:hasComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#cabinet3"/>
-        <DUL:hasComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#cabinet4"/>
-        <DUL:hasComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#cabinet5"/>
-        <DUL:hasComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#cabinet6"/>
+        <DUL:hasComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAICabinet1_0"/>
+        <DUL:hasComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAICabinet2_0"/>
+        <DUL:hasComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAICabinet3_0"/>
+        <DUL:hasComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAICabinet4_0"/>
+        <DUL:hasComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAICabinet5_0"/>
+        <DUL:hasComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAICabinet6_0"/>
         <DUL:hasComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#side_A_left"/>
         <DUL:hasComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#side_A_rb"/>
         <DUL:hasComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#side_A_rt"/>
         <DUL:hasComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#useless_underbar_a"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">side_A</srdl2-comp:hasBaseLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet1</srdl2-comp:hasEndLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet2</srdl2-comp:hasEndLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet3</srdl2-comp:hasEndLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet4</srdl2-comp:hasEndLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet5</srdl2-comp:hasEndLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet6</srdl2-comp:hasEndLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">side_A_left</srdl2-comp:hasEndLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">side_A_rb</srdl2-comp:hasEndLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">side_A_rt</srdl2-comp:hasEndLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">useless_underbar_a</srdl2-comp:hasEndLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">side_A</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet1</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet2</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet3</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet4</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet5</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet6</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">side_A_left</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">side_A_rb</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">side_A_rt</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">useless_underbar_a</urdf:hasEndLinkName>
     </owl:NamedIndividual>
     
 
@@ -2838,7 +2837,7 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#side_A_left">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAIShelfLeft"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">side_A_left</srdl2-comp:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">side_A_left</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
     
 
@@ -2847,7 +2846,7 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#side_A_rb">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAIShelfBottomRight"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">side_A_rb</srdl2-comp:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">side_A_rb</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
     
 
@@ -2856,7 +2855,7 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#side_A_rt">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAIShelfTopRight"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">side_A_rt</srdl2-comp:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">side_A_rt</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
     
 
@@ -2865,27 +2864,27 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#side_B">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAIKitchenUnitB"/>
-        <DUL:hasComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#cabinet10"/>
-        <DUL:hasComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#cabinet11"/>
-        <DUL:hasComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#cabinet7"/>
-        <DUL:hasComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#cabinet8"/>
-        <DUL:hasComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#cabinet9"/>
+        <DUL:hasComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAICabinet10_0"/>
+        <DUL:hasComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAICabinet11_0"/>
+        <DUL:hasComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAICabinet7_0"/>
+        <DUL:hasComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAICabinet8_0"/>
+        <DUL:hasComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAICabinet9_0"/>
         <DUL:hasComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#island_back"/>
         <DUL:hasComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#island_countertop"/>
         <DUL:hasComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#island_waterfall_left"/>
         <DUL:hasComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#island_waterfall_right"/>
         <DUL:hasComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#useless_underbar_b"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">side_B</srdl2-comp:hasBaseLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet10</srdl2-comp:hasEndLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet11</srdl2-comp:hasEndLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet7</srdl2-comp:hasEndLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet8</srdl2-comp:hasEndLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet9</srdl2-comp:hasEndLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">island_back</srdl2-comp:hasEndLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">island_countertop</srdl2-comp:hasEndLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">island_waterfall_left</srdl2-comp:hasEndLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">island_waterfall_right</srdl2-comp:hasEndLinkName>
-        <srdl2-comp:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">useless_underbar_b</srdl2-comp:hasEndLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">side_B</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet10</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet11</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet7</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet8</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet9</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">island_back</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">island_countertop</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">island_waterfall_left</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">island_waterfall_right</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">useless_underbar_b</urdf:hasEndLinkName>
     </owl:NamedIndividual>
     
 
@@ -2895,7 +2894,7 @@
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#sink">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAISink"/>
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#tap"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink</srdl2-comp:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
     
 
@@ -2904,7 +2903,7 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#sofa">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAISofa"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sofa</srdl2-comp:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sofa</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
     
 
@@ -2913,7 +2912,7 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#tap">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAITap"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tap</srdl2-comp:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tap</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
     
 
@@ -2922,7 +2921,7 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#useless_underbar_a">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAIShelfFloorA"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">useless_underbar_a</srdl2-comp:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">useless_underbar_a</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
     
 
@@ -2931,7 +2930,7 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#useless_underbar_b">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAIShelfFloorB"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">useless_underbar_b</srdl2-comp:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">useless_underbar_b</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
     
 
@@ -2940,7 +2939,7 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#wardrobe">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAIWardrobeFrame"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wardrobe</srdl2-comp:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wardrobe</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
     
 
@@ -2949,7 +2948,7 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#wardrobe_door_left">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAIWardrobeDoorLeft"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wardrobe_door_left</srdl2-comp:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wardrobe_door_left</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
     
 
@@ -2958,7 +2957,7 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#wardrobe_door_right">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAIWardrobeDoorRight"/>
-        <srdl2-comp:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wardrobe_door_right</srdl2-comp:hasBaseLinkName>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wardrobe_door_right</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
 </rdf:RDF>
 
