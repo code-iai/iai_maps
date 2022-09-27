@@ -1,0 +1,212 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://knowrob.org/kb/SOMA-HOME-addons.owl#"
+     xml:base="http://knowrob.org/kb/SOMA-HOME-addons.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:SOMA="http://www.ease-crc.org/ont/SOMA.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#">
+        <owl:imports rdf:resource="http://www.ease-crc.org/ont/SOMA-HOME-addons.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#hasPhysicalComponent -->
+
+    <owl:ObjectProperty rdf:about="http://www.ease-crc.org/ont/SOMA.owl#hasPhysicalComponent"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#Armchair -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#Armchair">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#DesignedFurniture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#BedsideTable -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#BedsideTable">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Table"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#CeramicCooktop -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#CeramicCooktop">
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#ElectricCooktop"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#CoffeeTable -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#CoffeeTable">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Table"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#CoilCooktop -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#CoilCooktop">
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#ElectricCooktop"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#Cooktop -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#Cooktop">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#DesignedComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#ElectricCooktop -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#ElectricCooktop">
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#Cooktop"/>
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/knowrob.owl#ElectricalDevice"/>
+        <owl:disjointWith rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#GasCooktop"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#GasCooktop -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#GasCooktop">
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#Cooktop"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#InductionCooktop -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#InductionCooktop">
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#ElectricCooktop"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#KitchenUnit -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#KitchenUnit">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#DesignedFurniture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#Shelf -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#Shelf">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#DesignedComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#Sink -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#Sink">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#DesignedComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#Sofa -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#Sofa">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#DesignedFurniture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#Tap -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#Tap">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#DesignedComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#Wardrobe -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#Wardrobe">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#DesignedContainer"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#DesignedFurniture"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#hasPhysicalComponent"/>
+                <owl:someValuesFrom rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Rack"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#ElectricalDevice -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#ElectricalDevice"/>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#DesignedComponent -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#DesignedComponent"/>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#DesignedContainer -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#DesignedContainer"/>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#DesignedFurniture -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#DesignedFurniture"/>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#Rack -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Rack"/>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#Table -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Table"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
