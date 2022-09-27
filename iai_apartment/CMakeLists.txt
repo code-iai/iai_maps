@@ -8,6 +8,7 @@ project(iai_apartment)
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED)
+find_package(xacro REQUIRED)
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
@@ -17,6 +18,13 @@ find_package(catkin REQUIRED)
 ## modules and global scripts declared therein get installed
 ## See http://ros.org/doc/api/catkin/html/user_guide/setup_dot_py.html
 # catkin_python_setup()
+
+xacro_add_xacro_file(urdf/apartment.urdf urdf/iai-apartment.urdf)
+# add target to trigger xacro
+add_custom_target(xacro ALL DEPENDS
+  urdf/iai-apartment.urdf)
+install(DIRECTORY xacro
+  DESTINATION share/${PROJECT_NAME})
 
 ################################################
 ## Declare ROS messages, services and actions ##
