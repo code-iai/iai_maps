@@ -298,6 +298,18 @@
     
 
 
+    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#StoragePlace -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#StoragePlace"/>
+    
+
+
+    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#Storing -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#Storing"/>
+    
+
+
     <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#Tap -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#Tap"/>
@@ -2175,9 +2187,21 @@
     
 
 
+    <!-- http://www.ease-crc.org/ont/SOMA-OBJ.owl#StoredObject -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA-OBJ.owl#StoredObject"/>
+    
+
+
     <!-- http://www.ease-crc.org/ont/SOMA.owl#AgentRole -->
 
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#AgentRole"/>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#Closing -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Closing"/>
     
 
 
@@ -2220,6 +2244,30 @@
     <!-- http://www.ease-crc.org/ont/SOMA.owl#Graspability -->
 
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Graspability"/>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#Grasping -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Grasping"/>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#MovedObject -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#MovedObject"/>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#Opening -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Opening"/>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#Patient -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Patient"/>
     
 
 
@@ -2282,6 +2330,33 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#AffordsClosing_0">
         <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsBeingClosed"/>
+        <SOMA:definesBearer rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsClosing_0_Bearer"/>
+        <SOMA:definesTrigger rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsClosing_0_Trigger"/>
+        <DUL:definesTask rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsClosing_0_Task"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/iai-apartment.owl#AffordsClosing_0_Bearer -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#AffordsClosing_0_Bearer">
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#MovedObject"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/iai-apartment.owl#AffordsClosing_0_Task -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#AffordsClosing_0_Task">
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Closing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/iai-apartment.owl#AffordsClosing_0_Trigger -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#AffordsClosing_0_Trigger">
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#AgentRole"/>
     </owl:NamedIndividual>
     
 
@@ -2290,6 +2365,33 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#AffordsGrasping_0">
         <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsGrasping"/>
+        <SOMA:definesBearer rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsGrasping_0_Bearer"/>
+        <SOMA:definesTrigger rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsGrasping_0_Trigger"/>
+        <DUL:definesTask rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsGrasping_0_Task"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/iai-apartment.owl#AffordsGrasping_0_Bearer -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#AffordsGrasping_0_Bearer">
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Patient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/iai-apartment.owl#AffordsGrasping_0_Task -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#AffordsGrasping_0_Task">
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Grasping"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/iai-apartment.owl#AffordsGrasping_0_Trigger -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#AffordsGrasping_0_Trigger">
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#AgentRole"/>
     </owl:NamedIndividual>
     
 
@@ -2298,6 +2400,33 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#AffordsOpening_0">
         <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsBeingOpened"/>
+        <SOMA:definesBearer rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsOpening_0_Bearer"/>
+        <SOMA:definesTrigger rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsOpening_0_Trigger"/>
+        <DUL:definesTask rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsOpening_0_Task"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/iai-apartment.owl#AffordsOpening_0_Bearer -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#AffordsOpening_0_Bearer">
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#MovedObject"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/iai-apartment.owl#AffordsOpening_0_Task -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#AffordsOpening_0_Task">
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Opening"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/iai-apartment.owl#AffordsOpening_0_Trigger -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#AffordsOpening_0_Trigger">
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#AgentRole"/>
     </owl:NamedIndividual>
     
 
@@ -2365,6 +2494,33 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#AffordsStoringCloth_0">
         <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsStoringCloth"/>
+        <SOMA:definesBearer rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsStoringCloth_0_Bearer"/>
+        <SOMA:definesTrigger rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsStoringCloth_0_Trigger"/>
+        <DUL:definesTask rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsStoringCloth_0_Task"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/iai-apartment.owl#AffordsStoringCloth_0_Bearer -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#AffordsStoringCloth_0_Bearer">
+        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#StoragePlace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/iai-apartment.owl#AffordsStoringCloth_0_Task -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#AffordsStoringCloth_0_Task">
+        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#Storing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/iai-apartment.owl#AffordsStoringCloth_0_Trigger -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#AffordsStoringCloth_0_Trigger">
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA-OBJ.owl#StoredObject"/>
     </owl:NamedIndividual>
     
 
@@ -2373,6 +2529,33 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#AffordsStoringCutlery_0">
         <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsStoringCutlery"/>
+        <SOMA:definesBearer rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsStoringCutlery_0_Bearer"/>
+        <SOMA:definesTrigger rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsStoringCutlery_0_Trigger"/>
+        <DUL:definesTask rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsStoringCutlery_0_Task"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/iai-apartment.owl#AffordsStoringCutlery_0_Bearer -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#AffordsStoringCutlery_0_Bearer">
+        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#StoragePlace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/iai-apartment.owl#AffordsStoringCutlery_0_Task -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#AffordsStoringCutlery_0_Task">
+        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#Storing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/iai-apartment.owl#AffordsStoringCutlery_0_Trigger -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#AffordsStoringCutlery_0_Trigger">
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA-OBJ.owl#StoredObject"/>
     </owl:NamedIndividual>
     
 
@@ -2381,6 +2564,33 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#AffordsStoringItems_0">
         <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsStoringItems"/>
+        <SOMA:definesBearer rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsStoringItems_0_Bearer"/>
+        <SOMA:definesTrigger rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsStoringItems_0_Trigger"/>
+        <DUL:definesTask rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsStoringItems_0_Task"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/iai-apartment.owl#AffordsStoringItems_0_Bearer -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#AffordsStoringItems_0_Bearer">
+        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#StoragePlace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/iai-apartment.owl#AffordsStoringItems_0_Task -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#AffordsStoringItems_0_Task">
+        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#Storing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/iai-apartment.owl#AffordsStoringItems_0_Trigger -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#AffordsStoringItems_0_Trigger">
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA-OBJ.owl#StoredObject"/>
     </owl:NamedIndividual>
     
 
@@ -2389,6 +2599,33 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#AffordsStoringSmallItems_0">
         <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsStoringSmallItems"/>
+        <SOMA:definesBearer rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsStoringSmallItems_0_Bearer"/>
+        <SOMA:definesTrigger rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsStoringSmallItems_0_Trigger"/>
+        <DUL:definesTask rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsStoringSmallItems_0_Task"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/iai-apartment.owl#AffordsStoringSmallItems_0_Bearer -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#AffordsStoringSmallItems_0_Bearer">
+        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#StoragePlace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/iai-apartment.owl#AffordsStoringSmallItems_0_Task -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#AffordsStoringSmallItems_0_Task">
+        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#Storing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/iai-apartment.owl#AffordsStoringSmallItems_0_Trigger -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#AffordsStoringSmallItems_0_Trigger">
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA-OBJ.owl#StoredObject"/>
     </owl:NamedIndividual>
     
 
