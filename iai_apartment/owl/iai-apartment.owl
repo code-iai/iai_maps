@@ -208,6 +208,12 @@
     
 
 
+    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#ShelvedObject -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#ShelvedObject"/>
+    
+
+
     <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#Sink -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#Sink"/>
@@ -2127,6 +2133,12 @@
     
 
 
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#Destination -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Destination"/>
+    
+
+
     <!-- http://www.ease-crc.org/ont/SOMA.owl#Door -->
 
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Door"/>
@@ -2178,6 +2190,8 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#bedside_table_PuttingDownAffordance">
         <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeAShelfAffordance"/>
+        <SOMA:definesBearer rdf:resource="http://knowrob.org/kb/iai-apartment.owl#bedside_table_PuttingDownDestination"/>
+        <SOMA:definesTrigger rdf:resource="http://knowrob.org/kb/iai-apartment.owl#bedside_table_PuttingDownShelved"/>
         <DUL:definesTask rdf:resource="http://knowrob.org/kb/iai-apartment.owl#bedside_table_PuttingDown"/>
         <DUL:describes rdf:resource="http://knowrob.org/kb/iai-apartment.owl#bedside_table_CanBeAShelf"/>
     </owl:NamedIndividual>
@@ -2484,6 +2498,22 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#bedside_table_PuttingDown">
         <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#PuttingDown"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/iai-apartment.owl#bedside_table_PuttingDownDestination -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#bedside_table_PuttingDownDestination">
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Destination"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/iai-apartment.owl#bedside_table_PuttingDownShelved -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#bedside_table_PuttingDownShelved">
+        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#ShelvedObject"/>
     </owl:NamedIndividual>
     
 
@@ -2918,8 +2948,26 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#coffee_table_PuttingDownAffordance">
         <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeAShelfAffordance"/>
+        <SOMA:definesBearer rdf:resource="http://knowrob.org/kb/iai-apartment.owl#coffee_table_PuttingDownDestination"/>
+        <SOMA:definesTrigger rdf:resource="http://knowrob.org/kb/iai-apartment.owl#coffee_table_PuttingDownShelved"/>
         <DUL:definesTask rdf:resource="http://knowrob.org/kb/iai-apartment.owl#coffee_table_PuttingDown"/>
         <DUL:describes rdf:resource="http://knowrob.org/kb/iai-apartment.owl#coffee_table_CanBeAShelf"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/iai-apartment.owl#coffee_table_PuttingDownDestination -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#coffee_table_PuttingDownDestination">
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Destination"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/iai-apartment.owl#coffee_table_PuttingDownShelved -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#coffee_table_PuttingDownShelved">
+        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#ShelvedObject"/>
     </owl:NamedIndividual>
     
 
@@ -2971,8 +3019,26 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#countertop_PuttingDownAffordance">
         <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeAShelfAffordance"/>
+        <SOMA:definesBearer rdf:resource="http://knowrob.org/kb/iai-apartment.owl#countertop_PuttingDownDestination"/>
+        <SOMA:definesTrigger rdf:resource="http://knowrob.org/kb/iai-apartment.owl#countertop_PuttingDownShelved"/>
         <DUL:definesTask rdf:resource="http://knowrob.org/kb/iai-apartment.owl#countertop_PuttingDown"/>
         <DUL:describes rdf:resource="http://knowrob.org/kb/iai-apartment.owl#countertop_CanBeAShelf"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/iai-apartment.owl#countertop_PuttingDownDestination -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#countertop_PuttingDownDestination">
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Destination"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/iai-apartment.owl#countertop_PuttingDownShelved -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#countertop_PuttingDownShelved">
+        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#ShelvedObject"/>
     </owl:NamedIndividual>
     
 
@@ -3245,8 +3311,26 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#island_countertop_PuttingDownAffordance">
         <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeAShelfAffordance"/>
+        <SOMA:definesBearer rdf:resource="http://knowrob.org/kb/iai-apartment.owl#island_countertop_PuttingDownDestination"/>
+        <SOMA:definesTrigger rdf:resource="http://knowrob.org/kb/iai-apartment.owl#island_countertop_PuttingDownShelved"/>
         <DUL:definesTask rdf:resource="http://knowrob.org/kb/iai-apartment.owl#island_countertop_PuttingDown"/>
         <DUL:describes rdf:resource="http://knowrob.org/kb/iai-apartment.owl#island_countertop_CanBeAShelf"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/iai-apartment.owl#island_countertop_PuttingDownDestination -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#island_countertop_PuttingDownDestination">
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Destination"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/iai-apartment.owl#island_countertop_PuttingDownShelved -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#island_countertop_PuttingDownShelved">
+        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#ShelvedObject"/>
     </owl:NamedIndividual>
     
 
