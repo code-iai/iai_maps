@@ -373,6 +373,19 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#hasPhysicalComponent"/>
+                <owl:someValuesFrom rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAIOven"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#hasPhysicalComponent"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.ease-crc.org/ont/SOMA-HOME.owl#Oven"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#hasPhysicalComponent"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Door"/>
             </owl:Restriction>
@@ -1832,6 +1845,20 @@
     
 
 
+    <!-- http://knowrob.org/kb/iai-apartment.owl#IAIOven -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/iai-apartment.owl#IAIOven">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA-HOME.owl#Oven"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_maps/iai_apartment/meshes/cabinet01/oven.dae</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- http://knowrob.org/kb/iai-apartment.owl#IAIShelf -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/iai-apartment.owl#IAIShelf">
@@ -2070,6 +2097,12 @@
     
 
 
+    <!-- http://www.ease-crc.org/ont/SOMA-HOME.owl#Oven -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA-HOME.owl#Oven"/>
+    
+
+
     <!-- http://www.ease-crc.org/ont/SOMA.owl#AgentRole -->
 
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#AgentRole"/>
@@ -2191,10 +2224,12 @@
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#cabinet1_door_top_left"/>
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#cabinet1_drawer_bottom"/>
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#cabinet1_drawer_middle"/>
+        <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#oven"/>
         <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet1</urdf:hasBaseLinkName>
         <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet1_door_top_left</urdf:hasEndLinkName>
         <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet1_drawer_bottom</urdf:hasEndLinkName>
         <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet1_drawer_middle</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven</urdf:hasEndLinkName>
     </owl:NamedIndividual>
     
 
@@ -3252,6 +3287,15 @@
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#middle_of_the_room">
         <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalPlace"/>
         <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">middle_of_the_room</urdf:hasBaseLinkName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/iai-apartment.owl#oven -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#oven">
+        <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAIOven"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven</urdf:hasBaseLinkName>
     </owl:NamedIndividual>
     
 
