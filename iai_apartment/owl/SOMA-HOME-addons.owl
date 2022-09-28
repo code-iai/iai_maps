@@ -23,6 +23,12 @@
     
 
 
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#affordsTrigger -->
+
+    <owl:ObjectProperty rdf:about="http://www.ease-crc.org/ont/SOMA.owl#affordsTrigger"/>
+    
+
+
     <!-- http://www.ease-crc.org/ont/SOMA.owl#definesBearer -->
 
     <owl:ObjectProperty rdf:about="http://www.ease-crc.org/ont/SOMA.owl#definesBearer"/>
@@ -59,6 +65,12 @@
     
 
 
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#describes -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#describes"/>
+    
+
+
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy -->
 
     <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy"/>
@@ -76,87 +88,32 @@
     
 
 
-    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#Armchair -->
+    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsBeingClosed -->
 
-    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#Armchair">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#DesignedFurniture"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#hasDisposition"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeSatOn"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsBeingClosed">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Affordance"/>
     </owl:Class>
     
 
 
-    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#BedsideTable -->
+    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsBeingOpened -->
 
-    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#BedsideTable">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Table"/>
+    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsBeingOpened">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Affordance"/>
     </owl:Class>
     
 
 
-    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeAShelf -->
+    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsBeingSitOn -->
 
-    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeAShelf">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Deposition"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy"/>
-                <owl:someValuesFrom rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeAShelfAffordance"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeAShelfAffordance -->
-
-    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeAShelfAffordance">
+    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsBeingSitOn">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Affordance"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#definesBearer"/>
-                <owl:allValuesFrom rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Destination"/>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#describes"/>
+                <owl:someValuesFrom rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeSatOn"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#definesTrigger"/>
-                <owl:allValuesFrom rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#ShelvedObject"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#definesTask"/>
-                <owl:allValuesFrom rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#PuttingDown"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeSatOn -->
-
-    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeSatOn">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Deposition"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy"/>
-                <owl:someValuesFrom rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeSatOnAffordance"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeSatOnAffordance -->
-
-    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeSatOnAffordance">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Affordance"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#definesBearer"/>
@@ -194,10 +151,234 @@
     
 
 
+    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsContainment -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsContainment">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Affordance"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#describes"/>
+                <owl:someValuesFrom rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Containment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#definesTask"/>
+                <owl:allValuesFrom rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#PuttingDown"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsGrasping -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsGrasping">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Affordance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsPuttingDown -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsPuttingDown">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Affordance"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#describes"/>
+                <owl:someValuesFrom rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeAShelf"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#definesBearer"/>
+                <owl:allValuesFrom rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Destination"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#definesTrigger"/>
+                <owl:allValuesFrom rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#ShelvedObject"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#definesTask"/>
+                <owl:allValuesFrom rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#PuttingDown"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsStoring -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsStoring">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Affordance"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#definesBearer"/>
+                <owl:allValuesFrom rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#StoragePlace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#definesTrigger"/>
+                <owl:allValuesFrom rdf:resource="http://www.ease-crc.org/ont/SOMA-OBJ.owl#StoredObject"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#definesTask"/>
+                <owl:allValuesFrom rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#Storing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#describes"/>
+                <owl:allValuesFrom rdf:resource="http://www.ease-crc.org/ont/SOMA-OBJ.owl#Storage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsStoringCloth -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsStoringCloth">
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsStoring"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#definesTrigger"/>
+                <owl:allValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#classifies"/>
+                        <owl:allValuesFrom rdf:resource="http://knowrob.org/kb/knowrob.owl#Cloth"/>
+                    </owl:Restriction>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsStoringCutlery -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsStoringCutlery">
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsStoring"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsStoringItems -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsStoringItems">
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsStoring"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsStoringSmallItems -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsStoringSmallItems">
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsStoring"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#Armchair -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#Armchair">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#DesignedFurniture"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#hasDisposition"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeSatOn"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#BedsideTable -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#BedsideTable">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Table"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeAShelf -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeAShelf">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Deposition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy"/>
+                <owl:someValuesFrom rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsPuttingDown"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeClosed -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeClosed">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Disposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeOpened -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeOpened">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Disposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeSatOn -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeSatOn">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Deposition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy"/>
+                <owl:someValuesFrom rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsBeingSitOn"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeShelved -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeShelved">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Disposition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#affordsTrigger"/>
+                <owl:allValuesFrom rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#ShelvedObject"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#CanClose -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanClose">
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/knowrob.owl#Capability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#CanOpen -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanOpen">
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/knowrob.owl#Capability"/>
     </owl:Class>
     
 
@@ -276,6 +457,31 @@
     
 
 
+    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#KitchenCabinet -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#KitchenCabinet">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Cupboard"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#hasDisposition"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.ease-crc.org/ont/SOMA-OBJ.owl#Storage"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy"/>
+                                <owl:someValuesFrom rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsStoringItems"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:onClass>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#KitchenUnit -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#KitchenUnit">
@@ -288,6 +494,14 @@
 
     <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#LowStiffness">
         <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#Stiffness"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#OvenInsertion -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#OvenInsertion">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Insertion"/>
     </owl:Class>
     
 
@@ -331,6 +545,23 @@
 
     <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#Sink">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#DesignedComponent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#hasDisposition"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.ease-crc.org/ont/SOMA-OBJ.owl#Storage"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy"/>
+                                <owl:someValuesFrom rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsStoringCutlery"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:onClass>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -385,6 +616,30 @@
     
 
 
+    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#StoragePlace -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#StoragePlace">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Destination"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#StoredObject -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#StoredObject">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#DepositedObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#Storing -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#Storing">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#PuttingDown"/>
+    </owl:Class>
+    
+
+
     <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#Tap -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#Tap">
@@ -404,6 +659,23 @@
                 <owl:someValuesFrom rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Rack"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#hasDisposition"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.ease-crc.org/ont/SOMA-OBJ.owl#Storage"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy"/>
+                                <owl:someValuesFrom rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsStoringCloth"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:onClass>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -414,9 +686,34 @@
     
 
 
+    <!-- http://knowrob.org/kb/knowrob.owl#Cloth -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#Cloth"/>
+    
+
+
     <!-- http://knowrob.org/kb/knowrob.owl#ElectricalDevice -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#ElectricalDevice"/>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/SOMA-OBJ.owl#Storage -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA-OBJ.owl#Storage">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy"/>
+                <owl:allValuesFrom rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsStoring"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/SOMA-OBJ.owl#StoredObject -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA-OBJ.owl#StoredObject"/>
     
 
 
@@ -435,6 +732,18 @@
     <!-- http://www.ease-crc.org/ont/SOMA.owl#AssumingPose -->
 
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#AssumingPose"/>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#Containment -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Containment"/>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#Cupboard -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Cupboard"/>
     
 
 
@@ -480,6 +789,36 @@
     
 
 
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#Drawer -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Drawer">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#hasDisposition"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.ease-crc.org/ont/SOMA-OBJ.owl#Storage"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy"/>
+                                <owl:someValuesFrom rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsStoringSmallItems"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:onClass>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#Insertion -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Insertion"/>
+    
+
+
     <!-- http://www.ease-crc.org/ont/SOMA.owl#Intrinsic -->
 
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Intrinsic"/>
@@ -521,15 +860,21 @@
     
 
 
-    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#bedside_table_PuttingDownAffordance -->
+    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsPuttingDown_0 -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#bedside_table_PuttingDownAffordance"/>
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsPuttingDown_0"/>
     
 
 
-    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#sofa_Sittinh -->
+    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#kitchen_root_CanBeStorage -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#sofa_Sittinh"/>
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#kitchen_root_CanBeStorage"/>
+    
+
+
+    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#wardrobe_CanStoreClothes -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#wardrobe_CanStoreClothes"/>
 </rdf:RDF>
 
 
