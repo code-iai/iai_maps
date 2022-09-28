@@ -1961,10 +1961,12 @@
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#cabinet5_drawer_bottom"/>
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#cabinet5_drawer_middle"/>
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#cabinet5_drawer_top"/>
+        <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#countertop"/>
         <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet5</urdf:hasBaseLinkName>
         <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet5_drawer_bottom</urdf:hasEndLinkName>
         <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet5_drawer_middle</urdf:hasEndLinkName>
         <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabinet5_drawer_top</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">countertop</urdf:hasEndLinkName>
     </owl:NamedIndividual>
     
 
@@ -2051,12 +2053,14 @@
         <DUL:hasComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#coffee_table"/>
         <DUL:hasComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#kitchen_root"/>
         <DUL:hasComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#sofa"/>
+        <DUL:hasComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#armchair"/>
         <DUL:hasComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAIWardrobe0"/>
         <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">apartment_root</urdf:hasBaseLinkName>
         <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bedside_table</urdf:hasEndLinkName>
         <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">coffee_table</urdf:hasEndLinkName>
         <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kitchen_root</urdf:hasEndLinkName>
         <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sofa</urdf:hasEndLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">armchair</urdf:hasEndLinkName>
         <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wardrobe</urdf:hasEndLinkName>
     </owl:NamedIndividual>
     
@@ -2895,6 +2899,7 @@
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAISink"/>
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#tap"/>
         <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sink</urdf:hasBaseLinkName>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tap</urdf:hasEndLinkName>
     </owl:NamedIndividual>
     
 
