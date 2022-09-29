@@ -15,6 +15,7 @@
     <owl:Ontology rdf:about="http://knowrob.org/kb/iai-apartment.owl#">
         <owl:imports rdf:resource="package://iai_apartment/owl/SOMA-HOME-addons.owl"/>
         <owl:imports rdf:resource="package://knowrob/owl/srdl2.owl"/>
+        <owl:imports rdf:resource="http://www.ease-crc.org/ont/SOMA-HOME.owl"/>
     </owl:Ontology>
     
 
@@ -130,195 +131,195 @@
     
 
 
-    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsBeingClosed -->
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#AffordsBeingClosed -->
 
-    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsBeingClosed"/>
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#AffordsBeingClosed"/>
     
 
 
-    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsBeingOpened -->
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#AffordsBeingOpened -->
 
-    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsBeingOpened"/>
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#AffordsBeingOpened"/>
     
 
 
-    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsBeingSitOn -->
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#AffordsBeingSitOn -->
 
-    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsBeingSitOn"/>
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#AffordsBeingSitOn"/>
     
 
 
-    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsGrasping -->
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#AffordsGrasping -->
 
-    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsGrasping"/>
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#AffordsGrasping"/>
     
 
 
-    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsPuttingDown -->
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#AffordsPuttingDown -->
 
-    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsPuttingDown"/>
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#AffordsPuttingDown"/>
     
 
 
-    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsStoringCloth -->
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#AffordsStoringCloth -->
 
-    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsStoringCloth"/>
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#AffordsStoringCloth"/>
     
 
 
-    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsStoringCutlery -->
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#AffordsStoringCutlery -->
 
-    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsStoringCutlery"/>
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#AffordsStoringCutlery"/>
     
 
 
-    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsStoringItems -->
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#AffordsStoringItems -->
 
-    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsStoringItems"/>
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#AffordsStoringItems"/>
     
 
 
-    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsStoringSmallItems -->
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#AffordsStoringSmallItems -->
 
-    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsStoringSmallItems"/>
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#AffordsStoringSmallItems"/>
     
 
 
-    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#Armchair -->
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#Armchair -->
 
-    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#Armchair"/>
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Armchair"/>
     
 
 
-    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#BedsideTable -->
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#BedsideTable -->
 
-    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#BedsideTable"/>
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#BedsideTable"/>
     
 
 
-    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeAShelf -->
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#CanBeAShelf -->
 
-    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeAShelf"/>
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#CanBeAShelf"/>
     
 
 
-    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeClosed -->
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#CanBeClosed -->
 
-    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeClosed"/>
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#CanBeClosed"/>
     
 
 
-    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeOpened -->
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#CanBeOpened -->
 
-    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeOpened"/>
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#CanBeOpened"/>
     
 
 
-    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeSatOn -->
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#CanBeSatOn -->
 
-    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeSatOn"/>
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#CanBeSatOn"/>
     
 
 
-    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#CoffeeTable -->
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#CoffeeTable -->
 
-    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#CoffeeTable"/>
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#CoffeeTable"/>
     
 
 
-    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#Cooktop -->
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#Cooktop -->
 
-    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#Cooktop"/>
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Cooktop"/>
     
 
 
-    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#InductionCooktop -->
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#InductionCooktop -->
 
-    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#InductionCooktop"/>
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#InductionCooktop"/>
     
 
 
-    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#KitchenCabinet -->
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#KitchenCabinet -->
 
-    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#KitchenCabinet"/>
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#KitchenCabinet"/>
     
 
 
-    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#KitchenUnit -->
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#KitchenUnit -->
 
-    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#KitchenUnit"/>
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#KitchenUnit"/>
     
 
 
-    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#LowStiffness -->
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#LowStiffness -->
 
-    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#LowStiffness"/>
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#LowStiffness"/>
     
 
 
-    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#Rigidity -->
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#Rigidity -->
 
-    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#Rigidity"/>
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Rigidity"/>
     
 
 
-    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#Shelf -->
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#Shelf -->
 
-    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#Shelf"/>
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Shelf"/>
     
 
 
-    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#ShelvedObject -->
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#ShelvedObject -->
 
-    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#ShelvedObject"/>
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#ShelvedObject"/>
     
 
 
-    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#Sink -->
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#Sink -->
 
-    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#Sink"/>
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Sink"/>
     
 
 
-    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#Sitting -->
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#Sitting -->
 
-    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#Sitting"/>
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Sitting"/>
     
 
 
-    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#SittingDestination -->
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#SittingDestination -->
 
-    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#SittingDestination"/>
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#SittingDestination"/>
     
 
 
-    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#Sofa -->
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#Sofa -->
 
-    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#Sofa"/>
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Sofa"/>
     
 
 
-    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#StoragePlace -->
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#StoragePlace -->
 
-    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#StoragePlace"/>
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#StoragePlace"/>
     
 
 
-    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#Storing -->
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#Storing -->
 
-    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#Storing"/>
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Storing"/>
     
 
 
-    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#Tap -->
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#Tap -->
 
-    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#Tap"/>
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Tap"/>
     
 
 
-    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#Wardrobe -->
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#Wardrobe -->
 
-    <owl:Class rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#Wardrobe"/>
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Wardrobe"/>
     
 
 
@@ -342,14 +343,14 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasComponent"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#Wardrobe"/>
+                <owl:onClass rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Wardrobe"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasComponent"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.ease-crc.org/ont/SOMA-HOME.owl#Kitchen"/>
+                <owl:onClass rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Kitchen"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -359,7 +360,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#IAIArmChair -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/iai-apartment.owl#IAIArmChair">
-        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#Armchair"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Armchair"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
@@ -387,7 +388,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#IAIBedsideTable -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/iai-apartment.owl#IAIBedsideTable">
-        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#BedsideTable"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#BedsideTable"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
@@ -401,7 +402,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#IAICabinet -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/iai-apartment.owl#IAICabinet">
-        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#KitchenCabinet"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#KitchenCabinet"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#hasPhysicalComponent"/>
@@ -458,7 +459,7 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#hasPhysicalComponent"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.ease-crc.org/ont/SOMA-HOME.owl#Oven"/>
+                <owl:onClass rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Oven"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1767,7 +1768,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#IAICoffeeTable -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/iai-apartment.owl#IAICoffeeTable">
-        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CoffeeTable"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CoffeeTable"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
@@ -1795,7 +1796,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#IAICooktop -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/iai-apartment.owl#IAICooktop">
-        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#InductionCooktop"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#InductionCooktop"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
@@ -1830,7 +1831,7 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#hasPhysicalComponent"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#Cooktop"/>
+                <owl:onClass rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Cooktop"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1875,7 +1876,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#IAIKitchen -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/iai-apartment.owl#IAIKitchen">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA-HOME.owl#Kitchen"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Kitchen"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasComponent"/>
@@ -1892,7 +1893,7 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasComponent"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#KitchenUnit"/>
+                <owl:onClass rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#KitchenUnit"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1902,7 +1903,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#IAIKitchenUnit -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/iai-apartment.owl#IAIKitchenUnit">
-        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#KitchenUnit"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#KitchenUnit"/>
     </owl:Class>
     
 
@@ -1926,7 +1927,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#IAIOven -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/iai-apartment.owl#IAIOven">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA-HOME.owl#Oven"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Oven"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
@@ -1940,7 +1941,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#IAIShelf -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/iai-apartment.owl#IAIShelf">
-        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#Shelf"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Shelf"/>
     </owl:Class>
     
 
@@ -2040,7 +2041,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#IAISink -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/iai-apartment.owl#IAISink">
-        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#Sink"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Sink"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
@@ -2056,7 +2057,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#IAISofa -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/iai-apartment.owl#IAISofa">
-        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#Sofa"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Sofa"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
@@ -2070,7 +2071,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#IAITap -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/iai-apartment.owl#IAITap">
-        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#Tap"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Tap"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
@@ -2086,7 +2087,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#IAIWardrobe -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/iai-apartment.owl#IAIWardrobe">
-        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#Wardrobe"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Wardrobe"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#hasPhysicalComponent"/>
@@ -2169,15 +2170,15 @@
     
 
 
-    <!-- http://www.ease-crc.org/ont/SOMA-HOME.owl#Kitchen -->
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#Kitchen -->
 
-    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA-HOME.owl#Kitchen"/>
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Kitchen"/>
     
 
 
-    <!-- http://www.ease-crc.org/ont/SOMA-HOME.owl#Oven -->
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#Oven -->
 
-    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA-HOME.owl#Oven"/>
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Oven"/>
     
 
 
@@ -2306,10 +2307,10 @@
     
 
 
-    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsPuttingDown_0 -->
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#AffordsPuttingDown_0 -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsPuttingDown_0">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsPuttingDown"/>
+    <owl:NamedIndividual rdf:about="http://www.ease-crc.org/ont/SOMA.owl#AffordsPuttingDown_0">
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#AffordsPuttingDown"/>
         <SOMA:definesBearer rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsPuttingDown_0_Bearer"/>
         <SOMA:definesTrigger rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsPuttingDown_0_Trigger"/>
         <DUL:definesTask rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsPuttingDown_0_Task"/>
@@ -2317,9 +2318,9 @@
     
 
 
-    <!-- http://knowrob.org/kb/SOMA-HOME-addons.owl#wardrobe_CanStoreClothes -->
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#wardrobe_CanStoreClothes -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/SOMA-HOME-addons.owl#wardrobe_CanStoreClothes">
+    <owl:NamedIndividual rdf:about="http://www.ease-crc.org/ont/SOMA.owl#wardrobe_CanStoreClothes">
         <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA-OBJ.owl#Storage"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsStoringCloth_0"/>
     </owl:NamedIndividual>
@@ -2329,7 +2330,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#AffordsClosing_0 -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#AffordsClosing_0">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsBeingClosed"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#AffordsBeingClosed"/>
         <SOMA:definesBearer rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsClosing_0_Bearer"/>
         <SOMA:definesTrigger rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsClosing_0_Trigger"/>
         <DUL:definesTask rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsClosing_0_Task"/>
@@ -2364,7 +2365,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#AffordsGrasping_0 -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#AffordsGrasping_0">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsGrasping"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#AffordsGrasping"/>
         <SOMA:definesBearer rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsGrasping_0_Bearer"/>
         <SOMA:definesTrigger rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsGrasping_0_Trigger"/>
         <DUL:definesTask rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsGrasping_0_Task"/>
@@ -2399,7 +2400,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#AffordsOpening_0 -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#AffordsOpening_0">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsBeingOpened"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#AffordsBeingOpened"/>
         <SOMA:definesBearer rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsOpening_0_Bearer"/>
         <SOMA:definesTrigger rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsOpening_0_Trigger"/>
         <DUL:definesTask rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsOpening_0_Task"/>
@@ -2450,7 +2451,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#AffordsPuttingDown_0_Trigger -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#AffordsPuttingDown_0_Trigger">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#ShelvedObject"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#ShelvedObject"/>
     </owl:NamedIndividual>
     
 
@@ -2458,7 +2459,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#AffordsSitting_0 -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#AffordsSitting_0">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsBeingSitOn"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#AffordsBeingSitOn"/>
         <SOMA:definesBearer rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsSitting_0_Bearer"/>
         <SOMA:definesTrigger rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsSitting_0_Trigger"/>
         <DUL:definesTask rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsSitting_0_Task"/>
@@ -2469,7 +2470,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#AffordsSitting_0_Bearer -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#AffordsSitting_0_Bearer">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#SittingDestination"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#SittingDestination"/>
     </owl:NamedIndividual>
     
 
@@ -2477,7 +2478,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#AffordsSitting_0_Task -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#AffordsSitting_0_Task">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#Sitting"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Sitting"/>
     </owl:NamedIndividual>
     
 
@@ -2493,7 +2494,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#AffordsStoringCloth_0 -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#AffordsStoringCloth_0">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsStoringCloth"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#AffordsStoringCloth"/>
         <SOMA:definesBearer rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsStoringCloth_0_Bearer"/>
         <SOMA:definesTrigger rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsStoringCloth_0_Trigger"/>
         <DUL:definesTask rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsStoringCloth_0_Task"/>
@@ -2504,7 +2505,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#AffordsStoringCloth_0_Bearer -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#AffordsStoringCloth_0_Bearer">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#StoragePlace"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#StoragePlace"/>
     </owl:NamedIndividual>
     
 
@@ -2512,7 +2513,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#AffordsStoringCloth_0_Task -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#AffordsStoringCloth_0_Task">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#Storing"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Storing"/>
     </owl:NamedIndividual>
     
 
@@ -2528,7 +2529,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#AffordsStoringCutlery_0 -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#AffordsStoringCutlery_0">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsStoringCutlery"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#AffordsStoringCutlery"/>
         <SOMA:definesBearer rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsStoringCutlery_0_Bearer"/>
         <SOMA:definesTrigger rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsStoringCutlery_0_Trigger"/>
         <DUL:definesTask rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsStoringCutlery_0_Task"/>
@@ -2539,7 +2540,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#AffordsStoringCutlery_0_Bearer -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#AffordsStoringCutlery_0_Bearer">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#StoragePlace"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#StoragePlace"/>
     </owl:NamedIndividual>
     
 
@@ -2547,7 +2548,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#AffordsStoringCutlery_0_Task -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#AffordsStoringCutlery_0_Task">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#Storing"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Storing"/>
     </owl:NamedIndividual>
     
 
@@ -2563,7 +2564,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#AffordsStoringItems_0 -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#AffordsStoringItems_0">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsStoringItems"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#AffordsStoringItems"/>
         <SOMA:definesBearer rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsStoringItems_0_Bearer"/>
         <SOMA:definesTrigger rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsStoringItems_0_Trigger"/>
         <DUL:definesTask rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsStoringItems_0_Task"/>
@@ -2574,7 +2575,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#AffordsStoringItems_0_Bearer -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#AffordsStoringItems_0_Bearer">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#StoragePlace"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#StoragePlace"/>
     </owl:NamedIndividual>
     
 
@@ -2582,7 +2583,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#AffordsStoringItems_0_Task -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#AffordsStoringItems_0_Task">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#Storing"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Storing"/>
     </owl:NamedIndividual>
     
 
@@ -2598,7 +2599,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#AffordsStoringSmallItems_0 -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#AffordsStoringSmallItems_0">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsStoringSmallItems"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#AffordsStoringSmallItems"/>
         <SOMA:definesBearer rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsStoringSmallItems_0_Bearer"/>
         <SOMA:definesTrigger rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsStoringSmallItems_0_Trigger"/>
         <DUL:definesTask rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsStoringSmallItems_0_Task"/>
@@ -2609,7 +2610,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#AffordsStoringSmallItems_0_Bearer -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#AffordsStoringSmallItems_0_Bearer">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#StoragePlace"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#StoragePlace"/>
     </owl:NamedIndividual>
     
 
@@ -2617,7 +2618,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#AffordsStoringSmallItems_0_Task -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#AffordsStoringSmallItems_0_Task">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#Storing"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Storing"/>
     </owl:NamedIndividual>
     
 
@@ -2817,7 +2818,7 @@
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#IAIWardrobe0">
         <rdf:type rdf:resource="http://knowrob.org/kb/iai-apartment.owl#IAIWardrobe"/>
-        <SOMA:hasDisposition rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#wardrobe_CanStoreClothes"/>
+        <SOMA:hasDisposition rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#wardrobe_CanStoreClothes"/>
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#wardrobe"/>
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#wardrobe_door_left"/>
         <SOMA:hasPhysicalComponent rdf:resource="http://knowrob.org/kb/iai-apartment.owl#wardrobe_door_right"/>
@@ -2863,7 +2864,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#armchair_CanBeSatOn -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#armchair_CanBeSatOn">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeSatOn"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeSatOn"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsSitting_0"/>
     </owl:NamedIndividual>
     
@@ -2872,7 +2873,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#armchair_rigidity -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#armchair_rigidity">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#Rigidity"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Rigidity"/>
         <DUL:hasRegion rdf:resource="http://knowrob.org/kb/iai-apartment.owl#armchair_stiffness"/>
     </owl:NamedIndividual>
     
@@ -2881,7 +2882,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#armchair_stiffness -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#armchair_stiffness">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#LowStiffness"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#LowStiffness"/>
     </owl:NamedIndividual>
     
 
@@ -2899,8 +2900,8 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#bedside_table_CanBeAShelf -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#bedside_table_CanBeAShelf">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeAShelf"/>
-        <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsPuttingDown_0"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeAShelf"/>
+        <DUL:isDescribedBy rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#AffordsPuttingDown_0"/>
     </owl:NamedIndividual>
     
 
@@ -2949,7 +2950,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#cabinet10_drawer_bottom_CanBeClosed -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet10_drawer_bottom_CanBeClosed">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeClosed"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeClosed"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsClosing_0"/>
     </owl:NamedIndividual>
     
@@ -2958,7 +2959,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#cabinet10_drawer_bottom_CanBeOpened -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet10_drawer_bottom_CanBeOpened">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeOpened"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeOpened"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsOpening_0"/>
     </owl:NamedIndividual>
     
@@ -2990,7 +2991,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#cabinet10_drawer_middle_CanBeClosed -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet10_drawer_middle_CanBeClosed">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeClosed"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeClosed"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsClosing_0"/>
     </owl:NamedIndividual>
     
@@ -2999,7 +3000,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#cabinet10_drawer_middle_CanBeOpened -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet10_drawer_middle_CanBeOpened">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeOpened"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeOpened"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsOpening_0"/>
     </owl:NamedIndividual>
     
@@ -3031,7 +3032,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#cabinet10_drawer_top_CanBeClosed -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet10_drawer_top_CanBeClosed">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeClosed"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeClosed"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsClosing_0"/>
     </owl:NamedIndividual>
     
@@ -3040,7 +3041,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#cabinet10_drawer_top_CanBeOpened -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet10_drawer_top_CanBeOpened">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeOpened"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeOpened"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsOpening_0"/>
     </owl:NamedIndividual>
     
@@ -3090,7 +3091,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#cabinet11_drawer_bottom_CanBeClosed -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet11_drawer_bottom_CanBeClosed">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeClosed"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeClosed"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsClosing_0"/>
     </owl:NamedIndividual>
     
@@ -3099,7 +3100,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#cabinet11_drawer_bottom_CanBeOpened -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet11_drawer_bottom_CanBeOpened">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeOpened"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeOpened"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsOpening_0"/>
     </owl:NamedIndividual>
     
@@ -3131,7 +3132,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#cabinet11_drawer_middle_CanBeClosed -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet11_drawer_middle_CanBeClosed">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeClosed"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeClosed"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsClosing_0"/>
     </owl:NamedIndividual>
     
@@ -3140,7 +3141,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#cabinet11_drawer_middle_CanBeOpened -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet11_drawer_middle_CanBeOpened">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeOpened"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeOpened"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsOpening_0"/>
     </owl:NamedIndividual>
     
@@ -3172,7 +3173,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#cabinet11_drawer_top_CanBeClosed -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet11_drawer_top_CanBeClosed">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeClosed"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeClosed"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsClosing_0"/>
     </owl:NamedIndividual>
     
@@ -3181,7 +3182,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#cabinet11_drawer_top_CanBeOpened -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet11_drawer_top_CanBeOpened">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeOpened"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeOpened"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsOpening_0"/>
     </owl:NamedIndividual>
     
@@ -3221,7 +3222,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#cabinet1_door_top_left_CanBeClosed -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet1_door_top_left_CanBeClosed">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeClosed"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeClosed"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsClosing_0"/>
     </owl:NamedIndividual>
     
@@ -3230,7 +3231,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#cabinet1_door_top_left_CanBeOpened -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet1_door_top_left_CanBeOpened">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeOpened"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeOpened"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsOpening_0"/>
     </owl:NamedIndividual>
     
@@ -3253,7 +3254,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#cabinet1_drawer_bottom_CanBeClosed -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet1_drawer_bottom_CanBeClosed">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeClosed"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeClosed"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsClosing_0"/>
     </owl:NamedIndividual>
     
@@ -3262,7 +3263,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#cabinet1_drawer_bottom_CanBeOpened -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet1_drawer_bottom_CanBeOpened">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeOpened"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeOpened"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsOpening_0"/>
     </owl:NamedIndividual>
     
@@ -3294,7 +3295,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#cabinet1_drawer_middle_CanBeClosed -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet1_drawer_middle_CanBeClosed">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeClosed"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeClosed"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsClosing_0"/>
     </owl:NamedIndividual>
     
@@ -3303,7 +3304,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#cabinet1_drawer_middle_CanBeOpened -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet1_drawer_middle_CanBeOpened">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeOpened"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeOpened"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsOpening_0"/>
     </owl:NamedIndividual>
     
@@ -3352,7 +3353,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#cabinet2_door_left_CanBeClosed -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet2_door_left_CanBeClosed">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeClosed"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeClosed"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsClosing_0"/>
     </owl:NamedIndividual>
     
@@ -3361,7 +3362,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#cabinet2_door_left_CanBeOpened -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet2_door_left_CanBeOpened">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeOpened"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeOpened"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsOpening_0"/>
     </owl:NamedIndividual>
     
@@ -3382,7 +3383,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#cabinet2_drawer_big_CanBeClosed -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet2_drawer_big_CanBeClosed">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeClosed"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeClosed"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsClosing_0"/>
     </owl:NamedIndividual>
     
@@ -3391,7 +3392,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#cabinet2_drawer_big_CanBeOpened -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet2_drawer_big_CanBeOpened">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeOpened"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeOpened"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsOpening_0"/>
     </owl:NamedIndividual>
     
@@ -3421,7 +3422,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#cabinet2_drawer_small_CanBeClosed -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet2_drawer_small_CanBeClosed">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeClosed"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeClosed"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsClosing_0"/>
     </owl:NamedIndividual>
     
@@ -3430,7 +3431,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#cabinet2_drawer_small_CanBeOpened -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet2_drawer_small_CanBeOpened">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeOpened"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeOpened"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsOpening_0"/>
     </owl:NamedIndividual>
     
@@ -3479,7 +3480,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#cabinet3_door_bottom_left_CanBeClosed -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet3_door_bottom_left_CanBeClosed">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeClosed"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeClosed"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsClosing_0"/>
     </owl:NamedIndividual>
     
@@ -3488,7 +3489,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#cabinet3_door_bottom_left_CanBeOpened -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet3_door_bottom_left_CanBeOpened">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeOpened"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeOpened"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsOpening_0"/>
     </owl:NamedIndividual>
     
@@ -3510,7 +3511,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#cabinet3_door_top_left_CanBeClosed -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet3_door_top_left_CanBeClosed">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeClosed"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeClosed"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsClosing_0"/>
     </owl:NamedIndividual>
     
@@ -3519,7 +3520,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#cabinet3_door_top_left_CanBeOpened -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet3_door_top_left_CanBeOpened">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeOpened"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeOpened"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsOpening_0"/>
     </owl:NamedIndividual>
     
@@ -3559,7 +3560,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#cabinet4_door_bottom_CanBeClosed -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet4_door_bottom_CanBeClosed">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeClosed"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeClosed"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsClosing_0"/>
     </owl:NamedIndividual>
     
@@ -3568,7 +3569,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#cabinet4_door_bottom_CanBeOpened -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet4_door_bottom_CanBeOpened">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeOpened"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeOpened"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsOpening_0"/>
     </owl:NamedIndividual>
     
@@ -3588,7 +3589,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#cabinet4_door_top_CanBeClosed -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet4_door_top_CanBeClosed">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeClosed"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeClosed"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsClosing_0"/>
     </owl:NamedIndividual>
     
@@ -3597,7 +3598,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#cabinet4_door_top_CanBeOpened -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet4_door_top_CanBeOpened">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeOpened"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeOpened"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsOpening_0"/>
     </owl:NamedIndividual>
     
@@ -3638,7 +3639,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#cabinet5_drawer_bottom_CanBeClosed -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet5_drawer_bottom_CanBeClosed">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeClosed"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeClosed"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsClosing_0"/>
     </owl:NamedIndividual>
     
@@ -3647,7 +3648,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#cabinet5_drawer_bottom_CanBeOpened -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet5_drawer_bottom_CanBeOpened">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeOpened"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeOpened"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsOpening_0"/>
     </owl:NamedIndividual>
     
@@ -3679,7 +3680,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#cabinet5_drawer_middle_CanBeClosed -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet5_drawer_middle_CanBeClosed">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeClosed"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeClosed"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsClosing_0"/>
     </owl:NamedIndividual>
     
@@ -3688,7 +3689,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#cabinet5_drawer_middle_CanBeOpened -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet5_drawer_middle_CanBeOpened">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeOpened"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeOpened"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsOpening_0"/>
     </owl:NamedIndividual>
     
@@ -3720,7 +3721,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#cabinet5_drawer_top_CanBeClosed -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet5_drawer_top_CanBeClosed">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeClosed"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeClosed"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsClosing_0"/>
     </owl:NamedIndividual>
     
@@ -3729,7 +3730,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#cabinet5_drawer_top_CanBeOpened -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet5_drawer_top_CanBeOpened">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeOpened"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeOpened"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsOpening_0"/>
     </owl:NamedIndividual>
     
@@ -3779,7 +3780,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#cabinet6_drawer_bottom_CanBeClosed -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet6_drawer_bottom_CanBeClosed">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeClosed"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeClosed"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsClosing_0"/>
     </owl:NamedIndividual>
     
@@ -3788,7 +3789,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#cabinet6_drawer_bottom_CanBeOpened -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet6_drawer_bottom_CanBeOpened">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeOpened"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeOpened"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsOpening_0"/>
     </owl:NamedIndividual>
     
@@ -3820,7 +3821,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#cabinet6_drawer_middle_CanBeClosed -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet6_drawer_middle_CanBeClosed">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeClosed"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeClosed"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsClosing_0"/>
     </owl:NamedIndividual>
     
@@ -3829,7 +3830,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#cabinet6_drawer_middle_CanBeOpened -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet6_drawer_middle_CanBeOpened">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeOpened"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeOpened"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsOpening_0"/>
     </owl:NamedIndividual>
     
@@ -3861,7 +3862,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#cabinet6_drawer_top_CanBeClosed -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet6_drawer_top_CanBeClosed">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeClosed"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeClosed"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsClosing_0"/>
     </owl:NamedIndividual>
     
@@ -3870,7 +3871,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#cabinet6_drawer_top_CanBeOpened -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet6_drawer_top_CanBeOpened">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeOpened"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeOpened"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsOpening_0"/>
     </owl:NamedIndividual>
     
@@ -3919,7 +3920,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#cabinet7_door_bottom_left_CanBeClosed -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet7_door_bottom_left_CanBeClosed">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeClosed"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeClosed"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsClosing_0"/>
     </owl:NamedIndividual>
     
@@ -3928,7 +3929,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#cabinet7_door_bottom_left_CanBeOpened -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet7_door_bottom_left_CanBeOpened">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeOpened"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeOpened"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsOpening_0"/>
     </owl:NamedIndividual>
     
@@ -3969,7 +3970,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#cabinet8_drawer_bottom_CanBeClosed -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet8_drawer_bottom_CanBeClosed">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeClosed"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeClosed"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsClosing_0"/>
     </owl:NamedIndividual>
     
@@ -3978,7 +3979,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#cabinet8_drawer_bottom_CanBeOpened -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet8_drawer_bottom_CanBeOpened">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeOpened"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeOpened"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsOpening_0"/>
     </owl:NamedIndividual>
     
@@ -4008,7 +4009,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#cabinet8_drawer_middle_CanBeClosed -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet8_drawer_middle_CanBeClosed">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeClosed"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeClosed"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsClosing_0"/>
     </owl:NamedIndividual>
     
@@ -4017,7 +4018,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#cabinet8_drawer_middle_CanBeOpened -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet8_drawer_middle_CanBeOpened">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeOpened"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeOpened"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsOpening_0"/>
     </owl:NamedIndividual>
     
@@ -4067,7 +4068,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#cabinet9_drawer_bottom_CanBeClosed -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet9_drawer_bottom_CanBeClosed">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeClosed"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeClosed"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsClosing_0"/>
     </owl:NamedIndividual>
     
@@ -4076,7 +4077,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#cabinet9_drawer_bottom_CanBeOpened -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet9_drawer_bottom_CanBeOpened">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeOpened"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeOpened"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsOpening_0"/>
     </owl:NamedIndividual>
     
@@ -4108,7 +4109,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#cabinet9_drawer_middle_CanBeClosed -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet9_drawer_middle_CanBeClosed">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeClosed"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeClosed"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsClosing_0"/>
     </owl:NamedIndividual>
     
@@ -4117,7 +4118,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#cabinet9_drawer_middle_CanBeOpened -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet9_drawer_middle_CanBeOpened">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeOpened"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeOpened"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsOpening_0"/>
     </owl:NamedIndividual>
     
@@ -4149,7 +4150,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#cabinet9_drawer_top_CanBeClosed -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet9_drawer_top_CanBeClosed">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeClosed"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeClosed"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsClosing_0"/>
     </owl:NamedIndividual>
     
@@ -4158,7 +4159,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#cabinet9_drawer_top_CanBeOpened -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#cabinet9_drawer_top_CanBeOpened">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeOpened"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeOpened"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsOpening_0"/>
     </owl:NamedIndividual>
     
@@ -4188,8 +4189,8 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#coffee_table_CanBeAShelf -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#coffee_table_CanBeAShelf">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeAShelf"/>
-        <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsPuttingDown_0"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeAShelf"/>
+        <DUL:isDescribedBy rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#AffordsPuttingDown_0"/>
     </owl:NamedIndividual>
     
 
@@ -4225,8 +4226,8 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#countertop_CanBeAShelf -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#countertop_CanBeAShelf">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeAShelf"/>
-        <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsPuttingDown_0"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeAShelf"/>
+        <DUL:isDescribedBy rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#AffordsPuttingDown_0"/>
     </owl:NamedIndividual>
     
 
@@ -4722,8 +4723,8 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#island_countertop_CanBeAShelf -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#island_countertop_CanBeAShelf">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeAShelf"/>
-        <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#AffordsPuttingDown_0"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeAShelf"/>
+        <DUL:isDescribedBy rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#AffordsPuttingDown_0"/>
     </owl:NamedIndividual>
     
 
@@ -4897,7 +4898,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#sofa_CanBeSatOn -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#sofa_CanBeSatOn">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeSatOn"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeSatOn"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsSitting_0"/>
     </owl:NamedIndividual>
     
@@ -4906,7 +4907,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#sofa_rigidity -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#sofa_rigidity">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#Rigidity"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Rigidity"/>
         <DUL:hasRegion rdf:resource="http://knowrob.org/kb/iai-apartment.owl#sofa_stiffness"/>
     </owl:NamedIndividual>
     
@@ -4915,7 +4916,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#sofa_stiffness -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#sofa_stiffness">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#LowStiffness"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#LowStiffness"/>
     </owl:NamedIndividual>
     
 
@@ -4970,7 +4971,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#wardrobe_door_left_CanBeClosed -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#wardrobe_door_left_CanBeClosed">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeClosed"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeClosed"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsClosing_0"/>
     </owl:NamedIndividual>
     
@@ -4979,7 +4980,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#wardrobe_door_left_CanBeOpened -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#wardrobe_door_left_CanBeOpened">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeOpened"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeOpened"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsOpening_0"/>
     </owl:NamedIndividual>
     
@@ -4999,7 +5000,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#wardrobe_door_right_CanBeClosed -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#wardrobe_door_right_CanBeClosed">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeClosed"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeClosed"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsClosing_0"/>
     </owl:NamedIndividual>
     
@@ -5008,7 +5009,7 @@
     <!-- http://knowrob.org/kb/iai-apartment.owl#wardrobe_door_right_CanBeOpened -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-apartment.owl#wardrobe_door_right_CanBeOpened">
-        <rdf:type rdf:resource="http://knowrob.org/kb/SOMA-HOME-addons.owl#CanBeOpened"/>
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CanBeOpened"/>
         <DUL:isDescribedBy rdf:resource="http://knowrob.org/kb/iai-apartment.owl#AffordsOpening_0"/>
     </owl:NamedIndividual>
 </rdf:RDF>
