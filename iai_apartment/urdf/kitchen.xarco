@@ -1550,11 +1550,11 @@
     </joint>
 
     <link name="tap">
-      <visual>
+      <!-- visual>
 	<geometry>
 	  <mesh filename="package://iai_apartment/meshes/tap/IAIKitchenWaterTap.dae"/>
 	</geometry>
-      </visual>
+      </visual -->
       <collision>
 	<geometry>
 	  <mesh filename="package://iai_apartment/meshes/tap/IAIKitchenWaterTap.obj"/>
@@ -1570,11 +1570,11 @@
     </joint>
 
     <link name="sink">
-      <visual>
+      <!-- visual>
 	<geometry>
 	  <mesh filename="package://iai_apartment/meshes/sink/IAIKitchenSink.dae"/>
 	</geometry>
-      </visual>
+      </visual -->
       <collision>
 	<geometry>
 	  <mesh filename="package://iai_apartment/meshes/sink/IAIKitchenSink.obj"/>
