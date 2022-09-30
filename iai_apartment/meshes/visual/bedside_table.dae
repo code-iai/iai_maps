@@ -3,15 +3,15 @@
   <asset>
     <contributor>
       <author>Blender User</author>
-      <authoring_tool>Blender 3.1.0 commit date:2022-03-08, commit time:18:16, hash:c77597cd0e15</authoring_tool>
+      <authoring_tool>Blender 3.3.0 commit date:2022-09-06, commit time:15:39, hash:0759f671ce1f</authoring_tool>
     </contributor>
-    <created>2022-05-19T20:59:11</created>
-    <modified>2022-05-19T20:59:11</modified>
+    <created>2022-09-30T10:51:49</created>
+    <modified>2022-09-30T10:51:49</modified>
     <unit name="meter" meter="1"/>
     <up_axis>Z_UP</up_axis>
   </asset>
   <library_effects>
-    <effect id="M_Nachttisch_003-effect">
+    <effect id="M_Nachttisch-effect">
       <profile_COMMON>
         <newparam sid="EnvSamplerTex-surface">
           <surface type="2D">
@@ -48,15 +48,15 @@
     </image>
   </library_images>
   <library_materials>
-    <material id="M_Nachttisch_003-material" name="M_Nachttisch.003">
-      <instance_effect url="#M_Nachttisch_003-effect"/>
+    <material id="M_Nachttisch-material" name="M_Nachttisch">
+      <instance_effect url="#M_Nachttisch-effect"/>
     </material>
   </library_materials>
   <library_geometries>
     <geometry id="SM_Nachttisch-mesh" name="SM_Nachttisch">
       <mesh>
         <source id="SM_Nachttisch-mesh-positions">
-          <float_array id="SM_Nachttisch-mesh-positions-array" count="72">-15.3 -15.3 0 -15.3 -15.6 0.3 -15.6 -15.3 0.3 -15.3 -15.3 46 -15.6 -15.3 45.7 -15.3 -15.6 45.7 15.3 -15.6 45.7 15.6 -15.3 45.7 15.3 -15.3 46 15.6 -15.3 0.3 15.3 -15.6 0.3 15.3 -15.3 0 15.6 15.3 45.7 15.3 15.6 45.7 15.3 15.3 46 15.3 15.6 0.3 15.6 15.3 0.3 15.3 15.3 0 -15.3 15.6 45.7 -15.6 15.3 45.7 -15.3 15.3 46 -15.6 15.3 0.3 -15.3 15.6 0.3 -15.3 15.3 0</float_array>
+          <float_array id="SM_Nachttisch-mesh-positions-array" count="72">-15.3 -15.3 -23 -15.3 -15.6 -22.7 -15.6 -15.3 -22.7 -15.3 -15.3 23 -15.6 -15.3 22.7 -15.3 -15.6 22.7 15.3 -15.6 22.7 15.6 -15.3 22.7 15.3 -15.3 23 15.6 -15.3 -22.7 15.3 -15.6 -22.7 15.3 -15.3 -23 15.6 15.3 22.7 15.3 15.6 22.7 15.3 15.3 23 15.3 15.6 -22.7 15.6 15.3 -22.7 15.3 15.3 -23 -15.3 15.6 22.7 -15.6 15.3 22.7 -15.3 15.3 23 -15.6 15.3 -22.7 -15.3 15.6 -22.7 -15.3 15.3 -23</float_array>
           <technique_common>
             <accessor source="#SM_Nachttisch-mesh-positions-array" count="24" stride="3">
               <param name="X" type="float"/>
@@ -66,9 +66,9 @@
           </technique_common>
         </source>
         <source id="SM_Nachttisch-mesh-normals">
-          <float_array id="SM_Nachttisch-mesh-normals-array" count="111">-0.57735 -0.5773505 -0.5773505 -0.5773503 -0.5773503 0.5773503 0.5773503 -0.5773503 0.5773503 0.57735 -0.5773505 -0.5773505 0.5773503 0.5773503 0.5773503 0.57735 0.5773505 -0.5773505 -0.5773503 0.5773503 0.5773503 -0.57735 0.5773505 -0.5773505 0 0 1 0 -1 0 1 0 0 0 1 0 -1 0 0 -0.7071066 0 -0.7071071 -0.7071066 0 -0.7071071 -0.7071066 0 -0.707107 -0.7071066 0 -0.707107 0 0.7071071 -0.7071065 0 0.7071071 -0.7071065 0.7071066 0 -0.7071071 0.7071066 0 -0.707107 0 -0.7071071 -0.7071065 0 -0.7071071 -0.7071065 0 -0.7071062 0.7071074 0.707104 0 0.7071096 0.7071039 0 0.7071096 0 0.7071062 0.7071074 -0.707104 0 0.7071096 -0.7071039 0 0.7071096 0.7071072 -0.7071064 0 0.7071072 -0.7071065 0 -0.7071072 -0.7071064 0 -0.7071072 -0.7071065 0 0.7071072 0.7071064 0 0.7071072 0.7071065 0 -0.7071072 0.7071064 0 -0.7071072 0.7071065 0</float_array>
+          <float_array id="SM_Nachttisch-mesh-normals-array" count="99">-0.5773462 -0.5773524 -0.5773524 -0.5773462 -0.5773524 0.5773524 0.5773462 -0.5773524 0.5773524 0.5773462 -0.5773524 -0.5773524 0.5773462 0.5773524 0.5773524 0.5773462 0.5773524 -0.5773524 -0.5773462 0.5773524 0.5773524 -0.5773462 0.5773524 -0.5773524 0 0 1 0 -1 0 1 0 0 0 1 0 -1 0 0 -0.707104 0 -0.7071096 -0.7071039 0 -0.7071096 0 0.7071062 -0.7071074 0.707104 0 -0.7071096 0.7071039 0 -0.7071096 0 -0.7071062 -0.7071074 0 -0.7071062 0.7071074 0.707104 0 0.7071096 0.7071039 0 0.7071096 0 0.7071062 0.7071074 -0.707104 0 0.7071096 -0.7071039 0 0.7071096 0.7071072 -0.7071064 0 0.7071072 -0.7071065 0 -0.7071072 -0.7071064 0 -0.7071072 -0.7071065 0 0.7071072 0.7071064 0 0.7071072 0.7071065 0 -0.7071072 0.7071064 0 -0.7071072 0.7071065 0</float_array>
           <technique_common>
-            <accessor source="#SM_Nachttisch-mesh-normals-array" count="37" stride="3">
+            <accessor source="#SM_Nachttisch-mesh-normals-array" count="33" stride="3">
               <param name="X" type="float"/>
               <param name="Y" type="float"/>
               <param name="Z" type="float"/>
@@ -96,12 +96,12 @@
         <vertices id="SM_Nachttisch-mesh-vertices">
           <input semantic="POSITION" source="#SM_Nachttisch-mesh-positions"/>
         </vertices>
-        <triangles material="M_Nachttisch_003-material" count="42">
+        <triangles material="M_Nachttisch-material" count="42">
           <input semantic="VERTEX" source="#SM_Nachttisch-mesh-vertices" offset="0"/>
           <input semantic="NORMAL" source="#SM_Nachttisch-mesh-normals" offset="1"/>
           <input semantic="TEXCOORD" source="#SM_Nachttisch-mesh-map-0" offset="2" set="0"/>
           <input semantic="TEXCOORD" source="#SM_Nachttisch-mesh-map-1" offset="2" set="1"/>
-          <p>0 0 0 1 0 1 2 0 2 3 1 3 4 1 4 5 1 5 6 2 6 7 2 7 8 2 8 9 3 9 10 3 10 11 3 11 12 4 12 13 4 13 14 4 14 15 5 15 16 5 16 17 5 17 18 6 18 19 6 19 20 6 20 21 7 21 22 7 22 23 7 23 20 8 24 8 8 25 14 8 26 8 8 27 20 8 28 3 8 29 5 9 30 10 9 31 6 9 32 10 9 33 5 9 34 1 9 35 7 10 36 16 10 37 12 10 38 16 10 39 7 10 40 9 10 41 13 11 42 22 11 43 18 11 44 22 11 45 13 11 46 15 11 47 19 12 48 2 12 49 4 12 50 2 12 51 19 12 52 21 12 53 2 13 54 23 14 55 0 15 56 23 14 57 2 13 58 21 16 59 22 17 60 17 17 61 23 18 62 17 17 63 22 17 64 15 18 65 16 19 66 9 20 67 11 19 68 11 19 69 17 20 70 16 19 71 10 21 72 1 22 73 0 21 74 10 21 75 0 21 76 11 22 77 5 23 78 8 23 79 3 23 80 8 23 81 5 23 82 6 23 83 7 24 84 12 25 85 14 24 86 14 24 87 8 25 88 7 24 89 13 26 90 18 26 91 20 26 92 13 26 93 20 26 94 14 26 95 19 27 96 3 27 97 20 28 98 3 27 99 19 27 100 4 28 101 9 29 102 7 30 103 6 29 104 6 29 105 10 30 106 9 29 107 4 31 108 1 31 109 5 32 110 1 31 111 4 31 112 2 32 113 15 33 114 13 34 115 12 33 116 12 33 117 16 34 118 15 33 119 21 35 120 19 36 121 18 35 122 18 35 123 22 36 124 21 35 125</p>
+          <p>0 0 0 1 0 1 2 0 2 3 1 3 4 1 4 5 1 5 6 2 6 7 2 7 8 2 8 9 3 9 10 3 10 11 3 11 12 4 12 13 4 13 14 4 14 15 5 15 16 5 16 17 5 17 18 6 18 19 6 19 20 6 20 21 7 21 22 7 22 23 7 23 20 8 24 8 8 25 14 8 26 8 8 27 20 8 28 3 8 29 5 9 30 10 9 31 6 9 32 10 9 33 5 9 34 1 9 35 7 10 36 16 10 37 12 10 38 16 10 39 7 10 40 9 10 41 13 11 42 22 11 43 18 11 44 22 11 45 13 11 46 15 11 47 19 12 48 2 12 49 4 12 50 2 12 51 19 12 52 21 12 53 2 13 54 23 13 55 0 14 56 23 13 57 2 13 58 21 14 59 22 15 60 17 15 61 23 15 62 17 15 63 22 15 64 15 15 65 16 16 66 9 17 67 11 16 68 11 16 69 17 17 70 16 16 71 10 18 72 1 18 73 0 18 74 10 18 75 0 18 76 11 18 77 5 19 78 8 19 79 3 19 80 8 19 81 5 19 82 6 19 83 7 20 84 12 21 85 14 20 86 14 20 87 8 21 88 7 20 89 13 22 90 18 22 91 20 22 92 13 22 93 20 22 94 14 22 95 19 23 96 3 23 97 20 24 98 3 23 99 19 23 100 4 24 101 9 25 102 7 26 103 6 25 104 6 25 105 10 26 106 9 25 107 4 27 108 1 27 109 5 28 110 1 27 111 4 27 112 2 28 113 15 29 114 13 30 115 12 29 116 12 29 117 16 30 118 15 29 119 21 31 120 19 32 121 18 31 122 18 31 123 22 32 124 21 31 125</p>
         </triangles>
       </mesh>
     </geometry>
@@ -113,7 +113,7 @@
         <instance_geometry url="#SM_Nachttisch-mesh" name="SM_Nachttisch">
           <bind_material>
             <technique_common>
-              <instance_material symbol="M_Nachttisch_003-material" target="#M_Nachttisch_003-material">
+              <instance_material symbol="M_Nachttisch-material" target="#M_Nachttisch-material">
                 <bind_vertex_input semantic="UVmap_0" input_semantic="TEXCOORD" input_set="0"/>
                 <bind_vertex_input semantic="LightMapUV" input_semantic="TEXCOORD" input_set="1"/>
               </instance_material>
