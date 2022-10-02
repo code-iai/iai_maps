@@ -364,7 +364,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_maps/iai_apartment/meshes/visual/armchair.dae</owl:hasValue>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_apartment/meshes/visual/armchair.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -378,7 +378,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_maps/iai_apartment/meshes/IAIKitchenPartW314H90/IAIKitchenPartW314H90.dae</owl:hasValue>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_apartment/meshes/IAIKitchenPartW314H90/IAIKitchenPartW314H90.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -392,7 +392,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_maps/iai_apartment/meshes/visual/bedside_table.dae</owl:hasValue>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_apartment/meshes/visual/bedside_table.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -547,7 +547,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_maps/iai_apartment/meshes/cabinet10/IAIKitchenDrawerW40H40.dae</owl:hasValue>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_apartment/meshes/cabinet10/IAIKitchenDrawerW40H40.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -561,7 +561,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_maps/iai_apartment/meshes/cabinet10/IAIKitchenDrawerW40H26.dae</owl:hasValue>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_apartment/meshes/cabinet10/IAIKitchenDrawerW40H26.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -575,7 +575,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_maps/iai_apartment/meshes/cabinet10/IAIKitchenDrawerW40H13.dae</owl:hasValue>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_apartment/meshes/cabinet10/IAIKitchenDrawerW40H13.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -595,7 +595,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_maps/iai_apartment/meshes/cabinet10/IAIKitchenCabinet9W40.dae</owl:hasValue>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_apartment/meshes/cabinet10/IAIKitchenCabinet9W40.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -669,7 +669,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_maps/iai_apartment/meshes/cabinet11/IAIKitchenDrawerW90H40.dae</owl:hasValue>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_apartment/meshes/cabinet11/IAIKitchenDrawerW90H40.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -683,7 +683,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_maps/iai_apartment/meshes/cabinet11/IAIKitchenDrawerW90H26.dae</owl:hasValue>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_apartment/meshes/cabinet11/IAIKitchenDrawerW90H26.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -697,7 +697,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_maps/iai_apartment/meshes/cabinet11/IAIKitchenDrawerW90H13.dae</owl:hasValue>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_apartment/meshes/cabinet11/IAIKitchenDrawerW90H13.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -717,7 +717,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_maps/iai_apartment/meshes/cabinet11/IAIKitchenCabinet11W90.dae</owl:hasValue>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_apartment/meshes/cabinet11/IAIKitchenCabinet11W90.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -737,7 +737,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_maps/iai_apartment/meshes/cabinet01/IAIDoorW60H80.dae</owl:hasValue>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_apartment/meshes/cabinet01/IAIDoorW60H80.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -765,7 +765,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_maps/iai_apartment/meshes/cabinet01/IAIDrawerW60H53.dae</owl:hasValue>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_apartment/meshes/cabinet01/IAIDrawerW60H53.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -779,7 +779,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_maps/iai_apartment/meshes/cabinet01/IAIDrawerW60H26.dae</owl:hasValue>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_apartment/meshes/cabinet01/IAIDrawerW60H26.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -799,7 +799,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_maps/iai_apartment/meshes/cabinet01/IAICabinet1W60.dae</owl:hasValue>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_apartment/meshes/cabinet01/IAICabinet1W60.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -865,7 +865,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_maps/iai_apartment/meshes/cabinet02/IAIDoorW40H212.dae</owl:hasValue>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_apartment/meshes/cabinet02/IAIDoorW40H212.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -893,7 +893,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_maps/iai_apartment/meshes/cabinet02/IAIDrawerW40H22.dae</owl:hasValue>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_apartment/meshes/cabinet02/IAIDrawerW40H22.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -907,7 +907,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_maps/iai_apartment/meshes/cabinet02/IAIDrawerW40H10.dae</owl:hasValue>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_apartment/meshes/cabinet02/IAIDrawerW40H10.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -927,7 +927,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_maps/iai_apartment/meshes/cabinet02/IAICabinet2W40H57.dae</owl:hasValue>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_apartment/meshes/cabinet02/IAICabinet2W40H57.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -995,7 +995,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_maps/iai_apartment/meshes/cabinet03/IAIDoorW60H80.dae</owl:hasValue>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_apartment/meshes/cabinet03/IAIDoorW60H80.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1009,7 +1009,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_maps/iai_apartment/meshes/cabinet03/IAIDoorW60H133.dae</owl:hasValue>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_apartment/meshes/cabinet03/IAIDoorW60H133.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1029,7 +1029,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_maps/iai_apartment/meshes/cabinet03/IAICabinet3W60.dae</owl:hasValue>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_apartment/meshes/cabinet03/IAICabinet3W60.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1097,7 +1097,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_maps/iai_apartment/meshes/cabinet04/IAIDoor2W100H40.dae</owl:hasValue>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_apartment/meshes/cabinet04/IAIDoor2W100H40.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1111,7 +1111,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_maps/iai_apartment/meshes/cabinet04/IAIDoor1W100H40.dae</owl:hasValue>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_apartment/meshes/cabinet04/IAIDoor1W100H40.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1131,7 +1131,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_maps/iai_apartment/meshes/cabinet04/IAIKitchenCabinet4W100.dae</owl:hasValue>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_apartment/meshes/cabinet04/IAIKitchenCabinet4W100.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1205,7 +1205,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_maps/iai_apartment/meshes/cabinet05/IAIKitchenDrawerW60H40.dae</owl:hasValue>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_apartment/meshes/cabinet05/IAIKitchenDrawerW60H40.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1219,7 +1219,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_maps/iai_apartment/meshes/cabinet05/IAIKitchenDrawerW60H26.dae</owl:hasValue>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_apartment/meshes/cabinet05/IAIKitchenDrawerW60H26.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1233,7 +1233,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_maps/iai_apartment/meshes/cabinet05/IAIKitchenDrawerW60H13.dae</owl:hasValue>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_apartment/meshes/cabinet05/IAIKitchenDrawerW60H13.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1253,7 +1253,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_maps/iai_apartment/meshes/cabinet05/IAIKitchenCabinet5W60.dae</owl:hasValue>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_apartment/meshes/cabinet05/IAIKitchenCabinet5W60.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1327,7 +1327,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_maps/iai_apartment/meshes/cabinet06/IAIKitchenDrawerW40H40.dae</owl:hasValue>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_apartment/meshes/cabinet06/IAIKitchenDrawerW40H40.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1341,7 +1341,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_maps/iai_apartment/meshes/cabinet06/IAIKitchenDrawerW40H26.dae</owl:hasValue>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_apartment/meshes/cabinet06/IAIKitchenDrawerW40H26.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1355,7 +1355,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_maps/iai_apartment/meshes/cabinet06/IAIKitchenDrawerW40H13.dae</owl:hasValue>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_apartment/meshes/cabinet06/IAIKitchenDrawerW40H13.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1375,7 +1375,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_maps/iai_apartment/meshes/cabinet06/IAIKitchenCabinet6W40.dae</owl:hasValue>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_apartment/meshes/cabinet06/IAIKitchenCabinet6W40.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1435,7 +1435,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_maps/iai_apartment/meshes/cabinet07/IAIKitchenDoorW60H80.dae</owl:hasValue>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_apartment/meshes/cabinet07/IAIKitchenDoorW60H80.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1455,7 +1455,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_maps/iai_apartment/meshes/cabinet07/dishwasher_drawer_middle.dae</owl:hasValue>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_apartment/meshes/cabinet07/dishwasher_drawer_middle.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1475,7 +1475,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_maps/iai_apartment/meshes/cabinet07/IAIKitchenCabinet7W60.dae</owl:hasValue>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_apartment/meshes/cabinet07/IAIKitchenCabinet7W60.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1543,7 +1543,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_maps/iai_apartment/meshes/cabinet08/IAIKitchenDrawerW60H80.dae</owl:hasValue>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_apartment/meshes/cabinet08/IAIKitchenDrawerW60H80.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1557,7 +1557,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_maps/iai_apartment/meshes/cabinet08/IAIKitchenDrawerW56H10.dae</owl:hasValue>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_apartment/meshes/cabinet08/IAIKitchenDrawerW56H10.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1577,7 +1577,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_maps/iai_apartment/meshes/cabinet08/IAIKitchenCabinet8W60_v2.dae</owl:hasValue>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_apartment/meshes/cabinet08/IAIKitchenCabinet8W60_v2.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1651,7 +1651,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_maps/iai_apartment/meshes/cabinet09/IAIKitchenDrawerW60H40.dae</owl:hasValue>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_apartment/meshes/cabinet09/IAIKitchenDrawerW60H40.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1665,7 +1665,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_maps/iai_apartment/meshes/cabinet09/IAIKitchenDrawerW60H26.dae</owl:hasValue>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_apartment/meshes/cabinet09/IAIKitchenDrawerW60H26.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1679,7 +1679,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_maps/iai_apartment/meshes/cabinet09/IAIKitchenDrawerW60H13.dae</owl:hasValue>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_apartment/meshes/cabinet09/IAIKitchenDrawerW60H13.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1699,7 +1699,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_maps/iai_apartment/meshes/cabinet09/IAIKitchenCabinet9W60.dae</owl:hasValue>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_apartment/meshes/cabinet09/IAIKitchenCabinet9W60.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1772,7 +1772,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_maps/iai_apartment/meshes/visual/coffee_table.dae</owl:hasValue>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_apartment/meshes/visual/coffee_table.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1786,7 +1786,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_maps/iai_apartment/meshes/visual/coffee_table_drawer.dae</owl:hasValue>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_apartment/meshes/visual/coffee_table_drawer.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1800,7 +1800,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_maps/iai_apartment/meshes/cooktop/IAIKitchenCookTop.dae</owl:hasValue>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_apartment/meshes/cooktop/IAIKitchenCookTop.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>todo: has HotPlate components</rdfs:comment>
@@ -1837,7 +1837,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_maps/iai_apartment/meshes/island/IAIKitchenIslandAreaTop.dae</owl:hasValue>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_apartment/meshes/island/IAIKitchenIslandAreaTop.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>todo: has sink component?</rdfs:comment>
@@ -1852,7 +1852,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_maps/iai_apartment/meshes/countertop/IAIKitchenPartW102H60.dae</owl:hasValue>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_apartment/meshes/countertop/IAIKitchenPartW102H60.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1931,7 +1931,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_maps/iai_apartment/meshes/cabinet01/oven.dae</owl:hasValue>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_apartment/meshes/cabinet01/oven.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1953,7 +1953,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_maps/iai_apartment/meshes/IAIKitchenVisiblePartUnderSideW90H58/IAIKitchenVisiblePartUnderSideW90H58.dae</owl:hasValue>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_apartment/meshes/IAIKitchenVisiblePartUnderSideW90H58/IAIKitchenVisiblePartUnderSideW90H58.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1975,7 +1975,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_maps/iai_apartment/meshes/floor_socket_side_a/IAIKitchenPartSocketW260.dae</owl:hasValue>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_apartment/meshes/floor_socket_side_a/IAIKitchenPartSocketW260.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1989,7 +1989,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_maps/iai_apartment/meshes/floor_socket_side_b/IAIKitchenPartSocketW310.dae</owl:hasValue>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_apartment/meshes/floor_socket_side_b/IAIKitchenPartSocketW310.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -2003,7 +2003,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_maps/iai_apartment/meshes/IAIKitchenPartW58H223/IAIKitchenPartW58H223.dae</owl:hasValue>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_apartment/meshes/IAIKitchenPartW58H223/IAIKitchenPartW58H223.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -2017,7 +2017,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_maps/iai_apartment/meshes/IAIKitchenVisiblePartUppersideW80H39/IAIKitchenVisiblePartUppersideW80H39.dae</owl:hasValue>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_apartment/meshes/IAIKitchenVisiblePartUppersideW80H39/IAIKitchenVisiblePartUppersideW80H39.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -2031,7 +2031,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_maps/iai_apartment/meshes/IAIKitchenVisiblePartIslandUnderSideW90H60/IAIKitchenVisiblePartIslandUnderSideW90H60.dae</owl:hasValue>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_apartment/meshes/IAIKitchenVisiblePartIslandUnderSideW90H60/IAIKitchenVisiblePartIslandUnderSideW90H60.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -2045,7 +2045,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_maps/iai_apartment/meshes/sink/IAIKitchenSink.dae</owl:hasValue>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_apartment/meshes/sink/IAIKitchenSink.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>todo: has component IAITap</rdfs:comment>
@@ -2061,7 +2061,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
-                <owl:hasValue>package://iai_maps/iai_apartment/meshes/visual/sofa.dae</owl:hasValue>
+                <owl:hasValue>package://iai_apartment/meshes/visual/sofa.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -2075,7 +2075,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_maps/iai_apartment/meshes/tap/IAIKitchenWaterTap.dae</owl:hasValue>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_apartment/meshes/tap/IAIKitchenWaterTap.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>todo: component of sink</rdfs:comment>
@@ -2149,7 +2149,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_maps/iai_apartment/meshes/visual/wardrobe_door_right.dae</owl:hasValue>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_apartment/meshes/visual/wardrobe_door_right.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -2163,7 +2163,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_maps/iai_apartment/meshes/visual/wardrobe.dae</owl:hasValue>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://iai_apartment/meshes/visual/wardrobe.dae</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
