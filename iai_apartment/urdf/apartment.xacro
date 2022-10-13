@@ -11,7 +11,7 @@
   </xacro:kitchen_macro>
 
   <!-- kitchen, kitchen on the walls -->
-  <xacro:include filename="$(find iai_apartment)/urdf/kitchen.xarco" />
+  <xacro:include filename="$(find iai_apartment)/urdf/kitchen.xacro" />
   <xacro:kitchen_macro name="kitchen_base" parent="apartment_root">
     <origin xyz="-0.03 0.75 0.005" />
   </xacro:kitchen_macro>
