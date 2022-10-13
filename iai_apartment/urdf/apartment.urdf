@@ -222,8 +222,39 @@
         </geometry>
       </visual>
       <collision>
+        <origin rpy="0 0 0" xyz="-0.006435 -0.2485 0.975"/>
         <geometry>
-          <mesh filename="package://iai_apartment/meshes/collision/wardrobe_door_left.obj"/>
+          <box size="0.012967 0.495438 1.64844"/>
+        </geometry>
+      </collision>
+    </link>
+    <joint name="wardrobe_door_left_handle_joint" type="fixed">
+      <origin rpy="0 0 0" xyz="-0.032089 -0.460513 0.973703"/>
+      <parent link="wardrobe_door_left"/>
+      <child link="wardrobe_door_left_handle"/>
+    </joint>
+    <link name="wardrobe_door_left_handle">
+      <visual>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/visual/wardrobe_door_handle.dae"/>
+        </geometry>
+      </visual>
+      <collision>
+        <origin rpy="0 0 0" xyz="0.010421 0 0.059003"/>
+        <geometry>
+          <box size="0.033556 0.015082 0.014587"/>
+        </geometry>
+      </collision>
+      <collision>
+        <origin rpy="0 0 0" xyz="-0.0136 0 0"/>
+        <geometry>
+          <box size="0.014486 0.015082 0.13"/>
+        </geometry>
+      </collision>
+      <collision>
+        <origin rpy="0 0 0" xyz="0.010421 0 -0.059003"/>
+        <geometry>
+          <box size="0.033556 0.015082 0.014587"/>
         </geometry>
       </collision>
     </link>
@@ -241,8 +272,39 @@
         </geometry>
       </visual>
       <collision>
+        <origin rpy="0 0 0" xyz="-0.006435 0.2485 0.975"/>
         <geometry>
-          <mesh filename="package://iai_apartment/meshes/collision/wardrobe_door_right.obj"/>
+          <box size="0.012967 0.495438 1.64844"/>
+        </geometry>
+      </collision>
+    </link>
+    <joint name="wardrobe_door_right_handle_joint" type="fixed">
+      <origin rpy="0 0 0" xyz="-0.032089 0.460513 0.973703"/>
+      <parent link="wardrobe_door_right"/>
+      <child link="wardrobe_door_right_handle"/>
+    </joint>
+    <link name="wardrobe_door_right_handle">
+      <visual>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/visual/wardrobe_door_handle.dae"/>
+        </geometry>
+      </visual>
+      <collision>
+        <origin rpy="0 0 0" xyz="0.010421 0 0.059003"/>
+        <geometry>
+          <box size="0.033556 0.015082 0.014587"/>
+        </geometry>
+      </collision>
+      <collision>
+        <origin rpy="0 0 0" xyz="-0.0136 0 0"/>
+        <geometry>
+          <box size="0.014486 0.015082 0.13"/>
+        </geometry>
+      </collision>
+      <collision>
+        <origin rpy="0 0 0" xyz="0.010421 0 -0.059003"/>
+        <geometry>
+          <box size="0.033556 0.015082 0.014587"/>
         </geometry>
       </collision>
     </link>

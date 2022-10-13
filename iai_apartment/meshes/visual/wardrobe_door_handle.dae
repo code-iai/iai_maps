@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 3.1.2 commit date:2022-03-31, commit time:17:40, hash:cc66d1020c3b</authoring_tool>
+    </contributor>
+    <created>2022-10-13T13:36:12</created>
+    <modified>2022-10-13T13:36:12</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="M_Wood_Furniture_002-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <color sid="diffuse">0.2158605 0.2158605 0.2158605 1</color>
+            </diffuse>
+            <reflectivity>
+              <float sid="specular">1</float>
+            </reflectivity>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="M_Metal_Dark_001-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <color sid="diffuse">0 0 0 1</color>
+            </diffuse>
+            <reflectivity>
+              <float sid="specular">1</float>
+            </reflectivity>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="M_Metal_Chrome-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <color sid="diffuse">0.2158605 0.2158605 0.2158605 1</color>
+            </diffuse>
+            <reflectivity>
+              <float sid="specular">1</float>
+            </reflectivity>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images/>
+  <library_materials>
+    <material id="M_Wood_Furniture_002-material" name="M_Wood_Furniture.002">
+      <instance_effect url="#M_Wood_Furniture_002-effect"/>
+    </material>
+    <material id="M_Metal_Dark_001-material" name="M_Metal_Dark.001">
+      <instance_effect url="#M_Metal_Dark_001-effect"/>
+    </material>
+    <material id="M_Metal_Chrome-material" name="M_Metal_Chrome">
+      <instance_effect url="#M_Metal_Chrome-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="SM_Kleiderschrank_TürLinks-mesh" name="SM_Kleiderschrank_TürLinks">
+      <mesh>
+        <source id="SM_Kleiderschrank_TürLinks-mesh-positions">
+          <float_array id="SM_Kleiderschrank_TürLinks-mesh-positions-array" count="72">-0.6356957 -0.7541046 5.17099 -0.6356957 -0.7541046 -5.430412 -0.6356957 0.7541237 5.17099 -0.6356957 0.7541237 -5.430412 2.719925 -0.7541046 5.17099 2.719925 0.7541237 5.17099 2.719925 -0.7541046 -5.430412 2.719925 0.7541237 -5.430412 -2.08433 0.7541237 5.17099 -2.08433 -0.7541046 6.629692 -2.08433 0.7541237 6.629692 -2.08433 -0.7541046 5.17099 -2.08433 0.7541237 -5.430412 -2.08433 -0.7541046 -5.430412 -2.08433 0.7541237 -6.370308 -2.08433 -0.7541046 -6.370308 -0.6356957 0.7541237 -6.370308 -0.6356957 -0.7541046 -6.370308 2.719925 -0.7541046 -6.370308 2.719925 0.7541237 -6.370308 -0.6356957 0.7541237 6.629692 -0.6356957 -0.7541046 6.629692 2.719925 -0.7541046 6.629692 2.719925 0.7541237 6.629692</float_array>
+          <technique_common>
+            <accessor source="#SM_Kleiderschrank_TürLinks-mesh-positions-array" count="24" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="SM_Kleiderschrank_TürLinks-mesh-normals">
+          <float_array id="SM_Kleiderschrank_TürLinks-mesh-normals-array" count="18">1 0 0 0 0 -1 0 0 1 -1 0 0 0 -1 0 0 1 0</float_array>
+          <technique_common>
+            <accessor source="#SM_Kleiderschrank_TürLinks-mesh-normals-array" count="6" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="SM_Kleiderschrank_TürLinks-mesh-map-0">
+          <float_array id="SM_Kleiderschrank_TürLinks-mesh-map-0-array" count="240">0.5615234 0.7404785 0.4379883 0.7404785 0.5615234 0.7260742 0.5615234 0.7260742 0.4379883 0.7404785 0.4379883 0.7260742 -0.1089477 0.7260742 -0.06103509 0.7404785 -0.1089477 0.7404785 -0.06103509 0.7404785 -0.1089477 0.7260742 -0.06103509 0.7260742 1.108398 0.7404785 1.060547 0.7404785 1.108398 0.7260742 1.060547 0.7260742 1.108398 0.7260742 1.060547 0.7404785 0.4379883 0.7260742 0.4277344 0.7404785 0.4277344 0.7260742 0.4277344 0.7404785 0.4379883 0.7260742 0.4379883 0.7404785 0.4379883 0.7260742 0.5615234 0.7260742 0.4379883 0.7404785 0.4379883 0.7404785 0.5615234 0.7260742 0.5615234 0.7404785 0.5615234 0.7404785 0.5615234 0.7260742 0.5717774 0.7260742 0.5615234 0.7404785 0.5717774 0.7260742 0.5717774 0.7404785 -0.1200561 0.7404785 -0.1200561 0.7260742 -0.1089477 0.7260742 -0.1089477 0.7404785 -0.1200561 0.7404785 -0.1089477 0.7260742 -0.1089477 0.7260742 -0.06103509 0.7404785 -0.1089477 0.7404785 -0.06103509 0.7404785 -0.1089477 0.7260742 -0.06103509 0.7260742 1.108398 0.7260742 1.119141 0.7260742 1.119141 0.7404785 1.108398 0.7260742 1.119141 0.7404785 1.108398 0.7404785 1.108398 0.7404785 1.060547 0.7404785 1.108398 0.7260742 1.060547 0.7260742 1.108398 0.7260742 1.060547 0.7404785 0.5717774 1.061035 0.5717774 1.108948 0.5615234 1.061035 0.5615234 1.108948 0.5615234 1.061035 0.5717774 1.108948 0.5717774 1.120056 0.5615234 1.120056 0.5717774 1.108948 0.5717774 1.108948 0.5615234 1.120056 0.5615234 1.108948 0.4379883 1.120056 0.5615234 1.108948 0.5615234 1.120056 0.5615234 1.108948 0.4379883 1.120056 0.4379883 1.108948 0.4379883 1.108948 0.4379883 1.120056 0.4277344 1.120056 0.4379883 1.108948 0.4277344 1.120056 0.4277344 1.108948 0.4277344 1.108948 0.4277344 1.061035 0.4379883 1.108948 0.4379883 1.061035 0.4379883 1.108948 0.4277344 1.061035 0.5717774 1.108948 0.5615234 1.061035 0.5717774 1.061035 0.5615234 1.061035 0.5717774 1.108948 0.5615234 1.108948 0.5615234 1.120056 0.5717774 1.108948 0.5717774 1.120056 0.5615234 1.120056 0.5615234 1.108948 0.5717774 1.108948 0.4379883 1.120056 0.5615234 1.108948 0.5615234 1.120056 0.4379883 1.108948 0.5615234 1.108948 0.4379883 1.120056 0.4277344 1.120056 0.4379883 1.108948 0.4379883 1.120056 0.4277344 1.108948 0.4379883 1.108948 0.4277344 1.120056 0.4277344 1.061035 0.4379883 1.108948 0.4277344 1.108948 0.4379883 1.108948 0.4277344 1.061035 0.4379883 1.061035</float_array>
+          <technique_common>
+            <accessor source="#SM_Kleiderschrank_TürLinks-mesh-map-0-array" count="120" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="SM_Kleiderschrank_TürLinks-mesh-map-1">
+          <float_array id="SM_Kleiderschrank_TürLinks-mesh-map-1-array" count="240">0.6621094 0.2573242 0.6621094 0.1918945 0.6699219 0.2573242 0.6699219 0.2573242 0.6621094 0.1918945 0.6699219 0.1918945 0.7958984 0.02148437 0.8212891 0.02929687 0.7958984 0.02929687 0.8212891 0.02929687 0.7958984 0.02148437 0.8212891 0.02148437 0.8325195 0.02148437 0.8579102 0.02148437 0.8325195 0.02929687 0.8579102 0.02929687 0.8325195 0.02929687 0.8579102 0.02148437 0.6621094 0.09277343 0.6699219 0.09814453 0.6621094 0.09814453 0.6699219 0.09814453 0.6621094 0.09277343 0.6699219 0.09277343 0.6621094 0.09277343 0.6621094 0.0268554 0.6699219 0.09277343 0.6699219 0.09277343 0.6621094 0.0268554 0.6699219 0.0268554 0.6699219 0.0268554 0.6621094 0.0268554 0.6621094 0.02148437 0.6699219 0.0268554 0.6621094 0.02148437 0.6699219 0.02148437 0.671875 0.1293945 0.6796875 0.1293945 0.6796875 0.1352539 0.671875 0.1352539 0.671875 0.1293945 0.6796875 0.1352539 0.6796875 0.1352539 0.671875 0.1606445 0.671875 0.1352539 0.671875 0.1606445 0.6796875 0.1352539 0.6796875 0.1606445 0.7246094 0.02929687 0.71875 0.02929687 0.71875 0.02148437 0.7246094 0.02929687 0.71875 0.02148437 0.7246094 0.02148437 0.7246094 0.02148437 0.75 0.02148437 0.7246094 0.02929687 0.75 0.02929687 0.7246094 0.02929687 0.75 0.02148437 0.6933594 0.1835937 0.6679688 0.1835937 0.6933594 0.1777343 0.6679688 0.1777343 0.6933594 0.1777343 0.6679688 0.1835937 0.6621094 0.1835937 0.6621094 0.1777343 0.6679688 0.1835937 0.6679688 0.1835937 0.6621094 0.1777343 0.6679688 0.1777343 0.6621094 0.1123046 0.6679688 0.1777343 0.6621094 0.1777343 0.6679688 0.1777343 0.6621094 0.1123046 0.6679688 0.1123046 0.6679688 0.1123046 0.6621094 0.1123046 0.6621094 0.1064453 0.6679688 0.1123046 0.6621094 0.1064453 0.6679688 0.1064453 0.6679688 0.1064453 0.6933594 0.1064453 0.6679688 0.1123046 0.6933594 0.1123046 0.6679688 0.1123046 0.6933594 0.1064453 0.684082 0.09814453 0.7094727 0.09277343 0.7094727 0.09814453 0.7094727 0.09277343 0.684082 0.09814453 0.684082 0.09277343 0.6782227 0.09277343 0.684082 0.09814453 0.6782227 0.09814453 0.6782227 0.09277343 0.684082 0.09277343 0.684082 0.09814453 0.6782227 0.0268554 0.684082 0.09277343 0.6782227 0.09277343 0.684082 0.0268554 0.684082 0.09277343 0.6782227 0.0268554 0.6782227 0.02148437 0.684082 0.0268554 0.6782227 0.0268554 0.684082 0.02148437 0.684082 0.0268554 0.6782227 0.02148437 0.7094727 0.02148437 0.684082 0.0268554 0.684082 0.02148437 0.684082 0.0268554 0.7094727 0.02148437 0.7094727 0.0268554</float_array>
+          <technique_common>
+            <accessor source="#SM_Kleiderschrank_TürLinks-mesh-map-1-array" count="120" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="SM_Kleiderschrank_TürLinks-mesh-vertices">
+          <input semantic="POSITION" source="#SM_Kleiderschrank_TürLinks-mesh-positions"/>
+        </vertices>
+        <triangles material="M_Metal_Dark_001-material" count="40">
+          <input semantic="VERTEX" source="#SM_Kleiderschrank_TürLinks-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#SM_Kleiderschrank_TürLinks-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#SM_Kleiderschrank_TürLinks-mesh-map-0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#SM_Kleiderschrank_TürLinks-mesh-map-1" offset="2" set="1"/>
+          <p>0 0 0 1 0 1 2 0 2 2 0 3 1 0 4 3 0 5 2 1 6 4 1 7 0 1 8 4 1 9 2 1 10 5 1 11 1 2 12 6 2 13 3 2 14 7 2 15 3 2 16 6 2 17 8 3 18 9 3 19 10 3 20 9 3 21 8 3 22 11 3 23 8 3 24 12 3 25 11 3 26 11 3 27 12 3 28 13 3 29 13 3 30 12 3 31 14 3 32 13 3 33 14 3 34 15 3 35 15 1 36 14 1 37 16 1 38 17 1 39 15 1 40 16 1 41 16 1 42 18 1 43 17 1 44 18 1 45 16 1 46 19 1 47 20 2 48 10 2 49 9 2 50 20 2 51 9 2 52 21 2 53 21 2 54 22 2 55 20 2 56 23 2 57 20 2 58 22 2 59 22 4 60 21 4 61 4 4 62 0 4 63 4 4 64 21 4 65 9 4 66 11 4 67 21 4 68 21 4 69 11 4 70 0 4 71 13 4 72 0 4 73 11 4 74 0 4 75 13 4 76 1 4 77 1 4 78 13 4 79 15 4 80 1 4 81 15 4 82 17 4 83 17 4 84 18 4 85 1 4 86 6 4 87 1 4 88 18 4 89 16 5 90 7 5 91 19 5 92 7 5 93 16 5 94 3 5 95 12 5 96 16 5 97 14 5 98 12 5 99 3 5 100 16 5 101 8 5 102 3 5 103 12 5 104 2 5 105 3 5 106 8 5 107 10 5 108 2 5 109 8 5 110 20 5 111 2 5 112 10 5 113 23 5 114 2 5 115 20 5 116 2 5 117 23 5 118 5 5 119</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="SM_Kleiderschrank_TürLinks" name="SM_Kleiderschrank_TürLinks" type="NODE">
+        <matrix sid="transform">0.01 0 0 0 0 0.01 0 0 0 0 0.01 0 0 0 0 1</matrix>
+        <instance_geometry url="#SM_Kleiderschrank_TürLinks-mesh" name="SM_Kleiderschrank_TürLinks">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="M_Wood_Furniture_002-material" target="#M_Wood_Furniture_002-material">
+                <bind_vertex_input semantic="SM_Kleiderschrank_TürLinks-mesh-map-0" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="SM_Kleiderschrank_TürLinks-mesh-map-1" input_semantic="TEXCOORD" input_set="1"/>
+              </instance_material>
+              <instance_material symbol="M_Metal_Dark_001-material" target="#M_Metal_Dark_001-material">
+                <bind_vertex_input semantic="SM_Kleiderschrank_TürLinks-mesh-map-0" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="SM_Kleiderschrank_TürLinks-mesh-map-1" input_semantic="TEXCOORD" input_set="1"/>
+              </instance_material>
+              <instance_material symbol="M_Metal_Chrome-material" target="#M_Metal_Chrome-material">
+                <bind_vertex_input semantic="SM_Kleiderschrank_TürLinks-mesh-map-0" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="SM_Kleiderschrank_TürLinks-mesh-map-1" input_semantic="TEXCOORD" input_set="1"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>
