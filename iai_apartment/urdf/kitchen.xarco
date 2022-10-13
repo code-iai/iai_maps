@@ -1524,8 +1524,8 @@
 
     <!-- Cooktop -->
     <joint name="cooktop_joint" type="fixed">
-      <origin xyz="0.26 2.86 0.830" />
-      <parent link="side_B" />
+      <origin xyz="0.130 1.074 0.023" />
+      <parent link="island_countertop" />
       <child link="cooktop" />
     </joint>
 
@@ -1541,6 +1541,38 @@
         </geometry>
       </collision>
     </link>
+
+    <joint name="hotplate1_joint" type="fixed">
+      <origin xyz="0.1069 -0.16199 0.005" />
+      <parent link="cooktop" />
+      <child link="hotplate1" />
+    </joint>
+
+    <link name="hotplate1" />
+
+    <joint name="hotplate2_joint" type="fixed">
+      <origin xyz="0.066902 0.13801 0.0055" />
+      <parent link="cooktop" />
+      <child link="hotplate2" />
+    </joint>
+
+    <link name="hotplate2" />
+
+    <joint name="hotplate3_joint" type="fixed">
+      <origin xyz="-0.155778 0.138013 0.0055" />
+      <parent link="cooktop" />
+      <child link="hotplate3" />
+    </joint>
+
+    <link name="hotplate3" />
+
+    <joint name="hotplate4_joint" type="fixed">
+      <origin xyz="-0.115778 -0.161987 0.005333" />
+      <parent link="cooktop" />
+      <child link="hotplate4" />
+    </joint>
+
+    <link name="hotplate4" />
 
     <!-- Sink, Kitchen Sink -->
     <joint name="sink_joint" type="fixed">
