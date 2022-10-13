@@ -1,8 +1,12 @@
 <launch>
 
-  <node pkg="tf" type="static_transform_publisher" name="iai_apartment_root_link_broadcaster" args="0 0 0 0 0 0 map iai_apartment/apartment_root 25"></node>
+  <node pkg="tf"
+        type="static_transform_publisher"
+        name="iai_apartment_root_link_broadcaster" 
+        args="0 0 0 0 0 0 map iai_apartment/apartment_root 25">
+  </node>
 
-  <arg name="model" default="$(find iai_apartment)/urdf/apartment.xacro" />
+  <arg name="model" default="$(find iai_apartment)/urdf/apartment.urdf" />
   <param name="apartment_description" command="$(find xacro)/xacro '$(arg model)'" />
 
   <node name="apartment_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher">
@@ -13,8 +17,8 @@
   </node>
 
   <node pkg="joint_state_publisher" type="joint_state_publisher" name="apartment_joint_state_publisher" output="screen">
-    <remap from="robot_description" to="apartment_description" />
-    <param name="rate" value="25" />
+    <remap from="robot_description" to="apartment_description"/>
+    <param name="rate" value="25"/>
     <remap from="/joint_states" to="/apartment_joint_states" />
     <rosparam param="source_list">
       - /iai_kitchen/cram_joint_states
