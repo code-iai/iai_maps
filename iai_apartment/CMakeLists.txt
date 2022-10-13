@@ -19,10 +19,10 @@ find_package(xacro REQUIRED)
 ## See http://ros.org/doc/api/catkin/html/user_guide/setup_dot_py.html
 # catkin_python_setup()
 
-xacro_add_xacro_file(urdf/apartment.xacro urdf/apartment.urdf)
+xacro_add_xacro_file(urdf/apartment.urdf urdf/iai-apartment.urdf)
 # add target to trigger xacro
 add_custom_target(xacro ALL DEPENDS
-  urdf/apartment.urdf)
+  urdf/iai-apartment.urdf)
 install(DIRECTORY xacro
   DESTINATION share/${PROJECT_NAME})
 
