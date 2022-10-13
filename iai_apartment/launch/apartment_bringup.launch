@@ -6,7 +6,7 @@
         args="0 0 0 0 0 0 map iai_apartment/apartment_root 25">
   </node>
 
-  <arg name="model" default="$(find iai_apartment)/urdf/apartment.urdf" />
+  <arg name="model" default="$(find iai_apartment)/urdf/apartment.xacro" />
   <param name="apartment_description" command="$(find xacro)/xacro '$(arg model)'" />
 
   <node name="apartment_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher">

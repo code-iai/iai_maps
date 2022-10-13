@@ -1618,7 +1618,7 @@
     </link>
 
     <joint name="tap_handle_open_joint" type="revolute">
-      <origin xyz="0.001233 0.038489 -0.055395"/>
+      <origin xyz="0.001233 0.038489 -0.055395" />
       <parent link="tap_body" />
       <child link="tap_handle_open" />
       <axis xyz="0 1 0" />
@@ -1628,7 +1628,7 @@
     <link name="tap_handle_open" />
 
     <joint name="tap_handle_hot_cold_joint" type="revolute">
-      <origin rpy="0 0.5 0"/>
+      <origin rpy="0 0.5 0" />
       <parent link="tap_handle_open" />
       <child link="tap_handle" />
       <axis xyz="1 0 0" />
@@ -1637,7 +1637,7 @@
 
     <link name="tap_handle">
       <visual>
-        <origin rpy="0 0.5 0"/>
+        <origin rpy="0 0.5 0" />
         <geometry>
           <mesh filename="package://iai_apartment/meshes/tap/IAIKitchenWaterTapHandle.dae" />
         </geometry>
