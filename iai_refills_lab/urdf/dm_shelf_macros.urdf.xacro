@@ -28,45 +28,45 @@
   </xacro:macro>
 
   <xacro:macro name="shelf_divider" params="parent name dist1 dist2 dist3 dist4 dist5 dist6 dist7 dist8 dist9">
-    <xacro:divider_link parent="${parent}" name="${name}_divider_1">
+    <divider_link parent="${parent}" name="${name}_divider_1">
       <origin xyz="-0.495 0 0.024"/>
-    </xacro:divider_link>
+    </divider_link>
 
-    <xacro:divider_link parent="${parent}" name="${name}_divider_2">
+    <divider_link parent="${parent}" name="${name}_divider_2">
       <origin xyz="${-0.495 + dist1} 0 0.024"/>
-    </xacro:divider_link>
+    </divider_link>
 
-    <xacro:divider_link parent="${parent}" name="${name}_divider_3">
+    <divider_link parent="${parent}" name="${name}_divider_3">
       <origin xyz="${-0.495 + dist1 + dist2} 0 0.024"/>
-    </xacro:divider_link>
+    </divider_link>
 
-    <xacro:divider_link parent="${parent}" name="${name}_divider_4">
+    <divider_link parent="${parent}" name="${name}_divider_4">
       <origin xyz="${-0.495 + dist1 + dist2 + dist3} 0 0.024"/>
-    </xacro:divider_link>
+    </divider_link>
 
-    <xacro:divider_link parent="${parent}" name="${name}_divider_5">
+    <divider_link parent="${parent}" name="${name}_divider_5">
       <origin xyz="${-0.495 + dist1 + dist2 + dist3 + dist4} 0 0.024"/>
-    </xacro:divider_link>
+    </divider_link>
 
-    <xacro:divider_link parent="${parent}" name="${name}_divider_6">
+    <divider_link parent="${parent}" name="${name}_divider_6">
       <origin xyz="${-0.495 + dist1 + dist2 + dist3 + dist4 + dist5} 0 0.024"/>
-    </xacro:divider_link>
+    </divider_link>
 
-    <xacro:divider_link parent="${parent}" name="${name}_divider_7">
+    <divider_link parent="${parent}" name="${name}_divider_7">
       <origin xyz="${-0.495 + dist1 + dist2 + dist3 + dist4 + dist5 + dist6} 0 0.024"/>
-    </xacro:divider_link>
+    </divider_link>
 
-    <xacro:divider_link parent="${parent}" name="${name}_divider_8">
+    <divider_link parent="${parent}" name="${name}_divider_8">
       <origin xyz="${-0.495 + dist1 + dist2 + dist3 + dist4 + dist5 + dist6 + dist7} 0 0.024"/>
-    </xacro:divider_link>
+    </divider_link>
 
-    <xacro:divider_link parent="${parent}" name="${name}_divider_9">
+    <divider_link parent="${parent}" name="${name}_divider_9">
       <origin xyz="${-0.495 + dist1 + dist2 + dist3 + dist4 + dist5 + dist6 + dist7 + dist8} 0 0.024"/>
-    </xacro:divider_link>
+    </divider_link>
 
-    <xacro:divider_link parent="${parent}" name="${name}_divider_10">
+    <divider_link parent="${parent}" name="${name}_divider_10">
       <origin xyz="${-0.495 + dist1 + dist2 + dist3 + dist4 + dist5 + dist6 + dist7 + dist8 + dist9} 0 0.024"/>
-    </xacro:divider_link>
+    </divider_link>
   </xacro:macro>
 
 
@@ -227,25 +227,25 @@
 
 
 
-    <xacro:shelf_1_level name="${name}_level_1" parent="${name}_base" dist1="0.15" dist2="0.133" dist3="0.082" dist4="0.167" dist5="0.095" dist6="0.148" dist7="0.095" dist8="0.125" dist9="0" >
+    <shelf_1_level name="${name}_level_1" parent="${name}_base" dist1="0.15" dist2="0.133" dist3="0.082" dist4="0.167" dist5="0.095" dist6="0.148" dist7="0.095" dist8="0.125" dist9="0" >
       <origin xyz="0 0 0.50965" />
-    </xacro:shelf_1_level>
+    </shelf_1_level>
 
-    <xacro:shelf_1_level name="${name}_level_2" parent="${name}_base" dist1="0.177" dist2="0.208" dist3="0.147" dist4="0.20" dist5="0.124" dist6="0.14" dist7="0" dist8="0" dist9="0" >
+    <shelf_1_level name="${name}_level_2" parent="${name}_base" dist1="0.177" dist2="0.208" dist3="0.147" dist4="0.20" dist5="0.124" dist6="0.14" dist7="0" dist8="0" dist9="0" >
       <origin xyz="0 0 0.84465" />
-    </xacro:shelf_1_level>
+    </shelf_1_level>
 
-    <xacro:shelf_1_level name="${name}_level_3" parent="${name}_base" dist1="0" dist2="0" dist3="0" dist4="0" dist5="0" dist6="0" dist7="0" dist8="0" dist9="0" >
+    <shelf_1_level name="${name}_level_3" parent="${name}_base" dist1="0" dist2="0" dist3="0" dist4="0" dist5="0" dist6="0" dist7="0" dist8="0" dist9="0" >
       <origin xyz="0 0 1.22265" />
-    </xacro:shelf_1_level>
+    </shelf_1_level>
 
-    <xacro:shelf_1_level name="${name}_level_4" parent="${name}_base" dist1="0" dist2="0" dist3="0" dist4="0" dist5="0" dist6="0" dist7="0" dist8="0" dist9="0" >
+    <shelf_1_level name="${name}_level_4" parent="${name}_base" dist1="0" dist2="0" dist3="0" dist4="0" dist5="0" dist6="0" dist7="0" dist8="0" dist9="0" >
       <origin xyz="0 0 1.53565" />
-    </xacro:shelf_1_level>
+    </shelf_1_level>
 
-    <xacro:shelf_1_level name="${name}_level_5" parent="${name}_base" dist1="0" dist2="0" dist3="0" dist4="0" dist5="0" dist6="0" dist7="0" dist8="0" dist9="0" >
+    <shelf_1_level name="${name}_level_5" parent="${name}_base" dist1="0" dist2="0" dist3="0" dist4="0" dist5="0" dist6="0" dist7="0" dist8="0" dist9="0" >
       <origin xyz="0 0 1.86865" />
-    </xacro:shelf_1_level>
+    </shelf_1_level>
   </xacro:macro>
 
 
@@ -400,25 +400,25 @@
 
 
 
-    <xacro:shelf_2_level name="${name}_level_1" parent="${name}_base">
+    <shelf_2_level name="${name}_level_1" parent="${name}_base">
       <origin xyz="0 0.0 0.374"/>
-    </xacro:shelf_2_level>
+    </shelf_2_level>
 
-    <xacro:shelf_2_level name="${name}_level_2" parent="${name}_base">
+    <shelf_2_level name="${name}_level_2" parent="${name}_base">
       <origin xyz="0 0.0 0.624"/>
-    </xacro:shelf_2_level>
+    </shelf_2_level>
 
-    <xacro:shelf_2_level name="${name}_level_3" parent="${name}_base">
+    <shelf_2_level name="${name}_level_3" parent="${name}_base">
       <origin xyz="0 0.0 0.864"/>
-    </xacro:shelf_2_level>
+    </shelf_2_level>
 
-    <xacro:shelf_2_level name="${name}_level_4" parent="${name}_base">
+    <shelf_2_level name="${name}_level_4" parent="${name}_base">
       <origin xyz="0 0.0 1.17"/>
-    </xacro:shelf_2_level>
+    </shelf_2_level>
 
-    <xacro:shelf_2_level name="${name}_level_5" parent="${name}_base">
+    <shelf_2_level name="${name}_level_5" parent="${name}_base">
       <origin xyz="0 0.0 1.42"/>
-    </xacro:shelf_2_level>
+    </shelf_2_level>
   </xacro:macro>
 
 
