@@ -5,11 +5,11 @@
 
   <link name="room_link"/>
 
-  <shelf_1 parent="room_link" name="shelf_1">
+  <xacro:shelf_1 parent="room_link" name="shelf_1">
     <origin xyz="4.3223 -0.2415761 0.08515" rpy="0 0 -1.5756"/>
-  </shelf_1>
+  </xacro:shelf_1>
 
-  <shelf_2 parent="room_link" name="shelf_2">
+  <xacro:shelf_2 parent="room_link" name="shelf_2">
     <origin xyz="1.75 -1.45 0.08515" rpy="0 0 3.09652"/>
-  </shelf_2>
+  </xacro:shelf_2>
 </robot>
