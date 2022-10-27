@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <include file="$(find iai_kitchen)/launch/upload_kitchen_obj.launch" />
+
+  <node pkg="tf"
+        type="static_transform_publisher"
+        name="iai_kitchen_room_link_broadcaster" 
+        args="0.0 0.0 0. 0.0 0. 0. map iai_kitchen/world 25">
+  </node>
+
+  <node pkg="joint_state_publisher" type="joint_state_publisher"
+        name="kitchen_joint_state_publisher" output="screen">
+    <remap from="robot_description" to="kitchen_description"/>
+    <param name="rate" value="25"/>
+    <remap from="/joint_states" to="/kitchen/joint_states" />
+    <rosparam param="source_list">
+      - /kitchen/cram_joint_states
+    </rosparam>
+  </node>
+
+  <node name="kitchen_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" >
+    <remap from="robot_description" to="kitchen_description"/>
+    <remap from="joint_states" to="/kitchen/joint_states"/>
+    <param name="tf_prefix" value="iai_kitchen"/>
+    <param name="publish_frequency" value="3"/>
+  </node>
+
+</launch>

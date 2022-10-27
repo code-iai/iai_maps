@@ -1,0 +1,6 @@
+<launch>
+
+  <arg name="model" default="$(find iai_apartment)/urdf/apartment.urdf" />
+  <param name="apartment_description" command="$(find xacro)/xacro '$(arg model)'" />
+
+</launch>
