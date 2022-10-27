@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+
+<robot name="iai_kitchen" xmlns:xacro="http://ros.org/wiki/xacro">
+
+
+  <!--- FIXME THIS should NOT be here -->
+  <xacro:include filename="$(find iai_kitchen)/urdf_obj/IAI_oven_area.urdf.xacro"/>
+  <xacro:include filename="$(find iai_kitchen)/urdf_obj/IAI_kitchen_island.urdf.xacro"/>
+  <xacro:include filename="$(find iai_kitchen)/urdf_obj/IAI_sink_area.urdf.xacro"/>
+  <xacro:include filename="$(find iai_kitchen)/urdf_obj/IAI_fridge_area.urdf.xacro"/>
+  <xacro:include filename="$(find iai_kitchen)/urdf_obj/IAI_tables.urdf.xacro"/>
+  <xacro:include filename="$(find iai_kitchen)/urdf_obj/IAI_kitchen_walls.urdf.xacro"/>
+  <xacro:include filename="$(find iai_kitchen)/urdf_obj/IAI_popcorn_table.urdf.xacro"/>
+
+  <xacro:property name="pi" value="3.1415926535897931" />
+  <xacro:property name="simulated" value="true" />
+  <xacro:property name="include_wall_7" value="false"/>
+
+  <xacro:macro name="sphere_inertia" params="radius mass">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+      <mass value="1"/>
+      <inertia
+          ixx="1" ixy="0.0" ixz="0.0"
+          iyy="1" iyz="0.0"
+          izz="1"/>
+    </inertial>
+  </xacro:macro>
+
+  <link name="room_link">
+    <sphere_inertia radius="0" mass="0"/>
+  </link>
+  <xacro:if value="${simulated}">
+    <link name="world"/>
+    <joint name="world_room_joint" type="fixed">
+      <origin xyz="0.0 0.03 0 " rpy="0 0 0" />
+      <parent link="world"/>
+      <child link="room_link"/>
+    </joint>
+  </xacro:if>
+
+  <xacro:iai_sink_area name="sink_area" parent="room_link">
+    <origin xyz="1.855 1.3 0" rpy="0 0 ${pi}" />
+    <!-- <origin xyz="-5.29 -5.65 0" rpy="0 0 0" /> -->
+  </xacro:iai_sink_area>
+
+  <xacro:iai_oven_area name="oven_area" parent="room_link">
+    <origin xyz="1.845 2.5 0" rpy="0 0 ${pi}" />
+    <!-- <origin xyz="-5.27 -6.85 0" rpy="0 0 0" /> -->
+  </xacro:iai_oven_area>
+
+  <xacro:iai_kitchen_island name="kitchen_island" parent="room_link">
+    <origin xyz="-1.363 0.59 0" rpy="0 0 0" />
+    <!-- <origin xyz="-2.1 -4.94 0" rpy="0 0 ${pi}" /> -->
+  </xacro:iai_kitchen_island>
+
+  <xacro:iai_fridge_area name="fridge_area" parent="room_link">
+    <origin xyz="1.845 -0.73 0" rpy="0 0 ${pi}" />
+    <!-- <origin xyz="-5.29 -3.59 0" rpy="0 0 0" /> -->
+  </xacro:iai_fridge_area>
+
+  <xacro:iai_table_1 name="table_area" parent="room_link">
+    <origin xyz="-2.4 -1.5 0" rpy="0 0 ${pi}" />
+  </xacro:iai_table_1>
+
+  <xacro:iai_dining_area name="dining_area" parent="room_link">
+    <origin xyz="-3.38 0.28 0" rpy="0 0 ${pi / 2}" />
+  </xacro:iai_dining_area>
+
+  <xacro:iai_kitchen_wall_robohow parent="room_link" include_wall_7="${include_wall_7}">
+    <origin xyz="-0.96 0.65 0" rpy="0.0 0.0 0.0" />
+  </xacro:iai_kitchen_wall_robohow>
+  
+  <xacro:iai_popcorn_table name="iai_popcorn_table" parent="room_link">
+    <origin xyz="-0.05 -1.7 0"/>
+  </xacro:iai_popcorn_table>
+
+
+  <gazebo>
+    <static>false</static>
+  </gazebo>
+
+</robot>
+
+

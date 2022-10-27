@@ -11,7 +11,7 @@
 
   <xacro:property name="pi" value="3.1415926535897931" />
   <xacro:property name="simulated" value="true" />
-
+  <xacro:property name="include_wall_7" value="false"/>
   <xacro:macro name="sphere_inertia" params="radius mass">
     <inertial>
       <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
@@ -70,4 +70,5 @@
   <gazebo>
     <static>false</static>
   </gazebo>
+
 </robot>
