@@ -2,16 +2,20 @@
 
 <robot name="iai_kitchen" xmlns:xacro="http://ros.org/wiki/xacro">
 
+
+  <!--- FIXME THIS should NOT be here -->
   <xacro:include filename="$(find iai_kitchen)/urdf_obj/IAI_oven_area.urdf.xacro"/>
   <xacro:include filename="$(find iai_kitchen)/urdf_obj/IAI_kitchen_island.urdf.xacro"/>
   <xacro:include filename="$(find iai_kitchen)/urdf_obj/IAI_sink_area.urdf.xacro"/>
   <xacro:include filename="$(find iai_kitchen)/urdf_obj/IAI_fridge_area.urdf.xacro"/>
   <xacro:include filename="$(find iai_kitchen)/urdf_obj/IAI_tables.urdf.xacro"/>
   <xacro:include filename="$(find iai_kitchen)/urdf_obj/IAI_kitchen_walls.urdf.xacro"/>
+  <xacro:include filename="$(find iai_kitchen)/urdf_obj/IAI_popcorn_table.urdf.xacro"/>
 
   <xacro:property name="pi" value="3.1415926535897931" />
   <xacro:property name="simulated" value="true" />
   <xacro:property name="include_wall_7" value="false"/>
+
   <xacro:macro name="sphere_inertia" params="radius mass">
     <inertial>
       <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
@@ -24,7 +28,7 @@
   </xacro:macro>
 
   <link name="room_link">
-    <xacro:sphere_inertia radius="0" mass="0"/>
+    <sphere_inertia radius="0" mass="0"/>
   </link>
   <xacro:if value="${simulated}">
     <link name="world"/>
@@ -63,12 +67,19 @@
     <origin xyz="-3.38 0.28 0" rpy="0 0 ${pi / 2}" />
   </xacro:iai_dining_area>
 
-  <xacro:iai_kitchen_wall_robohow parent="room_link">
+  <xacro:iai_kitchen_wall_robohow parent="room_link" include_wall_7="${include_wall_7}">
     <origin xyz="-0.96 0.65 0" rpy="0.0 0.0 0.0" />
   </xacro:iai_kitchen_wall_robohow>
+  
+  <xacro:iai_popcorn_table name="iai_popcorn_table" parent="room_link">
+    <origin xyz="-0.05 -1.7 0"/>
+  </xacro:iai_popcorn_table>
+
 
   <gazebo>
     <static>false</static>
   </gazebo>
 
 </robot>
+
+

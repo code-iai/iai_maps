@@ -1,0 +1,483 @@
+<?xml version="1.0"?>
+
+<robot name="iai_popcorn_table" xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <xacro:macro name="iai_popcorn_table" params="name parent *origin">
+
+    <link name="${name}_footprint"/>
+
+    <joint name="${name}_footprint_joint" type="fixed">
+      <xacro:insert_block name="origin"/>
+      <parent link="${parent}"/>
+      <child link="${name}_footprint"/>
+    </joint>
+
+    <link name="${name}_front_left_leg">
+      <visual>
+        <geometry>
+          <box size="0.06 0.06 0.69"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <box size="0.06 0.06 0.69"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${name}_front_right_leg">
+      <visual>
+        <geometry>
+          <box size="0.06 0.06 0.69"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <box size="0.06 0.06 0.69"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${name}_back_left_leg">
+      <visual>
+        <geometry>
+          <box size="0.06 0.06 0.69"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <box size="0.06 0.06 0.69"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${name}_back_right_leg">
+      <visual>
+        <geometry>
+          <box size="0.06 0.06 0.69"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <box size="0.06 0.06 0.69"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${name}_left_panel">
+      <visual>
+        <geometry>
+          <box size="0.01 0.54 0.69"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <box size="0.01 0.54 0.69"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${name}_right_panel">
+      <visual>
+        <geometry>
+          <box size="0.01 0.54 0.69"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <box size="0.01 0.54 0.69"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${name}_front_panel">
+      <visual>
+        <geometry>
+          <box size="1.56 0.01 0.69"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <box size="1.56 0.01 0.69"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${name}_surface">
+      <visual>
+        <geometry>
+          <box size="1.75 0.64 0.025"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <box size="1.75 0.64 0.025"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${name}_stove">
+      <visual>
+        <geometry>
+          <box size="0.59 0.52 0.01"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <box size="0.59 0.52 0.01"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${name}_left_wall">
+      <visual>
+        <geometry>
+          <box size="0.02 0.54 0.69"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <box size="0.02 0.54 0.69"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${name}_right_wall">
+      <visual>
+        <geometry>
+          <box size="0.02 0.54 0.69"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <box size="0.02 0.54 0.69"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${name}_right_grid">
+      <visual>
+        <geometry>
+          <box size="0.5 0.5 0.015"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <box size="0.5 0.5 0.015"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${name}_left_grid">
+      <visual>
+        <geometry>
+          <box size="0.5 0.5 0.015"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <box size="0.5 0.5 0.015"/>
+        </geometry>
+      </collision>
+    </link>
+
+
+
+
+
+    <joint name="${name}_front_left_leg_joint" type="fixed">
+      <origin xyz="-0.81 -0.27 0.345"/>
+      <parent link="${name}_footprint"/>
+      <child link="${name}_front_left_leg"/>
+    </joint>
+
+    <joint name="${name}_front_right_leg_joint" type="fixed">
+      <origin xyz="0.81 -0.27 0.345"/>
+      <parent link="${name}_footprint"/>
+      <child link="${name}_front_right_leg"/>
+    </joint>
+
+    <joint name="${name}_back_left_leg_joint" type="fixed">
+      <origin xyz="-0.81 0.27 0.345"/>
+      <parent link="${name}_footprint"/>
+      <child link="${name}_back_left_leg"/>
+    </joint>
+
+    <joint name="${name}_back_right_leg_joint" type="fixed">
+      <origin xyz="0.81 0.27 0.345"/>
+      <parent link="${name}_footprint"/>
+      <child link="${name}_back_right_leg"/>
+    </joint>
+
+    <joint name="${name}_surface_joint" type="fixed">
+      <origin xyz="0 0 0.7"/>
+      <parent link="${name}_footprint"/>
+      <child link="${name}_surface"/>
+    </joint>
+
+    <joint name="${name}_stove_joint" type="fixed">
+      <origin xyz="0 0.04 0.71"/>
+      <parent link="${name}_footprint"/>
+      <child link="${name}_stove"/>
+    </joint>
+
+    <joint name="${name}_left_panel_joint" type="fixed">
+      <origin xyz="-0.81 0 0.35"/>
+      <parent link="${name}_footprint"/>
+      <child link="${name}_left_panel"/>
+    </joint>
+
+    <joint name="${name}_right_panel_joint" type="fixed">
+      <origin xyz="0.81 0 0.35"/>
+      <parent link="${name}_footprint"/>
+      <child link="${name}_right_panel"/>
+    </joint>
+
+    <joint name="${name}_front_panel_joint" type="fixed">
+      <origin xyz="0 -0.27 0.35"/>
+      <parent link="${name}_footprint"/>
+      <child link="${name}_front_panel"/>
+    </joint>
+
+    <joint name="${name}_left_wall_joint" type="fixed">
+      <origin xyz="-0.31 0 0.35"/>
+      <parent link="${name}_footprint"/>
+      <child link="${name}_left_wall"/>
+    </joint>
+
+    <joint name="${name}_right_wall_joint" type="fixed">
+      <origin xyz="0.31 0 0.35"/>
+      <parent link="${name}_footprint"/>
+      <child link="${name}_right_wall"/>
+    </joint>
+
+    <joint name="${name}_right_grid_joint" type="fixed">
+      <origin xyz="-0.55 0 0.18"/>
+      <parent link="${name}_footprint"/>
+      <child link="${name}_right_grid"/>
+    </joint>
+
+    <joint name="${name}_left_grid_joint" type="fixed">
+      <origin xyz="0.55 0 0.18"/>
+      <parent link="${name}_footprint"/>
+      <child link="${name}_left_grid"/>
+    </joint>
+
+    <xacro:iai_popcorn_table_drawer name="iai_popcorn_table_drawer_left" parent="${name}_footprint">
+      <origin xyz="0.555 0 0.53" rpy="0 0 ${0.5 * pi}"/>
+    </xacro:iai_popcorn_table_drawer>
+
+    <xacro:iai_popcorn_table_drawer name="iai_popcorn_table_drawer_right" parent="${name}_footprint">
+      <origin xyz="-0.555 0 0.53" rpy="0 0 ${0.5 * pi}"/>
+    </xacro:iai_popcorn_table_drawer>
+
+    <xacro:iai_popcorn_stove_knob name="iai_popcorn_stove_knob_1" parent="${name}_stove">
+      <origin xyz="-0.235 0.22 0.01"/>
+    </xacro:iai_popcorn_stove_knob>
+
+    <xacro:iai_popcorn_stove_knob name="iai_popcorn_stove_knob_2" parent="${name}_stove">
+      <origin xyz="-0.235 0.17 0.01"/>
+    </xacro:iai_popcorn_stove_knob>
+
+    <xacro:iai_popcorn_stove_knob name="iai_popcorn_stove_knob_3" parent="${name}_stove">
+      <origin xyz="-0.235 0.12 0.01"/>
+    </xacro:iai_popcorn_stove_knob>
+
+  </xacro:macro>
+
+  <xacro:macro name="iai_popcorn_table_drawer" params="name parent *origin">
+
+  <joint name="${name}_table_joint" type="prismatic">
+        <parent link="${parent}"/>
+        <child link="${name}_main"/>
+        <limit effort="1000.0" lower="0" upper="0.4" velocity="0.5"/>
+        <axis xyz="1 0 0 "/>
+        <xacro:insert_block name="origin"/>
+  </joint>
+
+  <link name="${name}_main">
+    <visual>
+      <geometry>
+        <box size="0.52 0.42 0.01"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.52 0.42 0.01"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="${name}_right_side">
+    <visual>
+      <geometry>
+        <box size="0.52 0.01  0.13"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.52 0.01 0.13"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="${name}_left_side">
+    <visual>
+      <geometry>
+        <box size="0.52 0.01 0.13"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <box size=" 0.52 0.01 0.13"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="${name}_back_side">
+    <visual>
+      <geometry>
+        <box size="0.01 0.42  0.13"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.01 0.42 0.13"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="${name}_front_side">
+    <visual>
+      <geometry>
+        <box size="0.01 0.46  0.13"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.01 0.46 0.15"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="${name}_right_side_joint" type="fixed">
+    <origin xyz="0 0.205 0.065"/>
+    <parent link="${name}_main"/>
+    <child link="${name}_right_side"/>
+  </joint>
+
+  <joint name="${name}_left_side_joint" type="fixed">
+    <origin xyz="0 -0.205 0.065" />
+    <parent link="${name}_main"/>
+    <child link="${name}_left_side"/>
+  </joint>
+
+  <joint name="${name}_back_side_joint" type="fixed">
+    <origin xyz=" -0.255 0 0.065" />
+    <parent link="${name}_main"/>
+    <child link="${name}_back_side"/>
+  </joint>
+
+  <joint name="${name}_front_side_joint" type="fixed">
+    <origin xyz=" 0.255 0 0.075" />
+    <parent link="${name}_main"/>
+    <child link="${name}_front_side"/>
+  </joint>
+
+  <xacro:iai_popcorn_table_drawer_handle name="${name}_handle" parent="${name}_front_side">
+    <origin xyz="0.03 0 0"/>
+  </xacro:iai_popcorn_table_drawer_handle>
+
+  </xacro:macro>
+
+  <xacro:macro name="iai_popcorn_table_drawer_handle" params="name parent *origin">
+
+  <link name="${name}_left_part">
+    <visual>
+      <geometry>
+        <box size="0.03 0.01 0.01"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.03 0.01  0.01"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="${name}_right_part">
+    <visual>
+      <geometry>
+        <box size="0.03 0.01 0.01"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.03 0.01 0.01"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="${name}_middle_part">
+    <visual>
+      <geometry>
+        <box size="0.01 0.3 0.01"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.01 0.3 0.01"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="${name}_left_middle_joint" type="fixed">
+    <origin xyz="-0.01 -0.15  0"/>
+    <parent link="${name}_middle_part"/>
+    <child link="${name}_left_part"/>
+  </joint>
+
+  <joint name="${name}_right_middle_joint" type="fixed">
+    <origin xyz="-0.01 0.15  0"/>
+    <parent link="${name}_middle_part"/>
+    <child link="${name}_right_part"/>
+  </joint>
+
+  <joint name="${name}_middle_drawer_joint" type="fixed">
+    <xacro:insert_block name="origin"/>
+    <parent link="${parent}"/>
+    <child link="${name}_middle_part"/>
+  </joint>
+
+  </xacro:macro>
+
+  <xacro:macro name="iai_popcorn_stove_knob" params="name parent *origin">
+
+  <link name="${name}">
+
+    <sphere_inertia radius="0" mass="0"/>
+    <visual>
+    <origin xyz="0 0 0" rpy="0 ${1.5 * pi} ${0.5 * pi}" />
+      <geometry>
+        <mesh filename="package://iai_kitchen/meshes/oven/Knob.obj"/>
+      </geometry>
+    </visual>
+    <collision>
+    <origin xyz="0 0 0" rpy="0 ${1.5 * pi} ${0.5 * pi}" />
+      <geometry>
+        <mesh filename="package://iai_kitchen/meshes/oven/Knob.obj"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="${name}_joint" type="revolute">
+    <xacro:insert_block name="origin"/>
+    <parent link="${parent}"/>
+    <child link="${name}"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-${pi}" upper="0" effort="300" velocity="10"/>
+  </joint>
+
+  </xacro:macro>
+
+</robot>
