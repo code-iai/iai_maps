@@ -1,6 +1,6 @@
 <robot xmlns:xacro="http://ros.org/wiki/xacro" name="furnitures">
 
-  <xacro:macro name="kitchen_macro" params="name parent *origin">
+  <xacro:macro name="furnitures_macro" params="name parent *origin">
 
     <joint name="${name}" type="fixed">
       <xacro:insert_block name="origin" />

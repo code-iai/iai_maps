@@ -1,0 +1,78 @@
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="kitchen">
+
+  <!-- Such is life in a kitchen : xacro -->
+  <xacro:macro name="kitchen_macro" params="name parent *origin">
+
+    <joint name="${name}" type="fixed">
+      <xacro:insert_block name="origin" />
+      <parent link="${parent}" />
+      <child link="kitchen_root" />
+    </joint>
+    <link name="kitchen_root" />
+
+    <!-- - - - - - - - - - - - - Cabinets side A - - - - - - - - - -->
+    <!-- Cabinet1 -->
+    <joint name="cabinet1_joint" type="fixed">
+      <origin xyz="0.0 1.46675873 1.11440605" rpy="0.0 0.0 0.0" />
+      <parent link="kitchen_root" />
+      <child link="cabinet1" />
+    </joint>
+
+    <link name="cabinet1">
+      <visual>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/unreal/cabinet01/SM_Kitchen_01_Base.obj" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0.3 0.010499 0.05" />
+        <geometry>
+          <box size="0.019 0.55494 2.12778" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="-0.280469 0.010499 0.05" />
+        <geometry>
+          <box size="0.019 0.55494 2.12778" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.009901 0.271973 0.041995" />
+        <geometry>
+          <box size="0.561938 0.008 2.11178" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="-0.299967 0.0 0.0" />
+        <geometry>
+          <box size="0.02092 0.575938 2.22776" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.009901 -0.254976 1.06578" />
+        <geometry>
+          <box size="0.561938 0.016 0.064" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.009901 0.0055 1.10578" />
+        <geometry>
+          <box size="0.561938 0.540942 0.016" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.009901 0.0005 0.249501" />
+        <geometry>
+          <box size="0.561938 0.540942 0.015" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.009901 0.0005 -0.361161 " />
+        <geometry>
+          <box size="0.561938 0.534942 0.015" />
+        </geometry>
+      </collision>
+    </link>
+
+  </xacro:macro>
+</robot>
