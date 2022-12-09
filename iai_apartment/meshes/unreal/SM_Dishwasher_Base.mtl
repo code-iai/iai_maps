@@ -1,0 +1,24 @@
+# Blender 3.4.0 MTL File: 'None'
+# www.blender.org
+
+newmtl /Game/Materials_Laborraum/M_Metal_Dishwasher_M_Metal_Dishwasher
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd Game/Materials_Laborraum/M_Metal_Dishwasher_M_Metal_Dishwasher_D.bmp
+map_Ks Game/Materials_Laborraum/M_Metal_Dishwasher_M_Metal_Dishwasher_S.bmp
+map_Bump -bm 1.000000 Game/Materials_Laborraum/M_Metal_Dishwasher_M_Metal_Dishwasher_N.bmp
+
+newmtl /Game/Materials_Laborraum/M_Rubber_Plastic_M_Rubber_Plastic
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd M_Rubber_Plastic_M_Rubber_Plastic_D.bmp
+map_Ks M_Rubber_Plastic_M_Rubber_Plastic_S.bmp
+map_Bump M_Rubber_Plastic_M_Rubber_Plastic_N.bmp

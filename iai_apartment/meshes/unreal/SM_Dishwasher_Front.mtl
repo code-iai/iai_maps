@@ -1,0 +1,66 @@
+# Blender 3.4.0 MTL File: 'None'
+# www.blender.org
+
+newmtl /Game/Materials_Laborraum/M_Glass_Oven_Door_M_Glass_Oven_Door
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl /Game/Materials_Laborraum/M_Kitchen_Fronts_M_Kitchen_Fronts
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd M_Kitchen_Fronts_M_Kitchen_Fronts_D.bmp
+map_Ks M_Kitchen_Fronts_M_Kitchen_Fronts_S.bmp
+map_Bump M_Kitchen_Fronts_M_Kitchen_Fronts_N.bmp
+
+newmtl /Game/Materials_Laborraum/M_Metal_Dishwasher_M_Metal_Dishwasher
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd M_Metal_Dishwasher_M_Metal_Dishwasher_D.bmp
+map_Ks M_Metal_Dishwasher_M_Metal_Dishwasher_S.bmp
+map_Bump M_Metal_Dishwasher_M_Metal_Dishwasher_N.bmp
+
+newmtl /Game/Materials_Laborraum/M_Plastic_Orange_M_Plastic_Orange
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd Game/Materials_Laborraum/M_Plastic_Orange_M_Plastic_Orange_D.bmp
+map_Ks M_Plastic_Orange_M_Plastic_Orange_S.bmp
+map_Bump M_Plastic_Orange_M_Plastic_Orange_N.bmp
+
+newmtl /Game/Materials_Laborraum/M_Plastic_White_M_Plastic_White
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+
+newmtl /Game/Materials_Laborraum/M_Rubber_Plastic_M_Rubber_Plastic
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd M_Rubber_Plastic_M_Rubber_Plastic_D.bmp
+map_Ks M_Rubber_Plastic_M_Rubber_Plastic_S.bmp
+map_Bump M_Rubber_Plastic_M_Rubber_Plastic_N.bmp
