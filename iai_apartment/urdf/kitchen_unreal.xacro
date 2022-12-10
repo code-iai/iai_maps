@@ -1677,6 +1677,26 @@
     </link>
 
     <!-- Cabinet5 -->
+    <joint name="counter_wall_joint" type="fixed">
+      <origin xyz="0.28142776 3.29494293 0.90892097" rpy="0.0 0.0 ${-pi/2}" />
+      <parent link="kitchen1_root" />
+      <child link="counter_wall" />
+    </joint>
+
+    <link name="counter_wall">
+      <visual>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/unreal/SM_Counter_Wall.dae" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" />
+        <geometry>
+          <box size="1.031064 0.599 0.026778" />
+        </geometry>
+      </collision>
+    </link>
+
     <joint name="cabinet5_joint" type="fixed">
       <origin xyz="0.27476608 3.08411682 0.49420666" rpy="0.0 0.0 ${pi/2}" />
       <parent link="kitchen1_root" />
@@ -2024,26 +2044,6 @@
       </collision>
     </link>
 
-    <joint name="counter_wall_joint" type="fixed">
-      <origin xyz="-0.28889557 0.00673351 0.41436802" rpy="0.0 0.0 ${pi}" />
-      <parent link="cabinet6" />
-      <child link="counter_wall" />
-    </joint>
-
-    <link name="counter_wall">
-      <visual>
-        <geometry>
-          <mesh filename="package://iai_apartment/meshes/unreal/SM_Counter_Wall.dae" />
-        </geometry>
-      </visual>
-      <collision>
-        <origin xyz="0.0 0.0 0.0" />
-        <geometry>
-          <box size="1.031064 0.599 0.026778" />
-        </geometry>
-      </collision>
-    </link>
-
     <joint name="cabinet6_drawer1_joint" type="prismatic">
       <origin xyz="0.00032649 -0.05329598 0.33177837" rpy="0.0 0.0 0.0" />
       <parent link="cabinet6" />
@@ -2303,10 +2303,31 @@
     </link>
 
     <joint name="island_cover4_joint" type="fixed">
-      <origin xyz="0.21131807 0.00210169 -0.04853619" rpy="0.0 0.0 0.0" />
-      <parent link="cabinet6" />
+      <origin xyz="0.27259209 3.79515656 0.44601677" rpy="0.0 0.0 ${pi/2}" />
+      <parent link="kitchen1_root" />
       <child link="island_cover4" />
     </joint>
+
+    <!-- Kitchen1 base board, island cover -->
+    <joint name="kitchen1_base_board_joint" type="fixed">
+      <origin xyz="0.55976036 2.47825577 0.05168431" rpy="0.0 0.0 ${-pi/2}" />
+      <parent link="kitchen1_root" />
+      <child link="kitchen1_base_board" />
+    </joint>
+
+    <link name="kitchen1_base_board">
+      <visual>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/unreal/SM_Kitchen_Base_Board_01.dae" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" />
+        <geometry>
+          <box size="2.60316 0.019778 0.1" />
+        </geometry>
+      </collision>
+    </link>
 
     <link name="island_cover4">
       <visual>
@@ -2318,27 +2339,6 @@
         <origin xyz="0.0 0.0 0.0" />
         <geometry>
           <box size="0.019108 0.592148 0.897013" />
-        </geometry>
-      </collision>
-    </link>
-
-    <!-- Base board -->
-    <joint name="base_board_joint" type="fixed">
-      <origin xyz="0.55976036 2.47825577 0.05168431" rpy="0.0 0.0 ${-pi/2}" />
-      <parent link="kitchen1_root" />
-      <child link="base_board" />
-    </joint>
-
-    <link name="base_board">
-      <visual>
-        <geometry>
-          <mesh filename="package://iai_apartment/meshes/unreal/SM_Kitchen_Base_Board_01.dae" />
-        </geometry>
-      </visual>
-      <collision>
-        <origin xyz="0.0 0.0 0.0" />
-        <geometry>
-          <box size="2.60316 0.019778 0.1" />
         </geometry>
       </collision>
     </link>
@@ -2437,7 +2437,7 @@
       <collision>
         <origin xyz="0.0 -0.212477 0.0" />
         <geometry>
-          <box size="0.404212 0.01 0.177388" />
+          <box size="0.404212 0.02 0.177388" />
         </geometry>
       </collision>
       <collision>
@@ -2621,6 +2621,38 @@
       </collision>
     </link>
 
+    <joint name="dishwasher_front_handle_joint" type="fixed">
+      <origin xyz="-0.0169432 -0.05493519 0.67884796" rpy="0.0 0.0 ${pi/2}" />
+      <parent link="dishwasher_front" />
+      <child link="dishwasher_front_handle" />
+    </joint>
+
+    <link name="dishwasher_front_handle">
+      <visual>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/unreal/SM_Kitchen_Handle.dae" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="-0.003891 0.08 0.0" />
+        <geometry>
+          <box size="0.02 0.013 0.013" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="-0.003891 -0.08 0.0" />
+        <geometry>
+          <box size="0.02 0.013 0.013" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="-0.0203895 0.0 0.0" />
+        <geometry>
+          <box size="0.013 0.173032  0.013" />
+        </geometry>
+      </collision>
+    </link>
+
     <joint name="dishwasher_tray1_joint" type="prismatic">
       <origin xyz="-0.00735926 0.19401426 0.22713593" rpy="0.0 0.0 0.0" />
       <parent link="dishwasher" />
@@ -2680,6 +2712,1285 @@
       <collision>
         <geometry>
           <mesh filename="package://iai_apartment/meshes/unreal/SM_Dishwasher_Tray_03.stl" />
+        </geometry>
+      </collision>
+    </link>
+
+    <!-- Cabinet8 -->
+    <joint name="cabinet8_joint" type="fixed">
+      <origin xyz="2.49268082 3.37232117 0.49448143" rpy="0.0 0.0 ${-pi/2}" />
+      <parent link="kitchen2_root" />
+      <child link="cabinet8" />
+    </joint>
+
+    <link name="cabinet8">
+      <visual>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/unreal/SM_Kitchen_08_Sink_Base.dae" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="-0.291912 0.0 0.0" />
+        <geometry>
+          <box size="0.015884 0.55405 0.79779" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.291912 0.0 0.0" />
+        <geometry>
+          <box size="0.015884 0.55405 0.79779" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.26153 0.0" />
+        <geometry>
+          <box size="0.568134 0.007888 0.765818" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.217476 0.39091" />
+        <geometry>
+          <box size="0.568134 0.08 0.016" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.0 -0.391005 " />
+        <geometry>
+          <box size="0.568134 0.55405 0.016" />
+        </geometry>
+      </collision>
+    </link>
+
+    <joint name="sink_drawer_joint" type="prismatic">
+      <origin xyz="-0.00013535 -0.05086624 0.0032" rpy="0.0 0.0 0.0" />
+      <parent link="cabinet8" />
+      <child link="sink_drawer" />
+      <axis xyz="0 -1 0" />
+      <limit effort="1000.0" lower="0.0" upper="0.45" velocity="0.45" />
+    </joint>
+
+    <link name="sink_drawer">
+      <visual>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/unreal/SM_Kitchen_08_Sink_Drawer_01.dae" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0.0 -0.233976 0.0" />
+        <geometry>
+          <box size="0.596516 0.018776 0.794026" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.259483 -0.288887" />
+        <geometry>
+          <box size="0.539508 0.018034 0.169484" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.268047 0.025012 -0.08949" />
+        <geometry>
+          <box size="0.015 0.498056 0.084" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="-0.268047 0.025012 -0.08949" />
+        <geometry>
+          <box size="0.015 0.498056 0.084" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.268047 0.025012 -0.208727" />
+        <geometry>
+          <box size="0.015 0.498056 0.023296" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="-0.268047 0.025012 -0.208727" />
+        <geometry>
+          <box size="0.015 0.498056 0.023296" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.268047 0.025012 -0.33085" />
+        <geometry>
+          <box size="0.015 0.498056 0.087218" />
+        </geometry>
+      </collision> 
+      <collision>
+        <origin xyz="-0.268047 0.025012 -0.33085" />
+        <geometry>
+          <box size="0.015 0.498056 0.087218" />
+        </geometry>
+      </collision> 
+      <collision>
+        <origin xyz="0.246033 0.025012 -0.04" />
+        <geometry>
+          <box size="0.062024 0.498056 0.016" />
+        </geometry>
+      </collision> 
+      <collision>
+        <origin xyz="-0.246033 0.025012 -0.04" />
+        <geometry>
+          <box size="0.062024 0.498056 0.016" />
+        </geometry>
+      </collision> 
+      <collision>
+        <origin xyz="0.0 -0.213959 -0.04" />
+        <geometry>
+          <box size="0.554092 0.021008 0.016" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.21583 -0.04" />
+        <geometry>
+          <box size="0.554092 0.117306 0.016" />
+        </geometry>
+      </collision>
+      <!-- Trash can 1 -->
+      <collision>
+        <origin xyz="-0.00535 0.086505 -0.198155 " />
+        <geometry>
+          <box size="0.016852 0.149578 0.34661" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="-0.211412 0.086505 -0.198155" />
+        <geometry>
+          <box size="0.016852 0.149578 0.34661" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="-0.109826 0.152938 -0.198155" />
+        <geometry>
+          <box size="0.219652 0.016712 0.34661" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="-0.109826 0.02 -0.198155" />
+        <geometry>
+          <box size="0.219652 0.016712 0.34661" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="-0.109826 0.086505 -0.372315" />
+        <geometry>
+          <box size="0.219652 0.149578 0.0017" />
+        </geometry>
+      </collision>
+      <!-- Trash can 2 -->
+      <collision>
+        <origin xyz="0.00535 0.086505 -0.198155 " />
+        <geometry>
+          <box size="0.016852 0.149578 0.34661" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.211412 0.086505 -0.198155" />
+        <geometry>
+          <box size="0.016852 0.149578 0.34661" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.109826 0.152938 -0.198155" />
+        <geometry>
+          <box size="0.219652 0.016852 0.34661" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.109826 0.02 -0.198155" />
+        <geometry>
+          <box size="0.219652 0.016852 0.34661" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.109826 0.086505 -0.372315" />
+        <geometry>
+          <box size="0.219652 0.149578 0.0017" />
+        </geometry>
+      </collision>
+      <!-- Trash can 3 -->
+      <collision>
+        <origin xyz="-0.221355 -0.098209 -0.198155" />
+        <geometry>
+          <box size="0.016852 0.219458 0.34661" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="-0.088435 -0.098209 -0.198155" />
+        <geometry>
+          <box size="0.016852 0.219458 0.34661" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="-0.155 0.003041 -0.198155 " />
+        <geometry>
+          <box size="0.149382 0.016852 0.34661" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="-0.155 -0.199821 -0.198155" />
+        <geometry>
+          <box size="0.149382 0.016852 0.34661" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="-0.155 -0.098209 -0.372315" />
+        <geometry>
+          <box size="0.149382 0.219458 0.0017" />
+        </geometry>
+      </collision>
+      <!-- Trash can 4 -->
+      <collision>
+        <origin xyz="0.221355 -0.098209 -0.198155" />
+        <geometry>
+          <box size="0.016852 0.219458 0.34661" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="-0.071323 -0.098209 -0.198155" />
+        <geometry>
+          <box size="0.016852 0.219458 0.34661" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.075302 0.003041 -0.198155 " />
+        <geometry>
+          <box size="0.309498 0.016852 0.34661" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.075302 -0.199821 -0.198155" />
+        <geometry>
+          <box size="0.309498 0.016852 0.34661" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.075302 -0.098209 -0.372315" />
+        <geometry>
+          <box size="0.309498 0.219458 0.0017" />
+        </geometry>
+      </collision>
+    </link>
+
+    <joint name="sink_drawer_handle_joint" type="fixed">
+      <origin xyz="0.00331339 -0.24900223 0.35071747" rpy="0.0 0.0 ${pi/2}" />
+      <parent link="sink_drawer" />
+      <child link="sink_drawer_handle" />
+    </joint>
+
+    <link name="sink_drawer_handle">
+      <visual>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/unreal/SM_Kitchen_Handle.dae" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="-0.003891 0.08 0.0" />
+        <geometry>
+          <box size="0.02 0.013 0.013" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="-0.003891 -0.08 0.0" />
+        <geometry>
+          <box size="0.02 0.013 0.013" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="-0.0203895 0.0 0.0" />
+        <geometry>
+          <box size="0.013 0.173032  0.013" />
+        </geometry>
+      </collision>
+    </link>
+
+    <!-- Cabinet9 -->
+    <joint name="cabinet9_joint" type="fixed">
+      <origin xyz="2.49288239 2.77268799 0.49406776" rpy="0.0 0.0 ${-pi/2}" />
+      <parent link="kitchen2_root" />
+      <child link="cabinet9" />
+    </joint>
+
+    <link name="cabinet9">
+      <visual>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/unreal/SM_Kitchen_09_Base.dae" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="-0.291912 0.0 0.0" />
+        <geometry>
+          <box size="0.015884 0.55405 0.79779" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.291912 0.0 0.0" />
+        <geometry>
+          <box size="0.015884 0.55405 0.79779" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.26153 0.0" />
+        <geometry>
+          <box size="0.568134 0.007888 0.765818" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.217476 0.39091" />
+        <geometry>
+          <box size="0.568134 0.08 0.016" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.0 -0.391005 " />
+        <geometry>
+          <box size="0.568134 0.55405 0.016" />
+        </geometry>
+      </collision>
+    </link>
+
+    <joint name="cabinet9_drawer1_joint" type="prismatic">
+      <origin xyz="0.00175364 -0.05079589 0.33208443" rpy="0.0 0.0 0.0" />
+      <parent link="cabinet9" />
+      <child link="cabinet9_drawer1" />
+      <axis xyz="0 -1 0" />
+      <limit effort="1000.0" lower="0.0" upper="0.45" velocity="0.5" />
+    </joint>
+
+    <link name="cabinet9_drawer1">
+      <visual>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/unreal/SM_Kitchen_09_Drawer_01.dae" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="-0.270267 0.021031 -0.01336" />
+        <geometry>
+          <box size="0.01622 0.491014 0.085266" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.270267 0.021031 -0.01336" />
+        <geometry>
+          <box size="0.01622 0.491014 0.085266" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 -0.233977 0.0" />
+        <geometry>
+          <box size="0.596936 0.019 0.129986" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.260372 -0.01336" />
+        <geometry>
+          <box size="0.539608 0.016 0.085266" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.021031 -0.047595" />
+        <geometry>
+          <box size="0.539608 0.491014 0.015" />
+        </geometry>
+      </collision>
+    </link>
+
+    <joint name="cabinet9_drawer1_handle_joint" type="fixed">
+      <origin xyz="-0.00142363 -0.24980946 0.01676949" rpy="0.0 0.0 ${pi/2}" />
+      <parent link="cabinet9_drawer1" />
+      <child link="cabinet9_drawer1_handle" />
+    </joint>
+
+    <link name="cabinet9_drawer1_handle">
+      <visual>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/unreal/SM_Kitchen_Handle.dae" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="-0.003891 0.08 0.0" />
+        <geometry>
+          <box size="0.02 0.013 0.013" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="-0.003891 -0.08 0.0" />
+        <geometry>
+          <box size="0.02 0.013 0.013" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="-0.0203895 0.0 0.0" />
+        <geometry>
+          <box size="0.013 0.173032  0.013" />
+        </geometry>
+      </collision>
+    </link>
+
+    <joint name="cabinet9_drawer2_joint" type="prismatic">
+      <origin xyz="0.00065196 -0.05075302 0.13494465" rpy="0.0 0.0 0.0" />
+      <parent link="cabinet9" />
+      <child link="cabinet9_drawer2" />
+      <axis xyz="0 -1 0" />
+      <limit effort="1000.0" lower="0.0" upper="0.45" velocity="0.5" />
+    </joint>
+
+    <link name="cabinet9_drawer2">
+      <visual>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/unreal/SM_Kitchen_09_Drawer_02.dae" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="-0.270267 0.021031 0.041246" />
+        <geometry>
+          <box size="0.01622 0.491014 0.023298" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.270267 0.021031 0.041246" />
+        <geometry>
+          <box size="0.01622 0.491014 0.023298" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="-0.270267 0.021031 -0.078968" />
+        <geometry>
+          <box size="0.01622 0.491014 0.083496" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.270267 0.021031 -0.078968" />
+        <geometry>
+          <box size="0.01622 0.491014 0.083496" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 -0.233977 0.0" />
+        <geometry>
+          <box size="0.596936 0.019 0.26275" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.260372 -0.037996" />
+        <geometry>
+          <box size="0.539608 0.016 0.168982" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.021031 -0.113735" />
+        <geometry>
+          <box size="0.539608 0.491014 0.016" />
+        </geometry>
+      </collision>
+    </link>
+
+    <joint name="cabinet9_drawer2_handle_joint" type="fixed">
+      <origin xyz="-0.00106413 -0.2507106 0.08500843" rpy="0.0 0.0 ${pi/2}" />
+      <parent link="cabinet9_drawer2" />
+      <child link="cabinet9_drawer2_handle" />
+    </joint>
+
+    <link name="cabinet9_drawer2_handle">
+      <visual>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/unreal/SM_Kitchen_Handle.dae" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="-0.003891 0.08 0.0" />
+        <geometry>
+          <box size="0.02 0.013 0.013" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="-0.003891 -0.08 0.0" />
+        <geometry>
+          <box size="0.02 0.013 0.013" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="-0.0203895 0.0 0.0" />
+        <geometry>
+          <box size="0.013 0.173032  0.013" />
+        </geometry>
+      </collision>
+    </link>
+
+    <joint name="cabinet9_drawer3_joint" type="prismatic">
+      <origin xyz="0.00167063 -0.05045226 -0.19611332" rpy="0.0 0.0 0.0" />
+      <parent link="cabinet9" />
+      <child link="cabinet9_drawer3" />
+      <axis xyz="0 -1 0" />
+      <limit effort="1000.0" lower="0.0" upper="0.45" velocity="0.5" />
+    </joint>
+
+    <link name="cabinet9_drawer3">
+      <visual>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/unreal/SM_Kitchen_09_Drawer_03.dae" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="-0.270267 0.021031 -0.00926" />
+        <geometry>
+          <box size="0.01622 0.491014 0.023276" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.270267 0.021031 -0.00926" />
+        <geometry>
+          <box size="0.01622 0.491014 0.023276" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="-0.270267 0.021031 -0.129424" />
+        <geometry>
+          <box size="0.01622 0.491014 0.083422" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.270267 0.021031 -0.129424" />
+        <geometry>
+          <box size="0.01622 0.491014 0.083422" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 -0.233977 0.0" />
+        <geometry>
+          <box size="0.596936 0.019 0.395734" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.260372 -0.088821" />
+        <geometry>
+          <box size="0.539608 0.016 0.16821" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.021031 -0.164582" />
+        <geometry>
+          <box size="0.539608 0.491014 0.016" />
+        </geometry>
+      </collision>
+    </link>
+
+    <joint name="cabinet9_drawer3_handle_joint" type="fixed">
+      <origin xyz="-0.00102875 -0.24888186 0.15027037" rpy="0.0 0.0 ${pi/2}" />
+      <parent link="cabinet9_drawer3" />
+      <child link="cabinet9_drawer3_handle" />
+    </joint>
+
+    <link name="cabinet9_drawer3_handle">
+      <visual>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/unreal/SM_Kitchen_Handle.dae" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="-0.003891 0.08 0.0" />
+        <geometry>
+          <box size="0.02 0.013 0.013" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="-0.003891 -0.08 0.0" />
+        <geometry>
+          <box size="0.02 0.013 0.013" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="-0.0203895 0.0 0.0" />
+        <geometry>
+          <box size="0.013 0.173032  0.013" />
+        </geometry>
+      </collision>
+    </link>
+
+    <!-- Cabinet10 -->
+    <joint name="cabinet10_joint" type="fixed">
+      <origin xyz="2.49299103 2.2719194 0.5011195" rpy="0.0 0.0 ${-pi/2}" />
+      <parent link="kitchen2_root" />
+      <child link="cabinet10" />
+    </joint>
+
+    <link name="cabinet10">
+      <visual>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/unreal/SM_Kitchen_10_Base.dae" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="-0.191779 0.0 0.0" />
+        <geometry>
+          <box size="0.016 0.55452 0.798012" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.191779 0.0 0.0" />
+        <geometry>
+          <box size="0.016 0.55452 0.798012" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.0 -0.391006" />
+        <geometry>
+          <box size="0.369666 0.55452 0.016" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.217476 0.390909" />
+        <geometry>
+          <box size="0.369666 0.08 0.016" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.261473 0.0" />
+        <geometry>
+          <box size="0.369666 0.008 0.76582" />
+        </geometry>
+      </collision>
+    </link>
+    
+    <joint name="cabinet10_drawer1_joint" type="prismatic">
+      <origin xyz="-0.00062459 -0.05095718 0.32565243" rpy="0.0 0.0 0.0" />
+      <parent link="cabinet10" />
+      <child link="cabinet10_drawer1" />
+      <axis xyz="0 -1 0" />
+      <limit effort="1000.0" lower="0.0" upper="0.45" velocity="0.5" />
+    </joint>
+
+    <link name="cabinet10_drawer1">
+      <visual>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/unreal/SM_Kitchen_10_Drawer_01.dae" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="-0.170562 0.021031 -0.01336" />
+        <geometry>
+          <box size="0.016656 0.491014 0.085266" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.170562 0.021031 -0.01336" />
+        <geometry>
+          <box size="0.016656 0.491014 0.085266" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 -0.233977 0.0" />
+        <geometry>
+          <box size="0.397734 0.019 0.129986" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.260372 -0.01336" />
+        <geometry>
+          <box size="0.357644 0.016 0.085266" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.021031 -0.047595" />
+        <geometry>
+          <box size="0.357644 0.491014 0.015" />
+        </geometry>
+      </collision>
+    </link>
+
+    <joint name="cabinet10_drawer1_handle_joint" type="fixed">
+      <origin xyz="0.00124599 -0.24662336 0.0172039" rpy="0.0 0.0 ${pi/2}" />
+      <parent link="cabinet10_drawer1" />
+      <child link="cabinet10_drawer1_handle" />
+    </joint>
+
+    <link name="cabinet10_drawer1_handle">
+      <visual>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/unreal/SM_Kitchen_Handle.dae" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="-0.003891 0.08 0.0" />
+        <geometry>
+          <box size="0.02 0.013 0.013" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="-0.003891 -0.08 0.0" />
+        <geometry>
+          <box size="0.02 0.013 0.013" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="-0.0203895 0.0 0.0" />
+        <geometry>
+          <box size="0.013 0.173032  0.013" />
+        </geometry>
+      </collision>
+    </link>
+
+    <joint name="cabinet10_drawer2_joint" type="prismatic">
+      <origin xyz="0.00006861 -0.0507138 0.12805202" rpy="0.0 0.0 0.0" />
+      <parent link="cabinet10" />
+      <child link="cabinet10_drawer2" />
+      <axis xyz="0 -1 0" />
+      <limit effort="1000.0" lower="0.0" upper="0.45" velocity="0.5" />
+    </joint>
+
+    <link name="cabinet10_drawer2">
+      <visual>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/unreal/SM_Kitchen_10_Drawer_02.dae" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="-0.170562 0.021031 0.041246" />
+        <geometry>
+          <box size="0.016656 0.491014 0.023298" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.170562 0.021031 0.041246" />
+        <geometry>
+          <box size="0.016656 0.491014 0.023298" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="-0.170562 0.021031 -0.078968" />
+        <geometry>
+          <box size="0.016656 0.491014 0.083496" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.170562 0.021031 -0.078968" />
+        <geometry>
+          <box size="0.016656 0.491014 0.083496" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 -0.233977 0.0" />
+        <geometry>
+          <box size="0.397734 0.019 0.26275" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.260372 -0.037996" />
+        <geometry>
+          <box size="0.357644 0.016 0.168982" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.021031 -0.113735" />
+        <geometry>
+          <box size="0.357644 0.491014 0.016" />
+        </geometry>
+      </collision>
+    </link>
+
+    <joint name="cabinet10_drawer2_handle_joint" type="fixed">
+      <origin xyz="0.00397854 -0.24686237 0.08541794" rpy="0.0 0.0 ${pi/2}" />
+      <parent link="cabinet10_drawer2" />
+      <child link="cabinet10_drawer2_handle" />
+    </joint>
+
+    <link name="cabinet10_drawer2_handle">
+      <visual>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/unreal/SM_Kitchen_Handle.dae" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="-0.003891 0.08 0.0" />
+        <geometry>
+          <box size="0.02 0.013 0.013" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="-0.003891 -0.08 0.0" />
+        <geometry>
+          <box size="0.02 0.013 0.013" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="-0.0203895 0.0 0.0" />
+        <geometry>
+          <box size="0.013 0.173032  0.013" />
+        </geometry>
+      </collision>
+    </link>
+
+    <joint name="cabinet10_drawer3_joint" type="prismatic">
+      <origin xyz="0.00036921 -0.05040313 -0.20396725" rpy="0.0 0.0 0.0" />
+      <parent link="cabinet10" />
+      <child link="cabinet10_drawer3" />
+      <axis xyz="0 -1 0" />
+      <limit effort="1000.0" lower="0.0" upper="0.45" velocity="0.5" />
+    </joint>
+
+    <link name="cabinet10_drawer3">
+      <visual>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/unreal/SM_Kitchen_10_Drawer_03.dae" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="-0.170562 0.021031 -0.00926" />
+        <geometry>
+          <box size="0.016656 0.491014 0.023276" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.170562 0.021031 -0.00926" />
+        <geometry>
+          <box size="0.016656 0.491014 0.023276" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="-0.170562 0.021031 -0.129424" />
+        <geometry>
+          <box size="0.016656 0.491014 0.083422" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.170562 0.021031 -0.129424" />
+        <geometry>
+          <box size="0.016656 0.491014 0.083422" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 -0.233977 0.0" />
+        <geometry>
+          <box size="0.397734 0.019 0.395734" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.260372 -0.088821" />
+        <geometry>
+          <box size="0.357644 0.016 0.16821" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.021031 -0.164582" />
+        <geometry>
+          <box size="0.357644 0.491014 0.016" />
+        </geometry>
+      </collision>
+    </link>
+
+    <joint name="cabinet10_drawer3_handle_joint" type="fixed">
+      <origin xyz="0.00402777 -0.24712164 0.15116583" rpy="0.0 0.0 ${pi/2}" />
+      <parent link="cabinet10_drawer3" />
+      <child link="cabinet10_drawer3_handle" />
+    </joint>
+
+    <link name="cabinet10_drawer3_handle">
+      <visual>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/unreal/SM_Kitchen_Handle.dae" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="-0.003891 0.08 0.0" />
+        <geometry>
+          <box size="0.02 0.013 0.013" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="-0.003891 -0.08 0.0" />
+        <geometry>
+          <box size="0.02 0.013 0.013" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="-0.0203895 0.0 0.0" />
+        <geometry>
+          <box size="0.013 0.173032  0.013" />
+        </geometry>
+      </collision>
+    </link>
+
+    <!-- Cabinet11 -->
+    <joint name="cabinet11_joint" type="fixed">
+      <origin xyz="2.49293671 1.62155807 0.50984447" rpy="0.0 0.0 ${-pi/2}" />
+      <parent link="kitchen2_root" />
+      <child link="cabinet11" />
+    </joint>
+
+    <link name="cabinet11">
+      <visual>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/unreal/SM_Kitchen_11_Base.dae" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="-0.441952 0.0 0.0" />
+        <geometry>
+          <box size="0.016 0.55452 0.798012" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.441952 0.0 0.0" />
+        <geometry>
+          <box size="0.016 0.55452 0.798012" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.0 -0.391006" />
+        <geometry>
+          <box size="0.86788 0.55452 0.016" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.217476 0.390909" />
+        <geometry>
+          <box size="0.86788 0.08 0.016" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.261473 0.0" />
+        <geometry>
+          <box size="0.86788 0.008 0.76582" />
+        </geometry>
+      </collision>
+    </link>
+
+    <joint name="cabinet11_drawer1_joint" type="prismatic">
+      <origin xyz="-0.00063939 -0.05082244 0.31816875" rpy="0.0 0.0 0.0" />
+      <parent link="cabinet11" />
+      <child link="cabinet11_drawer1" />
+      <axis xyz="0 -1 0" />
+      <limit effort="1000.0" lower="0.0" upper="0.45" velocity="0.5" />
+    </joint>
+
+    <link name="cabinet11_drawer1">
+      <visual>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/unreal/SM_Kitchen_11_Drawer_01.dae" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="-0.418233 0.021031 -0.01336" />
+        <geometry>
+          <box size="0.016656 0.491014 0.085266" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.418233 0.021031 -0.01336" />
+        <geometry>
+          <box size="0.016656 0.491014 0.085266" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 -0.233977 0.0" />
+        <geometry>
+          <box size="0.896682 0.019 0.129986" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.260372 -0.01336" />
+        <geometry>
+          <box size="0.839576 0.016 0.085266" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.021031 -0.047595" />
+        <geometry>
+          <box size="0.839576 0.491014 0.015" />
+        </geometry>
+      </collision>
+    </link>
+
+    <joint name="cabinet11_drawer1_handle_joint" type="fixed">
+      <origin xyz="0.00124599 -0.24662336 0.0172039" rpy="0.0 0.0 ${pi/2}" />
+      <parent link="cabinet11_drawer1" />
+      <child link="cabinet11_drawer1_handle" />
+    </joint>
+
+    <link name="cabinet11_drawer1_handle">
+      <visual>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/unreal/SM_Kitchen_Handle.dae" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="-0.003891 0.08 0.0" />
+        <geometry>
+          <box size="0.02 0.013 0.013" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="-0.003891 -0.08 0.0" />
+        <geometry>
+          <box size="0.02 0.013 0.013" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="-0.0203895 0.0 0.0" />
+        <geometry>
+          <box size="0.013 0.173032  0.013" />
+        </geometry>
+      </collision>
+    </link>
+
+    <joint name="cabinet11_drawer2_joint" type="prismatic">
+      <origin xyz="-0.0004598 -0.05030883 0.11917843" rpy="0.0 0.0 0.0" />
+      <parent link="cabinet11" />
+      <child link="cabinet11_drawer2" />
+      <axis xyz="0 -1 0" />
+      <limit effort="1000.0" lower="0.0" upper="0.45" velocity="0.5" />
+    </joint>
+
+    <link name="cabinet11_drawer2">
+      <visual>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/unreal/SM_Kitchen_11_Drawer_02.dae" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="-0.418233 0.021031 0.041246" />
+        <geometry>
+          <box size="0.016656 0.491014 0.023298" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.418233 0.021031 0.041246" />
+        <geometry>
+          <box size="0.016656 0.491014 0.023298" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="-0.418233 0.021031 -0.078968" />
+        <geometry>
+          <box size="0.016656 0.491014 0.083496" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.418233 0.021031 -0.078968" />
+        <geometry>
+          <box size="0.016656 0.491014 0.083496" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 -0.233977 0.0" />
+        <geometry>
+          <box size="0.896682 0.019 0.26275" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.260372 -0.037996" />
+        <geometry>
+          <box size="0.839576 0.016 0.168982" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.021031 -0.113735" />
+        <geometry>
+          <box size="0.839576 0.491014 0.016" />
+        </geometry>
+      </collision>
+    </link>
+
+    <joint name="cabinet11_drawer2_handle_joint" type="fixed">
+      <origin xyz="0.00397854 -0.24686237 0.08541794" rpy="0.0 0.0 ${pi/2}" />
+      <parent link="cabinet11_drawer2" />
+      <child link="cabinet11_drawer2_handle" />
+    </joint>
+
+    <link name="cabinet11_drawer2_handle">
+      <visual>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/unreal/SM_Kitchen_Handle.dae" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="-0.003891 0.08 0.0" />
+        <geometry>
+          <box size="0.02 0.013 0.013" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="-0.003891 -0.08 0.0" />
+        <geometry>
+          <box size="0.02 0.013 0.013" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="-0.0203895 0.0 0.0" />
+        <geometry>
+          <box size="0.013 0.173032  0.013" />
+        </geometry>
+      </collision>
+    </link>
+
+    <joint name="cabinet11_drawer3_joint" type="prismatic">
+      <origin xyz="-0.00146352 -0.05077515 -0.21330786" rpy="0.0 0.0 0.0" />
+      <parent link="cabinet11" />
+      <child link="cabinet11_drawer3" />
+      <axis xyz="0 -1 0" />
+      <limit effort="1000.0" lower="0.0" upper="0.45" velocity="0.5" />
+    </joint>
+
+    <link name="cabinet11_drawer3">
+      <visual>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/unreal/SM_Kitchen_11_Drawer_03.dae" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="-0.418233 0.021031 -0.00926" />
+        <geometry>
+          <box size="0.016656 0.491014 0.023276" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.418233 0.021031 -0.00926" />
+        <geometry>
+          <box size="0.016656 0.491014 0.023276" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="-0.418233 0.021031 -0.129424" />
+        <geometry>
+          <box size="0.016656 0.491014 0.083422" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.418233 0.021031 -0.129424" />
+        <geometry>
+          <box size="0.016656 0.491014 0.083422" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 -0.233977 0.0" />
+        <geometry>
+          <box size="0.896682 0.019 0.395734" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.260372 -0.088821" />
+        <geometry>
+          <box size="0.839576 0.016 0.16821" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.021031 -0.164582" />
+        <geometry>
+          <box size="0.839576 0.491014 0.016" />
+        </geometry>
+      </collision>
+    </link>
+
+    <joint name="cabinet11_drawer3_handle_joint" type="fixed">
+      <origin xyz="0.00402777 -0.24712164 0.15116583" rpy="0.0 0.0 ${pi/2}" />
+      <parent link="cabinet11_drawer3" />
+      <child link="cabinet11_drawer3_handle" />
+    </joint>
+
+    <link name="cabinet11_drawer3_handle">
+      <visual>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/unreal/SM_Kitchen_Handle.dae" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="-0.003891 0.08 0.0" />
+        <geometry>
+          <box size="0.02 0.013 0.013" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="-0.003891 -0.08 0.0" />
+        <geometry>
+          <box size="0.02 0.013 0.013" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="-0.0203895 0.0 0.0" />
+        <geometry>
+          <box size="0.013 0.173032  0.013" />
+        </geometry>
+      </collision>
+    </link>
+
+    <!-- Kitchen2 base board, island cover -->
+    <joint name="kitchen2_base_board_joint" type="fixed">
+      <origin xyz="2.21094345 2.40967743 0.04963645" rpy="0.0 0.0 ${-pi/2}" />
+      <parent link="kitchen2_root" />
+      <child link="kitchen2_base_board" />
+    </joint>
+
+    <link name="kitchen2_base_board">
+      <visual>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/unreal/SM_Kitchen_Base_Board_02.dae" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="-0.3023 0.0 0.0" />
+        <geometry>
+          <box size="3.11248 0.02 0.1" />
+        </geometry>
+      </collision>
+    </link>
+
+    <joint name="island_cover1_joint" type="fixed">
+      <origin xyz="2.86824768 2.71960388 0.4503175" rpy="0.0 0.0 ${-pi/2}" />
+      <parent link="kitchen2_root" />
+      <child link="island_cover1" />
+    </joint>
+
+    <link name="island_cover1">
+      <visual>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/unreal/SM_Kitchen_Island_Cover_01.dae" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" />
+        <geometry>
+          <box size="3.13566 0.01925 0.90361" />
+        </geometry>
+      </collision>
+    </link>
+
+    <joint name="island_cover3_joint" type="fixed">
+      <origin xyz="2.53831085 4.27729736 0.45175999" rpy="0.0 0.0 ${pi/2}" />
+      <parent link="kitchen2_root" />
+      <child link="island_cover3" />
+    </joint>
+
+    <link name="island_cover3">
+      <visual>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/unreal/SM_Kitchen_Island_Cover_03.dae" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" />
+        <geometry>
+          <box size="0.02 0.678888 0.90361" />
+        </geometry>
+      </collision>
+    </link>
+
+    <joint name="island_cover5_joint" type="fixed">
+      <origin xyz="2.53749664 1.16088593 0.44601364" rpy="0.0 0.0 ${pi/2}" />
+      <parent link="kitchen2_root" />
+      <child link="island_cover5" />
+    </joint>
+
+    <link name="island_cover5">
+      <visual>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/unreal/SM_Kitchen_Island_Cover_03.dae" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" />
+        <geometry>
+          <box size="0.02 0.678888 0.90361" />
         </geometry>
       </collision>
     </link>
