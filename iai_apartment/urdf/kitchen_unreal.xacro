@@ -82,7 +82,7 @@
     </link>
 
     <joint name="cabinet1_door_joint" type="revolute">
-      <origin xyz="-0.274 -0.280 0.677" rpy="0.0 0.0 0.0" />
+      <origin xyz="-0.280 -0.280 0.677" rpy="0.0 0.0 0.0" />
       <parent link="cabinet1" />
       <child link="cabinet1_door" />
       <axis xyz="0 0 -1" />
@@ -96,7 +96,7 @@
         </geometry>
       </visual>
       <collision>
-        <origin xyz="0.285091 -0.00064702 0.0" />
+        <origin xyz="0.285091 0.0 0.0" />
         <geometry>
           <box size="0.596936 0.019 0.86681" />
         </geometry>
@@ -439,7 +439,7 @@
     </link>
 
     <joint name="cabinet2_door_joint" type="revolute">
-      <origin xyz="-0.17998091 -0.29852444 0.00105865" rpy="0.0 0.0 0.0" />
+      <origin xyz="-0.18657 -0.28432144 0.00105865" rpy="0.0 0.0 0.0" />
       <parent link="cabinet2" />
       <child link="cabinet2_door" />
       <axis xyz="0 0 -1" />
@@ -453,9 +453,9 @@
         </geometry>
       </visual>
       <collision>
-        <origin xyz="0.180483 0.013597 0.0" />
+        <origin xyz="0.185074 -0.000653 0.0" />
         <geometry>
-          <box size="0.395846 0.018678 2.12276" />
+          <box size="0.396958 0.019 2.12276" />
         </geometry>
       </collision>
     </link>
@@ -535,13 +535,13 @@
       <collision>
         <origin xyz="-0.170578 -0.003984 0.0" />
         <geometry>
-          <box size="0.016222 0.494978 0.10099" />
+          <box size="0.016 0.494978 0.10099" />
         </geometry>
       </collision>
       <collision>
         <origin xyz="0.170578 -0.003984 0.0" />
         <geometry>
-          <box size="0.016222 0.494978 0.10099" />
+          <box size="0.016 0.494978 0.10099" />
         </geometry>
       </collision>
       <collision>
@@ -599,25 +599,25 @@
       <collision>
         <origin xyz="-0.170578 -0.003984 0.075342" />
         <geometry>
-          <box size="0.016222 0.494978 0.023298" />
+          <box size="0.016 0.494978 0.023298" />
         </geometry>
       </collision>
       <collision>
         <origin xyz="0.170578 -0.003984 0.075342" />
         <geometry>
-          <box size="0.016222 0.494978 0.023298" />
+          <box size="0.016 0.494978 0.023298" />
         </geometry>
       </collision>
       <collision>
         <origin xyz="-0.170578 -0.003984 -0.043743" />
         <geometry>
-          <box size="0.016222 0.494978 0.087106" />
+          <box size="0.016 0.494978 0.087106" />
         </geometry>
       </collision>
       <collision>
         <origin xyz="0.170578 -0.003984 -0.043743" />
         <geometry>
-          <box size="0.016222 0.494978 0.087106" />
+          <box size="0.016 0.494978 0.087106" />
         </geometry>
       </collision>
       <collision>
@@ -675,25 +675,25 @@
       <collision>
         <origin xyz="-0.170578 -0.003984 0.075342" />
         <geometry>
-          <box size="0.016222 0.494978 0.023298" />
+          <box size="0.016 0.494978 0.023298" />
         </geometry>
       </collision>
       <collision>
         <origin xyz="0.170578 -0.003984 0.075342" />
         <geometry>
-          <box size="0.016222 0.494978 0.023298" />
+          <box size="0.016 0.494978 0.023298" />
         </geometry>
       </collision>
       <collision>
         <origin xyz="-0.170578 -0.003984 -0.043743" />
         <geometry>
-          <box size="0.016222 0.494978 0.087106" />
+          <box size="0.016 0.494978 0.087106" />
         </geometry>
       </collision>
       <collision>
         <origin xyz="0.170578 -0.003984 -0.043743" />
         <geometry>
-          <box size="0.016222 0.494978 0.087106" />
+          <box size="0.016 0.494978 0.087106" />
         </geometry>
       </collision>
       <collision>
@@ -751,25 +751,25 @@
       <collision>
         <origin xyz="-0.170578 -0.003984 0.075342" />
         <geometry>
-          <box size="0.016222 0.494978 0.023298" />
+          <box size="0.016 0.494978 0.023298" />
         </geometry>
       </collision>
       <collision>
         <origin xyz="0.170578 -0.003984 0.075342" />
         <geometry>
-          <box size="0.016222 0.494978 0.023298" />
+          <box size="0.016 0.494978 0.023298" />
         </geometry>
       </collision>
       <collision>
         <origin xyz="-0.170578 -0.003984 -0.043743" />
         <geometry>
-          <box size="0.016222 0.494978 0.087106" />
+          <box size="0.016 0.494978 0.087106" />
         </geometry>
       </collision>
       <collision>
         <origin xyz="0.170578 -0.003984 -0.043743" />
         <geometry>
-          <box size="0.016222 0.494978 0.087106" />
+          <box size="0.016 0.494978 0.087106" />
         </geometry>
       </collision>
       <collision>
@@ -827,25 +827,25 @@
       <collision>
         <origin xyz="-0.170578 -0.003984 0.075342" />
         <geometry>
-          <box size="0.016222 0.494978 0.023298" />
+          <box size="0.016 0.494978 0.023298" />
         </geometry>
       </collision>
       <collision>
         <origin xyz="0.170578 -0.003984 0.075342" />
         <geometry>
-          <box size="0.016222 0.494978 0.023298" />
+          <box size="0.016 0.494978 0.023298" />
         </geometry>
       </collision>
       <collision>
         <origin xyz="-0.170578 -0.003984 -0.043743" />
         <geometry>
-          <box size="0.016222 0.494978 0.087106" />
+          <box size="0.016 0.494978 0.087106" />
         </geometry>
       </collision>
       <collision>
         <origin xyz="0.170578 -0.003984 -0.043743" />
         <geometry>
-          <box size="0.016222 0.494978 0.087106" />
+          <box size="0.016 0.494978 0.087106" />
         </geometry>
       </collision>
       <collision>
@@ -903,25 +903,25 @@
       <collision>
         <origin xyz="-0.170578 -0.003984 0.075342" />
         <geometry>
-          <box size="0.016222 0.494978 0.023298" />
+          <box size="0.016 0.494978 0.023298" />
         </geometry>
       </collision>
       <collision>
         <origin xyz="0.170578 -0.003984 0.075342" />
         <geometry>
-          <box size="0.016222 0.494978 0.023298" />
+          <box size="0.016 0.494978 0.023298" />
         </geometry>
       </collision>
       <collision>
         <origin xyz="-0.170578 -0.003984 -0.043743" />
         <geometry>
-          <box size="0.016222 0.494978 0.087106" />
+          <box size="0.016 0.494978 0.087106" />
         </geometry>
       </collision>
       <collision>
         <origin xyz="0.170578 -0.003984 -0.043743" />
         <geometry>
-          <box size="0.016222 0.494978 0.087106" />
+          <box size="0.016 0.494978 0.087106" />
         </geometry>
       </collision>
       <collision>
@@ -1444,13 +1444,13 @@
       <collision>
         <origin xyz="-0.196311 0.0 0.0" />
         <geometry>
-          <box size="0.016186 0.332816 0.151834" />
+          <box size="0.016 0.332816 0.151834" />
         </geometry>
       </collision>
       <collision>
         <origin xyz="0.196311 0.0 0.0" />
         <geometry>
-          <box size="0.016186 0.332816 0.151834" />
+          <box size="0.016 0.332816 0.151834" />
         </geometry>
       </collision>
       <collision>
@@ -1758,13 +1758,13 @@
       <collision>
         <origin xyz="-0.270267 0.021031 -0.01336" />
         <geometry>
-          <box size="0.01622 0.491014 0.085266" />
+          <box size="0.016 0.491014 0.085266" />
         </geometry>
       </collision>
       <collision>
         <origin xyz="0.270267 0.021031 -0.01336" />
         <geometry>
-          <box size="0.01622 0.491014 0.085266" />
+          <box size="0.016 0.491014 0.085266" />
         </geometry>
       </collision>
       <collision>
@@ -1836,25 +1836,25 @@
       <collision>
         <origin xyz="-0.270267 0.021031 0.041246" />
         <geometry>
-          <box size="0.01622 0.491014 0.023298" />
+          <box size="0.016 0.491014 0.023298" />
         </geometry>
       </collision>
       <collision>
         <origin xyz="0.270267 0.021031 0.041246" />
         <geometry>
-          <box size="0.01622 0.491014 0.023298" />
+          <box size="0.016 0.491014 0.023298" />
         </geometry>
       </collision>
       <collision>
         <origin xyz="-0.270267 0.021031 -0.078968" />
         <geometry>
-          <box size="0.01622 0.491014 0.083496" />
+          <box size="0.016 0.491014 0.083496" />
         </geometry>
       </collision>
       <collision>
         <origin xyz="0.270267 0.021031 -0.078968" />
         <geometry>
-          <box size="0.01622 0.491014 0.083496" />
+          <box size="0.016 0.491014 0.083496" />
         </geometry>
       </collision>
       <collision>
@@ -1926,25 +1926,25 @@
       <collision>
         <origin xyz="-0.270267 0.021031 -0.00926" />
         <geometry>
-          <box size="0.01622 0.491014 0.023276" />
+          <box size="0.016 0.491014 0.023276" />
         </geometry>
       </collision>
       <collision>
         <origin xyz="0.270267 0.021031 -0.00926" />
         <geometry>
-          <box size="0.01622 0.491014 0.023276" />
+          <box size="0.016 0.491014 0.023276" />
         </geometry>
       </collision>
       <collision>
         <origin xyz="-0.270267 0.021031 -0.129424" />
         <geometry>
-          <box size="0.01622 0.491014 0.083422" />
+          <box size="0.016 0.491014 0.083422" />
         </geometry>
       </collision>
       <collision>
         <origin xyz="0.270267 0.021031 -0.129424" />
         <geometry>
-          <box size="0.01622 0.491014 0.083422" />
+          <box size="0.016 0.491014 0.083422" />
         </geometry>
       </collision>
       <collision>
@@ -2061,13 +2061,13 @@
       <collision>
         <origin xyz="-0.170562 0.021031 -0.01336" />
         <geometry>
-          <box size="0.016656 0.491014 0.085266" />
+          <box size="0.016 0.491014 0.085266" />
         </geometry>
       </collision>
       <collision>
         <origin xyz="0.170562 0.021031 -0.01336" />
         <geometry>
-          <box size="0.016656 0.491014 0.085266" />
+          <box size="0.016 0.491014 0.085266" />
         </geometry>
       </collision>
       <collision>
@@ -2139,25 +2139,25 @@
       <collision>
         <origin xyz="-0.170562 0.021031 0.041246" />
         <geometry>
-          <box size="0.016656 0.491014 0.023298" />
+          <box size="0.016 0.491014 0.023298" />
         </geometry>
       </collision>
       <collision>
         <origin xyz="0.170562 0.021031 0.041246" />
         <geometry>
-          <box size="0.016656 0.491014 0.023298" />
+          <box size="0.016 0.491014 0.023298" />
         </geometry>
       </collision>
       <collision>
         <origin xyz="-0.170562 0.021031 -0.078968" />
         <geometry>
-          <box size="0.016656 0.491014 0.083496" />
+          <box size="0.016 0.491014 0.083496" />
         </geometry>
       </collision>
       <collision>
         <origin xyz="0.170562 0.021031 -0.078968" />
         <geometry>
-          <box size="0.016656 0.491014 0.083496" />
+          <box size="0.016 0.491014 0.083496" />
         </geometry>
       </collision>
       <collision>
@@ -2229,25 +2229,25 @@
       <collision>
         <origin xyz="-0.170562 0.021031 -0.00926" />
         <geometry>
-          <box size="0.016656 0.491014 0.023276" />
+          <box size="0.016 0.491014 0.023276" />
         </geometry>
       </collision>
       <collision>
         <origin xyz="0.170562 0.021031 -0.00926" />
         <geometry>
-          <box size="0.016656 0.491014 0.023276" />
+          <box size="0.016 0.491014 0.023276" />
         </geometry>
       </collision>
       <collision>
         <origin xyz="-0.170562 0.021031 -0.129424" />
         <geometry>
-          <box size="0.016656 0.491014 0.083422" />
+          <box size="0.016 0.491014 0.083422" />
         </geometry>
       </collision>
       <collision>
         <origin xyz="0.170562 0.021031 -0.129424" />
         <geometry>
-          <box size="0.016656 0.491014 0.083422" />
+          <box size="0.016 0.491014 0.083422" />
         </geometry>
       </collision>
       <collision>
@@ -2518,7 +2518,13 @@
       <limit effort="1000.0" lower="${-pi/2}" upper="${pi/2}" velocity="${pi}" />
     </joint>
 
-    <link name="counter_sink_tap_switch" />
+    <link name="counter_sink_tap_switch" >
+      <collision>
+        <geometry>
+          <box size="0.001 0.001 0.001" />
+        </geometry>
+      </collision>
+    </link>
 
     <joint name="counter_sink_switch_joint" type="revolute">
       <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
@@ -2562,15 +2568,27 @@
         </geometry>
       </visual>
       <collision>
-        <origin xyz="-0.291193 0.183466 0.25785" />
+        <origin xyz="-0.291193 0.244142 0.25785" />
         <geometry>
-          <box size="0.015448 0.516974 0.841796" />
+          <box size="0.015448 0.395758 0.841796" />
         </geometry>
       </collision>
       <collision>
-        <origin xyz="0.291193 0.183466 0.25785" />
+        <origin xyz="0.291193 0.244142 0.25785" />
         <geometry>
-          <box size="0.015448 0.516974 0.841796" />
+          <box size="0.015448 0.395758 0.841796" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="-0.291193 -0.018498 0.328806" />
+        <geometry>
+          <box size="0.015448 0.129522 0.703882" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.291193 -0.018498 0.328806" />
+        <geometry>
+          <box size="0.015448 0.129522 0.703882" />
         </geometry>
       </collision>
       <collision>
@@ -2816,25 +2834,25 @@
         <geometry>
           <box size="0.015 0.498056 0.087218" />
         </geometry>
-      </collision> 
+      </collision>
       <collision>
         <origin xyz="-0.268047 0.025012 -0.33085" />
         <geometry>
           <box size="0.015 0.498056 0.087218" />
         </geometry>
-      </collision> 
+      </collision>
       <collision>
         <origin xyz="0.246033 0.025012 -0.04" />
         <geometry>
           <box size="0.062024 0.498056 0.016" />
         </geometry>
-      </collision> 
+      </collision>
       <collision>
         <origin xyz="-0.246033 0.025012 -0.04" />
         <geometry>
           <box size="0.062024 0.498056 0.016" />
         </geometry>
-      </collision> 
+      </collision>
       <collision>
         <origin xyz="0.0 -0.213959 -0.04" />
         <geometry>
@@ -3067,13 +3085,13 @@
       <collision>
         <origin xyz="-0.270267 0.021031 -0.01336" />
         <geometry>
-          <box size="0.01622 0.491014 0.085266" />
+          <box size="0.016 0.491014 0.085266" />
         </geometry>
       </collision>
       <collision>
         <origin xyz="0.270267 0.021031 -0.01336" />
         <geometry>
-          <box size="0.01622 0.491014 0.085266" />
+          <box size="0.016 0.491014 0.085266" />
         </geometry>
       </collision>
       <collision>
@@ -3145,25 +3163,25 @@
       <collision>
         <origin xyz="-0.270267 0.021031 0.041246" />
         <geometry>
-          <box size="0.01622 0.491014 0.023298" />
+          <box size="0.016 0.491014 0.023298" />
         </geometry>
       </collision>
       <collision>
         <origin xyz="0.270267 0.021031 0.041246" />
         <geometry>
-          <box size="0.01622 0.491014 0.023298" />
+          <box size="0.016 0.491014 0.023298" />
         </geometry>
       </collision>
       <collision>
         <origin xyz="-0.270267 0.021031 -0.078968" />
         <geometry>
-          <box size="0.01622 0.491014 0.083496" />
+          <box size="0.016 0.491014 0.083496" />
         </geometry>
       </collision>
       <collision>
         <origin xyz="0.270267 0.021031 -0.078968" />
         <geometry>
-          <box size="0.01622 0.491014 0.083496" />
+          <box size="0.016 0.491014 0.083496" />
         </geometry>
       </collision>
       <collision>
@@ -3235,25 +3253,25 @@
       <collision>
         <origin xyz="-0.270267 0.021031 -0.00926" />
         <geometry>
-          <box size="0.01622 0.491014 0.023276" />
+          <box size="0.016 0.491014 0.023276" />
         </geometry>
       </collision>
       <collision>
         <origin xyz="0.270267 0.021031 -0.00926" />
         <geometry>
-          <box size="0.01622 0.491014 0.023276" />
+          <box size="0.016 0.491014 0.023276" />
         </geometry>
       </collision>
       <collision>
         <origin xyz="-0.270267 0.021031 -0.129424" />
         <geometry>
-          <box size="0.01622 0.491014 0.083422" />
+          <box size="0.016 0.491014 0.083422" />
         </geometry>
       </collision>
       <collision>
         <origin xyz="0.270267 0.021031 -0.129424" />
         <geometry>
-          <box size="0.01622 0.491014 0.083422" />
+          <box size="0.016 0.491014 0.083422" />
         </geometry>
       </collision>
       <collision>
@@ -3352,7 +3370,7 @@
         </geometry>
       </collision>
     </link>
-    
+
     <joint name="cabinet10_drawer1_joint" type="prismatic">
       <origin xyz="-0.00062459 -0.05095718 0.32565243" rpy="0.0 0.0 0.0" />
       <parent link="cabinet10" />
@@ -3370,13 +3388,13 @@
       <collision>
         <origin xyz="-0.170562 0.021031 -0.01336" />
         <geometry>
-          <box size="0.016656 0.491014 0.085266" />
+          <box size="0.016 0.491014 0.085266" />
         </geometry>
       </collision>
       <collision>
         <origin xyz="0.170562 0.021031 -0.01336" />
         <geometry>
-          <box size="0.016656 0.491014 0.085266" />
+          <box size="0.016 0.491014 0.085266" />
         </geometry>
       </collision>
       <collision>
@@ -3448,25 +3466,25 @@
       <collision>
         <origin xyz="-0.170562 0.021031 0.041246" />
         <geometry>
-          <box size="0.016656 0.491014 0.023298" />
+          <box size="0.016 0.491014 0.023298" />
         </geometry>
       </collision>
       <collision>
         <origin xyz="0.170562 0.021031 0.041246" />
         <geometry>
-          <box size="0.016656 0.491014 0.023298" />
+          <box size="0.016 0.491014 0.023298" />
         </geometry>
       </collision>
       <collision>
         <origin xyz="-0.170562 0.021031 -0.078968" />
         <geometry>
-          <box size="0.016656 0.491014 0.083496" />
+          <box size="0.016 0.491014 0.083496" />
         </geometry>
       </collision>
       <collision>
         <origin xyz="0.170562 0.021031 -0.078968" />
         <geometry>
-          <box size="0.016656 0.491014 0.083496" />
+          <box size="0.016 0.491014 0.083496" />
         </geometry>
       </collision>
       <collision>
@@ -3538,25 +3556,25 @@
       <collision>
         <origin xyz="-0.170562 0.021031 -0.00926" />
         <geometry>
-          <box size="0.016656 0.491014 0.023276" />
+          <box size="0.016 0.491014 0.023276" />
         </geometry>
       </collision>
       <collision>
         <origin xyz="0.170562 0.021031 -0.00926" />
         <geometry>
-          <box size="0.016656 0.491014 0.023276" />
+          <box size="0.016 0.491014 0.023276" />
         </geometry>
       </collision>
       <collision>
         <origin xyz="-0.170562 0.021031 -0.129424" />
         <geometry>
-          <box size="0.016656 0.491014 0.083422" />
+          <box size="0.016 0.491014 0.083422" />
         </geometry>
       </collision>
       <collision>
         <origin xyz="0.170562 0.021031 -0.129424" />
         <geometry>
-          <box size="0.016656 0.491014 0.083422" />
+          <box size="0.016 0.491014 0.083422" />
         </geometry>
       </collision>
       <collision>
@@ -3673,13 +3691,13 @@
       <collision>
         <origin xyz="-0.418233 0.021031 -0.01336" />
         <geometry>
-          <box size="0.016656 0.491014 0.085266" />
+          <box size="0.016 0.491014 0.085266" />
         </geometry>
       </collision>
       <collision>
         <origin xyz="0.418233 0.021031 -0.01336" />
         <geometry>
-          <box size="0.016656 0.491014 0.085266" />
+          <box size="0.016 0.491014 0.085266" />
         </geometry>
       </collision>
       <collision>
@@ -3751,25 +3769,25 @@
       <collision>
         <origin xyz="-0.418233 0.021031 0.041246" />
         <geometry>
-          <box size="0.016656 0.491014 0.023298" />
+          <box size="0.016 0.491014 0.023298" />
         </geometry>
       </collision>
       <collision>
         <origin xyz="0.418233 0.021031 0.041246" />
         <geometry>
-          <box size="0.016656 0.491014 0.023298" />
+          <box size="0.016 0.491014 0.023298" />
         </geometry>
       </collision>
       <collision>
         <origin xyz="-0.418233 0.021031 -0.078968" />
         <geometry>
-          <box size="0.016656 0.491014 0.083496" />
+          <box size="0.016 0.491014 0.083496" />
         </geometry>
       </collision>
       <collision>
         <origin xyz="0.418233 0.021031 -0.078968" />
         <geometry>
-          <box size="0.016656 0.491014 0.083496" />
+          <box size="0.016 0.491014 0.083496" />
         </geometry>
       </collision>
       <collision>
@@ -3841,25 +3859,25 @@
       <collision>
         <origin xyz="-0.418233 0.021031 -0.00926" />
         <geometry>
-          <box size="0.016656 0.491014 0.023276" />
+          <box size="0.016 0.491014 0.023276" />
         </geometry>
       </collision>
       <collision>
         <origin xyz="0.418233 0.021031 -0.00926" />
         <geometry>
-          <box size="0.016656 0.491014 0.023276" />
+          <box size="0.016 0.491014 0.023276" />
         </geometry>
       </collision>
       <collision>
         <origin xyz="-0.418233 0.021031 -0.129424" />
         <geometry>
-          <box size="0.016656 0.491014 0.083422" />
+          <box size="0.016 0.491014 0.083422" />
         </geometry>
       </collision>
       <collision>
         <origin xyz="0.418233 0.021031 -0.129424" />
         <geometry>
-          <box size="0.016656 0.491014 0.083422" />
+          <box size="0.016 0.491014 0.083422" />
         </geometry>
       </collision>
       <collision>
