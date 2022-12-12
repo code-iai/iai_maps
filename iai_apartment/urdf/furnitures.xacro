@@ -307,7 +307,7 @@
     </link>
 
     <joint name="armchair_joint" type="fixed">
-      <origin rpy="0 0 1.9199" xyz="7.9688 -0.3791 0.0" />
+      <origin rpy="0 0 1.9199" xyz="7.9688 -0.3791 0.3559428" />
       <parent link="furnitures_root" />
       <child link="armchair" />
     </joint>
@@ -319,12 +319,12 @@
       </visual>
       <collision>
         <geometry>
-          <mesh filename="package://iai_apartment/meshes/collision/armchair.obj" />
+          <mesh filename="package://iai_apartment/meshes/collision/armchair.stl" />
         </geometry>
       </collision>
     </link>
     <joint name="sofa_joint" type="fixed">
-      <origin rpy="0 0 0" xyz="8.1986 2.4096 0.0" />
+      <origin rpy="0 0 0" xyz="8.1986 2.4096 0.35732983" />
       <parent link="furnitures_root" />
       <child link="sofa" />
     </joint>
@@ -336,7 +336,7 @@
       </visual>
       <collision>
         <geometry>
-          <mesh filename="package://iai_apartment/meshes/collision/sofa.obj" />
+          <mesh filename="package://iai_apartment/meshes/collision/sofa.stl" />
         </geometry>
       </collision>
     </link>
@@ -432,7 +432,7 @@
       </collision>
     </link>
     <joint name="bedside_table_joint" type="fixed">
-      <origin rpy="0 0 0" xyz="7.2110 0.1296 0.0" />
+      <origin rpy="0 0 0" xyz="7.2110 0.1296 0.22990467" />
       <parent link="furnitures_root" />
       <child link="bedside_table" />
     </joint>
@@ -443,7 +443,7 @@
         </geometry>
       </visual>
       <collision>
-        <origin rpy="0 0 0" xyz="0.0000 0.0000 0.230" />
+        <origin rpy="0 0 0" xyz="0.0000 0.0000 0.22990467" />
         <geometry>
           <box size="0.312 0.312 0.460" />
         </geometry>
