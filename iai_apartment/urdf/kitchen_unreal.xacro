@@ -461,7 +461,7 @@
     </link>
 
     <joint name="cabinet2_door_handle_joint" type="fixed">
-      <origin xyz="0.25886013 -0.00184994 -0.05118866" rpy="0.0 0.0 ${pi/2}" />
+      <origin xyz="0.25886013 -0.00184994 -0.10518866" rpy="0.0 0.0 ${pi/2}" />
       <parent link="cabinet2_door" />
       <child link="cabinet2_door_handle" />
     </joint>
@@ -1042,7 +1042,7 @@
     </link>
 
     <joint name="fridge_door1_handle_joint" type="fixed">
-      <origin xyz="0.46534321 -0.00799103 -0.4736869" rpy="0.0 0.0 ${pi/2}" />
+      <origin xyz="0.46534321 -0.00799103 -0.3616" rpy="0.0 0.0 ${pi/2}" />
       <parent link="fridge_door1" />
       <child link="fridge_door1_handle" />
     </joint>
@@ -1209,7 +1209,7 @@
     </link>
 
     <joint name="fridge_door2_handle_joint" type="fixed">
-      <origin xyz="0.46538265 0.00804657 0.28486839" rpy="0.0 0.0 ${pi/2}" />
+      <origin xyz="0.46538265 0.00804657 0.31786839" rpy="0.0 0.0 ${pi/2}" />
       <parent link="fridge_door2" />
       <child link="fridge_door2_handle" />
     </joint>
@@ -2452,7 +2452,7 @@
 
     <!-- Second part of the kitchen (island) -->
     <joint name="kitchen2_root_joint" type="fixed">
-      <origin xyz="0.0 0.0 0.0" />
+      <origin xyz="0.1 0.0 0.0" />
       <parent link="kitchen_root" />
       <child link="kitchen2_root" />
     </joint>
