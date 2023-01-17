@@ -85,17 +85,17 @@
       </collision>
     </link>
 
-    <joint name="window4_left_joint" type="revolute">
+    <joint name="window4_right_joint" type="revolute">
       <origin xyz="0.924416 -0.00162 -0.42549" />
       <parent link="window4_frame" />
-      <child link="window4_left" />
+      <child link="window4_right" />
       <axis xyz="0 0 1" />
       <limit effort="1000.0" lower="0.0" upper="1.5708" velocity="1.5708" />
     </joint>
-    <link name="window4_left">
+    <link name="window4_right">
       <visual>
         <geometry>
-          <mesh filename="package://iai_apartment/meshes/unreal/SM_Window_Left.dae" />
+          <mesh filename="package://iai_apartment/meshes/unreal/SM_Window_Right.dae" />
         </geometry>
       </visual>
       <collision>
@@ -106,8 +106,62 @@
       </collision>
     </link>
 
-    <joint name="window4_left_handle_joint" type="revolute">
+    <joint name="window4_right_handle_joint" type="revolute">
       <origin xyz="-0.823253 -0.026228 0.0" />
+      <parent link="window4_right" />
+      <child link="window4_right_handle" />
+      <axis xyz="0 -1 0" />
+      <limit effort="1000.0" lower="0.0" upper="${pi}" velocity="${pi}" />
+    </joint>
+    <link name="window4_right_handle">
+      <visual>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/unreal/SM_Window_Handle.dae" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0 -0.011369 0" rpy="${pi/2} 0 0" />
+        <geometry>
+          <cylinder length="0.075236" radius="0.008" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0 -0.040987 -0.057684" rpy="0 0 0" />
+        <geometry>
+          <cylinder length="0.131626" radius="0.008" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0 -0.022511 -0.115497" rpy="${pi/2} 0 0" />
+        <geometry>
+          <cylinder length="0.052952" radius="0.008" />
+        </geometry>
+      </collision>
+    </link>
+
+    <joint name="window4_left_joint" type="revolute">
+      <origin xyz="-0.9369 0.00162 -0.42549" />
+      <parent link="window4_frame" />
+      <child link="window4_left" />
+      <axis xyz="0 0 -1" />
+      <limit effort="1000.0" lower="0.0" upper="1.5708" velocity="1.5708" />
+    </joint>
+    <link name="window4_left">
+      <visual>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/unreal/SM_Window_Left.dae" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0.429577 0.000856 0" />
+        <geometry>
+          <box size="0.843426 0.02 2.05976" />
+        </geometry>
+      </collision>
+    </link>
+
+    <joint name="window4_left_handle_joint" type="revolute">
+      <origin xyz="0.841963 -0.026228 0.0" />
       <parent link="window4_left" />
       <child link="window4_left_handle" />
       <axis xyz="0 -1 0" />
@@ -305,6 +359,7 @@
         </geometry>
       </collision>
     </link>
+    
     <joint name="wardrobe_door_left_joint" type="revolute">
       <origin rpy="0 0 0" xyz="-0.3246 0.5 0.0000" />
       <parent link="wardrobe" />
