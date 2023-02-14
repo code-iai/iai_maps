@@ -1,0 +1,6 @@
+image: refills_lab_unreal_10cm.png
+resolution: 0.1
+origin: [-0.95, -0.95, 0.0000]
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.196
