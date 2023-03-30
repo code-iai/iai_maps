@@ -85,6 +85,7 @@
       </collision>
     </link>
 
+    <!-- right window -->
     <joint name="window4_right_joint" type="revolute">
       <origin xyz="0.916552 0 -0.425471" />
       <parent link="window4_frame" />
@@ -106,12 +107,10 @@
       </collision>
     </link>
 
-    <joint name="window4_right_handle_joint" type="revolute">
-      <origin xyz="-0.815383 -0.019236 0.0" />
+    <joint name="window4_right_handle_joint" type="fixed">
+      <origin xyz="-0.815383 -0.06 -0.058" rpy="${pi} 0 ${pi/2}"/>
       <parent link="window4_right" />
       <child link="window4_right_handle" />
-      <axis xyz="0 -1 0" />
-      <limit effort="1000.0" lower="0.0" upper="${pi}" velocity="${pi}" />
     </joint>
     <link name="window4_right_handle">
       <visual>
@@ -120,25 +119,13 @@
         </geometry>
       </visual>
       <collision>
-        <origin xyz="0 -0.011369 0" rpy="${pi/2} 0 0" />
         <geometry>
-          <cylinder length="0.075236" radius="0.008" />
-        </geometry>
-      </collision>
-      <collision>
-        <origin xyz="0 -0.040987 -0.057684" rpy="0 0 0" />
-        <geometry>
-          <cylinder length="0.131626" radius="0.008" />
-        </geometry>
-      </collision>
-      <collision>
-        <origin xyz="0 -0.022511 -0.115497" rpy="${pi/2} 0 0" />
-        <geometry>
-          <cylinder length="0.052952" radius="0.008" />
+          <mesh filename="package://iai_apartment/meshes/handles/window_handle.obj" />
         </geometry>
       </collision>
     </link>
 
+    <!-- left window -->
     <joint name="window4_left_joint" type="revolute">
       <origin xyz="-0.929112 0.00162 -0.425471" />
       <parent link="window4_frame" />
@@ -160,38 +147,25 @@
       </collision>
     </link>
 
-    <joint name="window4_left_handle_joint" type="revolute">
-      <origin xyz="0.834107 -0.019236 0.0" />
+    <joint name="window4_left_handle_joint" type="fixed">
+      <origin xyz="0.815383 -0.06 -0.058" rpy="${pi} 0 ${pi/2}"/>
       <parent link="window4_left" />
       <child link="window4_left_handle" />
-      <axis xyz="0 -1 0" />
-      <limit effort="1000.0" lower="0.0" upper="${pi}" velocity="${pi}" />
     </joint>
     <link name="window4_left_handle">
       <visual>
+        <origin rpy="0 0 0"/>
         <geometry>
           <mesh filename="package://iai_apartment/meshes/unreal/SM_Window_Handle.dae" />
         </geometry>
       </visual>
       <collision>
-        <origin xyz="0 -0.011369 0" rpy="${pi/2} 0 0" />
         <geometry>
-          <cylinder length="0.075236" radius="0.008" />
-        </geometry>
-      </collision>
-      <collision>
-        <origin xyz="0 -0.040987 -0.057684" rpy="0 0 0" />
-        <geometry>
-          <cylinder length="0.131626" radius="0.008" />
-        </geometry>
-      </collision>
-      <collision>
-        <origin xyz="0 -0.022511 -0.115497" rpy="${pi/2} 0 0" />
-        <geometry>
-          <cylinder length="0.052952" radius="0.008" />
+          <mesh filename="package://iai_apartment/meshes/handles/window_handle.obj" />
         </geometry>
       </collision>
     </link>
+
 
     <!-- Collision okay Walls -->
     <!-- From the door side being wall 1, turn right and count the walls. -->
@@ -242,7 +216,7 @@
         </geometry>
       </collision>
     </link>
-
+    
     <joint name="wall_coloksu_wall4_joint" type="fixed">
       <origin xyz="10.069 0.782 1.53" rpy="0 0 0" />
       <parent link="furnitures_root" />
