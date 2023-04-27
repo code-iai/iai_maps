@@ -107,12 +107,10 @@
       </geometry>
     </collision>
   </link>
-  <joint name="window4_right_handle_joint" type="revolute">
-    <origin xyz="-0.815383 -0.019236 0.0"/>
+  <joint name="window4_right_handle_joint" type="fixed">
+    <origin rpy="0 -1.5707963267948966 0" xyz="-0.815383 -0.019236 0.0"/>
     <parent link="window4_right"/>
     <child link="window4_right_handle"/>
-    <axis xyz="0 -1 0"/>
-    <limit effort="1000.0" lower="0.0" upper="3.141592653589793" velocity="3.141592653589793"/>
   </joint>
   <link name="window4_right_handle">
     <visual>
@@ -139,6 +137,12 @@
       </geometry>
     </collision>
   </link>
+  <joint name="window4_right_handle_center_joint" type="fixed">
+    <origin rpy="3.141592653589793 0 1.5707963267948966" xyz="0.0 -0.040987 -0.057684"/>
+    <parent link="window4_right_handle"/>
+    <child link="window4_right_handle_center"/>
+  </joint>
+  <link name="window4_right_handle_center"/>
   <joint name="window4_left_joint" type="revolute">
     <origin xyz="-0.929112 0.00162 -0.425471"/>
     <parent link="window4_frame"/>
@@ -159,12 +163,10 @@
       </geometry>
     </collision>
   </link>
-  <joint name="window4_left_handle_joint" type="revolute">
-    <origin xyz="0.834107 -0.019236 0.0"/>
+  <joint name="window4_left_handle_joint" type="fixed">
+    <origin rpy="0 1.5707963267948966 0" xyz="0.834107 -0.019236 0.0"/>
     <parent link="window4_left"/>
     <child link="window4_left_handle"/>
-    <axis xyz="0 -1 0"/>
-    <limit effort="1000.0" lower="0.0" upper="3.141592653589793" velocity="3.141592653589793"/>
   </joint>
   <link name="window4_left_handle">
     <visual>
@@ -191,6 +193,12 @@
       </geometry>
     </collision>
   </link>
+  <joint name="window4_left_handle_center_joint" type="fixed">
+    <origin rpy="3.141592653589793 0 1.5707963267948966" xyz="0.0 -0.040987 -0.057684"/>
+    <parent link="window4_left_handle"/>
+    <child link="window4_left_handle_center"/>
+  </joint>
+  <link name="window4_left_handle_center"/>
   <!-- Collision okay Walls -->
   <!-- From the door side being wall 1, turn right and count the walls. -->
   <joint name="wall_coloksu_wall1_joint" type="fixed">
@@ -1715,11 +1723,11 @@
         <mesh filename="package://iai_apartment/meshes/unreal/SM_Fridge_Egg_Tray.dae"/>
       </geometry>
     </visual>
-    <collision>
-      <geometry>
-        <mesh filename="package://iai_apartment/meshes/unreal/SM_Fridge_Egg_Tray.stl"/>
-      </geometry>
-    </collision>
+    <!-- <collision>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/unreal/SM_Fridge_Egg_Tray.stl" />
+        </geometry>
+      </collision> -->
   </link>
   <joint name="fridge_door2_joint" type="revolute">
     <origin rpy="0.0 0.0 0.0" xyz="-0.2990897 -0.29725901 -0.63800789"/>
@@ -3247,11 +3255,11 @@
         <mesh filename="package://iai_apartment/meshes/unreal/SM_Dishwasher_Tray_01.dae"/>
       </geometry>
     </visual>
-    <collision>
-      <geometry>
-        <mesh filename="package://iai_apartment/meshes/unreal/SM_Dishwasher_Tray_01.stl"/>
-      </geometry>
-    </collision>
+    <!-- <collision>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/unreal/SM_Dishwasher_Tray_01.stl" />
+        </geometry>
+      </collision> -->
   </link>
   <joint name="dishwasher_tray2_joint" type="prismatic">
     <origin rpy="0.0 0.0 0.0" xyz="-0.00735798 0.17742002 0.40232784"/>
@@ -3266,11 +3274,11 @@
         <mesh filename="package://iai_apartment/meshes/unreal/SM_Dishwasher_Tray_02.dae"/>
       </geometry>
     </visual>
-    <collision>
-      <geometry>
-        <mesh filename="package://iai_apartment/meshes/unreal/SM_Dishwasher_Tray_02.stl"/>
-      </geometry>
-    </collision>
+    <!-- <collision>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/unreal/SM_Dishwasher_Tray_02.stl" />
+        </geometry>
+      </collision> -->
   </link>
   <joint name="dishwasher_tray3_joint" type="prismatic">
     <origin rpy="0.0 0.0 0.0" xyz="-0.01312525 0.19787212 0.61131351"/>
@@ -3285,11 +3293,11 @@
         <mesh filename="package://iai_apartment/meshes/unreal/SM_Dishwasher_Tray_03.dae"/>
       </geometry>
     </visual>
-    <collision>
-      <geometry>
-        <mesh filename="package://iai_apartment/meshes/unreal/SM_Dishwasher_Tray_03.stl"/>
-      </geometry>
-    </collision>
+    <!-- <collision>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/unreal/SM_Dishwasher_Tray_03.stl" />
+        </geometry>
+      </collision> -->
   </link>
   <!-- Cabinet8 -->
   <joint name="cabinet8_joint" type="fixed">
@@ -4571,4 +4579,3 @@
     </collision>
   </link>
 </robot>
-

@@ -68,48 +68,13 @@
         </geometry>
       </collision>
       <collision>
+        <origin xyz="0.009901 0.0005 0.249501" />
+        <geometry>
+          <box size="0.561938 0.540942 0.015" />
+        </geometry>
+      </collision>
+      <collision>
         <origin xyz="0.009901 0.0005 -0.361161 " />
-        <geometry>
-          <box size="0.561938 0.534942 0.015" />
-        </geometry>
-      </collision>
-    </link>
-
-    <material name="white">
-      <color rgba="1 1 1 1" />
-    </material>
-    <joint name="cabinet1_shelf1_joint" type="fixed">
-      <origin xyz="0.009901 0.0005 0.560" />
-      <parent link="cabinet1" />
-      <child link="cabinet1_shelf1" />
-    </joint>
-    <link name="cabinet1_shelf1">
-      <visual>
-        <geometry>
-          <box size="0.561938 0.534942 0.015" />
-        </geometry>
-        <material name="white" />
-      </visual>
-      <collision>
-        <geometry>
-          <box size="0.561938 0.534942 0.015" />
-        </geometry>
-      </collision>
-    </link>
-
-    <joint name="cabinet1_shelf2_joint" type="fixed">
-      <origin xyz="0.009901 0.0005 0.249501" />
-      <parent link="cabinet1" />
-      <child link="cabinet1_shelf2" />
-    </joint>
-    <link name="cabinet1_shelf2">
-      <visual>
-        <geometry>
-          <box size="0.561938 0.534942 0.015" />
-        </geometry>
-        <material name="white" />
-      </visual>
-      <collision>
         <geometry>
           <box size="0.561938 0.534942 0.015" />
         </geometry>
@@ -1208,11 +1173,11 @@
           <mesh filename="package://iai_apartment/meshes/unreal/SM_Fridge_Egg_Tray.dae" />
         </geometry>
       </visual>
-      <collision>
+      <!-- <collision>
         <geometry>
           <mesh filename="package://iai_apartment/meshes/unreal/SM_Fridge_Egg_Tray.stl" />
         </geometry>
-      </collision>
+      </collision> -->
     </link>
 
     <joint name="fridge_door2_joint" type="revolute">
@@ -2828,8 +2793,9 @@
         </geometry>
       </visual>
       <collision>
+        <origin xyz="0.0 -0.037745 -0.05" />
         <geometry>
-          <mesh filename="package://iai_apartment/meshes/unreal/SM_Dishwasher_Tray_01.stl" />
+          <box size="0.54 0.44 0.2" />
         </geometry>
       </collision>
     </link>
@@ -2849,8 +2815,9 @@
         </geometry>
       </visual>
       <collision>
+        <origin xyz="0.0 0.0 0.0" />
         <geometry>
-          <mesh filename="package://iai_apartment/meshes/unreal/SM_Dishwasher_Tray_02.stl" />
+          <box size="0.54 0.44 0.22" />
         </geometry>
       </collision>
     </link>
@@ -2870,8 +2837,9 @@
         </geometry>
       </visual>
       <collision>
+        <origin xyz="0.0 0.0 0.0" />
         <geometry>
-          <mesh filename="package://iai_apartment/meshes/unreal/SM_Dishwasher_Tray_03.stl" />
+          <box size="0.54 0.44 0.072" />
         </geometry>
       </collision>
     </link>
