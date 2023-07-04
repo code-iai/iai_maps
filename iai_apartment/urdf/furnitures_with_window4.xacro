@@ -21,7 +21,38 @@
           <mesh filename="package://iai_apartment/meshes/visual/walls.dae" />
         </geometry>
       </visual>
+      <collision>
+        <origin xyz="0.505224 -1.81425 1.73439" />
+        <geometry>
+          <box size="18.76044 0.1285 3.0517" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="-4.63823 3.27776 1.73439" />
+        <geometry>
+          <box size="8.47354 0.1285 3.0517" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="5.87824  3.27776 1.73439" />
+        <geometry>
+          <box size="8.2886 0.1285 3.0517" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="9.98022 0.713447 1.73439" />
+        <geometry>
+          <box size="0.189552 4.9669 3.0517" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="-8.875 0.713447 1.73439" />
+        <geometry>
+          <box size="0.189552 4.9669 3.0517" />
+        </geometry>
+      </collision>
     </link>
+
     <joint name="windows_joint" type="fixed">
       <origin rpy="0 0 0" xyz="0 0 -0.2" />
       <parent link="furnitures_root" />
@@ -37,7 +68,7 @@
 
     <!-- Window 4 -->
     <joint name="window4_frame_joint" type="fixed">
-      <origin xyz="0.671098 3.37273 1.72145" />
+      <origin xyz="0.671098 3.37273 1.72145" rpy="0.0 0.0 ${-pi/2}"/>
       <parent link="walls" />
       <child link="window4_frame" />
     </joint>
@@ -50,46 +81,46 @@
       <collision>
         <origin xyz="0 0 1.42883" />
         <geometry>
-          <box size="2.1354 0.02 0.185552" />
+          <box size="0.02 2.1354 0.185552" />
         </geometry>
       </collision>
       <collision>
         <origin xyz="0 0 0.795222" />
         <geometry>
-          <box size="2.1354 0.02 0.37828" />
+          <box size="0.02 2.1354 0.37828" />
         </geometry>
       </collision>
       <collision>
         <origin xyz="0 0 -1.49481" />
         <geometry>
-          <box size="2.1354 0.02 0.053592" />
+          <box size="0.02 2.1354 0.053592" />
         </geometry>
       </collision>
       <collision>
-        <origin xyz="-0.992126 0 0" />
+        <origin xyz="0 0.992126 0" />
         <geometry>
-          <box size="0.151148 0.02 3.04322" />
+          <box size="0.02 0.151148 3.04322" />
         </geometry>
       </collision>
       <collision>
-        <origin xyz="0.992126 0 0" />
+        <origin xyz="0 -0.992126 0" />
         <geometry>
-          <box size="0.151148 0.02 3.04322" />
+          <box size="0.02 0.151148 3.04322" />
         </geometry>
       </collision>
       <collision>
         <origin xyz="0 0 0" />
         <geometry>
-          <box size="0.146252 0.02 3.04322" />
+          <box size="0.02 0.146252 3.04322" />
         </geometry>
       </collision>
     </link>
 
     <joint name="window4_right_joint" type="revolute">
-      <origin xyz="0.916552 0 -0.425471" />
+      <origin xyz="0 -0.916552 -0.425471" />
       <parent link="window4_frame" />
       <child link="window4_right" />
-      <axis xyz="0 0 1" />
+      <axis xyz="0 0 -1" />
       <limit effort="1000.0" lower="0.0" upper="1.5708" velocity="1.5708" />
     </joint>
     <link name="window4_right">
@@ -99,15 +130,15 @@
         </geometry>
       </visual>
       <collision>
-        <origin xyz="-0.421713 0 0" />
+        <origin xyz="0 0.421713 0" />
         <geometry>
-          <box size="0.843426 0.02 2.0631" />
+          <box size="0.02 0.843426 2.0631" />
         </geometry>
       </collision>
     </link>
 
     <joint name="window4_right_handle_joint" type="fixed">
-      <origin xyz="-0.815383 -0.019236 0.0" rpy="0 ${-pi/2} 0" />
+      <origin xyz="0.055 0.834107 -0.057684" rpy="0 0 0" />
       <parent link="window4_right" />
       <child link="window4_right_handle" />
     </joint>
@@ -118,37 +149,30 @@
         </geometry>
       </visual>
       <collision>
-        <origin xyz="0 -0.011369 0" rpy="${pi/2} 0 0" />
+        <origin xyz="0 0 0.057814" rpy="0 ${pi/2} 0" />
         <geometry>
           <cylinder length="0.075236" radius="0.008" />
         </geometry>
       </collision>
       <collision>
-        <origin xyz="0 -0.040987 -0.057684" rpy="0 0 0" />
+        <origin xyz="0.029618 0 0" rpy="0 0 0" />
         <geometry>
           <cylinder length="0.131626" radius="0.008" />
         </geometry>
       </collision>
       <collision>
-        <origin xyz="0 -0.022511 -0.115497" rpy="${pi/2} 0 0" />
+        <origin xyz="0.011142 0 -0.057813" rpy="0 ${pi/2} 0" />
         <geometry>
           <cylinder length="0.052952" radius="0.008" />
         </geometry>
       </collision>
     </link>
 
-    <joint name="window4_right_handle_center_joint" type="fixed">
-      <origin xyz="0.0 -0.040987 -0.057684" rpy="${pi} 0 ${pi/2}" />
-      <parent link="window4_right_handle" />
-      <child link="window4_right_handle_center" />
-    </joint>
-    <link name="window4_right_handle_center" />
-
     <joint name="window4_left_joint" type="revolute">
-      <origin xyz="-0.929112 0.00162 -0.425471" />
+      <origin xyz="0.00162 0.929112 -0.425471" />
       <parent link="window4_frame" />
       <child link="window4_left" />
-      <axis xyz="0 0 -1" />
+      <axis xyz="0 0 1" />
       <limit effort="1000.0" lower="0.0" upper="1.5708" velocity="1.5708" />
     </joint>
     <link name="window4_left">
@@ -158,15 +182,15 @@
         </geometry>
       </visual>
       <collision>
-        <origin xyz="0.43203 0 0" />
+        <origin xyz="0 -0.43203 0" />
         <geometry>
-          <box size="0.86406 0.02 2.0631" />
+          <box size="0.02 0.86406 2.0631" />
         </geometry>
       </collision>
     </link>
 
     <joint name="window4_left_handle_joint" type="fixed">
-      <origin xyz="0.834107 -0.019236 0.0" rpy="0 ${pi/2} 0" />
+      <origin xyz="0.055 -0.834107 -0.057684" rpy="0 0 0" />
       <parent link="window4_left" />
       <child link="window4_left_handle" />
     </joint>
@@ -177,92 +201,21 @@
         </geometry>
       </visual>
       <collision>
-        <origin xyz="0 -0.011369 0" rpy="${pi/2} 0 0" />
+        <origin xyz="0 0 0.057814" rpy="0 ${pi/2} 0" />
         <geometry>
           <cylinder length="0.075236" radius="0.008" />
         </geometry>
       </collision>
       <collision>
-        <origin xyz="0 -0.040987 -0.057684" rpy="0 0 0" />
+        <origin xyz="0.029618 0 0" rpy="0 0 0" />
         <geometry>
           <cylinder length="0.131626" radius="0.008" />
         </geometry>
       </collision>
       <collision>
-        <origin xyz="0 -0.022511 -0.115497" rpy="${pi/2} 0 0" />
+        <origin xyz="0.011142 0 -0.057813" rpy="0 ${pi/2} 0" />
         <geometry>
           <cylinder length="0.052952" radius="0.008" />
-        </geometry>
-      </collision>
-    </link>
-
-    <joint name="window4_left_handle_center_joint" type="fixed">
-      <origin xyz="0.0 -0.040987 -0.057684" rpy="${pi} 0 ${pi/2}" />
-      <parent link="window4_left_handle" />
-      <child link="window4_left_handle_center" />
-    </joint>
-    <link name="window4_left_handle_center" />
-
-    <!-- Collision okay Walls -->
-    <!-- From the door side being wall 1, turn right and count the walls. -->
-    <joint name="wall_coloksu_wall1_joint" type="fixed">
-      <origin xyz="0.6 -1.615 1.53" rpy="0 0 -1.57" />
-      <parent link="furnitures_root" />
-      <child link="wall_coloksu_wall1" />
-    </joint>
-    <link name="wall_coloksu_wall1">
-      <collision>
-        <origin rpy="0 1.57 0" />
-        <geometry>
-          <box size="3.05 18.95 0.003" />
-        </geometry>
-      </collision>
-    </link>
-
-    <joint name="wall_coloksu_wall2_joint" type="fixed">
-      <origin xyz="-8.855 0.782 1.53" rpy="0 0 3.14" />
-      <parent link="furnitures_root" />
-      <child link="wall_coloksu_wall2" />
-    </joint>
-    <link name="wall_coloksu_wall2">
-      <collision>
-        <origin rpy="0 1.57 0" />
-        <geometry>
-          <box size="3.05 4.808 0.003" />
-        </geometry>
-      </collision>
-    </link>
-
-    <joint name="wall_coloksu_wall3_joint" type="fixed">
-      <origin xyz="0.6 3.180 1.53" rpy="0 0 1.57" />
-      <parent link="furnitures_root" />
-      <child link="wall_coloksu_wall3" />
-    </joint>
-    <link name="wall_coloksu_wall3">
-      <collision>
-        <origin xyz="0 -5.3 0" rpy="0 1.57 0" />
-        <geometry>
-          <box size="3.05 8.35 0.003" />
-        </geometry>
-      </collision>
-      <collision>
-        <origin xyz="0 5.2 0" rpy="0 1.57 0" />
-        <geometry>
-          <box size="3.05 8.55 0.003" />
-        </geometry>
-      </collision>
-    </link>
-
-    <joint name="wall_coloksu_wall4_joint" type="fixed">
-      <origin xyz="10.069 0.782 1.53" rpy="0 0 0" />
-      <parent link="furnitures_root" />
-      <child link="wall_coloksu_wall4" />
-    </joint>
-    <link name="wall_coloksu_wall4">
-      <collision>
-        <origin rpy="0 1.57 0" />
-        <geometry>
-          <box size="3.05 4.808 0.003" />
         </geometry>
       </collision>
     </link>
@@ -489,7 +442,7 @@
       </collision>
     </link>
     <joint name="sofa_joint" type="fixed">
-      <origin rpy="0 0 0" xyz="8.1986 2.4096 0.35732983" />
+      <origin xyz="8.1986 2.4096 0.35732983" rpy="0 0 ${pi/2}"/>
       <parent link="furnitures_root" />
       <child link="sofa" />
     </joint>
