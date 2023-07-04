@@ -6,8 +6,8 @@ Panels:
       Expanded:
         - /Grid1/Offset1
         - /RobotModel1
-        - /RobotModel1/Links1
         - /TF1
+        - /TF1/Frames1
       Splitter Ratio: 0.6592742204666138
     Tree Height: 1682
   - Class: rviz/Selection
@@ -53,7 +53,7 @@ Visualization Manager:
       Plane Cell Count: 20
       Reference Frame: <Fixed Frame>
       Value: true
-    - Alpha: 1
+    - Alpha: 0.699999988079071
       Class: rviz/RobotModel
       Collision Enabled: true
       Enabled: true
@@ -658,6 +658,10 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        window4_left_handle_rotation:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         window4_right:
           Alpha: 1
           Show Axes: false
@@ -668,6 +672,10 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        window4_right_handle_rotation:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         windows:
           Alpha: 1
           Show Axes: false
@@ -680,12 +688,264 @@ Visualization Manager:
       Value: true
       Visual Enabled: true
     - Class: rviz/TF
-      Enabled: false
+      Enabled: true
       Filter (blacklist): ""
       Filter (whitelist): ""
       Frame Timeout: 15
       Frames:
-        All Enabled: true
+        All Enabled: false
+        iai_apartment/apartment_root:
+          Value: true
+        iai_apartment/armchair:
+          Value: true
+        iai_apartment/bedside_table:
+          Value: true
+        iai_apartment/cabinet1:
+          Value: true
+        iai_apartment/cabinet10:
+          Value: true
+        iai_apartment/cabinet10_drawer1:
+          Value: true
+        iai_apartment/cabinet10_drawer1_handle:
+          Value: true
+        iai_apartment/cabinet10_drawer2:
+          Value: true
+        iai_apartment/cabinet10_drawer2_handle:
+          Value: true
+        iai_apartment/cabinet10_drawer3:
+          Value: true
+        iai_apartment/cabinet10_drawer3_handle:
+          Value: true
+        iai_apartment/cabinet11:
+          Value: true
+        iai_apartment/cabinet11_drawer1:
+          Value: true
+        iai_apartment/cabinet11_drawer1_handle:
+          Value: true
+        iai_apartment/cabinet11_drawer2:
+          Value: true
+        iai_apartment/cabinet11_drawer2_handle:
+          Value: true
+        iai_apartment/cabinet11_drawer3:
+          Value: true
+        iai_apartment/cabinet11_drawer3_handle:
+          Value: true
+        iai_apartment/cabinet1_door:
+          Value: true
+        iai_apartment/cabinet1_door_handle:
+          Value: true
+        iai_apartment/cabinet1_drawer1:
+          Value: true
+        iai_apartment/cabinet1_drawer1_handle:
+          Value: true
+        iai_apartment/cabinet1_drawer2:
+          Value: true
+        iai_apartment/cabinet1_drawer2_handle:
+          Value: true
+        iai_apartment/cabinet1_shelf1:
+          Value: true
+        iai_apartment/cabinet1_shelf2:
+          Value: true
+        iai_apartment/cabinet2:
+          Value: true
+        iai_apartment/cabinet2_door:
+          Value: true
+        iai_apartment/cabinet2_door_handle:
+          Value: true
+        iai_apartment/cabinet2_drawer1:
+          Value: true
+        iai_apartment/cabinet2_drawer2:
+          Value: true
+        iai_apartment/cabinet2_drawer3:
+          Value: true
+        iai_apartment/cabinet2_drawer4:
+          Value: true
+        iai_apartment/cabinet2_drawer5:
+          Value: true
+        iai_apartment/cabinet2_drawer6:
+          Value: true
+        iai_apartment/cabinet2_shelf:
+          Value: true
+        iai_apartment/cabinet3:
+          Value: true
+        iai_apartment/cabinet4:
+          Value: true
+        iai_apartment/cabinet4_door1:
+          Value: true
+        iai_apartment/cabinet4_door2:
+          Value: true
+        iai_apartment/cabinet4_door2_handle:
+          Value: true
+        iai_apartment/cabinet4_shelf1:
+          Value: true
+        iai_apartment/cabinet4_shelf2:
+          Value: true
+        iai_apartment/cabinet5:
+          Value: true
+        iai_apartment/cabinet5_drawer1:
+          Value: true
+        iai_apartment/cabinet5_drawer1_handle:
+          Value: true
+        iai_apartment/cabinet5_drawer2:
+          Value: true
+        iai_apartment/cabinet5_drawer2_handle:
+          Value: true
+        iai_apartment/cabinet5_drawer3:
+          Value: true
+        iai_apartment/cabinet5_drawer3_handle:
+          Value: true
+        iai_apartment/cabinet6:
+          Value: true
+        iai_apartment/cabinet6_drawer1:
+          Value: true
+        iai_apartment/cabinet6_drawer1_handle:
+          Value: true
+        iai_apartment/cabinet6_drawer2:
+          Value: true
+        iai_apartment/cabinet6_drawer2_handle:
+          Value: true
+        iai_apartment/cabinet6_drawer3:
+          Value: true
+        iai_apartment/cabinet6_drawer3_handle:
+          Value: true
+        iai_apartment/cabinet8:
+          Value: true
+        iai_apartment/cabinet9:
+          Value: true
+        iai_apartment/cabinet9_drawer1:
+          Value: true
+        iai_apartment/cabinet9_drawer1_handle:
+          Value: true
+        iai_apartment/cabinet9_drawer2:
+          Value: true
+        iai_apartment/cabinet9_drawer2_handle:
+          Value: true
+        iai_apartment/cabinet9_drawer3:
+          Value: true
+        iai_apartment/cabinet9_drawer3_handle:
+          Value: true
+        iai_apartment/coffee_table:
+          Value: true
+        iai_apartment/coffee_table_drawer:
+          Value: true
+        iai_apartment/counter_sink:
+          Value: true
+        iai_apartment/counter_sink_stove:
+          Value: true
+        iai_apartment/counter_sink_tap:
+          Value: true
+        iai_apartment/counter_sink_tap_switch:
+          Value: true
+        iai_apartment/counter_wall:
+          Value: true
+        iai_apartment/counter_watertab:
+          Value: true
+        iai_apartment/dishwasher:
+          Value: true
+        iai_apartment/dishwasher_front:
+          Value: true
+        iai_apartment/dishwasher_front_handle:
+          Value: true
+        iai_apartment/dishwasher_tray1:
+          Value: true
+        iai_apartment/dishwasher_tray2:
+          Value: true
+        iai_apartment/dishwasher_tray3:
+          Value: true
+        iai_apartment/fridge_base:
+          Value: true
+        iai_apartment/fridge_door1:
+          Value: true
+        iai_apartment/fridge_door1_handle:
+          Value: true
+        iai_apartment/fridge_door2:
+          Value: true
+        iai_apartment/fridge_door2_handle:
+          Value: true
+        iai_apartment/fridge_door_tray1:
+          Value: true
+        iai_apartment/fridge_door_tray2:
+          Value: true
+        iai_apartment/fridge_drawer1:
+          Value: true
+        iai_apartment/fridge_drawer2:
+          Value: true
+        iai_apartment/fridge_drawer3:
+          Value: true
+        iai_apartment/fridge_drawer4:
+          Value: true
+        iai_apartment/fridge_drawer5:
+          Value: true
+        iai_apartment/fridge_egg_tray:
+          Value: true
+        iai_apartment/fridge_shelf1:
+          Value: true
+        iai_apartment/fridge_shelf2:
+          Value: true
+        iai_apartment/furnitures_root:
+          Value: true
+        iai_apartment/island_cover1:
+          Value: true
+        iai_apartment/island_cover3:
+          Value: true
+        iai_apartment/island_cover4:
+          Value: true
+        iai_apartment/island_cover5:
+          Value: true
+        iai_apartment/kitchen1_base_board:
+          Value: true
+        iai_apartment/kitchen1_root:
+          Value: true
+        iai_apartment/kitchen2_base_board:
+          Value: true
+        iai_apartment/kitchen2_root:
+          Value: true
+        iai_apartment/kitchen_root:
+          Value: true
+        iai_apartment/oven:
+          Value: true
+        iai_apartment/oven_door:
+          Value: true
+        iai_apartment/sink_drawer1:
+          Value: true
+        iai_apartment/sink_drawer1_handle:
+          Value: true
+        iai_apartment/sink_drawer2:
+          Value: true
+        iai_apartment/sofa:
+          Value: true
+        iai_apartment/stove:
+          Value: true
+        iai_apartment/walls:
+          Value: true
+        iai_apartment/wardrobe:
+          Value: true
+        iai_apartment/wardrobe_door_left:
+          Value: true
+        iai_apartment/wardrobe_door_left_handle:
+          Value: true
+        iai_apartment/wardrobe_door_right:
+          Value: true
+        iai_apartment/wardrobe_door_right_handle:
+          Value: true
+        iai_apartment/window4_frame:
+          Value: true
+        iai_apartment/window4_left:
+          Value: true
+        iai_apartment/window4_left_handle:
+          Value: true
+        iai_apartment/window4_left_handle_rotation:
+          Value: false
+        iai_apartment/window4_right:
+          Value: true
+        iai_apartment/window4_right_handle:
+          Value: true
+        iai_apartment/window4_right_handle_rotation:
+          Value: false
+        iai_apartment/windows:
+          Value: true
+        map:
+          Value: true
       Marker Alpha: 1
       Marker Scale: 0.5
       Name: TF
@@ -693,9 +953,202 @@ Visualization Manager:
       Show Axes: true
       Show Names: false
       Tree:
-        {}
+        map:
+          iai_apartment/apartment_root:
+            iai_apartment/furnitures_root:
+              iai_apartment/armchair:
+                {}
+              iai_apartment/bedside_table:
+                {}
+              iai_apartment/coffee_table:
+                iai_apartment/coffee_table_drawer:
+                  {}
+              iai_apartment/sofa:
+                {}
+              iai_apartment/walls:
+                iai_apartment/window4_frame:
+                  iai_apartment/window4_left:
+                    iai_apartment/window4_left_handle_rotation:
+                      iai_apartment/window4_left_handle:
+                        {}
+                  iai_apartment/window4_right:
+                    iai_apartment/window4_right_handle_rotation:
+                      iai_apartment/window4_right_handle:
+                        {}
+              iai_apartment/wardrobe:
+                iai_apartment/wardrobe_door_left:
+                  iai_apartment/wardrobe_door_left_handle:
+                    {}
+                iai_apartment/wardrobe_door_right:
+                  iai_apartment/wardrobe_door_right_handle:
+                    {}
+              iai_apartment/windows:
+                {}
+            iai_apartment/kitchen_root:
+              iai_apartment/kitchen1_root:
+                iai_apartment/cabinet1:
+                  iai_apartment/cabinet1_door:
+                    iai_apartment/cabinet1_door_handle:
+                      {}
+                  iai_apartment/cabinet1_drawer1:
+                    iai_apartment/cabinet1_drawer1_handle:
+                      {}
+                  iai_apartment/cabinet1_drawer2:
+                    iai_apartment/cabinet1_drawer2_handle:
+                      {}
+                  iai_apartment/cabinet1_shelf1:
+                    {}
+                  iai_apartment/cabinet1_shelf2:
+                    {}
+                  iai_apartment/oven:
+                    iai_apartment/oven_door:
+                      {}
+                iai_apartment/cabinet2:
+                  iai_apartment/cabinet2_door:
+                    iai_apartment/cabinet2_door_handle:
+                      {}
+                  iai_apartment/cabinet2_drawer1:
+                    {}
+                  iai_apartment/cabinet2_drawer2:
+                    {}
+                  iai_apartment/cabinet2_drawer3:
+                    {}
+                  iai_apartment/cabinet2_drawer4:
+                    {}
+                  iai_apartment/cabinet2_drawer5:
+                    {}
+                  iai_apartment/cabinet2_drawer6:
+                    {}
+                  iai_apartment/cabinet2_shelf:
+                    {}
+                iai_apartment/cabinet3:
+                  iai_apartment/fridge_base:
+                    iai_apartment/fridge_drawer1:
+                      {}
+                    iai_apartment/fridge_drawer2:
+                      {}
+                    iai_apartment/fridge_drawer3:
+                      {}
+                    iai_apartment/fridge_drawer4:
+                      {}
+                    iai_apartment/fridge_drawer5:
+                      {}
+                    iai_apartment/fridge_shelf1:
+                      {}
+                    iai_apartment/fridge_shelf2:
+                      {}
+                  iai_apartment/fridge_door1:
+                    iai_apartment/fridge_door1_handle:
+                      {}
+                    iai_apartment/fridge_door_tray1:
+                      {}
+                    iai_apartment/fridge_door_tray2:
+                      iai_apartment/fridge_egg_tray:
+                        {}
+                  iai_apartment/fridge_door2:
+                    iai_apartment/fridge_door2_handle:
+                      {}
+                iai_apartment/cabinet4:
+                  iai_apartment/cabinet4_door1:
+                    {}
+                  iai_apartment/cabinet4_door2:
+                    iai_apartment/cabinet4_door2_handle:
+                      {}
+                  iai_apartment/cabinet4_shelf1:
+                    {}
+                  iai_apartment/cabinet4_shelf2:
+                    {}
+                iai_apartment/cabinet5:
+                  iai_apartment/cabinet5_drawer1:
+                    iai_apartment/cabinet5_drawer1_handle:
+                      {}
+                  iai_apartment/cabinet5_drawer2:
+                    iai_apartment/cabinet5_drawer2_handle:
+                      {}
+                  iai_apartment/cabinet5_drawer3:
+                    iai_apartment/cabinet5_drawer3_handle:
+                      {}
+                iai_apartment/cabinet6:
+                  iai_apartment/cabinet6_drawer1:
+                    iai_apartment/cabinet6_drawer1_handle:
+                      {}
+                  iai_apartment/cabinet6_drawer2:
+                    iai_apartment/cabinet6_drawer2_handle:
+                      {}
+                  iai_apartment/cabinet6_drawer3:
+                    iai_apartment/cabinet6_drawer3_handle:
+                      {}
+                iai_apartment/counter_wall:
+                  {}
+                iai_apartment/island_cover4:
+                  {}
+                iai_apartment/kitchen1_base_board:
+                  {}
+              iai_apartment/kitchen2_root:
+                iai_apartment/cabinet10:
+                  iai_apartment/cabinet10_drawer1:
+                    iai_apartment/cabinet10_drawer1_handle:
+                      {}
+                  iai_apartment/cabinet10_drawer2:
+                    iai_apartment/cabinet10_drawer2_handle:
+                      {}
+                  iai_apartment/cabinet10_drawer3:
+                    iai_apartment/cabinet10_drawer3_handle:
+                      {}
+                iai_apartment/cabinet11:
+                  iai_apartment/cabinet11_drawer1:
+                    iai_apartment/cabinet11_drawer1_handle:
+                      {}
+                  iai_apartment/cabinet11_drawer2:
+                    iai_apartment/cabinet11_drawer2_handle:
+                      {}
+                  iai_apartment/cabinet11_drawer3:
+                    iai_apartment/cabinet11_drawer3_handle:
+                      {}
+                iai_apartment/cabinet8:
+                  iai_apartment/sink_drawer1:
+                    iai_apartment/sink_drawer1_handle:
+                      {}
+                  iai_apartment/sink_drawer2:
+                    {}
+                iai_apartment/cabinet9:
+                  iai_apartment/cabinet9_drawer1:
+                    iai_apartment/cabinet9_drawer1_handle:
+                      {}
+                  iai_apartment/cabinet9_drawer2:
+                    iai_apartment/cabinet9_drawer2_handle:
+                      {}
+                  iai_apartment/cabinet9_drawer3:
+                    iai_apartment/cabinet9_drawer3_handle:
+                      {}
+                iai_apartment/counter_sink_stove:
+                  iai_apartment/counter_sink:
+                    iai_apartment/counter_watertab:
+                      iai_apartment/counter_sink_tap_switch:
+                        iai_apartment/counter_sink_tap:
+                          {}
+                  iai_apartment/stove:
+                    {}
+                iai_apartment/dishwasher:
+                  iai_apartment/dishwasher_front:
+                    iai_apartment/dishwasher_front_handle:
+                      {}
+                  iai_apartment/dishwasher_tray1:
+                    {}
+                  iai_apartment/dishwasher_tray2:
+                    {}
+                  iai_apartment/dishwasher_tray3:
+                    {}
+                iai_apartment/island_cover1:
+                  {}
+                iai_apartment/island_cover3:
+                  {}
+                iai_apartment/island_cover5:
+                  {}
+                iai_apartment/kitchen2_base_board:
+                  {}
       Update Interval: 0
-      Value: false
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 212; 233; 245
@@ -724,7 +1177,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 14.552658081054688
+      Distance: 5.445640563964844
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -732,25 +1185,25 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: 9.1603364944458
-        Y: 5.439188480377197
-        Z: 1.0509068965911865
+        X: 2.302553653717041
+        Y: 3.5419044494628906
+        Z: 0.7634970545768738
       Focal Shape Fixed Size: false
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.799797534942627
+      Pitch: 0.6247968077659607
       Target Frame: <Fixed Frame>
-      Yaw: 3.8004567623138428
+      Yaw: 5.67543888092041
     Saved: ~
 Window Geometry:
   Displays:
-    collapsed: false
+    collapsed: true
   Height: 2086
-  Hide Left Dock: false
+  Hide Left Dock: true
   Hide Right Dock: false
-  QMainWindow State: 000000ff00000000fd0000000400000000000003e40000078afc0200000008fb0000001200530065006c0065006300740069006f006e00000001e10000009b000000b000fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000b0fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c006100790073010000006e0000078a0000018200fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261000000010000015f000003e4fc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a00560069006500770073000000003d000003e40000013200fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e100000197000000030000078000000060fc0100000002fb0000000800540069006d00650000000000000007800000077d00fffffffb0000000800540069006d0065010000000000000450000000000000000000000b100000078a00000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd0000000400000000000003e40000078afc0200000008fb0000001200530065006c0065006300740069006f006e00000001e10000009b000000b000fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000b0fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c006100790073000000006e0000078a0000018200fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261000000010000015f000003e4fc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a00560069006500770073000000003d000003e40000013200fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e100000197000000030000078000000060fc0100000002fb0000000800540069006d00650000000000000007800000077d00fffffffb0000000800540069006d0065010000000000000450000000000000000000000f000000078a00000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Selection:
     collapsed: false
   Time:

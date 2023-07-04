@@ -137,9 +137,18 @@
       </collision>
     </link>
 
-    <joint name="window4_right_handle_joint" type="fixed">
-      <origin xyz="0.055 0.834107 -0.057684" rpy="0 0 0" />
+    <joint name="window4_right_handle_rotation_joint" type="revolute">
+      <origin xyz="0.017383 0.834107 0.0" rpy="0 0 0" />
       <parent link="window4_right" />
+      <child link="window4_right_handle_rotation" />
+      <axis xyz="-1 0 0" />
+      <limit effort="1000.0" lower="0.0" upper="1.5708" velocity="1.5708" />
+    </joint>
+    <link name="window4_right_handle_rotation"/>
+
+    <joint name="window4_right_handle_joint" type="fixed">
+      <origin xyz="0.037617 0 -0.057755" rpy="0 0 0" />
+      <parent link="window4_right_handle_rotation" />
       <child link="window4_right_handle" />
     </joint>
     <link name="window4_right_handle">
@@ -189,9 +198,18 @@
       </collision>
     </link>
 
-    <joint name="window4_left_handle_joint" type="fixed">
-      <origin xyz="0.055 -0.834107 -0.057684" rpy="0 0 0" />
+    <joint name="window4_left_handle_rotation_joint" type="revolute">
+      <origin xyz="0.017383 -0.834107 0.0" rpy="0 0 0" />
       <parent link="window4_left" />
+      <child link="window4_left_handle_rotation" />
+      <axis xyz="1 0 0" />
+      <limit effort="1000.0" lower="0.0" upper="1.5708" velocity="1.5708" />
+    </joint>
+    <link name="window4_left_handle_rotation"/>
+
+    <joint name="window4_left_handle_joint" type="fixed">
+      <origin xyz="0.037617 0 -0.057755" rpy="0 0 0" />
+      <parent link="window4_left_handle_rotation" />
       <child link="window4_left_handle" />
     </joint>
     <link name="window4_left_handle">
