@@ -6,6 +6,8 @@ Panels:
       Expanded:
         - /Grid1/Offset1
         - /RobotModel1
+        - /RobotModel1/Links1
+        - /TF1
       Splitter Ratio: 0.6592742204666138
     Tree Height: 874
   - Class: rviz/Selection
@@ -51,12 +53,12 @@ Visualization Manager:
       Plane Cell Count: 20
       Reference Frame: <Fixed Frame>
       Value: true
-    - Alpha: 1
+    - Alpha: 0.5
       Class: rviz/RobotModel
-      Collision Enabled: false
+      Collision Enabled: true
       Enabled: true
       Links:
-        All Links Enabled: true
+        All Links Enabled: false
         Expand Joint Details: false
         Expand Link Details: false
         Expand Tree: false
@@ -69,12 +71,12 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         bedside_table:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         cabinet1:
           Alpha: 1
           Show Axes: false
@@ -85,97 +87,77 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        cabinet10_drawer1:
+        cabinet10_drawer_bottom:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        cabinet10_drawer1_handle:
+        cabinet10_drawer_middle:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        cabinet10_drawer2:
+        cabinet10_drawer_top:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         cabinet10_drawer2_handle:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         cabinet10_drawer3:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         cabinet10_drawer3_handle:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         cabinet11:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        cabinet11_drawer1:
+        cabinet11_drawer_bottom:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        cabinet11_drawer1_handle:
+        cabinet11_drawer_middle:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        cabinet11_drawer2:
+        cabinet11_drawer_top:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        cabinet11_drawer2_handle:
+        cabinet1_coloksu_level4:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        cabinet11_drawer3:
+        cabinet1_coloksu_level5:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        cabinet11_drawer3_handle:
+        cabinet1_door_top_left:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        cabinet1_door:
+        cabinet1_drawer_bottom:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        cabinet1_door_handle:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet1_drawer1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet1_drawer1_handle:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet1_drawer2:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet1_drawer2_handle:
+        cabinet1_drawer_middle:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -229,18 +211,17 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
-        cabinet3:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
         cabinet4:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        cabinet4_door1:
+        cabinet4_door_bottom:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        cabinet4_door_top:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -250,17 +231,17 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        cabinet4_door2_handle:
+        cabinet5_drawer_bottom:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        cabinet4_shelf1:
+        cabinet5_drawer_middle:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        cabinet4_shelf2:
+        cabinet5_drawer_top:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -270,32 +251,32 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        cabinet5_drawer1:
+        cabinet6_drawer_bottom:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        cabinet5_drawer1_handle:
+        cabinet6_drawer_middle:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        cabinet5_drawer2:
+        cabinet6_drawer_top:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        cabinet5_drawer2_handle:
+        cabinet7:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        cabinet5_drawer3:
+        cabinet7_door_bottom_left:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        cabinet5_drawer3_handle:
+        cabinet7_drawer_middle:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -305,37 +286,12 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        cabinet6_drawer1:
+        cabinet8_drawer_bottom:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        cabinet6_drawer1_handle:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet6_drawer2:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet6_drawer2_handle:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet6_drawer3:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet6_drawer3_handle:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet8:
+        cabinet8_drawer_middle:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -345,248 +301,218 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        cabinet9_drawer1:
+        cabinet9_drawer_bottom:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        cabinet9_drawer1_handle:
+        cabinet9_drawer_middle:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        cabinet9_drawer2:
+        cabinet9_drawer_top:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        cabinet9_drawer2_handle:
+        cabinet8:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: false
+        cabinet9:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        cabinet9_drawer3:
+        cooktop:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        cabinet9_drawer3_handle:
+        countertop:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        coffee_table:
+        handle_cab10_b:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        coffee_table_drawer:
+        handle_cab10_m:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        counter_sink:
+        handle_cab10_t:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        counter_sink_stove:
+        handle_cab11_b:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        counter_sink_tap:
+        handle_cab11_m:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        counter_sink_tap_switch:
+        handle_cab11_t:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        counter_wall:
+        handle_cab1_drawer_bottom:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        counter_watertab:
+        handle_cab1_drawer_mid:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        dishwasher:
+        handle_cab1_top_door:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        dishwasher_front:
+        handle_cab2_door:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        dishwasher_front_handle:
+        handle_cab3_door_bottom:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        dishwasher_tray1:
+        handle_cab3_door_top:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        dishwasher_tray2:
+        handle_cab4_door_bottom:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        dishwasher_tray3:
+        handle_cab5_b:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        fridge_base:
+        handle_cab5_m:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        fridge_door1:
+        handle_cab5_t:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        fridge_door1_handle:
+        handle_cab6_b:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        fridge_door2:
+        handle_cab6_m:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        fridge_door2_handle:
+        handle_cab6_t:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        fridge_door_tray1:
+        handle_cab7:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        fridge_door_tray2:
+        handle_cab7_middle:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        fridge_drawer1:
+        handle_cab8:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        fridge_drawer2:
+        handle_cab9_b:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        fridge_drawer3:
+        handle_cab9_m:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        fridge_drawer4:
+        handle_cab9_t:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        fridge_drawer5:
+        island:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        fridge_egg_tray:
+        island_back:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        fridge_shelf1:
+        island_waterfall_left:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        fridge_shelf2:
+        island_waterfall_right:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        furnitures_root:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        island_cover1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        island_cover3:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        island_cover4:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        island_cover5:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        kitchen1_base_board:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        kitchen1_root:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        kitchen2_base_board:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        kitchen2_root:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
         kitchen_root:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-        oven:
+        middle_of_the_room:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        side_A:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        side_A_left:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        oven_door:
+        side_A_rb:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        sink_drawer1:
+        side_A_rt:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        sink_drawer1_handle:
+        side_B:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
-        sink_drawer2:
+        sink:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -596,41 +522,76 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        tap:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        useless_underbar_a:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        useless_underbar_b:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        sink_drawer1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: false
+        sink_drawer1_handle:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: false
+        sink_drawer2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: false
+        sofa:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: false
         stove:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         wall_coloksu_wall1:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         wall_coloksu_wall2:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         wall_coloksu_wall3:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         wall_coloksu_wall4:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         walls:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         wardrobe:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         wardrobe_door_left:
           Alpha: 1
           Show Axes: false
@@ -640,7 +601,12 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
+        wardrobe_door_left_handle:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: false
         wardrobe_door_right:
           Alpha: 1
           Show Axes: false
@@ -675,12 +641,17 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
+        wardrobe_door_right_handle:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: false
         windows:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
       Name: RobotModel
       Robot Description: apartment_description
       TF Prefix: iai_apartment
@@ -689,6 +660,8 @@ Visualization Manager:
       Visual Enabled: true
     - Class: rviz/TF
       Enabled: true
+      Filter (blacklist): ""
+      Filter (whitelist): ""
       Frame Timeout: 15
       Frames:
         All Enabled: true
@@ -928,225 +901,119 @@ Visualization Manager:
           Value: true
         iai_apartment/wardrobe_door_right:
           Value: true
-        iai_apartment/wardrobe_door_right_handle:
-          Value: true
-        iai_apartment/window4_frame:
-          Value: true
-        iai_apartment/window4_left:
-          Value: true
-        iai_apartment/window4_left_handle:
-          Value: true
-        iai_apartment/window4_right:
-          Value: true
-        iai_apartment/window4_right_handle:
-          Value: true
         iai_apartment/windows:
           Value: true
         map:
           Value: true
       Marker Alpha: 1
-      Marker Scale: 1
+      Marker Scale: 0.5
       Name: TF
       Show Arrows: true
       Show Axes: true
-      Show Names: true
+      Show Names: false
       Tree:
-        map:
-          iai_apartment/apartment_root:
-            iai_apartment/furnitures_root:
-              iai_apartment/armchair:
-                {}
-              iai_apartment/bedside_table:
-                {}
-              iai_apartment/coffee_table:
-                iai_apartment/coffee_table_drawer:
-                  {}
-              iai_apartment/sofa:
-                {}
-              iai_apartment/wall_coloksu_wall1:
-                {}
-              iai_apartment/wall_coloksu_wall2:
-                {}
-              iai_apartment/wall_coloksu_wall3:
-                {}
-              iai_apartment/wall_coloksu_wall4:
-                {}
-              iai_apartment/walls:
-                iai_apartment/window4_frame:
-                  iai_apartment/window4_left:
-                    iai_apartment/window4_left_handle:
-                      {}
-                  iai_apartment/window4_right:
-                    iai_apartment/window4_right_handle:
-                      {}
-              iai_apartment/wardrobe:
-                iai_apartment/wardrobe_door_left:
-                  iai_apartment/wardrobe_door_left_handle:
-                    {}
-                iai_apartment/wardrobe_door_right:
-                  iai_apartment/wardrobe_door_right_handle:
-                    {}
-              iai_apartment/windows:
-                {}
-            iai_apartment/kitchen_root:
-              iai_apartment/kitchen1_root:
-                iai_apartment/cabinet1:
-                  iai_apartment/cabinet1_door:
-                    iai_apartment/cabinet1_door_handle:
-                      {}
-                  iai_apartment/cabinet1_drawer1:
-                    iai_apartment/cabinet1_drawer1_handle:
-                      {}
-                  iai_apartment/cabinet1_drawer2:
-                    iai_apartment/cabinet1_drawer2_handle:
-                      {}
-                  iai_apartment/oven:
-                    iai_apartment/oven_door:
-                      {}
-                iai_apartment/cabinet2:
-                  iai_apartment/cabinet2_door:
-                    iai_apartment/cabinet2_door_handle:
-                      {}
-                  iai_apartment/cabinet2_drawer1:
-                    {}
-                  iai_apartment/cabinet2_drawer2:
-                    {}
-                  iai_apartment/cabinet2_drawer3:
-                    {}
-                  iai_apartment/cabinet2_drawer4:
-                    {}
-                  iai_apartment/cabinet2_drawer5:
-                    {}
-                  iai_apartment/cabinet2_drawer6:
-                    {}
-                  iai_apartment/cabinet2_shelf:
-                    {}
-                iai_apartment/cabinet3:
-                  iai_apartment/fridge_base:
-                    iai_apartment/fridge_drawer1:
-                      {}
-                    iai_apartment/fridge_drawer2:
-                      {}
-                    iai_apartment/fridge_drawer3:
-                      {}
-                    iai_apartment/fridge_drawer4:
-                      {}
-                    iai_apartment/fridge_drawer5:
-                      {}
-                    iai_apartment/fridge_shelf1:
-                      {}
-                    iai_apartment/fridge_shelf2:
-                      {}
-                  iai_apartment/fridge_door1:
-                    iai_apartment/fridge_door1_handle:
-                      {}
-                    iai_apartment/fridge_door_tray1:
-                      {}
-                    iai_apartment/fridge_door_tray2:
-                      iai_apartment/fridge_egg_tray:
-                        {}
-                  iai_apartment/fridge_door2:
-                    iai_apartment/fridge_door2_handle:
-                      {}
-                iai_apartment/cabinet4:
-                  iai_apartment/cabinet4_door1:
-                    {}
-                  iai_apartment/cabinet4_door2:
-                    iai_apartment/cabinet4_door2_handle:
-                      {}
-                  iai_apartment/cabinet4_shelf1:
-                    {}
-                  iai_apartment/cabinet4_shelf2:
-                    {}
-                iai_apartment/cabinet5:
-                  iai_apartment/cabinet5_drawer1:
-                    iai_apartment/cabinet5_drawer1_handle:
-                      {}
-                  iai_apartment/cabinet5_drawer2:
-                    iai_apartment/cabinet5_drawer2_handle:
-                      {}
-                  iai_apartment/cabinet5_drawer3:
-                    iai_apartment/cabinet5_drawer3_handle:
-                      {}
-                iai_apartment/cabinet6:
-                  iai_apartment/cabinet6_drawer1:
-                    iai_apartment/cabinet6_drawer1_handle:
-                      {}
-                  iai_apartment/cabinet6_drawer2:
-                    iai_apartment/cabinet6_drawer2_handle:
-                      {}
-                  iai_apartment/cabinet6_drawer3:
-                    iai_apartment/cabinet6_drawer3_handle:
-                      {}
-                iai_apartment/counter_wall:
-                  {}
-                iai_apartment/island_cover4:
-                  {}
-                iai_apartment/kitchen1_base_board:
-                  {}
-              iai_apartment/kitchen2_root:
-                iai_apartment/cabinet10:
-                  iai_apartment/cabinet10_drawer1:
-                    iai_apartment/cabinet10_drawer1_handle:
-                      {}
-                  iai_apartment/cabinet10_drawer2:
-                    iai_apartment/cabinet10_drawer2_handle:
-                      {}
-                  iai_apartment/cabinet10_drawer3:
-                    iai_apartment/cabinet10_drawer3_handle:
-                      {}
-                iai_apartment/cabinet11:
-                  iai_apartment/cabinet11_drawer1:
-                    iai_apartment/cabinet11_drawer1_handle:
-                      {}
-                  iai_apartment/cabinet11_drawer2:
-                    iai_apartment/cabinet11_drawer2_handle:
-                      {}
-                  iai_apartment/cabinet11_drawer3:
-                    iai_apartment/cabinet11_drawer3_handle:
-                      {}
-                iai_apartment/cabinet8:
-                  iai_apartment/sink_drawer1:
-                    iai_apartment/sink_drawer1_handle:
-                      {}
-                  iai_apartment/sink_drawer2:
-                    {}
-                iai_apartment/cabinet9:
-                  iai_apartment/cabinet9_drawer1:
-                    iai_apartment/cabinet9_drawer1_handle:
-                      {}
-                  iai_apartment/cabinet9_drawer2:
-                    iai_apartment/cabinet9_drawer2_handle:
-                      {}
-                  iai_apartment/cabinet9_drawer3:
-                    iai_apartment/cabinet9_drawer3_handle:
-                      {}
-                iai_apartment/counter_sink_stove:
-                  iai_apartment/counter_sink:
-                    iai_apartment/counter_watertab:
-                      iai_apartment/counter_sink_tap_switch:
-                        iai_apartment/counter_sink_tap:
-                          {}
-                  iai_apartment/stove:
-                    {}
-                iai_apartment/dishwasher:
-                  iai_apartment/dishwasher_front:
-                    iai_apartment/dishwasher_front_handle:
-                      {}
-                  iai_apartment/dishwasher_tray1:
-                    {}
-                  iai_apartment/dishwasher_tray2:
-                    {}
-                  iai_apartment/dishwasher_tray3:
-                    {}
-                iai_apartment/island_cover1:
-                  {}
-                iai_apartment/island_cover3:
-                  {}
-                iai_apartment/island_cover5:
-                  {}
-                iai_apartment/kitchen2_base_board:
-                  {}
+        iai_apartment/apartment_root:
+          iai_apartment/kitchen_root:
+            iai_apartment/side_A:
+              iai_apartment/cabinet1:
+                iai_apartment/cabinet1_coloksu_level4: {}
+                iai_apartment/cabinet1_coloksu_level5: {}
+                iai_apartment/cabinet1_door_top_left:
+                  iai_apartment/handle_cab1_top_door: {}
+                iai_apartment/cabinet1_drawer_bottom:
+                  iai_apartment/handle_cab1_drawer_bottom: {}
+                iai_apartment/cabinet1_drawer_middle:
+                  iai_apartment/handle_cab1_drawer_mid: {}
+              iai_apartment/cabinet2:
+                iai_apartment/cabinet2_door_out_fancy:
+                  iai_apartment/cabinet2_door_left:
+                    iai_apartment/handle_cab2_door: {}
+                iai_apartment/cabinet2_drawer_big: {}
+                iai_apartment/cabinet2_drawer_small: {}
+              iai_apartment/cabinet3:
+                iai_apartment/cabinet3_door_bottom_out_fancy:
+                  iai_apartment/cabinet3_door_bottom_left:
+                    iai_apartment/handle_cab3_door_bottom: {}
+                iai_apartment/cabinet3_door_top_out_fancy:
+                  iai_apartment/cabinet3_door_top_left:
+                    iai_apartment/handle_cab3_door_top: {}
+              iai_apartment/cabinet4:
+                iai_apartment/cabinet4_door_top:
+                  iai_apartment/cabinet4_door_bottom:
+                    iai_apartment/handle_cab4_door_bottom: {}
+              iai_apartment/cabinet5:
+                iai_apartment/cabinet5_drawer_bottom:
+                  iai_apartment/handle_cab5_b: {}
+                iai_apartment/cabinet5_drawer_middle:
+                  iai_apartment/handle_cab5_m: {}
+                iai_apartment/cabinet5_drawer_top:
+                  iai_apartment/handle_cab5_t: {}
+                iai_apartment/countertop: {}
+              iai_apartment/cabinet6:
+                iai_apartment/cabinet6_drawer_bottom:
+                  iai_apartment/handle_cab6_b: {}
+                iai_apartment/cabinet6_drawer_middle:
+                  iai_apartment/handle_cab6_m: {}
+                iai_apartment/cabinet6_drawer_top:
+                  iai_apartment/handle_cab6_t: {}
+              iai_apartment/side_A_left: {}
+              iai_apartment/side_A_rb: {}
+              iai_apartment/side_A_rt: {}
+              iai_apartment/useless_underbar_a: {}
+            iai_apartment/side_B:
+              iai_apartment/cabinet10:
+                iai_apartment/cabinet10_drawer_bottom:
+                  iai_apartment/handle_cab10_b: {}
+                iai_apartment/cabinet10_drawer_middle:
+                  iai_apartment/handle_cab10_m: {}
+                iai_apartment/cabinet10_drawer_top:
+                  iai_apartment/handle_cab10_t: {}
+              iai_apartment/cabinet11:
+                iai_apartment/cabinet11_drawer_bottom:
+                  iai_apartment/handle_cab11_b: {}
+                iai_apartment/cabinet11_drawer_middle:
+                  iai_apartment/handle_cab11_m: {}
+                iai_apartment/cabinet11_drawer_top:
+                  iai_apartment/handle_cab11_t: {}
+              iai_apartment/cabinet7:
+                iai_apartment/cabinet7_door_bottom_left:
+                  iai_apartment/handle_cab7: {}
+                iai_apartment/cabinet7_drawer_middle:
+                  iai_apartment/handle_cab7_middle: {}
+              iai_apartment/cabinet8:
+                iai_apartment/cabinet8_drawer_bottom:
+                  iai_apartment/handle_cab8: {}
+                iai_apartment/cabinet8_drawer_middle: {}
+              iai_apartment/cabinet9:
+                iai_apartment/cabinet9_drawer_bottom:
+                  iai_apartment/handle_cab9_b: {}
+                iai_apartment/cabinet9_drawer_middle:
+                  iai_apartment/handle_cab9_m: {}
+                iai_apartment/cabinet9_drawer_top:
+                  iai_apartment/handle_cab9_t: {}
+              iai_apartment/cooktop: {}
+              iai_apartment/island: {}
+              iai_apartment/island_back: {}
+              iai_apartment/island_waterfall_left: {}
+              iai_apartment/island_waterfall_right: {}
+              iai_apartment/sink: {}
+              iai_apartment/tap: {}
+              iai_apartment/useless_underbar_b: {}
+          iai_apartment/middle_of_the_room:
+            iai_apartment/armchair: {}
+            iai_apartment/bedside_table: {}
+            iai_apartment/coffee_table:
+              iai_apartment/coffee_table_drawer: {}
+            iai_apartment/sofa: {}
+            iai_apartment/wall_coloksu_wall1: {}
+            iai_apartment/wall_coloksu_wall2: {}
+            iai_apartment/wall_coloksu_wall3: {}
+            iai_apartment/wall_coloksu_wall4: {}
+            iai_apartment/walls: {}
+            iai_apartment/wardrobe:
+              iai_apartment/wardrobe_door_left: {}
+              iai_apartment/wardrobe_door_right: {}
+            iai_apartment/windows: {}
       Update Interval: 0
       Value: true
   Enabled: true
@@ -1177,7 +1044,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 9.609390258789062
+      Distance: 16.023786544799805
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -1185,17 +1052,17 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: 10.096871376037598
-        Y: 5.7242841720581055
-        Z: -0.01894337683916092
+        X: 1.6595083475112915
+        Y: -0.08021938800811768
+        Z: -0.4785533547401428
       Focal Shape Fixed Size: false
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.38479629158973694
+      Pitch: 0.4547962546348572
       Target Frame: <Fixed Frame>
-      Yaw: 4.428578853607178
+      Yaw: 0.565395712852478
     Saved: ~
 Window Geometry:
   Displays:
@@ -1214,4 +1081,4 @@ Window Geometry:
     collapsed: false
   Width: 1920
   X: 0
-  Y: 0
+  Y: 27
