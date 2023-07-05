@@ -138,7 +138,7 @@
     </link>
 
     <joint name="window4_right_handle_rotation_joint" type="revolute">
-      <origin xyz="0.017383 0.834107 0.0" rpy="0 0 0" />
+      <origin xyz="0.01 0.834107 0.0" rpy="0 0 0" />
       <parent link="window4_right" />
       <child link="window4_right_handle_rotation" />
       <axis xyz="-1 0 0" />
@@ -147,7 +147,7 @@
     <link name="window4_right_handle_rotation"/>
 
     <joint name="window4_right_handle_joint" type="fixed">
-      <origin xyz="0.037617 0 -0.057755" rpy="0 0 0" />
+      <origin xyz="0.067235 0 -0.057755" rpy="0 0 0" />
       <parent link="window4_right_handle_rotation" />
       <child link="window4_right_handle" />
     </joint>
@@ -158,19 +158,19 @@
         </geometry>
       </visual>
       <collision>
-        <origin xyz="0 0 0.057814" rpy="0 ${pi/2} 0" />
+        <origin xyz="-0.029618 0 0.057814" rpy="0 ${pi/2} 0" />
         <geometry>
           <cylinder length="0.075236" radius="0.008" />
         </geometry>
       </collision>
       <collision>
-        <origin xyz="0.029618 0 0" rpy="0 0 0" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
           <cylinder length="0.131626" radius="0.008" />
         </geometry>
       </collision>
       <collision>
-        <origin xyz="0.011142 0 -0.057813" rpy="0 ${pi/2} 0" />
+        <origin xyz="-0.018476 0 -0.057813" rpy="0 ${pi/2} 0" />
         <geometry>
           <cylinder length="0.052952" radius="0.008" />
         </geometry>
@@ -199,7 +199,7 @@
     </link>
 
     <joint name="window4_left_handle_rotation_joint" type="revolute">
-      <origin xyz="0.017383 -0.834107 0.0" rpy="0 0 0" />
+      <origin xyz="0.01 -0.834107 0.0" rpy="0 0 0" />
       <parent link="window4_left" />
       <child link="window4_left_handle_rotation" />
       <axis xyz="1 0 0" />
@@ -208,7 +208,7 @@
     <link name="window4_left_handle_rotation"/>
 
     <joint name="window4_left_handle_joint" type="fixed">
-      <origin xyz="0.037617 0 -0.057755" rpy="0 0 0" />
+      <origin xyz="0.067235 0 -0.057755" rpy="0 0 0" />
       <parent link="window4_left_handle_rotation" />
       <child link="window4_left_handle" />
     </joint>
@@ -219,19 +219,19 @@
         </geometry>
       </visual>
       <collision>
-        <origin xyz="0 0 0.057814" rpy="0 ${pi/2} 0" />
+        <origin xyz="-0.029618 0 0.057814" rpy="0 ${pi/2} 0" />
         <geometry>
           <cylinder length="0.075236" radius="0.008" />
         </geometry>
       </collision>
       <collision>
-        <origin xyz="0.029618 0 0" rpy="0 0 0" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
           <cylinder length="0.131626" radius="0.008" />
         </geometry>
       </collision>
       <collision>
-        <origin xyz="0.011142 0 -0.057813" rpy="0 ${pi/2} 0" />
+        <origin xyz="-0.018476 0 -0.057813" rpy="0 ${pi/2} 0" />
         <geometry>
           <cylinder length="0.052952" radius="0.008" />
         </geometry>
