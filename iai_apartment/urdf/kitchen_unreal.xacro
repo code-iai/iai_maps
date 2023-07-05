@@ -665,7 +665,7 @@
       <collision>
         <origin xyz="-0.003984 0.0 -0.080242" />
         <geometry>
-          <box size="0.494978 -0.361962 0.021498" />
+          <box size="0.494978 0.361962 0.021498" />
         </geometry>
       </collision>
     </link>
@@ -741,7 +741,7 @@
       <collision>
         <origin xyz="-0.003984 0.0 -0.080242" />
         <geometry>
-          <box size="0.494978 -0.361962 0.021498" />
+          <box size="0.494978 0.361962 0.021498" />
         </geometry>
       </collision>
     </link>
@@ -817,7 +817,7 @@
       <collision>
         <origin xyz="-0.003984 0.0 -0.080242" />
         <geometry>
-          <box size="0.494978 -0.361962 0.021498" />
+          <box size="0.494978 0.361962 0.021498" />
         </geometry>
       </collision>
     </link>
@@ -893,7 +893,7 @@
       <collision>
         <origin xyz="-0.003984 0.0 -0.080242" />
         <geometry>
-          <box size="0.494978 -0.361962 0.021498" />
+          <box size="0.494978 0.361962 0.021498" />
         </geometry>
       </collision>
     </link>
@@ -969,7 +969,7 @@
       <collision>
         <origin xyz="-0.003984 0.0 -0.080242" />
         <geometry>
-          <box size="0.494978 -0.361962 0.021498" />
+          <box size="0.494978 0.361962 0.021498" />
         </geometry>
       </collision>
     </link>
@@ -1321,13 +1321,13 @@
       <collision>
         <origin xyz="0.011034 0.0 0.855407" />
         <geometry>
-          <box size="0.49339 -0.556434 0.047996" />
+          <box size="0.49339 0.556434 0.047996" />
         </geometry>
       </collision>
       <collision>
         <origin xyz="-0.029351 0.0 0.839695" />
         <geometry>
-          <box size="0.392848 -0.469566 0.07542" />
+          <box size="0.392848 0.469566 0.07542" />
         </geometry>
       </collision>
       <collision>
@@ -2182,7 +2182,7 @@
       <collision>
         <origin xyz="0.217476 0.0 0.390909" />
         <geometry>
-          <box size="0.08 -0.369666 0.016" />
+          <box size="0.08 0.369666 0.016" />
         </geometry>
       </collision>
       <collision>
