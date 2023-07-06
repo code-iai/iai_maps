@@ -110,7 +110,6 @@
         <material name="white" />
       </visual>
       <collision>
-        <origin xyz="0.0005 -0.009901 -0.361161 " />
         <geometry>
           <box size="0.534942 0.561938 0.015" />
         </geometry>
