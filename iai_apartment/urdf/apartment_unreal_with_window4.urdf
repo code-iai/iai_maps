@@ -14,15 +14,15 @@
   </joint>
   <link name="furnitures_root"/>
   <!-- things and stuff -->
-  <joint name="walls_joint" type="fixed">
+  <joint name="wall1_joint" type="fixed">
     <origin rpy="0 0 0" xyz="0 0 -0.2"/>
-    <parent link="furnitures_root"/>
-    <child link="walls"/>
+    <parent link="envelope_root"/>
+    <child link="wall1"/>
   </joint>
-  <link name="walls">
+  <link name="wall1">
     <visual>
       <geometry>
-        <mesh filename="package://iai_apartment/meshes/visual/walls.dae"/>
+        <mesh filename="package://iai_apartment/meshes/unreal/SM_Wall_01.dae"/>
       </geometry>
     </visual>
     <collision>
@@ -31,6 +31,36 @@
         <box size="18.76044 0.1285 3.0517"/>
       </geometry>
     </collision>
+  </link>
+  <joint name="wall2_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 -0.2"/>
+    <parent link="envelope_root"/>
+    <child link="wall2"/>
+  </joint>
+  <link name="wall2">
+    <visual>
+      <geometry>
+        <mesh filename="package://iai_apartment/meshes/unreal/SM_Wall_02.dae"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="-8.875 0.713447 1.73439"/>
+      <geometry>
+        <box size="0.189552 4.9669 3.0517"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="wall3_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 -0.2"/>
+    <parent link="envelope_root"/>
+    <child link="wall3"/>
+  </joint>
+  <link name="wall3">
+    <visual>
+      <geometry>
+        <mesh filename="package://iai_apartment/meshes/unreal/SM_Wall_03.dae"/>
+      </geometry>
+    </visual>
     <collision>
       <origin xyz="-4.63823 3.27776 1.73439"/>
       <geometry>
@@ -43,35 +73,29 @@
         <box size="8.2886 0.1285 3.0517"/>
       </geometry>
     </collision>
+  </link>
+  <joint name="wall4_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 -0.2"/>
+    <parent link="envelope_root"/>
+    <child link="wall4"/>
+  </joint>
+  <link name="wall4">
+    <visual>
+      <geometry>
+        <mesh filename="package://iai_apartment/meshes/unreal/SM_Wall_04.dae"/>
+      </geometry>
+    </visual>
     <collision>
       <origin xyz="9.98022 0.713447 1.73439"/>
       <geometry>
         <box size="0.189552 4.9669 3.0517"/>
       </geometry>
     </collision>
-    <collision>
-      <origin xyz="-8.875 0.713447 1.73439"/>
-      <geometry>
-        <box size="0.189552 4.9669 3.0517"/>
-      </geometry>
-    </collision>
-  </link>
-  <joint name="windows_joint" type="fixed">
-    <origin rpy="0 0 0" xyz="0 0 -0.2"/>
-    <parent link="furnitures_root"/>
-    <child link="windows"/>
-  </joint>
-  <link name="windows">
-    <visual>
-      <geometry>
-        <mesh filename="package://iai_apartment/meshes/visual/windows_without_4.dae"/>
-      </geometry>
-    </visual>
   </link>
   <!-- Window 4 -->
   <joint name="window4_frame_joint" type="fixed">
-    <origin rpy="0.0 0.0 -1.5707963267948966" xyz="0.671098 3.37273 1.72145"/>
-    <parent link="walls"/>
+    <origin rpy="0.0 0.0 -1.5707963267948966" xyz="0.671098 3.37273 1.92145"/>
+    <parent link="furnitures_root"/>
     <child link="window4_frame"/>
   </joint>
   <link name="window4_frame">
@@ -680,7 +704,6 @@
       <material name="white"/>
     </visual>
     <collision>
-      <origin xyz="0.0005 -0.009901 -0.361161 "/>
       <geometry>
         <box size="0.534942 0.561938 0.015"/>
       </geometry>
