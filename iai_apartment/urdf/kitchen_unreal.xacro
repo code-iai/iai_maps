@@ -2820,7 +2820,7 @@
     </link>
 
     <joint name="dishwasher_tray1_joint" type="prismatic">
-      <origin xyz="0.19401426 0.00735926 0.22713593" rpy="0.0 0.0 0.0" />
+      <origin xyz="0.22401426 0.00735926 0.22713593" rpy="0.0 0.0 0.0" />
       <parent link="dishwasher" />
       <child link="dishwasher_tray1" />
       <axis xyz="-1 0 0" />
@@ -2866,7 +2866,7 @@
     </link>
 
     <joint name="dishwasher_tray2_joint" type="prismatic">
-      <origin xyz="0.17742002 0.00735798 0.40232784" rpy="0.0 0.0 0.0" />
+      <origin xyz="0.20742002 0.00735798 0.40232784" rpy="0.0 0.0 0.0" />
       <parent link="dishwasher" />
       <child link="dishwasher_tray2" />
       <axis xyz="-1 0 0" />
@@ -2912,7 +2912,7 @@
     </link>
 
     <joint name="dishwasher_tray3_joint" type="prismatic">
-      <origin xyz="0.19787212 0.01312525 0.61131351" rpy="0.0 0.0 0.0" />
+      <origin xyz="0.22787212 0.01312525 0.61131351" rpy="0.0 0.0 0.0" />
       <parent link="dishwasher" />
       <child link="dishwasher_tray3" />
       <axis xyz="-1 0 0" />
