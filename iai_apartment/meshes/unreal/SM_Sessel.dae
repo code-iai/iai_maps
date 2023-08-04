@@ -41,7 +41,7 @@
   </library_effects>
   <library_images>
     <image id="M_Sessel_M_Sessel_D_bmp" name="M_Sessel_M_Sessel_D_bmp">
-      <init_from>M_Sessel_M_Sessel_D.bmp</init_from>
+      <init_from>M_Sessel_M_Sessel_D.jpg</init_from>
     </image>
   </library_images>
   <library_materials>

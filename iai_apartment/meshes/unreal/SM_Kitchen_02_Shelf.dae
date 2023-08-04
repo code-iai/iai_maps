@@ -68,10 +68,10 @@
   </library_effects>
   <library_images>
     <image id="M_Metal_Chrome_M_Metal_Chrome_D_bmp" name="M_Metal_Chrome_M_Metal_Chrome_D_bmp">
-      <init_from>M_Metal_Chrome_M_Metal_Chrome_D.bmp</init_from>
+      <init_from>M_Metal_Chrome_M_Metal_Chrome_D.jpg</init_from>
     </image>
     <image id="M_Plastic_White_M_Plastic_White_D_bmp" name="M_Plastic_White_M_Plastic_White_D_bmp">
-      <init_from>M_Plastic_White_M_Plastic_White_D.bmp</init_from>
+      <init_from>M_Plastic_White_M_Plastic_White_D.jpg</init_from>
     </image>
   </library_images>
   <library_materials>

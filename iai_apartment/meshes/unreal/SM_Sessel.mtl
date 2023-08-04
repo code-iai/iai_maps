@@ -7,6 +7,6 @@ Ka 1.000000 1.000000 1.000000
 Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 illum 1
-map_Kd Game/Materials_Laborraum/M_Sessel_M_Sessel_D.bmp
-map_Ks Game/Materials_Laborraum/M_Sessel_M_Sessel_S.bmp
-map_d Game/Materials_Laborraum/M_Sessel_M_Sessel_N.bmp
+map_Kd Game/Materials_Laborraum/M_Sessel_M_Sessel_D.jpg
+map_Ks Game/Materials_Laborraum/M_Sessel_M_Sessel_S.jpg
+map_d Game/Materials_Laborraum/M_Sessel_M_Sessel_N.jpg

@@ -41,7 +41,7 @@
   </library_effects>
   <library_images>
     <image id="M_Kitchen_Fronts_M_Kitchen_Fronts_D_bmp" name="M_Kitchen_Fronts_M_Kitchen_Fronts_D_bmp">
-      <init_from>M_Kitchen_Fronts_M_Kitchen_Fronts_D.bmp</init_from>
+      <init_from>M_Kitchen_Fronts_M_Kitchen_Fronts_D.jpg</init_from>
     </image>
   </library_images>
   <library_materials>

@@ -8,6 +8,6 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd M_Metal_Chrome_M_Metal_Chrome_D.bmp
-map_Ks M_Metal_Chrome_M_Metal_Chrome_S.bmp
-map_Bump M_Metal_Chrome_M_Metal_Chrome_N.bmp
+map_Kd M_Metal_Chrome_M_Metal_Chrome_D.jpg
+map_Ks M_Metal_Chrome_M_Metal_Chrome_S.jpg
+map_Bump M_Metal_Chrome_M_Metal_Chrome_N.jpg

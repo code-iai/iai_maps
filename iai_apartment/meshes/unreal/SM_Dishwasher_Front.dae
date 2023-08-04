@@ -166,19 +166,19 @@
   </library_effects>
   <library_images>
     <image id="M_Kitchen_Fronts_M_Kitchen_Fronts_D_bmp" name="M_Kitchen_Fronts_M_Kitchen_Fronts_D_bmp">
-      <init_from>M_Kitchen_Fronts_M_Kitchen_Fronts_D.bmp</init_from>
+      <init_from>M_Kitchen_Fronts_M_Kitchen_Fronts_D.jpg</init_from>
     </image>
     <image id="M_Metal_Dishwasher_M_Metal_Dishwasher_D_bmp" name="M_Metal_Dishwasher_M_Metal_Dishwasher_D_bmp">
-      <init_from>M_Metal_Dishwasher_M_Metal_Dishwasher_D.bmp</init_from>
+      <init_from>M_Metal_Dishwasher_M_Metal_Dishwasher_D.jpg</init_from>
     </image>
     <image id="M_Plastic_Orange_M_Plastic_Orange_D_bmp" name="M_Plastic_Orange_M_Plastic_Orange_D_bmp">
-      <init_from>M_Plastic_Orange_M_Plastic_Orange_D.bmp</init_from>
+      <init_from>M_Plastic_Orange_M_Plastic_Orange_D.jpg</init_from>
     </image>
     <image id="M_Plastic_White_M_Plastic_White_D_bmp" name="M_Plastic_White_M_Plastic_White_D_bmp">
-      <init_from>M_Plastic_White_M_Plastic_White_D.bmp</init_from>
+      <init_from>M_Plastic_White_M_Plastic_White_D.jpg</init_from>
     </image>
     <image id="M_Rubber_Plastic_M_Rubber_Plastic_D_bmp" name="M_Rubber_Plastic_M_Rubber_Plastic_D_bmp">
-      <init_from>M_Rubber_Plastic_M_Rubber_Plastic_D.bmp</init_from>
+      <init_from>M_Rubber_Plastic_M_Rubber_Plastic_D.jpg</init_from>
     </image>
   </library_images>
   <library_materials>

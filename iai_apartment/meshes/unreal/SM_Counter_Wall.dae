@@ -41,7 +41,7 @@
   </library_effects>
   <library_images>
     <image id="M_Wood_Counter_M_Wood_Counter_D_bmp" name="M_Wood_Counter_M_Wood_Counter_D_bmp">
-      <init_from>M_Wood_Counter_M_Wood_Counter_D.bmp</init_from>
+      <init_from>M_Wood_Counter_M_Wood_Counter_D.jpg</init_from>
     </image>
   </library_images>
   <library_materials>

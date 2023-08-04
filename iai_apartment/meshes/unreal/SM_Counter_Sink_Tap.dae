@@ -122,16 +122,16 @@
   </library_effects>
   <library_images>
     <image id="M_Blue_M_Blue_D_bmp" name="M_Blue_M_Blue_D_bmp">
-      <init_from>M_Blue_M_Blue_D.bmp</init_from>
+      <init_from>M_Blue_M_Blue_D.jpg</init_from>
     </image>
     <image id="M_Metal_Chrome_Matte_M_Metal_Chrome_Matte_D_bmp" name="M_Metal_Chrome_Matte_M_Metal_Chrome_Matte_D_bmp">
-      <init_from>M_Metal_Chrome_Matte_M_Metal_Chrome_Matte_D.bmp</init_from>
+      <init_from>M_Metal_Chrome_Matte_M_Metal_Chrome_Matte_D.jpg</init_from>
     </image>
     <image id="M_Metal_Fridge_M_Metal_Fridge_D_bmp" name="M_Metal_Fridge_M_Metal_Fridge_D_bmp">
-      <init_from>M_Metal_Fridge_M_Metal_Fridge_D.bmp</init_from>
+      <init_from>M_Metal_Fridge_M_Metal_Fridge_D.jpg</init_from>
     </image>
     <image id="M_Red_M_Red_D_bmp" name="M_Red_M_Red_D_bmp">
-      <init_from>M_Red_M_Red_D.bmp</init_from>
+      <init_from>M_Red_M_Red_D.jpg</init_from>
     </image>
   </library_images>
   <library_materials>
