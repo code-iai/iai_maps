@@ -29,7 +29,7 @@
     <link name="side_B" />
 
     <!-- - - - - - - - - - - - - Cabinets side A - - - - - - - - - -->
-    <!-- Cabinet1 -->
+    <!-- Cabinet 1 -->
     <joint name="cabinet1_joint" type="fixed">
       <origin xyz="0.01 0.01 1.02" />
       <parent link="side_A" />
@@ -248,7 +248,7 @@
     </link>
 
 
-    <!-- Cabinet2 -->
+    <!-- Cabinet 2 -->
     <joint name="cabinet2_joint" type="fixed">
       <origin xyz="-0.163 0.51 0.975" />
       <parent link="side_A" />
@@ -366,7 +366,7 @@
       </collision>
     </link>
 
-    <!-- Cabinet3 -->
+    <!-- Cabinet 3 -->
     <joint name="cabinet3_joint" type="fixed">
       <origin xyz="-0.273 1.022 1.07" />
       <parent link="side_A" />
@@ -491,7 +491,7 @@
       </collision>
     </link>
 
-    <!-- Cabinet4 -->
+    <!-- Cabinet 4 -->
     <joint name="cabinet4_joint" type="fixed">
       <origin xyz="-0.175 1.825 1.72" />
       <parent link="side_A" />
@@ -577,7 +577,7 @@
       </collision>
     </link>
 
-    <!-- Cabinet5 -->
+    <!-- Cabinet 5 -->
     <joint name="cabinet5_joint" type="fixed">
       <origin xyz="-0.121 1.625 0.4" />
       <parent link="side_A" />
@@ -723,7 +723,7 @@
       </collision>
     </link>
 
-    <!-- Cabinet6 -->
+    <!-- Cabinet 6 -->
     <joint name="cabinet6_joint" type="fixed">
       <origin xyz="-0.121 2.127 0.4" />
       <parent link="side_A" />
@@ -865,6 +865,93 @@
       <collision>
         <geometry>
           <mesh filename="package://iai_apartment/meshes/handles/handle_horizontal.obj" />
+        </geometry>
+      </collision>
+    </link>
+
+    <!-- Cabinet 12 -->
+    <joint name="cabinet12_joint" type="fixed">
+      <origin xyz="-0.273 -0.5855 1.07" />
+      <parent link="side_A" />
+      <child link="cabinet12" />
+    </joint>
+
+    <link name="cabinet12">
+      <visual>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/cabinet12/IAICabinet12W60.dae" />
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/cabinet12/IAICabinet12W60.obj" />
+        </geometry>
+      </collision>
+    </link>
+
+    <joint name="cabinet12_door_top_out_joint" type="prismatic">
+      <origin xyz="0.39 -0.3 0.5" rpy="0 0 3.14" />
+      <parent link="cabinet12" />
+      <child link="cabinet12_door_top_out_fancy" />
+      <axis xyz="-1 0 0" />
+      <limit effort="1.0" lower="0.0" upper="0.02" velocity="1.5708" />
+      <mimic joint="cabinet12_door_top_left_joint" multiplier="0.01" />
+    </joint>
+
+    <link name="cabinet12_door_top_out_fancy" />
+
+    <joint name="cabinet12_door_top_left_joint" type="revolute">
+
+      <parent link="cabinet12_door_top_out_fancy" />
+      <child link="cabinet12_door_top_left" />
+      <axis xyz="0 0 -1" />
+      <limit effort="1000.0" lower="0.0" upper="1.5708" velocity="1.5708" />
+    </joint>
+
+    <link name="cabinet12_door_top_left">
+      <visual>
+        <origin xyz="0.001 -0.3 -0.1" rpy="0 0 3.14" />
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/cabinet12/IAIDoorW60H133.dae" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0.001 -0.3 -0.1" rpy="0 0 3.14" />
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/cabinet12/IAIDoorW60H133.obj" />
+        </geometry>
+      </collision>
+    </link>
+
+    <joint name="cabinet12_door_bottom_out_joint" type="prismatic">
+      <origin xyz="0.39 -0.3 -0.5" rpy="0 0 3.14" />
+      <parent link="cabinet12" />
+      <child link="cabinet12_door_bottom_out_fancy" />
+      <axis xyz="-1 0 0" />
+      <limit effort="1.0" lower="0.0" upper="0.02" velocity="1.5708" />
+      <mimic joint="cabinet12_door_bottom_left_joint" multiplier="0.01" />
+    </joint>
+
+    <link name="cabinet12_door_bottom_out_fancy" />
+
+    <joint name="cabinet12_door_bottom_left_joint" type="revolute">
+      <parent link="cabinet12_door_bottom_out_fancy" />
+      <child link="cabinet12_door_bottom_left" />
+      <axis xyz="0 0 -1" />
+      <limit effort="1000.0" lower="0.0" upper="1.5708" velocity="1.5708" />
+    </joint>
+
+    <link name="cabinet12_door_bottom_left">
+      <visual>
+        <origin xyz="0.001 -0.3 -0.165" rpy="0 0 3.14" />
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/cabinet12/IAIDoorW60H80.dae" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0.001 -0.3 -0.165" rpy="0 0 3.14" />
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/cabinet12/IAIDoorW60H80.obj" />
         </geometry>
       </collision>
     </link>
@@ -1063,7 +1150,7 @@
       </collision>
     </link>
 
-    <!-- Cabinet9 -->
+    <!-- Cabinet 9 -->
     <joint name="cabinet9_joint" type="fixed">
       <origin xyz="0.333 1.703 0.394" />
       <parent link="side_B" />
@@ -1793,7 +1880,7 @@
 
     <!-- side A left panel -->
     <joint name="side_A_left_joint" type="fixed">
-      <origin xyz="-0.16 -0.296 1.030" rpy="0 0 1.57" />
+      <origin xyz="-0.16 -0.896 1.030" rpy="0 0 1.57" />
       <parent link="side_A" />
       <child link="side_A_left" />
     </joint>
