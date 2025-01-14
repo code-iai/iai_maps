@@ -386,7 +386,7 @@
       </collision>
     </link>
 
-    <joint name="cabinet3_door_top_out_joint" type="prismatic">
+    <joint name="cabinet3_door_top_out_joint" type="revolute">
       <origin xyz="0.39 -0.3 0.5" rpy="0 0 3.14" />
       <parent link="cabinet3" />
       <child link="cabinet3_door_top_out_fancy" />
