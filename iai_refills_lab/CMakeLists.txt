@@ -20,13 +20,13 @@ find_package(xacro REQUIRED)
 #############
 
 install(DIRECTORY maps
-DESTINATION share/${PROJECT_NAME}/maps)
+DESTINATION share/${PROJECT_NAME})
 
 install(DIRECTORY urdf
-  DESTINATION share/${PROJECT_NAME}/urdf_obj)
+  DESTINATION share/${PROJECT_NAME})
 
 install(DIRECTORY script
-DESTINATION share/${PROJECT_NAME}/script)
+DESTINATION share/${PROJECT_NAME})
 
 
 ament_package()

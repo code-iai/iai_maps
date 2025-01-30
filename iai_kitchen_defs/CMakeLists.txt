@@ -20,13 +20,13 @@ find_package(xacro REQUIRED)
 #############
 
 install(DIRECTORY defs
-DESTINATION share/${PROJECT_NAME}/defs)
+DESTINATION share/${PROJECT_NAME})
 
 install(DIRECTORY Media
-  DESTINATION share/${PROJECT_NAME}/Media)
+  DESTINATION share/${PROJECT_NAME})
 
 install(DIRECTORY room
-DESTINATION share/${PROJECT_NAME}/room)
+DESTINATION share/${PROJECT_NAME})
 
 
 ament_package()

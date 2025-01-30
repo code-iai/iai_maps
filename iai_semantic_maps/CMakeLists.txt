@@ -20,10 +20,10 @@ find_package(xacro REQUIRED)
 #############
 
 install(DIRECTORY prolog
-DESTINATION share/${PROJECT_NAME}/prolog)
+DESTINATION share/${PROJECT_NAME})
 
 install(DIRECTORY owl
-  DESTINATION share/${PROJECT_NAME}/owl)
+  DESTINATION share/${PROJECT_NAME})
 
 
 ament_package()

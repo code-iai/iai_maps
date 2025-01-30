@@ -20,16 +20,16 @@ find_package(xacro REQUIRED)
 #############
 
 install(DIRECTORY meshes
-DESTINATION share/${PROJECT_NAME}/meshes)
+DESTINATION share/${PROJECT_NAME})
 
-install(DIRECTORY urdf
-  DESTINATION share/${PROJECT_NAME}/urdf_obj)
+install(DIRECTORY urdf_obj
+  DESTINATION share/${PROJECT_NAME})
 
 install(DIRECTORY launch
-DESTINATION share/${PROJECT_NAME}/launch)
+DESTINATION share/${PROJECT_NAME})
 
 install(DIRECTORY owl
-DESTINATION share/${PROJECT_NAME}/owl)
+DESTINATION share/${PROJECT_NAME})
 
 
 ament_package()

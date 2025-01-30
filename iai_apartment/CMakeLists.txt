@@ -20,12 +20,18 @@ find_package(xacro REQUIRED)
 #############
 
 install(DIRECTORY maps
-  DESTINATION share/${PROJECT_NAME}/maps)
+  DESTINATION share/${PROJECT_NAME})
 
 install(DIRECTORY meshes
-DESTINATION share/${PROJECT_NAME}/meshes)
+DESTINATION share/${PROJECT_NAME})
 
 install(DIRECTORY urdf
-  DESTINATION share/${PROJECT_NAME}/urdf)
+  DESTINATION share/${PROJECT_NAME})
+
+install(DIRECTORY owl
+DESTINATION share/${PROJECT_NAME})
+
+install(DIRECTORY launch
+DESTINATION share/${PROJECT_NAME})
 
 ament_package()

@@ -21,15 +21,15 @@ find_package(xacro REQUIRED)
 
 
 install(DIRECTORY config
-  DESTINATION share/${PROJECT_NAME}/config)
+  DESTINATION share/${PROJECT_NAME})
 
 install(DIRECTORY doc
-  DESTINATION share/${PROJECT_NAME}/doc)
+  DESTINATION share/${PROJECT_NAME})
 
 install(DIRECTORY launch
-DESTINATION share/${PROJECT_NAME}/launch)
+DESTINATION share/${PROJECT_NAME})
 
 install(DIRECTORY urdf
-  DESTINATION share/${PROJECT_NAME}/urdf)
+  DESTINATION share/${PROJECT_NAME})
 
 ament_package()
