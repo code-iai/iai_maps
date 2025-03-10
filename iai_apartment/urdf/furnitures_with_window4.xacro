@@ -1,0 +1,616 @@
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="furnitures">
+
+  <xacro:macro name="furnitures_macro" params="name parent *origin">
+
+    <joint name="${name}" type="fixed">
+      <xacro:insert_block name="origin" />
+      <parent link="${parent}" />
+      <child link="furnitures_root" />
+    </joint>
+    <link name="furnitures_root" />
+
+    <!-- things and stuff -->
+    <joint name="wall1_joint" type="fixed">
+      <origin rpy="0 0 0" xyz="0 0 -0.2" />
+      <parent link="furnitures_root" />
+      <child link="wall1" />
+    </joint>
+    <link name="wall1">
+      <visual>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/unreal/SM_Wall_01.dae" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0.505224 -1.81425 1.73439" />
+        <geometry>
+          <box size="18.76044 0.1285 3.0517" />
+        </geometry>
+      </collision>
+    </link>
+
+    <joint name="wall2_joint" type="fixed">
+      <origin rpy="0 0 0" xyz="0 0 -0.2" />
+      <parent link="furnitures_root" />
+      <child link="wall2" />
+    </joint>
+    <link name="wall2">
+      <visual>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/unreal/SM_Wall_02.dae" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="-8.875 0.713447 1.73439" />
+        <geometry>
+          <box size="0.189552 4.9669 3.0517" />
+        </geometry>
+      </collision>
+    </link>
+
+    <joint name="wall3_joint" type="fixed">
+      <origin rpy="0 0 0" xyz="0 0 -0.2" />
+      <parent link="furnitures_root" />
+      <child link="wall3" />
+    </joint>
+    <link name="wall3">
+      <visual>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/unreal/SM_Wall_03.dae" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="-4.63823 3.27776 1.73439" />
+        <geometry>
+          <box size="8.47354 0.1285 3.0517" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="5.87824  3.27776 1.73439" />
+        <geometry>
+          <box size="8.2886 0.1285 3.0517" />
+        </geometry>
+      </collision>
+    </link>
+
+    <joint name="wall4_joint" type="fixed">
+      <origin rpy="0 0 0" xyz="0 0 -0.2" />
+      <parent link="furnitures_root" />
+      <child link="wall4" />
+    </joint>
+    <link name="wall4">
+      <visual>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/unreal/SM_Wall_04.dae" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="9.98022 0.713447 1.73439" />
+        <geometry>
+          <box size="0.189552 4.9669 3.0517" />
+        </geometry>
+      </collision>
+    </link>
+
+    <!-- Window 4 -->
+    <joint name="window4_frame_joint" type="fixed">
+      <origin xyz="0.671098 3.37273 1.52145" rpy="0.0 0.0 ${-pi/2}"/>
+      <parent link="furnitures_root" />
+      <child link="window4_frame" />
+    </joint>
+    <link name="window4_frame">
+      <visual>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/unreal/SM_Window_Frame.dae" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0 0 1.42883" />
+        <geometry>
+          <box size="0.02 2.1354 0.185552" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0 0 0.795222" />
+        <geometry>
+          <box size="0.02 2.1354 0.37828" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0 0 -1.49481" />
+        <geometry>
+          <box size="0.02 2.1354 0.053592" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0 0.992126 0" />
+        <geometry>
+          <box size="0.02 0.151148 3.04322" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0 -0.992126 0" />
+        <geometry>
+          <box size="0.02 0.151148 3.04322" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0 0 0" />
+        <geometry>
+          <box size="0.02 0.146252 3.04322" />
+        </geometry>
+      </collision>
+    </link>
+
+    <joint name="window4_right_joint" type="revolute">
+      <origin xyz="0 -0.916552 -0.425471" />
+      <parent link="window4_frame" />
+      <child link="window4_right" />
+      <axis xyz="0 0 -1" />
+      <limit effort="1000.0" lower="0.0" upper="1.5708" velocity="1.5708" />
+    </joint>
+    <link name="window4_right">
+      <visual>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/unreal/SM_Window_Right.dae" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0 0.421713 0" />
+        <geometry>
+          <box size="0.02 0.843426 2.0631" />
+        </geometry>
+      </collision>
+    </link>
+
+    <joint name="window4_right_handle_rotation_joint" type="revolute">
+      <origin xyz="0.01 0.834107 0.0" rpy="0 0 0" />
+      <parent link="window4_right" />
+      <child link="window4_right_handle_rotation" />
+      <axis xyz="-1 0 0" />
+      <limit effort="1000.0" lower="0.0" upper="1.5708" velocity="1.5708" />
+    </joint>
+    <link name="window4_right_handle_rotation"/>
+
+    <joint name="window4_right_handle_joint" type="fixed">
+      <origin xyz="0.067235 0 -0.057755" rpy="0 0 0" />
+      <parent link="window4_right_handle_rotation" />
+      <child link="window4_right_handle" />
+    </joint>
+    <link name="window4_right_handle">
+      <visual>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/unreal/SM_Window_Handle.dae" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="-0.029618 0 0.057814" rpy="0 ${pi/2} 0" />
+        <geometry>
+          <cylinder length="0.075236" radius="0.008" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <cylinder length="0.131626" radius="0.008" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="-0.018476 0 -0.057813" rpy="0 ${pi/2} 0" />
+        <geometry>
+          <cylinder length="0.052952" radius="0.008" />
+        </geometry>
+      </collision>
+    </link>
+
+    <joint name="window4_left_joint" type="revolute">
+      <origin xyz="0.00162 0.929112 -0.425471" />
+      <parent link="window4_frame" />
+      <child link="window4_left" />
+      <axis xyz="0 0 1" />
+      <limit effort="1000.0" lower="0.0" upper="1.5708" velocity="1.5708" />
+    </joint>
+    <link name="window4_left">
+      <visual>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/unreal/SM_Window_Left.dae" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0 -0.43203 0" />
+        <geometry>
+          <box size="0.02 0.86406 2.0631" />
+        </geometry>
+      </collision>
+    </link>
+
+    <joint name="window4_left_handle_rotation_joint" type="revolute">
+      <origin xyz="0.01 -0.834107 0.0" rpy="0 0 0" />
+      <parent link="window4_left" />
+      <child link="window4_left_handle_rotation" />
+      <axis xyz="1 0 0" />
+      <limit effort="1000.0" lower="0.0" upper="1.5708" velocity="1.5708" />
+    </joint>
+    <link name="window4_left_handle_rotation"/>
+
+    <joint name="window4_left_handle_joint" type="fixed">
+      <origin xyz="0.067235 0 -0.057755" rpy="0 0 0" />
+      <parent link="window4_left_handle_rotation" />
+      <child link="window4_left_handle" />
+    </joint>
+    <link name="window4_left_handle">
+      <visual>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/unreal/SM_Window_Handle.dae" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="-0.029618 0 0.057814" rpy="0 ${pi/2} 0" />
+        <geometry>
+          <cylinder length="0.075236" radius="0.008" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <cylinder length="0.131626" radius="0.008" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="-0.018476 0 -0.057813" rpy="0 ${pi/2} 0" />
+        <geometry>
+          <cylinder length="0.052952" radius="0.008" />
+        </geometry>
+      </collision>
+    </link>
+
+    <joint name="wardrobe_joint" type="fixed">
+      <origin rpy="0 0 0" xyz="9.7082 -0.6331 0.0" />
+      <parent link="furnitures_root" />
+      <child link="wardrobe" />
+    </joint>
+    <link name="wardrobe">
+      <visual>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/visual/wardrobe.dae" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin rpy="0 0 0" xyz="-0.2693 -0.4482 0.0750" />
+        <geometry>
+          <box size="0.08 0.08 0.15" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin rpy="0 0 0" xyz="0.10603 -0.4482 0.0750" />
+        <geometry>
+          <box size="0.08 0.08 0.15" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin rpy="0 0 0" xyz="-0.2693 0.4482 0.0750" />
+        <geometry>
+          <box size="0.08 0.08 0.15" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin rpy="0 0 0" xyz="0.10603 0.4482 0.0750" />
+        <geometry>
+          <box size="0.08 0.08 0.15" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin rpy="0 0 0" xyz="-0.0805 0.0000 0.16345" />
+        <geometry>
+          <box size="0.487 1.0000 0.0269" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin rpy="0 0 0" xyz="-0.0805 0.48965 0.975" />
+        <geometry>
+          <box size="0.487 0.0207 1.65" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin rpy="0 0 0" xyz="-0.0896 0.0000 0.975" />
+        <geometry>
+          <box size="0.4318 0.018568 1.65" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin rpy="0 0 0" xyz="-0.0805 -0.48965 0.975" />
+        <geometry>
+          <box size="0.487 0.0207 1.65" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin rpy="0 0 0" xyz="0.14465 0.0000 0.975" />
+        <geometry>
+          <box size="0.0367 1.0000 1.65" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin rpy="0 0 0" xyz="0.14465 0.0000 0.975" />
+        <geometry>
+          <box size="0.0367 1.0000 1.65" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin rpy="0 0 0" xyz="-0.0805 0.0000 1.7865" />
+        <geometry>
+          <box size="0.487 1.0000 0.027" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin rpy="0 0 0" xyz="-0.08861 -0.244343 0.5727" />
+        <geometry>
+          <box size="0.4299 0.469957 0.0118" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin rpy="0 0 0" xyz="-0.08861 -0.244343 0.974836" />
+        <geometry>
+          <box size="0.4299 0.469957 0.0118" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin rpy="0 0 0" xyz="-0.08861 -0.244343 1.37686" />
+        <geometry>
+          <box size="0.4299 0.469957 0.0118" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin rpy="1.5708 0 0" xyz="-0.086923 0.244373 1.66898" />
+        <geometry>
+          <cylinder radius="0.0075" length="0.469897" />
+        </geometry>
+      </collision>
+    </link>
+    
+    <joint name="wardrobe_door_left_joint" type="revolute">
+      <origin rpy="0 0 0" xyz="-0.3246 0.5 0.0000" />
+      <parent link="wardrobe" />
+      <child link="wardrobe_door_left" />
+      <axis xyz="0 0 -1" />
+      <limit effort="1000.0" lower="0.0" upper="1.5708" velocity="1.5708" />
+    </joint>
+    <link name="wardrobe_door_left">
+      <visual>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/visual/wardrobe_door_left.dae" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin rpy="0 0 0" xyz="-0.006435 -0.2485 0.975" />
+        <geometry>
+          <box size="0.012967 0.495438 1.64844" />
+        </geometry>
+      </collision>
+    </link>
+    <joint name="wardrobe_door_left_handle_joint" type="fixed">
+      <origin rpy="0 0 0" xyz="-0.032089 -0.460513 0.973703" />
+      <parent link="wardrobe_door_left" />
+      <child link="wardrobe_door_left_handle" />
+    </joint>
+    <link name="wardrobe_door_left_handle">
+      <visual>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/visual/wardrobe_door_handle.dae" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin rpy="0 0 0" xyz="0.010421 0 0.059003" />
+        <geometry>
+          <box size="0.033556 0.015082 0.014587" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin rpy="0 0 0" xyz="-0.0136 0 0" />
+        <geometry>
+          <box size="0.014486 0.015082 0.13" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin rpy="0 0 0" xyz="0.010421 0 -0.059003" />
+        <geometry>
+          <box size="0.033556 0.015082 0.014587" />
+        </geometry>
+      </collision>
+    </link>
+    <joint name="wardrobe_door_right_joint" type="revolute">
+      <origin rpy="0 0 0" xyz="-0.3246 -0.5 0.0000" />
+      <parent link="wardrobe" />
+      <child link="wardrobe_door_right" />
+      <axis xyz="0 0 1" />
+      <limit effort="1000.0" lower="0.0" upper="1.5708" velocity="1.5708" />
+    </joint>
+    <link name="wardrobe_door_right">
+      <visual>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/visual/wardrobe_door_right.dae" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin rpy="0 0 0" xyz="-0.006435 0.2485 0.975" />
+        <geometry>
+          <box size="0.012967 0.495438 1.64844" />
+        </geometry>
+      </collision>
+    </link>
+    <joint name="wardrobe_door_right_handle_joint" type="fixed">
+      <origin rpy="0 0 0" xyz="-0.032089 0.460513 0.973703" />
+      <parent link="wardrobe_door_right" />
+      <child link="wardrobe_door_right_handle" />
+    </joint>
+    <link name="wardrobe_door_right_handle">
+      <visual>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/visual/wardrobe_door_handle.dae" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin rpy="0 0 0" xyz="0.010421 0 0.059003" />
+        <geometry>
+          <box size="0.033556 0.015082 0.014587" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin rpy="0 0 0" xyz="-0.0136 0 0" />
+        <geometry>
+          <box size="0.014486 0.015082 0.13" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin rpy="0 0 0" xyz="0.010421 0 -0.059003" />
+        <geometry>
+          <box size="0.033556 0.015082 0.014587" />
+        </geometry>
+      </collision>
+    </link>
+
+    <joint name="armchair_joint" type="fixed">
+      <origin rpy="0 0 1.9199" xyz="7.9688 -0.3791 0.3559428" />
+      <parent link="furnitures_root" />
+      <child link="armchair" />
+    </joint>
+    <link name="armchair">
+      <visual>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/visual/armchair.dae" />
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/collision/armchair.stl" />
+        </geometry>
+      </collision>
+    </link>
+    <joint name="sofa_joint" type="fixed">
+      <origin xyz="8.1986 2.4096 0.35732983" rpy="0 0 ${pi/2}"/>
+      <parent link="furnitures_root" />
+      <child link="sofa" />
+    </joint>
+    <link name="sofa">
+      <visual>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/visual/sofa.dae" />
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/collision/sofa.stl" />
+        </geometry>
+      </collision>
+    </link>
+    <joint name="coffee_table_joint" type="fixed">
+      <origin rpy="0 0 1.5708" xyz="7.8034 1.02957 0.0" />
+      <parent link="furnitures_root" />
+      <child link="coffee_table" />
+    </joint>
+    <link name="coffee_table">
+      <visual>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/visual/coffee_table.dae" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin rpy="0 0 0" xyz="0.0000 0.0000 0.02977" />
+        <geometry>
+          <box size="0.58 1.08 0.05954" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin rpy="0 0 0" xyz="-0.022101 0.0000 0.06552" />
+        <geometry>
+          <box size="0.6106 0.4 0.01196" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin rpy="0 0 0" xyz="0.0000 0.39975 0.220625" />
+        <geometry>
+          <box size="0.7 0.4 0.32" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin rpy="0 0 0" xyz="0.0000 -0.39975 0.220625" />
+        <geometry>
+          <box size="0.7 0.4 0.32" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin rpy="0 0 0" xyz="0.316343 0.0000 0.22" />
+        <geometry>
+          <box size="0.0673 0.4 0.32" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin rpy="0 0 0" xyz="0.0000 0.0000 0.39" />
+        <geometry>
+          <box size="0.7 1.2 0.02" />
+        </geometry>
+      </collision>
+    </link>
+    <joint name="coffee_table_drawer_joint" type="prismatic">
+      <parent link="coffee_table" />
+      <child link="coffee_table_drawer" />
+      <axis xyz="-1 0 0" />
+      <limit effort="1000.0" lower="0.0" upper="0.5" velocity="0.5" />
+    </joint>
+    <link name="coffee_table_drawer">
+      <visual>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/visual/coffee_table_drawer.dae" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin rpy="0 0 0" xyz="-0.338806 0.0000 0.21892" />
+        <geometry>
+          <box size="0.0214 0.396 0.31569" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin rpy="0 0 0" xyz="-0.051066 0.0000 0.107979" />
+        <geometry>
+          <box size="0.5521 0.3454 0.02144" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin rpy="0 0 0" xyz="0.207974 0.0000 0.238907" />
+        <geometry>
+          <box size="0.0214 0.3486 0.2398" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin rpy="0 0 0" xyz="-0.051066 -0.186206 0.226597" />
+        <geometry>
+          <box size="0.5521 0.0214 0.26425" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin rpy="0 0 0" xyz="-0.051066 0.186206 0.226597" />
+        <geometry>
+          <box size="0.5521 0.0214 0.26425" />
+        </geometry>
+      </collision>
+    </link>
+    <joint name="bedside_table_joint" type="fixed">
+      <origin rpy="0 0 0" xyz="7.2110 0.1296 0.22990467" />
+      <parent link="furnitures_root" />
+      <child link="bedside_table" />
+    </joint>
+    <link name="bedside_table">
+      <visual>
+        <geometry>
+          <mesh filename="package://iai_apartment/meshes/visual/bedside_table.dae" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+        <geometry>
+          <box size="0.312 0.312 0.460" />
+        </geometry>
+      </collision>
+    </link>
+  </xacro:macro>
+
+</robot>

@@ -2,7 +2,7 @@
 
   <node pkg="tf" type="static_transform_publisher" name="iai_apartment_root_link_broadcaster" args="0 0 0 0 0 0 map iai_apartment/apartment_root 25"></node>
 
-  <include file="$(find iai_apartment)/launch/upload_apartment.launch" />
+  <include file="$(find iai_apartment)/launch/apartment_upload.launch" />
 
   <node name="apartment_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher">
     <remap from="robot_description" to="apartment_description" />
