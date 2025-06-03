@@ -1,60 +1,64 @@
 Panels:
-  - Class: rviz/Displays
-    Help Height: 138
+  - Class: rviz_common/Displays
+    Help Height: 78
     Name: Displays
     Property Tree Widget:
       Expanded:
-        - /Grid1/Offset1
+        - /Global Options1
+        - /Status1
         - /RobotModel1
-      Splitter Ratio: 0.6592742204666138
-    Tree Height: 797
-  - Class: rviz/Selection
+      Splitter Ratio: 0.5
+    Tree Height: 739
+  - Class: rviz_common/Selection
     Name: Selection
-  - Class: rviz/Tool Properties
+  - Class: rviz_common/Tool Properties
     Expanded:
-      - /2D Pose Estimate1
-      - /2D Nav Goal1
+      - /2D Goal Pose1
       - /Publish Point1
     Name: Tool Properties
     Splitter Ratio: 0.5886790156364441
-  - Class: rviz/Views
+  - Class: rviz_common/Views
     Expanded:
       - /Current View1
     Name: Views
     Splitter Ratio: 0.5
-  - Class: rviz/Time
-    Experimental: true
+  - Class: rviz_common/Time
+    Experimental: false
     Name: Time
     SyncMode: 0
     SyncSource: ""
-Preferences:
-  PromptSaveOnExit: true
-Toolbars:
-  toolButtonStyle: 2
 Visualization Manager:
   Class: ""
   Displays:
     - Alpha: 0.5
       Cell Size: 1
-      Class: rviz/Grid
-      Color: 255; 53; 127
+      Class: rviz_default_plugins/Grid
+      Color: 160; 160; 164
       Enabled: true
       Line Style:
         Line Width: 0.029999999329447746
-        Value: Billboards
+        Value: Lines
       Name: Grid
       Normal Cell Count: 0
       Offset:
-        X: 10
-        Y: 3
+        X: 0
+        Y: 0
         Z: 0
       Plane: XY
-      Plane Cell Count: 20
+      Plane Cell Count: 10
       Reference Frame: <Fixed Frame>
       Value: true
     - Alpha: 1
-      Class: rviz/RobotModel
+      Class: rviz_default_plugins/RobotModel
       Collision Enabled: false
+      Description File: ""
+      Description Source: Topic
+      Description Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /robot_description
       Enabled: true
       Links:
         All Links Enabled: true
@@ -121,6 +125,29 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        cabinet12:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        cabinet12_door_bottom_left:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        cabinet12_door_bottom_out_fancy:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        cabinet12_door_top_left:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        cabinet12_door_top_out_fancy:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         cabinet1_coloksu_level4:
           Alpha: 1
           Show Axes: false
@@ -258,11 +285,6 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        cabinet7_drawer_middle:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
         cabinet8:
           Alpha: 1
           Show Axes: false
@@ -298,6 +320,11 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        coffe_machine:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
         coffee_table:
           Alpha: 1
           Show Axes: false
@@ -318,6 +345,15 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        dishwasher_drawer_middle:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        furnitures_root:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         handle_cab10_b:
           Alpha: 1
           Show Axes: false
@@ -443,12 +479,28 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        island:
+        hotplate1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        hotplate2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        hotplate3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        hotplate4:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        island_back:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        island_back:
+        island_countertop:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -467,10 +519,11 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-        middle_of_the_room:
+        oven:
           Alpha: 1
           Show Axes: false
           Show Trail: false
+          Value: true
         side_A:
           Alpha: 1
           Show Axes: false
@@ -504,11 +557,20 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        tap:
+        tap_body:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
+        tap_handle:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        tap_handle_open:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         useless_underbar_a:
           Alpha: 1
           Show Axes: false
@@ -554,7 +616,17 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        wardrobe_door_left_handle:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
         wardrobe_door_right:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wardrobe_door_right_handle:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -564,387 +636,87 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+      Mass Properties:
+        Inertia: false
+        Mass: false
       Name: RobotModel
-      Robot Description: apartment_description
-      TF Prefix: iai_apartment
+      TF Prefix: ""
       Update Interval: 0
       Value: true
       Visual Enabled: true
-    - Class: rviz/TF
-      Enabled: true
-      Frame Timeout: 15
-      Frames:
-        All Enabled: true
-        iai_apartment/apartment_root:
-          Value: true
-        iai_apartment/armchair:
-          Value: true
-        iai_apartment/bedside_table:
-          Value: true
-        iai_apartment/cabinet1:
-          Value: true
-        iai_apartment/cabinet10:
-          Value: true
-        iai_apartment/cabinet10_drawer_bottom:
-          Value: true
-        iai_apartment/cabinet10_drawer_middle:
-          Value: true
-        iai_apartment/cabinet10_drawer_top:
-          Value: true
-        iai_apartment/cabinet11:
-          Value: true
-        iai_apartment/cabinet11_drawer_bottom:
-          Value: true
-        iai_apartment/cabinet11_drawer_middle:
-          Value: true
-        iai_apartment/cabinet11_drawer_top:
-          Value: true
-        iai_apartment/cabinet1_coloksu_level4:
-          Value: true
-        iai_apartment/cabinet1_coloksu_level5:
-          Value: true
-        iai_apartment/cabinet1_door_top_left:
-          Value: true
-        iai_apartment/cabinet1_drawer_bottom:
-          Value: true
-        iai_apartment/cabinet1_drawer_middle:
-          Value: true
-        iai_apartment/cabinet2:
-          Value: true
-        iai_apartment/cabinet2_door_left:
-          Value: true
-        iai_apartment/cabinet2_door_out_fancy:
-          Value: true
-        iai_apartment/cabinet2_drawer_big:
-          Value: true
-        iai_apartment/cabinet2_drawer_small:
-          Value: true
-        iai_apartment/cabinet3:
-          Value: true
-        iai_apartment/cabinet3_door_bottom_left:
-          Value: true
-        iai_apartment/cabinet3_door_bottom_out_fancy:
-          Value: true
-        iai_apartment/cabinet3_door_top_left:
-          Value: true
-        iai_apartment/cabinet3_door_top_out_fancy:
-          Value: true
-        iai_apartment/cabinet4:
-          Value: true
-        iai_apartment/cabinet4_door_bottom:
-          Value: true
-        iai_apartment/cabinet4_door_top:
-          Value: true
-        iai_apartment/cabinet5:
-          Value: true
-        iai_apartment/cabinet5_drawer_bottom:
-          Value: true
-        iai_apartment/cabinet5_drawer_middle:
-          Value: true
-        iai_apartment/cabinet5_drawer_top:
-          Value: true
-        iai_apartment/cabinet6:
-          Value: true
-        iai_apartment/cabinet6_drawer_bottom:
-          Value: true
-        iai_apartment/cabinet6_drawer_middle:
-          Value: true
-        iai_apartment/cabinet6_drawer_top:
-          Value: true
-        iai_apartment/cabinet7:
-          Value: true
-        iai_apartment/cabinet7_door_bottom_left:
-          Value: true
-        iai_apartment/cabinet7_drawer_middle:
-          Value: true
-        iai_apartment/cabinet8:
-          Value: true
-        iai_apartment/cabinet8_drawer_bottom:
-          Value: true
-        iai_apartment/cabinet8_drawer_middle:
-          Value: true
-        iai_apartment/cabinet9:
-          Value: true
-        iai_apartment/cabinet9_drawer_bottom:
-          Value: true
-        iai_apartment/cabinet9_drawer_middle:
-          Value: true
-        iai_apartment/cabinet9_drawer_top:
-          Value: true
-        iai_apartment/coffee_table:
-          Value: true
-        iai_apartment/coffee_table_drawer:
-          Value: true
-        iai_apartment/cooktop:
-          Value: true
-        iai_apartment/countertop:
-          Value: true
-        iai_apartment/handle_cab10_b:
-          Value: true
-        iai_apartment/handle_cab10_m:
-          Value: true
-        iai_apartment/handle_cab10_t:
-          Value: true
-        iai_apartment/handle_cab11_b:
-          Value: true
-        iai_apartment/handle_cab11_m:
-          Value: true
-        iai_apartment/handle_cab11_t:
-          Value: true
-        iai_apartment/handle_cab1_drawer_bottom:
-          Value: true
-        iai_apartment/handle_cab1_drawer_mid:
-          Value: true
-        iai_apartment/handle_cab1_top_door:
-          Value: true
-        iai_apartment/handle_cab2_door:
-          Value: true
-        iai_apartment/handle_cab3_door_bottom:
-          Value: true
-        iai_apartment/handle_cab3_door_top:
-          Value: true
-        iai_apartment/handle_cab4_door_bottom:
-          Value: true
-        iai_apartment/handle_cab5_b:
-          Value: true
-        iai_apartment/handle_cab5_m:
-          Value: true
-        iai_apartment/handle_cab5_t:
-          Value: true
-        iai_apartment/handle_cab6_b:
-          Value: true
-        iai_apartment/handle_cab6_m:
-          Value: true
-        iai_apartment/handle_cab6_t:
-          Value: true
-        iai_apartment/handle_cab7:
-          Value: true
-        iai_apartment/handle_cab7_middle:
-          Value: true
-        iai_apartment/handle_cab8:
-          Value: true
-        iai_apartment/handle_cab9_b:
-          Value: true
-        iai_apartment/handle_cab9_m:
-          Value: true
-        iai_apartment/handle_cab9_t:
-          Value: true
-        iai_apartment/island:
-          Value: true
-        iai_apartment/island_back:
-          Value: true
-        iai_apartment/island_waterfall_left:
-          Value: true
-        iai_apartment/island_waterfall_right:
-          Value: true
-        iai_apartment/kitchen_root:
-          Value: true
-        iai_apartment/middle_of_the_room:
-          Value: true
-        iai_apartment/side_A:
-          Value: true
-        iai_apartment/side_A_left:
-          Value: true
-        iai_apartment/side_A_rb:
-          Value: true
-        iai_apartment/side_A_rt:
-          Value: true
-        iai_apartment/side_B:
-          Value: true
-        iai_apartment/sink:
-          Value: true
-        iai_apartment/sofa:
-          Value: true
-        iai_apartment/tap:
-          Value: true
-        iai_apartment/useless_underbar_a:
-          Value: true
-        iai_apartment/useless_underbar_b:
-          Value: true
-        iai_apartment/wall_coloksu_wall1:
-          Value: true
-        iai_apartment/wall_coloksu_wall2:
-          Value: true
-        iai_apartment/wall_coloksu_wall3:
-          Value: true
-        iai_apartment/wall_coloksu_wall4:
-          Value: true
-        iai_apartment/walls:
-          Value: true
-        iai_apartment/wardrobe:
-          Value: true
-        iai_apartment/wardrobe_door_left:
-          Value: true
-        iai_apartment/wardrobe_door_right:
-          Value: true
-        iai_apartment/windows:
-          Value: true
-      Marker Alpha: 1
-      Marker Scale: 1
-      Name: TF
-      Show Arrows: true
-      Show Axes: true
-      Show Names: true
-      Tree:
-        iai_apartment/apartment_root:
-          iai_apartment/kitchen_root:
-            iai_apartment/side_A:
-              iai_apartment/cabinet1:
-                iai_apartment/cabinet1_coloksu_level4: {}
-                iai_apartment/cabinet1_coloksu_level5: {}
-                iai_apartment/cabinet1_door_top_left:
-                  iai_apartment/handle_cab1_top_door: {}
-                iai_apartment/cabinet1_drawer_bottom:
-                  iai_apartment/handle_cab1_drawer_bottom: {}
-                iai_apartment/cabinet1_drawer_middle:
-                  iai_apartment/handle_cab1_drawer_mid: {}
-              iai_apartment/cabinet2:
-                iai_apartment/cabinet2_door_out_fancy:
-                  iai_apartment/cabinet2_door_left:
-                    iai_apartment/handle_cab2_door: {}
-                iai_apartment/cabinet2_drawer_big: {}
-                iai_apartment/cabinet2_drawer_small: {}
-              iai_apartment/cabinet3:
-                iai_apartment/cabinet3_door_bottom_out_fancy:
-                  iai_apartment/cabinet3_door_bottom_left:
-                    iai_apartment/handle_cab3_door_bottom: {}
-                iai_apartment/cabinet3_door_top_out_fancy:
-                  iai_apartment/cabinet3_door_top_left:
-                    iai_apartment/handle_cab3_door_top: {}
-              iai_apartment/cabinet4:
-                iai_apartment/cabinet4_door_top:
-                  iai_apartment/cabinet4_door_bottom:
-                    iai_apartment/handle_cab4_door_bottom: {}
-              iai_apartment/cabinet5:
-                iai_apartment/cabinet5_drawer_bottom:
-                  iai_apartment/handle_cab5_b: {}
-                iai_apartment/cabinet5_drawer_middle:
-                  iai_apartment/handle_cab5_m: {}
-                iai_apartment/cabinet5_drawer_top:
-                  iai_apartment/handle_cab5_t: {}
-                iai_apartment/countertop: {}
-              iai_apartment/cabinet6:
-                iai_apartment/cabinet6_drawer_bottom:
-                  iai_apartment/handle_cab6_b: {}
-                iai_apartment/cabinet6_drawer_middle:
-                  iai_apartment/handle_cab6_m: {}
-                iai_apartment/cabinet6_drawer_top:
-                  iai_apartment/handle_cab6_t: {}
-              iai_apartment/side_A_left: {}
-              iai_apartment/side_A_rb: {}
-              iai_apartment/side_A_rt: {}
-              iai_apartment/useless_underbar_a: {}
-            iai_apartment/side_B:
-              iai_apartment/cabinet10:
-                iai_apartment/cabinet10_drawer_bottom:
-                  iai_apartment/handle_cab10_b: {}
-                iai_apartment/cabinet10_drawer_middle:
-                  iai_apartment/handle_cab10_m: {}
-                iai_apartment/cabinet10_drawer_top:
-                  iai_apartment/handle_cab10_t: {}
-              iai_apartment/cabinet11:
-                iai_apartment/cabinet11_drawer_bottom:
-                  iai_apartment/handle_cab11_b: {}
-                iai_apartment/cabinet11_drawer_middle:
-                  iai_apartment/handle_cab11_m: {}
-                iai_apartment/cabinet11_drawer_top:
-                  iai_apartment/handle_cab11_t: {}
-              iai_apartment/cabinet7:
-                iai_apartment/cabinet7_door_bottom_left:
-                  iai_apartment/handle_cab7: {}
-                iai_apartment/cabinet7_drawer_middle:
-                  iai_apartment/handle_cab7_middle: {}
-              iai_apartment/cabinet8:
-                iai_apartment/cabinet8_drawer_bottom:
-                  iai_apartment/handle_cab8: {}
-                iai_apartment/cabinet8_drawer_middle: {}
-              iai_apartment/cabinet9:
-                iai_apartment/cabinet9_drawer_bottom:
-                  iai_apartment/handle_cab9_b: {}
-                iai_apartment/cabinet9_drawer_middle:
-                  iai_apartment/handle_cab9_m: {}
-                iai_apartment/cabinet9_drawer_top:
-                  iai_apartment/handle_cab9_t: {}
-              iai_apartment/cooktop: {}
-              iai_apartment/island: {}
-              iai_apartment/island_back: {}
-              iai_apartment/island_waterfall_left: {}
-              iai_apartment/island_waterfall_right: {}
-              iai_apartment/sink: {}
-              iai_apartment/tap: {}
-              iai_apartment/useless_underbar_b: {}
-          iai_apartment/middle_of_the_room:
-            iai_apartment/armchair: {}
-            iai_apartment/bedside_table: {}
-            iai_apartment/coffee_table:
-              iai_apartment/coffee_table_drawer: {}
-            iai_apartment/sofa: {}
-            iai_apartment/wall_coloksu_wall1: {}
-            iai_apartment/wall_coloksu_wall2: {}
-            iai_apartment/wall_coloksu_wall3: {}
-            iai_apartment/wall_coloksu_wall4: {}
-            iai_apartment/walls: {}
-            iai_apartment/wardrobe:
-              iai_apartment/wardrobe_door_left: {}
-              iai_apartment/wardrobe_door_right: {}
-            iai_apartment/windows: {}
-      Update Interval: 0
-      Value: true
   Enabled: true
   Global Options:
-    Background Color: 212; 233; 245
-    Default Light: true
-    Fixed Frame: iai_apartment/apartment_root
+    Background Color: 48; 48; 48
+    Fixed Frame: apartment_root
     Frame Rate: 30
   Name: root
   Tools:
-    - Class: rviz/Interact
+    - Class: rviz_default_plugins/Interact
       Hide Inactive Objects: true
-    - Class: rviz/MoveCamera
-    - Class: rviz/Select
-    - Class: rviz/FocusCamera
-    - Class: rviz/Measure
-    - Class: rviz/SetInitialPose
-      Theta std deviation: 0.2617993950843811
-      Topic: /initialpose
-      X std deviation: 0.5
-      Y std deviation: 0.5
-    - Class: rviz/SetGoal
-      Topic: /move_base_simple/goal
-    - Class: rviz/PublishPoint
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/Select
+    - Class: rviz_default_plugins/FocusCamera
+    - Class: rviz_default_plugins/Measure
+      Line color: 128; 128; 0
+    - Class: rviz_default_plugins/SetInitialPose
+      Covariance x: 0.25
+      Covariance y: 0.25
+      Covariance yaw: 0.06853891909122467
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /initialpose
+    - Class: rviz_default_plugins/SetGoal
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /goal_pose
+    - Class: rviz_default_plugins/PublishPoint
       Single click: true
-      Topic: /clicked_point
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /clicked_point
+  Transformation:
+    Current:
+      Class: rviz_default_plugins/TF
   Value: true
   Views:
     Current:
-      Class: rviz/Orbit
-      Distance: 16.023786544799805
+      Class: rviz_default_plugins/Orbit
+      Distance: 10.187739372253418
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
-      Field of View: 0.7853981852531433
       Focal Point:
-        X: 1.6595083475112915
-        Y: -0.08021938800811768
-        Z: -0.4785533547401428
-      Focal Shape Fixed Size: false
+        X: 1.6807483434677124
+        Y: 1.7198854684829712
+        Z: 0.37689363956451416
+      Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.4547962546348572
+      Pitch: 0.5897976756095886
       Target Frame: <Fixed Frame>
-      Yaw: 0.565395712852478
+      Value: Orbit (rviz)
+      Yaw: 5.75676155090332
     Saved: ~
 Window Geometry:
   Displays:
     collapsed: false
-  Height: 1086
+  Height: 1043
   Hide Left Dock: false
   Hide Right Dock: false
-  QMainWindow State: 000000ff00000000fd0000000400000000000001f2000003e4fc0200000008fb0000001200530065006c0065006300740069006f006e00000001e10000009b0000005c00fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000b0fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c006100790073010000003d000003e4000000c900fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261000000010000015f000003e4fc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a00560069006500770073000000003d000003e4000000a400fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e100000197000000030000078000000060fc0100000002fb0000000800540069006d0065000000000000000780000004f300fffffffb0000000800540069006d0065010000000000000450000000000000000000000588000003e400000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd00000004000000000000015600000371fc0200000008fb0000001200530065006c0065006300740069006f006e00000001e10000009b0000005d00fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c006100790073010000003f00000371000000cc00fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261000000010000010f00000371fc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a00560069006500770073010000003f00000371000000a900fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e10000019700000003000007800000003efc0100000002fb0000000800540069006d00650100000000000007800000026f00fffffffb0000000800540069006d006501000000000000045000000000000000000000050f0000037100000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Selection:
     collapsed: false
   Time:
@@ -954,5 +726,5 @@ Window Geometry:
   Views:
     collapsed: false
   Width: 1920
-  X: 0
-  Y: 27
+  X: 3120
+  Y: 573
