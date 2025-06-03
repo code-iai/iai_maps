@@ -8,7 +8,7 @@ import os
 def generate_launch_description():
     iai_apartment_dir = get_package_share_directory('iai_apartment')
     bringup_launch = os.path.join(iai_apartment_dir, 'launch', 'apartment_bringup.launch.py')
-    rviz_config = os.path.join(iai_apartment_dir, 'rviz_config', 'rviz_config_new.rviz')
+    rviz_config = os.path.join(iai_apartment_dir, 'rviz_config', 'rviz_config.rviz')
     print(f"Using RViz config: {rviz_config}")
 
     return LaunchDescription([
