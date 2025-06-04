@@ -386,24 +386,7 @@
       </collision>
     </link>
 
-    <joint name="fridge_area_door_top_out_joint" type="revolute">
-      <origin xyz="0.39 -0.3 0.5" rpy="0 0 3.14" />
-      <parent link="fridge_area" />
-      <child link="fridge_area_door_top_out_fancy" />
-      <axis xyz="-1 0 0" />
-      <limit effort="1.0" lower="0.0" upper="1.5708" velocity="1.5708" />
-      <mimic joint="fridge_area_door_top_left_joint" multiplier="0.01" />
-    </joint>
 
-    <link name="fridge_area_door_top_out_fancy" />
-
-    <joint name="fridge_area_door_top_left_joint" type="revolute">
-
-      <parent link="fridge_area_door_top_out_fancy" />
-      <child link="fridge_area_top_door" />
-      <axis xyz="0 0 -1" />
-      <limit effort="1000.0" lower="0.0" upper="1.5708" velocity="1.5708" />
-    </joint>
 
     <link name="fridge_main" />
 
@@ -534,6 +517,24 @@
 
 
 
+    <joint name="fridge_area_door_top_out_joint" type="revolute">
+      <origin xyz="0.39 -0.3 0.5" rpy="0 0 3.14" />
+      <parent link="fridge_main" />
+      <child link="fridge_area_door_top_out_fancy" />
+      <axis xyz="-1 0 0" />
+      <limit effort="1.0" lower="0.0" upper="1.5708" velocity="1.5708" />
+      <mimic joint="fridge_area_door_top_left_joint" multiplier="0.01" />
+    </joint>
+
+    <link name="fridge_area_door_top_out_fancy" />
+
+    <joint name="fridge_area_door_top_left_joint" type="revolute">
+
+      <parent link="fridge_area_door_top_out_fancy" />
+      <child link="fridge_area_top_door" />
+      <axis xyz="0 0 -1" />
+      <limit effort="1000.0" lower="0.0" upper="1.5708" velocity="1.5708" />
+    </joint>
 
 
     <link name="fridge_area_top_door">
