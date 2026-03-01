@@ -1,0 +1,2128 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<robot name="mobile_kitchen">
+  <link name="world">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="mobile-fridge__base_link">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="mobile-fridge__Fridge_ref">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="mobile-fridge__Fridge">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="mobile-fridge__Fridge_handle">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="mobile-fridge__Fridge_handle_surface_projection">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="mobile-fridge__Fridge_handle_obj">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-fridge__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-fridge/Fridge_handle.obj"/>
+      </geometry>
+      <origin xyz="-0.3216375708580017 0.23629173636436462 -1.2465347051620483" rpy="0.0 -0.0 0.0"/>
+    </visual>
+  </link>
+  <link name="mobile-fridge__Fridge_door">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-fridge__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-fridge/Fridge_door.obj"/>
+      </geometry>
+      <origin xyz="-0.2880149483680725 -0.00020825862884521484 -1.0840351581573486" rpy="0.0 -0.0 0.0"/>
+    </visual>
+    <collision name="mobile-fridge__None">
+      <geometry>
+        <box size="0.02 0.6  1.1 "/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="mobile-fridge__Fridge_joint_placeholder">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="mobile-fridge__Cover_back">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-fridge__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-fridge/Cover_back.obj"/>
+      </geometry>
+      <origin xyz="0.2804526686668396 0.0018877685070037842 -0.05853508412837982" rpy="0.0 -0.0 0.0"/>
+    </visual>
+  </link>
+  <link name="mobile-fridge__Cover_right">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-fridge__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-fridge/Cover_right.obj"/>
+      </geometry>
+      <origin xyz="0.01195332407951355 -0.3077091574668884 -0.05853567272424698" rpy="0.0 -0.0 0.0"/>
+    </visual>
+  </link>
+  <link name="mobile-fridge__Cover_left">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-fridge__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-fridge/Cover_left.obj"/>
+      </geometry>
+      <origin xyz="0.01195293664932251 0.312023401260376 -0.05853385478258133" rpy="0.0 -0.0 0.0"/>
+    </visual>
+  </link>
+  <link name="mobile-fridge__Cover_front">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-fridge__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-fridge/Cover_front.obj"/>
+      </geometry>
+      <origin xyz="-0.28654688596725464 -4.1484832763671875e-05 -0.058535605669021606" rpy="0.0 -0.0 0.0"/>
+    </visual>
+  </link>
+  <link name="mobile-fridge__Cabinet_back">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-fridge__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-fridge/Cabinet_back.obj"/>
+      </geometry>
+      <origin xyz="0.29045289754867554 0.00029158592224121094 -0.8880348801612854" rpy="0.0 -0.0 0.0"/>
+    </visual>
+  </link>
+  <link name="mobile-fridge__Cabinet_right">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-fridge__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-fridge/Cabinet_right.obj"/>
+      </geometry>
+      <origin xyz="-0.0030466318130493164 -0.3122085928916931 -0.8885353803634644" rpy="0.0 -0.0 0.0"/>
+    </visual>
+  </link>
+  <link name="mobile-fridge__Cabinet_left">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-fridge__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-fridge/Cabinet_left.obj"/>
+      </geometry>
+      <origin xyz="-0.0030466318130493164 0.3127915859222412 -0.8885349631309509" rpy="0.0 -0.0 0.0"/>
+    </visual>
+  </link>
+  <link name="mobile-fridge__Cabinet_top">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-fridge__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-fridge/Cabinet_top.obj"/>
+      </geometry>
+      <origin xyz="-0.003045976161956787 0.00029158592224121094 -1.6485322713851929" rpy="0.0 -0.0 0.0"/>
+    </visual>
+  </link>
+  <link name="mobile-fridge__Cabinet_bottom">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-fridge__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-fridge/Cabinet_bottom.obj"/>
+      </geometry>
+      <origin xyz="-0.003046274185180664 0.00029087066650390625 -0.12853483855724335" rpy="0.0 -0.0 0.0"/>
+    </visual>
+  </link>
+  <link name="mobile-fridge__Cabinet_inner">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-fridge__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-fridge/Cabinet_inner.obj"/>
+      </geometry>
+      <origin xyz="0.0018978118896484375 0.00029155611991882324 -0.8540674448013306" rpy="0.0 -0.0 0.0"/>
+    </visual>
+  </link>
+  <link name="mobile-fridge__SwingDoor_ref">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="mobile-fridge__SwingDoor">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="mobile-fridge__SwingDoor_door">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-fridge__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-fridge/SwingDoor_door.obj"/>
+      </geometry>
+      <origin xyz="-0.28799593448638916 -0.00020876526832580566 -0.33553481101989746" rpy="0.0 -0.0 0.0"/>
+    </visual>
+    <collision name="mobile-fridge__None">
+      <geometry>
+        <box size="0.02 0.6  0.4 "/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="mobile-fridge__SwingDoor_handle_obj">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-fridge__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-fridge/SwingDoor_handle.obj"/>
+      </geometry>
+      <origin xyz="-0.32163792848587036 -0.00020879507064819336 -0.46903496980667114" rpy="0.0 -0.0 0.0"/>
+    </visual>
+  </link>
+  <link name="mobile-fridge__SwingDoor_handle">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="mobile-fridge__SwingDoor_joint_placeholder">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="mobile-fridge__SwingDoor_handle_surface_projection">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="mobile-dishwasher__base_link">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="mobile-dishwasher__Cover_back">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-dishwasher__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-dishwasher/Cover_back.obj"/>
+      </geometry>
+      <origin xyz="0.28549477458000183 0.001223118044435978 -0.05743110924959183" rpy="0.0 -0.0 0.0"/>
+    </visual>
+  </link>
+  <link name="mobile-dishwasher__Cover_left">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-dishwasher__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-dishwasher/Cover_left.obj"/>
+      </geometry>
+      <origin xyz="0.014995508827269077 -0.3080441653728485 -0.05744248628616333" rpy="0.0 -0.0 0.0"/>
+    </visual>
+  </link>
+  <link name="mobile-dishwasher__Cover_right">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-dishwasher__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-dishwasher/Cover_right.obj"/>
+      </geometry>
+      <origin xyz="0.014994942583143711 0.30751895904541016 -0.057440757751464844" rpy="0.0 -0.0 0.0"/>
+    </visual>
+  </link>
+  <link name="mobile-dishwasher__Cover_front">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-dishwasher__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-dishwasher/Cover_front.obj"/>
+      </geometry>
+      <origin xyz="-0.2834967374801636 0.0012230718275532126 -0.05743110924959183" rpy="0.0 -0.0 0.0"/>
+    </visual>
+  </link>
+  <link name="mobile-dishwasher__Cabinet_back">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-dishwasher__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-dishwasher/Cabinet_back.obj"/>
+      </geometry>
+      <origin xyz="0.2935030460357666 3.0994415283203125e-06 -0.7259329557418823" rpy="0.0 -0.0 0.0"/>
+    </visual>
+  </link>
+  <link name="mobile-dishwasher__Cabinet_bottom">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-dishwasher__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-dishwasher/Cabinet_bottom.obj"/>
+      </geometry>
+      <origin xyz="1.8528581335885974e-08 -2.8337754542917537e-07 -0.1274328976869583" rpy="0.0 -0.0 0.0"/>
+    </visual>
+  </link>
+  <link name="mobile-dishwasher__Cabinet_left">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-dishwasher__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-dishwasher/Cabinet_left.obj"/>
+      </geometry>
+      <origin xyz="1.0793550586640777e-07 -0.3119966983795166 -0.7259364128112793" rpy="0.0 -0.0 0.0"/>
+    </visual>
+  </link>
+  <link name="mobile-dishwasher__Cabinet_right">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-dishwasher__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-dishwasher/Cabinet_right.obj"/>
+      </geometry>
+      <origin xyz="-1.1273787237087163e-08 0.31200313568115234 -0.7259360551834106" rpy="0.0 -0.0 0.0"/>
+    </visual>
+  </link>
+  <link name="mobile-dishwasher__Cabinet_top">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-dishwasher__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-dishwasher/Cabinet_top.obj"/>
+      </geometry>
+      <origin xyz="1.0793569060751906e-07 0.0005003956612199545 -1.3244330883026123" rpy="0.0 -0.0 0.0"/>
+    </visual>
+  </link>
+  <link name="mobile-dishwasher__Cabinet_interior">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-dishwasher__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-dishwasher/Cabinet_interior.obj"/>
+      </geometry>
+      <origin xyz="-0.08316362649202347 3.0994415283203125e-06 -0.607599675655365" rpy="0.0 -0.0 0.0"/>
+    </visual>
+  </link>
+  <link name="mobile-dishwasher__Dishwasher_ref">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="mobile-dishwasher__Dishwasher">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="mobile-dishwasher__Dishwasher_door">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-dishwasher__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-dishwasher/Dishwasher_door.obj"/>
+      </geometry>
+      <origin xyz="-0.28548336029052734 3.0994415283203125e-06 -0.9217346906661987" rpy="0.0 -0.0 0.0"/>
+    </visual>
+    <collision name="mobile-dishwasher__None">
+      <geometry>
+        <box size="0.02 0.6  0.8 "/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="mobile-dishwasher__Dishwasher_handle_obj">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-dishwasher__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-dishwasher/Dishwasher_handle.obj"/>
+      </geometry>
+      <origin xyz="-0.31280556321144104 -0.001996278762817383 -1.2467339038848877" rpy="0.0 -0.0 0.0"/>
+    </visual>
+  </link>
+  <link name="mobile-dishwasher__Dishwasher_handle">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="mobile-dishwasher__Dishwasher_handle_surface_projection">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="mobile-dishwasher__Dishwasher_door_upper_contact_central">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="mobile-dishwasher__Dishwasher_door_upper_contact_left">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="mobile-dishwasher__Dishwasher_door_upper_contact_right">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="mobile-dishwasher__Dishwasher_joint_placeholder">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="mobile-dishwasher__Dishwasher_cutlery_basket_ref">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="mobile-dishwasher__Dishwasher_cutlery_basket">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="mobile-dishwasher__Dishwasher_cutlery_basket_Basket">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-dishwasher__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-dishwasher/Dishwasher_cutlery_basket_Basket.obj"/>
+      </geometry>
+      <origin xyz="0.002739901654422283 0.0012781359255313873 -1.1642500162124634" rpy="0.0 -0.0 0.0"/>
+    </visual>
+    <collision name="mobile-dishwasher__None">
+      <geometry>
+        <box size="0.05  0.505 0.53 "/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="1.5707963267948966 1.5707963267948966 0.0"/>
+    </collision>
+  </link>
+  <link name="mobile-dishwasher__Dishwasher_cutlery_basket_handle_obj">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-dishwasher__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-dishwasher/Dishwasher_cutlery_basket_handle.obj"/>
+      </geometry>
+      <origin xyz="-0.25030478835105896 0.001278140232898295 -1.155769944190979" rpy="0.0 -0.0 0.0"/>
+    </visual>
+  </link>
+  <link name="mobile-dishwasher__Dishwasher_cutlery_basket_handle">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="mobile-dishwasher__Dishwasher_upper_basket_ref">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="mobile-dishwasher__Dishwasher_upper_basket">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="mobile-dishwasher__Dishwasher_upper_basket_Basket">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-dishwasher__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-dishwasher/Dishwasher_upper_basket_Basket.obj"/>
+      </geometry>
+      <origin xyz="0.0027400129474699497 0.0012781322002410889 -1.021079182624817" rpy="0.0 -0.0 0.0"/>
+    </visual>
+    <collision name="mobile-dishwasher__None">
+      <geometry>
+        <box size="0.135 0.505 0.53 "/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="1.5707963267948966 1.5707963267948966 0.0"/>
+    </collision>
+  </link>
+  <link name="mobile-dishwasher__Dishwasher_upper_basket_handle_obj">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-dishwasher__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-dishwasher/Dishwasher_upper_basket_handle.obj"/>
+      </geometry>
+      <origin xyz="-0.25030460953712463 0.0012781322002410889 -1.054710030555725" rpy="0.0 -0.0 0.0"/>
+    </visual>
+  </link>
+  <link name="mobile-dishwasher__Dishwasher_upper_basket_handle">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="mobile-dishwasher__Dishwasher_upper_basket_handle_surface_projection">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="mobile-dishwasher__Dishwasher_lower_basket_handle_surface_projection">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="mobile-dishwasher__Dishwasher_upper_basket_divider">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-dishwasher__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-dishwasher/Dishwasher_upper_basket_divider.obj"/>
+      </geometry>
+      <origin xyz="0.002739839255809784 0.06637399643659592 -1.00043523311615" rpy="0.0 -0.0 0.0"/>
+    </visual>
+  </link>
+  <link name="mobile-dishwasher__Dishwasher_lower_basket_ref">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="mobile-dishwasher__Dishwasher_lower_basket">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="mobile-dishwasher__Dishwasher_lower_basket_Basket">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-dishwasher__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-dishwasher/Dishwasher_lower_basket_Basket.obj"/>
+      </geometry>
+      <origin xyz="0.0027402625419199467 0.0012781284749507904 -0.711870014667511" rpy="0.0 -0.0 0.0"/>
+    </visual>
+    <collision name="mobile-dishwasher__None">
+      <geometry>
+        <box size="0.12  0.505 0.53 "/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="1.5707963267948966 1.5707963267948966 0.0"/>
+    </collision>
+  </link>
+  <link name="mobile-dishwasher__Dishwasher_lower_basket_handle_obj">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-dishwasher__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-dishwasher/Dishwasher_lower_basket_handle.obj"/>
+      </geometry>
+      <origin xyz="-0.24643869698047638 0.0012781154364347458 -0.886709988117218" rpy="0.0 -0.0 0.0"/>
+    </visual>
+  </link>
+  <link name="mobile-dishwasher__Dishwasher_lower_basket_handle">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="mobile-dishwasher__Dishwasher_lower_basket_structure">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-dishwasher__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-dishwasher/Dishwasher_lower_basket_structure.obj"/>
+      </geometry>
+      <origin xyz="-0.2464384138584137 0.002849487354978919 -0.8471701145172119" rpy="0.0 -0.0 0.0"/>
+    </visual>
+  </link>
+  <link name="mobile-dishwasher__Drawer_ref">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="mobile-dishwasher__Drawer">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="mobile-dishwasher__Drawer_interior">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-dishwasher__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-dishwasher/Drawer_interior.obj"/>
+      </geometry>
+      <origin xyz="-0.05457272380590439 -0.0004971101297996938 -0.3004502058029175" rpy="0.0 -0.0 0.0"/>
+    </visual>
+  </link>
+  <link name="mobile-dishwasher__Drawer_door">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-dishwasher__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-dishwasher/Drawer_door.obj"/>
+      </geometry>
+      <origin xyz="-0.2884831130504608 2.86102294921875e-06 -0.3344329595565796" rpy="0.0 -0.0 0.0"/>
+    </visual>
+    <collision name="mobile-dishwasher__None">
+      <geometry>
+        <box size="0.02 0.6  0.4 "/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="mobile-dishwasher__Drawer_handle_obj">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-dishwasher__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-dishwasher/Drawer_handle.obj"/>
+      </geometry>
+      <origin xyz="-0.31580570340156555 3.0994419830676634e-06 -0.46593302488327026" rpy="0.0 -0.0 0.0"/>
+    </visual>
+  </link>
+  <link name="mobile-dishwasher__Drawer_handle">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="mobile-dishwasher__Drawer_handle_surface_projection">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="mobile-kitchen-counter__base_link">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="mobile-kitchen-counter__Cabinet_back">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-kitchen-counter__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-kitchen-counter/Cabinet_back.obj"/>
+      </geometry>
+      <origin xyz="-0.007500125095248222 0.9090002775192261 -0.5365411639213562" rpy="0.0 -0.0 0.0"/>
+    </visual>
+  </link>
+  <link name="mobile-kitchen-counter__Cabinet_cover">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-kitchen-counter__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-kitchen-counter/Cabinet_cover.obj"/>
+      </geometry>
+      <origin xyz="-0.304206907749176 0.8092880249023438 -0.47657686471939087" rpy="0.0 -0.0 0.0"/>
+    </visual>
+  </link>
+  <link name="mobile-kitchen-counter__Cabinet_inner_left_r">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-kitchen-counter__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-kitchen-counter/Cabinet_inner_left_r.obj"/>
+      </geometry>
+      <origin xyz="-0.28799954056739807 1.1920002698898315 -0.5365415811538696" rpy="0.0 -0.0 0.0"/>
+    </visual>
+  </link>
+  <link name="mobile-kitchen-counter__Cabinet_inner_right_l">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-kitchen-counter__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-kitchen-counter/Cabinet_inner_right_l.obj"/>
+      </geometry>
+      <origin xyz="-0.2879994511604309 0.6080002188682556 -0.5365419387817383" rpy="0.0 -0.0 0.0"/>
+    </visual>
+  </link>
+  <link name="mobile-kitchen-counter__Cabinet_inner_right_r">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-kitchen-counter__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-kitchen-counter/Cabinet_inner_right_r.obj"/>
+      </geometry>
+      <origin xyz="-0.2879994213581085 0.5920001864433289 -0.5365419387817383" rpy="0.0 -0.0 0.0"/>
+    </visual>
+  </link>
+  <link name="mobile-kitchen-counter__Cabinet_right">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-kitchen-counter__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-kitchen-counter/Cabinet_right.obj"/>
+      </geometry>
+      <origin xyz="-0.28799936175346375 0.00800016988068819 -0.5365422368049622" rpy="0.0 -0.0 0.0"/>
+    </visual>
+  </link>
+  <link name="mobile-kitchen-counter__Cabinet_left">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-kitchen-counter__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-kitchen-counter/Cabinet_left.obj"/>
+      </geometry>
+      <origin xyz="-0.28799962997436523 1.7920002937316895 -0.536540150642395" rpy="0.0 -0.0 0.0"/>
+    </visual>
+  </link>
+  <link name="mobile-kitchen-counter__Cabinet_inner_left_l">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-kitchen-counter__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-kitchen-counter/Cabinet_inner_left_l.obj"/>
+      </geometry>
+      <origin xyz="-0.2879995107650757 1.2080003023147583 -0.5365404486656189" rpy="0.0 -0.0 0.0"/>
+    </visual>
+  </link>
+  <link name="mobile-kitchen-counter__Cabinet_bottom">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-kitchen-counter__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-kitchen-counter/Cabinet_bottom.obj"/>
+      </geometry>
+      <origin xyz="-0.3009997308254242 0.9000002145767212 -0.1340411901473999" rpy="0.0 -0.0 0.0"/>
+    </visual>
+  </link>
+  <link name="mobile-kitchen-counter__Cover_back">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-kitchen-counter__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-kitchen-counter/Cover_back.obj"/>
+      </geometry>
+      <origin xyz="-0.017500098794698715 0.8936254382133484 -0.06404179334640503" rpy="0.0 -0.0 0.0"/>
+    </visual>
+  </link>
+  <link name="mobile-kitchen-counter__Cover_right">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-kitchen-counter__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-kitchen-counter/Cover_right.obj"/>
+      </geometry>
+      <origin xyz="-0.2859998047351837 0.009682416915893555 -0.06404200196266174" rpy="0.0 -0.0 0.0"/>
+    </visual>
+  </link>
+  <link name="mobile-kitchen-counter__Cover_left">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-kitchen-counter__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-kitchen-counter/Cover_left.obj"/>
+      </geometry>
+      <origin xyz="-0.2860003709793091 1.785466194152832 -0.06404026597738266" rpy="0.0 -0.0 0.0"/>
+    </visual>
+  </link>
+  <link name="mobile-kitchen-counter__Cover_front">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-kitchen-counter__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-kitchen-counter/Cover_front.obj"/>
+      </geometry>
+      <origin xyz="-0.5845001339912415 0.8962187170982361 -0.06404183804988861" rpy="0.0 -0.0 0.0"/>
+    </visual>
+  </link>
+  <link name="mobile-kitchen-counter__Counter_top">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-kitchen-counter__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-kitchen-counter/Counter_top.obj"/>
+      </geometry>
+      <origin xyz="-0.29469627141952515 0.7153684496879578 -0.9465413093566895" rpy="0.0 -0.0 0.0"/>
+    </visual>
+  </link>
+  <link name="mobile-kitchen-counter__Sink_water_outlet">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-kitchen-counter__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-kitchen-counter/Sink_water_outlet.obj"/>
+      </geometry>
+      <origin xyz="-0.18398705124855042 1.4580163955688477 -1.1809860467910767" rpy="0.0 -0.0 0.0"/>
+    </visual>
+  </link>
+  <link name="mobile-kitchen-counter__Sink_water_tab">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-kitchen-counter__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-kitchen-counter/Sink_water_tab.obj"/>
+      </geometry>
+      <origin xyz="-0.11061559617519379 1.434156060218811 -1.0284606218338013" rpy="0.0 -0.0 0.0"/>
+    </visual>
+  </link>
+  <link name="mobile-kitchen-counter__Sink_sink">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-kitchen-counter__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-kitchen-counter/Sink_sink.obj"/>
+      </geometry>
+      <origin xyz="-0.26801174879074097 1.4580004215240479 -0.887730062007904" rpy="0.0 -0.0 0.0"/>
+    </visual>
+  </link>
+  <link name="mobile-kitchen-counter__SwingDoorRight_ref">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="mobile-kitchen-counter__SwingDoorRight">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="mobile-kitchen-counter__SwingDoorRight_door">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-kitchen-counter__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-kitchen-counter/SwingDoorRight_door.obj"/>
+      </geometry>
+      <origin xyz="-0.5859925746917725 0.30000007152557373 -0.4065415859222412" rpy="0.0 -0.0 0.0"/>
+    </visual>
+    <collision name="mobile-kitchen-counter__None">
+      <geometry>
+        <box size="0.02 0.6  0.5 "/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="mobile-kitchen-counter__SwingDoorRight_handle">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="mobile-kitchen-counter__SwingDoorRight_handle_obj">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-kitchen-counter__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-kitchen-counter/SwingDoorRight_handle.obj"/>
+      </geometry>
+      <origin xyz="-0.6184067726135254 0.5370001196861267 -0.5250414609909058" rpy="0.0 -0.0 0.0"/>
+    </visual>
+  </link>
+  <link name="mobile-kitchen-counter__SwingDoorRight_joint_placeholder">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="mobile-kitchen-counter__SwingDoorRight_handle_surface_projection">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="mobile-kitchen-counter__SwingDoorMiddle_ref">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="mobile-kitchen-counter__SwingDoorMiddle">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="mobile-kitchen-counter__SwingDoorMiddle_door">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-kitchen-counter__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-kitchen-counter/SwingDoorMiddle_door.obj"/>
+      </geometry>
+      <origin xyz="-0.585992693901062 0.9000000953674316 -0.40654122829437256" rpy="0.0 -0.0 0.0"/>
+    </visual>
+    <collision name="mobile-kitchen-counter__None">
+      <geometry>
+        <box size="0.02 0.6  0.5 "/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="mobile-kitchen-counter__SwingDoorMiddle_handle_obj">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-kitchen-counter__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-kitchen-counter/SwingDoorMiddle_handle.obj"/>
+      </geometry>
+      <origin xyz="-0.6184067726135254 0.6630001664161682 -0.5250413417816162" rpy="0.0 -0.0 0.0"/>
+    </visual>
+  </link>
+  <link name="mobile-kitchen-counter__SwingDoorMiddle_handle">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="mobile-kitchen-counter__SwingDoorMiddle_joint_placeholder">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="mobile-kitchen-counter__SwingDoorMiddle_handle_surface_projection">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="mobile-kitchen-counter__DrawerRight_ref">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="mobile-kitchen-counter__DrawerRight">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="mobile-kitchen-counter__DrawerRight_door">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-kitchen-counter__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-kitchen-counter/DrawerRight_door.obj"/>
+      </geometry>
+      <origin xyz="-0.5859884023666382 0.30100029706954956 -0.7960415482521057" rpy="0.0 -0.0 0.0"/>
+    </visual>
+    <collision name="mobile-kitchen-counter__None">
+      <geometry>
+        <box size="0.02 0.6  0.25"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="mobile-kitchen-counter__DrawerRight_handle_obj">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-kitchen-counter__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-kitchen-counter/DrawerRight_handle.obj"/>
+      </geometry>
+      <origin xyz="-0.6184067130088806 0.3015003204345703 -0.8615415692329407" rpy="0.0 -0.0 0.0"/>
+    </visual>
+  </link>
+  <link name="mobile-kitchen-counter__DrawerRight_handle">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="mobile-kitchen-counter__DrawerRight_reference">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="mobile-kitchen-counter__DrawerRight_interior">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-kitchen-counter__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-kitchen-counter/DrawerRight_interior.obj"/>
+      </geometry>
+      <origin xyz="-0.29045936465263367 0.30000054836273193 -0.7283273339271545" rpy="0.0 -0.0 0.0"/>
+    </visual>
+  </link>
+  <link name="mobile-kitchen-counter__DrawerRight_handle_surface_projection">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="mobile-kitchen-counter__DrawerMiddle_ref">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="mobile-kitchen-counter__DrawerMiddle">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="mobile-kitchen-counter__DrawerMiddle_door">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-kitchen-counter__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-kitchen-counter/DrawerMiddle_door.obj"/>
+      </geometry>
+      <origin xyz="-0.5859885215759277 0.9010003209114075 -0.7960411906242371" rpy="0.0 -0.0 0.0"/>
+    </visual>
+    <collision name="mobile-kitchen-counter__None">
+      <geometry>
+        <box size="0.02 0.6  0.25"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="mobile-kitchen-counter__DrawerMiddle_handle_obj">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-kitchen-counter__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-kitchen-counter/DrawerMiddle_handle.obj"/>
+      </geometry>
+      <origin xyz="-0.6184068322181702 0.9015003442764282 -0.861541211605072" rpy="0.0 -0.0 0.0"/>
+    </visual>
+  </link>
+  <link name="mobile-kitchen-counter__DrawerMiddle_handle">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="mobile-kitchen-counter__DrawerMiddle_interior">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-kitchen-counter__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-kitchen-counter/DrawerMiddle_interior.obj"/>
+      </geometry>
+      <origin xyz="-0.29045936465263367 0.9000001549720764 -0.7283267974853516" rpy="0.0 -0.0 0.0"/>
+    </visual>
+  </link>
+  <link name="mobile-kitchen-counter__DrawerMiddle_handle_surface_projection">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="mobile-kitchen-counter__SwingDoorLeft_ref">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="mobile-kitchen-counter__SwingDoorLeft">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="mobile-kitchen-counter__SwingDoorLeft_door">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-kitchen-counter__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-kitchen-counter/SwingDoorLeft_door.obj"/>
+      </geometry>
+      <origin xyz="-0.5859941244125366 1.5000001192092896 -0.5365408658981323" rpy="0.0 -0.0 0.0"/>
+    </visual>
+    <collision name="mobile-kitchen-counter__None">
+      <geometry>
+        <box size="0.02 0.6  0.75"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="mobile-kitchen-counter__SwingDoorLeft_handle">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="mobile-kitchen-counter__SwingDoorLeft_handle_obj">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual name="mobile-kitchen-counter__None">
+      <geometry>
+        <mesh filename="package://iai_kit_mobile_lab/models/mobile-kitchen-counter/SwingDoorLeft_handle.obj"/>
+      </geometry>
+      <origin xyz="-0.6184055805206299 1.263000249862671 -0.7840410470962524" rpy="0.0 -0.0 0.0"/>
+    </visual>
+  </link>
+  <link name="mobile-kitchen-counter__SwingDoorLeft_joint_placeholder">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="mobile-kitchen-counter__SwingDoorLeft_handle_surface_projection">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <joint name="mobile-fridge__Fridge_ref_fixed" type="fixed">
+    <parent link="mobile-fridge__base_link"/>
+    <child link="mobile-fridge__Fridge_ref"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.27194294333457947 0.28633126616477966 1.1897209882736206" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-fridge__Fridge_joint" type="revolute">
+    <limit effort="0.0" velocity="10.0" lower="0.0" upper="1.7"/>
+    <parent link="mobile-fridge__Fridge_ref"/>
+    <child link="mobile-fridge__Fridge"/>
+    <axis xyz="0. 0. 1."/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-fridge__Fridge-&gt;Fridge_handle" type="fixed">
+    <parent link="mobile-fridge__Fridge"/>
+    <child link="mobile-fridge__Fridge_handle"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.04969462752342224 -0.5226230025291443 0.056813716888427734" rpy="3.1415 -1.5707963267948966 0.0"/>
+  </joint>
+  <joint name="mobile-fridge__Fridge_handle-&gt;Fridge_handle_surface_projection" type="fixed">
+    <parent link="mobile-fridge__Fridge_handle"/>
+    <child link="mobile-fridge__Fridge_handle_surface_projection"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 0.0 -0.015" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-fridge__Fridge-&gt;Fridge_handle_obj" type="fixed">
+    <parent link="mobile-fridge__Fridge"/>
+    <child link="mobile-fridge__Fridge_handle_obj"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.04969462752342224 -0.5226230025291443 0.056813716888427734" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-fridge__Fridge-&gt;Fridge_door" type="fixed">
+    <parent link="mobile-fridge__Fridge"/>
+    <child link="mobile-fridge__Fridge_door"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.016072005033493042 -0.28612300753593445 -0.10568583011627197" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-fridge__Fridge-&gt;Fridge_joint_placeholder" type="fixed">
+    <parent link="mobile-fridge__Fridge"/>
+    <child link="mobile-fridge__Fridge_joint_placeholder"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-fridge__base_link-&gt;Cover_back" type="fixed">
+    <parent link="mobile-fridge__base_link"/>
+    <child link="mobile-fridge__Cover_back"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="-0.2804526686668396 -0.0018877685070037842 0.05853508412837982" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-fridge__base_link-&gt;Cover_right" type="fixed">
+    <parent link="mobile-fridge__base_link"/>
+    <child link="mobile-fridge__Cover_right"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="-0.01195332407951355 0.3077091574668884 0.05853567272424698" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-fridge__base_link-&gt;Cover_left" type="fixed">
+    <parent link="mobile-fridge__base_link"/>
+    <child link="mobile-fridge__Cover_left"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="-0.01195293664932251 -0.312023401260376 0.05853385478258133" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-fridge__base_link-&gt;Cover_front" type="fixed">
+    <parent link="mobile-fridge__base_link"/>
+    <child link="mobile-fridge__Cover_front"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.28654688596725464 4.1484832763671875e-05 0.058535605669021606" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-fridge__base_link-&gt;Cabinet_back" type="fixed">
+    <parent link="mobile-fridge__base_link"/>
+    <child link="mobile-fridge__Cabinet_back"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="-0.29045289754867554 -0.00029158592224121094 0.8880348801612854" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-fridge__base_link-&gt;Cabinet_right" type="fixed">
+    <parent link="mobile-fridge__base_link"/>
+    <child link="mobile-fridge__Cabinet_right"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0030466318130493164 0.3122085928916931 0.8885353803634644" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-fridge__base_link-&gt;Cabinet_left" type="fixed">
+    <parent link="mobile-fridge__base_link"/>
+    <child link="mobile-fridge__Cabinet_left"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0030466318130493164 -0.3127915859222412 0.8885349631309509" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-fridge__base_link-&gt;Cabinet_top" type="fixed">
+    <parent link="mobile-fridge__base_link"/>
+    <child link="mobile-fridge__Cabinet_top"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.003045976161956787 -0.00029158592224121094 1.6485322713851929" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-fridge__base_link-&gt;Cabinet_bottom" type="fixed">
+    <parent link="mobile-fridge__base_link"/>
+    <child link="mobile-fridge__Cabinet_bottom"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.003046274185180664 -0.00029087066650390625 0.12853483855724335" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-fridge__base_link-&gt;Cabinet_inner" type="fixed">
+    <parent link="mobile-fridge__base_link"/>
+    <child link="mobile-fridge__Cabinet_inner"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="-0.0018978118896484375 -0.00029155611991882324 0.8540674448013306" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-fridge__SwingDoor_ref_fixed" type="fixed">
+    <parent link="mobile-fridge__base_link"/>
+    <child link="mobile-fridge__SwingDoor_ref"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.27194294333457947 0.28633126616477966 0.3098633885383606" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-fridge__SwingDoor_joint" type="revolute">
+    <limit effort="0.0" velocity="10.0" lower="0.0" upper="1.7"/>
+    <parent link="mobile-fridge__SwingDoor_ref"/>
+    <child link="mobile-fridge__SwingDoor"/>
+    <axis xyz="0. 0. 1."/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-fridge__SwingDoor-&gt;SwingDoor_door" type="fixed">
+    <parent link="mobile-fridge__SwingDoor"/>
+    <child link="mobile-fridge__SwingDoor_door"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.016052991151809692 -0.28612250089645386 0.025671422481536865" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-fridge__SwingDoor-&gt;SwingDoor_handle_obj" type="fixed">
+    <parent link="mobile-fridge__SwingDoor"/>
+    <child link="mobile-fridge__SwingDoor_handle_obj"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.049694985151290894 -0.28612247109413147 0.15917158126831055" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-fridge__SwingDoor-&gt;SwingDoor_handle" type="fixed">
+    <parent link="mobile-fridge__SwingDoor"/>
+    <child link="mobile-fridge__SwingDoor_handle"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.049694985151290894 -0.28612247109413147 0.15917158126831055" rpy="1.57079633 0.0 1.57079633"/>
+  </joint>
+  <joint name="mobile-fridge__SwingDoor-&gt;SwingDoor_joint_placeholder" type="fixed">
+    <parent link="mobile-fridge__SwingDoor"/>
+    <child link="mobile-fridge__SwingDoor_joint_placeholder"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-fridge__SwingDoor_handle-&gt;SwingDoor_handle_surface_projection" type="fixed">
+    <parent link="mobile-fridge__SwingDoor_handle"/>
+    <child link="mobile-fridge__SwingDoor_handle_surface_projection"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 0.0 -0.015" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-fridge" type="fixed">
+    <parent link="world"/>
+    <child link="mobile-fridge__base_link"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="5.48 7.62 -0.03" rpy="0.0 0.0 3.141592653589793"/>
+  </joint>
+  <joint name="mobile-dishwasher__base_link-&gt;Cover_back" type="fixed">
+    <parent link="mobile-dishwasher__base_link"/>
+    <child link="mobile-dishwasher__Cover_back"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="-0.28549477458000183 -0.001223118044435978 0.05743110924959183" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-dishwasher__base_link-&gt;Cover_left" type="fixed">
+    <parent link="mobile-dishwasher__base_link"/>
+    <child link="mobile-dishwasher__Cover_left"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="-0.014995508827269077 0.3080441653728485 0.05744248628616333" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-dishwasher__base_link-&gt;Cover_right" type="fixed">
+    <parent link="mobile-dishwasher__base_link"/>
+    <child link="mobile-dishwasher__Cover_right"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="-0.014994942583143711 -0.30751895904541016 0.057440757751464844" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-dishwasher__base_link-&gt;Cover_front" type="fixed">
+    <parent link="mobile-dishwasher__base_link"/>
+    <child link="mobile-dishwasher__Cover_front"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.2834967374801636 -0.0012230718275532126 0.05743110924959183" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-dishwasher__base_link-&gt;Cabinet_back" type="fixed">
+    <parent link="mobile-dishwasher__base_link"/>
+    <child link="mobile-dishwasher__Cabinet_back"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="-0.2935030460357666 -3.0994415283203125e-06 0.7259329557418823" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-dishwasher__base_link-&gt;Cabinet_bottom" type="fixed">
+    <parent link="mobile-dishwasher__base_link"/>
+    <child link="mobile-dishwasher__Cabinet_bottom"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="-1.8528581335885974e-08 2.8337754542917537e-07 0.1274328976869583" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-dishwasher__base_link-&gt;Cabinet_left" type="fixed">
+    <parent link="mobile-dishwasher__base_link"/>
+    <child link="mobile-dishwasher__Cabinet_left"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="-1.0793550586640777e-07 0.3119966983795166 0.7259364128112793" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-dishwasher__base_link-&gt;Cabinet_right" type="fixed">
+    <parent link="mobile-dishwasher__base_link"/>
+    <child link="mobile-dishwasher__Cabinet_right"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="1.1273787237087163e-08 -0.31200313568115234 0.7259360551834106" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-dishwasher__base_link-&gt;Cabinet_top" type="fixed">
+    <parent link="mobile-dishwasher__base_link"/>
+    <child link="mobile-dishwasher__Cabinet_top"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="-1.0793569060751906e-07 -0.0005003956612199545 1.3244330883026123" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-dishwasher__base_link-&gt;Cabinet_interior" type="fixed">
+    <parent link="mobile-dishwasher__base_link"/>
+    <child link="mobile-dishwasher__Cabinet_interior"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.08316362649202347 -3.0994415283203125e-06 0.607599675655365" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-dishwasher__Dishwasher_ref_fixed" type="fixed">
+    <parent link="mobile-dishwasher__base_link"/>
+    <child link="mobile-dishwasher__Dishwasher_ref"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.26642486453056335 -9.320693641560177e-17 0.5645735263824463" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-dishwasher__Dishwasher_joint" type="revolute">
+    <limit effort="0.0" velocity="10.0" lower="0.0" upper="1.7"/>
+    <parent link="mobile-dishwasher__Dishwasher_ref"/>
+    <child link="mobile-dishwasher__Dishwasher"/>
+    <axis xyz="0. 1. 0."/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-dishwasher__Dishwasher-&gt;Dishwasher_door" type="fixed">
+    <parent link="mobile-dishwasher__Dishwasher"/>
+    <child link="mobile-dishwasher__Dishwasher_door"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.01905849575996399 -3.0994415282271054e-06 0.35716116428375244" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-dishwasher__Dishwasher-&gt;Dishwasher_handle" type="fixed">
+    <parent link="mobile-dishwasher__Dishwasher"/>
+    <child link="mobile-dishwasher__Dishwasher_handle"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.046380698680877686 0.001996278762817476 0.6821603775024414" rpy="1.5707963235897933 0.0015926535897931142 1.5707963235897933"/>
+  </joint>
+  <joint name="mobile-dishwasher__Dishwasher-&gt;Dishwasher_handle_obj" type="fixed">
+    <parent link="mobile-dishwasher__Dishwasher"/>
+    <child link="mobile-dishwasher__Dishwasher_handle_obj"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.046380698680877686 0.001996278762817476 0.6821603775024414" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-dishwasher__Dishwasher_handle-&gt;Dishwasher_handle_surface_projection" type="fixed">
+    <parent link="mobile-dishwasher__Dishwasher_handle"/>
+    <child link="mobile-dishwasher__Dishwasher_handle_surface_projection"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 0.0 -0.01" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-dishwasher__Dishwasher_handle_surface_projection-&gt;Dishwasher_door_upper_contact_central" type="fixed">
+    <parent link="mobile-dishwasher__Dishwasher_handle_surface_projection"/>
+    <child link="mobile-dishwasher__Dishwasher_door_upper_contact_central"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="-0.0 0.05 -0.03" rpy="0.0 0.0 3.14"/>
+  </joint>
+  <joint name="mobile-dishwasher__Dishwasher_door_upper_contact_central-&gt;Dishwasher_door_upper_contact_left" type="fixed">
+    <parent link="mobile-dishwasher__Dishwasher_door_upper_contact_central"/>
+    <child link="mobile-dishwasher__Dishwasher_door_upper_contact_left"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.15 0.0 0.0" rpy="0.0 0.0 0.0"/>
+  </joint>
+  <joint name="mobile-dishwasher__Dishwasher_door_upper_contact_central-&gt;Dishwasher_door_upper_contact_right" type="fixed">
+    <parent link="mobile-dishwasher__Dishwasher_door_upper_contact_central"/>
+    <child link="mobile-dishwasher__Dishwasher_door_upper_contact_right"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="-0.15 0.0 0.0" rpy="0.0 0.0 0.0"/>
+  </joint>
+  <joint name="mobile-dishwasher__Dishwasher-&gt;Dishwasher_joint_placeholder" type="fixed">
+    <parent link="mobile-dishwasher__Dishwasher"/>
+    <child link="mobile-dishwasher__Dishwasher_joint_placeholder"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-dishwasher__Dishwasher_cutlery_basket_ref_fixed" type="fixed">
+    <parent link="mobile-dishwasher__base_link"/>
+    <child link="mobile-dishwasher__Dishwasher_cutlery_basket_ref"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="-0.002739901654422283 -0.0012781359255313873 1.1642500162124634" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-dishwasher__Dishwasher_cutlery_basket_joint" type="prismatic">
+    <limit effort="0.0" velocity="10.0" lower="0.0" upper="0.5"/>
+    <parent link="mobile-dishwasher__Dishwasher_cutlery_basket_ref"/>
+    <child link="mobile-dishwasher__Dishwasher_cutlery_basket"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-dishwasher__Dishwasher_cutlery_basket-&gt;Dishwasher_cutlery_basket_Basket" type="fixed">
+    <parent link="mobile-dishwasher__Dishwasher_cutlery_basket"/>
+    <child link="mobile-dishwasher__Dishwasher_cutlery_basket_Basket"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-dishwasher__Dishwasher_cutlery_basket-&gt;Dishwasher_cutlery_basket_handle_obj" type="fixed">
+    <parent link="mobile-dishwasher__Dishwasher_cutlery_basket"/>
+    <child link="mobile-dishwasher__Dishwasher_cutlery_basket_handle_obj"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.25304469000548124 -4.307366907596588e-09 -0.008480072021484375" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-dishwasher__Dishwasher_cutlery_basket-&gt;Dishwasher_cutlery_basket_handle" type="fixed">
+    <parent link="mobile-dishwasher__Dishwasher_cutlery_basket"/>
+    <child link="mobile-dishwasher__Dishwasher_cutlery_basket_handle"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.25304469000548124 -4.307366907596588e-09 -0.008480072021484375" rpy="1.5707963267948966 0.0 1.5707963267948966"/>
+  </joint>
+  <joint name="mobile-dishwasher__Dishwasher_upper_basket_ref_fixed" type="fixed">
+    <parent link="mobile-dishwasher__base_link"/>
+    <child link="mobile-dishwasher__Dishwasher_upper_basket_ref"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="-0.0027400129474699497 -0.0012781322002410889 1.021079182624817" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-dishwasher__Dishwasher_upper_basket_joint" type="prismatic">
+    <limit effort="0.0" velocity="10.0" lower="0.0" upper="0.5"/>
+    <parent link="mobile-dishwasher__Dishwasher_upper_basket_ref"/>
+    <child link="mobile-dishwasher__Dishwasher_upper_basket"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-dishwasher__Dishwasher_upper_basket-&gt;Dishwasher_upper_basket_Basket" type="fixed">
+    <parent link="mobile-dishwasher__Dishwasher_upper_basket"/>
+    <child link="mobile-dishwasher__Dishwasher_upper_basket_Basket"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-dishwasher__Dishwasher_upper_basket_handle-&gt;Dishwasher_upper_basket_handle_surface_projection" type="fixed">
+    <parent link="mobile-dishwasher__Dishwasher_upper_basket_handle"/>
+    <child link="mobile-dishwasher__Dishwasher_upper_basket_handle_surface_projection"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-dishwasher__Dishwasher_lower_basket_handle-&gt;Dishwasher_lower_basket_handle_surface_projection" type="fixed">
+    <parent link="mobile-dishwasher__Dishwasher_lower_basket_handle"/>
+    <child link="mobile-dishwasher__Dishwasher_lower_basket_handle_surface_projection"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-dishwasher__Dishwasher_upper_basket-&gt;Dishwasher_upper_basket_handle" type="fixed">
+    <parent link="mobile-dishwasher__Dishwasher_upper_basket"/>
+    <child link="mobile-dishwasher__Dishwasher_upper_basket_handle"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.2330446224845946 0.0 -0.0" rpy="1.5707963267948966 0.0 1.5707963267948966"/>
+  </joint>
+  <joint name="mobile-dishwasher__Dishwasher_upper_basket_handle-&gt;Dishwasher_upper_basket_handle_obj" type="fixed">
+    <parent link="mobile-dishwasher__Dishwasher_upper_basket_handle"/>
+    <child link="mobile-dishwasher__Dishwasher_upper_basket_handle_obj"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 1.5707963267948966"/>
+  </joint>
+  <joint name="mobile-dishwasher__Dishwasher_upper_basket-&gt;Dishwasher_upper_basket_divider" type="fixed">
+    <parent link="mobile-dishwasher__Dishwasher_upper_basket"/>
+    <child link="mobile-dishwasher__Dishwasher_upper_basket_divider"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="1.7369166016578674e-07 -0.06509586423635483 -0.020643949508666992" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-dishwasher__Dishwasher_lower_basket_ref_fixed" type="fixed">
+    <parent link="mobile-dishwasher__base_link"/>
+    <child link="mobile-dishwasher__Dishwasher_lower_basket_ref"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="-0.0027402625419199467 -0.0012781284749507904 0.711870014667511" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-dishwasher__Dishwasher_lower_basket_joint" type="prismatic">
+    <limit effort="0.0" velocity="10.0" lower="0.0" upper="0.5"/>
+    <parent link="mobile-dishwasher__Dishwasher_lower_basket_ref"/>
+    <child link="mobile-dishwasher__Dishwasher_lower_basket"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-dishwasher__Dishwasher_lower_basket-&gt;Dishwasher_lower_basket_Basket" type="fixed">
+    <parent link="mobile-dishwasher__Dishwasher_lower_basket"/>
+    <child link="mobile-dishwasher__Dishwasher_lower_basket_Basket"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-dishwasher__Dishwasher_lower_basket-&gt;Dishwasher_lower_basket_handle_obj" type="fixed">
+    <parent link="mobile-dishwasher__Dishwasher_lower_basket"/>
+    <child link="mobile-dishwasher__Dishwasher_lower_basket_handle_obj"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.24917895952239633 1.30385160446167e-08 0.17483997344970703" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-dishwasher__Dishwasher_lower_basket-&gt;Dishwasher_lower_basket_handle" type="fixed">
+    <parent link="mobile-dishwasher__Dishwasher_lower_basket"/>
+    <child link="mobile-dishwasher__Dishwasher_lower_basket_handle"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.24917895952239633 1.30385160446167e-08 0.17483997344970703" rpy="1.5707963267948966 0.0 1.5707963267948966"/>
+  </joint>
+  <joint name="mobile-dishwasher__Dishwasher_lower_basket-&gt;Dishwasher_lower_basket_structure" type="fixed">
+    <parent link="mobile-dishwasher__Dishwasher_lower_basket"/>
+    <child link="mobile-dishwasher__Dishwasher_lower_basket_structure"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.24917867640033364 -0.0015713588800281286 0.13530009984970093" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-dishwasher__Drawer_ref_fixed" type="fixed">
+    <parent link="mobile-dishwasher__base_link"/>
+    <child link="mobile-dishwasher__Drawer_ref"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.2884831130504608 -2.86102294921875e-06 0.3344329595565796" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-dishwasher__Drawer_joint" type="prismatic">
+    <limit effort="0.0" velocity="10.0" lower="0.0" upper="0.4"/>
+    <parent link="mobile-dishwasher__Drawer_ref"/>
+    <child link="mobile-dishwasher__Drawer"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-dishwasher__Drawer-&gt;Drawer_interior" type="fixed">
+    <parent link="mobile-dishwasher__Drawer"/>
+    <child link="mobile-dishwasher__Drawer_interior"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="-0.23391038924455643 0.0004999711527489126 -0.03398275375366211" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-dishwasher__Drawer-&gt;Drawer_door" type="fixed">
+    <parent link="mobile-dishwasher__Drawer"/>
+    <child link="mobile-dishwasher__Drawer_door"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-dishwasher__Drawer-&gt;Drawer_handle" type="fixed">
+    <parent link="mobile-dishwasher__Drawer"/>
+    <child link="mobile-dishwasher__Drawer_handle"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.027322590351104736 -2.384190338489134e-07 0.13150006532669067" rpy="1.57079633 0.0 1.57079633"/>
+  </joint>
+  <joint name="mobile-dishwasher__Drawer-&gt;Drawer_handle_obj" type="fixed">
+    <parent link="mobile-dishwasher__Drawer"/>
+    <child link="mobile-dishwasher__Drawer_handle_obj"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.027322590351104736 -2.384190338489134e-07 0.13150006532669067" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-dishwasher__Drawer_handle-&gt;Drawer_handle_surface_projection" type="fixed">
+    <parent link="mobile-dishwasher__Drawer_handle"/>
+    <child link="mobile-dishwasher__Drawer_handle_surface_projection"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 0.0 -0.015" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-dishwasher" type="fixed">
+    <parent link="world"/>
+    <child link="mobile-dishwasher__base_link"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="5.5 10.08 0.0" rpy="0.0 0.0 3.141592653589793"/>
+  </joint>
+  <joint name="mobile-kitchen-counter__base_link-&gt;Cabinet_back" type="fixed">
+    <parent link="mobile-kitchen-counter__base_link"/>
+    <child link="mobile-kitchen-counter__Cabinet_back"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.007500125095248222 -0.9090002775192261 0.5365411639213562" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-kitchen-counter__base_link-&gt;Cabinet_cover" type="fixed">
+    <parent link="mobile-kitchen-counter__base_link"/>
+    <child link="mobile-kitchen-counter__Cabinet_cover"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.304206907749176 -0.8092880249023438 0.47657686471939087" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-kitchen-counter__base_link-&gt;Cabinet_inner_left_r" type="fixed">
+    <parent link="mobile-kitchen-counter__base_link"/>
+    <child link="mobile-kitchen-counter__Cabinet_inner_left_r"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.28799954056739807 -1.1920002698898315 0.5365415811538696" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-kitchen-counter__base_link-&gt;Cabinet_inner_right_l" type="fixed">
+    <parent link="mobile-kitchen-counter__base_link"/>
+    <child link="mobile-kitchen-counter__Cabinet_inner_right_l"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.2879994511604309 -0.6080002188682556 0.5365419387817383" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-kitchen-counter__base_link-&gt;Cabinet_inner_right_r" type="fixed">
+    <parent link="mobile-kitchen-counter__base_link"/>
+    <child link="mobile-kitchen-counter__Cabinet_inner_right_r"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.2879994213581085 -0.5920001864433289 0.5365419387817383" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-kitchen-counter__base_link-&gt;Cabinet_right" type="fixed">
+    <parent link="mobile-kitchen-counter__base_link"/>
+    <child link="mobile-kitchen-counter__Cabinet_right"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.28799936175346375 -0.00800016988068819 0.5365422368049622" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-kitchen-counter__base_link-&gt;Cabinet_left" type="fixed">
+    <parent link="mobile-kitchen-counter__base_link"/>
+    <child link="mobile-kitchen-counter__Cabinet_left"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.28799962997436523 -1.7920002937316895 0.536540150642395" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-kitchen-counter__base_link-&gt;Cabinet_inner_left_l" type="fixed">
+    <parent link="mobile-kitchen-counter__base_link"/>
+    <child link="mobile-kitchen-counter__Cabinet_inner_left_l"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.2879995107650757 -1.2080003023147583 0.5365404486656189" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-kitchen-counter__base_link-&gt;Cabinet_bottom" type="fixed">
+    <parent link="mobile-kitchen-counter__base_link"/>
+    <child link="mobile-kitchen-counter__Cabinet_bottom"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.3009997308254242 -0.9000002145767212 0.1340411901473999" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-kitchen-counter__base_link-&gt;Cover_back" type="fixed">
+    <parent link="mobile-kitchen-counter__base_link"/>
+    <child link="mobile-kitchen-counter__Cover_back"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.017500098794698715 -0.8936254382133484 0.06404179334640503" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-kitchen-counter__base_link-&gt;Cover_right" type="fixed">
+    <parent link="mobile-kitchen-counter__base_link"/>
+    <child link="mobile-kitchen-counter__Cover_right"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.2859998047351837 -0.009682416915893555 0.06404200196266174" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-kitchen-counter__base_link-&gt;Cover_left" type="fixed">
+    <parent link="mobile-kitchen-counter__base_link"/>
+    <child link="mobile-kitchen-counter__Cover_left"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.2860003709793091 -1.785466194152832 0.06404026597738266" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-kitchen-counter__base_link-&gt;Cover_front" type="fixed">
+    <parent link="mobile-kitchen-counter__base_link"/>
+    <child link="mobile-kitchen-counter__Cover_front"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.5845001339912415 -0.8962187170982361 0.06404183804988861" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-kitchen-counter__base_link-&gt;Counter_top" type="fixed">
+    <parent link="mobile-kitchen-counter__base_link"/>
+    <child link="mobile-kitchen-counter__Counter_top"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.29469627141952515 -0.7153684496879578 0.9465413093566895" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-kitchen-counter__base_link-&gt;Sink_water_outlet" type="fixed">
+    <parent link="mobile-kitchen-counter__base_link"/>
+    <child link="mobile-kitchen-counter__Sink_water_outlet"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.18398705124855042 -1.4580163955688477 1.1809860467910767" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-kitchen-counter__base_link-&gt;Sink_water_tab" type="fixed">
+    <parent link="mobile-kitchen-counter__base_link"/>
+    <child link="mobile-kitchen-counter__Sink_water_tab"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.11061559617519379 -1.434156060218811 1.0284606218338013" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-kitchen-counter__base_link-&gt;Sink_sink" type="fixed">
+    <parent link="mobile-kitchen-counter__base_link"/>
+    <child link="mobile-kitchen-counter__Sink_sink"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.26801174879074097 -1.4580004215240479 0.887730062007904" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-kitchen-counter__SwingDoorRight_ref_fixed" type="fixed">
+    <parent link="mobile-kitchen-counter__base_link"/>
+    <child link="mobile-kitchen-counter__SwingDoorRight_ref"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.5670872330665588 -0.019756212830543518 0.40672194957733154" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-kitchen-counter__SwingDoorRight_joint" type="revolute">
+    <limit effort="0.0" velocity="10.0" lower="0.0" upper="1.7"/>
+    <parent link="mobile-kitchen-counter__SwingDoorRight_ref"/>
+    <child link="mobile-kitchen-counter__SwingDoorRight"/>
+    <axis xyz="0. 0. 1."/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-kitchen-counter__SwingDoorRight-&gt;SwingDoorRight_door" type="fixed">
+    <parent link="mobile-kitchen-counter__SwingDoorRight"/>
+    <child link="mobile-kitchen-counter__SwingDoorRight_door"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.018905341625213623 -0.2802438586950302 -0.00018036365509033203" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-kitchen-counter__SwingDoorRight-&gt;SwingDoorRight_handle_obj" type="fixed">
+    <parent link="mobile-kitchen-counter__SwingDoorRight"/>
+    <child link="mobile-kitchen-counter__SwingDoorRight_handle_obj"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.05131953954696655 -0.5172439068555832 0.11831951141357422" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-kitchen-counter__SwingDoorRight-&gt;SwingDoorRight_handle" type="fixed">
+    <parent link="mobile-kitchen-counter__SwingDoorRight"/>
+    <child link="mobile-kitchen-counter__SwingDoorRight_handle"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.05131953954696655 -0.517713725566864 0.11831939220428467" rpy="3.14152 -1.5707963267948966 0.0"/>
+  </joint>
+  <joint name="mobile-kitchen-counter__SwingDoorRight-&gt;SwingDoorRight_joint_placeholder" type="fixed">
+    <parent link="mobile-kitchen-counter__SwingDoorRight"/>
+    <child link="mobile-kitchen-counter__SwingDoorRight_joint_placeholder"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-kitchen-counter__SwingDoorRight_handle-&gt;SwingDoorRight_handle_surface_projection" type="fixed">
+    <parent link="mobile-kitchen-counter__SwingDoorRight_handle"/>
+    <child link="mobile-kitchen-counter__SwingDoorRight_handle_surface_projection"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 0.0 -0.015" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-kitchen-counter__SwingDoorMiddle_ref_fixed" type="fixed">
+    <parent link="mobile-kitchen-counter__base_link"/>
+    <child link="mobile-kitchen-counter__SwingDoorMiddle_ref"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.5670872330665588 -1.1807138919830322 0.40672194957733154" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-kitchen-counter__SwingDoorMiddle_joint" type="revolute">
+    <limit effort="0.0" velocity="10.0" lower="0.0" upper="1.7"/>
+    <parent link="mobile-kitchen-counter__SwingDoorMiddle_ref"/>
+    <child link="mobile-kitchen-counter__SwingDoorMiddle"/>
+    <axis xyz=" 0.  0. -1."/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-kitchen-counter__SwingDoorMiddle-&gt;SwingDoorMiddle_door" type="fixed">
+    <parent link="mobile-kitchen-counter__SwingDoorMiddle"/>
+    <child link="mobile-kitchen-counter__SwingDoorMiddle_door"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.018905460834503174 0.2807137966156006 -0.00018072128295898438" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-kitchen-counter__SwingDoorMiddle-&gt;SwingDoorMiddle_handle_obj" type="fixed">
+    <parent link="mobile-kitchen-counter__SwingDoorMiddle"/>
+    <child link="mobile-kitchen-counter__SwingDoorMiddle_handle_obj"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.05131953954696655 0.517713725566864 0.11831939220428467" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-kitchen-counter__SwingDoorMiddle-&gt;SwingDoorMiddle_handle" type="fixed">
+    <parent link="mobile-kitchen-counter__SwingDoorMiddle"/>
+    <child link="mobile-kitchen-counter__SwingDoorMiddle_handle"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.05131953954696655 0.517713725566864 0.11831939220428467" rpy="0.0 1.5707963267948966 0.0"/>
+  </joint>
+  <joint name="mobile-kitchen-counter__SwingDoorMiddle-&gt;SwingDoorMiddle_joint_placeholder" type="fixed">
+    <parent link="mobile-kitchen-counter__SwingDoorMiddle"/>
+    <child link="mobile-kitchen-counter__SwingDoorMiddle_joint_placeholder"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-kitchen-counter__SwingDoorMiddle_handle-&gt;SwingDoorMiddle_handle_surface_projection" type="fixed">
+    <parent link="mobile-kitchen-counter__SwingDoorMiddle_handle"/>
+    <child link="mobile-kitchen-counter__SwingDoorMiddle_handle_surface_projection"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 0.0 -0.015" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-kitchen-counter__DrawerRight_ref_fixed" type="fixed">
+    <parent link="mobile-kitchen-counter__base_link"/>
+    <child link="mobile-kitchen-counter__DrawerRight_ref"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.5859884023666382 -0.30100029706954956 0.7960415482521057" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-kitchen-counter__DrawerRight_joint" type="prismatic">
+    <limit effort="0.0" velocity="10.0" lower="0.0" upper="0.4"/>
+    <parent link="mobile-kitchen-counter__DrawerRight_ref"/>
+    <child link="mobile-kitchen-counter__DrawerRight"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-kitchen-counter__DrawerRight-&gt;DrawerRight_door" type="fixed">
+    <parent link="mobile-kitchen-counter__DrawerRight"/>
+    <child link="mobile-kitchen-counter__DrawerRight_door"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-kitchen-counter__DrawerRight-&gt;DrawerRight_handle_obj" type="fixed">
+    <parent link="mobile-kitchen-counter__DrawerRight"/>
+    <child link="mobile-kitchen-counter__DrawerRight_handle_obj"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.03241831064224243 -0.000500023365020752 0.06550002098083496" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-kitchen-counter__DrawerRight-&gt;DrawerRight_handle" type="fixed">
+    <parent link="mobile-kitchen-counter__DrawerRight"/>
+    <child link="mobile-kitchen-counter__DrawerRight_handle"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.03241831064224243 -0.000500023365020752 0.06550002098083496" rpy="1.57079633 0.0 1.57079633"/>
+  </joint>
+  <joint name="mobile-kitchen-counter__DrawerRight_handle-&gt;DrawerRight_reference" type="fixed">
+    <parent link="mobile-kitchen-counter__DrawerRight_handle"/>
+    <child link="mobile-kitchen-counter__DrawerRight_reference"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 -1.5699999999999876 -1.57"/>
+  </joint>
+  <joint name="mobile-kitchen-counter__DrawerRight-&gt;DrawerRight_interior" type="fixed">
+    <parent link="mobile-kitchen-counter__DrawerRight"/>
+    <child link="mobile-kitchen-counter__DrawerRight_interior"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="-0.2955290377140045 0.000999748706817627 -0.06771421432495117" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-kitchen-counter__DrawerRight_handle-&gt;DrawerRight_handle_surface_projection" type="fixed">
+    <parent link="mobile-kitchen-counter__DrawerRight_handle"/>
+    <child link="mobile-kitchen-counter__DrawerRight_handle_surface_projection"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 0.0 -0.015" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-kitchen-counter__DrawerMiddle_ref_fixed" type="fixed">
+    <parent link="mobile-kitchen-counter__base_link"/>
+    <child link="mobile-kitchen-counter__DrawerMiddle_ref"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.5859885215759277 -0.9010003209114075 0.7960411906242371" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-kitchen-counter__DrawerMiddle_joint" type="prismatic">
+    <limit effort="0.0" velocity="10.0" lower="0.0" upper="0.46"/>
+    <parent link="mobile-kitchen-counter__DrawerMiddle_ref"/>
+    <child link="mobile-kitchen-counter__DrawerMiddle"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-kitchen-counter__DrawerMiddle-&gt;DrawerMiddle_door" type="fixed">
+    <parent link="mobile-kitchen-counter__DrawerMiddle"/>
+    <child link="mobile-kitchen-counter__DrawerMiddle_door"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-kitchen-counter__DrawerMiddle-&gt;DrawerMiddle_handle_obj" type="fixed">
+    <parent link="mobile-kitchen-counter__DrawerMiddle"/>
+    <child link="mobile-kitchen-counter__DrawerMiddle_handle_obj"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.03241831064224243 -0.000500023365020752 0.06550002098083496" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-kitchen-counter__DrawerMiddle-&gt;DrawerMiddle_handle" type="fixed">
+    <parent link="mobile-kitchen-counter__DrawerMiddle"/>
+    <child link="mobile-kitchen-counter__DrawerMiddle_handle"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.03241831064224243 -0.000500023365020752 0.06550002098083496" rpy="1.57079633 0.0 1.57079633"/>
+  </joint>
+  <joint name="mobile-kitchen-counter__DrawerMiddle-&gt;DrawerMiddle_interior" type="fixed">
+    <parent link="mobile-kitchen-counter__DrawerMiddle"/>
+    <child link="mobile-kitchen-counter__DrawerMiddle_interior"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="-0.29552915692329407 0.0010001659393310547 -0.0677143931388855" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-kitchen-counter__DrawerMiddle_handle-&gt;DrawerMiddle_handle_surface_projection" type="fixed">
+    <parent link="mobile-kitchen-counter__DrawerMiddle_handle"/>
+    <child link="mobile-kitchen-counter__DrawerMiddle_handle_surface_projection"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 0.0 -0.015" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-kitchen-counter__SwingDoorLeft_ref_fixed" type="fixed">
+    <parent link="mobile-kitchen-counter__base_link"/>
+    <child link="mobile-kitchen-counter__SwingDoorLeft_ref"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.5670872330665588 -1.7789647579193115 0.40672194957733154" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-kitchen-counter__SwingDoorLeft_joint" type="revolute">
+    <limit effort="0.0" velocity="10.0" lower="0.0" upper="1.7"/>
+    <parent link="mobile-kitchen-counter__SwingDoorLeft_ref"/>
+    <child link="mobile-kitchen-counter__SwingDoorLeft"/>
+    <axis xyz=" 0.  0. -1."/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-kitchen-counter__SwingDoorLeft-&gt;SwingDoorLeft_door" type="fixed">
+    <parent link="mobile-kitchen-counter__SwingDoorLeft"/>
+    <child link="mobile-kitchen-counter__SwingDoorLeft_door"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.018906891345977783 0.278964638710022 0.12981891632080078" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-kitchen-counter__SwingDoorLeft-&gt;SwingDoorLeft_handle_obj" type="fixed">
+    <parent link="mobile-kitchen-counter__SwingDoorLeft"/>
+    <child link="mobile-kitchen-counter__SwingDoorLeft_handle_obj"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.051318347454071045 0.5159645080566406 0.3773190975189209" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-kitchen-counter__SwingDoorLeft-&gt;SwingDoorLeft_handle" type="fixed">
+    <parent link="mobile-kitchen-counter__SwingDoorLeft"/>
+    <child link="mobile-kitchen-counter__SwingDoorLeft_handle"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.051318347454071045 0.5159645080566406 0.3773190975189209" rpy="0.0 1.5707963267948966 0.0"/>
+  </joint>
+  <joint name="mobile-kitchen-counter__SwingDoorLeft-&gt;SwingDoorLeft_joint_placeholder" type="fixed">
+    <parent link="mobile-kitchen-counter__SwingDoorLeft"/>
+    <child link="mobile-kitchen-counter__SwingDoorLeft_joint_placeholder"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-kitchen-counter__SwingDoorLeft_handle-&gt;SwingDoorLeft_handle_surface_projection" type="fixed">
+    <parent link="mobile-kitchen-counter__SwingDoorLeft_handle"/>
+    <child link="mobile-kitchen-counter__SwingDoorLeft_handle_surface_projection"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 0.0 -0.015" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="mobile-kitchen-counter" type="fixed">
+    <parent link="world"/>
+    <child link="mobile-kitchen-counter__base_link"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="5.8 7.98 0.02" rpy="0.0 0.0 3.141592653589793"/>
+  </joint>
+</robot>

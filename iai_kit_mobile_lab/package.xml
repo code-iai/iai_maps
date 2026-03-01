@@ -1,0 +1,23 @@
+<package>
+  <name>iai_kit_mobile_lab</name>
+  <version>1.0.0</version>
+  <description>URDF description of IAI version the mobile laboratory of the KIT</description>
+
+  <maintainer email="krohm@uni-bremen.de">Luca Krohm</maintainer>
+
+  <license>LGPL</license>
+
+  <author>Luca Krohm</author>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <build_depend>xacro</build_depend>
+  <run_depend>xacro</run_depend>
+
+    <export>
+    <!-- Other tools can request additional information be placed here -->
+    <build_type>ament_cmake</build_type>
+
+  </export>
+
+</package>
