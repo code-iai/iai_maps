@@ -1,0 +1,166 @@
+<mujoco>
+  <include file="visual-only-bodies.xml"/>
+  <compiler meshdir="meshes" texturedir="textures"/>
+  <asset>
+    <texture type="skybox" builtin="gradient" rgb1="0.3 0.5 0.7" rgb2="0 0 0" width="512" height="512"/>
+    <texture name="texplane" type="2d" builtin="checker" rgb1=".2 .3 .4" rgb2=".1 0.15 0.2"
+      width="512" height="512" mark="cross" markrgb=".8 .8 .8"/>
+    <material name="matplane" reflectance="0.3" texture="texplane" texrepeat="10 10" texuniform="true"/>
+    <mesh name="CabinetMain" file="CabinetMain.obj"/>
+    <mesh name="DrawerSmall" file="DrawerSmall.obj"/>
+    <mesh name="DrawerLarge" file="DrawerLarge.obj"/>
+    <mesh name="DrawerHandle" file="DrawerHandle.obj"/>
+    <mesh name="CabinetDoorSmall" file="CabinetDoorSmall.obj"/>
+    <mesh name="CabinetDoorMid" file="CabinetDoorMid.obj"/>
+    <mesh name="CabinetDoorLarge" file="CabinetDoorLarge.obj"/>
+    <texture name="T_CabinetDoor" file="MI_6446510cd7c7aa0001b081b1.png" type="2d"/>
+    <material name="M_CabinetDoor" texture="T_CabinetDoor"/>
+  </asset>
+  <default>
+    <joint armature="0.01" damping="0.5" />
+    <default class="apartment_visual">
+      <geom contype="0" conaffinity="0" group="2"/>
+    </default>
+    <default class="apartment_collision">
+      <geom rgba="0.9 0.9 0 0.2" group="3"/>
+    </default>
+  </default>
+  <worldbody>
+    <light directional="true" diffuse=".8 .8 .8" specular="0.2 0.2 0.2" pos="0 0 4" dir="0 0 -1"/>
+    
+    <body name="apartment">
+      <body name="kitchen_cabinet" pos="1.1208 7.45 0" quat="0.707 0 0 -0.707">
+        <geom name="kitchen_visual" type="mesh" mesh="CabinetMain" class="apartment_visual"/>
+        <!-- Countertop -->
+        <geom type="box" pos="0.018  0.313 0.926" size="0.31  0.239  0.02" class="apartment_collision" />
+        <geom type="box" pos="0.018 -0.808 0.926" size="0.31  0.5   0.02" class="apartment_collision" />
+        <geom type="box" pos="-0.252 -0.108 0.926" size="0.04  0.2   0.02" class="apartment_collision" />
+        <geom type="box" pos="0.283 -0.108 0.926" size="0.045 0.2   0.02" class="apartment_collision" />
+        <!-- Sink -->
+        <geom type="box" pos="-0.183 -0.118 0.8565" size="0.038 0.2 0.1" class="apartment_collision" />
+        <geom type="box" pos="0.225 -0.118 0.8565" size="0.013 0.2 0.1" class="apartment_collision" />
+        <geom type="box" pos="0.008  0.074 0.8565" size="0.23  0.008 0.1" class="apartment_collision" />
+        <geom type="box" pos="0.008  -0.31 0.8565" size="0.23  0.008 0.1" class="apartment_collision" />
+        <geom type="box" pos="0.013 -0.12 0.745" size="0.23  0.2   0.008" class="apartment_collision" />
+        <!-- Water tap -->
+        <geom type="cylinder" pos="-0.183 0.0218 1.023" size="0.027 0.075" class="apartment_collision"/>
+        <geom type="box" pos="-0.125 0.0218 1.095" size="0.03 0.02 0.003" class="apartment_collision" />
+        <geom type="box" pos="-0.12 0.0235 1.053" size="0.06 0.0185 0.011" class="apartment_collision" />
+        <!-- cabinet left -->
+        <geom type="box" pos="0.0 -1.068 0.109" size="0.28 0.225 0.009" class="apartment_collision" />
+        <geom type="box" pos="-0.256 -1.063 0.50241" size="0.015 0.22 0.4" class="apartment_collision" />
+        <geom type="box" pos="0.01 -1.285 0.50241" size="0.28 0.009 0.4" class="apartment_collision" />
+        <geom type="box" pos="0.01 -0.852 0.50241" size="0.28 0.009 0.4" class="apartment_collision" />
+        <!-- cabinet middle -->
+        <geom type="box" pos="-0.256 0.117 0.50241" size="0.015 0.44 0.4" class="apartment_collision" />
+        <geom type="box" pos="-0.256 0.117 0.50241" size="0.015 0.44 0.4" class="apartment_collision" />
+        <geom type="box" pos="0.0 -0.11 0.509" size="0.265 0.225 0.009" class="apartment_collision" />
+        <geom type="box" pos="0.01 -0.335 0.50241" size="0.28 0.009 0.4" class="apartment_collision" />
+        <geom type="box" pos="0.01 0.106 0.50241" size="0.28 0.018 0.4" class="apartment_collision" />
+        <geom type="box" pos="0.01 0.546 0.50241" size="0.28 0.009 0.4" class="apartment_collision" />
+        <geom type="box" pos="0.01 0.105 0.109" size="0.28 0.45 0.009" class="apartment_collision" />
+        <!-- cabinet right -->
+        <geom type="box" pos="0.01 0.857 0.109" size="0.28 0.3 0.009" class="apartment_collision" />
+        <geom type="box" pos="-0.256 0.8557 1.05" size="0.015 0.3 0.95" class="apartment_collision" />
+        <geom type="box" pos="0.01 0.565 1.05" size="0.28 0.009 0.95" class="apartment_collision" />
+        <geom type="box" pos="0.01 1.148 1.05" size="0.28 0.009 0.95" class="apartment_collision" />
+        <geom type="box" pos="0.01 0.857 1.991" size="0.28 0.3 0.009" class="apartment_collision" />
+        <geom type="box" pos="0.0 0.857 1.7423" size="0.265 0.3 0.009" class="apartment_collision" />
+        <geom type="box" pos="0.0 0.857 1.512" size="0.265 0.3 0.009" class="apartment_collision" />
+        <geom type="box" pos="0.0 0.857 1.281" size="0.265 0.3 0.009" class="apartment_collision" />
+        <geom type="box" pos="0.01 0.857 1.051" size="0.28 0.3 0.009" class="apartment_collision" />
+        <geom type="box" pos="0.0 0.857 0.58" size="0.265 0.3 0.009" class="apartment_collision" />
+        <geom type="box" pos="0.0 0.32 0.409" size="0.265 0.225 0.009" class="apartment_collision" />
+
+        <body name="drawer_1" pos="0.171 -1.06965 0.77795">
+          <joint name="drawer_1_joint" type="slide" axis="1 0 0" range="0 0.4" />
+          <geom name="drawer_1_visual" type="mesh" mesh="DrawerSmall" class="apartment_visual" material="M_CabinetDoor"/>
+          <geom type="box" pos="0.13 0 0.024" size="0.009 0.222 0.1" class="apartment_collision"  />
+          <geom type="box" pos="-0.12 0 -0.06" size="0.24 0.194 0.01" class="apartment_collision"  />
+          <geom type="box" pos="-0.12 -0.18 -0.012" size="0.24 0.01 0.059" class="apartment_collision"  />
+          <geom type="box" pos="-0.12 0.18 -0.012" size="0.24 0.01 0.059" class="apartment_collision"  />
+          <geom type="box" pos="-0.37 0 -0.012" size="0.009 0.194 0.059" class="apartment_collision"  />
+          <body name="drawer_1_handle" pos="0.150489 -0.001051 0.022242" quat="0 0 0.7071068 0.7071068">
+            <geom name="drawer_1_handle_visual" type="mesh" mesh="DrawerHandle" class="apartment_visual" quat="0.0005633 0.0005629 0.707388 0.706825"/>
+            <geom type="cylinder" pos="0.025 0 0" size="0.0059 0.092" quat="1 1 0 0" class="apartment_collision"/>
+          </body>
+        </body>
+        <body name="drawer_2" pos="0.171 -1.06965 0.57795">
+          <joint name="drawer_2_joint" type="slide" axis="1 0 0" range="0 0.4" />
+          <geom name="drawer_2_visual" type="mesh" mesh="DrawerSmall" class="apartment_visual" material="M_CabinetDoor"/>
+          <geom type="box" pos="0.13 0 0.024" size="0.009 0.222 0.1" class="apartment_collision"  />
+          <geom type="box" pos="-0.12 0 -0.06" size="0.24 0.194 0.01" class="apartment_collision"  />
+          <geom type="box" pos="-0.12 -0.18 -0.012" size="0.24 0.01 0.059" class="apartment_collision"  />
+          <geom type="box" pos="-0.12 0.18 -0.012" size="0.24 0.01 0.059" class="apartment_collision"  />
+          <geom type="box" pos="-0.37 0 -0.012" size="0.009 0.194 0.059" class="apartment_collision"  />
+          <body name="drawer_2_handle" pos="0.150489 -0.001051 0.022242">
+            <geom name="drawer_2_handle_visual" type="mesh" mesh="DrawerHandle" class="apartment_visual"/>
+            <geom type="cylinder" pos="0.025 0 0" size="0.0059 0.092" quat="1 1 0 0" class="apartment_collision"/>
+          </body>
+        </body>
+        <body name="drawer_3" pos="0.171 -1.06965 0.28095">
+          <joint name="drawer_3_joint" type="slide" axis="1 0 0" range="0 0.4" />
+          <geom name="drawer_3_visual" type="mesh" mesh="DrawerLarge" class="apartment_visual" material="M_CabinetDoor"/>
+          <geom type="box" pos="0.13 0 0.020" size="0.009 0.222 0.2" class="apartment_collision" />
+          <geom type="box" pos="-0.12 0 -0.14" size="0.24 0.194 0.01" class="apartment_collision" />
+          <geom type="box" pos="-0.12 -0.18 0.01" size="0.24 0.01 0.17" class="apartment_collision" />
+          <geom type="box" pos="-0.12 0.18 0.01" size="0.24 0.01 0.17" class="apartment_collision" />
+          <geom type="box" pos="-0.37 0 0.01" size="0.009 0.194 0.17" class="apartment_collision" />
+          <body name="drawer_3_handle" pos="0.150489 -0.001051 0.022242">
+            <geom name="drawer_3_handle_visual" type="mesh" mesh="DrawerHandle" class="apartment_visual"/>
+            <geom type="cylinder" pos="0.025 0 0" size="0.0059 0.092" quat="1 1 0 0" class="apartment_collision"/>
+          </body>
+        </body>
+        <body name="drawer_4" pos="0.171 0.330321 0.77795">
+          <joint name="drawer_4_joint" type="slide" axis="1 0 0" range="0 0.4" />
+          <geom name="drawer_4_visual" type="mesh" mesh="DrawerSmall" class="apartment_visual" material="M_CabinetDoor"/>
+          <geom type="box" pos="0.13 0 0.024" size="0.009 0.222 0.1" class="apartment_collision"  />
+          <geom type="box" pos="-0.12 0 -0.06" size="0.24 0.194 0.01" class="apartment_collision"  />
+          <geom type="box" pos="-0.12 -0.18 -0.012" size="0.24 0.01 0.059" class="apartment_collision"  />
+          <geom type="box" pos="-0.12 0.18 -0.012" size="0.24 0.01 0.059" class="apartment_collision"  />
+          <geom type="box" pos="-0.37 0 -0.012" size="0.009 0.194 0.059" class="apartment_collision"  />
+          <body name="drawer_4_handle" pos="0.150489 -0.001051 0.022242">
+            <geom name="drawer_4_handle_visual" type="mesh" mesh="DrawerHandle" class="apartment_visual"/>
+            <geom type="cylinder" pos="0.025 0 0" size="0.0059 0.092" quat="1 1 0 0" class="apartment_collision"/>
+          </body>
+        </body>
+        <body name="cabinet_door_1" pos="0.3 -0.063134 0.5">
+          <joint name="cabinet_door_1_joint" pos="0 0.16 0" type="hinge" axis="0 0 1" range="0 90" />
+          <geom name="cabinet_door_1_visual"  type="mesh" mesh="CabinetDoorMid" class="apartment_visual" material="M_CabinetDoor"/>
+          <geom type="box" pos="0.002 -0.068 0" size="0.009 0.21 0.398" class="apartment_collision" />
+          <body name="cabinet_door_1_handle" pos="0.022002 -0.244988 0.276015" quat="1 1 0 0">
+            <geom name="cabinet_door_1_handle_visual" type="mesh" mesh="DrawerHandle" class="apartment_visual"/>
+            <geom type="cylinder" pos="0.025 0 0" size="0.0059 0.092" quat="1 1 0 0" class="apartment_collision"/>
+          </body>
+        </body>
+        <body name="cabinet_door_2" pos="0.3 0.386855 0.4">
+          <joint name="cabinet_door_2_joint" pos="0 0.15 0" type="hinge" axis="0 0 1" range="0 90" />
+          <geom name="cabinet_door_2_visual" type="mesh" mesh="CabinetDoorSmall" class="apartment_visual" material="M_CabinetDoor"/>
+          <geom type="box" pos="0.002 -0.068 0" size="0.009 0.21 0.298" class="apartment_collision" />
+          <body name="cabinet_door_2_handle" pos="0.022002 -0.244988 0.176015" quat="1 1 0 0">
+            <geom name="cabinet_door_2_handle_visual" type="mesh" mesh="DrawerHandle" class="apartment_visual"/>
+            <geom type="cylinder" pos="0.025 0 0" size="0.0059 0.092" quat="1 1 0 0" class="apartment_collision"/>
+          </body>
+        </body>
+        <body name="cabinet_door_3" pos="0.3 0.93327 1.525">
+          <joint name="cabinet_door_3_joint" pos="0 0.22 0" type="hinge" axis="0 0 1" range="0 90" />
+          <geom name="cabinet_door_3_visual" type="mesh" mesh="CabinetDoorLarge" class="apartment_visual" material="M_CabinetDoor"/>
+          <geom type="box" pos="0 -0.08 0" size="0.009 0.3 0.473" class="apartment_collision" />
+          <body name="cabinet_door_3_handle" pos="0.021335 -0.341414 -0.351015" quat="1 1 0 0">
+            <geom name="cabinet_door_3_handle_visual" type="mesh" mesh="DrawerHandle" class="apartment_visual"/>
+            <geom type="cylinder" pos="0.025 0 0" size="0.0059 0.092" quat="1 1 0 0" class="apartment_collision"/>
+          </body>
+        </body>
+        <body name="cabinet_door_4" pos="0.3 0.93327 0.575">
+          <joint name="cabinet_door_4_joint" pos="0 0.22 0" type="hinge" axis="0 0 1" range="0 90" />
+          <geom name="cabinet_door_4_visual" type="mesh" mesh="CabinetDoorLarge" class="apartment_visual" material="M_CabinetDoor"/>
+          <geom type="box" pos="0 -0.08 0" size="0.009 0.3 0.473" class="apartment_collision" />
+          <body name="cabinet_door_4_handle" pos="0.021335 -0.341414 0.351015" quat="1 1 0 0">
+            <geom name="cabinet_door_4_handle_visual" type="mesh" mesh="DrawerHandle" class="apartment_visual"/>
+            <geom type="cylinder" pos="0.025 0 0" size="0.0059 0.092" quat="1 1 0 0" class="apartment_collision"/>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+</mujoco>

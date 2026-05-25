@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>iai_garmi_apartment</name>
+  <version>0.0.0</version>
+  <description>MuJoCo (MJCF) environment for the GARMI apartment scenario</description>
+
+  <maintainer email="huerkamp@uni-bremen.de">maltehue</maintainer>
+
+  <license>MIT</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
