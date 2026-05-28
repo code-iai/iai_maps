@@ -2018,7 +2018,7 @@
         </body>
         <body name="cabinet_door_3" pos="1.233500 -0.269230 0.525000" quat="0.707107 0.000000 0.000000 0.707107">
           <joint name="cabinet_door_3_joint" type="hinge" pos="0.00000 0.00000 0.00000" axis="0.00000 0.00000 1.00000" range="0.000 90.000"/>
-          <body name="cabinet_door_3_handle" pos="-0.030767 0.561093 0.351015">
+          <body name="cabinet_door_3_handle" pos="-0.030767 0.561093 -0.351015">
             <geom type="mesh" mesh="Cabinet0119" class="visual" material="M_MI_69ae32f98addd433aebf0490" quat="0.707107 0.000000 0.000000 -0.707107"/>
             <geom type="cylinder" pos="-0.0154 0 0" size="0.0059 0.092" class="collision"/>
           </body>
@@ -2260,97 +2260,6 @@
         <geom type="box" pos="-0.040 -0.254 -0.0775" size="0.2 0.045 0.0225" class="collision"/>
         <geom type="box" pos="-0.040  0.286 -0.0775" size="0.2 0.035 0.0225" class="collision"/>
       </frame>
-    </body>
-    <body name="floor_0" pos="-1.496750 4.802040 -0.035000">
-      <geom type="mesh" mesh="Floor00" class="visual" material="M_MI_69a97bbbeac1cc195cdac43d_124"/>
-      <geom type="mesh" mesh="Floor01" class="visual" material="M_MI_69a97bbbeac1cc195cdac43d_124"/>
-      <geom type="mesh" mesh="Floor02" class="visual" material="M_MI_69a97bbbeac1cc195cdac43d_124"/>
-      <geom type="mesh" mesh="Floor03" class="visual" material="M_MI_69a97bbbeac1cc195cdac43d_124"/>
-      <geom type="mesh" mesh="Floor04" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor05" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor06" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor07" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor08" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor09" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor010" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor011" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor012" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor013" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor014" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor015" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor016" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor017" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor018" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor019" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor020" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor021" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor022" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor023" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor024" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor025" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor026" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor027" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor028" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor029" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor030" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor031" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor032" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor033" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor034" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor035" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor036" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor037" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor038" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor039" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor040" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor041" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor042" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor043" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor044" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor045" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor046" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor047" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor048" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor049" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor050" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor051" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor052" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor053" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor054" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor055" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor056" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor057" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor058" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor059" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor060" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor061" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor062" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor063" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor064" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor065" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor066" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor067" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor068" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor069" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor070" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor071" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor072" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor073" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor074" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor075" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor076" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor077" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor078" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor079" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor080" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor081" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor082" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-      <geom type="mesh" mesh="Floor083" class="visual" material="M_MI_69a97bbbeac1cc195cdac43d_124"/>
-      <geom type="mesh" mesh="Floor084" class="visual" material="M_MI_69a97bbbeac1cc195cdac43d_124"/>
-      <geom type="mesh" mesh="Floor085" class="visual" material="M_MI_69a97bbbeac1cc195cdac43d_124"/>
-      <geom name="floor_083_aabb" type="box" pos="1.1375 -0.0900 0.02995" size="2.6425 3.4100 0.0050" class="collision"/>
-      <geom name="floor_084_aabb" type="box" pos="-2.0025 -1.4000 0.02995" size="1.7775 2.1000 0.0050" class="collision"/>
-      <geom name="floor_085_aabb" type="box" pos="-2.6500 2.0700 0.02995" size="1.0250 1.2500 0.0050" class="collision"/>
     </body>
     <body name="wall_0" pos="-1.496750 4.802040 1.500000">
       <geom type="mesh" mesh="Wall00" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
