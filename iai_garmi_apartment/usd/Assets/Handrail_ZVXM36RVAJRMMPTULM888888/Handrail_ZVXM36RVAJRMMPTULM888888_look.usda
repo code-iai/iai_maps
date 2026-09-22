@@ -1,0 +1,67 @@
+#usda 1.0
+(
+    defaultPrim = "Handrail_ZVXM36RVAJRMMPTULM888888"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "Handrail_ZVXM36RVAJRMMPTULM888888"
+{
+    over "Materials" (
+        prepend references = [
+            @./Materials/MI_615057aa53decf0001cd1a42.usda@,
+            @./Materials/MI_615057aac43c660001cad6d8.usda@
+        ]
+    )
+    {
+        over "MI_615057aac43c660001cad6d8"
+        {
+        }
+
+        over "MI_615057aa53decf0001cd1a42"
+        {
+        }
+    }
+
+    over "Geom"
+    {
+        over "body"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Handrail_ZVXM36RVAJRMMPTULM888888/Materials/MI_615057aac43c660001cad6d8>
+            }
+
+            over "mesh_0001" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Handrail_ZVXM36RVAJRMMPTULM888888/Materials/MI_615057aac43c660001cad6d8>
+            }
+
+            over "mesh_0002" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Handrail_ZVXM36RVAJRMMPTULM888888/Materials/MI_615057aa53decf0001cd1a42>
+            }
+
+            over "mesh_0003" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Handrail_ZVXM36RVAJRMMPTULM888888/Materials/MI_615057aac43c660001cad6d8>
+            }
+
+            over "mesh_0004" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Handrail_ZVXM36RVAJRMMPTULM888888/Materials/MI_615057aac43c660001cad6d8>
+            }
+        }
+    }
+}
+

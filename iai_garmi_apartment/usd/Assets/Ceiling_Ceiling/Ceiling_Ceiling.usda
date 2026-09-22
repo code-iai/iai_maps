@@ -1,0 +1,15 @@
+#usda 1.0
+(
+    defaultPrim = "Ceiling_Ceiling"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "Ceiling_Ceiling" (
+    kind = "component"
+    prepend payload = @Ceiling_Ceiling_payload.usda@
+)
+{
+    float3[] extentsHint = [(-3.9, -3.62, -0.100000024), (3.9, 3.62, 0.100000024)]
+}
+

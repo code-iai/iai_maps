@@ -1,0 +1,15 @@
+#usda 1.0
+(
+    defaultPrim = "book_ZLKNKCRVAJO3IPTUKE888888"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "book_ZLKNKCRVAJO3IPTUKE888888" (
+    kind = "component"
+    prepend payload = @book_ZLKNKCRVAJO3IPTUKE888888_payload.usda@
+)
+{
+    float3[] extentsHint = [(-0.12810004, -0.10622034, -0.04556967), (0.12810004, 0.10622034, 0.04556967)]
+}
+

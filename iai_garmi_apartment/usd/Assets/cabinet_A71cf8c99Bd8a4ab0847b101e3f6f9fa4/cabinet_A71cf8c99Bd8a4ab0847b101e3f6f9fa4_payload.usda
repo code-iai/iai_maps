@@ -1,0 +1,15 @@
+#usda 1.0
+(
+    defaultPrim = "cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4"
+    metersPerUnit = 1
+    subLayers = [
+        @cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4_geo.usd@,
+        @cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4_look.usda@
+    ]
+    upAxis = "Z"
+)
+
+def Xform "cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4"
+{
+}
+

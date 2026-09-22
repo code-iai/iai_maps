@@ -1,0 +1,94 @@
+#usda 1.0
+(
+    defaultPrim = "flowers_ZTRNV4JVAX5D6PTULU888888"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "flowers_ZTRNV4JVAX5D6PTULU888888"
+{
+    over "Materials" (
+        prepend references = [
+            @./Materials/MI_60dc421500e3a300019c8d24.usda@,
+            @./Materials/MI_60dc42155974ed000143128a.usda@,
+            @./Materials/MI_60dc4215e113f60001131387.usda@,
+            @./Materials/MI_60dc4215d849e10001f6e5b3.usda@,
+            @./Materials/MI_60dc4215b1d8ad0001cc79be.usda@,
+            @./Materials/MI_60dc421523bc840001ec60ab.usda@
+        ]
+    )
+    {
+        over "MI_60dc421500e3a300019c8d24"
+        {
+        }
+
+        over "MI_60dc42155974ed000143128a"
+        {
+        }
+
+        over "MI_60dc4215e113f60001131387"
+        {
+        }
+
+        over "MI_60dc4215d849e10001f6e5b3"
+        {
+        }
+
+        over "MI_60dc4215b1d8ad0001cc79be"
+        {
+        }
+
+        over "MI_60dc421523bc840001ec60ab"
+        {
+        }
+    }
+
+    over "Geom"
+    {
+        over "body"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </flowers_ZTRNV4JVAX5D6PTULU888888/Materials/MI_60dc421500e3a300019c8d24>
+            }
+
+            over "mesh_0001" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </flowers_ZTRNV4JVAX5D6PTULU888888/Materials/MI_60dc42155974ed000143128a>
+            }
+
+            over "mesh_0002" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </flowers_ZTRNV4JVAX5D6PTULU888888/Materials/MI_60dc4215e113f60001131387>
+            }
+
+            over "mesh_0003" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </flowers_ZTRNV4JVAX5D6PTULU888888/Materials/MI_60dc4215d849e10001f6e5b3>
+            }
+
+            over "mesh_0004" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </flowers_ZTRNV4JVAX5D6PTULU888888/Materials/MI_60dc4215b1d8ad0001cc79be>
+            }
+
+            over "mesh_0005" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </flowers_ZTRNV4JVAX5D6PTULU888888/Materials/MI_60dc421523bc840001ec60ab>
+            }
+        }
+    }
+}
+

@@ -1,0 +1,15 @@
+#usda 1.0
+(
+    defaultPrim = "flowers_ZTRNV4JVAX5D6PTULU888888"
+    metersPerUnit = 1
+    subLayers = [
+        @flowers_ZTRNV4JVAX5D6PTULU888888_geo.usd@,
+        @flowers_ZTRNV4JVAX5D6PTULU888888_look.usda@
+    ]
+    upAxis = "Z"
+)
+
+def Xform "flowers_ZTRNV4JVAX5D6PTULU888888"
+{
+}
+

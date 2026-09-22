@@ -1,0 +1,15 @@
+#usda 1.0
+(
+    defaultPrim = "chair_6GGXXC4TDD52APTUL4888888"
+    metersPerUnit = 1
+    subLayers = [
+        @chair_6GGXXC4TDD52APTUL4888888_geo.usd@,
+        @chair_6GGXXC4TDD52APTUL4888888_look.usda@
+    ]
+    upAxis = "Z"
+)
+
+def Xform "chair_6GGXXC4TDD52APTUL4888888"
+{
+}
+

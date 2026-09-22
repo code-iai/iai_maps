@@ -1,0 +1,15 @@
+#usda 1.0
+(
+    defaultPrim = "BayWindowPlatform_SJ3UGQGO7PRR6IREKI888888"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "BayWindowPlatform_SJ3UGQGO7PRR6IREKI888888" (
+    kind = "component"
+    prepend payload = @BayWindowPlatform_SJ3UGQGO7PRR6IREKI888888_payload.usda@
+)
+{
+    float3[] extentsHint = [(-0.3, -0.014, -1.2), (0.3, 0.014, 1.2)]
+}
+

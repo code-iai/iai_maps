@@ -1,0 +1,15 @@
+#usda 1.0
+(
+    defaultPrim = "toilet_Z2D35RJVAJO6IPTUK4888888"
+    metersPerUnit = 1
+    subLayers = [
+        @toilet_Z2D35RJVAJO6IPTUK4888888_geo.usd@,
+        @toilet_Z2D35RJVAJO6IPTUK4888888_look.usda@
+    ]
+    upAxis = "Z"
+)
+
+def Xform "toilet_Z2D35RJVAJO6IPTUK4888888"
+{
+}
+

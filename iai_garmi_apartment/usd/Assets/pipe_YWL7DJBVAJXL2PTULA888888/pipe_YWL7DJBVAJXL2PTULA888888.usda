@@ -1,0 +1,15 @@
+#usda 1.0
+(
+    defaultPrim = "pipe_YWL7DJBVAJXL2PTULA888888"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "pipe_YWL7DJBVAJXL2PTULA888888" (
+    kind = "component"
+    prepend payload = @pipe_YWL7DJBVAJXL2PTULA888888_payload.usda@
+)
+{
+    float3[] extentsHint = [(-2.6425, -0.1, -1.6417493), (2.6425, 0.1, 1.6417493)]
+}
+

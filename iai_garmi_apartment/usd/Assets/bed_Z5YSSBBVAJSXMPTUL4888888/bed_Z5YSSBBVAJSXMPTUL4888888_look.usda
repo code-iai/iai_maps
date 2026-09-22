@@ -1,0 +1,162 @@
+#usda 1.0
+(
+    defaultPrim = "bed_Z5YSSBBVAJSXMPTUL4888888"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "bed_Z5YSSBBVAJSXMPTUL4888888"
+{
+    over "Materials" (
+        prepend references = [
+            @./Materials/MI_634fb2924927a10001b80e8d.usda@,
+            @./Materials/MI_5da8169a7d6a630001637dbc.usda@,
+            @./Materials/MI_634fb2926cb4ba0001e92ffe.usda@,
+            @./Materials/MI_634fb2925ca9a400010a020f.usda@,
+            @./Materials/MI_69a97bbbeac1cc195cdac43d.usda@,
+            @./Materials/MI_634fb2920a498a00013aa342.usda@,
+            @./Materials/MI_634fb292b2753300012d7d05.usda@
+        ]
+    )
+    {
+        over "MI_69a97bbbeac1cc195cdac43d"
+        {
+        }
+
+        over "MI_634fb2920a498a00013aa342"
+        {
+        }
+
+        over "MI_5da8169a7d6a630001637dbc"
+        {
+        }
+
+        over "MI_634fb2924927a10001b80e8d"
+        {
+        }
+
+        over "MI_634fb2926cb4ba0001e92ffe"
+        {
+        }
+
+        over "MI_634fb2925ca9a400010a020f"
+        {
+        }
+
+        over "MI_634fb292b2753300012d7d05"
+        {
+        }
+    }
+
+    over "Geom"
+    {
+        over "body"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </bed_Z5YSSBBVAJSXMPTUL4888888/Materials/MI_69a97bbbeac1cc195cdac43d>
+            }
+
+            over "mesh_0001" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </bed_Z5YSSBBVAJSXMPTUL4888888/Materials/MI_634fb2920a498a00013aa342>
+            }
+
+            over "mesh_0002" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </bed_Z5YSSBBVAJSXMPTUL4888888/Materials/MI_69a97bbbeac1cc195cdac43d>
+            }
+
+            over "mesh_0003" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </bed_Z5YSSBBVAJSXMPTUL4888888/Materials/MI_69a97bbbeac1cc195cdac43d>
+            }
+
+            over "mesh_0004" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </bed_Z5YSSBBVAJSXMPTUL4888888/Materials/MI_5da8169a7d6a630001637dbc>
+            }
+
+            over "mesh_0005" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </bed_Z5YSSBBVAJSXMPTUL4888888/Materials/MI_5da8169a7d6a630001637dbc>
+            }
+
+            over "mesh_0006" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </bed_Z5YSSBBVAJSXMPTUL4888888/Materials/MI_634fb2924927a10001b80e8d>
+            }
+
+            over "mesh_0007" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </bed_Z5YSSBBVAJSXMPTUL4888888/Materials/MI_5da8169a7d6a630001637dbc>
+            }
+
+            over "mesh_0008" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </bed_Z5YSSBBVAJSXMPTUL4888888/Materials/MI_634fb2926cb4ba0001e92ffe>
+            }
+
+            over "mesh_0009" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </bed_Z5YSSBBVAJSXMPTUL4888888/Materials/MI_634fb2925ca9a400010a020f>
+            }
+
+            over "mesh_0010" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </bed_Z5YSSBBVAJSXMPTUL4888888/Materials/MI_69a97bbbeac1cc195cdac43d>
+            }
+
+            over "mesh_0011" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </bed_Z5YSSBBVAJSXMPTUL4888888/Materials/MI_69a97bbbeac1cc195cdac43d>
+            }
+
+            over "mesh_0012" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </bed_Z5YSSBBVAJSXMPTUL4888888/Materials/MI_69a97bbbeac1cc195cdac43d>
+            }
+
+            over "mesh_0013" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </bed_Z5YSSBBVAJSXMPTUL4888888/Materials/MI_634fb2920a498a00013aa342>
+            }
+
+            over "mesh_0014" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </bed_Z5YSSBBVAJSXMPTUL4888888/Materials/MI_634fb292b2753300012d7d05>
+            }
+        }
+    }
+}
+

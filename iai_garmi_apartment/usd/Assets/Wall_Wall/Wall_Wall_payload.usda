@@ -1,0 +1,15 @@
+#usda 1.0
+(
+    defaultPrim = "Wall_Wall"
+    metersPerUnit = 1
+    subLayers = [
+        @Wall_Wall_geo.usd@,
+        @Wall_Wall_look.usda@
+    ]
+    upAxis = "Z"
+)
+
+def Xform "Wall_Wall"
+{
+}
+

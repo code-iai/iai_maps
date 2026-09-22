@@ -1,0 +1,15 @@
+#usda 1.0
+(
+    defaultPrim = "window_YWLRX3MTQYWVKPTULU888888"
+    metersPerUnit = 1
+    subLayers = [
+        @window_YWLRX3MTQYWVKPTULU888888_geo.usd@,
+        @window_YWLRX3MTQYWVKPTULU888888_look.usda@
+    ]
+    upAxis = "Z"
+)
+
+def Xform "window_YWLRX3MTQYWVKPTULU888888"
+{
+}
+

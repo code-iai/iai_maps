@@ -1,0 +1,15 @@
+#usda 1.0
+(
+    defaultPrim = "book_ZEDE22BVAIM2CPTULE888888"
+    metersPerUnit = 1
+    subLayers = [
+        @book_ZEDE22BVAIM2CPTULE888888_geo.usd@,
+        @book_ZEDE22BVAIM2CPTULE888888_look.usda@
+    ]
+    upAxis = "Z"
+)
+
+def Xform "book_ZEDE22BVAIM2CPTULE888888"
+{
+}
+

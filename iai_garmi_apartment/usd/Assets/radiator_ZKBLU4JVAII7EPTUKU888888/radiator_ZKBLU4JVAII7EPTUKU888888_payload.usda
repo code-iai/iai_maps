@@ -1,0 +1,15 @@
+#usda 1.0
+(
+    defaultPrim = "radiator_ZKBLU4JVAII7EPTUKU888888"
+    metersPerUnit = 1
+    subLayers = [
+        @radiator_ZKBLU4JVAII7EPTUKU888888_geo.usd@,
+        @radiator_ZKBLU4JVAII7EPTUKU888888_look.usda@
+    ]
+    upAxis = "Z"
+)
+
+def Xform "radiator_ZKBLU4JVAII7EPTUKU888888"
+{
+}
+

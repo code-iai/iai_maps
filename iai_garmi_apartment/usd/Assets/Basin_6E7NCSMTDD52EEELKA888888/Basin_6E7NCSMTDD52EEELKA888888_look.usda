@@ -1,0 +1,81 @@
+#usda 1.0
+(
+    defaultPrim = "Basin_6E7NCSMTDD52EEELKA888888"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "Basin_6E7NCSMTDD52EEELKA888888"
+{
+    over "Materials" (
+        prepend references = [
+            @./Materials/MI_5d004ae60e49522efe609fc6.usda@,
+            @./Materials/MI_5d004ae60e49522efe609fc7.usda@
+        ]
+    )
+    {
+        over "MI_5d004ae60e49522efe609fc7"
+        {
+        }
+
+        over "MI_5d004ae60e49522efe609fc6"
+        {
+        }
+    }
+
+    over "Geom"
+    {
+        over "body"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Basin_6E7NCSMTDD52EEELKA888888/Materials/MI_5d004ae60e49522efe609fc7>
+            }
+
+            over "mesh_0001" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Basin_6E7NCSMTDD52EEELKA888888/Materials/MI_5d004ae60e49522efe609fc6>
+            }
+
+            over "mesh_0002" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Basin_6E7NCSMTDD52EEELKA888888/Materials/MI_5d004ae60e49522efe609fc7>
+            }
+
+            over "mesh_0003" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Basin_6E7NCSMTDD52EEELKA888888/Materials/MI_5d004ae60e49522efe609fc7>
+            }
+
+            over "mesh_0004" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Basin_6E7NCSMTDD52EEELKA888888/Materials/MI_5d004ae60e49522efe609fc7>
+            }
+
+            over "mesh_0005" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Basin_6E7NCSMTDD52EEELKA888888/Materials/MI_5d004ae60e49522efe609fc7>
+            }
+
+            over "mesh_0006" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Basin_6E7NCSMTDD52EEELKA888888/Materials/MI_5d004ae60e49522efe609fc7>
+            }
+        }
+    }
+}
+

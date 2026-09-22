@@ -1,0 +1,116 @@
+#usda 1.0
+(
+    defaultPrim = "book_ZV5OGLJVAIICYPTULY888888"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "book_ZV5OGLJVAIICYPTULY888888"
+{
+    over "Materials" (
+        prepend references = [
+            @./Materials/MI_61447906f42f43000148acf5.usda@,
+            @./Materials/MI_61447906e1065000012c6ee1.usda@
+        ]
+    )
+    {
+        over "MI_61447906f42f43000148acf5"
+        {
+        }
+
+        over "MI_61447906e1065000012c6ee1"
+        {
+        }
+    }
+
+    over "Geom"
+    {
+        over "body"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </book_ZV5OGLJVAIICYPTULY888888/Materials/MI_61447906f42f43000148acf5>
+            }
+
+            over "mesh_0001" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </book_ZV5OGLJVAIICYPTULY888888/Materials/MI_61447906e1065000012c6ee1>
+            }
+
+            over "mesh_0002" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </book_ZV5OGLJVAIICYPTULY888888/Materials/MI_61447906f42f43000148acf5>
+            }
+
+            over "mesh_0003" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </book_ZV5OGLJVAIICYPTULY888888/Materials/MI_61447906e1065000012c6ee1>
+            }
+
+            over "mesh_0004" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </book_ZV5OGLJVAIICYPTULY888888/Materials/MI_61447906f42f43000148acf5>
+            }
+
+            over "mesh_0005" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </book_ZV5OGLJVAIICYPTULY888888/Materials/MI_61447906e1065000012c6ee1>
+            }
+
+            over "mesh_0006" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </book_ZV5OGLJVAIICYPTULY888888/Materials/MI_61447906f42f43000148acf5>
+            }
+
+            over "mesh_0007" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </book_ZV5OGLJVAIICYPTULY888888/Materials/MI_61447906e1065000012c6ee1>
+            }
+
+            over "mesh_0008" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </book_ZV5OGLJVAIICYPTULY888888/Materials/MI_61447906f42f43000148acf5>
+            }
+
+            over "mesh_0009" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </book_ZV5OGLJVAIICYPTULY888888/Materials/MI_61447906e1065000012c6ee1>
+            }
+
+            over "mesh_0010" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </book_ZV5OGLJVAIICYPTULY888888/Materials/MI_61447906f42f43000148acf5>
+            }
+
+            over "mesh_0011" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </book_ZV5OGLJVAIICYPTULY888888/Materials/MI_61447906e1065000012c6ee1>
+            }
+        }
+    }
+}
+

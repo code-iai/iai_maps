@@ -1,0 +1,53 @@
+#usda 1.0
+(
+    defaultPrim = "BayWindowPlatform_SJ3UGQGO7PRR6IREKI888888"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "BayWindowPlatform_SJ3UGQGO7PRR6IREKI888888"
+{
+    over "Materials" (
+        prepend references = [
+            @./Materials/MI_5b14afd6295a435b84dcd65f.usda@,
+            @./Materials/MI_69a94c44b2d62e39cc4fb332.usda@
+        ]
+    )
+    {
+        over "MI_5b14afd6295a435b84dcd65f"
+        {
+        }
+
+        over "MI_69a94c44b2d62e39cc4fb332"
+        {
+        }
+    }
+
+    over "Geom"
+    {
+        over "body"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </BayWindowPlatform_SJ3UGQGO7PRR6IREKI888888/Materials/MI_5b14afd6295a435b84dcd65f>
+            }
+
+            over "mesh_0001" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </BayWindowPlatform_SJ3UGQGO7PRR6IREKI888888/Materials/MI_69a94c44b2d62e39cc4fb332>
+            }
+
+            over "mesh_0002" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </BayWindowPlatform_SJ3UGQGO7PRR6IREKI888888/Materials/MI_69a94c44b2d62e39cc4fb332>
+            }
+        }
+    }
+}
+

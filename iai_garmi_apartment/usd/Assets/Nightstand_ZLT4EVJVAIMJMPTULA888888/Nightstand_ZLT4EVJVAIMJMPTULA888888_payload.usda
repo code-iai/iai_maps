@@ -1,0 +1,15 @@
+#usda 1.0
+(
+    defaultPrim = "Nightstand_ZLT4EVJVAIMJMPTULA888888"
+    metersPerUnit = 1
+    subLayers = [
+        @Nightstand_ZLT4EVJVAIMJMPTULA888888_geo.usd@,
+        @Nightstand_ZLT4EVJVAIMJMPTULA888888_look.usda@
+    ]
+    upAxis = "Z"
+)
+
+def Xform "Nightstand_ZLT4EVJVAIMJMPTULA888888"
+{
+}
+

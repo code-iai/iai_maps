@@ -1,0 +1,58 @@
+#usda 1.0
+(
+    defaultPrim = "GreenPlants_ZC2ZKZRVAJ3TIPTUKI888888"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "GreenPlants_ZC2ZKZRVAJ3TIPTUKI888888"
+{
+    over "Materials" (
+        prepend references = [
+            @./Materials/MI_6446510cd7c7aa0001b081b1.usda@,
+            @./Materials/MI_648b112fe5538f0001f54457.usda@,
+            @./Materials/MI_648b112f794abe0001b5d8a9.usda@
+        ]
+    )
+    {
+        over "MI_6446510cd7c7aa0001b081b1"
+        {
+        }
+
+        over "MI_648b112fe5538f0001f54457"
+        {
+        }
+
+        over "MI_648b112f794abe0001b5d8a9"
+        {
+        }
+    }
+
+    over "Geom"
+    {
+        over "body"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </GreenPlants_ZC2ZKZRVAJ3TIPTUKI888888/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0001" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </GreenPlants_ZC2ZKZRVAJ3TIPTUKI888888/Materials/MI_648b112fe5538f0001f54457>
+            }
+
+            over "mesh_0002" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </GreenPlants_ZC2ZKZRVAJ3TIPTUKI888888/Materials/MI_648b112f794abe0001b5d8a9>
+            }
+        }
+    }
+}
+

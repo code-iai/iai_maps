@@ -1,0 +1,15 @@
+#usda 1.0
+(
+    defaultPrim = "ToiletPaperHolder_ZN56OIJVALSHEPTUKE888888_wffJW"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "ToiletPaperHolder_ZN56OIJVALSHEPTUKE888888_wffJW" (
+    kind = "component"
+    prepend payload = @ToiletPaperHolder_ZN56OIJVALSHEPTUKE888888_wffJW_payload.usda@
+)
+{
+    float3[] extentsHint = [(-0.1359993, -0.06295947, -0.18302587), (0.1359993, 0.06295947, 0.18302587)]
+}
+

@@ -1,0 +1,94 @@
+#usda 1.0
+(
+    defaultPrim = "book_6DT3KRETD5TGM5RBLI888888"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "book_6DT3KRETD5TGM5RBLI888888"
+{
+    over "Materials" (
+        prepend references = [
+            @./Materials/MI_5cd92ea344c5ba48546d8c1e.usda@,
+            @./Materials/MI_5cd92ea344c5ba48546d8c23.usda@,
+            @./Materials/MI_5cd92ea344c5ba48546d8c1f.usda@,
+            @./Materials/MI_5cd92ea344c5ba48546d8c20.usda@,
+            @./Materials/MI_5cd92ea244c5ba48546d8c1c.usda@,
+            @./Materials/MI_5cd92ea344c5ba48546d8c21.usda@
+        ]
+    )
+    {
+        over "MI_5cd92ea344c5ba48546d8c1e"
+        {
+        }
+
+        over "MI_5cd92ea344c5ba48546d8c23"
+        {
+        }
+
+        over "MI_5cd92ea344c5ba48546d8c1f"
+        {
+        }
+
+        over "MI_5cd92ea344c5ba48546d8c20"
+        {
+        }
+
+        over "MI_5cd92ea244c5ba48546d8c1c"
+        {
+        }
+
+        over "MI_5cd92ea344c5ba48546d8c21"
+        {
+        }
+    }
+
+    over "Geom"
+    {
+        over "body"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </book_6DT3KRETD5TGM5RBLI888888/Materials/MI_5cd92ea344c5ba48546d8c1e>
+            }
+
+            over "mesh_0001" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </book_6DT3KRETD5TGM5RBLI888888/Materials/MI_5cd92ea344c5ba48546d8c23>
+            }
+
+            over "mesh_0002" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </book_6DT3KRETD5TGM5RBLI888888/Materials/MI_5cd92ea344c5ba48546d8c1f>
+            }
+
+            over "mesh_0003" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </book_6DT3KRETD5TGM5RBLI888888/Materials/MI_5cd92ea344c5ba48546d8c20>
+            }
+
+            over "mesh_0004" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </book_6DT3KRETD5TGM5RBLI888888/Materials/MI_5cd92ea244c5ba48546d8c1c>
+            }
+
+            over "mesh_0005" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </book_6DT3KRETD5TGM5RBLI888888/Materials/MI_5cd92ea344c5ba48546d8c21>
+            }
+        }
+    }
+}
+

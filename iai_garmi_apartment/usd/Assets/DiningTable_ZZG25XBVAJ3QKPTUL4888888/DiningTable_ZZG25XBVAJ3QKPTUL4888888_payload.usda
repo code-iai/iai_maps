@@ -1,0 +1,15 @@
+#usda 1.0
+(
+    defaultPrim = "DiningTable_ZZG25XBVAJ3QKPTUL4888888"
+    metersPerUnit = 1
+    subLayers = [
+        @DiningTable_ZZG25XBVAJ3QKPTUL4888888_geo.usd@,
+        @DiningTable_ZZG25XBVAJ3QKPTUL4888888_look.usda@
+    ]
+    upAxis = "Z"
+)
+
+def Xform "DiningTable_ZZG25XBVAJ3QKPTUL4888888"
+{
+}
+

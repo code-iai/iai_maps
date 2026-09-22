@@ -1,0 +1,184 @@
+#usda 1.0
+(
+    defaultPrim = "radiator_ZKBLU4JVAII7EPTUKU888888"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "radiator_ZKBLU4JVAII7EPTUKU888888"
+{
+    over "Materials" (
+        prepend references = [
+            @./Materials/MI_66bc224f60cf470001aa7554.usda@,
+            @./Materials/MI_66bc224f3d07d20001b00f34.usda@,
+            @./Materials/MI_66bc224fed34ab000159d598.usda@
+        ]
+    )
+    {
+        over "MI_66bc224fed34ab000159d598"
+        {
+        }
+
+        over "MI_66bc224f60cf470001aa7554"
+        {
+        }
+
+        over "MI_66bc224f3d07d20001b00f34"
+        {
+        }
+    }
+
+    over "Geom"
+    {
+        over "body"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </radiator_ZKBLU4JVAII7EPTUKU888888/Materials/MI_66bc224fed34ab000159d598>
+            }
+
+            over "mesh_0001" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </radiator_ZKBLU4JVAII7EPTUKU888888/Materials/MI_66bc224fed34ab000159d598>
+            }
+
+            over "mesh_0002" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </radiator_ZKBLU4JVAII7EPTUKU888888/Materials/MI_66bc224fed34ab000159d598>
+            }
+
+            over "mesh_0003" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </radiator_ZKBLU4JVAII7EPTUKU888888/Materials/MI_66bc224fed34ab000159d598>
+            }
+
+            over "mesh_0004" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </radiator_ZKBLU4JVAII7EPTUKU888888/Materials/MI_66bc224fed34ab000159d598>
+            }
+
+            over "mesh_0005" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </radiator_ZKBLU4JVAII7EPTUKU888888/Materials/MI_66bc224fed34ab000159d598>
+            }
+
+            over "mesh_0006" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </radiator_ZKBLU4JVAII7EPTUKU888888/Materials/MI_66bc224fed34ab000159d598>
+            }
+
+            over "mesh_0007" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </radiator_ZKBLU4JVAII7EPTUKU888888/Materials/MI_66bc224fed34ab000159d598>
+            }
+
+            over "mesh_0008" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </radiator_ZKBLU4JVAII7EPTUKU888888/Materials/MI_66bc224fed34ab000159d598>
+            }
+
+            over "mesh_0009" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </radiator_ZKBLU4JVAII7EPTUKU888888/Materials/MI_66bc224fed34ab000159d598>
+            }
+
+            over "mesh_0010" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </radiator_ZKBLU4JVAII7EPTUKU888888/Materials/MI_66bc224f60cf470001aa7554>
+            }
+
+            over "mesh_0011" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </radiator_ZKBLU4JVAII7EPTUKU888888/Materials/MI_66bc224fed34ab000159d598>
+            }
+
+            over "mesh_0012" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </radiator_ZKBLU4JVAII7EPTUKU888888/Materials/MI_66bc224fed34ab000159d598>
+            }
+
+            over "mesh_0013" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </radiator_ZKBLU4JVAII7EPTUKU888888/Materials/MI_66bc224f60cf470001aa7554>
+            }
+
+            over "mesh_0014" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </radiator_ZKBLU4JVAII7EPTUKU888888/Materials/MI_66bc224fed34ab000159d598>
+            }
+
+            over "mesh_0015" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </radiator_ZKBLU4JVAII7EPTUKU888888/Materials/MI_66bc224f3d07d20001b00f34>
+            }
+
+            over "mesh_0016" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </radiator_ZKBLU4JVAII7EPTUKU888888/Materials/MI_66bc224fed34ab000159d598>
+            }
+
+            over "mesh_0017" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </radiator_ZKBLU4JVAII7EPTUKU888888/Materials/MI_66bc224fed34ab000159d598>
+            }
+
+            over "mesh_0018" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </radiator_ZKBLU4JVAII7EPTUKU888888/Materials/MI_66bc224fed34ab000159d598>
+            }
+
+            over "mesh_0019" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </radiator_ZKBLU4JVAII7EPTUKU888888/Materials/MI_66bc224fed34ab000159d598>
+            }
+
+            over "mesh_0020" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </radiator_ZKBLU4JVAII7EPTUKU888888/Materials/MI_66bc224fed34ab000159d598>
+            }
+        }
+    }
+}
+

@@ -1,0 +1,15 @@
+#usda 1.0
+(
+    defaultPrim = "bookshelf_YWI6CLZVALGSUPTUJQ888888"
+    metersPerUnit = 1
+    subLayers = [
+        @bookshelf_YWI6CLZVALGSUPTUJQ888888_geo.usd@,
+        @bookshelf_YWI6CLZVALGSUPTUJQ888888_look.usda@
+    ]
+    upAxis = "Z"
+)
+
+def Xform "bookshelf_YWI6CLZVALGSUPTUJQ888888"
+{
+}
+

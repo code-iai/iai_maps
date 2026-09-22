@@ -1,0 +1,15 @@
+#usda 1.0
+(
+    defaultPrim = "door_YWL53QRVALHRQPTUKM888888"
+    metersPerUnit = 1
+    subLayers = [
+        @door_YWL53QRVALHRQPTUKM888888_geo.usd@,
+        @door_YWL53QRVALHRQPTUKM888888_look.usda@
+    ]
+    upAxis = "Z"
+)
+
+def Xform "door_YWL53QRVALHRQPTUKM888888"
+{
+}
+

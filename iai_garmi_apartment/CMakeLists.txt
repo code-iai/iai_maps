@@ -6,4 +6,7 @@ find_package(ament_cmake REQUIRED)
 install(DIRECTORY mjcf
   DESTINATION share/${PROJECT_NAME})
 
+install(DIRECTORY usd
+  DESTINATION share/${PROJECT_NAME})
+
 ament_package()

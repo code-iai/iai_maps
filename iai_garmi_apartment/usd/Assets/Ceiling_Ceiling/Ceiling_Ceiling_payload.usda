@@ -1,0 +1,15 @@
+#usda 1.0
+(
+    defaultPrim = "Ceiling_Ceiling"
+    metersPerUnit = 1
+    subLayers = [
+        @Ceiling_Ceiling_geo.usd@,
+        @Ceiling_Ceiling_look.usda@
+    ]
+    upAxis = "Z"
+)
+
+def Xform "Ceiling_Ceiling"
+{
+}
+

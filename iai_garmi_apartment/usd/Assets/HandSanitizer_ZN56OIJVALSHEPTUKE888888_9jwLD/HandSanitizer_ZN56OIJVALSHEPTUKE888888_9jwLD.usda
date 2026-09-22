@@ -1,0 +1,15 @@
+#usda 1.0
+(
+    defaultPrim = "HandSanitizer_ZN56OIJVALSHEPTUKE888888_9jwLD"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "HandSanitizer_ZN56OIJVALSHEPTUKE888888_9jwLD" (
+    kind = "component"
+    prepend payload = @HandSanitizer_ZN56OIJVALSHEPTUKE888888_9jwLD_payload.usda@
+)
+{
+    float3[] extentsHint = [(-0.0658357, -0.050036285, -0.116067275), (0.0658357, 0.050036285, 0.116067275)]
+}
+

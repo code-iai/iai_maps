@@ -1,0 +1,1293 @@
+#usda 1.0
+(
+    defaultPrim = "cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4"
+{
+    over "Materials" (
+        prepend references = [
+            @./Materials/MI_628d91af1ab3ee0001ed70ac.usda@,
+            @./Materials/MI_5941f12764ba5c3d8f8b4933.usda@,
+            @./Materials/MI_64464fcbd7c7aa0001b0787a.usda@,
+            @./Materials/MI_6545ced8a7a1dd0001750c62.usda@,
+            @./Materials/MI_64464f31d7c7aa0001b073db.usda@,
+            @./Materials/MI_64464f6ad7c7aa0001b075f3.usda@,
+            @./Materials/MI_6446510cd7c7aa0001b081b1.usda@,
+            @./Materials/MI_69ae32f98addd433aebf0490.usda@
+        ]
+    )
+    {
+        over "MI_6446510cd7c7aa0001b081b1"
+        {
+        }
+
+        over "MI_64464fcbd7c7aa0001b0787a"
+        {
+        }
+
+        over "MI_64464f6ad7c7aa0001b075f3"
+        {
+        }
+
+        over "MI_628d91af1ab3ee0001ed70ac"
+        {
+        }
+
+        over "MI_5941f12764ba5c3d8f8b4933"
+        {
+        }
+
+        over "MI_6545ced8a7a1dd0001750c62"
+        {
+        }
+
+        over "MI_69ae32f98addd433aebf0490"
+        {
+        }
+
+        over "MI_64464f31d7c7aa0001b073db"
+        {
+        }
+    }
+
+    over "Geom"
+    {
+        over "Static"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0001" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0002" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0003" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464fcbd7c7aa0001b0787a>
+            }
+
+            over "mesh_0004" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464fcbd7c7aa0001b0787a>
+            }
+
+            over "mesh_0005" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464fcbd7c7aa0001b0787a>
+            }
+
+            over "mesh_0006" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0007" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0008" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0009" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464f6ad7c7aa0001b075f3>
+            }
+
+            over "mesh_0010" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464f6ad7c7aa0001b075f3>
+            }
+
+            over "mesh_0011" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464f6ad7c7aa0001b075f3>
+            }
+
+            over "mesh_0012" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464f6ad7c7aa0001b075f3>
+            }
+
+            over "mesh_0013" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464f6ad7c7aa0001b075f3>
+            }
+
+            over "mesh_0014" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464f6ad7c7aa0001b075f3>
+            }
+
+            over "mesh_0015" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464f6ad7c7aa0001b075f3>
+            }
+
+            over "mesh_0016" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464f6ad7c7aa0001b075f3>
+            }
+
+            over "mesh_0017" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464f6ad7c7aa0001b075f3>
+            }
+
+            over "mesh_0018" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464f6ad7c7aa0001b075f3>
+            }
+
+            over "mesh_0019" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464f6ad7c7aa0001b075f3>
+            }
+
+            over "mesh_0020" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464f6ad7c7aa0001b075f3>
+            }
+
+            over "mesh_0021" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_628d91af1ab3ee0001ed70ac>
+            }
+
+            over "mesh_0022" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_628d91af1ab3ee0001ed70ac>
+            }
+
+            over "mesh_0023" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_628d91af1ab3ee0001ed70ac>
+            }
+
+            over "mesh_0024" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_5941f12764ba5c3d8f8b4933>
+            }
+
+            over "mesh_0025" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0026" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0027" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0028" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464fcbd7c7aa0001b0787a>
+            }
+
+            over "mesh_0029" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464fcbd7c7aa0001b0787a>
+            }
+
+            over "mesh_0030" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464fcbd7c7aa0001b0787a>
+            }
+
+            over "mesh_0031" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0032" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0033" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0034" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464f6ad7c7aa0001b075f3>
+            }
+
+            over "mesh_0035" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464f6ad7c7aa0001b075f3>
+            }
+
+            over "mesh_0036" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464f6ad7c7aa0001b075f3>
+            }
+
+            over "mesh_0037" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464f6ad7c7aa0001b075f3>
+            }
+
+            over "mesh_0038" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464f6ad7c7aa0001b075f3>
+            }
+
+            over "mesh_0039" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464f6ad7c7aa0001b075f3>
+            }
+
+            over "mesh_0040" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464f6ad7c7aa0001b075f3>
+            }
+
+            over "mesh_0041" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464f6ad7c7aa0001b075f3>
+            }
+
+            over "mesh_0042" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464f6ad7c7aa0001b075f3>
+            }
+
+            over "mesh_0043" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464f6ad7c7aa0001b075f3>
+            }
+
+            over "mesh_0044" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464f6ad7c7aa0001b075f3>
+            }
+
+            over "mesh_0045" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464f6ad7c7aa0001b075f3>
+            }
+
+            over "mesh_0046" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0047" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0048" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0049" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0050" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0051" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0052" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0053" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0054" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0055" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0056" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0057" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0058" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0059" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464f6ad7c7aa0001b075f3>
+            }
+
+            over "mesh_0060" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464f6ad7c7aa0001b075f3>
+            }
+
+            over "mesh_0061" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464f6ad7c7aa0001b075f3>
+            }
+
+            over "mesh_0062" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464f6ad7c7aa0001b075f3>
+            }
+
+            over "mesh_0063" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464f6ad7c7aa0001b075f3>
+            }
+
+            over "mesh_0064" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464f6ad7c7aa0001b075f3>
+            }
+
+            over "mesh_0065" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464f6ad7c7aa0001b075f3>
+            }
+
+            over "mesh_0066" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464f6ad7c7aa0001b075f3>
+            }
+
+            over "mesh_0067" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464f6ad7c7aa0001b075f3>
+            }
+
+            over "mesh_0068" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464f6ad7c7aa0001b075f3>
+            }
+
+            over "mesh_0069" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464f6ad7c7aa0001b075f3>
+            }
+
+            over "mesh_0070" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464f6ad7c7aa0001b075f3>
+            }
+
+            over "mesh_0071" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0072" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0073" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0074" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464fcbd7c7aa0001b0787a>
+            }
+
+            over "mesh_0075" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464fcbd7c7aa0001b0787a>
+            }
+
+            over "mesh_0076" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464fcbd7c7aa0001b0787a>
+            }
+
+            over "mesh_0077" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0078" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0079" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464f6ad7c7aa0001b075f3>
+            }
+
+            over "mesh_0080" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464f6ad7c7aa0001b075f3>
+            }
+
+            over "mesh_0081" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464f6ad7c7aa0001b075f3>
+            }
+
+            over "mesh_0082" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464f6ad7c7aa0001b075f3>
+            }
+
+            over "mesh_0083" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464f6ad7c7aa0001b075f3>
+            }
+
+            over "mesh_0084" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464f6ad7c7aa0001b075f3>
+            }
+
+            over "mesh_0085" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464f6ad7c7aa0001b075f3>
+            }
+
+            over "mesh_0086" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464f6ad7c7aa0001b075f3>
+            }
+
+            over "mesh_0087" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464f6ad7c7aa0001b075f3>
+            }
+
+            over "mesh_0088" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464f6ad7c7aa0001b075f3>
+            }
+
+            over "mesh_0089" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464f6ad7c7aa0001b075f3>
+            }
+
+            over "mesh_0090" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464f6ad7c7aa0001b075f3>
+            }
+
+            over "mesh_0091" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6545ced8a7a1dd0001750c62>
+            }
+
+            over "mesh_0092" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6545ced8a7a1dd0001750c62>
+            }
+        }
+
+        over "B095bea57b6f46a59fe6A701e4e23301"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0001" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0002" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0003" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0004" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0005" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464f6ad7c7aa0001b075f3>
+            }
+
+            over "mesh_0006" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464f6ad7c7aa0001b075f3>
+            }
+        }
+
+        over "A5ea867659df64f408e96443612e6bc81"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0001" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0002" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0003" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0004" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0005" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0006" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0007" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0008" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0009" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+        }
+
+        over "B095bea57b6f46a59fe6A701e4e23301_handle_1"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_69ae32f98addd433aebf0490>
+            }
+        }
+
+        over "A5ea867659df64f408e96443612e6bc81_handle_1"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464f31d7c7aa0001b073db>
+            }
+        }
+
+        over "F2a2927dB09f40d29b7a3cb63c5e1e2f"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0001" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0002" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0003" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0004" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0005" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464f6ad7c7aa0001b075f3>
+            }
+
+            over "mesh_0006" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464f6ad7c7aa0001b075f3>
+            }
+        }
+
+        over "F2a2927dB09f40d29b7a3cb63c5e1e2f_handle_1"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_69ae32f98addd433aebf0490>
+            }
+        }
+
+        over "Db95e8a331c74e7cA5ac6c6c522cde9b"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0001" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0002" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0003" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0004" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0005" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464f6ad7c7aa0001b075f3>
+            }
+
+            over "mesh_0006" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464f6ad7c7aa0001b075f3>
+            }
+        }
+
+        over "A5c9ebfa4Efc84b04Bf6061fe4acd90a4"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0001" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0002" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0003" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0004" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0005" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464f6ad7c7aa0001b075f3>
+            }
+
+            over "mesh_0006" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_64464f6ad7c7aa0001b075f3>
+            }
+        }
+
+        over "Db95e8a331c74e7cA5ac6c6c522cde9b_handle_1"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_69ae32f98addd433aebf0490>
+            }
+        }
+
+        over "A5c9ebfa4Efc84b04Bf6061fe4acd90a4_handle_1"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_69ae32f98addd433aebf0490>
+            }
+        }
+
+        over "A4ef78b96650f473f9de2F65c55bf08ab"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0001" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0002" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0003" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0004" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0005" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0006" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0007" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0008" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0009" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+        }
+
+        over "A0aad046c75f94d4cA2dcB13bc8914ed5"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0001" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0002" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0003" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0004" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0005" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0006" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0007" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0008" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0009" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+        }
+
+        over "F989cb36Ff194643990a751bdf31759b"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0001" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0002" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0003" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0004" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0005" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0006" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0007" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0008" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+
+            over "mesh_0009" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_6446510cd7c7aa0001b081b1>
+            }
+        }
+
+        over "A4ef78b96650f473f9de2F65c55bf08ab_handle_1"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_69ae32f98addd433aebf0490>
+            }
+        }
+
+        over "A0aad046c75f94d4cA2dcB13bc8914ed5_handle_1"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_69ae32f98addd433aebf0490>
+            }
+        }
+
+        over "F989cb36Ff194643990a751bdf31759b_handle_1"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4/Materials/MI_69ae32f98addd433aebf0490>
+            }
+        }
+    }
+}
+

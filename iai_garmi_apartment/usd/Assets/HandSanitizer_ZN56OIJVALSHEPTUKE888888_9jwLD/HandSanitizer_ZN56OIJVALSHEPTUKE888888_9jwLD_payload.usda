@@ -1,0 +1,15 @@
+#usda 1.0
+(
+    defaultPrim = "HandSanitizer_ZN56OIJVALSHEPTUKE888888_9jwLD"
+    metersPerUnit = 1
+    subLayers = [
+        @HandSanitizer_ZN56OIJVALSHEPTUKE888888_9jwLD_geo.usd@,
+        @HandSanitizer_ZN56OIJVALSHEPTUKE888888_9jwLD_look.usda@
+    ]
+    upAxis = "Z"
+)
+
+def Xform "HandSanitizer_ZN56OIJVALSHEPTUKE888888_9jwLD"
+{
+}
+

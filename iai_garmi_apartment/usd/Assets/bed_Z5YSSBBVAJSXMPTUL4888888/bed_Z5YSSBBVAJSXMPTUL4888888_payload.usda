@@ -1,0 +1,15 @@
+#usda 1.0
+(
+    defaultPrim = "bed_Z5YSSBBVAJSXMPTUL4888888"
+    metersPerUnit = 1
+    subLayers = [
+        @bed_Z5YSSBBVAJSXMPTUL4888888_geo.usd@,
+        @bed_Z5YSSBBVAJSXMPTUL4888888_look.usda@
+    ]
+    upAxis = "Z"
+)
+
+def Xform "bed_Z5YSSBBVAJSXMPTUL4888888"
+{
+}
+

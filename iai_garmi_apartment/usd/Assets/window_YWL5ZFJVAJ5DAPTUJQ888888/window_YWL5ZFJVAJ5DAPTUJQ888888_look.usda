@@ -1,0 +1,46 @@
+#usda 1.0
+(
+    defaultPrim = "window_YWL5ZFJVAJ5DAPTUJQ888888"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "window_YWL5ZFJVAJ5DAPTUJQ888888"
+{
+    over "Materials" (
+        prepend references = [
+            @./Materials/MI_69a94c44a4e99f0260973c5d.usda@,
+            @./Materials/MI_69a94c449cde3a0ce4db02e1.usda@
+        ]
+    )
+    {
+        over "MI_69a94c44a4e99f0260973c5d"
+        {
+        }
+
+        over "MI_69a94c449cde3a0ce4db02e1"
+        {
+        }
+    }
+
+    over "Geom"
+    {
+        over "body"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </window_YWL5ZFJVAJ5DAPTUJQ888888/Materials/MI_69a94c44a4e99f0260973c5d>
+            }
+
+            over "mesh_0001" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </window_YWL5ZFJVAJ5DAPTUJQ888888/Materials/MI_69a94c449cde3a0ce4db02e1>
+            }
+        }
+    }
+}
+

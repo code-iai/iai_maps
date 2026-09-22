@@ -1,0 +1,77 @@
+#usda 1.0
+(
+    defaultPrim = "HandSanitizer_ZN56OIJVALSHEPTUKE888888_9jwLD"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "HandSanitizer_ZN56OIJVALSHEPTUKE888888_9jwLD"
+{
+    over "Materials" (
+        prepend references = [
+            @./Materials/MI_67457dfe7f2d7700012e7ddc.usda@,
+            @./Materials/MI_67457dfe8a488c000100a2fc.usda@,
+            @./Materials/MI_67457dfe69184d000190ae59.usda@,
+            @./Materials/MI_67457dfe42f977000171ebaf.usda@
+        ]
+    )
+    {
+        over "MI_67457dfe7f2d7700012e7ddc"
+        {
+        }
+
+        over "MI_67457dfe8a488c000100a2fc"
+        {
+        }
+
+        over "MI_67457dfe69184d000190ae59"
+        {
+        }
+
+        over "MI_67457dfe42f977000171ebaf"
+        {
+        }
+    }
+
+    over "Geom"
+    {
+        over "body"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </HandSanitizer_ZN56OIJVALSHEPTUKE888888_9jwLD/Materials/MI_67457dfe7f2d7700012e7ddc>
+            }
+
+            over "mesh_0001" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </HandSanitizer_ZN56OIJVALSHEPTUKE888888_9jwLD/Materials/MI_67457dfe8a488c000100a2fc>
+            }
+
+            over "mesh_0002" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </HandSanitizer_ZN56OIJVALSHEPTUKE888888_9jwLD/Materials/MI_67457dfe69184d000190ae59>
+            }
+
+            over "mesh_0003" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </HandSanitizer_ZN56OIJVALSHEPTUKE888888_9jwLD/Materials/MI_67457dfe42f977000171ebaf>
+            }
+
+            over "mesh_0004" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </HandSanitizer_ZN56OIJVALSHEPTUKE888888_9jwLD/Materials/MI_67457dfe42f977000171ebaf>
+            }
+        }
+    }
+}
+

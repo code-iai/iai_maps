@@ -1,0 +1,15 @@
+#usda 1.0
+(
+    defaultPrim = "Floor_Floor"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "Floor_Floor" (
+    kind = "component"
+    prepend payload = @Floor_Floor_payload.usda@
+)
+{
+    float3[] extentsHint = [(-3.9, -3.62, -0.085), (3.9, 3.62, 0.085)]
+}
+

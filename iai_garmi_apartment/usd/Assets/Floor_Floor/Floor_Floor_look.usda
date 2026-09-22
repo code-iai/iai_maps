@@ -1,0 +1,889 @@
+#usda 1.0
+(
+    defaultPrim = "Floor_Floor"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "Floor_Floor"
+{
+    over "Materials" (
+        prepend references = [
+            @./Materials/MI_64b4f7c94e902400013f663d.usda@,
+            @./Materials/MI_69a97bbbeac1cc195cdac43d.usda@
+        ]
+    )
+    {
+        over "MI_69a97bbbeac1cc195cdac43d"
+        {
+        }
+
+        over "MI_64b4f7c94e902400013f663d"
+        {
+        }
+    }
+
+    over "Geom"
+    {
+        over "A92"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_69a97bbbeac1cc195cdac43d>
+            }
+        }
+
+        over "A93"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_69a97bbbeac1cc195cdac43d>
+            }
+        }
+
+        over "A94"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_69a97bbbeac1cc195cdac43d>
+            }
+        }
+
+        over "A96"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_69a97bbbeac1cc195cdac43d>
+            }
+        }
+
+        over "A98"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A105"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A127"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A157"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A178"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A189"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A193"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A202"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A203"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A204"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A205"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A206"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A207"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A208"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A209"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A210"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A211"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A212"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A213"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A214"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A215"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A216"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A217"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A218"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A219"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A220"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A221"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A222"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A223"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A224"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A225"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A226"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A227"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A228"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A229"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A230"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A231"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A232"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A233"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A234"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A235"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A236"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A238"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A243"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A244"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A245"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A246"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A247"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A248"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A249"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A250"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A251"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A252"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A253"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A254"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A255"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A256"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A257"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A258"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A259"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A260"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A261"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A262"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A263"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A264"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A269"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A294"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A296"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A297"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A298"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A299"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A300"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A301"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A302"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A303"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A304"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A305"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A306"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A307"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_64b4f7c94e902400013f663d>
+            }
+        }
+
+        over "A308"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_69a97bbbeac1cc195cdac43d>
+            }
+        }
+
+        over "A309"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_69a97bbbeac1cc195cdac43d>
+            }
+        }
+
+        over "A310"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Floor_Floor/Materials/MI_69a97bbbeac1cc195cdac43d>
+            }
+        }
+    }
+}
+

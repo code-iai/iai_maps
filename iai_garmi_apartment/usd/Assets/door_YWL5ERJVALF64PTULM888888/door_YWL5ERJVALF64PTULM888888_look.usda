@@ -1,0 +1,93 @@
+#usda 1.0
+(
+    defaultPrim = "door_YWL5ERJVALF64PTULM888888"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "door_YWL5ERJVALF64PTULM888888"
+{
+    over "Materials" (
+        prepend references = [
+            @./Materials/MI_69a94c58a4e99f0260973c62.usda@,
+            @./Materials/MI_69a94c5841d1547e3f1d8c8e.usda@,
+            @./Materials/MI_69a94c583d868a4a60258225.usda@
+        ]
+    )
+    {
+        over "MI_69a94c58a4e99f0260973c62"
+        {
+        }
+
+        over "MI_69a94c5841d1547e3f1d8c8e"
+        {
+        }
+
+        over "MI_69a94c583d868a4a60258225"
+        {
+        }
+    }
+
+    over "Geom"
+    {
+        over "body"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </door_YWL5ERJVALF64PTULM888888/Materials/MI_69a94c58a4e99f0260973c62>
+            }
+
+            over "mesh_0001" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </door_YWL5ERJVALF64PTULM888888/Materials/MI_69a94c5841d1547e3f1d8c8e>
+            }
+
+            over "mesh_0002" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </door_YWL5ERJVALF64PTULM888888/Materials/MI_69a94c583d868a4a60258225>
+            }
+
+            over "mesh_0003" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </door_YWL5ERJVALF64PTULM888888/Materials/MI_69a94c583d868a4a60258225>
+            }
+
+            over "mesh_0004" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </door_YWL5ERJVALF64PTULM888888/Materials/MI_69a94c583d868a4a60258225>
+            }
+
+            over "mesh_0005" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </door_YWL5ERJVALF64PTULM888888/Materials/MI_69a94c583d868a4a60258225>
+            }
+
+            over "mesh_0006" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </door_YWL5ERJVALF64PTULM888888/Materials/MI_69a94c583d868a4a60258225>
+            }
+
+            over "mesh_0007" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </door_YWL5ERJVALF64PTULM888888/Materials/MI_69a94c583d868a4a60258225>
+            }
+        }
+    }
+}
+

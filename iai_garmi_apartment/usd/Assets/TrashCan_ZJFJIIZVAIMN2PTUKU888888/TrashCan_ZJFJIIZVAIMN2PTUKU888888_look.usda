@@ -1,0 +1,84 @@
+#usda 1.0
+(
+    defaultPrim = "TrashCan_ZJFJIIZVAIMN2PTUKU888888"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "TrashCan_ZJFJIIZVAIMN2PTUKU888888"
+{
+    over "Materials" (
+        prepend references = [
+            @./Materials/MI_67457dfe7f2d7700012e7ddc.usda@,
+            @./Materials/MI_63c44ac798058400013993eb.usda@,
+            @./Materials/MI_63c44ac7982bda00019444fc.usda@,
+            @./Materials/MI_63c44ac79f257e0001af061a.usda@
+        ]
+    )
+    {
+        over "MI_67457dfe7f2d7700012e7ddc"
+        {
+        }
+
+        over "MI_63c44ac798058400013993eb"
+        {
+        }
+
+        over "MI_63c44ac7982bda00019444fc"
+        {
+        }
+
+        over "MI_63c44ac79f257e0001af061a"
+        {
+        }
+    }
+
+    over "Geom"
+    {
+        over "body"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </TrashCan_ZJFJIIZVAIMN2PTUKU888888/Materials/MI_67457dfe7f2d7700012e7ddc>
+            }
+
+            over "mesh_0001" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </TrashCan_ZJFJIIZVAIMN2PTUKU888888/Materials/MI_67457dfe7f2d7700012e7ddc>
+            }
+
+            over "mesh_0002" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </TrashCan_ZJFJIIZVAIMN2PTUKU888888/Materials/MI_67457dfe7f2d7700012e7ddc>
+            }
+
+            over "mesh_0003" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </TrashCan_ZJFJIIZVAIMN2PTUKU888888/Materials/MI_63c44ac798058400013993eb>
+            }
+
+            over "mesh_0004" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </TrashCan_ZJFJIIZVAIMN2PTUKU888888/Materials/MI_63c44ac7982bda00019444fc>
+            }
+
+            over "mesh_0005" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </TrashCan_ZJFJIIZVAIMN2PTUKU888888/Materials/MI_63c44ac79f257e0001af061a>
+            }
+        }
+    }
+}
+

@@ -1,0 +1,142 @@
+#usda 1.0
+(
+    defaultPrim = "book_6DVEWDMTD5TGM5RBKA888888"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "book_6DVEWDMTD5TGM5RBKA888888"
+{
+    over "Materials" (
+        prepend references = [
+            @./Materials/MI_5cd4d31f44c5ba48546d2e60.usda@,
+            @./Materials/MI_5cd4d31f44c5ba48546d2e5f.usda@,
+            @./Materials/MI_5cd4d31f44c5ba48546d2e62.usda@,
+            @./Materials/MI_5cd4d31f44c5ba48546d2e66.usda@,
+            @./Materials/MI_5cd4d31f44c5ba48546d2e65.usda@,
+            @./Materials/MI_5cd4d31f44c5ba48546d2e61.usda@,
+            @./Materials/MI_5cd4d31f44c5ba48546d2e68.usda@,
+            @./Materials/MI_5cd4d31f44c5ba48546d2e69.usda@,
+            @./Materials/MI_5cd4d31f44c5ba48546d2e64.usda@,
+            @./Materials/MI_5cd4d31f44c5ba48546d2e6b.usda@
+        ]
+    )
+    {
+        over "MI_5cd4d31f44c5ba48546d2e60"
+        {
+        }
+
+        over "MI_5cd4d31f44c5ba48546d2e5f"
+        {
+        }
+
+        over "MI_5cd4d31f44c5ba48546d2e62"
+        {
+        }
+
+        over "MI_5cd4d31f44c5ba48546d2e66"
+        {
+        }
+
+        over "MI_5cd4d31f44c5ba48546d2e65"
+        {
+        }
+
+        over "MI_5cd4d31f44c5ba48546d2e61"
+        {
+        }
+
+        over "MI_5cd4d31f44c5ba48546d2e68"
+        {
+        }
+
+        over "MI_5cd4d31f44c5ba48546d2e69"
+        {
+        }
+
+        over "MI_5cd4d31f44c5ba48546d2e64"
+        {
+        }
+
+        over "MI_5cd4d31f44c5ba48546d2e6b"
+        {
+        }
+    }
+
+    over "Geom"
+    {
+        over "body"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </book_6DVEWDMTD5TGM5RBKA888888/Materials/MI_5cd4d31f44c5ba48546d2e60>
+            }
+
+            over "mesh_0001" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </book_6DVEWDMTD5TGM5RBKA888888/Materials/MI_5cd4d31f44c5ba48546d2e5f>
+            }
+
+            over "mesh_0002" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </book_6DVEWDMTD5TGM5RBKA888888/Materials/MI_5cd4d31f44c5ba48546d2e62>
+            }
+
+            over "mesh_0003" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </book_6DVEWDMTD5TGM5RBKA888888/Materials/MI_5cd4d31f44c5ba48546d2e66>
+            }
+
+            over "mesh_0004" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </book_6DVEWDMTD5TGM5RBKA888888/Materials/MI_5cd4d31f44c5ba48546d2e65>
+            }
+
+            over "mesh_0005" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </book_6DVEWDMTD5TGM5RBKA888888/Materials/MI_5cd4d31f44c5ba48546d2e61>
+            }
+
+            over "mesh_0006" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </book_6DVEWDMTD5TGM5RBKA888888/Materials/MI_5cd4d31f44c5ba48546d2e68>
+            }
+
+            over "mesh_0007" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </book_6DVEWDMTD5TGM5RBKA888888/Materials/MI_5cd4d31f44c5ba48546d2e69>
+            }
+
+            over "mesh_0008" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </book_6DVEWDMTD5TGM5RBKA888888/Materials/MI_5cd4d31f44c5ba48546d2e64>
+            }
+
+            over "mesh_0009" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </book_6DVEWDMTD5TGM5RBKA888888/Materials/MI_5cd4d31f44c5ba48546d2e6b>
+            }
+        }
+    }
+}
+

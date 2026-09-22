@@ -1,0 +1,15 @@
+#usda 1.0
+(
+    defaultPrim = "ToiletPaperHolder_ZN56OIJVALSHEPTUKE888888_wffJW"
+    metersPerUnit = 1
+    subLayers = [
+        @ToiletPaperHolder_ZN56OIJVALSHEPTUKE888888_wffJW_geo.usd@,
+        @ToiletPaperHolder_ZN56OIJVALSHEPTUKE888888_wffJW_look.usda@
+    ]
+    upAxis = "Z"
+)
+
+def Xform "ToiletPaperHolder_ZN56OIJVALSHEPTUKE888888_wffJW"
+{
+}
+

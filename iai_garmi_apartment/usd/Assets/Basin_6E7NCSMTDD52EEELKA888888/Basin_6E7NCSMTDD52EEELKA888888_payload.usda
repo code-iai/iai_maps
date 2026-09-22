@@ -1,0 +1,15 @@
+#usda 1.0
+(
+    defaultPrim = "Basin_6E7NCSMTDD52EEELKA888888"
+    metersPerUnit = 1
+    subLayers = [
+        @Basin_6E7NCSMTDD52EEELKA888888_geo.usd@,
+        @Basin_6E7NCSMTDD52EEELKA888888_look.usda@
+    ]
+    upAxis = "Z"
+)
+
+def Xform "Basin_6E7NCSMTDD52EEELKA888888"
+{
+}
+

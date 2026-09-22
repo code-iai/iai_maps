@@ -1,0 +1,15 @@
+#usda 1.0
+(
+    defaultPrim = "flowers_ZTRNV4JVAX5D6PTULU888888"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "flowers_ZTRNV4JVAX5D6PTULU888888" (
+    kind = "component"
+    prepend payload = @flowers_ZTRNV4JVAX5D6PTULU888888_payload.usda@
+)
+{
+    float3[] extentsHint = [(-0.09568075, -0.0947467, -0.0834018), (0.09568075, 0.0947467, 0.0834018)]
+}
+

@@ -1,0 +1,15 @@
+#usda 1.0
+(
+    defaultPrim = "GreenPlants_ZC2ZKZRVAJ3TIPTUKI888888"
+    metersPerUnit = 1
+    subLayers = [
+        @GreenPlants_ZC2ZKZRVAJ3TIPTUKI888888_geo.usd@,
+        @GreenPlants_ZC2ZKZRVAJ3TIPTUKI888888_look.usda@
+    ]
+    upAxis = "Z"
+)
+
+def Xform "GreenPlants_ZC2ZKZRVAJ3TIPTUKI888888"
+{
+}
+

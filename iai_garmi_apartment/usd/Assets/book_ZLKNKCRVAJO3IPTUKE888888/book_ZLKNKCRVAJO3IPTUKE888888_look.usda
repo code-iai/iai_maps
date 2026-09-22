@@ -1,0 +1,65 @@
+#usda 1.0
+(
+    defaultPrim = "book_ZLKNKCRVAJO3IPTUKE888888"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "book_ZLKNKCRVAJO3IPTUKE888888"
+{
+    over "Materials" (
+        prepend references = [
+            @./Materials/MI_66ea513899c42400011dfb1a.usda@,
+            @./Materials/MI_66ea5138c049190001823cb3.usda@,
+            @./Materials/MI_66ea51389ca5eb00010dcd61.usda@
+        ]
+    )
+    {
+        over "MI_66ea513899c42400011dfb1a"
+        {
+        }
+
+        over "MI_66ea5138c049190001823cb3"
+        {
+        }
+
+        over "MI_66ea51389ca5eb00010dcd61"
+        {
+        }
+    }
+
+    over "Geom"
+    {
+        over "body"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </book_ZLKNKCRVAJO3IPTUKE888888/Materials/MI_66ea513899c42400011dfb1a>
+            }
+
+            over "mesh_0001" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </book_ZLKNKCRVAJO3IPTUKE888888/Materials/MI_66ea5138c049190001823cb3>
+            }
+
+            over "mesh_0002" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </book_ZLKNKCRVAJO3IPTUKE888888/Materials/MI_66ea5138c049190001823cb3>
+            }
+
+            over "mesh_0003" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </book_ZLKNKCRVAJO3IPTUKE888888/Materials/MI_66ea51389ca5eb00010dcd61>
+            }
+        }
+    }
+}
+

@@ -1,0 +1,142 @@
+#usda 1.0
+(
+    defaultPrim = "window_YWL6L7ZVAJ2VAPTULM888888"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "window_YWL6L7ZVAJ2VAPTULM888888"
+{
+    over "Materials" (
+        prepend references = [
+            @./Materials/MI_69a981fe750d867bb882ecfe.usda@,
+            @./Materials/MI_69a981fe7b1fa00d59fc595e.usda@,
+            @./Materials/MI_69a981fecf67ca1d1dbdacbf.usda@
+        ]
+    )
+    {
+        over "MI_69a981fe750d867bb882ecfe"
+        {
+        }
+
+        over "MI_69a981fecf67ca1d1dbdacbf"
+        {
+        }
+
+        over "MI_69a981fe7b1fa00d59fc595e"
+        {
+        }
+    }
+
+    over "Geom"
+    {
+        over "body"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </window_YWL6L7ZVAJ2VAPTULM888888/Materials/MI_69a981fe750d867bb882ecfe>
+            }
+
+            over "mesh_0001" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </window_YWL6L7ZVAJ2VAPTULM888888/Materials/MI_69a981fe750d867bb882ecfe>
+            }
+
+            over "mesh_0002" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </window_YWL6L7ZVAJ2VAPTULM888888/Materials/MI_69a981fecf67ca1d1dbdacbf>
+            }
+
+            over "mesh_0003" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </window_YWL6L7ZVAJ2VAPTULM888888/Materials/MI_69a981fecf67ca1d1dbdacbf>
+            }
+
+            over "mesh_0004" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </window_YWL6L7ZVAJ2VAPTULM888888/Materials/MI_69a981fe7b1fa00d59fc595e>
+            }
+
+            over "mesh_0005" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </window_YWL6L7ZVAJ2VAPTULM888888/Materials/MI_69a981fe7b1fa00d59fc595e>
+            }
+
+            over "mesh_0006" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </window_YWL6L7ZVAJ2VAPTULM888888/Materials/MI_69a981fe7b1fa00d59fc595e>
+            }
+
+            over "mesh_0007" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </window_YWL6L7ZVAJ2VAPTULM888888/Materials/MI_69a981fe7b1fa00d59fc595e>
+            }
+
+            over "mesh_0008" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </window_YWL6L7ZVAJ2VAPTULM888888/Materials/MI_69a981fe7b1fa00d59fc595e>
+            }
+
+            over "mesh_0009" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </window_YWL6L7ZVAJ2VAPTULM888888/Materials/MI_69a981fe7b1fa00d59fc595e>
+            }
+
+            over "mesh_0010" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </window_YWL6L7ZVAJ2VAPTULM888888/Materials/MI_69a981fe7b1fa00d59fc595e>
+            }
+
+            over "mesh_0011" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </window_YWL6L7ZVAJ2VAPTULM888888/Materials/MI_69a981fecf67ca1d1dbdacbf>
+            }
+
+            over "mesh_0012" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </window_YWL6L7ZVAJ2VAPTULM888888/Materials/MI_69a981fe7b1fa00d59fc595e>
+            }
+
+            over "mesh_0013" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </window_YWL6L7ZVAJ2VAPTULM888888/Materials/MI_69a981fecf67ca1d1dbdacbf>
+            }
+
+            over "mesh_0014" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </window_YWL6L7ZVAJ2VAPTULM888888/Materials/MI_69a981fecf67ca1d1dbdacbf>
+            }
+        }
+    }
+}
+

@@ -1,0 +1,39 @@
+#usda 1.0
+(
+    defaultPrim = "pipe_YWL7DJBVAJXL2PTULA888888"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "pipe_YWL7DJBVAJXL2PTULA888888"
+{
+    over "Materials" (
+        prepend references = @./Materials/MI_69a96c776425ff1c5602d505.usda@
+    )
+    {
+        over "MI_69a96c776425ff1c5602d505"
+        {
+        }
+    }
+
+    over "Geom"
+    {
+        over "body"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </pipe_YWL7DJBVAJXL2PTULA888888/Materials/MI_69a96c776425ff1c5602d505>
+            }
+
+            over "mesh_0001" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </pipe_YWL7DJBVAJXL2PTULA888888/Materials/MI_69a96c776425ff1c5602d505>
+            }
+        }
+    }
+}
+

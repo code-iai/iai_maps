@@ -1,0 +1,15 @@
+#usda 1.0
+(
+    defaultPrim = "Nightstand_ZLT4EVJVAIMJMPTULA888888"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "Nightstand_ZLT4EVJVAIMJMPTULA888888" (
+    kind = "component"
+    prepend payload = @Nightstand_ZLT4EVJVAIMJMPTULA888888_payload.usda@
+)
+{
+    float3[] extentsHint = [(-0.215, -0.2025, -0.2275), (0.215, 0.2025, 0.2275)]
+}
+

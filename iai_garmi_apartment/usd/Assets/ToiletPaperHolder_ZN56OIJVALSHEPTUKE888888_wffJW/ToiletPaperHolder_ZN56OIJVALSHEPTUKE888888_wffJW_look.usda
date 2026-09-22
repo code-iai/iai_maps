@@ -1,0 +1,91 @@
+#usda 1.0
+(
+    defaultPrim = "ToiletPaperHolder_ZN56OIJVALSHEPTUKE888888_wffJW"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "ToiletPaperHolder_ZN56OIJVALSHEPTUKE888888_wffJW"
+{
+    over "Materials" (
+        prepend references = [
+            @./Materials/MI_67457dfe1a0e0b0001c8e9be.usda@,
+            @./Materials/MI_67457dfe7f2d7700012e7ddc.usda@,
+            @./Materials/MI_67457dfe4c563e0001da085d.usda@,
+            @./Materials/MI_67457dfe946140000126f6bb.usda@
+        ]
+    )
+    {
+        over "MI_67457dfe7f2d7700012e7ddc"
+        {
+        }
+
+        over "MI_67457dfe1a0e0b0001c8e9be"
+        {
+        }
+
+        over "MI_67457dfe946140000126f6bb"
+        {
+        }
+
+        over "MI_67457dfe4c563e0001da085d"
+        {
+        }
+    }
+
+    over "Geom"
+    {
+        over "body"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </ToiletPaperHolder_ZN56OIJVALSHEPTUKE888888_wffJW/Materials/MI_67457dfe7f2d7700012e7ddc>
+            }
+
+            over "mesh_0001" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </ToiletPaperHolder_ZN56OIJVALSHEPTUKE888888_wffJW/Materials/MI_67457dfe7f2d7700012e7ddc>
+            }
+
+            over "mesh_0002" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </ToiletPaperHolder_ZN56OIJVALSHEPTUKE888888_wffJW/Materials/MI_67457dfe1a0e0b0001c8e9be>
+            }
+
+            over "mesh_0003" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </ToiletPaperHolder_ZN56OIJVALSHEPTUKE888888_wffJW/Materials/MI_67457dfe7f2d7700012e7ddc>
+            }
+
+            over "mesh_0004" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </ToiletPaperHolder_ZN56OIJVALSHEPTUKE888888_wffJW/Materials/MI_67457dfe946140000126f6bb>
+            }
+
+            over "mesh_0005" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </ToiletPaperHolder_ZN56OIJVALSHEPTUKE888888_wffJW/Materials/MI_67457dfe4c563e0001da085d>
+            }
+
+            over "mesh_0006" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </ToiletPaperHolder_ZN56OIJVALSHEPTUKE888888_wffJW/Materials/MI_67457dfe946140000126f6bb>
+            }
+        }
+    }
+}
+

@@ -1,0 +1,138 @@
+#usda 1.0
+(
+    defaultPrim = "toilet_Z2D35RJVAJO6IPTUK4888888"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "toilet_Z2D35RJVAJO6IPTUK4888888"
+{
+    over "Materials" (
+        prepend references = [
+            @./Materials/MI_62b92750f4b6820001f720f2.usda@,
+            @./Materials/MI_62b927503c8e01000196f5fd.usda@,
+            @./Materials/MI_62b92750bd9b4c0001746c3e.usda@,
+            @./Materials/MI_62b9275058b9620001e2964e.usda@,
+            @./Materials/MI_62b92750dd9b430001dca9d8.usda@
+        ]
+    )
+    {
+        over "MI_62b92750bd9b4c0001746c3e"
+        {
+        }
+
+        over "MI_62b927503c8e01000196f5fd"
+        {
+        }
+
+        over "MI_62b92750f4b6820001f720f2"
+        {
+        }
+
+        over "MI_62b9275058b9620001e2964e"
+        {
+        }
+
+        over "MI_62b92750dd9b430001dca9d8"
+        {
+        }
+    }
+
+    over "Geom"
+    {
+        over "body"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </toilet_Z2D35RJVAJO6IPTUK4888888/Materials/MI_62b92750bd9b4c0001746c3e>
+            }
+
+            over "mesh_0001" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </toilet_Z2D35RJVAJO6IPTUK4888888/Materials/MI_62b927503c8e01000196f5fd>
+            }
+
+            over "mesh_0002" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </toilet_Z2D35RJVAJO6IPTUK4888888/Materials/MI_62b927503c8e01000196f5fd>
+            }
+
+            over "mesh_0003" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </toilet_Z2D35RJVAJO6IPTUK4888888/Materials/MI_62b92750f4b6820001f720f2>
+            }
+
+            over "mesh_0004" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </toilet_Z2D35RJVAJO6IPTUK4888888/Materials/MI_62b92750f4b6820001f720f2>
+            }
+
+            over "mesh_0005" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </toilet_Z2D35RJVAJO6IPTUK4888888/Materials/MI_62b927503c8e01000196f5fd>
+            }
+
+            over "mesh_0006" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </toilet_Z2D35RJVAJO6IPTUK4888888/Materials/MI_62b92750f4b6820001f720f2>
+            }
+
+            over "mesh_0007" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </toilet_Z2D35RJVAJO6IPTUK4888888/Materials/MI_62b927503c8e01000196f5fd>
+            }
+
+            over "mesh_0008" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </toilet_Z2D35RJVAJO6IPTUK4888888/Materials/MI_62b92750bd9b4c0001746c3e>
+            }
+
+            over "mesh_0009" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </toilet_Z2D35RJVAJO6IPTUK4888888/Materials/MI_62b9275058b9620001e2964e>
+            }
+
+            over "mesh_0010" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </toilet_Z2D35RJVAJO6IPTUK4888888/Materials/MI_62b9275058b9620001e2964e>
+            }
+
+            over "mesh_0011" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </toilet_Z2D35RJVAJO6IPTUK4888888/Materials/MI_62b9275058b9620001e2964e>
+            }
+
+            over "mesh_0012" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </toilet_Z2D35RJVAJO6IPTUK4888888/Materials/MI_62b92750dd9b430001dca9d8>
+            }
+        }
+    }
+}
+

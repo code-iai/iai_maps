@@ -1,0 +1,15 @@
+#usda 1.0
+(
+    defaultPrim = "TrashCan_ZJFJIIZVAIMN2PTUKU888888"
+    metersPerUnit = 1
+    subLayers = [
+        @TrashCan_ZJFJIIZVAIMN2PTUKU888888_geo.usd@,
+        @TrashCan_ZJFJIIZVAIMN2PTUKU888888_look.usda@
+    ]
+    upAxis = "Z"
+)
+
+def Xform "TrashCan_ZJFJIIZVAIMN2PTUKU888888"
+{
+}
+

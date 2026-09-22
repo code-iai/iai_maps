@@ -1,0 +1,15 @@
+#usda 1.0
+(
+    defaultPrim = "pipe_YWL7DJBVAJXL2PTULA888888"
+    metersPerUnit = 1
+    subLayers = [
+        @pipe_YWL7DJBVAJXL2PTULA888888_geo.usd@,
+        @pipe_YWL7DJBVAJXL2PTULA888888_look.usda@
+    ]
+    upAxis = "Z"
+)
+
+def Xform "pipe_YWL7DJBVAJXL2PTULA888888"
+{
+}
+

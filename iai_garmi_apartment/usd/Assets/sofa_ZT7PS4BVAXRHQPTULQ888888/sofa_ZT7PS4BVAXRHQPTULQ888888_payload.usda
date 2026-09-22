@@ -1,0 +1,15 @@
+#usda 1.0
+(
+    defaultPrim = "sofa_ZT7PS4BVAXRHQPTULQ888888"
+    metersPerUnit = 1
+    subLayers = [
+        @sofa_ZT7PS4BVAXRHQPTULQ888888_geo.usd@,
+        @sofa_ZT7PS4BVAXRHQPTULQ888888_look.usda@
+    ]
+    upAxis = "Z"
+)
+
+def Xform "sofa_ZT7PS4BVAXRHQPTULQ888888"
+{
+}
+

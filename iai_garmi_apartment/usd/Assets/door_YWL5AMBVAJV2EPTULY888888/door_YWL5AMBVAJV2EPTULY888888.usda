@@ -1,0 +1,15 @@
+#usda 1.0
+(
+    defaultPrim = "door_YWL5AMBVAJV2EPTULY888888"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "door_YWL5AMBVAJV2EPTULY888888" (
+    kind = "component"
+    prepend payload = @door_YWL5AMBVAJV2EPTULY888888_payload.usda@
+)
+{
+    float3[] extentsHint = [(-0.725, -0.11889009, -1.035), (0.725, 0.11889009, 1.035)]
+}
+

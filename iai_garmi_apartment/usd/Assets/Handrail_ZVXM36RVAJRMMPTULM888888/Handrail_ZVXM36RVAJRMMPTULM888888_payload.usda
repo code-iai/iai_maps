@@ -1,0 +1,15 @@
+#usda 1.0
+(
+    defaultPrim = "Handrail_ZVXM36RVAJRMMPTULM888888"
+    metersPerUnit = 1
+    subLayers = [
+        @Handrail_ZVXM36RVAJRMMPTULM888888_geo.usd@,
+        @Handrail_ZVXM36RVAJRMMPTULM888888_look.usda@
+    ]
+    upAxis = "Z"
+)
+
+def Xform "Handrail_ZVXM36RVAJRMMPTULM888888"
+{
+}
+

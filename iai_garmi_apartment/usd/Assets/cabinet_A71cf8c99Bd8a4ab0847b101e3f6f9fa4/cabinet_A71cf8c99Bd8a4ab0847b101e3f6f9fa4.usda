@@ -1,0 +1,15 @@
+#usda 1.0
+(
+    defaultPrim = "cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4" (
+    kind = "component"
+    prepend payload = @cabinet_A71cf8c99Bd8a4ab0847b101e3f6f9fa4_payload.usda@
+)
+{
+    float3[] extentsHint = [(-1.2349999, -0.32127023, -0.99999994), (1.2349999, 0.32127023, 0.99999994)]
+}
+

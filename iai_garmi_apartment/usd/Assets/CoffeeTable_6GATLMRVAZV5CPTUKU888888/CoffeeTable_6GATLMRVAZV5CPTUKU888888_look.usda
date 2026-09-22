@@ -1,0 +1,95 @@
+#usda 1.0
+(
+    defaultPrim = "CoffeeTable_6GATLMRVAZV5CPTUKU888888"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "CoffeeTable_6GATLMRVAZV5CPTUKU888888"
+{
+    over "Materials" (
+        prepend references = [
+            @./Materials/MI_66232ca007925a0001f72b8d.usda@,
+            @./Materials/MI_5dbfaef300e3a30001c5e4eb.usda@
+        ]
+    )
+    {
+        over "MI_66232ca007925a0001f72b8d"
+        {
+        }
+
+        over "MI_5dbfaef300e3a30001c5e4eb"
+        {
+        }
+    }
+
+    over "Geom"
+    {
+        over "body"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </CoffeeTable_6GATLMRVAZV5CPTUKU888888/Materials/MI_66232ca007925a0001f72b8d>
+            }
+
+            over "mesh_0001" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </CoffeeTable_6GATLMRVAZV5CPTUKU888888/Materials/MI_66232ca007925a0001f72b8d>
+            }
+
+            over "mesh_0002" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </CoffeeTable_6GATLMRVAZV5CPTUKU888888/Materials/MI_66232ca007925a0001f72b8d>
+            }
+
+            over "mesh_0003" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </CoffeeTable_6GATLMRVAZV5CPTUKU888888/Materials/MI_66232ca007925a0001f72b8d>
+            }
+
+            over "mesh_0004" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </CoffeeTable_6GATLMRVAZV5CPTUKU888888/Materials/MI_66232ca007925a0001f72b8d>
+            }
+
+            over "mesh_0005" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </CoffeeTable_6GATLMRVAZV5CPTUKU888888/Materials/MI_5dbfaef300e3a30001c5e4eb>
+            }
+
+            over "mesh_0006" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </CoffeeTable_6GATLMRVAZV5CPTUKU888888/Materials/MI_5dbfaef300e3a30001c5e4eb>
+            }
+
+            over "mesh_0007" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </CoffeeTable_6GATLMRVAZV5CPTUKU888888/Materials/MI_5dbfaef300e3a30001c5e4eb>
+            }
+
+            over "mesh_0008" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </CoffeeTable_6GATLMRVAZV5CPTUKU888888/Materials/MI_5dbfaef300e3a30001c5e4eb>
+            }
+        }
+    }
+}
+

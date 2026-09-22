@@ -1,0 +1,74 @@
+#usda 1.0
+(
+    defaultPrim = "book_ZEDE22BVAIM2CPTULE888888"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "book_ZEDE22BVAIM2CPTULE888888"
+{
+    over "Materials" (
+        prepend references = [
+            @./Materials/MI_6538d6f0b3b4180001cc70ff.usda@,
+            @./Materials/MI_6538d6f07a627f0001f300b4.usda@
+        ]
+    )
+    {
+        over "MI_6538d6f07a627f0001f300b4"
+        {
+        }
+
+        over "MI_6538d6f0b3b4180001cc70ff"
+        {
+        }
+    }
+
+    over "Geom"
+    {
+        over "body"
+        {
+            over "mesh_0000" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </book_ZEDE22BVAIM2CPTULE888888/Materials/MI_6538d6f07a627f0001f300b4>
+            }
+
+            over "mesh_0001" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </book_ZEDE22BVAIM2CPTULE888888/Materials/MI_6538d6f0b3b4180001cc70ff>
+            }
+
+            over "mesh_0002" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </book_ZEDE22BVAIM2CPTULE888888/Materials/MI_6538d6f07a627f0001f300b4>
+            }
+
+            over "mesh_0003" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </book_ZEDE22BVAIM2CPTULE888888/Materials/MI_6538d6f07a627f0001f300b4>
+            }
+
+            over "mesh_0004" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </book_ZEDE22BVAIM2CPTULE888888/Materials/MI_6538d6f07a627f0001f300b4>
+            }
+
+            over "mesh_0005" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </book_ZEDE22BVAIM2CPTULE888888/Materials/MI_6538d6f07a627f0001f300b4>
+            }
+        }
+    }
+}
+
