@@ -1139,7 +1139,7 @@
         <geom name="handrail_13_aabb" type="box" pos="0.0362 0.3166 0.0483" size="0.0119 0.0268 0.0257" class="collision"/>
         <geom name="handrail_14_aabb" type="box" pos="0.0000 0.3492 -0.0000" size="0.0665 0.0058 0.1157" class="collision"/>
       </body>
-      <body name="radiator_0" pos="-0.954399 8.059034 0.406153">
+      <body name="radiator_0" pos="-0.954399 7.909034 0.406153">
         <geom type="mesh" mesh="Radiator00" class="visual" material="M_MI_66bc224fed34ab000159d598"/>
         <geom type="mesh" mesh="Radiator01" class="visual" material="M_MI_66bc224fed34ab000159d598"/>
         <geom type="mesh" mesh="Radiator02" class="visual" material="M_MI_66bc224fed34ab000159d598"/>
@@ -1288,7 +1288,7 @@
         <geom type="mesh" mesh="Door20" class="visual" material="M_MI_69a94c58a4e99f0260973c62"/>
         <!-- <geom name="door_20_aabb" type="box" pos="0.0000 -0.0535 0.0000" size="0.5250 0.0765 1.0350" class="collision"/> -->
       </body>
-      <body name="pipe_0" pos="-0.359245 8.022044 1.641750">
+      <body name="pipe_0" pos="-0.359245 7.872044 1.641750">
         <geom type="mesh" mesh="Pipe00" class="visual" material="M_MI_69a96c776425ff1c5602d505"/>
         <geom type="mesh" mesh="Pipe01" class="visual" material="M_MI_69a96c776425ff1c5602d505"/>
         <geom name="pipe_00_aabb" type="box" pos="0.0000 0.0000 -0.1417" size="2.6425 0.1000 1.5000" class="collision"/>
@@ -1504,7 +1504,7 @@
         <geom name="flowers_04_aabb" type="box" pos="0.0007 -0.0015 0.0251" size="0.0847 0.0703 0.0338" class="collision"/>
         <geom name="flowers_05_aabb" type="box" pos="0.0009 -0.0004 0.0254" size="0.0583 0.0541 0.0177" class="collision"/>
       </body>
-      <body name="kitchen_cabinet" pos="0.900000 7.420770 1.000000" quat="0.707107 0.000000 0.000000 0.707107">
+      <body name="kitchen_cabinet" pos="0.950000 7.420770 1.000000" quat="0.707107 0.000000 0.000000 0.707107">
         <frame quat="0.707107 0.000000 0.000000 -0.707107">
           <body name="drawer_1" pos="-1.465 -0.040508 -0.2" quat="0.707107 0.000000 0.000000 0.707107">
             <joint name="drawer_1_joint" type="slide" pos="0.00000 -0.00000 0.00000" axis="-1.00000 0.00000 0.00000" range="0.000 0.499"/>
@@ -1945,7 +1945,7 @@
         <geom type="mesh" mesh="Wall020" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
         <geom type="mesh" mesh="Wall021" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
         <geom type="mesh" mesh="Wall022" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-        <geom type="mesh" mesh="Wall023" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
+        <geom type="mesh" mesh="Wall023" pos="0 -0.15 0" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
         <geom type="mesh" mesh="Wall024" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
         <geom type="mesh" mesh="Wall025" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
         <geom type="mesh" mesh="Wall026" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
@@ -1965,7 +1965,7 @@
         <geom type="mesh" mesh="Wall040" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
         <geom type="mesh" mesh="Wall041" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
         <geom type="mesh" mesh="Wall042" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-        <geom type="mesh" mesh="Wall043" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
+        <geom type="mesh" mesh="Wall043" pos="0 -0.15 0" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
         <geom type="mesh" mesh="Wall044" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
         <geom type="mesh" mesh="Wall045" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
         <geom type="mesh" mesh="Wall046" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
@@ -2032,12 +2032,12 @@
         <geom type="mesh" mesh="Wall0107" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
         <geom type="mesh" mesh="Wall0108" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
         <geom type="mesh" mesh="Wall0109" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-        <geom type="mesh" mesh="Wall0110" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
+        <geom type="mesh" mesh="Wall0110" pos="0 -0.15 0" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
         <geom type="mesh" mesh="Wall0111" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-        <geom type="mesh" mesh="Wall0112" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-        <geom type="mesh" mesh="Wall0113" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-        <geom type="mesh" mesh="Wall0114" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
-        <geom type="mesh" mesh="Wall0115" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
+        <geom type="mesh" mesh="Wall0112" pos="0 -0.15 0" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
+        <geom type="mesh" mesh="Wall0113" pos="0 -0.15 0" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
+        <geom type="mesh" mesh="Wall0114" pos="0 -0.15 0" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
+        <geom type="mesh" mesh="Wall0115" pos="0 -0.15 0" class="visual" material="M_MI_64b4f7c94e902400013f663d"/>
         <geom name="wall_00_aabb" type="box" pos="-2.6500 3.1700 -1.0000" size="1.0250 0.1500 0.5000" class="collision"/>
         <geom name="wall_01_a_aabb" type="box" pos="-0.0775 -3.5000 0.0000" size="0.0275 0.0050 1.5000" class="collision"/>
         <geom name="wall_01_b_aabb" type="box" pos="2.5850 -3.5000 0.0000" size="1.1950 0.0050 1.5000" class="collision"/>
@@ -2065,7 +2065,7 @@
         <geom name="wall_021_b_aabb" type="box" pos="2.5850 -3.6200 0.0000" size="1.1950 0.0050 1.5000" class="collision"/>
         <geom name="wall_021_c_aabb" type="box" pos="0.6700 -3.6200 1.0325" size="0.7200 0.0050 0.4675" class="collision"/>
         <geom name="wall_022_aabb" type="box" pos="3.8400 1.9800 0.0700" size="0.0600 0.0050 0.5000" class="collision"/>
-        <geom name="wall_023_aabb" type="box" pos="3.7800 3.4700 -1.0000" size="0.0050 0.1500 0.5000" class="collision"/>
+        <geom name="wall_023_aabb" type="box" pos="3.7800 3.3200 -1.0000" size="0.0050 0.1500 0.5000" class="collision"/>
         <geom name="wall_024_aabb" type="box" pos="3.8400 -3.6200 0.0000" size="0.0600 0.0050 1.5000" class="collision"/>
         <geom name="wall_025_aabb" type="box" pos="3.9000 0.0000 0.0000" size="0.0050 3.6200 1.5000" class="collision"/>
         <geom name="wall_026_aabb" type="box" pos="3.8400 1.2450 -0.4300" size="0.0600 0.6050 0.0050" class="collision"/>
@@ -2085,7 +2085,7 @@
         <geom name="wall_040_aabb" type="box" pos="3.8400 1.2450 0.5700" size="0.0600 0.6050 0.0050" class="collision"/>
         <geom name="wall_041_aabb" type="box" pos="3.8400 1.8500 0.0700" size="0.0600 0.0050 0.5000" class="collision"/>
         <geom name="wall_042_aabb" type="box" pos="3.8400 -3.3800 0.0700" size="0.0600 0.0050 0.5000" class="collision"/>
-        <geom name="wall_043_aabb" type="box" pos="3.7800 3.4700 0.4000" size="0.0050 0.1500 0.9000" class="collision"/>
+        <geom name="wall_043_aabb" type="box" pos="3.7800 3.3200 0.4000" size="0.0050 0.1500 0.9000" class="collision"/>
         <geom name="wall_044_aabb" type="box" pos="3.8400 -0.7000 0.0700" size="0.0600 0.0050 0.5000" class="collision"/>
         <geom name="wall_045_aabb" type="box" pos="3.8400 -2.0400 0.0700" size="0.0600 0.0050 0.5000" class="collision"/>
         <geom name="wall_046_aabb" type="box" pos="3.8400 -2.7750 -0.4300" size="0.0600 0.6050 0.0050" class="collision"/>
@@ -2160,12 +2160,12 @@
         <geom name="wall_0109_a_aabb" type="box" pos="-0.1050 -2.1525 0.0000" size="0.0050 1.3475 1.5000" class="collision"/>
         <geom name="wall_0109_b_aabb" type="box" pos="-0.1050 0.7275 0.0000" size="0.0050 0.0925 1.5000" class="collision"/>
         <geom name="wall_0109_c_aabb" type="box" pos="-0.1050 -0.0850 1.0325" size="0.0050 0.7200 0.4675" class="collision"/>
-        <geom name="wall_0110_aabb" type="box" pos="-1.2200 3.4700 0.4000" size="0.0050 0.1500 0.9000" class="collision"/>
+        <geom name="wall_0110_aabb" type="box" pos="-1.2200 3.3200 0.4000" size="0.0050 0.1500 0.9000" class="collision"/>
         <geom name="wall_0111_aabb" type="box" pos="-1.5050 3.4700 0.0000" size="0.0050 0.1500 1.5000" class="collision"/>
-        <geom name="wall_0112_aabb" type="box" pos="1.1375 3.3200 0.0000" size="2.6425 0.0050 1.5000" class="collision"/>
-        <geom name="wall_0113_aabb" type="box" pos="3.7800 3.4700 -1.0000" size="0.0050 0.1500 0.5000" class="collision"/>
-        <geom name="wall_0114_aabb" type="box" pos="1.1375 3.6200 0.0000" size="2.6425 0.0050 1.5000" class="collision"/>
-        <geom name="wall_0115_aabb" type="box" pos="1.2800 3.4700 -0.5000" size="2.5000 0.1500 0.0050" class="collision"/>
+        <geom name="wall_0112_aabb" type="box" pos="1.1375 3.1700 0.0000" size="2.6425 0.0050 1.5000" class="collision"/>
+        <geom name="wall_0113_aabb" type="box" pos="3.7800 3.3200 -1.0000" size="0.0050 0.1500 0.5000" class="collision"/>
+        <geom name="wall_0114_aabb" type="box" pos="1.1375 3.4700 0.0000" size="2.6425 0.0050 1.5000" class="collision"/>
+        <geom name="wall_0115_aabb" type="box" pos="1.2800 3.3200 -0.5000" size="2.5000 0.1500 0.0050" class="collision"/>
       </body>
     </body>
     <!-- free joints are only allowed at the top level, so the movable objects take map_T_apartment through a frame -->
