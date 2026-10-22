@@ -776,7 +776,7 @@
   <worldbody>
     <!-- map_T_apartment: pose of the apartment origin in the occupancy map frame used for localization. -->
     <!-- keep the pose of the body and the frame below identical -->
-    <body name="apartment" pos="1.2 1.5 0" quat="0.707107 0 0 0.707107">
+    <body name="apartment" pos="1.156214 1.5 0.006169" quat="0.707107 0 0 0.707107">
       <body name="window_0" pos="2.342298 7.387044 1.570000" quat="0.707107 0.000000 0.000000 -0.707107">
         <geom type="mesh" mesh="Window00" class="visual" material="M_MI_69a94c44a4e99f0260973c5d"/>
         <geom type="mesh" mesh="Window01" class="visual" material="M_MI_69a94c449cde3a0ce4db02e1"/>
