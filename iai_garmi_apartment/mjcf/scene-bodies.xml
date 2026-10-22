@@ -1394,13 +1394,13 @@
             <geom type="box" size="0.265 0.006 0.121" pos="-0.265 0.263 -0.005" class="collision"/>
             <geom type="box" size="0.006 0.269 0.121" pos="-0.524 0 -0.005" class="visual" rgba="0.95 0.95 0.93 1"/>
             <geom type="box" size="0.006 0.269 0.121" pos="-0.524 0 -0.005" class="collision"/>
-            <body name="drawer_2_handle" pos="0.082 0 0.111591">
+            <body name="drawer_2_handle" pos="0.067 0 0.111591">
               <geom type="cylinder" size="0.006 0.08" pos="0 0 0" quat="0.707105 0.707108 0 0" class="visual" rgba="0.08 0.08 0.08 1"/>
               <geom type="cylinder" size="0.006 0.08" pos="0 0 0" quat="0.707105 0.707108 0 0" class="collision"/>
-              <geom type="box" size="0.031 0.005 0.005" pos="-0.031 -0.06 0" class="visual" rgba="0.08 0.08 0.08 1"/>
-              <geom type="box" size="0.031 0.005 0.005" pos="-0.031 -0.06 0" class="collision"/>
-              <geom type="box" size="0.031 0.005 0.005" pos="-0.031 0.06 0" class="visual" rgba="0.08 0.08 0.08 1"/>
-              <geom type="box" size="0.031 0.005 0.005" pos="-0.031 0.06 0" class="collision"/>
+              <geom type="box" size="0.0235 0.005 0.005" pos="-0.0235 -0.06 0" class="visual" rgba="0.08 0.08 0.08 1"/>
+              <geom type="box" size="0.0235 0.005 0.005" pos="-0.0235 -0.06 0" class="collision"/>
+              <geom type="box" size="0.0235 0.005 0.005" pos="-0.0235 0.06 0" class="visual" rgba="0.08 0.08 0.08 1"/>
+              <geom type="box" size="0.0235 0.005 0.005" pos="-0.0235 0.06 0" class="collision"/>
             </body>
           </body>
           <body name="drawer_3" pos="0.6 0.3 0.2925">
