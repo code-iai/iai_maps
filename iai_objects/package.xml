@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>iai_objects</name>
+  <version>1.0.0</version>
+  <description>Meshes of household and workcell objects used with the CRAM robot abstract machine</description>
+
+  <maintainer email="jeroen.schaefer@outlook.de">Jeroen Schaefer</maintainer>
+
+  <license>LGPL</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
