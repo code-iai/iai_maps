@@ -3,7 +3,7 @@ project(iai_objects)
 
 find_package(ament_cmake REQUIRED)
 
-install(DIRECTORY objects
+install(DIRECTORY objects urdf
   DESTINATION share/${PROJECT_NAME})
 
 ament_package()
