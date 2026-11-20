@@ -27,8 +27,7 @@
     </visual>
     <collision>
       <geometry>
-        <!-- <mesh filename="package://iai_apartment/meshes/collision/walls.stl" /> -->
-        <box size="1 1 1"/>
+        <mesh filename="package://iai_apartment/meshes/collision/walls.stl"/>
       </geometry>
     </collision>
   </link>
