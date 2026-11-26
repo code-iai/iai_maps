@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+<!--
+  Miele WT1 washer-dryer WTW870 WPM (Wash & Dry XXL, PowerWash & TwinDos, 9/6 kg): 850 mm high,
+  596 mm wide, 714 mm deep (1132 mm with the door open), 102 kg, hinged on the right (data sheet
+  11568210). The visual mesh is about 40 mm shallower than the data sheet depth.
+  Visual meshes are split from the Miele T1/W1 3D model; joints, frames and collisions follow
+  the layout of the 031 washing machine URDF.
+
+  Metres, Z up, front toward -X, origin at floor level in the centre of the footprint.
+  Seen from the front, the porthole door is hinged on the right and opened by hooking a finger from
+  below into the grip recess in the upper left of its ring (115 to 155 degrees, 90 being the top): a
+  2 cm deep hollow under the ring, open toward the door's centre, while the ring's front stays closed;
+  the detergent drawer sits top left in the control panel.
+  Masses and inertias are approximations from primitive volumes; the body mass is the 102 kg from the
+  data sheet.
+-->
+<robot name="miele_washing_machine">
+  <material name="miele_white"><color rgba="0.95 0.95 0.95 1"/></material>
+  <material name="miele_door_grey"><color rgba="0.55 0.57 0.6 1"/></material>
+  <material name="miele_recess_black"><color rgba="0.07 0.07 0.07 1"/></material>
+  <material name="miele_recess_edge_orange"><color rgba="0.95 0.55 0.1 1"/></material>
+
+  <link name="washing_machine">
+    <inertial><origin xyz="0.021 0 0.43" rpy="0 0 0"/><mass value="102"/><inertia ixx="9.16" ixy="0" ixz="0" iyy="9.53" iyz="0" izz="6.41"/></inertial>
+    <visual><origin xyz="0 0 0" rpy="0 0 0"/><geometry><mesh filename="package://iai_objects/objects/miele_washing_machine_body.stl"/></geometry><material name="miele_white"/></visual>
+    <!-- housing -->
+    <collision><origin xyz="0.021 -0.293 0.43" rpy="0 0 0"/><geometry><box size="0.632 0.01 0.85"/></geometry></collision>
+    <collision><origin xyz="0.021 0.293 0.43" rpy="0 0 0"/><geometry><box size="0.632 0.01 0.85"/></geometry></collision>
+    <collision><origin xyz="0.332 0 0.43" rpy="0 0 0"/><geometry><box size="0.01 0.596 0.85"/></geometry></collision>
+    <collision><origin xyz="0.021 0 0.86" rpy="0 0 0"/><geometry><box size="0.632 0.596 0.01"/></geometry></collision>
+    <collision><origin xyz="0.021 0 0.025" rpy="0 0 0"/><geometry><box size="0.632 0.596 0.01"/></geometry></collision>
+    <!-- front plate around the porthole, radius 0.15 at y=0, z=0.491 -->
+    <collision><origin xyz="-0.285 0 0.1805" rpy="0 0 0"/><geometry><box size="0.02 0.596 0.321"/></geometry></collision>
+    <collision><origin xyz="-0.285 0 0.658" rpy="0 0 0"/><geometry><box size="0.02 0.596 0.034"/></geometry></collision>
+    <collision><origin xyz="-0.285 -0.224 0.491" rpy="0 0 0"/><geometry><box size="0.02 0.148 0.3"/></geometry></collision>
+    <collision><origin xyz="-0.285 0.224 0.491" rpy="0 0 0"/><geometry><box size="0.02 0.148 0.3"/></geometry></collision>
+    <!-- control panel right of the detergent drawer opening -->
+    <collision><origin xyz="-0.2705 -0.1005 0.77" rpy="0 0 0"/><geometry><box size="0.049 0.395 0.19"/></geometry></collision>
+  </link>
+
+  <link name="washing_machine_door">
+    <inertial><origin xyz="0.03 0.217 0" rpy="0 0 0"/><mass value="5"/><inertia ixx="0.118" ixy="0" ixz="0" iyy="0.0604" iyz="0" izz="0.0604"/></inertial>
+    <visual><origin xyz="0 0 0" rpy="0 0 0"/><geometry><mesh filename="package://iai_objects/objects/miele_washing_machine_door.stl"/></geometry><material name="miele_door_grey"/></visual>
+    <visual><origin xyz="0 0 0" rpy="0 0 0"/><geometry><mesh filename="package://iai_objects/objects/miele_washing_machine_door_recess.stl"/></geometry><material name="miele_recess_black"/></visual>
+    <visual><origin xyz="0 0 0" rpy="0 0 0"/><geometry><mesh filename="package://iai_objects/objects/miele_washing_machine_door_recess_edge.stl"/></geometry><material name="miele_recess_edge_orange"/></visual>
+    <!-- only in front of the front plate, so the closed door touches neither the plate nor the detergent drawer:
+         the back of the door as a disc, and the ring in front of it as 10 degree segments, left out where the
+         ring holds the grip recess, which the handle covers -->
+    <collision><origin xyz="0.00435 0.217 0" rpy="0 1.5708 0"/><geometry><cylinder radius="0.217" length="0.0107"/></geometry></collision>
+    <collision><origin xyz="-0.01550 0.02600 0.00000" rpy="1.57080 0 0"/><geometry><box size="0.0290 0.0398 0.0520"/></geometry></collision>
+    <collision><origin xyz="-0.01550 0.02890 0.03317" rpy="1.39626 0 0"/><geometry><box size="0.0290 0.0398 0.0520"/></geometry></collision>
+    <collision><origin xyz="-0.01550 0.03752 0.06533" rpy="1.22173 0 0"/><geometry><box size="0.0290 0.0398 0.0520"/></geometry></collision>
+    <collision><origin xyz="-0.01550 0.05159 0.09550" rpy="1.04720 0 0"/><geometry><box size="0.0290 0.0398 0.0520"/></geometry></collision>
+    <collision><origin xyz="-0.01550 0.07069 0.12277" rpy="0.87266 0 0"/><geometry><box size="0.0290 0.0398 0.0520"/></geometry></collision>
+    <collision><origin xyz="-0.01550 0.09423 0.14631" rpy="0.69813 0 0"/><geometry><box size="0.0290 0.0398 0.0520"/></geometry></collision>
+    <collision><origin xyz="-0.01550 0.12150 0.16541" rpy="0.52360 0 0"/><geometry><box size="0.0290 0.0398 0.0520"/></geometry></collision>
+    <collision><origin xyz="-0.01550 0.15167 0.17948" rpy="0.34907 0 0"/><geometry><box size="0.0290 0.0398 0.0520"/></geometry></collision>
+    <collision><origin xyz="-0.01550 0.18383 0.18810" rpy="0.17453 0 0"/><geometry><box size="0.0290 0.0398 0.0520"/></geometry></collision>
+    <collision><origin xyz="-0.01550 0.21700 0.19100" rpy="0.00000 0 0"/><geometry><box size="0.0290 0.0398 0.0520"/></geometry></collision>
+    <collision><origin xyz="-0.01550 0.25017 0.18810" rpy="-0.17453 0 0"/><geometry><box size="0.0290 0.0398 0.0520"/></geometry></collision>
+    <collision><origin xyz="-0.01550 0.28233 0.17948" rpy="-0.34907 0 0"/><geometry><box size="0.0290 0.0398 0.0520"/></geometry></collision>
+    <collision><origin xyz="-0.01550 0.39648 0.06533" rpy="-1.22173 0 0"/><geometry><box size="0.0290 0.0398 0.0520"/></geometry></collision>
+    <collision><origin xyz="-0.01550 0.40510 0.03317" rpy="-1.39626 0 0"/><geometry><box size="0.0290 0.0398 0.0520"/></geometry></collision>
+    <collision><origin xyz="-0.01550 0.40800 0.00000" rpy="-1.57080 0 0"/><geometry><box size="0.0290 0.0398 0.0520"/></geometry></collision>
+    <collision><origin xyz="-0.01550 0.40510 -0.03317" rpy="-1.74533 0 0"/><geometry><box size="0.0290 0.0398 0.0520"/></geometry></collision>
+    <collision><origin xyz="-0.01550 0.39648 -0.06533" rpy="-1.91986 0 0"/><geometry><box size="0.0290 0.0398 0.0520"/></geometry></collision>
+    <collision><origin xyz="-0.01550 0.38241 -0.09550" rpy="-2.09440 0 0"/><geometry><box size="0.0290 0.0398 0.0520"/></geometry></collision>
+    <collision><origin xyz="-0.01550 0.36331 -0.12277" rpy="-2.26893 0 0"/><geometry><box size="0.0290 0.0398 0.0520"/></geometry></collision>
+    <collision><origin xyz="-0.01550 0.33977 -0.14631" rpy="-2.44346 0 0"/><geometry><box size="0.0290 0.0398 0.0520"/></geometry></collision>
+    <collision><origin xyz="-0.01550 0.31250 -0.16541" rpy="-2.61799 0 0"/><geometry><box size="0.0290 0.0398 0.0520"/></geometry></collision>
+    <collision><origin xyz="-0.01550 0.28233 -0.17948" rpy="-2.79253 0 0"/><geometry><box size="0.0290 0.0398 0.0520"/></geometry></collision>
+    <collision><origin xyz="-0.01550 0.25017 -0.18810" rpy="-2.96706 0 0"/><geometry><box size="0.0290 0.0398 0.0520"/></geometry></collision>
+    <collision><origin xyz="-0.01550 0.21700 -0.19100" rpy="-3.14159 0 0"/><geometry><box size="0.0290 0.0398 0.0520"/></geometry></collision>
+    <collision><origin xyz="-0.01550 0.18383 -0.18810" rpy="-3.31613 0 0"/><geometry><box size="0.0290 0.0398 0.0520"/></geometry></collision>
+    <collision><origin xyz="-0.01550 0.15167 -0.17948" rpy="-3.49066 0 0"/><geometry><box size="0.0290 0.0398 0.0520"/></geometry></collision>
+    <collision><origin xyz="-0.01550 0.12150 -0.16541" rpy="-3.66519 0 0"/><geometry><box size="0.0290 0.0398 0.0520"/></geometry></collision>
+    <collision><origin xyz="-0.01550 0.09423 -0.14631" rpy="-3.83972 0 0"/><geometry><box size="0.0290 0.0398 0.0520"/></geometry></collision>
+    <collision><origin xyz="-0.01550 0.07069 -0.12277" rpy="-4.01426 0 0"/><geometry><box size="0.0290 0.0398 0.0520"/></geometry></collision>
+    <collision><origin xyz="-0.01550 0.05159 -0.09550" rpy="-4.18879 0 0"/><geometry><box size="0.0290 0.0398 0.0520"/></geometry></collision>
+    <collision><origin xyz="-0.01550 0.03752 -0.06533" rpy="-4.36332 0 0"/><geometry><box size="0.0290 0.0398 0.0520"/></geometry></collision>
+    <collision><origin xyz="-0.01550 0.02890 -0.03317" rpy="-4.53786 0 0"/><geometry><box size="0.0290 0.0398 0.0520"/></geometry></collision>
+  </link>
+
+  <!-- the ring over the grip recess: its front skin, and its outer part beside the recess -->
+  <link name="washing_machine_door_handle">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0"/><mass value="0.01"/><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6"/></inertial>
+    <collision><origin xyz="-0.01530 -0.04943 -0.02401" rpy="0.26180 0 0"/><geometry><box size="0.0090 0.0398 0.0520"/></geometry></collision>
+    <collision><origin xyz="-0.00080 -0.05202 -0.01435" rpy="0.26180 0 0"/><geometry><box size="0.0200 0.0398 0.0320"/></geometry></collision>
+    <collision><origin xyz="-0.01530 -0.01665 -0.01823" rpy="0.08727 0 0"/><geometry><box size="0.0090 0.0398 0.0520"/></geometry></collision>
+    <collision><origin xyz="-0.00080 -0.01752 -0.00826" rpy="0.08727 0 0"/><geometry><box size="0.0200 0.0398 0.0320"/></geometry></collision>
+    <collision><origin xyz="-0.01530 0.01665 -0.01823" rpy="-0.08727 0 0"/><geometry><box size="0.0090 0.0398 0.0520"/></geometry></collision>
+    <collision><origin xyz="-0.00080 0.01752 -0.00826" rpy="-0.08727 0 0"/><geometry><box size="0.0200 0.0398 0.0320"/></geometry></collision>
+    <collision><origin xyz="-0.01530 0.04943 -0.02401" rpy="-0.26180 0 0"/><geometry><box size="0.0090 0.0398 0.0520"/></geometry></collision>
+    <collision><origin xyz="-0.00080 0.05202 -0.01435" rpy="-0.26180 0 0"/><geometry><box size="0.0200 0.0398 0.0320"/></geometry></collision>
+  </link>
+
+  <link name="washing_machine_detergent_drawer">
+    <inertial><origin xyz="0.2 0 0" rpy="0 0 0"/><mass value="0.9"/><inertia ixx="0.00488" ixy="0" ixz="0" iyy="0.01417" iyz="0" izz="0.0147"/></inertial>
+    <visual><origin xyz="0 0 0" rpy="0 0 0"/><geometry><mesh filename="package://iai_objects/objects/miele_washing_machine_drawer.stl"/></geometry><material name="miele_white"/></visual>
+    <!-- front, then the open tray behind it -->
+    <collision><origin xyz="0.024 0 0" rpy="0 0 0"/><geometry><box size="0.048 0.2 0.19"/></geometry></collision>
+    <collision><origin xyz="0.224 0 -0.08" rpy="0 0 0"/><geometry><box size="0.352 0.19 0.0025"/></geometry></collision>
+    <collision><origin xyz="0.224 -0.094 -0.0025" rpy="0 0 0"/><geometry><box size="0.352 0.0025 0.155"/></geometry></collision>
+    <collision><origin xyz="0.224 0.094 -0.0025" rpy="0 0 0"/><geometry><box size="0.352 0.0025 0.155"/></geometry></collision>
+    <collision><origin xyz="0.399 0 -0.0025" rpy="0 0 0"/><geometry><box size="0.0025 0.19 0.155"/></geometry></collision>
+  </link>
+
+  <link name="washing_machine_detergent_drawer_handle">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0"/><mass value="0.01"/><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6"/></inertial>
+    <collision><origin xyz="0 0 0" rpy="0 0 0"/><geometry><box size="0.02 0.12 0.025"/></geometry></collision>
+  </link>
+
+  <!-- hinge at the right edge of the door ring seen from the front; opening swings the left edge toward -X -->
+  <joint name="washing_machine_door_joint" type="revolute">
+    <parent link="washing_machine"/><child link="washing_machine_door"/>
+    <origin xyz="-0.3067 -0.2174 0.4911" rpy="0 0 0"/><axis xyz="0 0 1"/>
+    <limit lower="0" upper="1.5708" effort="50" velocity="1.5"/>
+    <!-- rough estimate, so the door stays where it is left instead of swinging freely -->
+    <dynamics damping="0.5" friction="0.3"/>
+  </joint>
+  <!-- the middle of the ring's thickness at its outer edge, 45 degrees above its left edge, x along the door normal,
+       y along the ring, z outward from the ring's centre -->
+  <joint name="washing_machine_door_handle_joint" type="fixed">
+    <parent link="washing_machine_door"/><child link="washing_machine_door_handle"/>
+    <origin xyz="-0.0102 0.3644 0.1474" rpy="-0.7854 0 0"/>
+  </joint>
+  <joint name="washing_machine_detergent_drawer_joint" type="prismatic">
+    <parent link="washing_machine"/><child link="washing_machine_detergent_drawer"/>
+    <origin xyz="-0.2945 0.1971 0.7701" rpy="0 0 0"/><axis xyz="-1 0 0"/>
+    <limit lower="0" upper="0.27" effort="50" velocity="0.2"/>
+  </joint>
+  <!-- grip recess along the lower edge of the drawer front -->
+  <joint name="washing_machine_detergent_drawer_handle_joint" type="fixed">
+    <parent link="washing_machine_detergent_drawer"/><child link="washing_machine_detergent_drawer_handle"/>
+    <origin xyz="0.0 0.014 -0.034" rpy="0 0 0"/>
+  </joint>
+</robot>
